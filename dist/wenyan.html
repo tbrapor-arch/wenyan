@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wenyan 文言</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Serif+SC:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#24201b; --ink-2:#6b6257; --rule:#d9cdb6;
+  --seal:#a8321e; --seal-soft:#a8321e1a; --hl:#e9d9a8;
+  --zh:"Noto Serif TC","Noto Serif SC",serif; --en:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1b1916; --paper-2:#24211d; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
+    --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1b1916; --paper-2:#24211d; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
+  --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22;
+}
+html.simp{--zh:"Noto Serif SC","Noto Serif TC",serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--en);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px 80px}
+header.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+header.bar .wrap{display:flex;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.brand{font-family:var(--zh);font-weight:600;font-size:20px;letter-spacing:.08em}
+.brand small{font-family:var(--en);font-weight:400;font-size:13px;color:var(--ink-2);letter-spacing:0;margin-left:6px}
+.sp{flex:1}
+.toggles{display:flex;gap:6px;flex-wrap:wrap}
+.tg{font:13px var(--en);border:1px solid var(--rule);background:transparent;color:var(--ink);padding:5px 10px;border-radius:999px;cursor:pointer}
+.tg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+select.tg{appearance:none;padding-right:12px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;padding:44px 0 26px;border-bottom:1px solid var(--rule)}
+.seal{width:76px;height:76px;border:2px solid var(--seal);color:var(--seal);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;place-items:center;font:600 26px/1 var(--zh);padding:6px;transform:rotate(-2deg)}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--seal)}
+h1{font:600 clamp(34px,6vw,52px)/1.1 var(--zh);margin:6px 0 4px;letter-spacing:.06em}
+.sub{color:var(--ink-2);font-style:italic}
+.intro{max-width:720px;margin:22px 0 0;color:var(--ink)}
+.meta{font-size:13px;color:var(--ink-2);margin-top:10px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid currentColor;border-radius:4px;padding:0 6px;margin-left:6px}
+h2{font:600 13px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:42px 0 14px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.pages{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper-2)}
+.page{padding:22px 24px}
+.page.left{border-right:1px solid var(--rule);background:var(--paper)}
+.row{display:contents}
+.ln{padding:9px 0;border-bottom:1px dashed var(--rule);min-height:64px}
+.ln:last-child{border-bottom:0}
+.zh{font:400 26px/1.5 var(--zh);letter-spacing:.06em}
+.py{font-size:14px;color:var(--ink-2);font-style:italic;margin-top:2px}
+.en{font-size:16px}
+.lit{font-size:13px;color:var(--ink-2);margin-top:2px}
+html.nopy .py{display:none}
+html.cover .page.right .ln > *{filter:blur(6px);opacity:.5;transition:.2s}
+html.cover .page.right .ln:hover > *, html.cover .page.right .ln.peek > *{filter:none;opacity:1}
+.w{cursor:pointer;border-radius:3px;transition:background .15s}
+.w:hover,.w.on{background:var(--hl)}
+sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super}
+.notes{columns:2 340px;column-gap:34px}
+.note{break-inside:avoid;margin:0 0 18px;padding-left:34px;position:relative}
+.note .num{position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 12px/24px var(--en);text-align:center}
+.note .at{font-family:var(--zh);font-size:18px;margin-right:4px}
+.note.flash{animation:fl 1.2s}
+@keyframes fl{0%{background:var(--hl)}100%{background:transparent}}
+.note p{margin:0}
+.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.g{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline;background:var(--paper)}
+.g .c{font:600 24px/1.2 var(--zh);grid-row:span 2}
+.g .p{font-size:13px;color:var(--ink-2);font-style:italic}
+.g .d{font-size:14px;line-height:1.35}
+.g .sw{grid-column:1/-1;font:13px var(--zh);color:var(--ink-2);border-top:1px dotted var(--rule);padding-top:4px;margin-top:4px}
+.g .sw b{font-family:var(--en);font-weight:600;font-size:11px;letter-spacing:.06em;color:var(--seal);margin-right:6px}
+.ex{counter-reset:ex;display:grid;gap:10px}
+.e{border-left:3px solid var(--seal);padding:8px 0 8px 16px}
+.e .zh{font-size:22px}
+.e .src{font-size:12px;color:var(--ink-2);letter-spacing:.04em}
+.e details summary{cursor:pointer;color:var(--seal);font-size:14px;margin-top:4px}
+.e details p{margin:4px 0 0}
+.e .tests{font-size:13px;color:var(--ink-2)}
+.culture{max-width:760px;font-size:16px;background:var(--paper-2);border-radius:10px;padding:18px 22px}
+#pop{position:fixed;z-index:20;max-width:300px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 8px 28px #0004;display:none}
+#pop .c{font:600 26px var(--zh)}
+#pop .p{font-style:italic;opacity:.75;margin-left:8px}
+#pop .sw{font-family:var(--zh);opacity:.8;margin-top:6px;font-size:13px}
+#pop.note-pop{max-width:min(420px,calc(100vw - 16px));max-height:60vh;overflow:auto;padding:14px 16px;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--seal)}
+#pop .nh{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+#pop .nh .num{width:24px;height:24px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 12px/24px var(--en);text-align:center}
+#pop .nh .c{font-size:22px}
+#pop .nb{font-size:15px;line-height:1.5}
+#pop .goto{margin-top:10px;font:13px var(--en);color:var(--seal);background:none;border:0;padding:0;cursor:pointer}
+sup.nn{padding:0 2px;border-radius:3px}
+sup.nn.on{background:var(--seal);color:var(--paper)}
+footer{margin-top:60px;font-size:12px;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
+@media (max-width:720px){
+  .pages{grid-template-columns:1fr}
+  .page.left{border-right:0}
+  .page{padding:14px 16px}
+  .page.right{display:none}
+  .brand small{display:none}
+  .tg{padding:5px 8px}
+  .ln .en-inline{display:block}
+  .hero{grid-template-columns:1fr;padding-top:28px}
+  .seal{width:60px;height:60px;font-size:20px}
+  .zh{font-size:23px}
+}
+.en-inline{display:none;font-size:15px;margin-top:4px}
+html.cover .en-inline{filter:blur(6px);opacity:.5}
+html.cover .ln.peek .en-inline{filter:none;opacity:1}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <div class="brand">文言<small>Wenyan</small></div>
+  <div class="sp"></div>
+  <div class="toggles">
+    <select class="tg" id="lesson" aria-label="Lesson"></select>
+    <button class="tg" id="tScript" aria-pressed="false" title="Traditional / simplified">繁 → 简</button>
+    <button class="tg" id="tPy" aria-pressed="true">Pinyin</button>
+    <button class="tg" id="tCover" aria-pressed="false" title="Hide the translation; hover or tap a line to peek">Cover</button>
+  </div>
+</div></header>
+<main class="wrap" id="app"></main>
+<div id="pop" role="tooltip"></div>
+<script id="course-data" type="application/json">{"lessons": [{"id": 1, "slug": "shou-zhu", "title": "守株待兔", "title_py": "Shǒu zhū dài tù", "title_en": "Waiting by the Stump for a Hare", "source": {"work": "韓非子·五蠹", "author": "韓非 (c. 280–233 BC)", "period": "Warring States", "text_from": "《韓非子·五蠹》, as printed in the Hong Kong EDB recommended classical passages (KS1-01); checked against the 古汉语常用字字典 citations"}, "status": "draft", "intro": "Han Fei was the great theorist of Legalism, the school that held a state should be run by clear laws and not by appeals to the ancient sage-kings. In the essay \"The Five Vermin\" (五蠹) he tells this little story to mock rulers who cling to the old ways. It is the most famous fable in Chinese: almost every Chinese schoolchild learns it, and its title became an idiom. Six of the most important words in Classical Chinese appear in its 57 characters: 者, 而, 其, 為, 之, 也.\n", "lines": [{"h": "宋人有耕者，", "py": "Sòng rén yǒu gēng zhě,", "en": "Among the people of Song there was a man who ploughed his fields.", "lit": "Song people there-was plough-one", "h_s": "宋人有耕者，"}, {"h": "田中有株，", "py": "tián zhōng yǒu zhū,", "en": "In his field there was a tree stump.", "h_s": "田中有株，"}, {"h": "兔走觸株，", "py": "tù zǒu chù zhū,", "en": "A hare, running, struck the stump,", "h_s": "兔走触株，"}, {"h": "折頸而死。", "py": "zhé jǐng ér sǐ.", "en": "broke its neck and died.", "h_s": "折颈而死。"}, {"h": "因釋其耒而守株，", "py": "Yīn shì qí lěi ér shǒu zhū,", "en": "So he put down his plough and kept watch by the stump,", "h_s": "因释其耒而守株，"}, {"h": "冀復得兔。", "py": "jì fù dé tù.", "en": "hoping to get another hare.", "lit": "hoping again to-get hare", "h_s": "冀复得兔。"}, {"h": "兔不可復得，", "py": "Tù bù kě fù dé,", "en": "Hares could not be got again,", "h_s": "兔不可复得，"}, {"h": "而身為宋國笑。", "py": "ér shēn wéi Sòng guó xiào.", "en": "and he himself became the laughing-stock of Song.", "lit": "and himself was-by Song state laughed-at", "h_s": "而身为宋国笑。"}, {"h": "今欲以先王之政，", "py": "Jīn yù yǐ xiān wáng zhī zhèng,", "en": "Now, to want to use the government of the former kings", "h_s": "今欲以先王之政，"}, {"h": "治當世之民，", "py": "zhì dāng shì zhī mín,", "en": "to rule the people of the present age —", "h_s": "治当世之民，"}, {"h": "皆守株之類也。", "py": "jiē shǒu zhū zhī lèi yě.", "en": "that is all of the stump-watching kind.", "h_s": "皆守株之类也。"}], "notes": [{"n": 1, "line": 0, "at": "宋", "text": "**宋** Sòng, a small state in present-day Henan, ruled by descendants of the fallen Shang dynasty. In Warring States anecdotes \"a man of Song\" is the stock fool: the farmer who pulls up his sprouts to help them grow (揠苗助長, in 孟子) is also from Song.\n", "at_s": "宋"}, {"n": 2, "line": 0, "at": "有耕者", "text": "**有 … 者**, \"there was one who …\". 者 turns the verb 耕 *to plough* into a noun, \"one who ploughs\" (compare English *-er*: plough → plough**er**). 有 + V + 者 is the standard way to bring a character on stage: 宋人有耕者 = \"among the people of Song, there was a plougher\". The place or group (宋人) comes first, as the topic.\n", "at_s": "有耕者"}, {"n": 3, "line": 2, "at": "走", "text": "**走 = to run**, not \"to walk\". This is the classic trap of 古今詞義 (old vs. modern meaning): Classical Chinese *walks* with 行 and 步, *runs* with 走, and *hurries* with 趨. Modern 走 has slowed down by one gear. The 說文 already defines 走 as 趨也 \"to hurry\".\n", "at_s": "走"}, {"n": 4, "line": 3, "at": "而", "text": "**而** links two verbs or verb phrases: 折頸**而**死 \"broke its neck *and (so)* died\". It never links two nouns (that's 與). The second 而 in line 5 works the same way: 釋其耒 **而**守株 \"put down his plough *and* watched the stump\". In line 8, 而 marks a contrast: see n. 9.\n", "at_s": "而"}, {"n": 5, "line": 4, "at": "因", "text": "**因** here is an adverb, \"thereupon, and so\", linking the event to what came before. Its core meaning is \"to rely on, to follow from\", which you will meet as a verb and preposition.\n", "at_s": "因"}, {"n": 6, "line": 4, "at": "其", "text": "**其** = *his / her / its / their*. In Classical Chinese 其 is mainly a third-person possessive (其耒 \"his plough\"), not the modern \"that, other\" of 其他. 耒 lěi is a wooden digging fork, the ancestor of the plough (說文: 手耕曲木也 \"a curved wood for tilling by hand\").\n", "at_s": "其"}, {"n": 7, "line": 5, "at": "冀復", "text": "**冀** jì = \"to hope\" (modern 希望). **復** fù = \"again\" (adverb before a verb). *Simplified-character warning:* 复 stands for three different classical words: 復 \"return, again\", 複 \"double, lined (garment)\" and 覆 \"overturn\". Classical texts keep them apart, so the traditional form tells you which word you're reading.\n", "at_s": "冀复"}, {"n": 8, "line": 6, "at": "不可復得", "text": "**可 + verb** has a passive sense: 不可復得 \"could not be got again\". When 可 stands before a transitive verb, the subject is what *receives* the action (兔 the hare is what is \"got\"). Compare 朽木不可雕也 \"rotten wood cannot be carved\" (exercise 3).\n", "at_s": "不可复得"}, {"n": 9, "line": 7, "at": "而身為宋國笑", "text": "Three things in one line: **而** here means \"and yet / and as a result\", with a turn in the story. **身** = \"himself, his own person\" (not \"body\"): the hares didn't come back, but *he* became the joke. **為 A V** is a passive: 為宋國笑 \"was laughed at by the state of Song\" (為 wéi + agent + verb). Later prose often adds 所: 為天下所笑. The 所-less form here is the older one.\n", "at_s": "而身为宋国笑"}, {"n": 10, "line": 8, "at": "以先王之政", "text": "**以 X V Y** = \"to use X to V Y\": 以先王之政，治當世之民 \"to use the government of the former kings to rule the people of today\". **之** between two nouns marks the first as modifying the second, like modern 的: 先王**之**政 \"the former kings' government\", 當世**之**民 \"the present age's people\".\n", "at_s": "以先王之政"}, {"n": 11, "line": 10, "at": "也", "text": "**A，B 也** is the basic Classical judgment sentence, \"A is B\", with no verb \"to be\". The whole of lines 9–10 is A; 皆守株之類 \"all of the stump-watching kind\" is B; 也 closes the judgment. 是 as a copula (\"is\") is a later development; in Han Fei's time 是 means \"this\".\n", "at_s": "也"}, {"n": 12, "line": 10, "at": "守株", "text": "The idiom is 守株待兔 \"watch the stump, wait for the hare\", but 待 *to wait* is not in the original: the four-character form was shaped later. Today it describes anyone who waits for luck instead of working, which is not quite Han Fei's point: he was attacking rulers who apply old policies to a changed world.\n", "at_s": "守株"}], "glossary": [{"w": "宋", "py": "Sòng", "en": "Song, a Warring States state (in present-day Henan)", "checked": [], "w_s": "宋"}, {"w": "耕", "py": "gēng", "en": "to plough", "till": null, "checked": [], "w_s": "耕"}, {"w": "者", "py": "zhě", "en": "nominaliser: 'one who …'", "checked": ["cyz"], "w_s": "者"}, {"w": "田", "py": "tián", "en": "field (under cultivation)", "checked": ["cyz"], "w_s": "田"}, {"w": "株", "py": "zhū", "en": "tree stump; root showing above the ground", "sw": "株，木根也。", "checked": ["cyz", "sw"], "w_s": "株"}, {"w": "兔", "py": "tù", "en": "hare", "rabbit": null, "checked": [], "w_s": "兔"}, {"w": "走", "py": "zǒu", "en": "to run", "sw": "走，趨也。", "checked": ["cyz", "sw"], "w_s": "走"}, {"w": "觸", "py": "chù", "en": "to bump into", "strike": null, "checked": ["cyz"], "w_s": "触"}, {"w": "折", "py": "zhé", "en": "to break", "snap": null, "checked": ["cyz"], "w_s": "折"}, {"w": "頸", "py": "jǐng", "en": "neck", "checked": [], "w_s": "颈"}, {"w": "而", "py": "ér", "en": "and (then); and yet — links verb phrases", "checked": ["cyz"], "w_s": "而"}, {"w": "因", "py": "yīn", "en": "thereupon, and so", "checked": ["cyz"], "w_s": "因"}, {"w": "釋", "py": "shì", "en": "to put down", "let go of": null, "checked": ["cyz"], "w_s": "释"}, {"w": "其", "py": "qí", "en": "his, her, its, their", "checked": ["cyz"], "w_s": "其"}, {"w": "耒", "py": "lěi", "en": "wooden digging fork", "early plough": null, "sw": "耒，手耕曲木也。", "checked": ["cyz", "sw"], "w_s": "耒"}, {"w": "守", "py": "shǒu", "en": "to guard", "keep watch over": null, "checked": ["cyz"], "w_s": "守"}, {"w": "冀", "py": "jì", "en": "to hope", "checked": ["cyz"], "w_s": "冀"}, {"w": "復", "py": "fù", "en": "again", "checked": ["cyz"], "w_s": "复"}, {"w": "得", "py": "dé", "en": "to get", "obtain": null, "checked": ["cyz"], "w_s": "得"}, {"w": "可", "py": "kě", "en": "can (be V-ed)", "checked": ["cyz"], "w_s": "可"}, {"w": "身", "py": "shēn", "en": "oneself, one's own person", "checked": ["cyz"], "w_s": "身"}, {"w": "為", "py": "wéi", "en": "passive marker: 為 A V 'be V-ed by A'", "checked": ["cyz"], "w_s": "为"}, {"w": "國", "py": "guó", "en": "state", "country": null, "checked": ["cyz"], "w_s": "国"}, {"w": "笑", "py": "xiào", "en": "to laugh at", "checked": [], "w_s": "笑"}, {"w": "欲", "py": "yù", "en": "to want to", "checked": ["cyz"], "w_s": "欲"}, {"w": "以", "py": "yǐ", "en": "to use, with (以 X V: use X to V)", "checked": ["cyz"], "w_s": "以"}, {"w": "先王", "py": "xiān wáng", "en": "the former kings (the sage-rulers of antiquity)", "checked": ["cyz"], "w_s": "先王"}, {"w": "之", "py": "zhī", "en": "attributive particle, like modern 的", "checked": ["cyz"], "w_s": "之"}, {"w": "政", "py": "zhèng", "en": "government", "policies": null, "checked": ["cyz"], "w_s": "政"}, {"w": "治", "py": "zhì", "en": "to govern", "rule": null, "checked": ["cyz"], "w_s": "治"}, {"w": "當世", "py": "dāng shì", "en": "the present age", "checked": ["cyz"], "w_s": "当世"}, {"w": "民", "py": "mín", "en": "the people", "commoners": null, "checked": ["cyz"], "w_s": "民"}, {"w": "皆", "py": "jiē", "en": "all, in every case", "checked": ["cyz"], "w_s": "皆"}, {"w": "類", "py": "lèi", "en": "kind", "category": null, "checked": ["cyz"], "w_s": "类"}, {"w": "也", "py": "yě", "en": "final particle closing a judgment ('A is B')", "checked": ["cyz"], "w_s": "也"}], "exercise": [{"h": "兵刃既接，棄甲曳兵而走。", "py": "Bīng rèn jì jiē, qì jiǎ yè bīng ér zǒu.", "src": "孟子·梁惠王上", "en": "When the blades had crossed, they threw off their armour, dragged their weapons and ran.", "tests": "走 = run, 而", "h_s": "兵刃既接，弃甲曳兵而走。"}, {"h": "學而時習之，不亦說乎？", "py": "Xué ér shí xí zhī, bú yì yuè hū?", "src": "論語·學而", "en": "To learn and practise it at the right times — is that not a pleasure?", "tests": "而 linking two verbs (說 = 悅 yuè, \"to be pleased\")", "h_s": "学而时习之，不亦说乎？"}, {"h": "朽木不可雕也，糞土之牆不可杇也。", "py": "Xiǔ mù bù kě diāo yě, fèn tǔ zhī qiáng bù kě wū yě.", "src": "論語·公冶長", "en": "Rotten wood cannot be carved; a wall of dung and earth cannot be plastered.", "tests": "可 + verb (passive sense), 之, 也", "h_s": "朽木不可雕也，粪土之墙不可杇也。"}, {"h": "久矣吾不復夢見周公。", "py": "Jiǔ yǐ wú bú fù mèng jiàn Zhōugōng.", "src": "論語·述而", "en": "For a long time now I have not dreamed again of the Duke of Zhou.", "tests": "復 = again", "h_s": "久矣吾不复梦见周公。"}, {"h": "身死人手，為天下笑者，何也？", "py": "Shēn sǐ rén shǒu, wéi tiānxià xiào zhě, hé yě?", "src": "賈誼·過秦論", "en": "That he died by other men's hands and became the laughing-stock of the world — why?", "tests": "身, 為 A 笑 passive, 者", "h_s": "身死人手，为天下笑者，何也？"}], "culture": "Han Fei (韓非) was a prince of the state of Han and a student of the Confucian Xunzi, yet he became the sharpest critic of Confucian nostalgia. The First Emperor of Qin admired his writings; Han Fei died in a Qin prison in 233 BC, but Qin built its empire on Legalist ideas. \"The Five Vermin\" names the five kinds of people Han Fei thought were eating the state away: scholars, wandering orators, private swordsmen, courtiers who sell influence, and merchants and artisans.\n", "title_s": "守株待兔"}]}</script>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const H = document.documentElement;
+  const store = {
+    get(k, d){ try{ const v = localStorage.getItem("wy."+k); return v===null?d:JSON.parse(v);}catch(e){return d;} },
+    set(k, v){ try{ localStorage.setItem("wy."+k, JSON.stringify(v)); }catch(e){} }
+  };
+  let course, L, simp = store.get("simp", false), py = store.get("py", true), cover = store.get("cover", false);
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const md = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>");
+  const Z = (o, k) => simp && o[k + "_s"] ? o[k + "_s"] : o[k];
+
+  function apply(){
+    H.classList.toggle("simp", simp); H.classList.toggle("nopy", !py); H.classList.toggle("cover", cover);
+    $("#tScript").setAttribute("aria-pressed", simp); $("#tScript").textContent = simp ? "简 → 繁" : "繁 → 简";
+    $("#tPy").setAttribute("aria-pressed", py); $("#tCover").setAttribute("aria-pressed", cover);
+  }
+
+  // Mark glossary words (longest match first) and note anchors in a line.
+  function markLine(line, i){
+    const t = Z(line, "h");
+    const words = L.glossary.map((g, gi) => ({w: Z(g, "w"), gi})).sort((a, b) => b.w.length - a.w.length);
+    const ends = {}; // char index -> note numbers placed after it
+    L.notes.filter(n => n.line === i).forEach(n => {
+      const at = Z(n, "at"), p = t.indexOf(at);
+      if (p >= 0) (ends[p + at.length - 1] ||= []).push(n.n);
+    });
+    let out = "", k = 0;
+    while (k < t.length){
+      const m = words.find(x => t.startsWith(x.w, k));
+      const len = m ? m.w.length : 1;
+      const seg = t.slice(k, k + len);
+      out += m ? `<span class="w" data-g="${m.gi}">${esc(seg)}</span>` : esc(seg);
+      for (let j = k; j < k + len; j++) if (ends[j]) out += ends[j].map(n => `<sup class="nn" data-n="${n}">${n}</sup>`).join("");
+      k += len;
+    }
+    return out;
+  }
+
+  function render(){
+    const seal = [...L.title_s && simp ? L.title_s : L.title].slice(0, 4).map(c => `<span>${esc(c)}</span>`).join("");
+    const lines = L.lines;
+    $("#app").innerHTML = `
+      <section class="hero">
+        <div class="seal" aria-hidden="true">${seal}</div>
+        <div>
+          <div class="kicker">Lesson ${L.id} · ${esc(L.source.work)}</div>
+          <h1>${esc(Z(L, "title"))}</h1>
+          <div class="sub">${esc(L.title_py)} — ${esc(L.title_en)}</div>
+        </div>
+      </section>
+      <p class="intro">${md(L.intro)}</p>
+      <div class="meta">${esc(L.source.author)} · ${esc(L.source.period)}<span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
+
+      <h2>Text</h2>
+      <div class="pages">
+        <div class="page left">${lines.map((l, i) => `
+          <div class="ln" data-i="${i}"><div class="zh">${markLine(l, i)}</div><div class="py">${esc(l.py)}</div>
+          <div class="en-inline">${esc(l.en)}</div></div>`).join("")}</div>
+        <div class="page right">${lines.map((l, i) => `
+          <div class="ln" data-i="${i}"><div class="en">${esc(l.en)}</div>${l.lit ? `<div class="lit">lit. ${esc(l.lit)}</div>` : ""}</div>`).join("")}</div>
+      </div>
+
+      <h2>Notes</h2>
+      <div class="notes">${L.notes.map(n => `
+        <div class="note" id="n${n.n}"><span class="num">${n.n}</span><p><span class="at">${esc(Z(n, "at"))}</span>${md(n.text)}</p></div>`).join("")}</div>
+
+      <h2>Glossary</h2>
+      <div class="gl">${L.glossary.map(g => `
+        <div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><span class="d">${esc(g.en)}</span>
+        ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>
+
+      ${L.exercise ? `<h2>Exercise · translate</h2><div class="ex">${L.exercise.map(e => `
+        <div class="e"><div class="zh">${esc(Z(e, "h"))}</div><div class="py">${esc(e.py)}</div>
+        <div class="src">${esc(e.src)}</div>
+        <details><summary>Answer</summary><p>${esc(e.en)}</p><p class="tests">Practises: ${esc(e.tests || "")}</p></details></div>`).join("")}</div>` : ""}
+
+      ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture)}</div>` : ""}
+      <footer>Text: public domain (${esc(L.source.text_from)}). Course content CC BY-SA 4.0.</footer>`;
+    syncHeights();
+  }
+
+  // Keep left/right lines aligned on wide screens.
+  function syncHeights(){
+    const left = document.querySelectorAll(".page.left .ln"), right = document.querySelectorAll(".page.right .ln");
+    left.forEach((l, i) => { l.style.minHeight = ""; right[i].style.minHeight = ""; });
+    if (innerWidth <= 720) return;
+    left.forEach((l, i) => { const h = Math.max(l.offsetHeight, right[i].offsetHeight); l.style.minHeight = right[i].style.minHeight = h + "px"; });
+  }
+
+  const pop = $("#pop");
+  function showPop(el){
+    const g = L.glossary[+el.dataset.g];
+    document.querySelectorAll(".w.on").forEach(x => x.classList.remove("on"));
+    el.classList.add("on");
+    pop.className = "";
+    pop.innerHTML = `<span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><div>${esc(g.en)}</div>${g.sw ? `<div class="sw">說文：${esc(g.sw)}</div>` : ""}`;
+    place(el);
+  }
+  function place(el){
+    pop.style.display = "block";
+    const r = el.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+    pop.style.left = Math.max(8, Math.min(innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) + "px";
+    pop.style.top = Math.max(8, r.bottom + 8 + ph > innerHeight ? r.top - ph - 8 : r.bottom + 8) + "px";
+  }
+  function showNote(el){
+    const n = L.notes.find(x => x.n === +el.dataset.n);
+    document.querySelectorAll(".w.on,sup.nn.on").forEach(x => x.classList.remove("on"));
+    el.classList.add("on");
+    pop.className = "note-pop";
+    pop.innerHTML = `<div class="nh"><span class="num">${n.n}</span><span class="c">${esc(Z(n, "at"))}</span></div>
+      <div class="nb">${md(n.text)}</div><button class="goto" data-n="${n.n}">All notes ↓</button>`;
+    place(el);
+  }
+  function hidePop(){ pop.style.display = "none"; pop.className = ""; document.querySelectorAll(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); }
+
+  document.addEventListener("click", e => {
+    const w = e.target.closest(".w"), nn = e.target.closest("sup.nn"), ln = e.target.closest(".ln");
+    if (e.target.closest("#pop .goto")){ const n = $("#n" + e.target.closest(".goto").dataset.n); hidePop(); n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); return; }
+    if (e.target.closest("#pop")) return;
+    if (nn){ showNote(nn); e.stopPropagation(); return; }
+    if (w){ showPop(w); e.stopPropagation(); return; }
+    hidePop();
+    if (ln && cover) document.querySelectorAll(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
+  });
+  addEventListener("scroll", () => { if (!pop.classList.contains("note-pop")) hidePop(); }, {passive: true});
+  addEventListener("resize", syncHeights);
+  $("#tScript").onclick = () => { simp = !simp; store.set("simp", simp); apply(); render(); };
+  $("#tPy").onclick = () => { py = !py; store.set("py", py); apply(); syncHeights(); };
+  $("#tCover").onclick = () => { cover = !cover; store.set("cover", cover); apply(); };
+  $("#lesson").onchange = e => { L = course.lessons[+e.target.value]; store.set("lesson", +e.target.value); render(); scrollTo(0, 0); };
+
+  async function boot(){
+    const inline = $("#course-data").textContent.trim();
+    course = inline ? JSON.parse(inline) : await (await fetch("course.json")).json();
+    const idx = Math.min(store.get("lesson", 0), course.lessons.length - 1);
+    $("#lesson").innerHTML = course.lessons.map((l, i) => `<option value="${i}">${l.id}. ${esc(l.title)}</option>`).join("");
+    $("#lesson").value = idx; L = course.lessons[idx];
+    apply(); render();
+    if (document.fonts) document.fonts.ready.then(syncHeights);
+  }
+  boot();
+})();
+</script>
+</body>
+</html>

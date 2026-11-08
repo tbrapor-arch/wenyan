@@ -1,0 +1,546 @@
+{
+ "lessons": [
+  {
+   "id": 1,
+   "slug": "shou-zhu",
+   "title": "守株待兔",
+   "title_py": "Shǒu zhū dài tù",
+   "title_en": "Waiting by the Stump for a Hare",
+   "source": {
+    "work": "韓非子·五蠹",
+    "author": "韓非 (c. 280–233 BC)",
+    "period": "Warring States",
+    "text_from": "《韓非子·五蠹》, as printed in the Hong Kong EDB recommended classical passages (KS1-01); checked against the 古汉语常用字字典 citations"
+   },
+   "status": "draft",
+   "intro": "Han Fei was the great theorist of Legalism, the school that held a state should be run by clear laws and not by appeals to the ancient sage-kings. In the essay \"The Five Vermin\" (五蠹) he tells this little story to mock rulers who cling to the old ways. It is the most famous fable in Chinese: almost every Chinese schoolchild learns it, and its title became an idiom. Six of the most important words in Classical Chinese appear in its 57 characters: 者, 而, 其, 為, 之, 也.\n",
+   "lines": [
+    {
+     "h": "宋人有耕者，",
+     "py": "Sòng rén yǒu gēng zhě,",
+     "en": "Among the people of Song there was a man who ploughed his fields.",
+     "lit": "Song people there-was plough-one",
+     "h_s": "宋人有耕者，"
+    },
+    {
+     "h": "田中有株，",
+     "py": "tián zhōng yǒu zhū,",
+     "en": "In his field there was a tree stump.",
+     "h_s": "田中有株，"
+    },
+    {
+     "h": "兔走觸株，",
+     "py": "tù zǒu chù zhū,",
+     "en": "A hare, running, struck the stump,",
+     "h_s": "兔走触株，"
+    },
+    {
+     "h": "折頸而死。",
+     "py": "zhé jǐng ér sǐ.",
+     "en": "broke its neck and died.",
+     "h_s": "折颈而死。"
+    },
+    {
+     "h": "因釋其耒而守株，",
+     "py": "Yīn shì qí lěi ér shǒu zhū,",
+     "en": "So he put down his plough and kept watch by the stump,",
+     "h_s": "因释其耒而守株，"
+    },
+    {
+     "h": "冀復得兔。",
+     "py": "jì fù dé tù.",
+     "en": "hoping to get another hare.",
+     "lit": "hoping again to-get hare",
+     "h_s": "冀复得兔。"
+    },
+    {
+     "h": "兔不可復得，",
+     "py": "Tù bù kě fù dé,",
+     "en": "Hares could not be got again,",
+     "h_s": "兔不可复得，"
+    },
+    {
+     "h": "而身為宋國笑。",
+     "py": "ér shēn wéi Sòng guó xiào.",
+     "en": "and he himself became the laughing-stock of Song.",
+     "lit": "and himself was-by Song state laughed-at",
+     "h_s": "而身为宋国笑。"
+    },
+    {
+     "h": "今欲以先王之政，",
+     "py": "Jīn yù yǐ xiān wáng zhī zhèng,",
+     "en": "Now, to want to use the government of the former kings",
+     "h_s": "今欲以先王之政，"
+    },
+    {
+     "h": "治當世之民，",
+     "py": "zhì dāng shì zhī mín,",
+     "en": "to rule the people of the present age —",
+     "h_s": "治当世之民，"
+    },
+    {
+     "h": "皆守株之類也。",
+     "py": "jiē shǒu zhū zhī lèi yě.",
+     "en": "that is all of the stump-watching kind.",
+     "h_s": "皆守株之类也。"
+    }
+   ],
+   "notes": [
+    {
+     "n": 1,
+     "line": 0,
+     "at": "宋",
+     "text": "**宋** Sòng, a small state in present-day Henan, ruled by descendants of the fallen Shang dynasty. In Warring States anecdotes \"a man of Song\" is the stock fool: the farmer who pulls up his sprouts to help them grow (揠苗助長, in 孟子) is also from Song.\n",
+     "at_s": "宋"
+    },
+    {
+     "n": 2,
+     "line": 0,
+     "at": "有耕者",
+     "text": "**有 … 者**, \"there was one who …\". 者 turns the verb 耕 *to plough* into a noun, \"one who ploughs\" (compare English *-er*: plough → plough**er**). 有 + V + 者 is the standard way to bring a character on stage: 宋人有耕者 = \"among the people of Song, there was a plougher\". The place or group (宋人) comes first, as the topic.\n",
+     "at_s": "有耕者"
+    },
+    {
+     "n": 3,
+     "line": 2,
+     "at": "走",
+     "text": "**走 = to run**, not \"to walk\". This is the classic trap of 古今詞義 (old vs. modern meaning): Classical Chinese *walks* with 行 and 步, *runs* with 走, and *hurries* with 趨. Modern 走 has slowed down by one gear. The 說文 already defines 走 as 趨也 \"to hurry\".\n",
+     "at_s": "走"
+    },
+    {
+     "n": 4,
+     "line": 3,
+     "at": "而",
+     "text": "**而** links two verbs or verb phrases: 折頸**而**死 \"broke its neck *and (so)* died\". It never links two nouns (that's 與). The second 而 in line 5 works the same way: 釋其耒 **而**守株 \"put down his plough *and* watched the stump\". In line 8, 而 marks a contrast: see n. 9.\n",
+     "at_s": "而"
+    },
+    {
+     "n": 5,
+     "line": 4,
+     "at": "因",
+     "text": "**因** here is an adverb, \"thereupon, and so\", linking the event to what came before. Its core meaning is \"to rely on, to follow from\", which you will meet as a verb and preposition.\n",
+     "at_s": "因"
+    },
+    {
+     "n": 6,
+     "line": 4,
+     "at": "其",
+     "text": "**其** = *his / her / its / their*. In Classical Chinese 其 is mainly a third-person possessive (其耒 \"his plough\"), not the modern \"that, other\" of 其他. 耒 lěi is a wooden digging fork, the ancestor of the plough (說文: 手耕曲木也 \"a curved wood for tilling by hand\").\n",
+     "at_s": "其"
+    },
+    {
+     "n": 7,
+     "line": 5,
+     "at": "冀復",
+     "text": "**冀** jì = \"to hope\" (modern 希望). **復** fù = \"again\" (adverb before a verb). *Simplified-character warning:* 复 stands for three different classical words: 復 \"return, again\", 複 \"double, lined (garment)\" and 覆 \"overturn\". Classical texts keep them apart, so the traditional form tells you which word you're reading.\n",
+     "at_s": "冀复"
+    },
+    {
+     "n": 8,
+     "line": 6,
+     "at": "不可復得",
+     "text": "**可 + verb** has a passive sense: 不可復得 \"could not be got again\". When 可 stands before a transitive verb, the subject is what *receives* the action (兔 the hare is what is \"got\"). Compare 朽木不可雕也 \"rotten wood cannot be carved\" (exercise 3).\n",
+     "at_s": "不可复得"
+    },
+    {
+     "n": 9,
+     "line": 7,
+     "at": "而身為宋國笑",
+     "text": "Three things in one line: **而** here means \"and yet / and as a result\", with a turn in the story. **身** = \"himself, his own person\" (not \"body\"): the hares didn't come back, but *he* became the joke. **為 A V** is a passive: 為宋國笑 \"was laughed at by the state of Song\" (為 wéi + agent + verb). Later prose often adds 所: 為天下所笑. The 所-less form here is the older one.\n",
+     "at_s": "而身为宋国笑"
+    },
+    {
+     "n": 10,
+     "line": 8,
+     "at": "以先王之政",
+     "text": "**以 X V Y** = \"to use X to V Y\": 以先王之政，治當世之民 \"to use the government of the former kings to rule the people of today\". **之** between two nouns marks the first as modifying the second, like modern 的: 先王**之**政 \"the former kings' government\", 當世**之**民 \"the present age's people\".\n",
+     "at_s": "以先王之政"
+    },
+    {
+     "n": 11,
+     "line": 10,
+     "at": "也",
+     "text": "**A，B 也** is the basic Classical judgment sentence, \"A is B\", with no verb \"to be\". The whole of lines 9–10 is A; 皆守株之類 \"all of the stump-watching kind\" is B; 也 closes the judgment. 是 as a copula (\"is\") is a later development; in Han Fei's time 是 means \"this\".\n",
+     "at_s": "也"
+    },
+    {
+     "n": 12,
+     "line": 10,
+     "at": "守株",
+     "text": "The idiom is 守株待兔 \"watch the stump, wait for the hare\", but 待 *to wait* is not in the original: the four-character form was shaped later. Today it describes anyone who waits for luck instead of working, which is not quite Han Fei's point: he was attacking rulers who apply old policies to a changed world.\n",
+     "at_s": "守株"
+    }
+   ],
+   "glossary": [
+    {
+     "w": "宋",
+     "py": "Sòng",
+     "en": "Song, a Warring States state (in present-day Henan)",
+     "checked": [],
+     "w_s": "宋"
+    },
+    {
+     "w": "耕",
+     "py": "gēng",
+     "en": "to plough",
+     "till": null,
+     "checked": [],
+     "w_s": "耕"
+    },
+    {
+     "w": "者",
+     "py": "zhě",
+     "en": "nominaliser: 'one who …'",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "者"
+    },
+    {
+     "w": "田",
+     "py": "tián",
+     "en": "field (under cultivation)",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "田"
+    },
+    {
+     "w": "株",
+     "py": "zhū",
+     "en": "tree stump; root showing above the ground",
+     "sw": "株，木根也。",
+     "checked": [
+      "cyz",
+      "sw"
+     ],
+     "w_s": "株"
+    },
+    {
+     "w": "兔",
+     "py": "tù",
+     "en": "hare",
+     "rabbit": null,
+     "checked": [],
+     "w_s": "兔"
+    },
+    {
+     "w": "走",
+     "py": "zǒu",
+     "en": "to run",
+     "sw": "走，趨也。",
+     "checked": [
+      "cyz",
+      "sw"
+     ],
+     "w_s": "走"
+    },
+    {
+     "w": "觸",
+     "py": "chù",
+     "en": "to bump into",
+     "strike": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "触"
+    },
+    {
+     "w": "折",
+     "py": "zhé",
+     "en": "to break",
+     "snap": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "折"
+    },
+    {
+     "w": "頸",
+     "py": "jǐng",
+     "en": "neck",
+     "checked": [],
+     "w_s": "颈"
+    },
+    {
+     "w": "而",
+     "py": "ér",
+     "en": "and (then); and yet — links verb phrases",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "而"
+    },
+    {
+     "w": "因",
+     "py": "yīn",
+     "en": "thereupon, and so",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "因"
+    },
+    {
+     "w": "釋",
+     "py": "shì",
+     "en": "to put down",
+     "let go of": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "释"
+    },
+    {
+     "w": "其",
+     "py": "qí",
+     "en": "his, her, its, their",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "其"
+    },
+    {
+     "w": "耒",
+     "py": "lěi",
+     "en": "wooden digging fork",
+     "early plough": null,
+     "sw": "耒，手耕曲木也。",
+     "checked": [
+      "cyz",
+      "sw"
+     ],
+     "w_s": "耒"
+    },
+    {
+     "w": "守",
+     "py": "shǒu",
+     "en": "to guard",
+     "keep watch over": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "守"
+    },
+    {
+     "w": "冀",
+     "py": "jì",
+     "en": "to hope",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "冀"
+    },
+    {
+     "w": "復",
+     "py": "fù",
+     "en": "again",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "复"
+    },
+    {
+     "w": "得",
+     "py": "dé",
+     "en": "to get",
+     "obtain": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "得"
+    },
+    {
+     "w": "可",
+     "py": "kě",
+     "en": "can (be V-ed)",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "可"
+    },
+    {
+     "w": "身",
+     "py": "shēn",
+     "en": "oneself, one's own person",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "身"
+    },
+    {
+     "w": "為",
+     "py": "wéi",
+     "en": "passive marker: 為 A V 'be V-ed by A'",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "为"
+    },
+    {
+     "w": "國",
+     "py": "guó",
+     "en": "state",
+     "country": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "国"
+    },
+    {
+     "w": "笑",
+     "py": "xiào",
+     "en": "to laugh at",
+     "checked": [],
+     "w_s": "笑"
+    },
+    {
+     "w": "欲",
+     "py": "yù",
+     "en": "to want to",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "欲"
+    },
+    {
+     "w": "以",
+     "py": "yǐ",
+     "en": "to use, with (以 X V: use X to V)",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "以"
+    },
+    {
+     "w": "先王",
+     "py": "xiān wáng",
+     "en": "the former kings (the sage-rulers of antiquity)",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "先王"
+    },
+    {
+     "w": "之",
+     "py": "zhī",
+     "en": "attributive particle, like modern 的",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "之"
+    },
+    {
+     "w": "政",
+     "py": "zhèng",
+     "en": "government",
+     "policies": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "政"
+    },
+    {
+     "w": "治",
+     "py": "zhì",
+     "en": "to govern",
+     "rule": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "治"
+    },
+    {
+     "w": "當世",
+     "py": "dāng shì",
+     "en": "the present age",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "当世"
+    },
+    {
+     "w": "民",
+     "py": "mín",
+     "en": "the people",
+     "commoners": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "民"
+    },
+    {
+     "w": "皆",
+     "py": "jiē",
+     "en": "all, in every case",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "皆"
+    },
+    {
+     "w": "類",
+     "py": "lèi",
+     "en": "kind",
+     "category": null,
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "类"
+    },
+    {
+     "w": "也",
+     "py": "yě",
+     "en": "final particle closing a judgment ('A is B')",
+     "checked": [
+      "cyz"
+     ],
+     "w_s": "也"
+    }
+   ],
+   "exercise": [
+    {
+     "h": "兵刃既接，棄甲曳兵而走。",
+     "py": "Bīng rèn jì jiē, qì jiǎ yè bīng ér zǒu.",
+     "src": "孟子·梁惠王上",
+     "en": "When the blades had crossed, they threw off their armour, dragged their weapons and ran.",
+     "tests": "走 = run, 而",
+     "h_s": "兵刃既接，弃甲曳兵而走。"
+    },
+    {
+     "h": "學而時習之，不亦說乎？",
+     "py": "Xué ér shí xí zhī, bú yì yuè hū?",
+     "src": "論語·學而",
+     "en": "To learn and practise it at the right times — is that not a pleasure?",
+     "tests": "而 linking two verbs (說 = 悅 yuè, \"to be pleased\")",
+     "h_s": "学而时习之，不亦说乎？"
+    },
+    {
+     "h": "朽木不可雕也，糞土之牆不可杇也。",
+     "py": "Xiǔ mù bù kě diāo yě, fèn tǔ zhī qiáng bù kě wū yě.",
+     "src": "論語·公冶長",
+     "en": "Rotten wood cannot be carved; a wall of dung and earth cannot be plastered.",
+     "tests": "可 + verb (passive sense), 之, 也",
+     "h_s": "朽木不可雕也，粪土之墙不可杇也。"
+    },
+    {
+     "h": "久矣吾不復夢見周公。",
+     "py": "Jiǔ yǐ wú bú fù mèng jiàn Zhōugōng.",
+     "src": "論語·述而",
+     "en": "For a long time now I have not dreamed again of the Duke of Zhou.",
+     "tests": "復 = again",
+     "h_s": "久矣吾不复梦见周公。"
+    },
+    {
+     "h": "身死人手，為天下笑者，何也？",
+     "py": "Shēn sǐ rén shǒu, wéi tiānxià xiào zhě, hé yě?",
+     "src": "賈誼·過秦論",
+     "en": "That he died by other men's hands and became the laughing-stock of the world — why?",
+     "tests": "身, 為 A 笑 passive, 者",
+     "h_s": "身死人手，为天下笑者，何也？"
+    }
+   ],
+   "culture": "Han Fei (韓非) was a prince of the state of Han and a student of the Confucian Xunzi, yet he became the sharpest critic of Confucian nostalgia. The First Emperor of Qin admired his writings; Han Fei died in a Qin prison in 233 BC, but Qin built its empire on Legalist ideas. \"The Five Vermin\" names the five kinds of people Han Fei thought were eating the state away: scholars, wandering orators, private swordsmen, courtiers who sell influence, and merchants and artisans.\n",
+   "title_s": "守株待兔"
+  }
+ ]
+}

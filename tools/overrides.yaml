@@ -1,0 +1,3 @@
+# Fixes for OpenCC t2s in classical contexts: traditional → simplified.
+# Add an entry only when OpenCC picks the wrong simplified form for the classical word.
+{}
