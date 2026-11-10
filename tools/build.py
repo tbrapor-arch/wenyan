@@ -25,6 +25,30 @@ def s(t):
     return out
 
 
+def check_review(L, f, by_id):
+    """Review lessons: every ref must point at an existing note, every example must be real text."""
+    import re
+    err = []
+    for k in ("id", "slug", "title", "title_en", "status", "recap", "exercise"):
+        if k not in L:
+            err.append(f"missing {k}")
+    for r in L.get("recap", []):
+        for ref in r.get("refs", []):
+            m = re.fullmatch(r"L(\d+) n\.(\d+)", ref)
+            if not m:
+                err.append(f"{r['topic']}: bad ref {ref!r} (use 'L3 n.5')")
+                continue
+            T = by_id.get(int(m[1]))
+            if not T or not any(n["n"] == int(m[2]) for n in T.get("notes", [])):
+                err.append(f"{r['topic']}: {ref} does not exist")
+        earlier = "".join(l["h"] for i, T in by_id.items() if i < L["id"] for l in T.get("lines", []))
+        for ex in r.get("examples", []):
+            if ex not in earlier:
+                err.append(f"{r['topic']}: example {ex} not found in earlier lessons")
+    if err:
+        sys.exit(f"{f.name}:\n  " + "\n  ".join(err))
+
+
 def check(L, f):
     err = []
     for k in ("id", "slug", "title", "title_en", "source", "status", "lines", "notes", "glossary"):
@@ -55,10 +79,22 @@ def check(L, f):
 
 def main():
     lessons = []
-    for f in sorted((ROOT / "lessons").glob("*.yaml")):
-        L = yaml.safe_load(f.read_text(encoding="utf-8"))
+    files = sorted((ROOT / "lessons").glob("*.yaml"))
+    loaded = [(f, yaml.safe_load(f.read_text(encoding="utf-8"))) for f in files]
+    by_id = {L["id"]: L for _, L in loaded}
+    for f, L in loaded:
+        if L.get("kind") == "review":
+            check_review(L, f, by_id)
+            L["title_s"] = s(L["title"])
+            for r in L["recap"]:
+                r["examples_s"] = [s(x) for x in r.get("examples", [])]
+            for e in L["exercise"]:
+                e["h_s"] = s(e["h"])
+            lessons.append(L)
+            continue
         check(L, f)
         L["title_s"] = s(L["title"])
+        L["source"]["work_s"] = s(L["source"]["work"])
         for l in L["lines"]:
             l["h_s"] = s(l["h"])
         for x in L["notes"]:

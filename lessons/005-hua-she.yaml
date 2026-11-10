@@ -1,0 +1,216 @@
+id: 5
+slug: hua-she
+title: 畫蛇添足
+title_py: Huà shé tiān zú
+title_en: Drawing Feet on the Snake
+source:
+  work: 戰國策·齊策二
+  author: anonymous; compiled by 劉向 Liu Xiang (77–6 BC)
+  period: Warring States stories, Han compilation
+  text_from: >
+    《戰國策·齊策二·昭陽為楚伐魏》, the standard text, matched against a published edition and the
+    古汉语常用字字典's quotation of the last line; punctuation modernised.
+status: draft
+
+intro: >
+  The *Intrigues of the Warring States* collects the speeches of travelling persuaders, men who
+  went from court to court selling strategies. Here the persuader 陳軫 Chen Zhen meets a Chu
+  general who has just won a great victory and wants to attack the state of Qi as well. He tells
+  him this story to say: you already have the wine — stop while you're ahead. New in this lesson:
+  the "not yet" negative 未, the question word 安 "how", and 為 meaning "to make".
+
+lines:
+  - h: "楚有祠者，"
+    py: "Chǔ yǒu cí zhě,"
+    en: "In Chu there was a man who made a sacrifice to his ancestors."
+  - h: "賜其舍人卮酒。"
+    py: "cì qí shè rén zhī jiǔ."
+    en: "He gave his retainers a flagon of wine."
+  - h: "舍人相謂曰："
+    py: "Shè rén xiāng wèi yuē:"
+    en: "The retainers said to one another:"
+  - h: "「數人飲之不足，"
+    py: "Shù rén yǐn zhī bù zú,"
+    en: "\"For several of us to drink it, it's not enough;"
+  - h: "一人飲之有餘。"
+    py: "yī rén yǐn zhī yǒu yú."
+    en: "for one to drink it, there's more than enough."
+  - h: "請畫地為蛇，"
+    py: "Qǐng huà dì wéi shé,"
+    en: "Let's each draw a snake on the ground,"
+  - h: "先成者飲酒。」"
+    py: "xiān chéng zhě yǐn jiǔ."
+    en: "and whoever finishes first drinks the wine.\""
+  - h: "一人蛇先成，"
+    py: "Yī rén shé xiān chéng,"
+    en: "One man's snake was done first."
+  - h: "引酒且飲之，"
+    py: "yǐn jiǔ qiě yǐn zhī,"
+    en: "He pulled the wine towards him and was about to drink it,"
+  - h: "乃左手持卮，"
+    py: "nǎi zuǒ shǒu chí zhī,"
+    en: "but then, holding the flagon in his left hand,"
+  - h: "右手畫蛇，曰："
+    py: "yòu shǒu huà shé, yuē:"
+    en: "and drawing on the snake with his right, he said:"
+  - h: "「吾能為之足。」"
+    py: "Wú néng wéi zhī zú."
+    en: "\"I can give it feet!\""
+    lit: "I can make it feet"
+  - h: "未成，"
+    py: "Wèi chéng,"
+    en: "Before he had finished,"
+  - h: "一人之蛇成，"
+    py: "yī rén zhī shé chéng,"
+    en: "another man's snake was done."
+  - h: "奪其卮曰："
+    py: "duó qí zhī yuē:"
+    en: "He snatched the flagon and said:"
+  - h: "「蛇固無足，"
+    py: "Shé gù wú zú,"
+    en: "\"Snakes have no feet, of course:"
+  - h: "子安能為之足？」"
+    py: "zǐ ān néng wéi zhī zú?"
+    en: "how can you give it feet?\""
+  - h: "遂飲其酒。"
+    py: "Suì yǐn qí jiǔ."
+    en: "And so he drank the wine."
+  - h: "為蛇足者，"
+    py: "Wéi shé zú zhě,"
+    en: "The one who drew feet on the snake"
+  - h: "終亡其酒。"
+    py: "zhōng wáng qí jiǔ."
+    en: "lost his wine in the end."
+
+notes:
+  - n: 1
+    line: 0
+    at: 祠
+    text: >
+      **祠** cí "to make an offering (to ancestors or spirits)". After the rite the sacrificial wine
+      was shared out. 楚有祠者 "in Chu there was one who sacrificed": the 有…者 opening again
+      (→ L1 n.2), this time with a place (楚) as the topic.
+  - n: 2
+    line: 1
+    at: 舍人卮酒
+    text: >
+      **舍人** shè rén "retainers, household men" (舍 "lodging": those who lodged in his house).
+      **卮** zhī is a wine flagon; 卮酒 "a flagon of wine" — the container works as a measure word.
+      **賜** cì "to give (from a superior)". 賜 + person + thing: two objects, as in English "gave
+      his men wine".
+  - n: 3
+    line: 2
+    at: 相謂
+    text: >
+      **相** xiāng before a verb = "each other, mutually": 相謂 "said to each other". (It can also
+      mean "to someone", as in modern 相信, but here it's reciprocal.)
+  - n: 4
+    line: 3
+    at: 數人飲之不足
+    text: >
+      **數** shù "several" (read shǔ as the verb "to count"). The two lines are a perfect parallel
+      pair: 數人飲之 | 不足 / 一人飲之 | 有餘. **足** "enough" and **餘** "surplus". The whole
+      story will pun on 足, which also means "foot".
+  - n: 5
+    line: 5
+    at: 請
+    text: >
+      **請** qǐng "please (let us) …": a polite proposal. **畫地為蛇** "draw on the ground to make a
+      snake": 為 wéi "to make, to be (as)".
+  - n: 6
+    line: 8
+    at: 且
+    text: >
+      **且** qiě before a verb = "about to": 且飲之 "was about to drink it". (Elsewhere 且 means
+      "and, moreover".) **引** yǐn "to draw, pull towards oneself".
+  - n: 7
+    line: 9
+    at: 乃
+    text: >
+      **乃** nǎi "then, thereupon", often with a sense of surprise or contrast: "but then he …".
+      Compare 因 (→ L1 n.5) and 遂 (n. 11).
+  - n: 8
+    line: 11
+    at: 為之足
+    text: >
+      **為之足** wéi zhī zú "make feet for it": 為 takes two objects, 之 "it (the snake)" and 足
+      "feet". Some editions and teachers read it wèi zhī zú "draw feet *for* it", with 為 as a
+      preposition; the meaning is the same.
+  - n: 9
+    line: 12
+    at: 未
+    text: >
+      **未** wèi = "not yet". 未成 "(he had) not yet finished". Compare 不 (simple "not") and 弗 (→
+      L2 n.8). 未 often implies "but it will / should happen".
+  - n: 10
+    line: 15
+    at: 固
+    text: >
+      **固** gù "certainly, by nature, of course": 蛇固無足 "snakes, by their nature, have no
+      feet". **安** ān in line 17 is a question word, "how? where?": 子安能 "how can you …?"
+      — not "peaceful".
+  - n: 11
+    line: 17
+    at: 遂
+    text: >
+      **遂** suì "and so, thereupon, then (as a result)". **飲其酒** "drank *his* wine": 其 is the
+      would-be winner's — it was his by rights.
+  - n: 12
+    line: 19
+    at: 亡
+    text: >
+      **亡** wáng = "to lose" (and "to flee, to perish"), not only "to die". 終亡其酒 "in the end
+      lost his wine". **終** zhōng "in the end". The idiom 畫蛇添足 "draw a snake and add feet"
+      means to spoil something by overdoing it.
+
+glossary:
+  - {w: 祠, py: cí, en: "to make an offering (to ancestors)", checked: [cyz]}
+  - {w: 賜, py: cì, en: "to give (to an inferior)", checked: [cyz]}
+  - {w: 舍人, py: shè rén, en: "retainers, household men", checked: []}
+  - {w: 卮, py: zhī, en: wine flagon, checked: [cyz]}
+  - {w: 酒, py: jiǔ, en: wine, checked: []}
+  - {w: 相, py: xiāng, en: "each other", checked: [cyz]}
+  - {w: 數, py: shù, en: several, checked: [cyz]}
+  - {w: 飲, py: yǐn, en: to drink, checked: [cyz]}
+  - {w: 足, py: zú, en: "enough; foot", checked: [cyz]}
+  - {w: 餘, py: yú, en: "surplus, more than enough", checked: [cyz]}
+  - {w: 請, py: qǐng, en: "please, let us …", checked: [cyz]}
+  - {w: 畫, py: huà, en: to draw, checked: [cyz]}
+  - {w: 蛇, py: shé, en: snake, checked: []}
+  - {w: 先, py: xiān, en: first, checked: [cyz]}
+  - {w: 成, py: chéng, en: "to complete, be finished", checked: [cyz]}
+  - {w: 引, py: yǐn, en: to pull towards oneself, checked: [cyz]}
+  - {w: 且, py: qiě, en: about to, checked: [cyz]}
+  - {w: 乃, py: nǎi, en: "then, thereupon", checked: [cyz]}
+  - {w: 持, py: chí, en: to hold, checked: [cyz]}
+  - {w: 未, py: wèi, en: not yet, checked: [cyz]}
+  - {w: 奪, py: duó, en: "to snatch, seize", checked: [cyz]}
+  - {w: 固, py: gù, en: "by nature, certainly", checked: [cyz]}
+  - {w: 安, py: ān, en: "how? (question word)", checked: [cyz]}
+  - {w: 遂, py: suì, en: "thereupon, and so", checked: [cyz]}
+  - {w: 終, py: zhōng, en: in the end, checked: [cyz]}
+  - {w: 亡, py: wáng, en: to lose, checked: [cyz]}
+
+exercise:
+  - h: "未知生，焉知死？"
+    py: "Wèi zhī shēng, yān zhī sǐ?"
+    src: 論語·先進
+    en: "Not yet understanding life, how could one understand death?"
+    tests: "未, 焉 = 安 \"how\""
+  - h: "亡羊而補牢，未為遲也。"
+    py: "Wáng yáng ér bǔ láo, wèi wéi chí yě."
+    src: 戰國策·楚策四
+    en: "To mend the pen after losing a sheep is not yet too late."
+    tests: "亡 = lose, 未, 而"
+  - h: "泉涸，魚相與處於陸，相呴以濕，相濡以沫，不如相忘於江湖。"
+    py: "Quán hé, yú xiāng yǔ chǔ yú lù, xiāng xǔ yǐ shī, xiāng rú yǐ mò, bù rú xiāng wàng yú jiāng hú."
+    src: 莊子·大宗師
+    en: "When the spring dries up, the fish are left together on dry land; they moisten each other with their breath and wet each other with their spittle. Better to forget each other in the rivers and lakes."
+    tests: "相 = each other, 於"
+
+
+culture: >
+  The frame story: 昭陽 Zhao Yang, chief minister and general of Chu, has crushed Wei and is
+  marching on Qi. Qi sends 陳軫 Chen Zhen to him. After the fable Chen Zhen points out that
+  Zhao Yang already holds the highest rank Chu can give; even if he wins, he gains nothing more,
+  and if he loses, he loses everything — like the man who drew the feet. Zhao Yang turned back.

@@ -1,0 +1,206 @@
+id: 4
+slug: ke-zhou
+title: 刻舟求劍
+title_py: Kè zhōu qiú jiàn
+title_en: Notching the Boat to Find the Sword
+source:
+  work: 呂氏春秋·察今
+  author: compiled under 呂不韋 Lü Buwei (d. 235 BC)
+  period: late Warring States (c. 239 BC)
+  text_from: >
+    《呂氏春秋·慎大覽·察今》; first sentence as quoted in 王力《古代漢語》 (with 於 for its 于),
+    the rest matched against two published editions.
+status: draft
+
+intro: >
+  The *Springs and Autumns of Master Lü* is an encyclopedia commissioned by Lü Buwei, chancellor of
+  Qin, from the scholars he kept at his court. The chapter "Examining the Present" (察今) argues the
+  same point as L1: laws must change with the times. This fable brings two important new tools:
+  所, which turns a verb into "the place / thing that …", and the rhetorical question 不亦…乎.
+
+lines:
+  - h: "楚人有涉江者，"
+    py: "Chǔ rén yǒu shè jiāng zhě,"
+    en: "A man of Chu was crossing the river."
+    lit: "Chu people there-was crossing river one"
+  - h: "其劍自舟中墜於水，"
+    py: "qí jiàn zì zhōu zhōng zhuì yú shuǐ,"
+    en: "His sword fell from the boat into the water."
+  - h: "遽契其舟，曰："
+    py: "jù qì qí zhōu, yuē:"
+    en: "At once he cut a notch in the boat, saying:"
+  - h: "「是吾劍之所從墜。」"
+    py: "Shì wú jiàn zhī suǒ cóng zhuì."
+    en: "\"This is where my sword fell from.\""
+    lit: "this my sword 's place-from-which fell"
+  - h: "舟止，"
+    py: "Zhōu zhǐ,"
+    en: "When the boat stopped,"
+  - h: "從其所契者入水求之。"
+    py: "cóng qí suǒ qì zhě rù shuǐ qiú zhī."
+    en: "he went into the water from the place he had notched, to look for it."
+  - h: "舟已行矣，"
+    py: "Zhōu yǐ xíng yǐ,"
+    en: "The boat had moved on,"
+  - h: "而劍不行，"
+    py: "ér jiàn bù xíng,"
+    en: "but the sword had not."
+  - h: "求劍若此，"
+    py: "qiú jiàn ruò cǐ,"
+    en: "To look for a sword like this —"
+  - h: "不亦惑乎？"
+    py: "bù yì huò hū?"
+    en: "isn't that foolish?"
+  - h: "以此故法為其國，"
+    py: "Yǐ cǐ gù fǎ wéi qí guó,"
+    en: "To run one's state with these old laws"
+  - h: "與此同。"
+    py: "yǔ cǐ tóng."
+    en: "is just the same."
+  - h: "時已徙矣，"
+    py: "Shí yǐ xǐ yǐ,"
+    en: "The times have moved on,"
+  - h: "而法不徙，"
+    py: "ér fǎ bù xǐ,"
+    en: "but the laws have not;"
+  - h: "以此為治，"
+    py: "yǐ cǐ wéi zhì,"
+    en: "to govern like this —"
+  - h: "豈不難哉！"
+    py: "qǐ bù nán zāi!"
+    en: "how could it not be hard!"
+
+notes:
+  - n: 1
+    line: 0
+    at: 涉江
+    text: >
+      **涉** shè "to cross (a river), wade". **江** jiāng is *the* River, the Yangzi, just as 河 is
+      the Yellow River. Only later did 江 and 河 become general words for "river" (古今詞義).
+      楚人有涉江者 has the same shape as L1's opening (→ L1 n.2).
+  - n: 2
+    line: 1
+    at: 自舟中墜於水
+    text: >
+      Two prepositions: **自** "from" (自舟中 "from inside the boat") and **於** "into, at"
+      (墜於水 "fell into the water"). Notice the order: 自 phrases come *before* the verb, 於
+      phrases *after* it. 墜 zhuì "to fall, drop".
+  - n: 3
+    line: 2
+    at: 遽契
+    text: >
+      **遽** jù "at once, hastily" (modern 立刻 or 急忙); it shows the man's panic. **契** qì "to
+      carve, notch" (the same word is written 鍥). The modern meaning "contract" comes from notched
+      wooden tallies.
+  - n: 4
+    line: 3
+    at: 是
+    text: >
+      **是 = "this"**, not "is" (→ L1 n.11). 是吾劍之所從墜 is a judgment sentence with no
+      verb: "this [is] the place my sword fell from".
+  - n: 5
+    line: 3
+    at: 所從墜
+    text: >
+      **所 + (preposition) + verb = "the place / thing that …"**. 所 makes a verb into a noun
+      phrase that refers to its object or circumstance: 所墜 "what fell"; 所從墜 "where (something)
+      fell *from*". Put a subject + 之 in front: 吾劍之所從墜 "the place my sword fell from". In line
+      6, 其所契者 "the place he had notched" adds 者 at the end, with no change of meaning.
+  - n: 6
+    line: 6
+    at: 已行矣
+    text: >
+      **已 … 矣** "already … (now)": 已 yǐ "already" before the verb, 矣 (→ L3 n.5) at the end
+      for the completed change. Two different characters both read yǐ. And **行** here is "to move,
+      go", not "to walk" — it's used of the boat (→ L1 n.3).
+  - n: 7
+    line: 8
+    at: 若此
+    text: >
+      **若此** "like this" (若 = 如 "to be like"; 此 "this"). 此 is the ordinary demonstrative
+      "this"; 是 (n. 4) is "this" used to sum up or point back.
+  - n: 8
+    line: 9
+    at: 不亦惑乎
+    text: >
+      **不亦 … 乎** is a rhetorical question expecting "yes": "isn't it (also) …?". You already met
+      it in the first line of the 論語 (→ L1 exercise 2: 不亦說乎). **乎** hū is the question
+      particle; **惑** huò "confused, deluded, foolish".
+  - n: 9
+    line: 10
+    at: 故法為其國
+    text: >
+      **故** gù here = "old, former" (故法 "old laws"; compare 故鄉 "old home"). **為** wéi
+      "to manage, run": 為國 "to run a state". 以 A 為 B would be "regard A as B", but here 以此故法
+      is simply "with these old laws" (→ L1 n.10).
+  - n: 10
+    line: 12
+    at: 徙
+    text: >
+      **徙** xǐ "to move, shift" — used of people, capitals, and here of the times. The author
+      mirrors the story: the boat moved, the sword didn't; the times moved, the laws didn't.
+  - n: 11
+    line: 15
+    at: 豈不難哉
+    text: >
+      **豈 … 哉** "how could …?!": 豈 qǐ starts a rhetorical question, 哉 zāi ends an exclamation.
+      豈不難哉 "how could it not be difficult!" = it is certainly difficult.
+
+glossary:
+  - {w: 涉, py: shè, en: "to cross (a river)", checked: [cyz]}
+  - {w: 江, py: jiāng, en: "the Yangzi; (later) river", checked: [cyz]}
+  - {w: 劍, py: jiàn, en: sword, checked: []}
+  - {w: 自, py: zì, en: from, checked: [cyz]}
+  - {w: 舟, py: zhōu, en: boat, checked: [cyz]}
+  - {w: 墜, py: zhuì, en: to fall, drop, checked: [cyz]}
+  - {w: 遽, py: jù, en: "at once, hastily", checked: [cyz]}
+  - {w: 契, py: qì, en: to carve a notch, checked: [cyz]}
+  - {w: 是, py: shì, en: "this (summing up)", checked: [cyz]}
+  - {w: 所, py: suǒ, en: "nominaliser: the place / thing that …", checked: [cyz]}
+  - {w: 從, py: cóng, en: from, checked: [cyz]}
+  - {w: 止, py: zhǐ, en: to stop, checked: [cyz]}
+  - {w: 入, py: rù, en: to enter, checked: [cyz]}
+  - {w: 求, py: qiú, en: "to look for, seek", checked: [cyz]}
+  - {w: 已, py: yǐ, en: already, checked: [cyz]}
+  - {w: 行, py: xíng, en: "to move, go", checked: [cyz]}
+  - {w: 若, py: ruò, en: "like, as", checked: [cyz]}
+  - {w: 此, py: cǐ, en: this, checked: [cyz]}
+  - {w: 亦, py: yì, en: "also (不亦…乎 isn't it …?)", checked: [cyz]}
+  - {w: 惑, py: huò, en: "deluded, foolish", checked: [cyz]}
+  - {w: 乎, py: hū, en: question particle, checked: [cyz]}
+  - {w: 故, py: gù, en: "old, former", checked: [cyz]}
+  - {w: 法, py: fǎ, en: "law, method", checked: [cyz]}
+  - {w: 時, py: shí, en: the times, checked: [cyz]}
+  - {w: 徙, py: xǐ, en: "to move, shift", checked: [cyz]}
+  - {w: 豈, py: qǐ, en: "how could …? (rhetorical)", checked: [cyz]}
+  - {w: 難, py: nán, en: difficult, checked: [cyz]}
+  - {w: 哉, py: zāi, en: exclamatory particle, checked: [cyz]}
+
+exercise:
+  - h: "學而時習之，不亦說乎？有朋自遠方來，不亦樂乎？"
+    py: "Xué ér shí xí zhī, bù yì yuè hū? Yǒu péng zì yuǎn fāng lái, bù yì lè hū?"
+    src: 論語·學而
+    en: "To learn and practise it at the right times — is that not a pleasure? To have friends come from afar — is that not a joy?"
+    tests: "不亦…乎, 自"
+  - h: "己所不欲，勿施於人。"
+    py: "Jǐ suǒ bù yù, wù shī yú rén."
+    src: 論語·衛靈公
+    en: "What you yourself do not want, do not do to others."
+    tests: "所 (所不欲 \"what one doesn't want\"), 於"
+  - h: "是可忍也，孰不可忍也？"
+    py: "Shì kě rěn yě, shú bù kě rěn yě?"
+    src: 論語·八佾
+    en: "If this can be tolerated, what cannot?"
+    tests: "是 = this, 可 + verb (→ L1 n.8)"
+  - h: "逝者如斯夫！不舍晝夜。"
+    py: "Shì zhě rú sī fú! Bù shě zhòu yè."
+    src: 論語·子罕
+    en: "What passes away is like this, day and night without ceasing!"
+    tests: "如 = 若, 者, 夫 (exclamatory, at the end)"
+
+culture: >
+  Lü Buwei, a merchant, became chancellor of Qin and patron of the young king who would become the
+  First Emperor. He had the book displayed at the gate of the Qin capital and offered a thousand
+  pieces of gold to anyone who could add or remove a single character (一字千金). Like Han Fei,
+  the authors of 察今 argue against copying the laws of the ancient kings: "times change, so laws
+  must change".

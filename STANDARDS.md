@@ -37,6 +37,12 @@ lessons/NNN-slug.yaml
 | `exercise[]` | real sentences from other texts re-using the lesson's words: `h`, `py`, `src`, `en` |
 | `culture` | optional short cultural note |
 
+**Review lessons** (`kind: review`, every 7th lesson) have no `lines`, `notes` or `glossary`.
+Instead, `recap[]` lists the points to revise: `topic`, `text`, `refs` (notes where the point was
+taught, as `L3 n.5`) and `examples` (phrases copied from earlier lessons). The build checks that
+every ref exists and every example really occurs in an earlier lesson. `exercise[]` works as in
+reading lessons, with sentences not used before.
+
 Simplified characters are **never typed by hand**: `tools/build.py` derives them with OpenCC
 (`t2s`), so the two scripts can't drift. If OpenCC gets a character wrong for the classical sense,
 add an override in `tools/overrides.yaml`.

@@ -11,7 +11,7 @@ throughout.
 ## Layout
 
 ```
-lessons/NNN-slug.yaml   one lesson per file (schema in STANDARDS.md §2)
+lessons/NNN-slug.yaml   one lesson per file (schema in STANDARDS.md §2; kind: review for review lessons)
 tools/build.py          validates lessons, adds simplified forms → app/course.json + dist/wenyan.html
 tools/overrides.yaml    fixes for OpenCC in classical contexts
 app/index.html          the reader (loads course.json)
@@ -24,14 +24,21 @@ python3 tools/build.py
 python3 -m http.server -d app   # or just open dist/wenyan.html
 ```
 
-In the reader: tap a character for its gloss, tap a superscript number to jump to its note.
+In the reader: tap a character for its gloss, tap a superscript number to open its note. In review
+lessons, tap a reference (L3 n.5) to jump to that note.
 **Cover** blurs the translation the Assimil way: read the Chinese, then tap a line to check.
 
 ## Status
 
 | # | Lesson | Source | Status |
 |---|---|---|---|
-| 1 | 守株待兔 | 韓非子·五蠹 | draft (5 glosses awaiting a Wiktionary check) |
+| 1 | 守株待兔 | 韓非子·五蠹 | draft: 5 glosses await a Wiktionary check |
+| 2 | 自相矛盾 | 韓非子·難一 | draft: 1 gloss pending |
+| 3 | 揠苗助長 | 孟子·公孫丑上 | draft: 6 glosses pending |
+| 4 | 刻舟求劍 | 呂氏春秋·察今 | draft: 1 gloss pending |
+| 5 | 畫蛇添足 | 戰國策·齊策二 | draft: 3 glosses pending |
+| 6 | 狐假虎威 | 戰國策·楚策一 | draft: 8 glosses pending; text and notes match 王力《古代漢語》 |
+| 7 | 複習一 | review of 1–6 | draft |
 
 ## License
 

@@ -84,6 +84,15 @@ sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;
 .e details p{margin:4px 0 0}
 .e .tests{font-size:13px;color:var(--ink-2)}
 .culture{max-width:760px;font-size:16px;background:var(--paper-2);border-radius:10px;padding:18px 22px}
+.recap{display:grid;gap:14px}
+.rc{display:grid;grid-template-columns:34px 1fr;gap:14px;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;background:var(--paper)}
+.rn{width:30px;height:30px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 14px/30px var(--en);text-align:center}
+.rc h3{margin:2px 0 6px;font:600 17px var(--en)}
+.rc p{margin:0 0 10px;font-size:15.5px}
+.rx{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
+.rx span{font:20px/1.4 var(--zh);letter-spacing:.04em}
+.refs{display:flex;flex-wrap:wrap;gap:6px}
+.ref{font:12px var(--en);color:var(--seal);background:var(--seal-soft);border:0;border-radius:999px;padding:3px 10px;cursor:pointer}
 #pop{position:fixed;z-index:20;max-width:300px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 8px 28px #0004;display:none}
 #pop .c{font:600 26px var(--zh)}
 #pop .p{font-style:italic;opacity:.75;margin-left:8px}
@@ -168,14 +177,51 @@ html.cover .ln.peek .en-inline{filter:none;opacity:1}
     return out;
   }
 
+  const exerciseHTML = () => L.exercise ? `<h2>Exercise · translate</h2><div class="ex">${L.exercise.map(e => `
+        <div class="e"><div class="zh">${esc(Z(e, "h"))}</div><div class="py">${esc(e.py)}</div>
+        <div class="src">${esc(e.src)}</div>
+        <details><summary>Answer</summary><p>${esc(e.en)}</p><p class="tests">Practises: ${esc(e.tests || "")}</p></details></div>`).join("")}</div>` : "";
+
+  function renderReview(seal){
+    $("#app").innerHTML = `
+      <section class="hero">
+        <div class="seal" aria-hidden="true">${seal}</div>
+        <div>
+          <div class="kicker">Lesson ${L.id} · Review</div>
+          <h1>${esc(Z(L, "title"))}</h1>
+          <div class="sub">${esc(L.title_py)} — ${esc(L.title_en)}</div>
+        </div>
+      </section>
+      <p class="intro">${md(L.intro)}</p>
+      <div class="meta"><span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
+      <h2>What you've learned</h2>
+      <div class="recap">${L.recap.map((r, i) => `
+        <div class="rc"><div class="rn">${i + 1}</div><div>
+          <h3>${md(r.topic)}</h3><p>${md(r.text)}</p>
+          ${r.examples ? `<div class="rx">${(simp ? r.examples_s : r.examples).map(x => `<span>${esc(x)}</span>`).join("")}</div>` : ""}
+          <div class="refs">${(r.refs || []).map(x => `<button class="ref" data-ref="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+        </div></div>`).join("")}</div>
+      ${exerciseHTML()}
+      <footer>Exercise texts: public domain. Course content CC BY-SA 4.0.</footer>`;
+  }
+
+  function goRef(ref){
+    const m = /^L(\d+) n\.(\d+)$/.exec(ref); if (!m) return;
+    const idx = course.lessons.findIndex(l => l.id === +m[1]); if (idx < 0) return;
+    L = course.lessons[idx]; $("#lesson").value = idx; store.set("lesson", idx); render();
+    const n = $("#n" + m[2]); if (!n) return;
+    n.scrollIntoView({block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash");
+  }
+
   function render(){
     const seal = [...L.title_s && simp ? L.title_s : L.title].slice(0, 4).map(c => `<span>${esc(c)}</span>`).join("");
+    if (L.kind === "review") return renderReview(seal);
     const lines = L.lines;
     $("#app").innerHTML = `
       <section class="hero">
         <div class="seal" aria-hidden="true">${seal}</div>
         <div>
-          <div class="kicker">Lesson ${L.id} · ${esc(L.source.work)}</div>
+          <div class="kicker">Lesson ${L.id} · ${esc(simp && L.source.work_s ? L.source.work_s : L.source.work)}</div>
           <h1>${esc(Z(L, "title"))}</h1>
           <div class="sub">${esc(L.title_py)} — ${esc(L.title_en)}</div>
         </div>
@@ -201,10 +247,7 @@ html.cover .ln.peek .en-inline{filter:none;opacity:1}
         <div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><span class="d">${esc(g.en)}</span>
         ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>
 
-      ${L.exercise ? `<h2>Exercise · translate</h2><div class="ex">${L.exercise.map(e => `
-        <div class="e"><div class="zh">${esc(Z(e, "h"))}</div><div class="py">${esc(e.py)}</div>
-        <div class="src">${esc(e.src)}</div>
-        <details><summary>Answer</summary><p>${esc(e.en)}</p><p class="tests">Practises: ${esc(e.tests || "")}</p></details></div>`).join("")}</div>` : ""}
+      ${exerciseHTML()}
 
       ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture)}</div>` : ""}
       <footer>Text: public domain (${esc(L.source.text_from)}). Course content CC BY-SA 4.0.</footer>`;
@@ -249,6 +292,8 @@ html.cover .ln.peek .en-inline{filter:none;opacity:1}
     const w = e.target.closest(".w"), nn = e.target.closest("sup.nn"), ln = e.target.closest(".ln");
     if (e.target.closest("#pop .goto")){ const n = $("#n" + e.target.closest(".goto").dataset.n); hidePop(); n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); return; }
     if (e.target.closest("#pop")) return;
+    const ref = e.target.closest(".ref");
+    if (ref){ goRef(ref.dataset.ref); return; }
     if (nn){ showNote(nn); e.stopPropagation(); return; }
     if (w){ showPop(w); e.stopPropagation(); return; }
     hidePop();

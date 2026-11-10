@@ -1,0 +1,188 @@
+id: 2
+slug: mao-dun
+title: 自相矛盾
+title_py: Zì xiāng máo dùn
+title_en: The Spear and the Shield
+source:
+  work: 韓非子·難一
+  author: 韓非 (c. 280–233 BC)
+  period: Warring States
+  text_from: >
+    《韓非子·難一》, as in Japanese Wikibooks 中学校国語 漢文/矛盾 (CC BY-SA), punctuation
+    modernised; closing sentence matched verbatim against several editions. Many Chinese school
+    editions write 盾 for 楯 and read 物莫能陷也 in line 3 (see n. 1, n. 4).
+status: draft
+
+intro: >
+  Han Fei again. In the chapter "Objections I" (難一) he argues that the Confucians can't
+  praise the sage-king Yao as a perfect ruler *and* praise Shun for fixing the problems of Yao's
+  reign: one of the two claims must be false. To make the point he tells this story, which gave
+  Chinese its word for "contradiction", 矛盾 "spear-shield". This lesson's big new idea is the
+  little word 之 placed between a subject and its predicate.
+
+lines:
+  - h: "楚人有鬻楯與矛者，"
+    py: "Chǔ rén yǒu yù dùn yǔ máo zhě,"
+    en: "There was a man of Chu who sold shields and spears."
+  - h: "譽之曰："
+    py: "yù zhī yuē:"
+    en: "He praised them, saying:"
+  - h: "「吾楯之堅，莫能陷也。」"
+    py: "Wú dùn zhī jiān, mò néng xiàn yě."
+    en: "\"My shields are so hard that nothing can pierce them.\""
+    lit: "my shield 's hardness, nothing can pierce"
+  - h: "又譽其矛曰："
+    py: "Yòu yù qí máo yuē:"
+    en: "Then he praised his spears, saying:"
+  - h: "「吾矛之利，於物無不陷也。」"
+    py: "Wú máo zhī lì, yú wù wú bù xiàn yě."
+    en: "\"My spears are so sharp that there is nothing they can't pierce.\""
+    lit: "my spear 's sharpness, among things there-is-none not pierced"
+  - h: "或曰："
+    py: "Huò yuē:"
+    en: "Someone said:"
+  - h: "「以子之矛，陷子之楯，何如？」"
+    py: "Yǐ zǐ zhī máo, xiàn zǐ zhī dùn, hé rú?"
+    en: "\"What if you used your spear to pierce your shield?\""
+  - h: "其人弗能應也。"
+    py: "Qí rén fú néng yìng yě."
+    en: "The man could not answer."
+  - h: "夫不可陷之楯與無不陷之矛，"
+    py: "Fú bù kě xiàn zhī dùn yǔ wú bù xiàn zhī máo,"
+    en: "Now, a shield that cannot be pierced and a spear that pierces everything"
+  - h: "不可同世而立。"
+    py: "bù kě tóng shì ér lì."
+    en: "cannot stand together in the same world."
+
+notes:
+  - n: 1
+    line: 0
+    at: 鬻楯
+    text: >
+      **鬻** yù = "to sell" (the everyday word is 賣). **楯** dùn = "shield", written with the
+      wood radical because shields were wooden; later editions and the idiom write **盾**. Both
+      are the same word. 與 joins two nouns: 楯**與**矛 "shields *and* spears" (compare 而, which
+      joins verbs: → L1 n.4).
+  - n: 2
+    line: 1
+    at: 譽之
+    text: >
+      **之 as an object pronoun**: 譽**之** "praised *them*". After a verb, 之 means him / her /
+      it / them; it can never be a subject. Expect it constantly: 揠之 "pull at them", 求之
+      "look for it", 飲之 "drink it" in the next lessons. **曰** yuē "to say" introduces direct
+      speech.
+  - n: 3
+    line: 2
+    at: 吾楯之堅
+    text: >
+      **Subject + 之 + predicate.** 吾楯堅 would be a sentence: "my shield is hard". Put 之
+      between subject and predicate — 吾楯**之**堅 — and the sentence becomes a noun phrase, "the
+      hardness of my shield", which can then be commented on: "(as for) the hardness of my shield —
+      nothing can pierce it". This is one of the most frequent patterns in Classical Chinese;
+      you'll meet it in almost every lesson from now on (吾矛之利 in line 5).
+  - n: 4
+    line: 2
+    at: 莫能陷
+    text: >
+      **莫** mò = "nothing / no one": 莫能陷 "nothing can pierce (it)". 莫 is a pronoun that
+      contains its own negation, so there is no 不. 陷 xiàn = "to pierce, break into" (its core
+      meaning is "to fall into a pit"). Many editions read 物莫能陷也, "of things, none can
+      pierce it", with no change in meaning.
+  - n: 5
+    line: 4
+    at: 於物無不陷
+    text: >
+      **無不 = "there is none that does not" = everything.** 無 "there is no …", 不 "not":
+      two negatives make a strong positive. **於** yú "among, with regard to": 於物 "among
+      things". Compare 莫 in n. 4: the merchant's two boasts are built as mirror images.
+  - n: 6
+    line: 5
+    at: 或
+    text: >
+      **或** huò as a subject = "someone". (In modern Chinese 或 means "or"; that sense exists
+      too, but at the head of a clause 或曰 is "someone said".)
+  - n: 7
+    line: 6
+    at: 子之矛
+    text: >
+      **子** zǐ = "you", a polite address between equals ("sir"). 子之矛 "your spear": here 之
+      is the ordinary attributive 之 (→ L1 n.10). 以 X V Y "use X to V Y" (→ L1 n.10).
+      **何如** hé rú "how would it be?": the question word 何 comes *before* the verb 如.
+  - n: 8
+    line: 7
+    at: 弗能應
+    text: >
+      **弗** fú is a negative like 不, but typically used before a transitive verb whose object is
+      left out ("could not answer *it*"). 其人 "that man" — 其 as a demonstrative here, not "his"
+      (→ L1 n.6). 應 yìng "to respond".
+  - n: 9
+    line: 8
+    at: 夫
+    text: >
+      **夫** fú at the start of a sentence announces a general statement or comment: "Now, …".
+      Read fú, not fū ("man, husband"). Then 不可陷之楯 "a shield that cannot be pierced": a
+      whole verb phrase + 之 + noun = a relative clause (→ L1 n.8 for 不可 + verb).
+  - n: 10
+    line: 9
+    at: 同世而立
+    text: >
+      **同世而立** "stand in the same age". 而 links the manner (同世 "sharing an age") to the
+      verb 立 "to stand" (→ L1 n.4). The idiom 自相矛盾 "to contradict oneself" (lit.
+      "self mutually spear-shield") is a later coinage; the story itself never uses 自相.
+
+glossary:
+  - {w: 楚, py: Chǔ, en: "Chu, the great southern state", checked: [cyz]}
+  - {w: 鬻, py: yù, en: to sell, checked: [cyz]}
+  - {w: 楯, py: dùn, en: "shield (= 盾)", checked: [cyz]}
+  - {w: 與, py: yǔ, en: "and (joins nouns)", checked: [cyz]}
+  - {w: 矛, py: máo, en: spear, checked: [cyz]}
+  - {w: 譽, py: yù, en: to praise, extol, checked: [cyz]}
+  - {w: 曰, py: yuē, en: to say, checked: [cyz]}
+  - {w: 吾, py: wú, en: "I, my", checked: [cyz]}
+  - {w: 堅, py: jiān, en: hard, solid, checked: [cyz]}
+  - {w: 莫, py: mò, en: "nothing, no one", checked: [cyz]}
+  - {w: 能, py: néng, en: can, be able to, checked: [cyz]}
+  - {w: 陷, py: xiàn, en: to pierce, break through, checked: [cyz]}
+  - {w: 又, py: yòu, en: "again, then also", checked: [cyz]}
+  - {w: 利, py: lì, en: sharp, checked: [cyz]}
+  - {w: 於, py: yú, en: "among, with regard to", checked: [cyz]}
+  - {w: 物, py: wù, en: "thing(s)", checked: [cyz]}
+  - {w: 無, py: wú, en: "there is no …", checked: [cyz]}
+  - {w: 或, py: huò, en: someone, checked: [cyz]}
+  - {w: 子, py: zǐ, en: "you (polite)", checked: [cyz]}
+  - {w: 何如, py: hé rú, en: "how is it? what about …?", checked: []}
+  - {w: 弗, py: fú, en: "not (before a verb, object left out)", checked: [cyz]}
+  - {w: 應, py: yìng, en: to respond, answer, checked: [cyz]}
+  - {w: 夫, py: fú, en: "now (opens a general statement)", checked: [cyz]}
+  - {w: 同, py: tóng, en: same; together, checked: [cyz]}
+  - {w: 世, py: shì, en: "age, generation, world", checked: [cyz]}
+  - {w: 立, py: lì, en: to stand, checked: [cyz]}
+
+exercise:
+  - h: "莫我知也夫！"
+    py: "Mò wǒ zhī yě fú!"
+    src: 論語·憲問
+    en: "No one understands me!"
+    tests: "莫 = no one (note the object 我 moves before the verb after 莫)"
+  - h: "民無信不立。"
+    py: "Mín wú xìn bù lì."
+    src: 論語·顏淵
+    en: "Without trust, the people cannot stand."
+    tests: "無, 立"
+  - h: "燕雀安知鴻鵠之志哉！"
+    py: "Yàn què ān zhī hóng hú zhī zhì zāi!"
+    src: 史記·陳涉世家
+    en: "How could swallows and sparrows know the ambitions of a swan!"
+    tests: "之 (attributive)"
+  - h: "道不同，不相為謀。"
+    py: "Dào bù tóng, bù xiāng wéi móu."
+    src: 論語·衛靈公
+    en: "Those whose ways differ do not make plans together."
+    tests: "同"
+
+culture: >
+  The story is a weapon in a debate. Han Fei's opponents praised both Yao and Shun as perfect
+  sage-kings; Han Fei answers that if Shun had to correct Yao's mistakes, Yao wasn't perfect, and
+  if Yao was perfect, Shun had nothing to correct: "you cannot praise both". The word 矛盾
+  entered modern Chinese (and Japanese, *mujun*) as the standard term for "contradiction",
+  including the Marxist "contradiction" of Mao's essay 《矛盾論》.

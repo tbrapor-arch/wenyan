@@ -1,0 +1,100 @@
+id: 7
+slug: review-1
+kind: review
+title: 複習一
+title_py: Fùxí yī
+title_en: "Review 1: Lessons 1–6"
+status: draft
+
+intro: >
+  Six fables, about 300 characters, and most of the machinery of Classical Chinese prose is already
+  in place. Re-read the six texts once more, aloud, with Cover on. Then go through the points
+  below: each one sends you back to the note where it was first explained. Finish with the
+  exercise: six new sentences from the 論語, using only what you've met.
+
+recap:
+  - topic: "有 … 者: bringing a character on stage"
+    refs: [L1 n.2, L3 n.1, L4 n.1, L5 n.1]
+    text: >
+      Place or group + 有 + verb phrase + 者 = "there was one (from X) who …". Every fable but L6
+      opens this way: 宋人有耕者 · 楚人有鬻楯與矛者 · 宋人有閔其苗之不長而揠之者 · 楚人有涉江者 ·
+      楚有祠者.
+    examples: [宋人有耕者, 楚人有涉江者, 楚有祠者]
+  - topic: "The four faces of 之"
+    refs: [L1 n.10, L2 n.2, L2 n.3, L6 n.2]
+    text: >
+      (1) between two nouns, like 的: 先王之政. (2) after a verb, "him / it / them": 譽之, 求之.
+      (3) between subject and predicate, turning a sentence into a noun phrase: 吾楯之堅 "the
+      hardness of my shield", 北方之畏昭奚恤 "the north's fearing Zhao Xixu". (4) as a verb, "to
+      go to" — not seen yet, but coming.
+    examples: [先王之政, 譽之, 吾楯之堅, 北方之畏昭奚恤也]
+  - topic: "也 and 矣"
+    refs: [L1 n.11, L3 n.5, L3 n.11]
+    text: >
+      也 closes a statement of what *is*: 皆守株之類也, A者 B者也. 矣 marks what *has come to
+      be*: 今日病矣, 苗則槁矣, 舟已行矣. A sentence with no verb + 也 is the Classical "A is B";
+      是 still means "this".
+    examples: [皆守株之類也, 不耘苗者也, 苗則槁矣, 是吾劍之所從墜]
+  - topic: "Five negatives"
+    refs: [L2 n.4, L2 n.8, L3 n.12, L5 n.9, L6 n.6]
+    text: >
+      不 plain "not" · 弗 "not (it)" · 未 "not yet" · 非 "it is not that" · 無/毋 "there is no; don't!"
+      — plus 莫 "no one / nothing", a pronoun with the negation built in. Double negatives make
+      strong positives: 無不陷 "pierces everything".
+    examples: [其人弗能應也, 未成, 非徒無益, 子無敢食我也, 莫能陷也]
+  - topic: "所 and 者"
+    refs: [L1 n.2, L4 n.5, L3 n.9]
+    text: >
+      者 follows a verb phrase: "one who V's" (耕者, 先成者, 為蛇足者). 所 precedes a verb: "what /
+      where one V's" (所從墜 "where it fell from", 所契 "what he'd notched").
+    examples: [先成者飲酒, 吾劍之所從墜, 其所契者]
+  - topic: "Words that changed meaning (古今詞義)"
+    refs: [L1 n.3, L3 n.5, L4 n.1, L5 n.12, L6 n.13, L6 n.15]
+    text: >
+      走 run (not walk) · 行 walk / move · 趨 hurry · 病 exhausted · 江 the Yangzi · 亡 lose ·
+      身 oneself · 地方 "land … square" · 其實 "the reality of it".
+    examples: [兔走觸株, 今日病矣, 終亡其酒, 今王之地方五千里]
+  - topic: "Rhetorical questions"
+    refs: [L4 n.8, L4 n.11, L5 n.10, L6 n.11]
+    text: >
+      不亦…乎 "isn't it …?" · 豈…哉 "how could …!" · 安 "how?" · 敢不…乎 "would dare not …?".
+      All of them expect the listener to agree.
+    examples: [不亦惑乎, 豈不難哉, 子安能為之足]
+  - topic: "以 and 為"
+    refs: [L1 n.10, L6 n.9, L6 n.10, L5 n.8, L1 n.9]
+    text: >
+      以 X V "use X to V" · 以 A 為 B "regard A as B" · 以為 "think that". 為 wéi "to be, make,
+      run" · 為 wèi "for" · 為 A V "be V'ed by A" (passive).
+    examples: [以子之矛, 子以我為不信, 吾為子先行, 而身為宋國笑]
+
+exercise:
+  - h: "三人行，必有我師焉。"
+    py: "Sān rén xíng, bì yǒu wǒ shī yān."
+    src: 論語·述而
+    en: "When three people walk together, there is sure to be a teacher for me among them."
+    tests: "行 = walk, 有"
+  - h: "朝聞道，夕死可矣。"
+    py: "Zhāo wén dào, xī sǐ kě yǐ."
+    src: 論語·里仁
+    en: "Hear the Way in the morning, and one may die in the evening."
+    tests: "聞, 可, 矣"
+  - h: "吾日三省吾身：為人謀而不忠乎？與朋友交而不信乎？傳不習乎？"
+    py: "Wú rì sān xǐng wú shēn: wèi rén móu ér bù zhōng hū? Yǔ péngyǒu jiāo ér bù xìn hū? Chuán bù xí hū?"
+    src: 論語·學而
+    en: "Every day I examine myself on three points: in planning for others, have I been less than loyal? With friends, have I been less than trustworthy? Have I passed on what I have not practised?"
+    tests: "吾, 身, 為 wèi, 而, 與, 信, 乎"
+  - h: "歲寒，然後知松柏之後凋也。"
+    py: "Suì hán, rán hòu zhī sōng bǎi zhī hòu diāo yě."
+    src: 論語·子罕
+    en: "Only when the year turns cold do we know that pines and cypresses are the last to wither."
+    tests: "之 between subject and predicate, 也"
+  - h: "其身正，不令而行；其身不正，雖令不從。"
+    py: "Qí shēn zhèng, bù lìng ér xíng; qí shēn bù zhèng, suī lìng bù cóng."
+    src: 論語·子路
+    en: "If he himself is upright, things get done without orders; if he himself is not upright, even his orders are not followed."
+    tests: "其, 身, 而, 從"
+  - h: "工欲善其事，必先利其器。"
+    py: "Gōng yù shàn qí shì, bì xiān lì qí qì."
+    src: 論語·衛靈公
+    en: "A craftsman who wants to do his work well must first sharpen his tools."
+    tests: "欲, 先, 利 (as a verb), 其"

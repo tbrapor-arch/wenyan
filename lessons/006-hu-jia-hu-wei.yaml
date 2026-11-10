@@ -1,0 +1,266 @@
+id: 6
+slug: hu-jia-hu-wei
+title: 狐假虎威
+title_py: Hú jiǎ hǔ wēi
+title_en: The Fox Borrows the Tiger's Might
+source:
+  work: 戰國策·楚策一
+  author: anonymous; compiled by 劉向 Liu Xiang (77–6 BC)
+  period: Warring States stories, Han compilation
+  text_from: >
+    《戰國策·楚策一·江乙對荊宣王》, as printed in 王力《古代漢語》 unit 1; its dash before 猶 is
+    replaced by a comma.
+status: draft
+
+intro: >
+  The first fable told *inside* a conversation, the way persuaders actually used them. King Xuan of
+  Chu (here called 荊, an old name for Chu) asks why the northern states fear his minister Zhao
+  Xixu. Jiang Yi, a rival of Zhao's, answers with a story. Watch three things: the 之 of L2 doing
+  heavy work in long sentences, 以 A 為 B "to regard A as B", and two words, 地方 and 其實, that
+  look modern but aren't.
+
+lines:
+  - h: "荊宣王問群臣曰："
+    py: "Jīng Xuān wáng wèn qún chén yuē:"
+    en: "King Xuan of Jing asked his ministers:"
+  - h: "「吾聞北方之畏昭奚恤也，"
+    py: "Wú wén běi fāng zhī wèi Zhāo Xīxù yě,"
+    en: "\"I hear that the north fears Zhao Xixu."
+  - h: "果誠何如？」"
+    py: "guǒ chéng hé rú?"
+    en: "Is it really so?\""
+  - h: "群臣莫對。"
+    py: "Qún chén mò duì."
+    en: "None of the ministers answered."
+  - h: "江乙對曰："
+    py: "Jiāng Yǐ duì yuē:"
+    en: "Jiang Yi replied:"
+  - h: "「虎求百獸而食之，"
+    py: "Hǔ qiú bǎi shòu ér shí zhī,"
+    en: "\"A tiger was hunting all the beasts to eat them,"
+  - h: "得狐。"
+    py: "dé hú."
+    en: "and caught a fox."
+  - h: "狐曰：『子無敢食我也！"
+    py: "Hú yuē: Zǐ wú gǎn shí wǒ yě!"
+    en: "The fox said: 'Don't you dare eat me!"
+  - h: "天帝使我長百獸，"
+    py: "Tiān dì shǐ wǒ zhǎng bǎi shòu,"
+    en: "The Lord of Heaven has made me chief of all the beasts;"
+  - h: "今子食我，"
+    py: "jīn zǐ shí wǒ,"
+    en: "if you eat me now,"
+  - h: "是逆天帝命也。"
+    py: "shì nì tiān dì mìng yě."
+    en: "that is defying the Lord of Heaven's command."
+  - h: "子以我為不信，"
+    py: "Zǐ yǐ wǒ wéi bù xìn,"
+    en: "If you think I'm lying,"
+    lit: "you take me as not truthful"
+  - h: "吾為子先行，"
+    py: "wú wèi zǐ xiān xíng,"
+    en: "I'll walk ahead of you,"
+  - h: "子隨我後，"
+    py: "zǐ suí wǒ hòu,"
+    en: "you follow behind me,"
+  - h: "觀百獸之見我而敢不走乎？』"
+    py: "guān bǎi shòu zhī jiàn wǒ ér gǎn bù zǒu hū?"
+    en: "and see whether a single beast that sees me dares not run!'"
+  - h: "虎以為然，"
+    py: "Hǔ yǐ wéi rán,"
+    en: "The tiger thought he was right,"
+  - h: "故遂與之行，"
+    py: "gù suì yǔ zhī xíng,"
+    en: "so it went along with him."
+  - h: "獸見之皆走。"
+    py: "shòu jiàn zhī jiē zǒu."
+    en: "The beasts saw them and all ran."
+  - h: "虎不知獸畏己而走也，"
+    py: "Hǔ bù zhī shòu wèi jǐ ér zǒu yě,"
+    en: "The tiger didn't realise the beasts ran because they feared *it*;"
+  - h: "以為畏狐也。"
+    py: "yǐ wéi wèi hú yě."
+    en: "it thought they feared the fox."
+  - h: "今王之地方五千里，"
+    py: "Jīn wáng zhī dì fāng wǔ qiān lǐ,"
+    en: "Now Your Majesty's land is five thousand li on each side,"
+    lit: "your land — square five-thousand li"
+  - h: "帶甲百萬，"
+    py: "dài jiǎ bǎi wàn,"
+    en: "with a million men in armour,"
+  - h: "而專屬之昭奚恤。"
+    py: "ér zhuān zhǔ zhī Zhāo Xīxù."
+    en: "and you have entrusted them all to Zhao Xixu."
+  - h: "故北方之畏奚恤也，"
+    py: "Gù běi fāng zhī wèi Xīxù yě,"
+    en: "So when the north fears Xixu,"
+  - h: "其實畏王之甲兵也，"
+    py: "qí shí wèi wáng zhī jiǎ bīng yě,"
+    en: "what it really fears is Your Majesty's army,"
+  - h: "猶百獸之畏虎也。」"
+    py: "yóu bǎi shòu zhī wèi hǔ yě."
+    en: "just as the beasts feared the tiger.\""
+
+notes:
+  - n: 1
+    line: 0
+    at: 荊宣王
+    text: >
+      **荊** Jīng is another name for Chu (楚). 宣王 King Xuan reigned 369–340 BC. **群臣** "the
+      assembled ministers". The 戰國策 is full of scenes like this: a king asks, the court falls
+      silent, one adviser speaks.
+  - n: 2
+    line: 1
+    at: 北方之畏昭奚恤也
+    text: >
+      **Subject + 之 + predicate as an object** (→ L2 n.3). 北方畏昭奚恤 would be a sentence, "the
+      north fears Zhao Xixu"; with 之 it becomes a noun phrase, "the north's fearing Zhao Xixu",
+      the object of 聞 "I hear (of)". The final 也 marks a pause before the question. The same
+      pattern returns in lines 15, 24 and 26.
+  - n: 3
+    line: 2
+    at: 果誠何如
+    text: >
+      **果** and **誠** both mean "really, truly" (果 survives in 果然 "sure enough"). 何如 "how is
+      it?" (→ L2 n.7).
+  - n: 4
+    line: 3
+    at: 莫對
+    text: >
+      **莫** "no one" (→ L2 n.4). **對** duì = to reply *to a superior*: ministers 對 the king;
+      the king 問 or 曰.
+  - n: 5
+    line: 5
+    at: 食之
+    text: >
+      **食** shí "to eat" (the modern word is 吃). Read sì when it means "to feed someone". 求 here
+      is "to hunt for, look for" (→ L4).
+  - n: 6
+    line: 7
+    at: 無敢
+    text: >
+      **無** here = **毋** wú "don't!": a prohibition. 子無敢食我也 "don't you dare eat me".
+      Classical Chinese uses 無/毋 and 勿 for "don't", where modern Chinese says 別 or 不要.
+  - n: 7
+    line: 8
+    at: 使我長百獸
+    text: >
+      **使 A V** "make A do V, have A V": a causative. **長** zhǎng (→ L3 n.2) "chief" used as a
+      verb: 長百獸 "to be chief of the hundred beasts". 百獸 "the hundred beasts" = all animals.
+  - n: 8
+    line: 10
+    at: 是逆
+    text: >
+      **是** = "this (that you'd be doing)" (→ L4 n.4). 是逆天帝命也 "this is defying the Lord of
+      Heaven's command" — 也 closes the judgment (→ L1 n.11). **逆** nì "to go against, defy".
+  - n: 9
+    line: 11
+    at: 以我為不信
+    text: >
+      **以 A 為 B** "to regard A as B": 以我為不信 "regard me as untruthful". Two lines later, 以為
+      (→ L3 n.10) "to think" is the same structure with the A left out: 虎以為然 "the tiger
+      considered (it) right". **信** xìn "truthful, trustworthy"; **然** rán "so, right".
+  - n: 10
+    line: 12
+    at: 為子先行
+    text: >
+      **為** wèi "for, on behalf of": 為子先行 "walk ahead for you". Contrast 為 wéi "to be, to
+      make" (L4, L5). And **行** = "walk" vs **走** = "run" (line 15): both in the same breath, the
+      clearest proof of → L1 n.3.
+  - n: 11
+    line: 14
+    at: 敢不走乎
+    text: >
+      **敢不 V 乎** "dare not V?": a rhetorical question meaning "none will dare *not* run" = they
+      will all run. **觀** guān "to observe, watch".
+  - n: 12
+    line: 18
+    at: 畏己而走
+    text: >
+      **己** jǐ "oneself": 畏己 "feared *it* (the tiger itself)". 己 refers back to the subject of
+      the main clause, 虎.
+  - n: 13
+    line: 20
+    at: 地方
+    text: >
+      **地方 is two words!** Read 地 | 方五千里: "(your) land — five thousand li square", i.e.
+      five thousand li from east to west and from north to south. Modern 地方 "place" is a later
+      compound; reading it here would be a classic 古今 mistake. (A 里 lǐ was roughly 400 m.)
+  - n: 14
+    line: 21
+    at: 帶甲
+    text: >
+      **帶甲** "wearing armour" = armoured soldiers. **屬** zhǔ (line 23) "to entrust": 專屬之昭奚恤
+      "entrust them solely to Zhao Xixu", with 之 = "them" (the million soldiers) and 昭奚恤 as the
+      second object.
+  - n: 15
+    line: 24
+    at: 其實
+    text: >
+      **其實** = "the reality of it", not the modern adverb "actually". The sentence is: [北方之畏
+      奚恤也] subject, [其實] "its reality", [畏王之甲兵也] predicate: "the north's fearing Xixu —
+      the truth of it is fearing Your Majesty's armies". 甲兵 "armour and weapons" = the army.
+  - n: 16
+    line: 25
+    at: 猶
+    text: >
+      **猶** yóu "to be like, just as" (also "still"). Jiang Yi closes by mapping the fable onto
+      the court: king = tiger, Zhao Xixu = fox. That's the persuader's art: never say it directly.
+
+glossary:
+  - {w: 荊, py: Jīng, en: "Jing (= Chu)", checked: [cyz]}
+  - {w: 問, py: wèn, en: to ask, checked: [cyz]}
+  - {w: 群臣, py: qún chén, en: "the ministers, the court", checked: []}
+  - {w: 聞, py: wén, en: "to hear (of)", checked: [cyz]}
+  - {w: 北方, py: běi fāng, en: "the north (the Central States)", checked: []}
+  - {w: 畏, py: wèi, en: to fear, checked: [cyz]}
+  - {w: 果, py: guǒ, en: "really, sure enough", checked: [cyz]}
+  - {w: 誠, py: chéng, en: "truly, really", checked: [cyz]}
+  - {w: 對, py: duì, en: "to reply (to a superior)", checked: [cyz]}
+  - {w: 虎, py: hǔ, en: tiger, checked: []}
+  - {w: 獸, py: shòu, en: "beast, wild animal", checked: []}
+  - {w: 食, py: shí, en: to eat, checked: [cyz]}
+  - {w: 狐, py: hú, en: fox, checked: [cyz]}
+  - {w: 敢, py: gǎn, en: to dare, checked: [cyz]}
+  - {w: 天帝, py: tiān dì, en: the Lord of Heaven, checked: []}
+  - {w: 使, py: shǐ, en: "to make (someone do)", checked: [cyz]}
+  - {w: 逆, py: nì, en: "to go against, defy", checked: [cyz]}
+  - {w: 命, py: mìng, en: command, checked: [cyz]}
+  - {w: 信, py: xìn, en: "truthful, trustworthy", checked: [cyz]}
+  - {w: 隨, py: suí, en: to follow, checked: [cyz]}
+  - {w: 後, py: hòu, en: behind, checked: [cyz]}
+  - {w: 觀, py: guān, en: "to watch, observe", checked: [cyz]}
+  - {w: 見, py: jiàn, en: to see, checked: [cyz]}
+  - {w: 然, py: rán, en: "so, right", checked: [cyz]}
+  - {w: 己, py: jǐ, en: oneself, checked: [cyz]}
+  - {w: 方, py: fāng, en: "square; on each side", checked: [cyz]}
+  - {w: 里, py: lǐ, en: "li (unit of distance)", checked: [cyz]}
+  - {w: 帶甲, py: dài jiǎ, en: "armoured soldiers", checked: []}
+  - {w: 專, py: zhuān, en: "solely, exclusively", checked: [cyz]}
+  - {w: 屬, py: zhǔ, en: to entrust, checked: [cyz]}
+  - {w: 其實, py: qí shí, en: "the reality of it", checked: []}
+  - {w: 甲兵, py: jiǎ bīng, en: "armour and weapons; the army", checked: []}
+  - {w: 猶, py: yóu, en: "just as, like", checked: [cyz]}
+
+exercise:
+  - h: "知之為知之，不知為不知，是知也。"
+    py: "Zhī zhī wéi zhī zhī, bù zhī wéi bù zhī, shì zhī yě."
+    src: 論語·為政
+    en: "To count what you know as knowing it, and what you don't know as not knowing it — that is knowledge."
+    tests: "為 = count as, 是 = this, 也"
+  - h: "人而無信，不知其可也。"
+    py: "Rén ér wú xìn, bù zhī qí kě yě."
+    src: 論語·為政
+    en: "A person without trustworthiness — I don't know how that could work."
+    tests: "信, 無, 其"
+  - h: "過猶不及。"
+    py: "Guò yóu bù jí."
+    src: 論語·先進
+    en: "Going too far is just like falling short."
+    tests: "猶"
+
+culture: >
+  The fox's trick gave Chinese the idiom 狐假虎威 "the fox borrows the tiger's majesty" (假 jiǎ
+  "to borrow" — the word itself is not in the story). It is used of underlings who throw their
+  weight around on the strength of a powerful patron. Jiang Yi's real target was his rival Zhao
+  Xixu: by reminding the king whose power it really was, he cut Zhao down to size.

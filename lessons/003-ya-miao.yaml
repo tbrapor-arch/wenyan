@@ -1,0 +1,205 @@
+id: 3
+slug: ya-miao
+title: 揠苗助長
+title_py: Yà miáo zhù zhǎng
+title_en: Pulling Up the Sprouts to Help Them Grow
+source:
+  work: 孟子·公孫丑上
+  author: 孟子 Mencius (c. 372–289 BC)
+  period: Warring States
+  text_from: >
+    《孟子·公孫丑上》, as quoted on Wiktionary 揠苗助長 (CC BY-SA); lines 1–7 also match the
+    Hong Kong EDB edition.
+status: draft
+
+intro: >
+  Mencius, the second great Confucian, is explaining to a disciple how to nourish one's "flood-like
+  qi" (浩然之氣), the moral courage that grows from always doing what is right. You can't force it,
+  he says, and you mustn't neglect it either, and he tells this story of yet another man of Song.
+  New in this lesson: the particle 矣, which marks something that *has happened* or *has become*
+  the case, and the reading 長 zhǎng "to grow".
+
+lines:
+  - h: "宋人有閔其苗之不長而揠之者，"
+    py: "Sòng rén yǒu mǐn qí miáo zhī bù zhǎng ér yà zhī zhě,"
+    en: "There was a man of Song who, worried that his sprouts weren't growing, tugged at them."
+    lit: "Song people there-was worried his sprouts' not growing and pulled them one"
+  - h: "芒芒然歸。"
+    py: "máng máng rán guī."
+    en: "He came home, worn out,"
+  - h: "謂其人曰："
+    py: "Wèi qí rén yuē:"
+    en: "and said to his family:"
+  - h: "「今日病矣，"
+    py: "Jīn rì bìng yǐ,"
+    en: "\"I'm exhausted today:"
+  - h: "予助苗長矣。」"
+    py: "yú zhù miáo zhǎng yǐ."
+    en: "I've been helping the sprouts grow!\""
+  - h: "其子趨而往視之，"
+    py: "Qí zǐ qū ér wǎng shì zhī,"
+    en: "His son hurried off to look at them;"
+  - h: "苗則槁矣。"
+    py: "miáo zé gǎo yǐ."
+    en: "the sprouts had withered."
+  - h: "天下之不助苗長者寡矣。"
+    py: "Tiān xià zhī bù zhù miáo zhǎng zhě guǎ yǐ."
+    en: "In this world, few are those who don't help their sprouts grow."
+  - h: "以為無益而捨之者，"
+    py: "Yǐ wéi wú yì ér shě zhī zhě,"
+    en: "Those who think it's no use and leave them alone"
+  - h: "不耘苗者也；"
+    py: "bù yún miáo zhě yě;"
+    en: "are those who don't weed their sprouts;"
+  - h: "助之長者，"
+    py: "zhù zhī zhǎng zhě,"
+    en: "those who help them grow"
+  - h: "揠苗者也。"
+    py: "yà miáo zhě yě."
+    en: "are those who tug at their sprouts."
+  - h: "非徒無益，"
+    py: "Fēi tú wú yì,"
+    en: "Not only is that no use —"
+  - h: "而又害之。"
+    py: "ér yòu hài zhī."
+    en: "it actually harms them."
+
+notes:
+  - n: 1
+    line: 0
+    at: 閔其苗之不長
+    text: >
+      A long first line, built like L1's 宋人有耕者: 宋人 **有** [ … ] **者** "among the people
+      of Song there was one who …" (→ L1 n.2). Inside the brackets: 閔 mǐn "to worry about"
+      (later written 憫) + its object 其苗之不長 "his sprouts' not growing", the subject + 之 +
+      predicate pattern of → L2 n.3. Then 而揠之 "and pulled at them" (→ L1 n.4, L2 n.2).
+  - n: 2
+    line: 0
+    at: 長
+    text: >
+      **長** has two readings. zhǎng = "to grow; to be the elder, to lead"; cháng = "long". Here,
+      and in the idiom 揠苗助長, it is zhǎng. Chinese often marks a change of word by a change of
+      tone or initial (破音字); the dictionary entry for 長 lists them separately.
+  - n: 3
+    line: 1
+    at: 芒芒然
+    text: >
+      **-然** rán turns a word into a description of manner: 芒芒然 "in a weary way, worn out".
+      芒芒 is a reduplicated descriptive word; commentators gloss it as 疲倦的樣子 "looking tired".
+      You'll meet many ~然 words: 忽然, 果然 and 自然 all come from this pattern.
+  - n: 4
+    line: 2
+    at: 謂其人
+    text: >
+      **謂 A 曰** "said to A": 謂 takes the person spoken to as its object. **其人** here is "his
+      household, his family". Compare L2 n.8, where 其人 meant "that man": context decides.
+  - n: 5
+    line: 3
+    at: 病矣
+    text: >
+      **病** = "exhausted, worn out", not "ill" (古今詞義 → L1 n.3). In early texts 疾 is the
+      ordinary word for illness and 病 a *serious* illness or extreme fatigue.
+      **矣** yǐ marks a new situation: "I'm (now) exhausted". 也 states what *is* (→ L1 n.11);
+      矣 states what *has come to be*. The story turns on three 矣 (lines 4, 5 and 7): he is
+      tired now, the sprouts have been "helped", and by then they have withered.
+  - n: 6
+    line: 4
+    at: 予
+    text: >
+      **予** yú = "I, me". Classical Chinese has several first-person pronouns: 吾 (L2), 我, 予/余.
+      Here the farmer is boasting.
+  - n: 7
+    line: 5
+    at: 趨而往視之
+    text: >
+      **趨** qū "to hurry, walk fast" — the middle gear between 行 "walk" and 走 "run" (→ L1 n.3).
+      **往** "to go (to)", **視** "to look at". 而 again links the manner to the action.
+  - n: 8
+    line: 6
+    at: 則
+    text: >
+      **則** zé "then, and so": here it marks what the son *found*: "the sprouts — (by then) they had
+      withered". 槁 gǎo "dried up, withered".
+  - n: 9
+    line: 7
+    at: 天下之不助苗長者寡矣
+    text: >
+      Mencius turns to the moral. The subject is a long 者-phrase: 天下之 [不助苗長] 者 "those in
+      the world who don't help their sprouts grow", and the predicate is 寡矣 "are few". **寡** guǎ
+      "few" (its opposite is 眾). In other words: almost everyone forces things.
+  - n: 10
+    line: 8
+    at: 以為
+    text: >
+      **以為** yǐ wéi "to think, consider that". Here it introduces a whole clause: 以為無益 "think
+      it is no use". (In L6 you will see 以 A 為 B "regard A as B" split around its object.)
+      **捨** shě "to give up, leave alone" (also written 舍).
+  - n: 11
+    line: 9
+    at: 者也
+    text: >
+      **A 者，B 者也** — the classic definition sentence: "A is B". Both halves are 者 phrases
+      ("those who …"), and 也 closes the judgment (→ L1 n.11). Lines 9–12 give two of them in
+      parallel: neglecting = not weeding; forcing = tugging.
+  - n: 12
+    line: 12
+    at: 非徒
+    text: >
+      **非徒 … 而又 …** "not only … but also …". 非 fēi negates a whole statement or a noun
+      ("it is not that …"), whereas 不 negates a verb. 徒 tú "merely, only". 害 "to harm".
+
+glossary:
+  - {w: 閔, py: mǐn, en: "to worry about, pity (= 憫)", checked: [cyz]}
+  - {w: 苗, py: miáo, en: sprout, young crop, checked: [cyz]}
+  - {w: 長, py: zhǎng, en: to grow, checked: [cyz]}
+  - {w: 揠, py: yà, en: to pull up, tug at, checked: [cyz]}
+  - {w: 芒芒然, py: máng máng rán, en: "worn out, weary", checked: []}
+  - {w: 歸, py: guī, en: to return home, checked: [cyz]}
+  - {w: 謂, py: wèi, en: "to say to; to call", checked: [cyz]}
+  - {w: 今日, py: jīn rì, en: today, checked: []}
+  - {w: 病, py: bìng, en: "exhausted; (seriously) ill", checked: []}
+  - {w: 矣, py: yǐ, en: "final particle: new situation, completed change", checked: [cyz]}
+  - {w: 予, py: yú, en: "I, me", checked: [cyz]}
+  - {w: 助, py: zhù, en: to help, checked: []}
+  - {w: 趨, py: qū, en: to hurry, walk fast, checked: [cyz]}
+  - {w: 往, py: wǎng, en: to go to, checked: [cyz]}
+  - {w: 視, py: shì, en: to look at, checked: [cyz]}
+  - {w: 則, py: zé, en: "then; (only to find that)", checked: [cyz]}
+  - {w: 槁, py: gǎo, en: withered, dried up, checked: [cyz]}
+  - {w: 天下, py: tiān xià, en: "the world (lit. under heaven)", checked: []}
+  - {w: 寡, py: guǎ, en: few, checked: [cyz]}
+  - {w: 以為, py: yǐ wéi, en: "to think, consider that", checked: []}
+  - {w: 益, py: yì, en: "benefit, use", checked: [cyz]}
+  - {w: 捨, py: shě, en: "to give up, leave alone (= 舍)", checked: [cyz]}
+  - {w: 耘, py: yún, en: to weed, checked: [cyz]}
+  - {w: 非, py: fēi, en: "it is not (negates a statement)", checked: [cyz]}
+  - {w: 徒, py: tú, en: "merely, only", checked: [cyz]}
+  - {w: 害, py: hài, en: to harm, checked: [cyz]}
+
+exercise:
+  - h: "學而不思則罔，思而不學則殆。"
+    py: "Xué ér bù sī zé wǎng, sī ér bù xué zé dài."
+    src: 論語·為政
+    en: "To learn without thinking is to be lost; to think without learning is dangerous."
+    tests: "而, 則"
+  - h: "甚矣吾衰也！久矣吾不復夢見周公。"
+    py: "Shèn yǐ wú shuāi yě! Jiǔ yǐ wú bù fù mèng jiàn Zhōugōng."
+    src: 論語·述而
+    en: "How far I have declined! For a long time now I have not dreamed of the Duke of Zhou."
+    tests: "矣, 也, 復 (→ L1)"
+  - h: "天生德於予，桓魋其如予何？"
+    py: "Tiān shēng dé yú yú, Huán Tuí qí rú yú hé?"
+    src: 論語·述而
+    en: "Heaven gave birth to the virtue in me — what can Huan Tui do to me?"
+    tests: "予"
+  - h: "子謂顏淵曰：「用之則行，舍之則藏，惟我與爾有是夫！」"
+    py: "Zǐ wèi Yán Yuān yuē: Yòng zhī zé xíng, shě zhī zé cáng, wéi wǒ yǔ ěr yǒu shì fú!"
+    src: 論語·述而
+    en: "The Master said to Yan Yuan: \"When employed, act; when set aside, withdraw — only you and I have this!\""
+    tests: "謂 A 曰, 則, 舍"
+
+culture: >
+  This passage is the second half of Mencius's famous answer on 浩然之氣 (Mencius 2A:2). His
+  advice: keep working at righteousness, "don't forget it, but don't help it grow" (勿忘，勿助長也).
+  The idiom 揠苗助長 (also 拔苗助長 in modern mainland usage) means to spoil something by being too
+  eager, often said of pushy parents and over-ambitious reforms.
