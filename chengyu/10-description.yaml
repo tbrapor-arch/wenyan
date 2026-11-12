@@ -1,0 +1,136 @@
+id: 10
+slug: description
+title: 描寫
+title_py: Miáoxiě
+title_en: Describing things and situations
+status: draft
+intro: >
+  成語 for describing: where something comes from (來龍去脈), how it is told (輕描淡寫, 淋漓盡致,
+  直截了當), what is there (應有盡有, 貨真價實), how stable it is (搖搖欲墜, 不堪一擊), how far apart
+  two things are (大相徑庭). Several started in a specialised field: geomancy (來龍去脈), painting
+  and drama (輕描淡寫), Zen (裝模作樣), and a novel (百花齊放, from 鏡花緣).
+frames:
+  - {f: A來B去 / AB去C, en: "'coming and going': the whole course of something", ex: [來龍去脈]}
+  - {f: 應X盡X / 貨真價實, en: "two short clauses that mirror each other", ex: [應有盡有, 貨真價實]}
+  - {f: X欲Y, en: "欲 'about to': 搖搖欲墜 'swaying, about to fall'", ex: [搖搖欲墜]}
+  - {f: 不堪 / 無足, en: "'cannot bear' / 'not enough to'", ex: [不堪一擊, 無足輕重]}
+items:
+  - w: 來龍去脈
+    py: lái lóng qù mài
+    py_tw: lái lóng qù mò
+    lit: coming-dragon-going-vein
+    en: the whole story, cause and effect
+    origin: {work: 明·無名氏《運甓記》, text: 此間前岡有塊好地，來龍去脈，靠嶺朝山, checked: [moe]}
+    note: A geomancer's term. The "dragon" and "veins" are the lines of hills and rivers that make a site lucky.
+    ex: {h: "我想知道他的计划的来龙去脉。", py: "Wǒ xiǎng zhī dào tā de jì huà de lái lóng qù mài.", py_auto: true, src: "tatoeba", en: I want to know the ins and outs of his plan.}
+  - w: 輕描淡寫
+    py: qīng miáo dàn xiě
+    lit: light-sketch-pale-write
+    en: to play down, to mention in passing
+    origin: {work: 祁彪佳《遠山堂曲品》, text: 輕描淡染, checked: [moe]}
+    ex: {h: "黃家後裔因有利害衝突，只能對黃南球食言之事輕描淡寫。", py: "Huáng jiā hòu yì yīn yǒu lì hài chōng tū, zhǐ néng duì Huáng Nánqiú shí yán zhī shì qīng miáo dàn xiě.", py_auto: true, src: "wikipedia: 羅成 (臺灣)", en: "Because of a conflict of interest, Huang's descendants could only play down the fact that Huang Nanqiu broke his word."}
+  - w: 應有盡有
+    py: yīng yǒu jìn yǒu
+    lit: should-have-all-have
+    en: to have everything one could want
+    origin: {work: 宋書·江智淵傳, text: 人所應有盡有，人所應無盡無, checked: [dcd]}
+    ex: {h: "我们应有尽有。", py: "Wǒ men yīng yǒu jìn yǒu.", py_auto: true, src: "tatoeba", en: We have everything.}
+  - w: 貨真價實
+    py: huò zhēn jià shí
+    lit: goods-real-price-honest
+    en: genuine, the real thing
+    note: A shop sign first, "real goods at honest prices".
+    ex: {h: "左书“至诚至上 货真价实”，右书“言无二价 童叟无欺”。", py: "Zuǒ shū “zhì chéng zhì shàng huò zhēn jià shí”, yòu shū “yán wú èr jià tóng sǒu wú qī”.", py_auto: true, src: "wikipedia: 天津瑞蚨祥绸布店", en: "On the left is written 'sincerity above all, real goods at honest prices'; on the right, 'one price only, fair to young and old'."}
+  - w: 搖搖欲墜
+    py: yáo yáo yù zhuì
+    lit: sway-sway-about-to-fall
+    en: tottering, on the verge of collapse
+    origin: {work: 三國演義·第一〇四回, text: 見其色昏暗，搖搖欲墜, checked: [moe]}
+    note: Zhuge Liang points at his own star, dim and wavering. He dies in the same chapter.
+    ex: {h: "这个建筑摇摇欲坠。", py: "Zhè ge jiàn zhù yáo yáo yù zhuì.", py_auto: true, src: "tatoeba", en: This building is about to collapse.}
+  - w: 字裡行間
+    py: zì lǐ háng jiān
+    lit: characters-inside-lines-between
+    en: between the lines
+    origin: {work: 梁簡文帝〈答新渝侯和詩書〉, text: 風雲吐於行間，珠玉生於字裏, checked: [dcd]}
+    ex: {h: "她写的文章字里行间总是充满浪漫。", py: "Tā xiě de wén zhāng zì lǐ háng jiān zǒng shì chōng mǎn làng màn.", py_auto: true, src: "tatoeba", en: Her writing is always full of romance between the lines.}
+  - w: 大張旗鼓
+    py: dà zhāng qí gǔ
+    lit: greatly-spread-flags-drums
+    en: on a grand scale, with great fanfare
+    ex: {h: "建設時期曾大張旗鼓宣傳為“美國最後建造的聯合車站”。", py: "Jiàn shè shí qī céng dà zhāng qí gǔ xuān chuán wéi “Měiguó zuì hòu jiàn zào de lián hé chē zhàn”.", py_auto: true, src: "wikipedia: 洛杉磯聯合車站", en: "While it was being built, it was loudly promoted as 'the last great union station built in America'."}
+  - w: 翻天覆地
+    py: fān tiān fù dì
+    lit: overturn-sky-overturn-earth
+    en: earth-shaking, complete (change)
+    ex: {h: "相比二十年前的日本，现在的日本有了翻天覆地的变化。", py: "Xiāng bǐ èr shí nián qián de Rìběn, xiàn zài de Rìběn yǒu le fān tiān fù dì de biàn huà.", py_auto: true, src: "tatoeba", en: "Compared with twenty years ago, Japan has changed completely."}
+  - w: 齊心協力
+    py: qí xīn xié lì
+    lit: same-heart-joint-strength
+    en: to pull together
+    ex: {h: "喜羊羊和灰太狼必须齐心协力解决这个问题，所以他们就这样和解了。", py: "Xǐyángyáng hé Huītàiláng bì xū qí xīn xié lì jiě jué zhè ge wèn tí, suǒ yǐ tā men jiù zhè yàng hé jiě le.", py_auto: true, src: "wikipedia: 喜羊羊", en: "Pleasant Goat and Big Big Wolf had to pull together to solve the problem, and so they made peace."}
+  - w: 得天獨厚
+    py: dé tiān dú hòu
+    lit: receive-heaven-alone-generous
+    en: richly endowed by nature, uniquely favoured
+    ex: {h: "得天獨厚的地理條件，奠定了美斯樂茶業發展的先天優勢。", py: "Dé tiān dú hòu de dì lǐ tiáo jiàn, diàn dìng le Měisīlè chá yè fā zhǎn de xiān tiān yōu shì.", py_auto: true, src: "wikipedia: 美斯乐", en: "Its exceptional geography gave Mae Salong's tea industry a natural head start."}
+  - w: 恰到好處
+    py: qià dào hǎo chù
+    lit: just-reach-good-point
+    en: just right
+    ex: {h: "申東燁表示:「成始璄真的很會做菜，調味也恰到好處。", py: "Shēn Dōngyè biǎo shì: “Chéng Shǐjǐng zhēn de hěn huì zuò cài, tiáo wèi yě qià dào hǎo chù.", py_auto: true, src: "wikipedia: 成始璄", en: "Shin Dong-yup said, 'Sung Si-kyung is a really good cook, and his seasoning is just right.'"}
+  - w: 大相徑庭
+    py: dà xiāng jìng tíng
+    lit: greatly-mutual-path-courtyard
+    en: poles apart, completely different
+    note: From 莊子·逍遙遊 大有逕庭, "as far apart as the road outside the gate and the courtyard inside" (checked against the 大辞典 entry 大有逕庭). Compare 截然不同 (lesson 4).
+    ex: {h: "虽然外形看起来像是金字塔魔方，但两者的解法大相径庭。", py: "Suī rán wài xíng kàn qǐ lái xiàng shì jīn zì tǎ mó fāng, dàn liǎng zhě de jiě fǎ dà xiāng jìng tíng.", py_auto: true, src: "wikipedia: 粽子魔方", en: "It looks like a Pyraminx, but the two are solved in completely different ways."}
+  - w: 旗幟鮮明
+    py: qí zhì xiān míng
+    lit: flag-bright-clear
+    en: clear-cut, taking a clear stand
+    ex: {h: "在整个二战期间，诺克一直旗帜鲜明的反对战争，这在当时是极为罕见的。", py: "Zài zhěng gè Èr Zhàn qī jiān, Nuòkè yī zhí qí zhì xiān míng de fǎn duì zhàn zhēng, zhè zài dāng shí shì jí wéi hǎn jiàn de.", py_auto: true, src: "wikipedia: 艾尔伯特·杰伊·诺克", en: "Throughout the Second World War, Nock openly opposed the war, which was extremely rare at the time."}
+  - w: 蛛絲馬跡
+    py: zhū sī mǎ jī
+    lit: spider-thread-horse-track
+    en: a faint clue
+    origin: {work: 楊筠松《撼龍經》, text: 欲斷不斷馬跡過, checked: [moe]}
+    note: Another geomancer's image, for faint lines in the landscape. Now a detective's word.
+    ex: {h: "等偵探登場后，再通過各種蛛丝马迹查明真相、抓到犯人。", py: "Děng zhēn tàn dēng cháng hòu, zài tōng guò gè zhǒng zhū sī mǎ jī chá míng zhēn xiàng, zhuā dào fàn rén.", py_auto: true, src: "wikipedia: 倒叙推理", en: "Then the detective appears, follows all sorts of faint clues to the truth, and catches the culprit."}
+  - w: 裝模作樣
+    py: zhuāng mó zuò yàng
+    lit: put-on-mould-make-shape
+    en: to put on an act, to show off
+    origin: {work: 臨濟錄, text: 爾秖麼幻化上頭作模作樣, checked: [moe]}
+    note: Linji, the Zen master, mocking monks who strike poses before illusions. The source has 作模作樣.
+    ex: {h: "自戀，同時受美少女歡迎，在美少女面前會說出裝模作樣的台詞。", py: "Zì liàn, tóng shí shòu měi shào nǚ huān yíng, zài měi shào nǚ miàn qián huì shuō chū zhuāng mó zuò yàng de tái cí.", py_auto: true, src: "wikipedia: Battle Spirits 少年激霸彈角色列表", en: "A narcissist who is popular with pretty girls, and puts on a show of fine words in front of them."}
+  - w: 淋漓盡致
+    py: lín lí jìn zhì
+    lit: dripping-completely-to-the-end
+    en: thoroughly, vividly
+    origin: {work: 李清《三垣筆記》, text: 亦淋漓盡致, checked: [moe]}
+    ex: {h: "这样才能将自己浑厚的歌声淋漓尽致的发挥出来。", py: "Zhè yàng cái néng jiāng zì jǐ hún hòu de gē shēng lín lí jìn zhì de fā huī chū lái.", py_auto: true, src: "wikipedia: 小黑 (马来西亚歌手)", en: "Only then could he bring out his rich voice to the full."}
+  - w: 無足輕重
+    py: wú zú qīng zhòng
+    lit: not-enough-light-heavy
+    en: insignificant
+    note: The opposite of 舉足輕重 (lesson 5).
+    ex: {h: "莫洛迪被苏联政府给了一个无足轻重的职位，并且经常饮酒为乐。", py: "Mòluòdí bèi Sūlián zhèng fǔ gěi le yī gè wú zú qīng zhòng de zhí wèi, bìng qiě jīng cháng yǐn jiǔ wéi lè.", py_auto: true, src: "wikipedia: 科伦·莫洛迪", en: "The Soviet government gave Molody an insignificant post, and he often drank for pleasure."}
+  - w: 不堪一擊
+    py: bù kān yī jī
+    py_tw: bù kān yī jí
+    lit: not-withstand-one-blow
+    en: to collapse at the first blow
+    ex: {h: "然而，轉入學園之後，才發現自己是多麼不堪一擊。", py: "Rán ér, zhuǎn rù xué yuán zhī hòu, cái fā xiàn zì jǐ shì duō me bù kān yī jī.", py_auto: true, src: "wikipedia: PRAVE!", en: "But only after moving to the academy did they find out how easily they could be beaten."}
+  - w: 直截了當
+    py: zhí jié liǎo dàng
+    lit: straight-cut-finished-proper
+    en: straightforward, blunt
+    ex: {h: "他是个直截了当的人，说得到，做得到。", py: "Tā shì gè zhí jié liǎo dàng de rén, shuō de dào, zuò de dào.", py_auto: true, src: "tatoeba", en: "He's a straightforward man: he does what he says."}
+  - w: 百花齊放
+    py: bǎi huā qí fàng
+    lit: hundred-flowers-together-bloom
+    en: a hundred flowers bloom, a flourishing variety
+    origin: {work: 李汝珍《鏡花緣》第三回, text: 那知下界帝王忽有御旨命他百花齊放, checked: [dcd]}
+    note: In the novel, Empress Wu orders every flower to bloom at once in winter. Later a political slogan (1956), with 百家爭鳴.
+    ex: {h: "民間為了保護自己，紛紛習武，知名武術家百花齊放，當中最廣為人知的如「廣東十虎」。", py: "Mín jiān wèi le bǎo hù zì jǐ, fēn fēn xí wǔ, zhī míng wǔ shù jiā bǎi huā qí fàng, dāng zhōng zuì guǎng wéi rén zhī de rú “Guǎngdōng Shí Hǔ”.", py_auto: true, src: "wikipedia: 華南海盜", en: "To protect themselves people took up martial arts, and famous masters flourished everywhere, the best known being the Ten Tigers of Canton."}

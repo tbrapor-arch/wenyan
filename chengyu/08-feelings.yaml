@@ -1,0 +1,135 @@
+id: 8
+slug: feelings
+title: 心情
+title_py: Xīnqíng
+title_en: Feelings and reactions
+status: draft
+intro: >
+  How people feel and react: pleased, delighted, gloating, hesitant, suddenly enlightened,
+  indifferent, worried, exasperated, caught off guard. Several share the 心 "heart, mind" family
+  (心滿意足, 漠不關心, 憂心忡忡) and the 不忍 "cannot bear to" construction (忍無可忍, 慘不忍睹).
+  The last group is about urgency and shock (刻不容緩, 迫在眉睫, 駭人聽聞).
+frames:
+  - {f: 心X意Y, en: "heart and mind together", ex: [心滿意足]}
+  - {f: X然大Y, en: "然 makes an adverb: 'suddenly, all at once'", ex: [恍然大悟, 安然無恙]}
+  - {f: X不忍Y / 忍無可忍, en: "忍 'bear, endure'", ex: [忍無可忍, 慘不忍睹]}
+  - {f: X不及 / X不容Y, en: "'not in time' / 'does not allow'", ex: [措手不及, 刻不容緩]}
+items:
+  - w: 心滿意足
+    py: xīn mǎn yì zú
+    lit: heart-full-mind-satisfied
+    en: perfectly content
+    origin: {work: 漢書·王莽傳中, text: 豐等爵位已盛，心意既滿, checked: [moe]}
+    ex: {h: "他對自己感到心滿意足。", py: "Tā duì zì jǐ gǎn dào xīn mǎn yì zú.", py_auto: true, src: "tatoeba", en: He is perfectly satisfied with himself.}
+  - w: 興高采烈
+    py: xìng gāo cǎi liè
+    lit: mood-high-spirit-fierce
+    en: in high spirits, delighted
+    origin: {work: 劉勰《文心雕龍·體性》, text: 叔夜俊俠，故興高而采烈, checked: [moe]}
+    note: Liu Xie was describing the poet Xi Kang's style, "lofty in feeling, fierce in colour". Only later did it come to mean "cheerful".
+    ex: {h: "當桂英興高采烈的找尋降龍木時，赫然發現它不翼而飛了！", py: "Dāng Guìyīng xìng gāo cǎi liè de zhǎo xún xiáng lóng mù shí, hè rán fā xiàn tā bù yì ér fēi le!", py_auto: true, src: "wikipedia: 穆桂英掛帥 (2012年電視劇)", en: "When Guiying went happily to look for the Dragon-Taming Wood, she found to her shock that it had vanished!"}
+  - w: 幸災樂禍
+    py: xìng zāi lè huò
+    lit: rejoice-disaster-enjoy-misfortune
+    en: to gloat over others' misfortune
+    origin: {work: 左傳·僖公十四年, text: 背施無親，幸災不仁, checked: [moe]}
+    note: The German word Schadenfreude is usually translated with this 成語.
+    ex: {h: "“幸灾乐祸”一词只在德语中有。", py: "“Xìng zāi lè huò” yī cí zhǐ zài Déyǔ zhōng yǒu.", py_auto: true, src: "tatoeba", en: "Only German has a single word for 'Schadenfreude'."}
+  - w: 猶豫不決
+    py: yóu yù bù jué
+    lit: hesitate-not-decide
+    en: unable to make up one's mind
+    origin: {work: 戰國策·趙策三, text: 平原君猶豫未有所決, checked: [moe]}
+    ex: {h: "对于是否要去医院探望Mary,Tom有点犹豫不决。", py: "Duì yú shì fǒu yào qù yī yuàn tàn wàng Mary, Tom yǒu diǎn yóu yù bù jué.", py_auto: true, src: "tatoeba", en: Tom couldn't quite decide whether to visit Mary in hospital.}
+  - w: 恍然大悟
+    py: huǎng rán dà wù
+    lit: suddenly-greatly-awaken
+    en: to suddenly understand
+    origin: {work: 高彥休《唐闕史》, text: 裴公恍然始悟, checked: [moe]}
+    ex: {h: "短短数天之后，珍珠港事变爆发，美方才恍然大悟。", py: "Duǎn duǎn shù tiān zhī hòu, Zhēnzhūgǎng shì biàn bào fā, měi fāng cái huǎng rán dà wù.", py_auto: true, src: "wikipedia: 毛庆祥", en: "Only a few days later Pearl Harbor was attacked, and the Americans suddenly understood."}
+  - w: 漠不關心
+    py: mò bù guān xīn
+    lit: cold-not-concern-heart
+    en: completely indifferent
+    ex: {h: "她對她丈夫的死漠不關心。", py: "Tā duì tā zhàng fū de sǐ mò bù guān xīn.", py_auto: true, src: "tatoeba", en: She was indifferent to her husband's death.}
+  - w: 憂心忡忡
+    py: yōu xīn chōng chōng
+    lit: worried-heart-anxious-anxious
+    en: deeply worried
+    origin: {work: 詩經·召南·草蟲, text: 未見君子，憂心忡忡, checked: [moe_app]}
+    note: 忡忡 "troubled", a reduplicated adjective typical of the 詩經.
+    ex: {h: "我想变富，不再因钱忧心忡忡。", py: "Wǒ xiǎng biàn fù, bù zài yīn qián yōu xīn chōng chōng.", py_auto: true, src: "tatoeba", en: I want to get rich and stop worrying about money.}
+  - w: 忍無可忍
+    py: rěn wú kě rěn
+    lit: endure-without-can-endure
+    en: to be pushed beyond endurance
+    origin: {work: 三國志·孫禮傳, text: 且止，忍不可忍, checked: [moe]}
+    note: The source has 忍不可忍, "endure the unendurable", which is the opposite advice.
+    ex: {h: "忍无可忍，弱小者也会反抗。", py: "Rěn wú kě rěn, ruò xiǎo zhě yě huì fǎn kàng.", py_auto: true, src: "tatoeba", en: "Pushed too far, even the weak will fight back."}
+  - w: 不由自主
+    py: bù yóu zì zhǔ
+    lit: not-from-self-master
+    en: involuntarily, can't help it
+    ex: {h: "總統不由自主地笑了起來。", py: "Zǒng tǒng bù yóu zì zhǔ de xiào le qǐ lái.", py_auto: true, src: "tatoeba", en: The president couldn't help laughing.}
+  - w: 感同身受
+    py: gǎn tóng shēn shòu
+    lit: feel-same-body-receive
+    en: to feel as if it happened to oneself
+    ex: {h: "艾莉絲看見邁爾斯追了出去後被瑪姬拒絕，心裡感同身受。", py: "Àilìsī kàn jiàn Mài'ěrsī zhuī le chū qù hòu bèi Mǎjī jù jué, xīn lǐ gǎn tóng shēn shòu.", py_auto: true, src: "wikipedia: 緣份精華遊", en: "Alice saw Miles run after Maggie and get turned down, and felt it as if it were her own pain."}
+  - w: 忘恩負義
+    py: wàng ēn fù yì
+    lit: forget-kindness-betray-duty
+    en: ungrateful
+    origin: {work: 漢書·張敞傳, text: 背恩忘義，傷化薄俗, checked: [moe]}
+    ex: {h: "而项飞田是个忘恩负义的小人，后来反而拼命追查马走日的下落。", py: "Ér Xiàng Fēitián shì gè wàng ēn fù yì de xiǎo rén, hòu lái fǎn ér pīn mìng zhuī chá Mǎ Zǒurì de xià luò.", py_auto: true, src: "wikipedia: 一步之遥", en: "Xiang Feitian, an ungrateful scoundrel, later did all he could to track Ma Zouri down."}
+  - w: 慘不忍睹
+    py: cǎn bù rěn dǔ
+    lit: horrible-not-bear-look
+    en: too horrible to look at
+    origin: {work: 許奉恩《里乘》, text: 小人慘不忍睹, checked: [moe]}
+    ex: {h: "之後，衛斯理接到通知，古九非慘死在檳城家中，屍體慘不忍睹。", py: "Zhī hòu, Wèisīlǐ jiē dào tōng zhī, Gǔ Jiǔfēi cǎn sǐ zài Bīnchéng jiā zhōng, shī tǐ cǎn bù rěn dǔ.", py_auto: true, src: "wikipedia: 瘟神 (小說)", en: "Later Wesley was told that Gu Jiufei had died a terrible death at his home in Penang; the body was too horrible to look at."}
+  - w: 喜聞樂見
+    py: xǐ wén lè jiàn
+    lit: glad-hear-happy-see
+    en: popular, loved by the public
+    ex: {h: "当代小品通过中央电视台春节联欢晚会的近20年的推广，取得了很大的进步，成为观众喜闻乐见的一个艺术形式。", py: "Dāng dài xiǎo pǐn tōng guò Zhōngyāng Diànshìtái Chūnjié Liánhuān Wǎnhuì de jìn 20 nián de tuī guǎng, qǔ dé le hěn dà de jìn bù, chéng wéi guān zhòng xǐ wén lè jiàn de yī gè yì shù xíng shì.", py_auto: true, src: "wikipedia: 喜剧小品", en: "Promoted for nearly twenty years by CCTV's Spring Festival Gala, the modern comic sketch has made great progress and become an art form audiences love."}
+  - w: 安然無恙
+    py: ān rán wú yàng
+    lit: safe-like-without-harm
+    en: safe and sound
+    origin: {work: 戰國策·齊策四, text: 歲亦無恙耶？民亦無恙耶？王亦無恙耶？, checked: [moe]}
+    note: The Queen Dowager of Zhao asks the envoy of Qi, in this order, whether the harvest, the people and the king are well. Then she explains why the king comes last.
+    ex: {h: "商人看見貝兒能夠安然無恙地回來不斷的擁抱著她不放。", py: "Shāng rén kàn jiàn Bèi'ér néng gòu ān rán wú yàng de huí lái bù duàn de yōng bào zhe tā bù fàng.", py_auto: true, src: "wikipedia: 美女与野兽", en: "When the merchant saw Belle come back safe and sound, he hugged her and wouldn't let go."}
+  - w: 措手不及
+    py: cuò shǒu bù jí
+    lit: place-hands-not-in-time
+    en: caught off guard
+    ex: {h: "入侵的日軍被打得措手不及，將领来岛通总也被击毙。", py: "Rù qīn de Rì jūn bèi dǎ de cuò shǒu bù jí, jiàng lǐng Láidǎo Tōngzǒng yě bèi jī bì.", py_auto: true, src: "wikipedia: 鸣梁海战", en: "The invading Japanese were caught off guard, and their commander Kurushima Michifusa was killed."}
+  - w: 刻不容緩
+    py: kè bù róng huǎn
+    lit: moment-not-allow-delay
+    en: extremely urgent
+    note: 刻 was a unit of time (a hundredth of a day).
+    ex: {h: "楊大郎明白母親苦衷，但父親有難刻不容緩，故向母親許下諾言，必會帶領老父和眾弟平安回家。", py: "Yáng Dàláng míng bái mǔ qīn kǔ zhōng, dàn fù qīn yǒu nán kè bù róng huǎn, gù xiàng mǔ qīn xǔ xià nuò yán, bì huì dài lǐng lǎo fù hé zhòng dì píng ān huí jiā.", py_auto: true, src: "wikipedia: 忠烈楊家將", en: "Yang the eldest understood his mother's concerns, but his father was in danger and there was no time to lose, so he promised her he would bring his father and brothers home safe."}
+  - w: 迫在眉睫
+    py: pò zài méi jié
+    lit: pressing-on-eyebrows-eyelashes
+    en: imminent, extremely urgent
+    ex: {h: "再加上馆舍三次火灾的发生，让新馆的建设迫在眉睫。", py: "Zài jiā shàng guǎn shě sān cì huǒ zāi de fā shēng, ràng xīn guǎn de jiàn shè pò zài méi jié.", py_auto: true, src: "wikipedia: 陕西省图书馆", en: "On top of that, the building caught fire three times, which made a new library extremely urgent."}
+  - w: 駭人聽聞
+    py: hài rén tīng wén
+    lit: shock-people's-hearing
+    en: shocking, appalling
+    origin: {work: 隋書·王劭傳, text: 駭人視聽, checked: [moe]}
+    ex: {h: "僵尸审判作为中世纪教廷最为骇人听闻的片段之一而载入史册。", py: "Jiāng shī shěn pàn zuò wéi zhōng shì jì jiào tíng zuì wéi hài rén tīng wén de piàn duàn zhī yī ér zǎi rù shǐ cè.", py_auto: true, src: "wikipedia: 僵尸审判", en: "The Cadaver Synod went down in history as one of the most appalling episodes of the medieval papacy."}
+  - w: 直言不諱
+    py: zhí yán bù huì
+    lit: straight-speak-not-avoid
+    en: to speak frankly
+    note: "諱 \"to avoid (a name)\": the names of rulers and parents were taboo, 諱."
+    ex: {h: "公众终于对关于空气污染的意见直言不讳了。", py: "Gōng zhòng zhōng yú duì guān yú kōng qì wū rǎn de yì jiàn zhí yán bù huì le.", py_auto: true, src: "tatoeba", en: The public has finally spoken out frankly about air pollution.}
+  - w: 勇往直前
+    py: yǒng wǎng zhí qián
+    lit: brave-go-straight-forward
+    en: to forge ahead
+    ex: {h: "樂觀而有野心，不太在意細節，決定目標便會勇往直前。", py: "Lè guān ér yǒu yě xīn, bù tài zài yì xì jié, jué dìng mù biāo biàn huì yǒng wǎng zhí qián.", py_auto: true, src: "wikipedia: 縣民性", en: "Optimistic and ambitious, not much bothered by details, they forge ahead once they've set a goal."}

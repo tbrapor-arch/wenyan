@@ -27,6 +27,8 @@ chengyu/NN-slug.yaml    成語 lessons (§10)
 tools/build.py          validates everything, adds simplified forms → app/course.json + dist/wenyan.html
 tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts
+tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pinyin-words.yaml)
+data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
 app/index.html          the app (loads course.json)
 dist/wenyan.html        single-file build (data inlined; opens offline)
 ```
@@ -54,6 +56,7 @@ line to check. **Mark as done** ticks the lesson on its tile.
 | 6 | 狐假虎威 | 戰國策·楚策一 | draft: 8 glosses pending; text and notes match 王力《古代漢語》 |
 | 7 | 複習一 | review of 1–6 | draft |
 | 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
+| 成語 1–10 | the 200 most frequent 成語 | wordfreq ranking | draft: every example and origin passes the private checker; example pinyin generated (AUTO) |
 
 ## License
 

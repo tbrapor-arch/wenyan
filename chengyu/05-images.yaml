@@ -1,0 +1,140 @@
+id: 5
+slug: images
+title: 意象
+title_py: Yìxiàng
+title_en: "Pictures: body, roots and light"
+status: draft
+intro: >
+  These 成語 are pictures. Read them literally first (feet on solid ground, hands tucked in
+  sleeves, hair and bones standing on end, deep roots and firm stalks) and the figurative meaning
+  follows. Many come from classical texts you will meet in the main course: the 詩經, 老子, 左傳,
+  禮記·大學.
+items:
+  - w: 實事求是
+    py: shí shì qiú shì
+    lit: real-facts-seek-truth
+    en: to seek truth from facts, to be realistic
+    origin: {work: 漢書·景十三王傳, text: 河間獻王德…修學好古，實事求是, checked: [moe]}
+    note: Originally praise for a prince who collected old books and checked them carefully. Later a Qing scholarly motto, then a political slogan.
+    ex: {h: "说话要实事求是。", py: "Shuō huà yào shí shì qiú shì.", py_auto: true, src: "tatoeba", en: Stick to the facts when you speak.}
+  - w: 小心翼翼
+    py: xiǎo xīn yì yì
+    lit: small-heart-wing-wing
+    en: very carefully, cautiously
+    origin: {work: 詩經·大雅·大明, text: 維此文王，小心翼翼, checked: [moe]}
+    note: 翼翼 "reverent, careful" in the 詩經, not "wings". In modern Chinese the meaning narrowed to "cautious".
+    ex: {h: "警察小心翼翼地抬起了箱子。", py: "Jǐng chá xiǎo xīn yì yì de tái qǐ le xiāng zi.", py_auto: true, src: "tatoeba", en: The police carefully lifted the box.}
+  - w: 息息相關
+    py: xī xī xiāng guān
+    py_tw: xí xí xiāng guān
+    lit: breath-breath-mutually-connected
+    en: closely linked
+    ex: {h: "環境災害、極端氣候和全球暖化皆與人為活動息息相關。", py: "Huán jìng zāi hài, jí duān qì hòu hé quán qiú nuǎn huà jiē yǔ rén wéi huó dòng xī xī xiāng guān.", py_auto: true, src: "tatoeba", en: "Environmental disasters, extreme weather and global warming are all closely linked to human activity."}
+  - w: 大驚小怪
+    py: dà jīng xiǎo guài
+    lit: big-alarm-small-strange
+    en: to make a fuss about nothing
+    origin: {work: 朱熹〈答林擇之〉, text: 不必如此大驚小怪, checked: [moe]}
+    ex: {h: "不过穆里尔认为母亲过于大惊小怪，并表示丈夫的情况不至于无法控制。", py: "Bù guò Mùlǐ'ěr rèn wéi mǔ qīn guò yú dà jīng xiǎo guài, bìng biǎo shì zhàng fū de qíng kuàng bù zhì yú wú fǎ kòng zhì.", py_auto: true, src: "wikipedia: 逮香蕉鱼的最佳日子", en: "But Muriel thinks her mother is making too much fuss, and says her husband's condition isn't out of control."}
+  - w: 逍遙法外
+    py: xiāo yáo fǎ wài
+    lit: roam-freely-law-outside
+    en: to remain at large
+    note: 逍遙 "to roam at ease" is the 莊子 word (逍遙遊), here used ironically for a criminal.
+    ex: {h: "看着“凶手”逍遥法外，铁飞花暗下决心，一定要将其绳之以法。", py: "Kàn zhe “xiōng shǒu” xiāo yáo fǎ wài, Tiě Fēihuā àn xià jué xīn, yī dìng yào jiāng qí shéng zhī yǐ fǎ.", py_auto: true, src: "wikipedia: 女神捕 (数字电影)", en: "Watching the 'murderer' go free, Tie Feihua secretly resolved to bring him to justice."}
+  - w: 根深蒂固
+    py: gēn shēn dì gù
+    lit: root-deep-stalk-firm
+    en: deep-rooted, entrenched
+    origin: {work: 老子·第五十九章, text: 是謂深根固蔕, checked: [moe]}
+    note: The MOE's edition of the source writes 蔕, an old form of 蒂 "stalk of a fruit" (other editions read 柢 "root").
+    ex: {h: "漕運自清初經過了將近二百年，官吏與運丁累積的弊端已根深蒂固。", py: "Cáo yùn zì Qīng chū jīng guò le jiāng jìn èr bǎi nián, guān lì yǔ yùn dīng lěi jī de bì duān yǐ gēn shēn dì gù.", py_auto: true, src: "wikipedia: 朱桂楨", en: "Nearly two hundred years after the start of the Qing, the abuses of the officials and boatmen of the grain transport had become entrenched."}
+  - w: 名列前茅
+    py: míng liè qián máo
+    lit: name-ranked-front-banner
+    en: to be among the best, at the top of the list
+    origin: {work: 左傳·宣公十二年, text: 軍行…前茅慮無, checked: [moe]}
+    note: 前茅 was the banner (or the reed) carried at the head of a Chu army on the march.
+    ex: {h: "而现在这两地的经济总量和人均收入都在中国名列前茅。", py: "Ér xiàn zài zhè liǎng dì de jīng jì zǒng liàng hé rén jūn shōu rù dōu zài Zhōngguó míng liè qián máo.", py_auto: true, src: "wikipedia: 萧绍平原", en: "Today both places rank among the top in China for total output and income per head."}
+  - w: 罪魁禍首
+    py: zuì kuí huò shǒu
+    lit: crime-chief-disaster-head
+    en: the main culprit
+    ex: {h: "我們都不認為他是事故的罪魁禍首。", py: "Wǒ men dōu bù rèn wéi tā shì shì gù de zuì kuí huò shǒu.", py_auto: true, src: "tatoeba", en: None of us think he is to blame for the accident.}
+  - w: 舉足輕重
+    py: jǔ zú qīng zhòng
+    lit: raise-foot-light-heavy
+    en: decisive, carrying great weight
+    origin: {work: 後漢書·竇融傳, text: 權在將軍，舉足左右，便有輕重, checked: [moe]}
+    note: "Dou Rong held the balance between two warring states: one step to the left or right would tip the scales."
+    ex: {h: "油价的变化对机械化农场的生存有着举足轻重的影响。", py: "Yóu jià de biàn huà duì jī xiè huà nóng chǎng de shēng cún yǒu zhe jǔ zú qīng zhòng de yǐng xiǎng.", py_auto: true, src: "wikipedia: 家庭农业", en: "Changes in oil prices have a decisive effect on whether mechanised farms survive."}
+  - w: 歸根結底
+    py: guī gēn jié dǐ
+    lit: return-root-tie-bottom
+    en: in the final analysis
+    ex: {h: "這些問題歸根結底是體制的問題。", py: "Zhè xiē wèn tí guī gēn jié dǐ shì tǐ zhì de wèn tí.", py_auto: true, src: "tatoeba", en: "In the end, these problems are problems of the system."}
+  - w: 毛骨悚然
+    py: máo gǔ sǒng rán
+    lit: hair-bone-terrified
+    en: hair-raising, spine-chilling
+    origin: {work: 洪邁《夷堅志》, text: 毛骨凜然俱竦, checked: [moe]}
+    ex: {h: "臉上總是浮現令人毛骨悚然的笑容，哼著不可思議的手鞠歌。", py: "Liǎn shàng zǒng shì fú xiàn lìng rén máo gǔ sǒng rán de xiào róng, hēng zhe bù kě sī yì de shǒu jū gē.", py_auto: true, src: "wikipedia: 圈套 (電視劇)", en: "A spine-chilling smile is always on her face as she hums a strange ball-game song."}
+  - w: 光天化日
+    py: guāng tiān huà rì
+    lit: bright-sky-civilised-day
+    en: in broad daylight
+    origin: {work: 書經·益稷, text: 光天之下，至于海隅蒼生, checked: [moe]}
+    note: First "a peaceful age under a bright sky"; now mostly in 光天化日之下 "in broad daylight", about a crime.
+    ex: {h: "他的车子光天化日被偷走了。", py: "Tā de chē zi guāng tiān huà rì bèi tōu zǒu le.", py_auto: true, src: "tatoeba", en: His car was stolen in broad daylight.}
+  - w: 撥亂反正
+    py: bō luàn fǎn zhèng
+    lit: clear-chaos-return-right
+    en: to restore order, to set things right
+    origin: {work: 公羊傳·哀公十四年, text: 撥亂世，反諸正, checked: [moe]}
+    note: Said of Confucius writing the 春秋. 反 = 返 "return"; 諸 = 之於.
+    ex: {h: "现在公室的地位低下，却不能拨乱反正，我的罪过大了。", py: "Xiàn zài gōng shì de dì wèi dī xià, què bù néng bō luàn fǎn zhèng, wǒ de zuì guò dà le.", py_auto: true, src: "wikipedia: 鱼石", en: "The ducal house has sunk low and I cannot set things right: great is my guilt."}
+  - w: 別有用心
+    py: bié yǒu yòng xīn
+    lit: other-have-use-heart
+    en: to have ulterior motives
+    ex: {h: "中央电视台评论则认为日本政府此举乃别有用心。", py: "Zhōngyāng Diànshìtái píng lùn zé rèn wéi Rìběn zhèng fǔ cǐ jǔ nǎi bié yǒu yòng xīn.", py_auto: true, src: "wikipedia: 百度日文输入法", en: "A CCTV commentary held that the Japanese government had ulterior motives."}
+  - w: 腳踏實地
+    py: jiǎo tà shí dì
+    lit: feet-tread-solid-ground
+    en: down to earth, practical
+    origin: {work: 邵伯溫《邵氏聞見錄》, text: 君實腳踏實地人也, checked: [moe]}
+    note: Said of Sima Guang (君實), the historian.
+    ex: {h: "我是个脚踏实地的人。", py: "Wǒ shì gè jiǎo tà shí dì de rén.", py_auto: true, src: "tatoeba", en: I'm a down-to-earth person.}
+  - w: 袖手旁觀
+    py: xiù shǒu páng guān
+    lit: sleeve-hands-side-watch
+    en: to stand by and do nothing
+    origin: {work: 韓愈〈祭柳子厚文〉, text: 巧匠旁觀，縮手褎閒, checked: [moe]}
+    note: "The source writes 褎 for 袖. Han Yu: the master craftsman watches from the side, hands drawn into his sleeves."
+    ex: {h: "只要好人袖手旁观，恶人就会得胜。", py: "Zhǐ yào hǎo rén xiù shǒu páng guān, è rén jiù huì dé shèng.", py_auto: true, src: "tatoeba", en: "Evil triumphs when good people stand by and do nothing."}
+  - w: 理直氣壯
+    py: lǐ zhí qì zhuàng
+    lit: reason-straight-spirit-strong
+    en: confident because one is in the right
+    origin: {work: 喻世明言·卷三一, text: 便提我到閻羅殿前，我也理直氣壯, checked: [moe]}
+    note: "From a Ming vernacular story: the kind of novel you will read in Shujia."
+    ex: {h: "新浪微博上，「立场坚定斗志强」、「党媒姓党，理直气壮」很快成为热门话题。", py: "Xīnlàng Wēibó shàng, “lì chǎng jiān dìng dòu zhì qiáng”, “dǎng méi xìng dǎng, lǐ zhí qì zhuàng” hěn kuài chéng wéi rè mén huà tí.", py_auto: true, src: "wikipedia: 任志强", en: "On Sina Weibo, 'firm stance, strong will' and 'the Party media belong to the Party, and say so with confidence' quickly became trending topics."}
+  - w: 似曾相識
+    py: sì céng xiāng shí
+    py_tw: sì céng xiāng shì
+    lit: seem-once-mutually-know
+    en: familiar, déjà vu
+    ex: {h: "这看起来似曾相识。", py: "Zhè kàn qǐ lái sì céng xiāng shí.", py_auto: true, src: "tatoeba", en: This looks familiar.}
+  - w: 因地制宜
+    py: yīn dì zhì yí
+    lit: follow-place-make-suitable
+    en: to adapt to local conditions
+    origin: {work: 吳越春秋·闔閭內傳, text: 夫築城郭，立倉庫，因地制宜, checked: [moe]}
+    ex: {h: "這些方法要因地制宜，並且綜合取得最好的結果，…", py: "Zhè xiē fāng fǎ yào yīn dì zhì yí, bìng qiě zōng hé qǔ dé zuì hǎo de jié guǒ,…", py_auto: true, src: "wikipedia: 互花米草", en: "These methods must be adapted to local conditions and combined to get the best results."}
+  - w: 日新月異
+    py: rì xīn yuè yì
+    lit: day-new-month-different
+    en: changing fast, rapid progress
+    origin: {work: 禮記·大學, text: 苟日新，日日新，又日新, checked: [moe]}
+    note: "King Tang's motto engraved on his bath basin: \"renew yourself every day\"."
+    ex: {h: "建国后至今，竹管垅乡的基础建设日新月异。", py: "Jiàn guó hòu zhì jīn, Zhúguǎnlǒng Xiāng de jī chǔ jiàn shè rì xīn yuè yì.", py_auto: true, src: "wikipedia: 竹管垅乡", en: "Since the founding of the PRC, infrastructure in Zhuguanlong has changed beyond recognition."}

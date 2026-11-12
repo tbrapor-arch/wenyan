@@ -19,6 +19,7 @@ from opencc import OpenCC
 
 ROOT = Path(__file__).resolve().parent.parent
 cc = OpenCC("t2s")
+tw = OpenCC("s2tw")      # 成語 example sentences are stored as found; this gives their traditional form
 OVR = yaml.safe_load((ROOT / "tools" / "overrides.yaml").read_text(encoding="utf-8")) or {}
 STATUS = {"draft", "good", "solid"}
 TRACKS = [
@@ -150,12 +151,25 @@ def check_chengyu(L, f):
             fail(f, f"missing {k}")
             return
     L["title_s"] = s(L["title"])
+    for fr in L.get("frames", []):
+        fr["f_s"] = s(fr["f"])
+        fr["ex_s"] = [s(x) for x in fr.get("ex", [])]
     for it in L["items"]:
-        for k in ("w", "py", "en"):
+        for k in ("w", "py", "lit", "en", "ex"):
             if k not in it:
                 fail(f, f"item {it.get('w', '?')}: missing {k}")
         if "w" in it:
             it["w_s"] = s(it["w"])
+        if it.get("origin"):
+            it["origin"]["text_s"] = s(it["origin"]["text"])
+        ex = it.get("ex")
+        if ex:
+            for k in ("h", "src", "en"):
+                if k not in ex:
+                    fail(f, f"item {it['w']}: example missing {k}")
+            ex["h_t"], ex["h_s"] = tw.convert(ex.get("h", "")), cc.convert(ex.get("h", ""))
+            if ex["h_s"].find(cc.convert(it.get("w", ""))) < 0:
+                fail(f, f"item {it['w']}: the example does not contain the 成語")
 
 
 def main():

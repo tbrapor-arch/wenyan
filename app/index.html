@@ -111,8 +111,8 @@ code{font:13px ui-monospace,Menlo,monospace;background:var(--paper-2);padding:1p
 .en{font-size:16px}
 .lit{font-size:13px;color:var(--ink-2);margin-top:2px}
 html.nopy .py{display:none}
-html.cover .page.right .ln > *,html.cover .en-inline,html.cover .cy .mean{filter:blur(6px);opacity:.5;transition:.2s}
-html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline,html.cover .cy.peek .mean{filter:none;opacity:1}
+html.cover .page.right .ln > *,html.cover .en-inline,html.cover .cy .cr > *{filter:blur(6px);opacity:.5;transition:.2s}
+html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline,html.cover .cy.peek .cr > *{filter:none;opacity:1}
 .w{cursor:pointer;border-radius:3px;transition:background .15s;text-decoration:underline dotted var(--rule);text-underline-offset:6px}
 .w:hover,.w.on{background:var(--hl)}
 sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super;padding:0 2px;border-radius:3px}
@@ -171,18 +171,40 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   .thead .seal{margin-top:6px}
 }
 
-/* 成語 lesson */
-.frames{display:flex;flex-wrap:wrap;gap:8px}
-.frame{border:1px solid var(--rule);border-radius:8px;padding:6px 12px;background:var(--card);font-size:14px}
-.frame b{font:600 18px var(--zh);margin-right:8px}
-.cys{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
-.cy{border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:14px 16px}
-.cy .hw{font:600 27px/1.3 var(--zh);letter-spacing:.08em}
-.cy .lit{font-size:13px}
-.cy .mean{font-size:16px;margin-top:6px}
-.cy .nt,.cy .or,.cy .xs{font-size:14px;margin-top:8px;padding-top:8px;border-top:1px dotted var(--rule)}
-.cy .or .zh,.cy .xs .zh{font-size:17px;letter-spacing:.02em}
-.cy .lab{font:600 11px var(--en);letter-spacing:.08em;text-transform:uppercase;color:var(--seal);margin-right:6px}
+/* 成語 lesson: the reading lessons' two-column card. Each 成語 is two rows:
+   成語 | meaning, then example | translation (stacked in that order on a phone). */
+.frames{border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+.frame{display:grid;grid-template-columns:10em 1fr;gap:2px 16px;padding:9px 16px;border-top:1px dashed var(--rule);font-size:15px}
+.frame:first-child{border-top:0}
+.frame b{font:400 18px var(--zh);color:var(--seal)}
+.frame .fx{grid-column:2;font:15px var(--zh);color:var(--ink-2)}
+.cys{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper)}
+.cy{border-top:1.5px solid var(--rule)}
+.cy:first-child{border-top:0}
+.cyr{display:grid;grid-template-columns:1fr 1fr}
+.cyr + .cyr{border-top:1px dotted var(--rule)}
+.cl{padding:16px 22px}
+.cr{padding:16px 22px;background:var(--paper-2);border-left:1px solid var(--rule)}
+.cy .hw{font:600 30px/1.25 var(--zh);letter-spacing:.04em}
+.cy .hw .cn{font:12px var(--en);color:var(--seal);vertical-align:super;margin-right:5px;letter-spacing:0}
+.cy .hw .alt{font-weight:400;font-size:16px;color:var(--ink-2);margin-left:8px}
+.cy .py small{font-style:normal;font-size:12px;margin-left:6px}
+.cy .mean{font-size:17.5px;font-weight:600}
+.cy .nt{font-size:15px;color:var(--ink-2);margin-top:6px}
+.cy .or{font-size:14px;margin-top:8px;color:var(--seal)}
+.cy .or .zh{font-size:15px}
+.cy .or .ow{color:var(--ink-2)}
+.cy .xz{font:19px/1.75 var(--zh)}
+.cy .xz mark{background:none;color:var(--seal);font-weight:600}
+.cy .xe{font-size:16px}
+.cy .xs{font-size:12px;color:var(--ink-2)}
+@media (max-width:720px){
+  .cyr{grid-template-columns:1fr}
+  .cr{border-left:0;border-top:1px solid var(--rule)}
+  .cl,.cr{padding:13px 16px}
+  .frame{grid-template-columns:1fr}
+  .frame .fx{grid-column:1}
+}
 .auto{font:600 9px var(--en);letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);border-radius:3px;padding:0 3px;margin-left:5px;vertical-align:middle}
 
 /* settings */
@@ -355,21 +377,22 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     syncHeights();
   }
   function chengyuLesson(){
-    const ex = x => x ? `<div class="xs"><span class="lab">Example</span><span class="zh">${esc(x.h)}</span>
-      ${x.py ? `<div class="py">${esc(x.py)}${x.py_auto ? '<span class="auto" title="Generated pinyin, not yet checked by hand">AUTO</span>' : ""}</div>` : ""}
-      <div class="mean">${esc(x.en)}</div><div class="lit">${esc(x.src)}</div></div>` : "";
+    const auto = '<span class="auto" title="Generated pinyin, not yet checked by hand">AUTO</span>';
+    const sent = (x, it) => { const w = esc(Z(it, "w")); return esc(simp ? x.h_s : x.h_t).split(w).join(`<mark>${w}</mark>`); };
     app.innerHTML = bar() + `<section class="hero">${sealHTML(Z(L, "title"))}<div><div class="kicker">成語 · Lesson ${L.id}</div>
-        <h1>${esc(Z(L, "title"))}</h1><div class="sub">${esc(L.title_en)}</div></div></section>
+        <h1>${esc(Z(L, "title"))}</h1><div class="sub">${L.title_py ? esc(L.title_py) + " — " : ""}${esc(L.title_en)}</div></div></section>
       ${L.intro ? `<p class="intro">${md(L.intro, T.key)}</p>` : ""}<div class="meta"><span class="badge">${esc(L.status)}</span></div>
-      ${L.frames?.length ? `<h2>Patterns</h2><div class="frames">${L.frames.map(f => `<div class="frame"><b>${esc(f.f)}</b>${esc(f.en)}</div>`).join("")}</div>` : ""}
+      ${L.frames?.length ? `<h2>Patterns</h2><div class="frames">${L.frames.map(f => `<div class="frame"><b>${esc(Z(f, "f"))}</b><span>${esc(f.en)}</span>
+        <span class="fx">${esc((simp && f.ex_s ? f.ex_s : f.ex).join("、"))}</span></div>`).join("")}</div>` : ""}
       <h2>${L.items.length} 成語</h2>
-      <div class="cys">${L.items.map(it => `<div class="cy"><div class="hw">${esc(Z(it, "w"))}</div>
-        <div class="py">${esc(it.py)}${it.py_tw ? ` · TW ${esc(it.py_tw)}` : ""}</div>${it.lit ? `<div class="lit">${esc(it.lit)}</div>` : ""}
-        <div class="mean">${esc(it.en)}</div>
-        ${it.note ? `<div class="nt">${md(it.note, "wenyan")}</div>` : ""}
-        ${it.origin ? `<div class="or"><span class="lab">Origin</span>${esc(it.origin.work)}${it.origin.text ? `<div class="zh">${esc(it.origin.text)}</div>` : ""}</div>` : ""}
-        ${ex(it.ex)}</div>`).join("")}</div>
-      ${finish()}<footer>Examples: Tatoeba (CC BY 2.0 FR), Chinese Wikipedia (CC BY-SA). Course content CC BY-SA 4.0.</footer>`;
+      <div class="cys">${L.items.map((it, i) => { const x = it.ex || {}, o = it.origin; return `<div class="cy">
+        <div class="cyr"><div class="cl"><div class="hw"><span class="cn">${i + 1}</span>${esc(Z(it, "w"))}<span class="alt">${esc(simp ? it.w : it.w_s)}</span></div>
+          <div class="py">${esc(it.py)}${it.py_tw ? `<small>TW ${esc(it.py_tw)}</small>` : ""}</div>${it.lit ? `<div class="lit">${esc(it.lit)}</div>` : ""}</div>
+        <div class="cr"><div class="mean">${esc(it.en)}</div>${it.note ? `<div class="nt">${md(it.note, "wenyan")}</div>` : ""}
+          ${o ? `<div class="or"><span class="zh">${esc(Z(o, "text"))}</span> <span class="ow">— ${esc(o.work)}</span></div>` : ""}</div></div>
+        <div class="cyr"><div class="cl"><div class="xz">${sent(x, it)}</div>${x.py ? `<div class="py">${esc(x.py)}${x.py_auto ? auto : ""}</div>` : ""}</div>
+        <div class="cr"><div class="xe">${esc(x.en)}</div><div class="xs">${esc(x.src)}</div></div></div></div>`; }).join("")}</div>
+      ${finish()}<footer>Examples: Tatoeba (CC BY 2.0 FR), Chinese Wikipedia (CC BY-SA 4.0). Frequency: wordfreq (CC BY-SA 4.0). Course content CC BY-SA 4.0.</footer>`;
   }
   // Keep left/right lines aligned on wide screens.
   function syncHeights(){

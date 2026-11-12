@@ -89,6 +89,7 @@ add an override in `tools/overrides.yaml`.
 | Words & 成語 | **CC-CEDICT**, **Chinese Notes** | CC BY-SA 3.0 | multi-character expressions |
 | Tradition | **說文解字**, **康熙字典** | public domain | the `sw` / `kx` line on key characters |
 | Private check | 古汉语常用字字典 (4th ed.), 王力《古代漢語》 | © — **private repo only** | gloss verification |
+| Private 成語 | 教育部《成語典》, 中国成语大辞典 | CC BY-ND 3.0 TW / © — **private repo only** | checking 成語 origins (§10), the private 成語 tab (§9) |
 
 Rules:
 - Glossary `en` is written by us, choosing the one sense that fits the passage. Never paste a
@@ -114,7 +115,122 @@ sentences checked against a transcription.
 ## 8. License
 
 Course content (`lessons/`, notes, translations): **CC BY-SA 4.0**. Code (`tools/`, `app/`): MIT.
-Classical texts are public domain.
+Classical texts are public domain. The 成語 dictionary data (§9) stays in the private repo and is
+not covered by these licenses.
+
+## 9. 成語 tab (private)
+
+The 成語 tab lives in the **private build only**, because both of its dictionaries are licensed
+for private use only. The public course still links to 成語 through its own lessons.
+
+### Sources, shown side by side
+
+| Panel | Source | Rule |
+|---|---|---|
+| 教育部《成語典》 | `data/chengyu/moe.jsonl` (+ appendix) | CC BY-ND: shown **verbatim**, never edited or mixed with our notes, credited "中華民國教育部《成語典》, CC BY-ND 3.0 TW". |
+| 中国成语大辞典 | `data/chengyu/dacidian.jsonl` | Shown as is. Its source passages are checked against the classical text before being reused in a lesson. |
+| Our notes | the deck item (`note`) | Written by us in English. They may summarise either dictionary, never paste from it. |
+
+A card shows the headword (in the book's script, with the other script below), the pinyin, the MOE
+釋義 and 典源 with its story, the 大辞典 text, the user's sentence(s) from the book, and our note.
+When the source passage is in a lesson (e.g. 守株待兔 → L1), the card links to it.
+
+### Tiers
+
+| Tier | Meaning | Shown by default |
+|---|---|---|
+| `core` | one of the 1,568 MOE 主條 (full usage notes and examples) | yes |
+| `moe` | in the MOE main text (5,153 entries) | yes |
+| `common` | in 2 or more of the lists | yes |
+| `rare` | in one list only | yes, marked |
+| `noise` | stoplist or AABB/ABAB reduplication, unless `core` | hidden |
+
+### Deck format: `chengyu-deck/1`
+
+Shujia (or `tools/chengyu.py scan`) writes one file per book; Wenyan imports it as a deck.
+Items are ordered by **first appearance**, so the learner can study a book's 成語 ahead of
+reading it.
+
+```json
+{
+  "format": "chengyu-deck/1",
+  "book": {"title": "红楼梦", "author": "曹雪芹", "file": "hlm.txt", "script": "simp",
+           "chapters": ["第一回 …", "…"], "length": 2600000},
+  "created": "2026-11-08",
+  "settings": {"min_len": 4, "main_only": false},
+  "items": [{
+    "w": "守株待兔",           "t": "守株待兔", "s": "守株待兔", "py": "shǒu zhū dài tù",
+    "count": 1,
+    "first": {"chapter": "第一章", "ci": 0, "pos": 10, "sentence": "他整天守株待兔，一毛不拔。"},
+    "hits":  [ /* up to 5, same shape as first */ ],
+    "refs":  {"moe": [39], "moe_app": [5192], "dcd": [13295]},
+    "tier":  "core",
+    "status": "new"
+  }]
+}
+```
+
+- `w` is the form as it appears in the book; `t` / `s` are both scripts; `s` is the key.
+- `pos` is a character offset in the whole book, `ci` the chapter index.
+- `refs` point into the private data files, so a deck stays small and never copies dictionary text.
+- `status`: `new` → `learning` → `known`, or `ignored`. Wenyan writes it back; Shujia can read it to
+  highlight unknown 成語 while reading.
+- Optional, written by Wenyan: `note` (our English note), `due` (next review date).
+- Matching is by longest match on the simplified form, so a book in either script works.
+
+## 10. 成語 module (public)
+
+A separate track from the reading lessons, built on frequency. Public, CC BY-SA 4.0.
+
+### Order
+
+- **Frequency list:** `data/chengyu-freq.tsv` ranks 22,029 成語 (every 4+ character expression in
+  the MOE 成語典 main text or the 中国成语大辞典, minus reduplications and the stoplist) by modern
+  frequency from **wordfreq** (CC BY-SA), with a second count from our own classic-novel corpus.
+  About 2,400 are common in modern use (Zipf ≥ 2); 4,521 have a modern figure at all.
+- **Lessons of 20.** Take the next 100 by frequency, review out the non-成語 (十字路口, 三位一體,
+  新陳代謝, 獨立自主 were dropped from the first 100), then split them into 5 lessons by **pattern or
+  theme**: mirror frames (一X一Y, 無X無Y…), numbers, classical function words (所, 而, 之, 以, 於),
+  negation, images. Grouping helps memory; frequency decides what comes first.
+- **Story 成語** (守株待兔, 刻舟求劍…) sit lower in the list (~1,000–3,500). They are taught with
+  their fable in the main course, and the 成語 module links to that lesson instead of retelling it.
+
+### Lesson file
+
+```
+chengyu/NN-slug.yaml
+```
+
+| Field | Content |
+|---|---|
+| `id`, `slug`, `title`, `title_en`, `status`, `intro` | as in reading lessons |
+| `frames[]` | the patterns the lesson teaches: `f` (e.g. `一X一Y`), `en`, `ex` (items using it) |
+| `items[].w` | traditional headword (simplified is derived) |
+| `py` | mainland standard reading, citation tones (no 一/不 sandhi) |
+| `py_tw` | Taiwan standard reading, only when it differs (熟 shóu, 微 wéi, 息 xí…) |
+| `lit` | literal, character by character, hyphenated: `one-mould-one-shape` |
+| `en` | the meaning, our English |
+| `note` | optional: a classical word or construction, a usage point, the story in one line |
+| `origin` | optional: `work`, `text` (the classical phrase, public domain), `checked` (`moe` / `dcd`) |
+| `ex` | one real sentence: `h` (as found, either script, quoted), `py` (pinyin), `py_auto` (true until checked by hand), `src` (`tatoeba` or `wikipedia: Title`), `en` (our translation) |
+
+Rules:
+- **Example sentences are real**, from Tatoeba (CC BY 2.0 FR) or Chinese Wikipedia (CC BY-SA), or
+  from a public-domain novel. Trimmed sentences are marked with …; nothing else is changed.
+  `wenyan-private/tools/check_chengyu_lessons.py` checks every example against the sentence pool.
+- **Sentence pinyin** is generated by `tools/fill_pinyin.py`: syllables separated as in the reading
+  lessons, citation tones, the 成語 with its checked reading, names joined and capitalised from
+  `tools/chengyu-pinyin-words.yaml` (add any word pypinyin gets wrong there). It stays `py_auto: true`
+  until checked by hand, and the reader marks it AUTO.
+- **In the app** (成語 tab, §12): the reading lessons' two-column card. Each 成語 is two rows,
+  成語 | meaning (note, origin), then example | translation; on a phone they stack in that order.
+  Cover blurs the right column; tap a 成語 to check.
+- **Origins** are only given when a dictionary confirms them; the checker matches the quoted
+  phrase against the MOE 典源 or the 大辞典 text. The phrase is the classical original, never the
+  dictionary's wording.
+- Glosses and notes are ours. Never paste the MOE or 大辞典 definitions into the public module.
+- `tools/build.py` adds the simplified forms and the example's traditional form (`h_t`, OpenCC
+  s2tw, so 為 and 裡 come out in the Taiwan standard), and fails if an example lacks its 成語.
 
 ## 11. 白話 track: the written language beyond the old HSK 5
 

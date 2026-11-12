@@ -1,0 +1,131 @@
+id: 4
+slug: negation
+title: 否定
+title_py: Fǒudìng
+title_en: "Saying no: 不 and 無"
+status: draft
+intro: >
+  Negation is the most common building block of high-frequency 成語. 不 negates a verb or an
+  adjective ("not"), 無 negates having ("without, there is no"). The negative often comes second or third, with the structure of classical Chinese: 迫不及待
+  "pressed, not able to wait", 微不足道 "small, not worth mentioning". The lesson ends with three
+  ways of saying "unexpected" (意想不到, 出乎意料, 出人意料), the kind of near-synonym set teachers
+  in China and Taiwan like to drill.
+frames:
+  - {f: X不足Y / X不可Y, en: "'X, not enough to Y / cannot be Y'", ex: [微不足道, 不可思議]}
+  - {f: 無X無Y / X無Y, en: "'without'", ex: [史無前例, 肆無忌憚, 束手無策, 無家可歸]}
+  - {f: 無 + VO, en: "'not (do) anything to…'", ex: [無能為力, 無關緊要, 無動於衷, 無與倫比]}
+  - {f: 不 + VO, en: "'not V-ing the O'", ex: [不遺餘力, 不擇手段]}
+  - {f: 出乎 / 出人 意料, en: "'going beyond expectations'", ex: [出乎意料, 出人意料, 意想不到]}
+items:
+  - w: 不可思議
+    py: bù kě sī yì
+    lit: not-can-think-discuss
+    en: unbelievable, incredible
+    origin: {work: 維摩詰所說經·不思議品, text: 諸佛菩薩，有解脫名不可思議, checked: [moe]}
+    note: "Buddhist in origin: a state \"beyond thought and words\". Now it just means \"amazing\"."
+    ex: {h: "你真是不可思议。", py: "Nǐ zhēn shì bù kě sī yì.", py_auto: true, src: "tatoeba", en: You're incredible.}
+  - w: 無論如何
+    py: wú lùn rú hé
+    lit: without-discussing-how
+    en: no matter what, in any case
+    ex: {h: "無論如何我一定要在明天前完成這工作。", py: "Wú lùn rú hé wǒ yī dìng yào zài míng tiān qián wán chéng zhè gōng zuò.", py_auto: true, src: "tatoeba", en: No matter what, I have to finish this work before tomorrow.}
+  - w: 無能為力
+    py: wú néng wéi lì
+    lit: without-ability-make-effort
+    en: powerless, there is nothing one can do
+    origin: {work: 左傳·隱公四年, text: 老夫耄矣，無能為也, checked: [moe]}
+    ex: {h: "我不是不同情你，但我實在是無能為力。", py: "Wǒ bù shì bù tóng qíng nǐ, dàn wǒ shí zài shì wú néng wéi lì.", py_auto: true, src: "tatoeba", en: "It's not that I don't feel for you, but there's really nothing I can do."}
+  - w: 無關緊要
+    py: wú guān jǐn yào
+    lit: without-concern-tight-important
+    en: unimportant, it doesn't matter
+    ex: {h: "別想了，那不過是些無關緊要的細節。", py: "Bié xiǎng le, nà bù guò shì xiē wú guān jǐn yào de xì jié.", py_auto: true, src: "tatoeba", en: "Forget it, those are just unimportant details."}
+  - w: 迫不及待
+    py: pò bù jí dài
+    lit: pressed-not-able-wait
+    en: can't wait to, impatiently
+    origin: {work: 王夫之《讀通鑑論》, text: 顧處此迫不及待之勢, checked: [moe]}
+    ex: {h: "他迫不及待地想试一下他的新冲浪板。", py: "Tā pò bù jí dài de xiǎng shì yī xià tā de xīn chōng làng bǎn.", py_auto: true, src: "tatoeba", en: He can't wait to try out his new surfboard.}
+  - w: 微不足道
+    py: wēi bù zú dào
+    py_tw: wéi bù zú dào
+    lit: tiny-not-enough-mention
+    en: trivial, not worth mentioning
+    ex: {h: "和我的比起来，你的问题微不足道。", py: "Hé wǒ de bǐ qǐ lái, nǐ de wèn tí wēi bù zú dào.", py_auto: true, src: "tatoeba", en: "Compared with mine, your problems are trivial."}
+  - w: 史無前例
+    py: shǐ wú qián lì
+    lit: history-without-earlier-example
+    en: unprecedented
+    origin: {work: 南齊書·陸慧曉傳, text: 兩賢同時，便是未有前例, checked: [moe]}
+    note: "Compare 前所未有 (lesson 3): same meaning, different grammar."
+    ex: {h: "这种致命微生物的出现，使人类陷入了史无前例的文化大灾难。", py: "Zhè zhǒng zhì mìng wēi shēng wù de chū xiàn, shǐ rén lèi xiàn rù le shǐ wú qián lì de wén huà dà zāi nàn.", py_auto: true, src: "wikipedia: 重铁骑", en: "The appearance of this deadly microbe plunged humanity into an unprecedented cultural catastrophe."}
+  - w: 肆無忌憚
+    py: sì wú jì dàn
+    lit: unbridled-without-fear-dread
+    en: brazen, without any scruples
+    origin: {work: 禮記·中庸, text: 小人之中庸也，小人而無忌憚也, checked: [moe]}
+    ex: {h: "合德愈发肆无忌惮，隐然有了独断后宫之势。", py: "Hédé yù fā sì wú jì dàn, yǐn rán yǒu le dú duàn hòu gōng zhī shì.", py_auto: true, src: "wikipedia: 汉宫飞燕", en: "Hede grew ever more brazen, and seemed close to ruling the harem alone."}
+  - w: 供不應求
+    py: gōng bù yìng qiú
+    lit: supply-not-meet-demand
+    en: demand exceeds supply
+    ex: {h: "收获的蓝莓销往中国各城市超市，供不应求。", py: "Shōu huò de lán méi xiāo wǎng Zhōngguó gè chéng shì chāo shì, gōng bù yìng qiú.", py_auto: true, src: "wikipedia: 停前镇", en: "The harvested blueberries are sold to supermarkets across China, and demand outstrips supply."}
+  - w: 無動於衷
+    py: wú dòng yú zhōng
+    lit: without-moving-in-heart
+    en: unmoved, indifferent
+    note: 衷 "the inner heart"; 於 = in (→ lesson 3).
+    ex: {h: "对于失败，有些公司采取了补救措施，而大部分却无动于衷。", py: "Duì yú shī bài, yǒu xiē gōng sī cǎi qǔ le bǔ jiù cuò shī, ér dà bù fèn què wú dòng yú zhōng.", py_auto: true, src: "wikipedia: 技术成熟度曲线", en: "Faced with failure, some companies took remedial action, but most did nothing."}
+  - w: 不遺餘力
+    py: bù yí yú lì
+    lit: not-leave-spare-strength
+    en: sparing no effort
+    origin: {work: 戰國策·趙策三, text: 秦之攻我也，不遺餘力矣, checked: [moe]}
+    ex: {h: "他不遺餘力幫助我。", py: "Tā bù yí yú lì bāng zhù wǒ.", py_auto: true, src: "tatoeba", en: He spared no effort to help me.}
+  - w: 不擇手段
+    py: bù zé shǒu duàn
+    lit: not-choose-means
+    en: by fair means or foul, unscrupulously
+    ex: {h: "為了正當目的並非總是可以不擇手段.", py: "Wèi le zhèng dāng mù dì bìng fēi zǒng shì kě yǐ bù zé shǒu duàn.", py_auto: true, src: "tatoeba", en: "Even for a good cause, you can't always use any means you like."}
+  - w: 無與倫比
+    py: wú yǔ lún bǐ
+    lit: without-with-equal-compare
+    en: incomparable, unrivalled
+    ex: {h: "本杰明·富兰克林将玻璃琴的音色描述为“无与伦比的甜蜜”。", py: "Běnjiémíng·Fùlánkèlín jiāng bō lí qín de yīn sè miáo shù wéi “wú yǔ lún bǐ de tián mì”.", py_auto: true, src: "wikipedia: 玻璃琴", en: "Benjamin Franklin described the glass harmonica's sound as 'incomparably sweet'."}
+  - w: 情不自禁
+    py: qíng bù zì jīn
+    lit: feeling-not-self-restrain
+    en: can't help (doing something)
+    origin: {work: 劉遵〈七夕穿針〉詩, text: 步月如有意，情來不自禁, checked: [moe]}
+    ex: {h: "雖然她有許多缺點，但我卻情不自禁地愛著她。", py: "Suī rán tā yǒu xǔ duō quē diǎn, dàn wǒ què qíng bù zì jīn de ài zhe tā.", py_auto: true, src: "tatoeba", en: "She has many faults, but I can't help loving her."}
+  - w: 束手無策
+    py: shù shǒu wú cè
+    lit: bind-hands-without-plan
+    en: helpless, at one's wits' end
+    ex: {h: "當我聽到這個消息時, 我束手無策。", py: "Dāng wǒ tīng dào zhè ge xiāo xī shí, wǒ shù shǒu wú cè.", py_auto: true, src: "tatoeba", en: "When I heard the news, I didn't know what to do."}
+  - w: 截然不同
+    py: jié rán bù tóng
+    lit: cut-off-not-same
+    en: completely different
+    ex: {h: "我們的興趣截然不同。", py: "Wǒ men de xìng qù jié rán bù tóng.", py_auto: true, src: "tatoeba", en: Our interests are completely different.}
+  - w: 意想不到
+    py: yì xiǎng bù dào
+    lit: idea-think-not-reach
+    en: unexpected
+    ex: {h: "一時失言常常會帶來意想不到的結果。", py: "Yī shí shī yán cháng cháng huì dài lái yì xiǎng bù dào de jié guǒ.", py_auto: true, src: "tatoeba", en: A slip of the tongue often has unexpected results.}
+  - w: 出乎意料
+    py: chū hū yì liào
+    lit: go-beyond-intention-expectation
+    en: unexpectedly
+    note: 乎 = 於 "beyond". Also 出乎意料之外 (redundant but common).
+    ex: {h: "让我出乎意料的是，他居然很会唱歌。", py: "Ràng wǒ chū hū yì liào de shì, tā jū rán hěn huì chàng gē.", py_auto: true, src: "tatoeba", en: "What surprised me was that he actually sings very well."}
+  - w: 出人意料
+    py: chū rén yì liào
+    lit: go-beyond-people's-expectation
+    en: surprisingly, unexpectedly
+    ex: {h: "岬的饭量出人意料地大，曾经一个人吃掉好几个人份的咖喱。", py: "Jiǎ de fàn liàng chū rén yì liào de dà, céng jīng yī gè rén chī diào hǎo jǐ gè rén fèn de gā lí.", py_auto: true, src: "wikipedia: ONE～光辉的季节～", en: "Misaki eats a surprising amount: she once finished several people's portions of curry on her own."}
+  - w: 無家可歸
+    py: wú jiā kě guī
+    lit: without-home-can-return
+    en: homeless
+    ex: {h: "当我无家可归的时候，我常在那张长椅上睡觉。", py: "Dāng wǒ wú jiā kě guī de shí hòu, wǒ cháng zài nà zhāng cháng yǐ shàng shuì jiào.", py_auto: true, src: "tatoeba", en: "When I was homeless, I often slept on that bench."}

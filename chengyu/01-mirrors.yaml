@@ -1,0 +1,130 @@
+id: 1
+slug: mirrors
+title: 對稱
+title_py: Duìchèn
+title_en: Mirror patterns
+status: draft
+intro: >
+  Many everyday 成語 are built on a frame that repeats: 一X一Y, 無X無Y, 所X所Y, 胡X亂Y. Once you
+  see the frame, you only have to learn the two halves, which usually say the same thing twice
+  (全心全意 "whole heart, whole mind") or repeat a word (日復一日 "day comes back to day"). Learn the frames, not just
+  the words: the same frames make hundreds of rarer 成語.
+frames:
+  - {f: 一X一Y, en: "X and Y are near-synonyms; 一 = 'one, the same, every'", ex: [一模一樣, 一舉一動, 一年一度]}
+  - {f: 全X全Y, en: "whole X, whole Y: total commitment", ex: [全心全意]}
+  - {f: 不X不Y / 無X無Y, en: "negation twice: 'without X or Y'", ex: [不知不覺, 無法無天, 無緣無故]}
+  - {f: 所X所Y, en: "所 + verb = 'what one Xs' (classical nominaliser, → lesson 3)", ex: [所作所為]}
+  - {f: 各X各Y / 隨X隨Y / 何X何Y, en: "each…each, wherever…whenever, which…which", ex: [各式各樣, 隨時隨地, 何去何從]}
+  - {f: 謝X謝Y / 討X還Y / 想X設Y, en: "two verb–object pairs side by side", ex: [謝天謝地, 討價還價, 想方設法]}
+  - {f: 胡X亂Y, en: "胡 and 亂 both mean 'wildly, at random'", ex: [胡思亂想, 胡言亂語, 胡說八道]}
+  - {f: 深X熟Y / 千X百Y, en: "two adjective–noun or number–noun pairs", ex: [深思熟慮, 千方百計]}
+items:
+  - w: 一模一樣
+    py: yī mó yī yàng
+    lit: one-mould-one-shape
+    en: exactly alike, identical
+    ex: {h: "这两个双胞胎兄弟长得一模一样。", py: "Zhè liǎng gè shuāng bāo tāi xiōng dì zhǎng de yī mó yī yàng.", py_auto: true, src: "tatoeba", en: The two twin brothers look exactly alike.}
+  - w: 一舉一動
+    py: yī jǔ yī dòng
+    lit: every-raise-every-move
+    en: every move someone makes
+    ex: {h: "醫生繼續觀察病人的一舉一動。", py: "Yī shēng jì xù guān chá bìng rén de yī jǔ yī dòng.", py_auto: true, src: "tatoeba", en: The doctor kept watching the patient's every move.}
+  - w: 一年一度
+    py: yī nián yī dù
+    lit: one-year-one-time
+    en: once a year, annual
+    note: Used mostly before a noun with 的 (一年一度的…).
+    ex: {h: "今天，该街道为一年一度的圣帕特里克节游行的主要路径。", py: "Jīn tiān, gāi jiē dào wéi yī nián yī dù de Shèng Pàtèlǐkè Jié yóu xíng de zhǔ yào lù jìng.", py_auto: true, src: "wikipedia: 奥康奈尔街", en: "Today the street is the main route of the annual Saint Patrick's Day parade."}
+  - w: 全心全意
+    py: quán xīn quán yì
+    lit: whole-heart-whole-mind
+    en: wholeheartedly
+    ex: {h: "我全心全意地支持你。", py: "Wǒ quán xīn quán yì de zhī chí nǐ.", py_auto: true, src: "tatoeba", en: I support you wholeheartedly.}
+  - w: 不知不覺
+    py: bù zhī bù jué
+    lit: not-know-not-feel
+    en: without realising it, before you know it
+    ex: {h: "不知不覺，秋天已經到了。", py: "Bù zhī bù jué, qiū tiān yǐ jīng dào le.", py_auto: true, src: "tatoeba", en: "Before we knew it, autumn had come."}
+  - w: 無法無天
+    py: wú fǎ wú tiān
+    lit: without-law-without-heaven
+    en: lawless, completely out of control
+    note: 天 here is "Heaven" as the moral order, not the sky.
+    ex: {h: "政府官员恳求华盛顿能够协助他们制止这种无法无天的行为。", py: "Zhèng fǔ guān yuán kěn qiú Huáshèngdùn néng gòu xié zhù tā men zhì zhǐ zhè zhǒng wú fǎ wú tiān de xíng wéi.", py_auto: true, src: "wikipedia: 約翰·埃德加·胡佛", en: Officials begged Washington to help them stop this lawless behaviour.}
+  - w: 無緣無故
+    py: wú yuán wú gù
+    lit: without-cause-without-reason
+    en: for no reason at all
+    ex: {h: "他看见人无缘无故被铐进枷锁、被打、被囚禁在地牢。", py: "Tā kàn jiàn rén wú yuán wú gù bèi kào jìn jiā suǒ, bèi dǎ, bèi qiú jìn zài dì láo.", py_auto: true, src: "wikipedia: 复活 (小说)", en: "He saw people put in chains, beaten and locked in dungeons for no reason at all."}
+  - w: 所作所為
+    py: suǒ zuò suǒ wéi
+    lit: what-one-does-what-one-does
+    en: everything someone has done, someone's conduct
+    note: Usually critical. 作 and 為 both mean "do".
+    ex: {h: "汤姆不知道他的所作所为违反了规则。", py: "Tāngmǔ bù zhī dào tā de suǒ zuò suǒ wéi wéi fǎn le guī zé.", py_auto: true, src: "tatoeba", en: Tom didn't know that what he had done broke the rules.}
+  - w: 各式各樣
+    py: gè shì gè yàng
+    lit: each-style-each-kind
+    en: all kinds of
+    ex: {h: "各式各樣的人住在東京。", py: "Gè shì gè yàng de rén zhù zài Dōngjīng.", py_auto: true, src: "tatoeba", en: All kinds of people live in Tokyo.}
+  - w: 謝天謝地
+    py: xiè tiān xiè dì
+    lit: thank-heaven-thank-earth
+    en: thank goodness
+    ex: {h: "…场面实在不好形容，但谢天谢地，我的歌词保住了！", py: "… Chǎng miàn shí zài bù hǎo xíng róng, dàn xiè tiān xiè dì, wǒ de gē cí bǎo zhù le!", py_auto: true, src: "wikipedia: 貝隆夫人 (電影)", en: "The scene is hard to describe, but thank goodness, my lyrics survived!"}
+  - w: 隨時隨地
+    py: suí shí suí dì
+    lit: follow-time-follow-place
+    en: anytime, anywhere
+    ex: {h: "特技是繪畫（有趣的画）、随时随地都能睡着、舞蹈。", py: "Tè jì shì huì huà (yǒu qù de huà), suí shí suí dì dōu néng shuì zháo, wǔ dǎo.", py_auto: true, src: "wikipedia: 宮脇咲良", en: "Special skills: drawing (funny pictures), falling asleep anytime and anywhere, dancing."}
+  - w: 何去何從
+    py: hé qù hé cóng
+    lit: what-leave-what-follow
+    en: which way to go, what to do next
+    note: 何 "what" comes before the verb, as in classical Chinese questions (何去 = 去何).
+    ex: {h: "我失業又沒錢。真不知該何去何從。", py: "Wǒ shī yè yòu méi qián. Zhēn bù zhī gāi hé qù hé cóng.", py_auto: true, src: "tatoeba", en: I've lost my job and I have no money. I really don't know what to do next.}
+  - w: 日復一日
+    py: rì fù yī rì
+    lit: day-again-one-day
+    en: day after day
+    ex: {h: "那隻狗日復一日地等待著主人的歸來。", py: "Nà zhī gǒu rì fù yī rì de děng dài zhe zhǔ rén de guī lái.", py_auto: true, src: "tatoeba", en: Day after day the dog waited for its master to come back.}
+  - w: 討價還價
+    py: tǎo jià huán jià
+    lit: ask-price-return-price
+    en: to haggle, to bargain
+    note: 還 is huán "give back" here (a counter-offer), not hái.
+    ex: {h: "我們為這棟房子和他討價還價。", py: "Wǒ men wèi zhè dòng fáng zi hé tā tǎo jià huán jià.", py_auto: true, src: "tatoeba", en: We haggled with him over the house.}
+  - w: 胡思亂想
+    py: hú sī luàn xiǎng
+    lit: wildly-think-chaotically-imagine
+    en: to let one's imagination run wild, to worry over nothing
+    origin: {work: 朱子語類·卷一二, text: 無許多胡思亂想, checked: [moe]}
+    ex: {h: "喜欢热闹，擅长在上课时胡思乱想。", py: "Xǐ huān rè nào, shàn cháng zài shàng kè shí hú sī luàn xiǎng.", py_auto: true, src: "wikipedia: ONE～光辉的季节～", en: "Loves a lively crowd; good at daydreaming in class."}
+  - w: 胡言亂語
+    py: hú yán luàn yǔ
+    lit: wildly-speak-chaotically-talk
+    en: to talk nonsense, to rave
+    ex: {h: "汤姆在胡言乱语。", py: "Tāngmǔ zài hú yán luàn yǔ.", py_auto: true, src: "tatoeba", en: Tom is talking nonsense.}
+  - w: 胡說八道
+    py: hú shuō bā dào
+    lit: wildly-say-eight-ways
+    en: rubbish!, to talk nonsense
+    note: 八道 "eight ways" = in every direction. Stronger and more colloquial than 胡言亂語.
+    ex: {h: "她们只是胡说八道。", py: "Tā men zhǐ shì hú shuō bā dào.", py_auto: true, src: "tatoeba", en: They're just talking rubbish.}
+  - w: 想方設法
+    py: xiǎng fāng shè fǎ
+    lit: think-way-devise-method
+    en: to try every possible way
+    ex: {h: "她想方设法以一己之力完成了工作。", py: "Tā xiǎng fāng shè fǎ yǐ yī jǐ zhī lì wán chéng le gōng zuò.", py_auto: true, src: "tatoeba", en: She found a way to finish the work on her own.}
+  - w: 深思熟慮
+    py: shēn sī shú lǜ
+    py_tw: shēn sī shóu lǜ
+    lit: deep-thought-ripe-consideration
+    en: careful, well thought out
+    origin: {work: "屈原〈漁父〉 (深思) + 史記·穰侯列傳 (熟慮)", text: 何故深思高舉…願君熟慮之, checked: [moe]}
+    ex: {h: "该实验的每一步都是经过深思熟虑的。", py: "Gāi shí yàn de měi yī bù dōu shì jīng guò shēn sī shú lǜ de.", py_auto: true, src: "tatoeba", en: Every step of the experiment was carefully thought out.}
+  - w: 千方百計
+    py: qiān fāng bǎi jì
+    lit: thousand-ways-hundred-plans
+    en: by every possible means
+    ex: {h: "报导说，施莱佛被捕事件，充分表明北京千方百计想渗透中情局。", py: "Bào dǎo shuō, Shīláifó bèi bǔ shì jiàn, chōng fèn biǎo míng Běijīng qiān fāng bǎi jì xiǎng shèn tòu Zhōngqíngjú.", py_auto: true, src: "wikipedia: 格伦·达菲·施莱弗", en: "Reports said Shriver's arrest showed that Beijing was trying by every means to infiltrate the CIA."}

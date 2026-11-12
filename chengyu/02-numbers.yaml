@@ -1,0 +1,128 @@
+id: 2
+slug: numbers
+title: 數字
+title_py: Shùzì
+title_en: Numbers and wholes
+status: draft
+intro: >
+  Numbers in 成語 are almost never real counts. 一 means "the whole, the same, once, at once",
+  七八 means "all over the place", 千 and 萬 mean "countless", 四面八方 "every direction". Paired
+  numbers (一清二楚, 亂七八糟) give rhythm more than meaning. The last few items of the lesson are
+  about wholes and pieces (從頭到尾, 支離破碎), the same idea without numbers.
+frames:
+  - {f: 一X二Y, en: "'one…two…': completely, thoroughly", ex: [一清二楚]}
+  - {f: X七Y八, en: "'seven…eight…': in a mess, all over", ex: [亂七八糟]}
+  - {f: 千X萬Y / 成千上萬, en: "thousands, tens of thousands: countless", ex: [成千上萬]}
+  - {f: 一無所X, en: "not a single X (→ 所, lesson 3)", ex: [一無所有, 一無所知]}
+  - {f: 獨一無二, en: "alone one, no second: unique", ex: [獨一無二]}
+items:
+  - w: 成千上萬
+    py: chéng qiān shàng wàn
+    lit: reach-thousand-rise-ten-thousand
+    en: thousands and thousands
+    ex: {h: "每年有成千上万的外国人访问日本。", py: "Měi nián yǒu chéng qiān shàng wàn de wài guó rén fǎng wèn Rìběn.", py_auto: true, src: "tatoeba", en: Thousands of foreigners visit Japan every year.}
+  - w: 獨一無二
+    py: dú yī wú èr
+    lit: alone-one-without-two
+    en: unique, one of a kind
+    ex: {h: "这里的天气有独一无二的特点。", py: "Zhè lǐ de tiān qì yǒu dú yī wú èr de tè diǎn.", py_auto: true, src: "tatoeba", en: The weather here has some unique features.}
+  - w: 亂七八糟
+    py: luàn qī bā zāo
+    lit: chaotic-seven-eight-messy
+    en: in a terrible mess
+    ex: {h: "她工作做得亂七八糟。", py: "Tā gōng zuò zuò de luàn qī bā zāo.", py_auto: true, src: "tatoeba", en: She made a complete mess of her work.}
+  - w: 四面八方
+    py: sì miàn bā fāng
+    lit: four-sides-eight-directions
+    en: in all directions, from everywhere
+    ex: {h: "我看见小动物向四面八方跑去。", py: "Wǒ kàn jiàn xiǎo dòng wù xiàng sì miàn bā fāng pǎo qù.", py_auto: true, src: "tatoeba", en: I saw the little animals run off in all directions.}
+  - w: 一清二楚
+    py: yī qīng èr chǔ
+    lit: one-clear-two-distinct
+    en: perfectly clear
+    note: Often after 得 or 的 (記得一清二楚 "remember perfectly").
+    ex: {h: "對於搬到這裡的湯瑪斯家的人是好是壞，她都知道的一清二楚。", py: "Duì yú bān dào zhè lǐ de Tāngmǎsī jiā de rén shì hǎo shì huài, tā dōu zhī dào de yī qīng èr chǔ.", py_auto: true, src: "wikipedia: 你好 安妮 ～Before Green Gables", en: "She knows perfectly well whether the Thomas family who moved here are good people or bad."}
+  - w: 一無所有
+    py: yī wú suǒ yǒu
+    lit: one-without-what-have
+    en: to have nothing at all
+    origin: {work: 敦煌變文《廬山遠公話》, text: 萬法皆無，一無所有, checked: [moe]}
+    ex: {h: "我一無所有。", py: "Wǒ yī wú suǒ yǒu.", py_auto: true, src: "tatoeba", en: I have nothing.}
+  - w: 一無所知
+    py: yī wú suǒ zhī
+    lit: one-without-what-know
+    en: to know nothing at all about something
+    ex: {h: "真奇怪, 你對她的婚禮一無所知。", py: "Zhēn qí guài, nǐ duì tā de hūn lǐ yī wú suǒ zhī.", py_auto: true, src: "tatoeba", en: "It's strange that you know nothing about her wedding."}
+  - w: 一如既往
+    py: yī rú jì wǎng
+    lit: one-like-already-past
+    en: as always, as before
+    ex: {h: "某天回家的路上，善也一如既往的在霞關站等候地鐵。", py: "Mǒu tiān huí jiā de lù shàng, Shànyě yī rú jì wǎng de zài Xiáguān Zhàn děng hòu dì tiě.", py_auto: true, src: "wikipedia: 神的孩子全跳舞", en: "One day on his way home, Yoshiya was waiting for the subway at Kasumigaseki station as usual."}
+  - w: 一席之地
+    py: yī xí zhī dì
+    lit: one-mat-'s-place
+    en: a place, a foothold (in a field)
+    note: 席 is the mat people sat on; 之 is the classical "of" (→ lesson 3). Usually 占有一席之地.
+    ex: {h: "依靠如此多方面的成就，他理应在音乐史上占有一席之地。", py: "Yī kào rú cǐ duō fāng miàn de chéng jiù, tā lǐ yīng zài yīn yuè shǐ shàng zhàn yǒu yī xí zhī dì.", py_auto: true, src: "wikipedia: 伊格纳茨·普莱耶尔", en: "With so many achievements, he deserves a place in the history of music."}
+  - w: 一塌糊塗
+    py: yī tā hú tú
+    lit: one-collapse-muddled
+    en: in a total mess, hopelessly
+    ex: {h: "這個路口正在翻修，被挖得一塌糊塗。", py: "Zhè ge lù kǒu zhèng zài fān xiū, bèi wā de yī tā hú tú.", py_auto: true, src: "tatoeba", en: "This crossroads is being rebuilt, and it's been dug up into a complete mess."}
+  - w: 一成不變
+    py: yī chéng bù biàn
+    lit: once-formed-not-change
+    en: unchanging, rigid
+    origin: {work: 禮記·王制, text: 刑者，侀也。侀者，成也。一成而不可變, checked: [moe]}
+    note: The source is about punishment, which cannot be undone once carried out.
+    ex: {h: "终其一生，他绘画的风格几乎一成不变。", py: "Zhōng qí yī shēng, tā huì huà de fēng gé jī hū yī chéng bù biàn.", py_auto: true, src: "wikipedia: 克洛德·约瑟夫·韦尔内", en: "Throughout his life, his painting style hardly changed."}
+  - w: 一帆風順
+    py: yī fān fēng shùn
+    py_tw: yī fán fēng shùn
+    lit: one-sail-wind-favourable
+    en: plain sailing, smooth
+    ex: {h: "退团後，堀内敬子的演艺生涯并非一帆风顺。", py: "Tuì tuán hòu, Kūnèi Jìngzǐ de yǎn yì shēng yá bìng fēi yī fān fēng shùn.", py_auto: true, src: "wikipedia: 堀内敬子", en: "After leaving the troupe, Horiuchi Keiko's acting career was not all plain sailing."}
+  - w: 一視同仁
+    py: yī shì tóng rén
+    lit: one-look-same-kindness
+    en: to treat everyone equally
+    origin: {work: 韓愈〈原人〉, text: 是故聖人一視而同仁, checked: [moe]}
+    ex: {h: "老师应该一视同仁地对待他们的学生。", py: "Lǎo shī yīng gāi yī shì tóng rén de duì dài tā men de xué shēng.", py_auto: true, src: "tatoeba", en: Teachers should treat all their students equally.}
+  - w: 有朝一日
+    py: yǒu zhāo yī rì
+    lit: have-morning-one-day
+    en: one day, some day
+    ex: {h: "我有朝一日会成为一名医生。", py: "Wǒ yǒu zhāo yī rì huì chéng wéi yī míng yī shēng.", py_auto: true, src: "tatoeba", en: Some day I'll be a doctor.}
+  - w: 大吃一驚
+    py: dà chī yī jīng
+    lit: greatly-eat-one-fright
+    en: to be taken completely by surprise
+    note: 吃 "suffer, receive", as in 吃虧.
+    ex: {h: "她肯定会大吃一惊的。", py: "Tā kěn dìng huì dà chī yī jīng de.", py_auto: true, src: "tatoeba", en: She's bound to be amazed.}
+  - w: 混為一談
+    py: hùn wéi yī tán
+    lit: mix-make-one-talk
+    en: to lump together, to confuse two things
+    ex: {h: "同情心和愛心絕不可混為一談。", py: "Tóng qíng xīn hé ài xīn jué bù kě hùn wéi yī tán.", py_auto: true, src: "tatoeba", en: Sympathy and love must never be confused.}
+  - w: 手無寸鐵
+    py: shǒu wú cùn tiě
+    lit: hand-without-inch-iron
+    en: unarmed, defenceless
+    origin: {work: 異苑·卷一〇, text: 香年十四，手無寸刃，直搤虎頸, checked: [moe]}
+    note: "The source has 刃 \"blade\": a 14-year-old girl seizes a tiger by the neck to save her father."
+    ex: {h: "美军士兵随后开火，无差别的射杀手无寸铁的印第安人。", py: "Měi jūn shì bīng suí hòu kāi huǒ, wú chā bié de shè shā shǒu wú cùn tiě de Yìndì'ān rén.", py_auto: true, src: "wikipedia: 伤膝河大屠杀", en: American soldiers then opened fire and shot unarmed Native Americans indiscriminately.}
+  - w: 從頭到尾
+    py: cóng tóu dào wěi
+    lit: from-head-to-tail
+    en: from beginning to end
+    ex: {h: "請你把故事從頭到尾給我們說一遍。", py: "Qǐng nǐ bǎ gù shì cóng tóu dào wěi gěi wǒ men shuō yī biàn.", py_auto: true, src: "tatoeba", en: Please tell us the story from beginning to end.}
+  - w: 支離破碎
+    py: zhī lí pò suì
+    lit: branch-apart-broken-smashed
+    en: broken up, fragmented
+    ex: {h: "月球事件过后，僵尸肆虐，地球变得如同地狱般支离破碎。", py: "Yuè qiú shì jiàn guò hòu, jiāng shī sì nüè, dì qiú biàn de rú tóng dì yù bān zhī lí pò suì.", py_auto: true, src: "wikipedia: 決勝時刻：黑色行動II", en: "After the moon incident zombies ran wild and the Earth was torn apart like hell."}
+  - w: 層出不窮
+    py: céng chū bù qióng
+    lit: layer-come-out-not-end
+    en: to keep appearing, endless
+    ex: {h: "山中景物石径、蹬道、栈阁、洞穴层出不穷。", py: "Shān zhōng jǐng wù shí jìng, dēng dào, zhàn gé, dòng xué céng chū bù qióng.", py_auto: true, src: "wikipedia: 艮岳", en: "In the hills there was no end of sights: stone paths, stairs, plank walkways and caves."}

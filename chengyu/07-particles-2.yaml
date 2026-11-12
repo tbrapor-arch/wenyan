@@ -1,0 +1,134 @@
+id: 7
+slug: particles-2
+title: 虛詞（二）
+title_py: Xūcí (èr)
+title_en: Classical grammar, part 2
+status: draft
+intro: >
+  More 文言 function words, frozen inside modern 成語. 而 again links two verbs ("and, and then,
+  yet"). 之 is now also an object pronoun "it" (持之以恆 "hold it with constancy"). 以 marks the
+  means or the purpose (以身作則 "with one's own person, make a model"). 其 is "its, the" and
+  可 + verb is "can be V-ed" (屈指可數 "can be counted on the fingers"). 所 + verb, from lesson 3,
+  turns a verb into "what one Vs".
+frames:
+  - {f: X而V, en: "而 joins a manner or a first action to the main verb", ex: [背道而馳, 不得而知, 脫口而出, 不言而喻, 從天而降, 久而久之]}
+  - {f: V之, en: "之 = 'it', the object", ex: [久而久之, 持之以恆, 不了了之]}
+  - {f: 以 + N / V, en: "'with, by means of' or 'so as to'", ex: [持之以恆, 以身作則, 拭目以待]}
+  - {f: 其, en: "'its, his, the'", ex: [適得其反, 若無其事]}
+  - {f: 無可V / 可V, en: "'nothing that can be V-ed' / 'can be V-ed'", ex: [無可厚非, 無可奈何, 無計可施, 屈指可數]}
+  - {f: 所V / 之N, en: "'what one Vs' / 'the N of'", ex: [匪夷所思, 後顧之憂, 有生之年]}
+items:
+  - w: 背道而馳
+    py: bèi dào ér chí
+    lit: turn-back-on-road-and-gallop
+    en: to run in the opposite direction, to go against
+    origin: {work: 白居易〈為人上宰相書〉, text: 又將背古道而馳者也, checked: [moe]}
+    ex: {h: "他的行為和他的信念背道而馳。", py: "Tā de xíng wéi hé tā de xìn niàn bèi dào ér chí.", py_auto: true, src: "tatoeba", en: His actions run counter to his beliefs.}
+  - w: 不得而知
+    py: bù dé ér zhī
+    lit: not-able-to-and-know
+    en: unknown, impossible to know
+    ex: {h: "这个计划能否成功还不得而知。", py: "Zhè ge jì huà néng fǒu chéng gōng hái bù dé ér zhī.", py_auto: true, src: "tatoeba", en: Whether this plan will succeed is not yet known.}
+  - w: 脫口而出
+    py: tuō kǒu ér chū
+    lit: escape-mouth-and-come-out
+    en: to blurt out
+    ex: {h: "汤姆不假思索脱口而出。", py: "Tāngmǔ bù jiǎ sī suǒ tuō kǒu ér chū.", py_auto: true, src: "tatoeba", en: Tom blurted it out without thinking.}
+  - w: 不言而喻
+    py: bù yán ér yù
+    lit: not-speak-and-understood
+    en: it goes without saying
+    origin: {work: 孟子·盡心上, text: 施於四體，四體不言而喻, checked: [moe]}
+    note: Mencius says the virtues show in a man's whole body, which "understands without being told".
+    ex: {h: "當然，不言而喻，該宣言的效力與官方條約有很大不同。", py: "Dāng rán, bù yán ér yù, gāi xuān yán de xiào lì yǔ guān fāng tiáo yuē yǒu hěn dà bù tóng.", py_auto: true, src: "wikipedia: 第一共和國 (大韓民國)", en: "Of course, it goes without saying that such a declaration carries much less weight than an official treaty."}
+  - w: 從天而降
+    py: cóng tiān ér jiàng
+    lit: from-sky-and-descend
+    en: to fall from the sky, to come out of nowhere
+    note: 降 is jiàng "come down" here (xiáng = surrender).
+    ex: {h: "大炸彈從天而降，奪走了許多人的生命。", py: "Dà zhà dàn cóng tiān ér jiàng, duó zǒu le xǔ duō rén de shēng mìng.", py_auto: true, src: "tatoeba", en: Huge bombs fell from the sky and took many lives.}
+  - w: 久而久之
+    py: jiǔ ér jiǔ zhī
+    lit: long-and-long-it
+    en: over time, little by little
+    note: 之 here is an empty filler that rounds off the rhythm, a common classical use.
+    ex: {h: "久而久之，随着族群的融合交流，形成了新一代的自贡人。", py: "Jiǔ ér jiǔ zhī, suí zhe zú qún de róng hé jiāo liú, xíng chéng le xīn yī dài de Zìgòng rén.", py_auto: true, src: "wikipedia: 自貢話", en: "Over time, as the different groups mixed, a new generation of Zigong people took shape."}
+  - w: 匪夷所思
+    py: fěi yí suǒ sī
+    lit: not-ordinary-what-think
+    en: unimaginable, bizarre
+    note: 匪 = 非 "not", 夷 "the ordinary". "Not what ordinary people would think of."
+    ex: {h: "個性大而化之，經常做出很多匪夷所思的事，讓家人無言以對。", py: "Gè xìng dà ér huà zhī, jīng cháng zuò chū hěn duō fěi yí suǒ sī de shì, ràng jiā rén wú yán yǐ duì.", py_auto: true, src: "wikipedia: 百姓貴族", en: "Easy-going by nature, always doing bizarre things that leave the family speechless."}
+  - w: 持之以恆
+    py: chí zhī yǐ héng
+    lit: hold-it-with-constancy
+    en: to persevere, to keep at it
+    ex: {h: "我对汤姆要持之以恒地学习法语口语这件事很怀疑。", py: "Wǒ duì Tāngmǔ yào chí zhī yǐ héng de xué xí Fǎyǔ kǒu yǔ zhè jiàn shì hěn huái yí.", py_auto: true, src: "tatoeba", en: I doubt Tom will keep at learning spoken French.}
+  - w: 以身作則
+    py: yǐ shēn zuò zé
+    lit: with-self-make-model
+    en: to set an example
+    origin: {work: 後漢書·第五倫傳, text: 以身教者從，以言教者訟, checked: [moe]}
+    ex: {h: "冯道根木讷少言，平时领兵带士，以身作则，对部下要求严格。", py: "Féng Dàogēn mù nè shǎo yán, píng shí lǐng bīng dài shì, yǐ shēn zuò zé, duì bù xià yāo qiú yán gé.", py_auto: true, src: "wikipedia: 冯道根", en: "Feng Daogen was a man of few words; leading his troops, he set the example and was strict with his men."}
+  - w: 拭目以待
+    py: shì mù yǐ dài
+    lit: wipe-eyes-so-as-to-wait
+    en: to wait and see, to watch this space
+    origin: {work: 漢書·張敞傳, text: 天下莫不拭目傾耳, checked: [moe]}
+    ex: {h: "這是一首充滿愛與感謝的歌曲，請大家拭目以待！", py: "Zhè shì yī shǒu chōng mǎn ài yǔ gǎn xiè de gē qǔ, qǐng dà jiā shì mù yǐ dài!", py_auto: true, src: "wikipedia: 4月19日 (歌曲)", en: "It is a song full of love and gratitude: everyone, watch this space!"}
+  - w: 適得其反
+    py: shì dé qí fǎn
+    lit: just-get-its-opposite
+    en: to have the opposite effect, to backfire
+    ex: {h: "但有意见认为这次修缮适得其反，是对古桥的\"破坏性保护\"。", py: "Dàn yǒu yì jiàn rèn wéi zhè cì xiū shàn shì dé qí fǎn, shì duì gǔ qiáo de “pò huài xìng bǎo hù”.", py_auto: true, src: "wikipedia: 七桥瓮", en: "But some held that the repairs backfired, a 'destructive protection' of the old bridge."}
+  - w: 若無其事
+    py: ruò wú qí shì
+    lit: as-if-without-the-matter
+    en: as if nothing had happened
+    ex: {h: "他雖然擺着一副若無其事的樣子，但是我想他心裏一定擔心得不得了。", py: "Tā suī rán bǎi zhe yī fù ruò wú qí shì de yàng zi, dàn shì wǒ xiǎng tā xīn lǐ yī dìng dān xīn de bù dé le.", py_auto: true, src: "tatoeba", en: "He's acting as if nothing's wrong, but I think he must be terribly worried inside."}
+  - w: 後顧之憂
+    py: hòu gù zhī yōu
+    lit: behind-look-'s-worry
+    en: worries about what one leaves behind
+    note: 後顧 "look back over one's shoulder". Usually 沒有/解除後顧之憂 "free from worry at home".
+    ex: {h: "蒙古军队从此没有后顾之忧，可以无所顾忌地发起强大多的远征。", py: "Ménggǔ jūn duì cóng cǐ méi yǒu hòu gù zhī yōu, kě yǐ wú suǒ gù jì de fā qǐ qiáng dà duō de yuǎn zhēng.", py_auto: true, src: "wikipedia: 长子西征", en: "From then on the Mongol army had nothing to fear behind it and could launch much bigger campaigns without hesitation."}
+  - w: 有生之年
+    py: yǒu shēng zhī nián
+    lit: have-life-'s-years
+    en: in one's lifetime
+    ex: {h: "就算可行，也会是设计者有生之年都无法建成的超级工程。", py: "Jiù suàn kě xíng, yě huì shì shè jì zhě yǒu shēng zhī nián dōu wú fǎ jiàn chéng de chāo jí gōng chéng.", py_auto: true, src: "wikipedia: 黄石火山", en: "Even if feasible, it would be a mega-project its designers could not complete in their lifetime."}
+  - w: 不了了之
+    py: bù liǎo liǎo zhī
+    lit: not-finish-finish-it
+    en: to fizzle out, to leave unresolved
+    note: "The first 了 is \"settled\", the second \"to end\": \"end it by not settling it\"."
+    ex: {h: "但其后巴英额切断了同孙中山方面的联系，此事不了了之。", py: "Dàn qí hòu Bāyīng'é qiē duàn le tóng Sūn Zhōngshān fāng miàn de lián xì, cǐ shì bù liǎo liǎo zhī.", py_auto: true, src: "wikipedia: 巴英额", en: "But Bayinge then cut off contact with Sun Yat-sen's side, and the matter fizzled out."}
+  - w: 無可厚非
+    py: wú kě hòu fēi
+    lit: without-can-heavily-blame
+    en: understandable, not to be blamed
+    ex: {h: "作為一個魔術師，他的選擇無可厚非，但作為一個父親，他無疑是不合格的。", py: "Zuò wéi yī gè mó shù shī, tā de xuǎn zé wú kě hòu fēi, dàn zuò wéi yī gè fù qīn, tā wú yí shì bù hé gé de.", py_auto: true, src: "wikipedia: Fate/Zero角色列表", en: "As a magus, his choice is understandable; as a father, he was without doubt a failure."}
+  - w: 無可奈何
+    py: wú kě nài hé
+    lit: without-can-what-do
+    en: to have no choice, helpless
+    origin: {work: 戰國策·燕策三, text: 既已，無可奈何, checked: [moe]}
+    note: "From the story of Jing Ke: the prince weeps over Fan Wuji's body, then, since nothing can be done, packs up his head."
+    ex: {h: "李太后虽然生气，卻也對此无可奈何。", py: "Lǐ tài hòu suī rán shēng qì, què yě duì cǐ wú kě nài hé.", py_auto: true, src: "wikipedia: 馮皇后 (後晉)", en: "Empress Dowager Li was angry, but could do nothing about it."}
+  - w: 無計可施
+    py: wú jì kě shī
+    lit: without-plan-can-apply
+    en: at one's wits' end
+    ex: {h: "無計可施之下，卡華拉達也被迫放棄，下令渡河的士兵返回。", py: "Wú jì kě shī zhī xià, Kǎhuálādá yě bèi pò fàng qì, xià lìng dù hé de shì bīng fǎn huí.", py_auto: true, src: "wikipedia: 特倫頓戰役", en: "With no options left, Cadwalader also had to give up and ordered the troops who had crossed the river to come back."}
+  - w: 屈指可數
+    py: qū zhǐ kě shǔ
+    lit: bend-fingers-can-count
+    en: very few, can be counted on one's fingers
+    origin: {work: 三國志·張郃傳, text: 屈指計亮糧不至十日, checked: [moe]}
+    ex: {h: "王哲执法的国际比赛屈指可数，仅有東亞盃和一些友谊赛。", py: "Wáng Zhé zhí fǎ de guó jì bǐ sài qū zhǐ kě shǔ, jǐn yǒu Dōngyà Bēi hé yī xiē yǒu yì sài.", py_auto: true, src: "wikipedia: 王哲 (足球裁判)", en: "Wang Zhe has refereed very few international matches: only the East Asian Cup and some friendlies."}
+  - w: 與日俱增
+    py: yǔ rì jù zēng
+    lit: with-days-together-grow
+    en: to grow day by day
+    note: "與…俱 \"together with\": it grows as the days go by."
+    ex: {h: "缅甸社会趋于崩溃，饥贫交加，公序良俗不再，罪案与日俱增。", py: "Miǎndiàn shè huì qū yú bēng kuì, jī pín jiāo jiā, gōng xù liáng sú bù zài, zuì àn yǔ rì jù zēng.", py_auto: true, src: "wikipedia: 英屬緬甸", en: "Burmese society was close to collapse: hunger and poverty spread, public order broke down, and crime grew day by day."}

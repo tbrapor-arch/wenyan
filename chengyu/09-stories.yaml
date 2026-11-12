@@ -1,0 +1,143 @@
+id: 9
+slug: stories
+title: 典故
+title_py: Diǎngù
+title_en: Stories and history
+status: draft
+intro: >
+  Every 成語 here has a story or a precise source behind it: a seller of spears and shields (自相矛盾),
+  a poet at the river where Xiang Yu died (捲土重來), two princes splitting the road to Luoyang (分道揚鑣).
+  You can use them without knowing the story, but the story is what makes them stick. 自相矛盾 is
+  taught in full, from the 韓非子 text, in the main course.
+items:
+  - w: 自相矛盾
+    py: zì xiāng máo dùn
+    lit: self-mutually-spear-shield
+    en: self-contradictory
+    origin: {work: 韓非子·難一, text: 楚人有鬻楯與矛者, checked: [moe]}
+    note: A man of Chu praised his shield (nothing can pierce it) and his spear (it pierces anything). "What if your spear strikes your shield?" He had no answer.
+    ex: {h: "你在自相矛盾。", py: "Nǐ zài zì xiāng máo dùn.", py_auto: true, src: "tatoeba", en: You're contradicting yourself.}
+  - w: 捲土重來
+    py: juǎn tǔ chóng lái
+    lit: roll-up-dust-again-come
+    en: to make a comeback
+    origin: {work: 杜牧〈題烏江亭〉, text: 江東子弟多才俊，卷土重來未可知, checked: [moe]}
+    note: Du Mu at the place where Xiang Yu killed himself rather than retreat. The young men east of the river were talented; he might have come back. The source writes 卷 for 捲.
+    ex: {h: "随着一战的结束，列强卷土重来，中国经济迅速转向萧条。", py: "Suí zhe Yī Zhàn de jié shù, liè qiáng juǎn tǔ chóng lái, Zhōngguó jīng jì xùn sù zhuǎn xiàng xiāo tiáo.", py_auto: true, src: "wikipedia: 董时进", en: "When the First World War ended, the great powers came back, and China's economy quickly fell into depression."}
+  - w: 先發制人
+    py: xiān fā zhì rén
+    lit: first-act-control-others
+    en: to strike first, to pre-empt
+    origin: {work: 史記·項羽本紀, text: 先即制人，後則為人所制, checked: [moe]}
+    ex: {h: "田令孜认为杨师立会反对自己和陈敬瑄，决定先发制人。", py: "Tián Lìngzī rèn wéi Yáng Shīlì huì fǎn duì zì jǐ hé Chén Jìngxuān, jué dìng xiān fā zhì rén.", py_auto: true, src: "wikipedia: 高仁厚", en: "Tian Lingzi thought Yang Shili would turn against him and Chen Jingxuan, and decided to strike first."}
+  - w: 分道揚鑣
+    py: fēn dào yáng biāo
+    lit: divide-road-raise-bit
+    en: to part ways
+    origin: {work: 魏書·河間公齊傳, text: 洛陽我之豐沛，自應分路揚鑣, checked: [moe]}
+    note: Two officials quarrelled over which of them should give way in the streets of Luoyang. The emperor ruled that from then on they should take separate roads. 鑣 is the bit of a horse.
+    ex: {h: "罗明远把白求恩交给了护送部队，两人就此分道扬镳了。", py: "Luó Míngyuǎn bǎ Báiqiú'ēn jiāo gěi le hù sòng bù duì, liǎng rén jiù cǐ fēn dào yáng biāo le.", py_auto: true, src: "wikipedia: 罗明远", en: "Luo Mingyuan handed Bethune over to the escort, and there the two parted ways."}
+  - w: 家喻戶曉
+    py: jiā yù hù xiǎo
+    lit: house-told-door-know
+    en: known to every household
+    origin: {work: 劉向《列女傳》, text: 豈家至戶曉也哉, checked: [moe]}
+    ex: {h: "張惠妹因為張雨生的協助，從默默無名成為家喻戶曉的歌手。", py: "Zhāng Huìmèi yīn wèi Zhāng Yǔshēng de xié zhù, cóng mò mò wú míng chéng wéi jiā yù hù xiǎo de gē shǒu.", py_auto: true, src: "wikipedia: 張雨生", en: "With Tom Chang's help, A-mei went from unknown to a household name."}
+  - w: 針鋒相對
+    py: zhēn fēng xiāng duì
+    lit: needle-point-face-each-other
+    en: tit for tat, in direct opposition
+    origin: {work: 景德傳燈錄·卷二五, text: 夫一切問答，如針鋒相投, checked: [moe]}
+    note: Zen at first. A good question-and-answer meets "like needle point to needle point", in perfect agreement. Now it means the reverse, direct confrontation.
+    ex: {h: "言談之間時常與長歌針鋒相對，但實際上相當疼惜她。", py: "Yán tán zhī jiān shí cháng yǔ Chánggē zhēn fēng xiāng duì, dàn shí jì shàng xiàng dāng téng xī tā.", py_auto: true, src: "wikipedia: 長歌行 (漫畫)", en: "When they talk, he is always at odds with Chang'ge, but in fact he cares for her a great deal."}
+  - w: 如火如荼
+    py: rú huǒ rú tú
+    lit: like-fire-like-white-flowers
+    en: in full swing
+    origin: {work: 國語·吳語, text: 皆白裳、白旂、素甲、白羽之矰，望之如荼, checked: [moe]}
+    note: King Fuchai of Wu's army, one square all in white "like 荼 (reed flowers)", one all in red "like fire". It was a show of strength.
+    ex: {h: "戰爭如火如荼。", py: "Zhàn zhēng rú huǒ rú tú.", py_auto: true, src: "tatoeba", en: The war is raging.}
+  - w: 軒然大波
+    py: xuān rán dà bō
+    lit: high-rising-great-wave
+    en: an uproar, a storm
+    origin: {work: 韓愈〈岳陽樓別竇司直〉, text: 軒然大波起，宇宙隘而妨, checked: [moe]}
+    ex: {h: "琅威理返回英国后，宣传他在华受辱的经历，引起轩然大波。", py: "Láng Wēilǐ fǎn huí Yīngguó hòu, xuān chuán tā zài Huá shòu rǔ de jīng lì, yǐn qǐ xuān rán dà bō.", py_auto: true, src: "wikipedia: 琅威理", en: "Back in Britain, Lang publicised the humiliations he had suffered in China, causing an uproar."}
+  - w: 行屍走肉
+    py: xíng shī zǒu ròu
+    lit: walking-corpse-moving-flesh
+    en: a walking corpse, a living dead
+    origin: {work: 王嘉《拾遺記》, text: 不學者雖存，謂之行尸走肉耳, checked: [moe]}
+    note: First said of people who don't study. 尸 is the old form of 屍.
+    ex: {h: "他已形同行屍走肉。", py: "Tā yǐ xíng tóng xíng shī zǒu ròu.", py_auto: true, src: "tatoeba", en: He's become a walking corpse.}
+  - w: 無中生有
+    py: wú zhōng shēng yǒu
+    lit: from-nothing-produce-something
+    en: to make something up out of nothing
+    origin: {work: 老子·第四十章, text: 天下萬物生於有，有生於無, checked: [moe]}
+    note: In 老子, being comes from non-being. Now it means a fabrication, the opposite of a compliment.
+    ex: {h: "这完全是无中生有的东西。", py: "Zhè wán quán shì wú zhōng shēng yǒu de dōng xī.", py_auto: true, src: "tatoeba", en: This is a complete fabrication.}
+  - w: 比比皆是
+    py: bǐ bǐ jiē shì
+    py_tw: bì bì jiē shì
+    lit: everywhere-all-are
+    en: to be found everywhere
+    origin: {work: 戰國策·秦策一, text: 斷死於前者比比是也, checked: [moe]}
+    ex: {h: "這種敵對的稱呼和態度，在《朝鮮王朝實錄》中比比皆是。", py: "Zhè zhǒng dí duì de chēng hū hé tài dù, zài «Cháoxiǎn Wángcháo Shílù» zhōng bǐ bǐ jiē shì.", py_auto: true, src: "wikipedia: 丙子戰爭", en: "Such hostile names and attitudes are everywhere in the Annals of the Joseon Dynasty."}
+  - w: 安居樂業
+    py: ān jū lè yè
+    lit: settled-dwelling-content-work
+    en: to live in peace and work happily
+    origin: {work: 漢書·貨殖傳, text: 各安其居而樂其業, checked: [moe]}
+    ex: {h: "王延彬治理泉州期間，官员和民众安居乐业，粮食连年丰收。", py: "Wáng Yánbīn zhì lǐ Quánzhōu qī jiān, guān yuán hé mín zhòng ān jū lè yè, liáng shí lián nián fēng shōu.", py_auto: true, src: "wikipedia: 王延彬", en: "While Wang Yanbin governed Quanzhou, officials and people lived in peace, with good harvests year after year."}
+  - w: 長治久安
+    py: cháng zhì jiǔ ān
+    lit: long-governed-lasting-peace
+    en: lasting peace and stability
+    origin: {work: 漢書·賈誼傳, text: 建久安之勢，成長治之業, checked: [dcd]}
+    ex: {h: "在上者要施行的政务能办到，在下者能胜任交办的公务，因此国家才能长治久安。", py: "Zài shàng zhě yào shī xíng de zhèng wù néng bàn dào, zài xià zhě néng shèng rèn jiāo bàn de gōng wù, yīn cǐ guó jiā cái néng cháng zhì jiǔ ān.", py_auto: true, src: "wikipedia: 叔孙侨如", en: "Only when those above can carry out their policies, and those below can do the work given them, does a state enjoy lasting peace."}
+  - w: 大聲疾呼
+    py: dà shēng jí hū
+    lit: loud-voice-urgent-cry
+    en: to cry out, to call loudly for
+    origin: {work: 韓愈〈後十九日復上書〉, text: 大其聲而疾呼矣, checked: [moe]}
+    note: Han Yu, petitioning the chief minister for a post, compares himself to a drowning man shouting for help.
+    ex: {h: "姜昆称，“如果在路上，看到有人在往相反的方向走，我们必须大声疾呼，把他们叫回来。", py: "Jiāng Kūn chēng, “rú guǒ zài lù shàng, kàn dào yǒu rén zài wǎng xiāng fǎn de fāng xiàng zǒu, wǒ men bì xū dà shēng jí hū, bǎ tā men jiào huí lái.", py_auto: true, src: "wikipedia: 郭德纲徒弟打人事件", en: "Jiang Kun said, 'If we see someone on the road walking the wrong way, we have to call out loudly and bring them back.'"}
+  - w: 雪上加霜
+    py: xuě shàng jiā shuāng
+    lit: snow-on-add-frost
+    en: to make a bad situation worse
+    origin: {work: 景德傳燈錄·卷八, text: 雪上更加霜, checked: [moe]}
+    ex: {h: "达濠为日占领，更是雪上加霜，地方饥馑严重，饿殍遍野。", py: "Dáháo wéi Rì zhàn lǐng, gèng shì xuě shàng jiā shuāng, dì fāng jī jǐn yán zhòng, è piǎo biàn yě.", py_auto: true, src: "wikipedia: 达濠万人墓", en: "Dahao's occupation by Japan made things even worse: famine was severe and the starving lay everywhere."}
+  - w: 不合時宜
+    py: bù hé shí yí
+    lit: not-fit-time-suitable
+    en: out of step with the times, ill-timed
+    origin: {work: 漢書·哀帝紀, text: 皆違經背古，不合時宜, checked: [moe]}
+    ex: {h: "那個州的立法單位把不合時宜的法律廢止了。", py: "Nà ge zhōu de lì fǎ dān wèi bǎ bù hé shí yí de fǎ lǜ fèi zhǐ le.", py_auto: true, src: "tatoeba", en: The state legislature repealed the outdated law.}
+  - w: 絕無僅有
+    py: jué wú jǐn yǒu
+    lit: absolutely-none-barely-have
+    en: unique, almost unheard of
+    origin: {work: 蘇軾〈上神宗皇帝書〉, text: 秦漢以來之所絕無而僅有, checked: [moe]}
+    ex: {h: "如羅力威這類名符其實的原創作歌手，在香港可說是絕無僅有。", py: "Rú Luó Lìwēi zhè lèi míng fú qí shí de yuán chuàng zuò gē shǒu, zài Xiānggǎng kě shuō shì jué wú jǐn yǒu.", py_auto: true, src: "wikipedia: 羅力威", en: "A true singer-songwriter like Law Lik-wai is almost unheard of in Hong Kong."}
+  - w: 引人入勝
+    py: yǐn rén rù shèng
+    lit: lead-people-into-fine-places
+    en: fascinating, absorbing
+    origin: {work: 郭澄之《郭子》, text: 酒自引人入勝地耳, checked: [moe]}
+    note: Wang Chen's praise of wine. "Wine leads one into marvellous places." Now said of books and films.
+    ex: {h: "它產生出大量引人入勝的文學作品，有的存留至今。", py: "Tā chǎn shēng chū dà liàng yǐn rén rù shèng de wén xué zuò pǐn, yǒu de cún liú zhì jīn.", py_auto: true, src: "wikipedia: 聖經啟示文學", en: "It produced a great deal of fascinating literature, some of which survives today."}
+  - w: 推波助瀾
+    py: tuī bō zhù lán
+    lit: push-waves-help-billows
+    en: to add fuel to the fire, to fan
+    origin: {work: 鮑照〈觀漏賦〉, text: 又吹波而助瀾, checked: [moe]}
+    ex: {h: "融资买股一定程度上对橡胶的股价起到推波助澜的作用。", py: "Róng zī mǎi gǔ yī dìng chéng dù shàng duì xiàng jiāo de gǔ jià qǐ dào tuī bō zhù lán de zuò yòng.", py_auto: true, src: "wikipedia: 橡皮股票风潮", en: "Buying shares on borrowed money helped push rubber share prices higher still."}
+  - w: 走投無路
+    py: zǒu tóu wú lù
+    lit: walk-head-for-without-road
+    en: to have nowhere to turn
+    origin: {work: 楊顯之《瀟湘雨》, text: 淋的我走投無路, checked: [moe]}
+    note: From a Yuan play. A wife, exiled in the rain, has nowhere to go.
+    ex: {h: "我们被逼得走投无路了。", py: "Wǒ men bèi bī de zǒu tóu wú lù le.", py_auto: true, src: "tatoeba", en: We've been driven into a corner.}

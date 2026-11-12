@@ -1,0 +1,115 @@
+# Readings forced by tools/fill_pinyin.py when the word appears in an example sentence
+# (simplified form → pinyin exactly as printed). Names are joined and capitalised; other words
+# keep one space per syllable, like the rest of the sentence. Add to it whenever a reading is wrong.
+
+# people
+施莱佛: Shīláifó
+汤玛斯: Tāngmǎsī
+善也: Shànyě
+堀内敬子: Kūnèi Jìngzǐ
+本杰明·富兰克林: Běnjiémíng·Fùlánkèlín
+穆里尔: Mùlǐ'ěr
+铁飞花: Tiě Fēihuā
+元帝: Yuándì
+弘恭: Hóng Gōng
+石显: Shí Xiǎn
+吕陶: Lǚ Táo
+上官均: Shàngguān Jūn
+苏轼: Sū Shì
+合德: Hédé
+巴顿: Bādùn
+威廉姆斯: Wēiliánmǔsī
+英介: Yīngjiè
+尼克: Níkè
+冯道根: Féng Dàogēn
+巴英额: Bāyīng'é
+孙中山: Sūn Zhōngshān
+卡华拉达: Kǎhuálādá
+王哲: Wáng Zhé
+桂英: Guìyīng
+艾莉丝: Àilìsī
+迈尔斯: Mài'ěrsī
+玛姬: Mǎjī
+项飞田: Xiàng Fēitián
+马走日: Mǎ Zǒurì
+卫斯理: Wèisīlǐ
+古九非: Gǔ Jiǔfēi
+贝儿: Bèi'ér
+来岛通总: Láidǎo Tōngzǒng
+杨大郎: Yáng Dàláng
+田令孜: Tián Lìngzī
+杨师立: Yáng Shīlì
+陈敬瑄: Chén Jìngxuān
+罗明远: Luó Míngyuǎn
+白求恩: Báiqiú'ēn
+张惠妹: Zhāng Huìmèi
+张雨生: Zhāng Yǔshēng
+长歌: Chánggē
+琅威理: Láng Wēilǐ
+王延彬: Wáng Yánbīn
+姜昆: Jiāng Kūn
+罗力威: Luó Lìwēi
+黄南球: Huáng Nánqiú
+喜羊羊: Xǐyángyáng
+灰太狼: Huītàiláng
+申东烨: Shēn Dōngyè
+成始璄: Chéng Shǐjǐng
+诺克: Nuòkè
+莫洛迪: Mòluòdí
+黄氏女: Huángshìnǚ
+岬: Jiǎ
+仁太: Réntài
+# places, institutions, events, titles
+圣帕特里克节: Shèng Pàtèlǐkè Jié
+华盛顿: Huáshèngdùn
+北京: Běijīng
+中情局: Zhōngqíngjú
+霞关站: Xiáguān Zhàn
+印第安人: Yìndì'ān rén
+古罗马: Gǔ Luómǎ
+罗马: Luómǎ
+巴西: Bāxī
+中央电视台: Zhōngyāng Diànshìtái
+春节联欢晚会: Chūnjié Liánhuān Wǎnhuì
+新浪微博: Xīnlàng Wēibó
+竹管垅乡: Zhúguǎnlǒng Xiāng
+太子会: Tàizǐ Huì
+自贡: Zìgòng
+蒙古: Ménggǔ
+东亚杯: Dōngyà Bēi
+缅甸: Miǎndiàn
+珍珠港: Zhēnzhūgǎng
+槟城: Bīnchéng
+波兰: Bōlán
+立陶宛: Lìtáowǎn
+泉州: Quánzhōu
+香港: Xiānggǎng
+达濠: Dáháo
+美斯乐: Měisīlè
+苏联: Sūlián
+广东十虎: Guǎngdōng Shí Hǔ
+朝鲜王朝实录: Cháoxiǎn Wángcháo Shílù
+清初: Qīng chū
+一战: Yī Zhàn
+二战: Èr Zhàn
+日军: Rì jūn
+在华: zài Huá
+蜀洛党争: Shǔ-Luò dǎng zhēng
+黄家: Huáng jiā
+# words pypinyin misreads in these sentences
+描述为: miáo shù wéi
+变为: biàn wéi
+主题为: zhǔ tí wéi
+发展为: fā zhǎn wéi
+宣传为: xuān chuán wéi
+最为: zuì wéi
+饮酒为乐: yǐn jiǔ wéi lè
+该街道为: gāi jiē dào wéi
+那只: nà zhī
+发券: fā xuàn
+长椅: cháng yǐ
+解法: jiě fǎ
+过着: guò zhe
+渡河的: dù hé de
+为日占领: wéi Rì zhàn lǐng
+视健康为: shì jiàn kāng wéi

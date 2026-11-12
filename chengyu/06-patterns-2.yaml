@@ -1,0 +1,134 @@
+id: 6
+slug: patterns-2
+title: 對稱與數字
+title_py: Duìchèn yǔ shùzì
+title_en: Mirrors and numbers, again
+status: draft
+intro: >
+  The frames of lessons 1 and 2 come back, with new members. 一 is again "whole, single, at once":
+  一針見血 "one needle, and blood shows", 一觸即發 "one touch and it goes off". Two new frames:
+  X然一新 "brand new", and A來B去-type pairs of opposites that cover the whole range (大街小巷
+  "big streets and small lanes" = everywhere).
+frames:
+  - {f: 接X連Y / 五X六Y / 千X萬Y, en: "numbers in pairs: 'one after another', 'all colours', 'countless'", ex: [接二連三, 五顏六色, 千言萬語]}
+  - {f: 無X無Y / 不X不Y / 合X合Y, en: "the same word twice around two near-synonyms", ex: [無憂無慮, 無時無刻, 不聞不問, 不折不扣, 合情合理]}
+  - {f: 一X一Y, en: "as in lesson 1: X and Y are near-synonyms", ex: [一心一意]}
+  - {f: 一 + V…, en: "'once…, at once…': a single action with a big result", ex: [一事無成, 一針見血, 一觸即發, 一目瞭然]}
+  - {f: 大X小Y / 大X特X, en: "big and small = all of them; big X special X = very X", ex: [大街小巷, 大錯特錯]}
+items:
+  - w: 接二連三
+    py: jiē èr lián sān
+    lit: follow-two-join-three
+    en: one after another
+    ex: {h: "可惜在電影上映後接二連三地接獲負評，票房收入亦不理想。", py: "Kě xī zài diàn yǐng shàng yìng hòu jiē èr lián sān de jiē huò fù píng, piào fáng shōu rù yì bù lǐ xiǎng.", py_auto: true, src: "wikipedia: 夜魔俠", en: "Unfortunately, once the film came out, bad reviews came in one after another, and the box office was disappointing too."}
+  - w: 無憂無慮
+    py: wú yōu wú lǜ
+    lit: without-worry-without-care
+    en: carefree
+    ex: {h: "我父母在乡村过着无忧无虑的生活。", py: "Wǒ fù mǔ zài xiāng cūn guò zhe wú yōu wú lǜ de shēng huó.", py_auto: true, src: "tatoeba", en: My parents live a carefree life in the countryside.}
+  - w: 無時無刻
+    py: wú shí wú kè
+    lit: without-hour-without-moment
+    en: all the time, at every moment
+    note: Logically it should be 無時無刻不… "there is no moment when not…", and careful writers keep the 不. In speech the 不 is often dropped with the same meaning.
+    ex: {h: "汤姆和玛丽无时无刻不在辩论。", py: "Tāngmǔ hé Mǎlì wú shí wú kè bù zài biàn lùn.", py_auto: true, src: "tatoeba", en: Tom and Mary argue all the time.}
+  - w: 一心一意
+    py: yī xīn yī yì
+    lit: one-heart-one-mind
+    en: single-minded, with all one's heart
+    origin: {work: 杜氏新書, text: 故推一心，任一意, checked: [moe]}
+    ex: {h: "她一心一意地工作。", py: "Tā yī xīn yī yì de gōng zuò.", py_auto: true, src: "tatoeba", en: She works single-mindedly.}
+  - w: 五顏六色
+    py: wǔ yán liù sè
+    lit: five-colours-six-hues
+    en: multicoloured, of every colour
+    ex: {h: "房子裏放滿了五顏六色的藝術品。", py: "Fáng zi lǐ fàng mǎn le wǔ yán liù sè de yì shù pǐn.", py_auto: true, src: "tatoeba", en: The house was full of colourful works of art.}
+  - w: 千言萬語
+    py: qiān yán wàn yǔ
+    lit: thousand-words-ten-thousand-sayings
+    en: a thousand words, everything one wants to say
+    ex: {h: "歌曲另一個創作主題為「行動勝過言語」，寫出從友情發展為愛情的感覺，亦帶有「Kiss勝過千言萬語」的歌詞。", py: "Gē qǔ lìng yī gè chuàng zuò zhǔ tí wéi “xíng dòng shèng guò yán yǔ”, xiě chū cóng yǒu qíng fā zhǎn wéi ài qíng de gǎn jué, yì dài yǒu “Kiss shèng guò qiān yán wàn yǔ” de gē cí.", py_auto: true, src: "wikipedia: Kiss (倉木麻衣單曲)", en: "Another theme of the song is 'actions speak louder than words': it describes friendship turning into love, with the line 'a kiss is worth a thousand words'."}
+  - w: 不聞不問
+    py: bù wén bù wèn
+    lit: not-hear-not-ask
+    en: to take no interest, to ignore completely
+    ex: {h: "黄氏女到太子会拜佛，路上遭雨淋，生了病，丈夫对其不闻不问。", py: "Huángshìnǚ dào Tàizǐ Huì bài fó, lù shàng zāo yǔ lín, shēng le bìng, zhàng fū duì qí bù wén bù wèn.", py_auto: true, src: "wikipedia: 黄氏女对金刚经", en: "Lady Huang went to worship at the temple fair, was caught in the rain and fell ill, and her husband paid her no attention at all."}
+  - w: 合情合理
+    py: hé qíng hé lǐ
+    lit: fit-feeling-fit-reason
+    en: fair and reasonable
+    ex: {h: "有时候，发生的事情并不是合情合理的。", py: "Yǒu shí hòu, fā shēng de shì qíng bìng bù shì hé qíng hé lǐ de.", py_auto: true, src: "tatoeba", en: "Sometimes what happens isn't reasonable."}
+  - w: 大街小巷
+    py: dà jiē xiǎo xiàng
+    lit: big-streets-small-lanes
+    en: all over town, everywhere
+    ex: {h: "每年正月十五元宵夜，大龍蜿蜒於鄉間村野，穿行於大街小巷。", py: "Měi nián zhēng yuè shí wǔ yuán xiāo yè, dà lóng wān yán yú xiāng jiān cūn yě, chuān xíng yú dà jiē xiǎo xiàng.", py_auto: true, src: "wikipedia: 客家文化", en: "Every year on the night of the Lantern Festival, a great dragon winds through the villages and fields and all through the streets of the town."}
+  - w: 自欺欺人
+    py: zì qī qī rén
+    lit: self-deceive-deceive-others
+    en: to fool oneself as well as others
+    origin: {work: 惠洪《石門文字禪》, text: 其自欺欺人之狀，不窮而自露也, checked: [moe]}
+    ex: {h: "威廉姆斯认为，想要超越个人的观点，只能是自欺欺人。", py: "Wēiliánmǔsī rèn wéi, xiǎng yào chāo yuè gè rén de guān diǎn, zhǐ néng shì zì qī qī rén.", py_auto: true, src: "wikipedia: 伯纳德·威廉姆斯", en: "Williams held that trying to go beyond one's own point of view could only be self-deception."}
+  - w: 大錯特錯
+    py: dà cuò tè cuò
+    lit: big-wrong-special-wrong
+    en: completely wrong
+    ex: {h: "如果你认为我还会帮你这样的混蛋，那你大错特错了。", py: "Rú guǒ nǐ rèn wéi wǒ hái huì bāng nǐ zhè yàng de hùn dàn, nà nǐ dà cuò tè cuò le.", py_auto: true, src: "tatoeba", en: "If you think I'd still help a jerk like you, you're dead wrong."}
+  - w: 念念不忘
+    py: niàn niàn bù wàng
+    lit: think-think-not-forget
+    en: to keep thinking of, never forget
+    note: 念念 in Buddhist texts means "every thought, every instant".
+    ex: {h: "第一次吃到的英介做的菜後念念不忘，並逐漸喜歡上英介。", py: "Dì yī cì chī dào de Yīngjiè zuò de cài hòu niàn niàn bù wàng, bìng zhú jiàn xǐ huān shàng Yīngjiè.", py_auto: true, src: "wikipedia: Hungry！", en: "After tasting Eisuke's cooking for the first time, she couldn't stop thinking about it, and gradually fell for him."}
+  - w: 一事無成
+    py: yī shì wú chéng
+    lit: one-thing-not-achieve
+    en: to have achieved nothing
+    origin: {work: 白居易〈除夜寄微之〉, text: 鬢毛不覺白毿毿，一事無成百不堪, checked: [moe]}
+    note: Bai Juyi on New Year's Eve, grey-haired and with nothing done. Also met in the first page of 紅樓夢.
+    ex: {h: "你還一事無成呢。", py: "Nǐ hái yī shì wú chéng ne.", py_auto: true, src: "tatoeba", en: "You still haven't achieved anything."}
+  - w: 一針見血
+    py: yī zhēn jiàn xiě
+    lit: one-needle-see-blood
+    en: to hit the nail on the head
+    origin: {work: 晉書·陶侃傳, text: 侃以針決之見血, checked: [moe]}
+    note: Tao Kan pricked his finger to extend a lucky line on his palm; the blood wrote 公 "duke" on the wall.
+    ex: {h: "有話就直說，經常是一針見血，也因為這樣有時會被尼克責罵。", py: "Yǒu huà jiù zhí shuō, jīng cháng shì yī zhēn jiàn xiě, yě yīn wèi zhè yàng yǒu shí huì bèi Níkè zé mà.", py_auto: true, src: "wikipedia: 特命戰隊Go Busters VS 海賊戰隊豪快者 THE MOVIE", en: "He says what he thinks and often hits the nail on the head, which sometimes gets him scolded by Nick."}
+  - w: 一觸即發
+    py: yī chù jí fā
+    lit: one-touch-at-once-fire
+    en: about to explode, on a knife-edge
+    origin: {work: 李開先〈原性堂記〉, text: 觸而即發, checked: [moe]}
+    note: At first about inspiration that comes at a touch; now about wars and crises.
+    ex: {h: "自从波兰和立陶宛都支持了造反者，一场大战一触即发。", py: "Zì cóng Bōlán hé Lìtáowǎn dōu zhī chí le zào fǎn zhě, yī cháng dà zhàn yī chù jí fā.", py_auto: true, src: "wikipedia: 维陶塔斯", en: "Once both Poland and Lithuania backed the rebels, a major war could break out at any moment."}
+  - w: 一本正經
+    py: yī běn zhèng jīng
+    lit: one-volume-orthodox-classic
+    en: in all seriousness, prim and proper
+    note: 正經 were the orthodox classics; to look as if holding one = to look very serious, often too serious.
+    ex: {h: "身形魁武的金髮帥哥，但性格一本正經，讓人難以親近。", py: "Shēn xíng kuí wǔ de jīn fà shuài gē, dàn xìng gé yī běn zhèng jīng, ràng rén nán yǐ qīn jìn.", py_auto: true, src: "wikipedia: 英雄傳說 軌跡系列角色列表", en: "A tall, handsome blond man, but so very proper that people find him hard to approach."}
+  - w: 一目瞭然
+    py: yī mù liǎo rán
+    lit: one-glance-clear
+    en: clear at a glance
+    origin: {work: 朱子語類·卷一三七, text: 從高視下，一目瞭然, checked: [moe]}
+    note: "Simplified 一目了然: 瞭 merged into 了."
+    ex: {h: "这个证明的妙处是一目了然，而不必再用公式或语言叙述了。", py: "Zhè ge zhèng míng de miào chù shì yī mù liǎo rán, ér bù bì zài yòng gōng shì huò yǔ yán xù shù le.", py_auto: true, src: "wikipedia: 披薩定理", en: "The beauty of this proof is that it is clear at a glance, with no need for formulas or words."}
+  - w: 一應俱全
+    py: yī yīng jù quán
+    lit: all-that's-needed-all-complete
+    en: everything one needs is there
+    ex: {h: "屋苑附近亦有多所中小學校，生活及娛樂設施一應俱全。", py: "Wū yuàn fù jìn yì yǒu duō suǒ zhōng xiǎo xué xiào, shēng huó jí yú lè shè shī yī yīng jù quán.", py_auto: true, src: "wikipedia: 環宇海灣", en: "There are also several schools near the estate, and every everyday and leisure facility you could need."}
+  - w: 煥然一新
+    py: huàn rán yī xīn
+    lit: shining-like-all-new
+    en: looking brand new, completely renewed
+    origin: {work: 張彥遠《歷代名畫記》, text: 其有晉宋名跡，煥然如新, checked: [dcd]}
+    note: The source says "shining as if new" (如新), of paintings centuries old.
+    ex: {h: "适度的运动让身心焕然一新。", py: "Shì dù de yùn dòng ràng shēn xīn huàn rán yī xīn.", py_auto: true, src: "tatoeba", en: Moderate exercise renews body and mind.}
+  - w: 不折不扣
+    py: bù zhé bù kòu
+    lit: not-break-not-deduct
+    en: through and through, a real…
+    note: Originally about money, "no discount, no deduction". Now usually before a noun, often negative (不折不扣的騙子 "a real crook").
+    ex: {h: "雖然是不折不扣的老菸槍，但也是個很有才幹的記者。", py: "Suī rán shì bù zhé bù kòu de lǎo yān qiāng, dàn yě shì gè hěn yǒu cái gàn de jì zhě.", py_auto: true, src: "wikipedia: 英雄傳說 軌跡系列角色列表", en: "He's a chain-smoker through and through, but also a very able journalist."}

@@ -3934,7 +3934,4749 @@
    "zh": "成語",
    "en": "Idioms",
    "about": "成語 in order of modern frequency, twenty at a time, grouped by pattern.",
-   "lessons": []
+   "lessons": [
+    {
+     "id": 1,
+     "slug": "mirrors",
+     "title": "對稱",
+     "title_py": "Duìchèn",
+     "title_en": "Mirror patterns",
+     "status": "draft",
+     "intro": "Many everyday 成語 are built on a frame that repeats: 一X一Y, 無X無Y, 所X所Y, 胡X亂Y. Once you see the frame, you only have to learn the two halves, which usually say the same thing twice (全心全意 \"whole heart, whole mind\") or repeat a word (日復一日 \"day comes back to day\"). Learn the frames, not just the words: the same frames make hundreds of rarer 成語.\n",
+     "frames": [
+      {
+       "f": "一X一Y",
+       "en": "X and Y are near-synonyms; 一 = 'one, the same, every'",
+       "ex": [
+        "一模一樣",
+        "一舉一動",
+        "一年一度"
+       ],
+       "f_s": "一X一Y",
+       "ex_s": [
+        "一模一样",
+        "一举一动",
+        "一年一度"
+       ]
+      },
+      {
+       "f": "全X全Y",
+       "en": "whole X, whole Y: total commitment",
+       "ex": [
+        "全心全意"
+       ],
+       "f_s": "全X全Y",
+       "ex_s": [
+        "全心全意"
+       ]
+      },
+      {
+       "f": "不X不Y / 無X無Y",
+       "en": "negation twice: 'without X or Y'",
+       "ex": [
+        "不知不覺",
+        "無法無天",
+        "無緣無故"
+       ],
+       "f_s": "不X不Y / 无X无Y",
+       "ex_s": [
+        "不知不觉",
+        "无法无天",
+        "无缘无故"
+       ]
+      },
+      {
+       "f": "所X所Y",
+       "en": "所 + verb = 'what one Xs' (classical nominaliser, → lesson 3)",
+       "ex": [
+        "所作所為"
+       ],
+       "f_s": "所X所Y",
+       "ex_s": [
+        "所作所为"
+       ]
+      },
+      {
+       "f": "各X各Y / 隨X隨Y / 何X何Y",
+       "en": "each…each, wherever…whenever, which…which",
+       "ex": [
+        "各式各樣",
+        "隨時隨地",
+        "何去何從"
+       ],
+       "f_s": "各X各Y / 随X随Y / 何X何Y",
+       "ex_s": [
+        "各式各样",
+        "随时随地",
+        "何去何从"
+       ]
+      },
+      {
+       "f": "謝X謝Y / 討X還Y / 想X設Y",
+       "en": "two verb–object pairs side by side",
+       "ex": [
+        "謝天謝地",
+        "討價還價",
+        "想方設法"
+       ],
+       "f_s": "谢X谢Y / 讨X还Y / 想X设Y",
+       "ex_s": [
+        "谢天谢地",
+        "讨价还价",
+        "想方设法"
+       ]
+      },
+      {
+       "f": "胡X亂Y",
+       "en": "胡 and 亂 both mean 'wildly, at random'",
+       "ex": [
+        "胡思亂想",
+        "胡言亂語",
+        "胡說八道"
+       ],
+       "f_s": "胡X乱Y",
+       "ex_s": [
+        "胡思乱想",
+        "胡言乱语",
+        "胡说八道"
+       ]
+      },
+      {
+       "f": "深X熟Y / 千X百Y",
+       "en": "two adjective–noun or number–noun pairs",
+       "ex": [
+        "深思熟慮",
+        "千方百計"
+       ],
+       "f_s": "深X熟Y / 千X百Y",
+       "ex_s": [
+        "深思熟虑",
+        "千方百计"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "一模一樣",
+       "py": "yī mó yī yàng",
+       "lit": "one-mould-one-shape",
+       "en": "exactly alike, identical",
+       "ex": {
+        "h": "这两个双胞胎兄弟长得一模一样。",
+        "py": "Zhè liǎng gè shuāng bāo tāi xiōng dì zhǎng de yī mó yī yàng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The two twin brothers look exactly alike.",
+        "h_t": "這兩個雙胞胎兄弟長得一模一樣。",
+        "h_s": "这两个双胞胎兄弟长得一模一样。"
+       },
+       "w_s": "一模一样"
+      },
+      {
+       "w": "一舉一動",
+       "py": "yī jǔ yī dòng",
+       "lit": "every-raise-every-move",
+       "en": "every move someone makes",
+       "ex": {
+        "h": "醫生繼續觀察病人的一舉一動。",
+        "py": "Yī shēng jì xù guān chá bìng rén de yī jǔ yī dòng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The doctor kept watching the patient's every move.",
+        "h_t": "醫生繼續觀察病人的一舉一動。",
+        "h_s": "医生继续观察病人的一举一动。"
+       },
+       "w_s": "一举一动"
+      },
+      {
+       "w": "一年一度",
+       "py": "yī nián yī dù",
+       "lit": "one-year-one-time",
+       "en": "once a year, annual",
+       "note": "Used mostly before a noun with 的 (一年一度的…).",
+       "ex": {
+        "h": "今天，该街道为一年一度的圣帕特里克节游行的主要路径。",
+        "py": "Jīn tiān, gāi jiē dào wéi yī nián yī dù de Shèng Pàtèlǐkè Jié yóu xíng de zhǔ yào lù jìng.",
+        "py_auto": true,
+        "src": "wikipedia: 奥康奈尔街",
+        "en": "Today the street is the main route of the annual Saint Patrick's Day parade.",
+        "h_t": "今天，該街道為一年一度的聖帕特里克節遊行的主要路徑。",
+        "h_s": "今天，该街道为一年一度的圣帕特里克节游行的主要路径。"
+       },
+       "w_s": "一年一度"
+      },
+      {
+       "w": "全心全意",
+       "py": "quán xīn quán yì",
+       "lit": "whole-heart-whole-mind",
+       "en": "wholeheartedly",
+       "ex": {
+        "h": "我全心全意地支持你。",
+        "py": "Wǒ quán xīn quán yì de zhī chí nǐ.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I support you wholeheartedly.",
+        "h_t": "我全心全意地支持你。",
+        "h_s": "我全心全意地支持你。"
+       },
+       "w_s": "全心全意"
+      },
+      {
+       "w": "不知不覺",
+       "py": "bù zhī bù jué",
+       "lit": "not-know-not-feel",
+       "en": "without realising it, before you know it",
+       "ex": {
+        "h": "不知不覺，秋天已經到了。",
+        "py": "Bù zhī bù jué, qiū tiān yǐ jīng dào le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Before we knew it, autumn had come.",
+        "h_t": "不知不覺，秋天已經到了。",
+        "h_s": "不知不觉，秋天已经到了。"
+       },
+       "w_s": "不知不觉"
+      },
+      {
+       "w": "無法無天",
+       "py": "wú fǎ wú tiān",
+       "lit": "without-law-without-heaven",
+       "en": "lawless, completely out of control",
+       "note": "天 here is \"Heaven\" as the moral order, not the sky.",
+       "ex": {
+        "h": "政府官员恳求华盛顿能够协助他们制止这种无法无天的行为。",
+        "py": "Zhèng fǔ guān yuán kěn qiú Huáshèngdùn néng gòu xié zhù tā men zhì zhǐ zhè zhǒng wú fǎ wú tiān de xíng wéi.",
+        "py_auto": true,
+        "src": "wikipedia: 約翰·埃德加·胡佛",
+        "en": "Officials begged Washington to help them stop this lawless behaviour.",
+        "h_t": "政府官員懇求華盛頓能夠協助他們制止這種無法無天的行為。",
+        "h_s": "政府官员恳求华盛顿能够协助他们制止这种无法无天的行为。"
+       },
+       "w_s": "无法无天"
+      },
+      {
+       "w": "無緣無故",
+       "py": "wú yuán wú gù",
+       "lit": "without-cause-without-reason",
+       "en": "for no reason at all",
+       "ex": {
+        "h": "他看见人无缘无故被铐进枷锁、被打、被囚禁在地牢。",
+        "py": "Tā kàn jiàn rén wú yuán wú gù bèi kào jìn jiā suǒ, bèi dǎ, bèi qiú jìn zài dì láo.",
+        "py_auto": true,
+        "src": "wikipedia: 复活 (小说)",
+        "en": "He saw people put in chains, beaten and locked in dungeons for no reason at all.",
+        "h_t": "他看見人無緣無故被銬進枷鎖、被打、被囚禁在地牢。",
+        "h_s": "他看见人无缘无故被铐进枷锁、被打、被囚禁在地牢。"
+       },
+       "w_s": "无缘无故"
+      },
+      {
+       "w": "所作所為",
+       "py": "suǒ zuò suǒ wéi",
+       "lit": "what-one-does-what-one-does",
+       "en": "everything someone has done, someone's conduct",
+       "note": "Usually critical. 作 and 為 both mean \"do\".",
+       "ex": {
+        "h": "汤姆不知道他的所作所为违反了规则。",
+        "py": "Tāngmǔ bù zhī dào tā de suǒ zuò suǒ wéi wéi fǎn le guī zé.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Tom didn't know that what he had done broke the rules.",
+        "h_t": "湯姆不知道他的所作所為違反了規則。",
+        "h_s": "汤姆不知道他的所作所为违反了规则。"
+       },
+       "w_s": "所作所为"
+      },
+      {
+       "w": "各式各樣",
+       "py": "gè shì gè yàng",
+       "lit": "each-style-each-kind",
+       "en": "all kinds of",
+       "ex": {
+        "h": "各式各樣的人住在東京。",
+        "py": "Gè shì gè yàng de rén zhù zài Dōngjīng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "All kinds of people live in Tokyo.",
+        "h_t": "各式各樣的人住在東京。",
+        "h_s": "各式各样的人住在东京。"
+       },
+       "w_s": "各式各样"
+      },
+      {
+       "w": "謝天謝地",
+       "py": "xiè tiān xiè dì",
+       "lit": "thank-heaven-thank-earth",
+       "en": "thank goodness",
+       "ex": {
+        "h": "…场面实在不好形容，但谢天谢地，我的歌词保住了！",
+        "py": "… Chǎng miàn shí zài bù hǎo xíng róng, dàn xiè tiān xiè dì, wǒ de gē cí bǎo zhù le!",
+        "py_auto": true,
+        "src": "wikipedia: 貝隆夫人 (電影)",
+        "en": "The scene is hard to describe, but thank goodness, my lyrics survived!",
+        "h_t": "…場面實在不好形容，但謝天謝地，我的歌詞保住了！",
+        "h_s": "…场面实在不好形容，但谢天谢地，我的歌词保住了！"
+       },
+       "w_s": "谢天谢地"
+      },
+      {
+       "w": "隨時隨地",
+       "py": "suí shí suí dì",
+       "lit": "follow-time-follow-place",
+       "en": "anytime, anywhere",
+       "ex": {
+        "h": "特技是繪畫（有趣的画）、随时随地都能睡着、舞蹈。",
+        "py": "Tè jì shì huì huà (yǒu qù de huà), suí shí suí dì dōu néng shuì zháo, wǔ dǎo.",
+        "py_auto": true,
+        "src": "wikipedia: 宮脇咲良",
+        "en": "Special skills: drawing (funny pictures), falling asleep anytime and anywhere, dancing.",
+        "h_t": "特技是繪畫（有趣的畫）、隨時隨地都能睡著、舞蹈。",
+        "h_s": "特技是绘画（有趣的画）、随时随地都能睡着、舞蹈。"
+       },
+       "w_s": "随时随地"
+      },
+      {
+       "w": "何去何從",
+       "py": "hé qù hé cóng",
+       "lit": "what-leave-what-follow",
+       "en": "which way to go, what to do next",
+       "note": "何 \"what\" comes before the verb, as in classical Chinese questions (何去 = 去何).",
+       "ex": {
+        "h": "我失業又沒錢。真不知該何去何從。",
+        "py": "Wǒ shī yè yòu méi qián. Zhēn bù zhī gāi hé qù hé cóng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I've lost my job and I have no money. I really don't know what to do next.",
+        "h_t": "我失業又沒錢。真不知該何去何從。",
+        "h_s": "我失业又没钱。真不知该何去何从。"
+       },
+       "w_s": "何去何从"
+      },
+      {
+       "w": "日復一日",
+       "py": "rì fù yī rì",
+       "lit": "day-again-one-day",
+       "en": "day after day",
+       "ex": {
+        "h": "那隻狗日復一日地等待著主人的歸來。",
+        "py": "Nà zhī gǒu rì fù yī rì de děng dài zhe zhǔ rén de guī lái.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Day after day the dog waited for its master to come back.",
+        "h_t": "那隻狗日復一日地等待著主人的歸來。",
+        "h_s": "那只狗日复一日地等待著主人的归来。"
+       },
+       "w_s": "日复一日"
+      },
+      {
+       "w": "討價還價",
+       "py": "tǎo jià huán jià",
+       "lit": "ask-price-return-price",
+       "en": "to haggle, to bargain",
+       "note": "還 is huán \"give back\" here (a counter-offer), not hái.",
+       "ex": {
+        "h": "我們為這棟房子和他討價還價。",
+        "py": "Wǒ men wèi zhè dòng fáng zi hé tā tǎo jià huán jià.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "We haggled with him over the house.",
+        "h_t": "我們為這棟房子和他討價還價。",
+        "h_s": "我们为这栋房子和他讨价还价。"
+       },
+       "w_s": "讨价还价"
+      },
+      {
+       "w": "胡思亂想",
+       "py": "hú sī luàn xiǎng",
+       "lit": "wildly-think-chaotically-imagine",
+       "en": "to let one's imagination run wild, to worry over nothing",
+       "origin": {
+        "work": "朱子語類·卷一二",
+        "text": "無許多胡思亂想",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "无许多胡思乱想"
+       },
+       "ex": {
+        "h": "喜欢热闹，擅长在上课时胡思乱想。",
+        "py": "Xǐ huān rè nào, shàn cháng zài shàng kè shí hú sī luàn xiǎng.",
+        "py_auto": true,
+        "src": "wikipedia: ONE～光辉的季节～",
+        "en": "Loves a lively crowd; good at daydreaming in class.",
+        "h_t": "喜歡熱鬧，擅長在上課時胡思亂想。",
+        "h_s": "喜欢热闹，擅长在上课时胡思乱想。"
+       },
+       "w_s": "胡思乱想"
+      },
+      {
+       "w": "胡言亂語",
+       "py": "hú yán luàn yǔ",
+       "lit": "wildly-speak-chaotically-talk",
+       "en": "to talk nonsense, to rave",
+       "ex": {
+        "h": "汤姆在胡言乱语。",
+        "py": "Tāngmǔ zài hú yán luàn yǔ.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Tom is talking nonsense.",
+        "h_t": "湯姆在胡言亂語。",
+        "h_s": "汤姆在胡言乱语。"
+       },
+       "w_s": "胡言乱语"
+      },
+      {
+       "w": "胡說八道",
+       "py": "hú shuō bā dào",
+       "lit": "wildly-say-eight-ways",
+       "en": "rubbish!, to talk nonsense",
+       "note": "八道 \"eight ways\" = in every direction. Stronger and more colloquial than 胡言亂語.",
+       "ex": {
+        "h": "她们只是胡说八道。",
+        "py": "Tā men zhǐ shì hú shuō bā dào.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "They're just talking rubbish.",
+        "h_t": "她們只是胡說八道。",
+        "h_s": "她们只是胡说八道。"
+       },
+       "w_s": "胡说八道"
+      },
+      {
+       "w": "想方設法",
+       "py": "xiǎng fāng shè fǎ",
+       "lit": "think-way-devise-method",
+       "en": "to try every possible way",
+       "ex": {
+        "h": "她想方设法以一己之力完成了工作。",
+        "py": "Tā xiǎng fāng shè fǎ yǐ yī jǐ zhī lì wán chéng le gōng zuò.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She found a way to finish the work on her own.",
+        "h_t": "她想方設法以一己之力完成了工作。",
+        "h_s": "她想方设法以一己之力完成了工作。"
+       },
+       "w_s": "想方设法"
+      },
+      {
+       "w": "深思熟慮",
+       "py": "shēn sī shú lǜ",
+       "py_tw": "shēn sī shóu lǜ",
+       "lit": "deep-thought-ripe-consideration",
+       "en": "careful, well thought out",
+       "origin": {
+        "work": "屈原〈漁父〉 (深思) + 史記·穰侯列傳 (熟慮)",
+        "text": "何故深思高舉…願君熟慮之",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "何故深思高举…愿君熟虑之"
+       },
+       "ex": {
+        "h": "该实验的每一步都是经过深思熟虑的。",
+        "py": "Gāi shí yàn de měi yī bù dōu shì jīng guò shēn sī shú lǜ de.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Every step of the experiment was carefully thought out.",
+        "h_t": "該實驗的每一步都是經過深思熟慮的。",
+        "h_s": "该实验的每一步都是经过深思熟虑的。"
+       },
+       "w_s": "深思熟虑"
+      },
+      {
+       "w": "千方百計",
+       "py": "qiān fāng bǎi jì",
+       "lit": "thousand-ways-hundred-plans",
+       "en": "by every possible means",
+       "ex": {
+        "h": "报导说，施莱佛被捕事件，充分表明北京千方百计想渗透中情局。",
+        "py": "Bào dǎo shuō, Shīláifó bèi bǔ shì jiàn, chōng fèn biǎo míng Běijīng qiān fāng bǎi jì xiǎng shèn tòu Zhōngqíngjú.",
+        "py_auto": true,
+        "src": "wikipedia: 格伦·达菲·施莱弗",
+        "en": "Reports said Shriver's arrest showed that Beijing was trying by every means to infiltrate the CIA.",
+        "h_t": "報導說，施萊佛被捕事件，充分表明北京千方百計想滲透中情局。",
+        "h_s": "报导说，施莱佛被捕事件，充分表明北京千方百计想渗透中情局。"
+       },
+       "w_s": "千方百计"
+      }
+     ],
+     "title_s": "对称"
+    },
+    {
+     "id": 2,
+     "slug": "numbers",
+     "title": "數字",
+     "title_py": "Shùzì",
+     "title_en": "Numbers and wholes",
+     "status": "draft",
+     "intro": "Numbers in 成語 are almost never real counts. 一 means \"the whole, the same, once, at once\", 七八 means \"all over the place\", 千 and 萬 mean \"countless\", 四面八方 \"every direction\". Paired numbers (一清二楚, 亂七八糟) give rhythm more than meaning. The last few items of the lesson are about wholes and pieces (從頭到尾, 支離破碎), the same idea without numbers.\n",
+     "frames": [
+      {
+       "f": "一X二Y",
+       "en": "'one…two…': completely, thoroughly",
+       "ex": [
+        "一清二楚"
+       ],
+       "f_s": "一X二Y",
+       "ex_s": [
+        "一清二楚"
+       ]
+      },
+      {
+       "f": "X七Y八",
+       "en": "'seven…eight…': in a mess, all over",
+       "ex": [
+        "亂七八糟"
+       ],
+       "f_s": "X七Y八",
+       "ex_s": [
+        "乱七八糟"
+       ]
+      },
+      {
+       "f": "千X萬Y / 成千上萬",
+       "en": "thousands, tens of thousands: countless",
+       "ex": [
+        "成千上萬"
+       ],
+       "f_s": "千X万Y / 成千上万",
+       "ex_s": [
+        "成千上万"
+       ]
+      },
+      {
+       "f": "一無所X",
+       "en": "not a single X (→ 所, lesson 3)",
+       "ex": [
+        "一無所有",
+        "一無所知"
+       ],
+       "f_s": "一无所X",
+       "ex_s": [
+        "一无所有",
+        "一无所知"
+       ]
+      },
+      {
+       "f": "獨一無二",
+       "en": "alone one, no second: unique",
+       "ex": [
+        "獨一無二"
+       ],
+       "f_s": "独一无二",
+       "ex_s": [
+        "独一无二"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "成千上萬",
+       "py": "chéng qiān shàng wàn",
+       "lit": "reach-thousand-rise-ten-thousand",
+       "en": "thousands and thousands",
+       "ex": {
+        "h": "每年有成千上万的外国人访问日本。",
+        "py": "Měi nián yǒu chéng qiān shàng wàn de wài guó rén fǎng wèn Rìběn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Thousands of foreigners visit Japan every year.",
+        "h_t": "每年有成千上萬的外國人訪問日本。",
+        "h_s": "每年有成千上万的外国人访问日本。"
+       },
+       "w_s": "成千上万"
+      },
+      {
+       "w": "獨一無二",
+       "py": "dú yī wú èr",
+       "lit": "alone-one-without-two",
+       "en": "unique, one of a kind",
+       "ex": {
+        "h": "这里的天气有独一无二的特点。",
+        "py": "Zhè lǐ de tiān qì yǒu dú yī wú èr de tè diǎn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The weather here has some unique features.",
+        "h_t": "這裡的天氣有獨一無二的特點。",
+        "h_s": "这里的天气有独一无二的特点。"
+       },
+       "w_s": "独一无二"
+      },
+      {
+       "w": "亂七八糟",
+       "py": "luàn qī bā zāo",
+       "lit": "chaotic-seven-eight-messy",
+       "en": "in a terrible mess",
+       "ex": {
+        "h": "她工作做得亂七八糟。",
+        "py": "Tā gōng zuò zuò de luàn qī bā zāo.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She made a complete mess of her work.",
+        "h_t": "她工作做得亂七八糟。",
+        "h_s": "她工作做得乱七八糟。"
+       },
+       "w_s": "乱七八糟"
+      },
+      {
+       "w": "四面八方",
+       "py": "sì miàn bā fāng",
+       "lit": "four-sides-eight-directions",
+       "en": "in all directions, from everywhere",
+       "ex": {
+        "h": "我看见小动物向四面八方跑去。",
+        "py": "Wǒ kàn jiàn xiǎo dòng wù xiàng sì miàn bā fāng pǎo qù.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I saw the little animals run off in all directions.",
+        "h_t": "我看見小動物向四面八方跑去。",
+        "h_s": "我看见小动物向四面八方跑去。"
+       },
+       "w_s": "四面八方"
+      },
+      {
+       "w": "一清二楚",
+       "py": "yī qīng èr chǔ",
+       "lit": "one-clear-two-distinct",
+       "en": "perfectly clear",
+       "note": "Often after 得 or 的 (記得一清二楚 \"remember perfectly\").",
+       "ex": {
+        "h": "對於搬到這裡的湯瑪斯家的人是好是壞，她都知道的一清二楚。",
+        "py": "Duì yú bān dào zhè lǐ de Tāngmǎsī jiā de rén shì hǎo shì huài, tā dōu zhī dào de yī qīng èr chǔ.",
+        "py_auto": true,
+        "src": "wikipedia: 你好 安妮 ～Before Green Gables",
+        "en": "She knows perfectly well whether the Thomas family who moved here are good people or bad.",
+        "h_t": "對於搬到這裡的湯瑪斯家的人是好是壞，她都知道的一清二楚。",
+        "h_s": "对于搬到这里的汤玛斯家的人是好是坏，她都知道的一清二楚。"
+       },
+       "w_s": "一清二楚"
+      },
+      {
+       "w": "一無所有",
+       "py": "yī wú suǒ yǒu",
+       "lit": "one-without-what-have",
+       "en": "to have nothing at all",
+       "origin": {
+        "work": "敦煌變文《廬山遠公話》",
+        "text": "萬法皆無，一無所有",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "万法皆无，一无所有"
+       },
+       "ex": {
+        "h": "我一無所有。",
+        "py": "Wǒ yī wú suǒ yǒu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I have nothing.",
+        "h_t": "我一無所有。",
+        "h_s": "我一无所有。"
+       },
+       "w_s": "一无所有"
+      },
+      {
+       "w": "一無所知",
+       "py": "yī wú suǒ zhī",
+       "lit": "one-without-what-know",
+       "en": "to know nothing at all about something",
+       "ex": {
+        "h": "真奇怪, 你對她的婚禮一無所知。",
+        "py": "Zhēn qí guài, nǐ duì tā de hūn lǐ yī wú suǒ zhī.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "It's strange that you know nothing about her wedding.",
+        "h_t": "真奇怪, 你對她的婚禮一無所知。",
+        "h_s": "真奇怪, 你对她的婚礼一无所知。"
+       },
+       "w_s": "一无所知"
+      },
+      {
+       "w": "一如既往",
+       "py": "yī rú jì wǎng",
+       "lit": "one-like-already-past",
+       "en": "as always, as before",
+       "ex": {
+        "h": "某天回家的路上，善也一如既往的在霞關站等候地鐵。",
+        "py": "Mǒu tiān huí jiā de lù shàng, Shànyě yī rú jì wǎng de zài Xiáguān Zhàn děng hòu dì tiě.",
+        "py_auto": true,
+        "src": "wikipedia: 神的孩子全跳舞",
+        "en": "One day on his way home, Yoshiya was waiting for the subway at Kasumigaseki station as usual.",
+        "h_t": "某天回家的路上，善也一如既往的在霞關站等候地鐵。",
+        "h_s": "某天回家的路上，善也一如既往的在霞关站等候地铁。"
+       },
+       "w_s": "一如既往"
+      },
+      {
+       "w": "一席之地",
+       "py": "yī xí zhī dì",
+       "lit": "one-mat-'s-place",
+       "en": "a place, a foothold (in a field)",
+       "note": "席 is the mat people sat on; 之 is the classical \"of\" (→ lesson 3). Usually 占有一席之地.",
+       "ex": {
+        "h": "依靠如此多方面的成就，他理应在音乐史上占有一席之地。",
+        "py": "Yī kào rú cǐ duō fāng miàn de chéng jiù, tā lǐ yīng zài yīn yuè shǐ shàng zhàn yǒu yī xí zhī dì.",
+        "py_auto": true,
+        "src": "wikipedia: 伊格纳茨·普莱耶尔",
+        "en": "With so many achievements, he deserves a place in the history of music.",
+        "h_t": "依靠如此多方面的成就，他理應在音樂史上佔有一席之地。",
+        "h_s": "依靠如此多方面的成就，他理应在音乐史上占有一席之地。"
+       },
+       "w_s": "一席之地"
+      },
+      {
+       "w": "一塌糊塗",
+       "py": "yī tā hú tú",
+       "lit": "one-collapse-muddled",
+       "en": "in a total mess, hopelessly",
+       "ex": {
+        "h": "這個路口正在翻修，被挖得一塌糊塗。",
+        "py": "Zhè ge lù kǒu zhèng zài fān xiū, bèi wā de yī tā hú tú.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "This crossroads is being rebuilt, and it's been dug up into a complete mess.",
+        "h_t": "這個路口正在翻修，被挖得一塌糊塗。",
+        "h_s": "这个路口正在翻修，被挖得一塌糊涂。"
+       },
+       "w_s": "一塌糊涂"
+      },
+      {
+       "w": "一成不變",
+       "py": "yī chéng bù biàn",
+       "lit": "once-formed-not-change",
+       "en": "unchanging, rigid",
+       "origin": {
+        "work": "禮記·王制",
+        "text": "刑者，侀也。侀者，成也。一成而不可變",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "刑者，侀也。侀者，成也。一成而不可变"
+       },
+       "note": "The source is about punishment, which cannot be undone once carried out.",
+       "ex": {
+        "h": "终其一生，他绘画的风格几乎一成不变。",
+        "py": "Zhōng qí yī shēng, tā huì huà de fēng gé jī hū yī chéng bù biàn.",
+        "py_auto": true,
+        "src": "wikipedia: 克洛德·约瑟夫·韦尔内",
+        "en": "Throughout his life, his painting style hardly changed.",
+        "h_t": "終其一生，他繪畫的風格幾乎一成不變。",
+        "h_s": "终其一生，他绘画的风格几乎一成不变。"
+       },
+       "w_s": "一成不变"
+      },
+      {
+       "w": "一帆風順",
+       "py": "yī fān fēng shùn",
+       "py_tw": "yī fán fēng shùn",
+       "lit": "one-sail-wind-favourable",
+       "en": "plain sailing, smooth",
+       "ex": {
+        "h": "退团後，堀内敬子的演艺生涯并非一帆风顺。",
+        "py": "Tuì tuán hòu, Kūnèi Jìngzǐ de yǎn yì shēng yá bìng fēi yī fān fēng shùn.",
+        "py_auto": true,
+        "src": "wikipedia: 堀内敬子",
+        "en": "After leaving the troupe, Horiuchi Keiko's acting career was not all plain sailing.",
+        "h_t": "退團後，堀內敬子的演藝生涯並非一帆風順。",
+        "h_s": "退团后，堀内敬子的演艺生涯并非一帆风顺。"
+       },
+       "w_s": "一帆风顺"
+      },
+      {
+       "w": "一視同仁",
+       "py": "yī shì tóng rén",
+       "lit": "one-look-same-kindness",
+       "en": "to treat everyone equally",
+       "origin": {
+        "work": "韓愈〈原人〉",
+        "text": "是故聖人一視而同仁",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "是故圣人一视而同仁"
+       },
+       "ex": {
+        "h": "老师应该一视同仁地对待他们的学生。",
+        "py": "Lǎo shī yīng gāi yī shì tóng rén de duì dài tā men de xué shēng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Teachers should treat all their students equally.",
+        "h_t": "老師應該一視同仁地對待他們的學生。",
+        "h_s": "老师应该一视同仁地对待他们的学生。"
+       },
+       "w_s": "一视同仁"
+      },
+      {
+       "w": "有朝一日",
+       "py": "yǒu zhāo yī rì",
+       "lit": "have-morning-one-day",
+       "en": "one day, some day",
+       "ex": {
+        "h": "我有朝一日会成为一名医生。",
+        "py": "Wǒ yǒu zhāo yī rì huì chéng wéi yī míng yī shēng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Some day I'll be a doctor.",
+        "h_t": "我有朝一日會成為一名醫生。",
+        "h_s": "我有朝一日会成为一名医生。"
+       },
+       "w_s": "有朝一日"
+      },
+      {
+       "w": "大吃一驚",
+       "py": "dà chī yī jīng",
+       "lit": "greatly-eat-one-fright",
+       "en": "to be taken completely by surprise",
+       "note": "吃 \"suffer, receive\", as in 吃虧.",
+       "ex": {
+        "h": "她肯定会大吃一惊的。",
+        "py": "Tā kěn dìng huì dà chī yī jīng de.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She's bound to be amazed.",
+        "h_t": "她肯定會大吃一驚的。",
+        "h_s": "她肯定会大吃一惊的。"
+       },
+       "w_s": "大吃一惊"
+      },
+      {
+       "w": "混為一談",
+       "py": "hùn wéi yī tán",
+       "lit": "mix-make-one-talk",
+       "en": "to lump together, to confuse two things",
+       "ex": {
+        "h": "同情心和愛心絕不可混為一談。",
+        "py": "Tóng qíng xīn hé ài xīn jué bù kě hùn wéi yī tán.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Sympathy and love must never be confused.",
+        "h_t": "同情心和愛心絕不可混為一談。",
+        "h_s": "同情心和爱心绝不可混为一谈。"
+       },
+       "w_s": "混为一谈"
+      },
+      {
+       "w": "手無寸鐵",
+       "py": "shǒu wú cùn tiě",
+       "lit": "hand-without-inch-iron",
+       "en": "unarmed, defenceless",
+       "origin": {
+        "work": "異苑·卷一〇",
+        "text": "香年十四，手無寸刃，直搤虎頸",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "香年十四，手无寸刃，直搤虎颈"
+       },
+       "note": "The source has 刃 \"blade\": a 14-year-old girl seizes a tiger by the neck to save her father.",
+       "ex": {
+        "h": "美军士兵随后开火，无差别的射杀手无寸铁的印第安人。",
+        "py": "Měi jūn shì bīng suí hòu kāi huǒ, wú chā bié de shè shā shǒu wú cùn tiě de Yìndì'ān rén.",
+        "py_auto": true,
+        "src": "wikipedia: 伤膝河大屠杀",
+        "en": "American soldiers then opened fire and shot unarmed Native Americans indiscriminately.",
+        "h_t": "美軍士兵隨後開火，無差別的射殺手無寸鐵的印第安人。",
+        "h_s": "美军士兵随后开火，无差别的射杀手无寸铁的印第安人。"
+       },
+       "w_s": "手无寸铁"
+      },
+      {
+       "w": "從頭到尾",
+       "py": "cóng tóu dào wěi",
+       "lit": "from-head-to-tail",
+       "en": "from beginning to end",
+       "ex": {
+        "h": "請你把故事從頭到尾給我們說一遍。",
+        "py": "Qǐng nǐ bǎ gù shì cóng tóu dào wěi gěi wǒ men shuō yī biàn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Please tell us the story from beginning to end.",
+        "h_t": "請你把故事從頭到尾給我們說一遍。",
+        "h_s": "请你把故事从头到尾给我们说一遍。"
+       },
+       "w_s": "从头到尾"
+      },
+      {
+       "w": "支離破碎",
+       "py": "zhī lí pò suì",
+       "lit": "branch-apart-broken-smashed",
+       "en": "broken up, fragmented",
+       "ex": {
+        "h": "月球事件过后，僵尸肆虐，地球变得如同地狱般支离破碎。",
+        "py": "Yuè qiú shì jiàn guò hòu, jiāng shī sì nüè, dì qiú biàn de rú tóng dì yù bān zhī lí pò suì.",
+        "py_auto": true,
+        "src": "wikipedia: 決勝時刻：黑色行動II",
+        "en": "After the moon incident zombies ran wild and the Earth was torn apart like hell.",
+        "h_t": "月球事件過後，殭屍肆虐，地球變得如同地獄般支離破碎。",
+        "h_s": "月球事件过后，僵尸肆虐，地球变得如同地狱般支离破碎。"
+       },
+       "w_s": "支离破碎"
+      },
+      {
+       "w": "層出不窮",
+       "py": "céng chū bù qióng",
+       "lit": "layer-come-out-not-end",
+       "en": "to keep appearing, endless",
+       "ex": {
+        "h": "山中景物石径、蹬道、栈阁、洞穴层出不穷。",
+        "py": "Shān zhōng jǐng wù shí jìng, dēng dào, zhàn gé, dòng xué céng chū bù qióng.",
+        "py_auto": true,
+        "src": "wikipedia: 艮岳",
+        "en": "In the hills there was no end of sights: stone paths, stairs, plank walkways and caves.",
+        "h_t": "山中景物石徑、蹬道、棧閣、洞穴層出不窮。",
+        "h_s": "山中景物石径、蹬道、栈阁、洞穴层出不穷。"
+       },
+       "w_s": "层出不穷"
+      }
+     ],
+     "title_s": "数字"
+    },
+    {
+     "id": 3,
+     "slug": "particles",
+     "title": "虛詞",
+     "title_py": "Xūcí",
+     "title_en": "Classical grammar inside modern Chinese",
+     "status": "draft",
+     "intro": "Modern Chinese keeps a handful of classical function words alive, mostly inside 成語. Learn these five and a large share of 成語 become readable: 所 + verb \"what one Vs\", 而 \"and, and then, yet\", 之 \"of\" (= 的), 以 \"by means of, in order to\", 於 \"at, to, than\" (= 在, 對, 比). Two more appear here: 其 \"its, his, their\" and 諸 \"all the, the various\". These are the same words the main Wenyan course teaches in its first lessons.\n",
+     "frames": [
+      {
+       "f": "所 + V",
+       "en": "'what one Vs', a noun: 前所未有 'what before has-not-had'",
+       "ex": [
+        "前所未有",
+        "理所當然",
+        "眾所周知",
+        "為所欲為",
+        "隨心所欲",
+        "不知所措",
+        "無所事事"
+       ],
+       "f_s": "所 + V",
+       "ex_s": [
+        "前所未有",
+        "理所当然",
+        "众所周知",
+        "为所欲为",
+        "随心所欲",
+        "不知所措",
+        "无所事事"
+       ]
+      },
+      {
+       "f": "V而V",
+       "en": "而 links two actions: 'and then' or 'yet'",
+       "ex": [
+        "脫穎而出",
+        "視而不見",
+        "取而代之",
+        "挺身而出",
+        "輕而易舉"
+       ],
+       "f_s": "V而V",
+       "ex_s": [
+        "脱颖而出",
+        "视而不见",
+        "取而代之",
+        "挺身而出",
+        "轻而易举"
+       ]
+      },
+      {
+       "f": "X之Y",
+       "en": "之 = 的: 'the Y of X'",
+       "ex": [
+        "當務之急"
+       ],
+       "f_s": "X之Y",
+       "ex_s": [
+        "当务之急"
+       ]
+      },
+      {
+       "f": "X以Y",
+       "en": "以 = 'with, by means of, so as to'",
+       "ex": [
+        "夢寐以求",
+        "全力以赴",
+        "自以為是",
+        "不以為然"
+       ],
+       "f_s": "X以Y",
+       "ex_s": [
+        "梦寐以求",
+        "全力以赴",
+        "自以为是",
+        "不以为然"
+       ]
+      },
+      {
+       "f": "X於Y",
+       "en": "於 = 'to, at, for'",
+       "ex": [
+        "無濟於事"
+       ],
+       "f_s": "X于Y",
+       "ex_s": [
+        "无济于事"
+       ]
+      },
+      {
+       "f": "其 / 諸",
+       "en": "其 = 'its, their'; 諸 = 'all the, the various'",
+       "ex": [
+        "名副其實",
+        "諸如此類"
+       ],
+       "f_s": "其 / 诸",
+       "ex_s": [
+        "名副其实",
+        "诸如此类"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "前所未有",
+       "py": "qián suǒ wèi yǒu",
+       "lit": "before-what-not-yet-have",
+       "en": "unprecedented",
+       "ex": {
+        "h": "依靠不斷重複發券，古羅馬建築達到前所未有的宏偉規模。",
+        "py": "Yī kào bù duàn chóng fù fā xuàn, Gǔ Luómǎ jiàn zhù dá dào qián suǒ wèi yǒu de hóng wěi guī mó.",
+        "py_auto": true,
+        "src": "wikipedia: 古羅馬建築",
+        "en": "By repeating the arch again and again, Roman architecture reached an unprecedented scale.",
+        "h_t": "依靠不斷重複發券，古羅馬建築達到前所未有的宏偉規模。",
+        "h_s": "依靠不断重复发券，古罗马建筑达到前所未有的宏伟规模。"
+       },
+       "w_s": "前所未有"
+      },
+      {
+       "w": "理所當然",
+       "py": "lǐ suǒ dāng rán",
+       "lit": "reason-what-should-so",
+       "en": "of course, only natural; to take for granted",
+       "note": "視為理所當然 = to take for granted.",
+       "ex": {
+        "h": "我們視健康為理所當然, 直到疾病侵襲。",
+        "py": "Wǒ men shì jiàn kāng wéi lǐ suǒ dāng rán, zhí dào jí bìng qīn xí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "We take our health for granted until illness strikes.",
+        "h_t": "我們視健康為理所當然, 直到疾病侵襲。",
+        "h_s": "我们视健康为理所当然, 直到疾病侵袭。"
+       },
+       "w_s": "理所当然"
+      },
+      {
+       "w": "眾所周知",
+       "py": "zhòng suǒ zhōu zhī",
+       "lit": "crowd-what-all-know",
+       "en": "as everyone knows",
+       "ex": {
+        "h": "众所周知，空气是多种气体的混合体。",
+        "py": "Zhòng suǒ zhōu zhī, kōng qì shì duō zhǒng qì tǐ de hùn hé tǐ.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "As everyone knows, air is a mixture of several gases.",
+        "h_t": "眾所周知，空氣是多種氣體的混合體。",
+        "h_s": "众所周知，空气是多种气体的混合体。"
+       },
+       "w_s": "众所周知"
+      },
+      {
+       "w": "為所欲為",
+       "py": "wéi suǒ yù wéi",
+       "lit": "do-what-want-do",
+       "en": "to do whatever one likes (with no limits)",
+       "note": "Negative, unlike 隨心所欲 which can be neutral.",
+       "ex": {
+        "h": "上级的监督太远，同级的监督太软，于是一把手就变得为所欲为。",
+        "py": "Shàng jí de jiān dū tài yuǎn, tóng jí de jiān dū tài ruǎn, yú shì yī bǎ shǒu jiù biàn de wéi suǒ yù wéi.",
+        "py_auto": true,
+        "src": "wikipedia: 2008年中华人民共和国腐败案件",
+        "en": "Oversight from above is too distant and from colleagues too soft, so the man in charge does whatever he likes.",
+        "h_t": "上級的監督太遠，同級的監督太軟，於是一把手就變得為所欲為。",
+        "h_s": "上级的监督太远，同级的监督太软，于是一把手就变得为所欲为。"
+       },
+       "w_s": "为所欲为"
+      },
+      {
+       "w": "隨心所欲",
+       "py": "suí xīn suǒ yù",
+       "lit": "follow-heart-what-desire",
+       "en": "to do as one pleases",
+       "origin": {
+        "work": "論語·為政",
+        "text": "七十而從心所欲，不踰矩",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "七十而从心所欲，不逾矩"
+       },
+       "note": "Confucius at seventy \"followed what his heart desired without overstepping the rules\". → main course, 論語 stage.",
+       "ex": {
+        "h": "你可以隨心所欲。",
+        "py": "Nǐ kě yǐ suí xīn suǒ yù.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "You can do as you please.",
+        "h_t": "你可以隨心所欲。",
+        "h_s": "你可以随心所欲。"
+       },
+       "w_s": "随心所欲"
+      },
+      {
+       "w": "不知所措",
+       "py": "bù zhī suǒ cuò",
+       "lit": "not-know-where-place (one's hands and feet)",
+       "en": "at a loss, not knowing what to do",
+       "origin": {
+        "work": "管子·七臣七主",
+        "text": "臣下振怒，不知所錯",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "臣下振怒，不知所错"
+       },
+       "note": "措 \"to place\" (the source writes 錯, a loan for 措).",
+       "ex": {
+        "h": "他对意料外的结果茫然不知所措。",
+        "py": "Tā duì yì liào wài de jié guǒ máng rán bù zhī suǒ cuò.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He was completely at a loss at the unexpected result.",
+        "h_t": "他對意料外的結果茫然不知所措。",
+        "h_s": "他对意料外的结果茫然不知所措。"
+       },
+       "w_s": "不知所措"
+      },
+      {
+       "w": "無所事事",
+       "py": "wú suǒ shì shì",
+       "lit": "without-what-do-thing",
+       "en": "to have nothing to do, to idle about",
+       "origin": {
+        "work": "史記·曹相國世家",
+        "text": "見參不事事",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "见参不事事"
+       },
+       "note": "The first 事 is a verb \"to attend to\", the second a noun \"affairs\": a classical habit (→ 詞類活用).",
+       "ex": {
+        "h": "吉姆工作努力，而约翰却无所事事。",
+        "py": "Jímǔ gōng zuò nǔ lì, ér Yuēhàn què wú suǒ shì shì.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Jim works hard, but John just idles about.",
+        "h_t": "吉姆工作努力，而約翰卻無所事事。",
+        "h_s": "吉姆工作努力，而约翰却无所事事。"
+       },
+       "w_s": "无所事事"
+      },
+      {
+       "w": "脫穎而出",
+       "py": "tuō yǐng ér chū",
+       "lit": "shed-tip-and-come-out",
+       "en": "to stand out from the crowd",
+       "origin": {
+        "work": "史記·平原君虞卿列傳",
+        "text": "使遂蚤得處囊中，乃穎脫而出，非特其末見而已",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "使遂蚤得处囊中，乃颖脱而出，非特其末见而已"
+       },
+       "note": "Mao Sui compares himself to an awl in a bag: given the chance, the whole point would come through, not just the tip.",
+       "ex": {
+        "h": "玛丽从大约500名申请者中脱颖而出。",
+        "py": "Mǎlì cóng dà yuē 500 míng shēn qǐng zhě zhōng tuō yǐng ér chū.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Mary stood out from about 500 applicants.",
+        "h_t": "瑪麗從大約500名申請者中脫穎而出。",
+        "h_s": "玛丽从大约500名申请者中脱颖而出。"
+       },
+       "w_s": "脱颖而出"
+      },
+      {
+       "w": "視而不見",
+       "py": "shì ér bù jiàn",
+       "lit": "look-yet-not-see",
+       "en": "to look but not see; to turn a blind eye",
+       "ex": {
+        "h": "由于护工完全不具威胁，其他人基本上对它们视而不见。",
+        "py": "Yóu yú hù gōng wán quán bù jù wēi xié, qí tā rén jī běn shàng duì tā men shì ér bù jiàn.",
+        "py_auto": true,
+        "src": "wikipedia: 质量效应系列",
+        "en": "Since the keepers pose no threat at all, everyone else basically ignores them.",
+        "h_t": "由於護工完全不具威脅，其他人基本上對它們視而不見。",
+        "h_s": "由于护工完全不具威胁，其他人基本上对它们视而不见。"
+       },
+       "w_s": "视而不见"
+      },
+      {
+       "w": "取而代之",
+       "py": "qǔ ér dài zhī",
+       "lit": "take-and-replace-him",
+       "en": "to take someone's place, to replace",
+       "origin": {
+        "work": "史記·項羽本紀",
+        "text": "彼可取而代也",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "彼可取而代也"
+       },
+       "note": "The young Xiang Yu, watching the First Emperor's procession, says \"he can be taken and replaced\". 之 = him / it.",
+       "ex": {
+        "h": "元帝即位后几年，弘恭死了，石显取而代之，担任中书令。",
+        "py": "Yuándì jí wèi hòu jǐ nián, Hóng Gōng sǐ le, Shí Xiǎn qǔ ér dài zhī, dān rèn zhōng shū lìng.",
+        "py_auto": true,
+        "src": "wikipedia: 弘恭",
+        "en": "A few years after Emperor Yuan came to the throne, Hong Gong died and Shi Xian replaced him as Palace Secretary.",
+        "h_t": "元帝即位後幾年，弘恭死了，石顯取而代之，擔任中書令。",
+        "h_s": "元帝即位后几年，弘恭死了，石显取而代之，担任中书令。"
+       },
+       "w_s": "取而代之"
+      },
+      {
+       "w": "挺身而出",
+       "py": "tǐng shēn ér chū",
+       "lit": "straighten-body-and-step-out",
+       "en": "to step forward (to defend or help)",
+       "ex": {
+        "h": "這時呂陶、上官均挺身而出為蘇軾辯護，史稱蜀洛黨爭。",
+        "py": "Zhè shí Lǚ Táo, Shàngguān Jūn tǐng shēn ér chū wèi Sū Shì biàn hù, shǐ chēng Shǔ-Luò dǎng zhēng.",
+        "py_auto": true,
+        "src": "wikipedia: 賈易",
+        "en": "At this point Lü Tao and Shangguan Jun stepped forward to defend Su Shi: this is known as the Shu–Luo factional struggle.",
+        "h_t": "這時呂陶、上官均挺身而出為蘇軾辯護，史稱蜀洛黨爭。",
+        "h_s": "这时吕陶、上官均挺身而出为苏轼辩护，史称蜀洛党争。"
+       },
+       "w_s": "挺身而出"
+      },
+      {
+       "w": "輕而易舉",
+       "py": "qīng ér yì jǔ",
+       "lit": "light-and-easy-lift",
+       "en": "effortless, very easy",
+       "origin": {
+        "work": "朱熹《詩集傳》·大雅·烝民",
+        "text": "言人皆言德甚輕而易舉，然人莫能舉也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "言人皆言德甚轻而易举，然人莫能举也"
+       },
+       "ex": {
+        "h": "她輕而易舉的就把詩背熟了。",
+        "py": "Tā qīng ér yì jǔ de jiù bǎ shī bèi shú le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She learned the poem by heart effortlessly.",
+        "h_t": "她輕而易舉的就把詩背熟了。",
+        "h_s": "她轻而易举的就把诗背熟了。"
+       },
+       "w_s": "轻而易举"
+      },
+      {
+       "w": "當務之急",
+       "py": "dāng wù zhī jí",
+       "lit": "present-task-'s-urgency",
+       "en": "the most urgent task",
+       "origin": {
+        "work": "孟子·盡心上",
+        "text": "知者無不知也，當務之為急",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "知者无不知也，当务之为急"
+       },
+       "ex": {
+        "h": "這是當務之急。",
+        "py": "Zhè shì dāng wù zhī jí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "This is the most urgent thing.",
+        "h_t": "這是當務之急。",
+        "h_s": "这是当务之急。"
+       },
+       "w_s": "当务之急"
+      },
+      {
+       "w": "夢寐以求",
+       "py": "mèng mèi yǐ qiú",
+       "lit": "dream-sleep-by-seek",
+       "en": "to long for, dreamed of",
+       "origin": {
+        "work": "詩經·周南·關雎",
+        "text": "窈窕淑女，寤寐求之",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "窈窕淑女，寤寐求之"
+       },
+       "note": "The opening poem of the 詩經: the young man seeks the girl \"awake and asleep\" (寤寐).",
+       "ex": {
+        "h": "巴西海军梦寐以求40年的喷气式战斗机，终于即将变为现实。",
+        "py": "Bāxī hǎi jūn mèng mèi yǐ qiú 40 nián de pēn qì shì zhàn dòu jī, zhōng yú jí jiāng biàn wéi xiàn shí.",
+        "py_auto": true,
+        "src": "wikipedia: 米勒斯吉拿斯號航空母艦",
+        "en": "The jet fighters the Brazilian navy had dreamed of for forty years were finally about to become reality.",
+        "h_t": "巴西海軍夢寐以求40年的噴氣式戰鬥機，終於即將變為現實。",
+        "h_s": "巴西海军梦寐以求40年的喷气式战斗机，终于即将变为现实。"
+       },
+       "w_s": "梦寐以求"
+      },
+      {
+       "w": "全力以赴",
+       "py": "quán lì yǐ fù",
+       "lit": "whole-strength-with-go",
+       "en": "to go all out, to give it everything",
+       "ex": {
+        "h": "我们全力以赴来完成工作。",
+        "py": "Wǒ men quán lì yǐ fù lái wán chéng gōng zuò.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "We went all out to finish the work.",
+        "h_t": "我們全力以赴來完成工作。",
+        "h_s": "我们全力以赴来完成工作。"
+       },
+       "w_s": "全力以赴"
+      },
+      {
+       "w": "自以為是",
+       "py": "zì yǐ wéi shì",
+       "lit": "self-consider-as-right",
+       "en": "self-righteous, opinionated",
+       "origin": {
+        "work": "孟子·盡心下",
+        "text": "眾皆悅之，自以為是，而不可與入堯舜之道",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "众皆悦之，自以为是，而不可与入尧舜之道"
+       },
+       "note": "以為 \"take as\" splits to 以…為… in classical Chinese: 自以為是 = 以自為是.",
+       "ex": {
+        "h": "法国人的自以为是真是让人难以忍受。",
+        "py": "Fǎguó rén de zì yǐ wéi shì zhēn shì ràng rén nán yǐ rěn shòu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The self-righteousness of the French is really hard to bear.",
+        "h_t": "法國人的自以為是真是讓人難以忍受。",
+        "h_s": "法国人的自以为是真是让人难以忍受。"
+       },
+       "w_s": "自以为是"
+      },
+      {
+       "w": "不以為然",
+       "py": "bù yǐ wéi rán",
+       "lit": "not-consider-as-so",
+       "en": "to disagree, to not think much of",
+       "ex": {
+        "h": "巴顿脾气火爆，性格强硬，对战斗疲劳的病情不以为然。",
+        "py": "Bādùn pí qì huǒ bào, xìng gé qiáng yìng, duì zhàn dòu pí láo de bìng qíng bù yǐ wéi rán.",
+        "py_auto": true,
+        "src": "wikipedia: 乔治·巴顿掌掴事件",
+        "en": "Patton was hot-tempered and tough, and didn't think much of combat fatigue as a condition.",
+        "h_t": "巴頓脾氣火爆，性格強硬，對戰鬥疲勞的病情不以為然。",
+        "h_s": "巴顿脾气火爆，性格强硬，对战斗疲劳的病情不以为然。"
+       },
+       "w_s": "不以为然"
+      },
+      {
+       "w": "無濟於事",
+       "py": "wú jì yú shì",
+       "lit": "without-help-to-matter",
+       "en": "no use, of no help",
+       "ex": {
+        "h": "再试也无济于事了。",
+        "py": "Zài shì yě wú jì yú shì le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "There's no use trying again.",
+        "h_t": "再試也無濟於事了。",
+        "h_s": "再试也无济于事了。"
+       },
+       "w_s": "无济于事"
+      },
+      {
+       "w": "名副其實",
+       "py": "míng fù qí shí",
+       "lit": "name-match-its-reality",
+       "en": "worthy of the name, a real…",
+       "note": "名 \"name\" vs 實 \"reality\" is a classical pair (名實). 其 = its.",
+       "ex": {
+        "h": "前往罗马的旅程是一个名副其实的胜利进军。",
+        "py": "Qián wǎng Luómǎ de lǚ chéng shì yī gè míng fù qí shí de shèng lì jìn jūn.",
+        "py_auto": true,
+        "src": "wikipedia: 圣母进教之佑瞻礼",
+        "en": "The journey to Rome was a true triumphal march.",
+        "h_t": "前往羅馬的旅程是一個名副其實的勝利進軍。",
+        "h_s": "前往罗马的旅程是一个名副其实的胜利进军。"
+       },
+       "w_s": "名副其实"
+      },
+      {
+       "w": "諸如此類",
+       "py": "zhū rú cǐ lèi",
+       "lit": "all-like-this-kind",
+       "en": "and so on, things like that",
+       "ex": {
+        "h": "由于诸如此类的种种原因，禁酒运动开始受到人们的反对。",
+        "py": "Yóu yú zhū rú cǐ lèi de zhǒng zhǒng yuán yīn, jìn jiǔ yùn dòng kāi shǐ shòu dào rén men de fǎn duì.",
+        "py_auto": true,
+        "src": "wikipedia: 美國憲法第十八修正案",
+        "en": "For all these reasons and others like them, the temperance movement began to meet opposition.",
+        "h_t": "由於諸如此類的種種原因，禁酒運動開始受到人們的反對。",
+        "h_s": "由于诸如此类的种种原因，禁酒运动开始受到人们的反对。"
+       },
+       "w_s": "诸如此类"
+      }
+     ],
+     "title_s": "虚词"
+    },
+    {
+     "id": 4,
+     "slug": "negation",
+     "title": "否定",
+     "title_py": "Fǒudìng",
+     "title_en": "Saying no: 不 and 無",
+     "status": "draft",
+     "intro": "Negation is the most common building block of high-frequency 成語. 不 negates a verb or an adjective (\"not\"), 無 negates having (\"without, there is no\"). The negative often comes second or third, with the structure of classical Chinese: 迫不及待 \"pressed, not able to wait\", 微不足道 \"small, not worth mentioning\". The lesson ends with three ways of saying \"unexpected\" (意想不到, 出乎意料, 出人意料), the kind of near-synonym set teachers in China and Taiwan like to drill.\n",
+     "frames": [
+      {
+       "f": "X不足Y / X不可Y",
+       "en": "'X, not enough to Y / cannot be Y'",
+       "ex": [
+        "微不足道",
+        "不可思議"
+       ],
+       "f_s": "X不足Y / X不可Y",
+       "ex_s": [
+        "微不足道",
+        "不可思议"
+       ]
+      },
+      {
+       "f": "無X無Y / X無Y",
+       "en": "'without'",
+       "ex": [
+        "史無前例",
+        "肆無忌憚",
+        "束手無策",
+        "無家可歸"
+       ],
+       "f_s": "无X无Y / X无Y",
+       "ex_s": [
+        "史无前例",
+        "肆无忌惮",
+        "束手无策",
+        "无家可归"
+       ]
+      },
+      {
+       "f": "無 + VO",
+       "en": "'not (do) anything to…'",
+       "ex": [
+        "無能為力",
+        "無關緊要",
+        "無動於衷",
+        "無與倫比"
+       ],
+       "f_s": "无 + VO",
+       "ex_s": [
+        "无能为力",
+        "无关紧要",
+        "无动于衷",
+        "无与伦比"
+       ]
+      },
+      {
+       "f": "不 + VO",
+       "en": "'not V-ing the O'",
+       "ex": [
+        "不遺餘力",
+        "不擇手段"
+       ],
+       "f_s": "不 + VO",
+       "ex_s": [
+        "不遗余力",
+        "不择手段"
+       ]
+      },
+      {
+       "f": "出乎 / 出人 意料",
+       "en": "'going beyond expectations'",
+       "ex": [
+        "出乎意料",
+        "出人意料",
+        "意想不到"
+       ],
+       "f_s": "出乎 / 出人 意料",
+       "ex_s": [
+        "出乎意料",
+        "出人意料",
+        "意想不到"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "不可思議",
+       "py": "bù kě sī yì",
+       "lit": "not-can-think-discuss",
+       "en": "unbelievable, incredible",
+       "origin": {
+        "work": "維摩詰所說經·不思議品",
+        "text": "諸佛菩薩，有解脫名不可思議",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "诸佛菩萨，有解脱名不可思议"
+       },
+       "note": "Buddhist in origin: a state \"beyond thought and words\". Now it just means \"amazing\".",
+       "ex": {
+        "h": "你真是不可思议。",
+        "py": "Nǐ zhēn shì bù kě sī yì.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "You're incredible.",
+        "h_t": "你真是不可思議。",
+        "h_s": "你真是不可思议。"
+       },
+       "w_s": "不可思议"
+      },
+      {
+       "w": "無論如何",
+       "py": "wú lùn rú hé",
+       "lit": "without-discussing-how",
+       "en": "no matter what, in any case",
+       "ex": {
+        "h": "無論如何我一定要在明天前完成這工作。",
+        "py": "Wú lùn rú hé wǒ yī dìng yào zài míng tiān qián wán chéng zhè gōng zuò.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "No matter what",
+        "I have to finish this work before tomorrow.": null,
+        "h_t": "無論如何我一定要在明天前完成這工作。",
+        "h_s": "无论如何我一定要在明天前完成这工作。"
+       },
+       "w_s": "无论如何"
+      },
+      {
+       "w": "無能為力",
+       "py": "wú néng wéi lì",
+       "lit": "without-ability-make-effort",
+       "en": "powerless, there is nothing one can do",
+       "origin": {
+        "work": "左傳·隱公四年",
+        "text": "老夫耄矣，無能為也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "老夫耄矣，无能为也"
+       },
+       "ex": {
+        "h": "我不是不同情你，但我實在是無能為力。",
+        "py": "Wǒ bù shì bù tóng qíng nǐ, dàn wǒ shí zài shì wú néng wéi lì.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "It's not that I don't feel for you, but there's really nothing I can do.",
+        "h_t": "我不是不同情你，但我實在是無能為力。",
+        "h_s": "我不是不同情你，但我实在是无能为力。"
+       },
+       "w_s": "无能为力"
+      },
+      {
+       "w": "無關緊要",
+       "py": "wú guān jǐn yào",
+       "lit": "without-concern-tight-important",
+       "en": "unimportant, it doesn't matter",
+       "ex": {
+        "h": "別想了，那不過是些無關緊要的細節。",
+        "py": "Bié xiǎng le, nà bù guò shì xiē wú guān jǐn yào de xì jié.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Forget it, those are just unimportant details.",
+        "h_t": "別想了，那不過是些無關緊要的細節。",
+        "h_s": "别想了，那不过是些无关紧要的细节。"
+       },
+       "w_s": "无关紧要"
+      },
+      {
+       "w": "迫不及待",
+       "py": "pò bù jí dài",
+       "lit": "pressed-not-able-wait",
+       "en": "can't wait to, impatiently",
+       "origin": {
+        "work": "王夫之《讀通鑑論》",
+        "text": "顧處此迫不及待之勢",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "顾处此迫不及待之势"
+       },
+       "ex": {
+        "h": "他迫不及待地想试一下他的新冲浪板。",
+        "py": "Tā pò bù jí dài de xiǎng shì yī xià tā de xīn chōng làng bǎn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He can't wait to try out his new surfboard.",
+        "h_t": "他迫不及待地想試一下他的新衝浪板。",
+        "h_s": "他迫不及待地想试一下他的新冲浪板。"
+       },
+       "w_s": "迫不及待"
+      },
+      {
+       "w": "微不足道",
+       "py": "wēi bù zú dào",
+       "py_tw": "wéi bù zú dào",
+       "lit": "tiny-not-enough-mention",
+       "en": "trivial, not worth mentioning",
+       "ex": {
+        "h": "和我的比起来，你的问题微不足道。",
+        "py": "Hé wǒ de bǐ qǐ lái, nǐ de wèn tí wēi bù zú dào.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Compared with mine, your problems are trivial.",
+        "h_t": "和我的比起來，你的問題微不足道。",
+        "h_s": "和我的比起来，你的问题微不足道。"
+       },
+       "w_s": "微不足道"
+      },
+      {
+       "w": "史無前例",
+       "py": "shǐ wú qián lì",
+       "lit": "history-without-earlier-example",
+       "en": "unprecedented",
+       "origin": {
+        "work": "南齊書·陸慧曉傳",
+        "text": "兩賢同時，便是未有前例",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "两贤同时，便是未有前例"
+       },
+       "note": "Compare 前所未有 (lesson 3): same meaning, different grammar.",
+       "ex": {
+        "h": "这种致命微生物的出现，使人类陷入了史无前例的文化大灾难。",
+        "py": "Zhè zhǒng zhì mìng wēi shēng wù de chū xiàn, shǐ rén lèi xiàn rù le shǐ wú qián lì de wén huà dà zāi nàn.",
+        "py_auto": true,
+        "src": "wikipedia: 重铁骑",
+        "en": "The appearance of this deadly microbe plunged humanity into an unprecedented cultural catastrophe.",
+        "h_t": "這種致命微生物的出現，使人類陷入了史無前例的文化大災難。",
+        "h_s": "这种致命微生物的出现，使人类陷入了史无前例的文化大灾难。"
+       },
+       "w_s": "史无前例"
+      },
+      {
+       "w": "肆無忌憚",
+       "py": "sì wú jì dàn",
+       "lit": "unbridled-without-fear-dread",
+       "en": "brazen, without any scruples",
+       "origin": {
+        "work": "禮記·中庸",
+        "text": "小人之中庸也，小人而無忌憚也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "小人之中庸也，小人而无忌惮也"
+       },
+       "ex": {
+        "h": "合德愈发肆无忌惮，隐然有了独断后宫之势。",
+        "py": "Hédé yù fā sì wú jì dàn, yǐn rán yǒu le dú duàn hòu gōng zhī shì.",
+        "py_auto": true,
+        "src": "wikipedia: 汉宫飞燕",
+        "en": "Hede grew ever more brazen, and seemed close to ruling the harem alone.",
+        "h_t": "合德愈發肆無忌憚，隱然有了獨斷後宮之勢。",
+        "h_s": "合德愈发肆无忌惮，隐然有了独断后宫之势。"
+       },
+       "w_s": "肆无忌惮"
+      },
+      {
+       "w": "供不應求",
+       "py": "gōng bù yìng qiú",
+       "lit": "supply-not-meet-demand",
+       "en": "demand exceeds supply",
+       "ex": {
+        "h": "收获的蓝莓销往中国各城市超市，供不应求。",
+        "py": "Shōu huò de lán méi xiāo wǎng Zhōngguó gè chéng shì chāo shì, gōng bù yìng qiú.",
+        "py_auto": true,
+        "src": "wikipedia: 停前镇",
+        "en": "The harvested blueberries are sold to supermarkets across China, and demand outstrips supply.",
+        "h_t": "收穫的藍莓銷往中國各城市超市，供不應求。",
+        "h_s": "收获的蓝莓销往中国各城市超市，供不应求。"
+       },
+       "w_s": "供不应求"
+      },
+      {
+       "w": "無動於衷",
+       "py": "wú dòng yú zhōng",
+       "lit": "without-moving-in-heart",
+       "en": "unmoved, indifferent",
+       "note": "衷 \"the inner heart\"; 於 = in (→ lesson 3).",
+       "ex": {
+        "h": "对于失败，有些公司采取了补救措施，而大部分却无动于衷。",
+        "py": "Duì yú shī bài, yǒu xiē gōng sī cǎi qǔ le bǔ jiù cuò shī, ér dà bù fèn què wú dòng yú zhōng.",
+        "py_auto": true,
+        "src": "wikipedia: 技术成熟度曲线",
+        "en": "Faced with failure, some companies took remedial action, but most did nothing.",
+        "h_t": "對於失敗，有些公司採取了補救措施，而大部分卻無動於衷。",
+        "h_s": "对于失败，有些公司采取了补救措施，而大部分却无动于衷。"
+       },
+       "w_s": "无动于衷"
+      },
+      {
+       "w": "不遺餘力",
+       "py": "bù yí yú lì",
+       "lit": "not-leave-spare-strength",
+       "en": "sparing no effort",
+       "origin": {
+        "work": "戰國策·趙策三",
+        "text": "秦之攻我也，不遺餘力矣",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "秦之攻我也，不遗余力矣"
+       },
+       "ex": {
+        "h": "他不遺餘力幫助我。",
+        "py": "Tā bù yí yú lì bāng zhù wǒ.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He spared no effort to help me.",
+        "h_t": "他不遺餘力幫助我。",
+        "h_s": "他不遗余力帮助我。"
+       },
+       "w_s": "不遗余力"
+      },
+      {
+       "w": "不擇手段",
+       "py": "bù zé shǒu duàn",
+       "lit": "not-choose-means",
+       "en": "by fair means or foul, unscrupulously",
+       "ex": {
+        "h": "為了正當目的並非總是可以不擇手段.",
+        "py": "Wèi le zhèng dāng mù dì bìng fēi zǒng shì kě yǐ bù zé shǒu duàn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Even for a good cause, you can't always use any means you like.",
+        "h_t": "為了正當目的並非總是可以不擇手段.",
+        "h_s": "为了正当目的并非总是可以不择手段."
+       },
+       "w_s": "不择手段"
+      },
+      {
+       "w": "無與倫比",
+       "py": "wú yǔ lún bǐ",
+       "lit": "without-with-equal-compare",
+       "en": "incomparable, unrivalled",
+       "ex": {
+        "h": "本杰明·富兰克林将玻璃琴的音色描述为“无与伦比的甜蜜”。",
+        "py": "Běnjiémíng·Fùlánkèlín jiāng bō lí qín de yīn sè miáo shù wéi “wú yǔ lún bǐ de tián mì”.",
+        "py_auto": true,
+        "src": "wikipedia: 玻璃琴",
+        "en": "Benjamin Franklin described the glass harmonica's sound as 'incomparably sweet'.",
+        "h_t": "本傑明·富蘭克林將玻璃琴的音色描述為“無與倫比的甜蜜”。",
+        "h_s": "本杰明·富兰克林将玻璃琴的音色描述为“无与伦比的甜蜜”。"
+       },
+       "w_s": "无与伦比"
+      },
+      {
+       "w": "情不自禁",
+       "py": "qíng bù zì jīn",
+       "lit": "feeling-not-self-restrain",
+       "en": "can't help (doing something)",
+       "origin": {
+        "work": "劉遵〈七夕穿針〉詩",
+        "text": "步月如有意，情來不自禁",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "步月如有意，情来不自禁"
+       },
+       "ex": {
+        "h": "雖然她有許多缺點，但我卻情不自禁地愛著她。",
+        "py": "Suī rán tā yǒu xǔ duō quē diǎn, dàn wǒ què qíng bù zì jīn de ài zhe tā.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She has many faults, but I can't help loving her.",
+        "h_t": "雖然她有許多缺點，但我卻情不自禁地愛著她。",
+        "h_s": "虽然她有许多缺点，但我却情不自禁地爱著她。"
+       },
+       "w_s": "情不自禁"
+      },
+      {
+       "w": "束手無策",
+       "py": "shù shǒu wú cè",
+       "lit": "bind-hands-without-plan",
+       "en": "helpless, at one's wits' end",
+       "ex": {
+        "h": "當我聽到這個消息時, 我束手無策。",
+        "py": "Dāng wǒ tīng dào zhè ge xiāo xī shí, wǒ shù shǒu wú cè.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "When I heard the news, I didn't know what to do.",
+        "h_t": "當我聽到這個消息時, 我束手無策。",
+        "h_s": "当我听到这个消息时, 我束手无策。"
+       },
+       "w_s": "束手无策"
+      },
+      {
+       "w": "截然不同",
+       "py": "jié rán bù tóng",
+       "lit": "cut-off-not-same",
+       "en": "completely different",
+       "ex": {
+        "h": "我們的興趣截然不同。",
+        "py": "Wǒ men de xìng qù jié rán bù tóng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Our interests are completely different.",
+        "h_t": "我們的興趣截然不同。",
+        "h_s": "我们的兴趣截然不同。"
+       },
+       "w_s": "截然不同"
+      },
+      {
+       "w": "意想不到",
+       "py": "yì xiǎng bù dào",
+       "lit": "idea-think-not-reach",
+       "en": "unexpected",
+       "ex": {
+        "h": "一時失言常常會帶來意想不到的結果。",
+        "py": "Yī shí shī yán cháng cháng huì dài lái yì xiǎng bù dào de jié guǒ.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "A slip of the tongue often has unexpected results.",
+        "h_t": "一時失言常常會帶來意想不到的結果。",
+        "h_s": "一时失言常常会带来意想不到的结果。"
+       },
+       "w_s": "意想不到"
+      },
+      {
+       "w": "出乎意料",
+       "py": "chū hū yì liào",
+       "lit": "go-beyond-intention-expectation",
+       "en": "unexpectedly",
+       "note": "乎 = 於 \"beyond\". Also 出乎意料之外 (redundant but common).",
+       "ex": {
+        "h": "让我出乎意料的是，他居然很会唱歌。",
+        "py": "Ràng wǒ chū hū yì liào de shì, tā jū rán hěn huì chàng gē.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "What surprised me was that he actually sings very well.",
+        "h_t": "讓我出乎意料的是，他居然很會唱歌。",
+        "h_s": "让我出乎意料的是，他居然很会唱歌。"
+       },
+       "w_s": "出乎意料"
+      },
+      {
+       "w": "出人意料",
+       "py": "chū rén yì liào",
+       "lit": "go-beyond-people's-expectation",
+       "en": "surprisingly, unexpectedly",
+       "ex": {
+        "h": "岬的饭量出人意料地大，曾经一个人吃掉好几个人份的咖喱。",
+        "py": "Jiǎ de fàn liàng chū rén yì liào de dà, céng jīng yī gè rén chī diào hǎo jǐ gè rén fèn de gā lí.",
+        "py_auto": true,
+        "src": "wikipedia: ONE～光辉的季节～",
+        "en": "Misaki eats a surprising amount: she once finished several people's portions of curry on her own.",
+        "h_t": "岬的飯量出人意料地大，曾經一個人吃掉好幾個人份的咖喱。",
+        "h_s": "岬的饭量出人意料地大，曾经一个人吃掉好几个人份的咖喱。"
+       },
+       "w_s": "出人意料"
+      },
+      {
+       "w": "無家可歸",
+       "py": "wú jiā kě guī",
+       "lit": "without-home-can-return",
+       "en": "homeless",
+       "ex": {
+        "h": "当我无家可归的时候，我常在那张长椅上睡觉。",
+        "py": "Dāng wǒ wú jiā kě guī de shí hòu, wǒ cháng zài nà zhāng cháng yǐ shàng shuì jiào.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "When I was homeless, I often slept on that bench.",
+        "h_t": "當我無家可歸的時候，我常在那張長椅上睡覺。",
+        "h_s": "当我无家可归的时候，我常在那张长椅上睡觉。"
+       },
+       "w_s": "无家可归"
+      }
+     ],
+     "title_s": "否定"
+    },
+    {
+     "id": 5,
+     "slug": "images",
+     "title": "意象",
+     "title_py": "Yìxiàng",
+     "title_en": "Pictures: body, roots and light",
+     "status": "draft",
+     "intro": "These 成語 are pictures. Read them literally first (feet on solid ground, hands tucked in sleeves, hair and bones standing on end, deep roots and firm stalks) and the figurative meaning follows. Many come from classical texts you will meet in the main course: the 詩經, 老子, 左傳, 禮記·大學.\n",
+     "items": [
+      {
+       "w": "實事求是",
+       "py": "shí shì qiú shì",
+       "lit": "real-facts-seek-truth",
+       "en": "to seek truth from facts, to be realistic",
+       "origin": {
+        "work": "漢書·景十三王傳",
+        "text": "河間獻王德…修學好古，實事求是",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "河间献王德…修学好古，实事求是"
+       },
+       "note": "Originally praise for a prince who collected old books and checked them carefully. Later a Qing scholarly motto, then a political slogan.",
+       "ex": {
+        "h": "说话要实事求是。",
+        "py": "Shuō huà yào shí shì qiú shì.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Stick to the facts when you speak.",
+        "h_t": "說話要實事求是。",
+        "h_s": "说话要实事求是。"
+       },
+       "w_s": "实事求是"
+      },
+      {
+       "w": "小心翼翼",
+       "py": "xiǎo xīn yì yì",
+       "lit": "small-heart-wing-wing",
+       "en": "very carefully, cautiously",
+       "origin": {
+        "work": "詩經·大雅·大明",
+        "text": "維此文王，小心翼翼",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "维此文王，小心翼翼"
+       },
+       "note": "翼翼 \"reverent, careful\" in the 詩經, not \"wings\". In modern Chinese the meaning narrowed to \"cautious\".",
+       "ex": {
+        "h": "警察小心翼翼地抬起了箱子。",
+        "py": "Jǐng chá xiǎo xīn yì yì de tái qǐ le xiāng zi.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The police carefully lifted the box.",
+        "h_t": "警察小心翼翼地抬起了箱子。",
+        "h_s": "警察小心翼翼地抬起了箱子。"
+       },
+       "w_s": "小心翼翼"
+      },
+      {
+       "w": "息息相關",
+       "py": "xī xī xiāng guān",
+       "py_tw": "xí xí xiāng guān",
+       "lit": "breath-breath-mutually-connected",
+       "en": "closely linked",
+       "ex": {
+        "h": "環境災害、極端氣候和全球暖化皆與人為活動息息相關。",
+        "py": "Huán jìng zāi hài, jí duān qì hòu hé quán qiú nuǎn huà jiē yǔ rén wéi huó dòng xī xī xiāng guān.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Environmental disasters, extreme weather and global warming are all closely linked to human activity.",
+        "h_t": "環境災害、極端氣候和全球暖化皆與人為活動息息相關。",
+        "h_s": "环境灾害、极端气候和全球暖化皆与人为活动息息相关。"
+       },
+       "w_s": "息息相关"
+      },
+      {
+       "w": "大驚小怪",
+       "py": "dà jīng xiǎo guài",
+       "lit": "big-alarm-small-strange",
+       "en": "to make a fuss about nothing",
+       "origin": {
+        "work": "朱熹〈答林擇之〉",
+        "text": "不必如此大驚小怪",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "不必如此大惊小怪"
+       },
+       "ex": {
+        "h": "不过穆里尔认为母亲过于大惊小怪，并表示丈夫的情况不至于无法控制。",
+        "py": "Bù guò Mùlǐ'ěr rèn wéi mǔ qīn guò yú dà jīng xiǎo guài, bìng biǎo shì zhàng fū de qíng kuàng bù zhì yú wú fǎ kòng zhì.",
+        "py_auto": true,
+        "src": "wikipedia: 逮香蕉鱼的最佳日子",
+        "en": "But Muriel thinks her mother is making too much fuss, and says her husband's condition isn't out of control.",
+        "h_t": "不過穆里爾認為母親過於大驚小怪，並表示丈夫的情況不至於無法控制。",
+        "h_s": "不过穆里尔认为母亲过于大惊小怪，并表示丈夫的情况不至于无法控制。"
+       },
+       "w_s": "大惊小怪"
+      },
+      {
+       "w": "逍遙法外",
+       "py": "xiāo yáo fǎ wài",
+       "lit": "roam-freely-law-outside",
+       "en": "to remain at large",
+       "note": "逍遙 \"to roam at ease\" is the 莊子 word (逍遙遊), here used ironically for a criminal.",
+       "ex": {
+        "h": "看着“凶手”逍遥法外，铁飞花暗下决心，一定要将其绳之以法。",
+        "py": "Kàn zhe “xiōng shǒu” xiāo yáo fǎ wài, Tiě Fēihuā àn xià jué xīn, yī dìng yào jiāng qí shéng zhī yǐ fǎ.",
+        "py_auto": true,
+        "src": "wikipedia: 女神捕 (数字电影)",
+        "en": "Watching the 'murderer' go free, Tie Feihua secretly resolved to bring him to justice.",
+        "h_t": "看著“兇手”逍遙法外，鐵飛花暗下決心，一定要將其繩之以法。",
+        "h_s": "看着“凶手”逍遥法外，铁飞花暗下决心，一定要将其绳之以法。"
+       },
+       "w_s": "逍遥法外"
+      },
+      {
+       "w": "根深蒂固",
+       "py": "gēn shēn dì gù",
+       "lit": "root-deep-stalk-firm",
+       "en": "deep-rooted, entrenched",
+       "origin": {
+        "work": "老子·第五十九章",
+        "text": "是謂深根固蔕",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "是谓深根固蔕"
+       },
+       "note": "The MOE's edition of the source writes 蔕, an old form of 蒂 \"stalk of a fruit\" (other editions read 柢 \"root\").",
+       "ex": {
+        "h": "漕運自清初經過了將近二百年，官吏與運丁累積的弊端已根深蒂固。",
+        "py": "Cáo yùn zì Qīng chū jīng guò le jiāng jìn èr bǎi nián, guān lì yǔ yùn dīng lěi jī de bì duān yǐ gēn shēn dì gù.",
+        "py_auto": true,
+        "src": "wikipedia: 朱桂楨",
+        "en": "Nearly two hundred years after the start of the Qing, the abuses of the officials and boatmen of the grain transport had become entrenched.",
+        "h_t": "漕運自清初經過了將近二百年，官吏與運丁累積的弊端已根深蒂固。",
+        "h_s": "漕运自清初经过了将近二百年，官吏与运丁累积的弊端已根深蒂固。"
+       },
+       "w_s": "根深蒂固"
+      },
+      {
+       "w": "名列前茅",
+       "py": "míng liè qián máo",
+       "lit": "name-ranked-front-banner",
+       "en": "to be among the best, at the top of the list",
+       "origin": {
+        "work": "左傳·宣公十二年",
+        "text": "軍行…前茅慮無",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "军行…前茅虑无"
+       },
+       "note": "前茅 was the banner (or the reed) carried at the head of a Chu army on the march.",
+       "ex": {
+        "h": "而现在这两地的经济总量和人均收入都在中国名列前茅。",
+        "py": "Ér xiàn zài zhè liǎng dì de jīng jì zǒng liàng hé rén jūn shōu rù dōu zài Zhōngguó míng liè qián máo.",
+        "py_auto": true,
+        "src": "wikipedia: 萧绍平原",
+        "en": "Today both places rank among the top in China for total output and income per head.",
+        "h_t": "而現在這兩地的經濟總量和人均收入都在中國名列前茅。",
+        "h_s": "而现在这两地的经济总量和人均收入都在中国名列前茅。"
+       },
+       "w_s": "名列前茅"
+      },
+      {
+       "w": "罪魁禍首",
+       "py": "zuì kuí huò shǒu",
+       "lit": "crime-chief-disaster-head",
+       "en": "the main culprit",
+       "ex": {
+        "h": "我們都不認為他是事故的罪魁禍首。",
+        "py": "Wǒ men dōu bù rèn wéi tā shì shì gù de zuì kuí huò shǒu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "None of us think he is to blame for the accident.",
+        "h_t": "我們都不認為他是事故的罪魁禍首。",
+        "h_s": "我们都不认为他是事故的罪魁祸首。"
+       },
+       "w_s": "罪魁祸首"
+      },
+      {
+       "w": "舉足輕重",
+       "py": "jǔ zú qīng zhòng",
+       "lit": "raise-foot-light-heavy",
+       "en": "decisive, carrying great weight",
+       "origin": {
+        "work": "後漢書·竇融傳",
+        "text": "權在將軍，舉足左右，便有輕重",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "权在将军，举足左右，便有轻重"
+       },
+       "note": "Dou Rong held the balance between two warring states: one step to the left or right would tip the scales.",
+       "ex": {
+        "h": "油价的变化对机械化农场的生存有着举足轻重的影响。",
+        "py": "Yóu jià de biàn huà duì jī xiè huà nóng chǎng de shēng cún yǒu zhe jǔ zú qīng zhòng de yǐng xiǎng.",
+        "py_auto": true,
+        "src": "wikipedia: 家庭农业",
+        "en": "Changes in oil prices have a decisive effect on whether mechanised farms survive.",
+        "h_t": "油價的變化對機械化農場的生存有著舉足輕重的影響。",
+        "h_s": "油价的变化对机械化农场的生存有着举足轻重的影响。"
+       },
+       "w_s": "举足轻重"
+      },
+      {
+       "w": "歸根結底",
+       "py": "guī gēn jié dǐ",
+       "lit": "return-root-tie-bottom",
+       "en": "in the final analysis",
+       "ex": {
+        "h": "這些問題歸根結底是體制的問題。",
+        "py": "Zhè xiē wèn tí guī gēn jié dǐ shì tǐ zhì de wèn tí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "In the end, these problems are problems of the system.",
+        "h_t": "這些問題歸根結底是體制的問題。",
+        "h_s": "这些问题归根结底是体制的问题。"
+       },
+       "w_s": "归根结底"
+      },
+      {
+       "w": "毛骨悚然",
+       "py": "máo gǔ sǒng rán",
+       "lit": "hair-bone-terrified",
+       "en": "hair-raising, spine-chilling",
+       "origin": {
+        "work": "洪邁《夷堅志》",
+        "text": "毛骨凜然俱竦",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "毛骨凛然俱竦"
+       },
+       "ex": {
+        "h": "臉上總是浮現令人毛骨悚然的笑容，哼著不可思議的手鞠歌。",
+        "py": "Liǎn shàng zǒng shì fú xiàn lìng rén máo gǔ sǒng rán de xiào róng, hēng zhe bù kě sī yì de shǒu jū gē.",
+        "py_auto": true,
+        "src": "wikipedia: 圈套 (電視劇)",
+        "en": "A spine-chilling smile is always on her face as she hums a strange ball-game song.",
+        "h_t": "臉上總是浮現令人毛骨悚然的笑容，哼著不可思議的手鞠歌。",
+        "h_s": "脸上总是浮现令人毛骨悚然的笑容，哼著不可思议的手鞠歌。"
+       },
+       "w_s": "毛骨悚然"
+      },
+      {
+       "w": "光天化日",
+       "py": "guāng tiān huà rì",
+       "lit": "bright-sky-civilised-day",
+       "en": "in broad daylight",
+       "origin": {
+        "work": "書經·益稷",
+        "text": "光天之下，至于海隅蒼生",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "光天之下，至于海隅苍生"
+       },
+       "note": "First \"a peaceful age under a bright sky\"; now mostly in 光天化日之下 \"in broad daylight\", about a crime.",
+       "ex": {
+        "h": "他的车子光天化日被偷走了。",
+        "py": "Tā de chē zi guāng tiān huà rì bèi tōu zǒu le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "His car was stolen in broad daylight.",
+        "h_t": "他的車子光天化日被偷走了。",
+        "h_s": "他的车子光天化日被偷走了。"
+       },
+       "w_s": "光天化日"
+      },
+      {
+       "w": "撥亂反正",
+       "py": "bō luàn fǎn zhèng",
+       "lit": "clear-chaos-return-right",
+       "en": "to restore order, to set things right",
+       "origin": {
+        "work": "公羊傳·哀公十四年",
+        "text": "撥亂世，反諸正",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "拨乱世，反诸正"
+       },
+       "note": "Said of Confucius writing the 春秋. 反 = 返 \"return\"; 諸 = 之於.",
+       "ex": {
+        "h": "现在公室的地位低下，却不能拨乱反正，我的罪过大了。",
+        "py": "Xiàn zài gōng shì de dì wèi dī xià, què bù néng bō luàn fǎn zhèng, wǒ de zuì guò dà le.",
+        "py_auto": true,
+        "src": "wikipedia: 鱼石",
+        "en": "The ducal house has sunk low and I cannot set things right: great is my guilt.",
+        "h_t": "現在公室的地位低下，卻不能撥亂反正，我的罪過大了。",
+        "h_s": "现在公室的地位低下，却不能拨乱反正，我的罪过大了。"
+       },
+       "w_s": "拨乱反正"
+      },
+      {
+       "w": "別有用心",
+       "py": "bié yǒu yòng xīn",
+       "lit": "other-have-use-heart",
+       "en": "to have ulterior motives",
+       "ex": {
+        "h": "中央电视台评论则认为日本政府此举乃别有用心。",
+        "py": "Zhōngyāng Diànshìtái píng lùn zé rèn wéi Rìběn zhèng fǔ cǐ jǔ nǎi bié yǒu yòng xīn.",
+        "py_auto": true,
+        "src": "wikipedia: 百度日文输入法",
+        "en": "A CCTV commentary held that the Japanese government had ulterior motives.",
+        "h_t": "中央電視臺評論則認為日本政府此舉乃別有用心。",
+        "h_s": "中央电视台评论则认为日本政府此举乃别有用心。"
+       },
+       "w_s": "别有用心"
+      },
+      {
+       "w": "腳踏實地",
+       "py": "jiǎo tà shí dì",
+       "lit": "feet-tread-solid-ground",
+       "en": "down to earth, practical",
+       "origin": {
+        "work": "邵伯溫《邵氏聞見錄》",
+        "text": "君實腳踏實地人也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "君实脚踏实地人也"
+       },
+       "note": "Said of Sima Guang (君實), the historian.",
+       "ex": {
+        "h": "我是个脚踏实地的人。",
+        "py": "Wǒ shì gè jiǎo tà shí dì de rén.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I'm a down-to-earth person.",
+        "h_t": "我是個腳踏實地的人。",
+        "h_s": "我是个脚踏实地的人。"
+       },
+       "w_s": "脚踏实地"
+      },
+      {
+       "w": "袖手旁觀",
+       "py": "xiù shǒu páng guān",
+       "lit": "sleeve-hands-side-watch",
+       "en": "to stand by and do nothing",
+       "origin": {
+        "work": "韓愈〈祭柳子厚文〉",
+        "text": "巧匠旁觀，縮手褎閒",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "巧匠旁观，缩手褎闲"
+       },
+       "note": "The source writes 褎 for 袖. Han Yu: the master craftsman watches from the side, hands drawn into his sleeves.",
+       "ex": {
+        "h": "只要好人袖手旁观，恶人就会得胜。",
+        "py": "Zhǐ yào hǎo rén xiù shǒu páng guān, è rén jiù huì dé shèng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Evil triumphs when good people stand by and do nothing.",
+        "h_t": "只要好人袖手旁觀，惡人就會得勝。",
+        "h_s": "只要好人袖手旁观，恶人就会得胜。"
+       },
+       "w_s": "袖手旁观"
+      },
+      {
+       "w": "理直氣壯",
+       "py": "lǐ zhí qì zhuàng",
+       "lit": "reason-straight-spirit-strong",
+       "en": "confident because one is in the right",
+       "origin": {
+        "work": "喻世明言·卷三一",
+        "text": "便提我到閻羅殿前，我也理直氣壯",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "便提我到阎罗殿前，我也理直气壮"
+       },
+       "note": "From a Ming vernacular story: the kind of novel you will read in Shujia.",
+       "ex": {
+        "h": "新浪微博上，「立场坚定斗志强」、「党媒姓党，理直气壮」很快成为热门话题。",
+        "py": "Xīnlàng Wēibó shàng, “lì chǎng jiān dìng dòu zhì qiáng”, “dǎng méi xìng dǎng, lǐ zhí qì zhuàng” hěn kuài chéng wéi rè mén huà tí.",
+        "py_auto": true,
+        "src": "wikipedia: 任志强",
+        "en": "On Sina Weibo, 'firm stance, strong will' and 'the Party media belong to the Party, and say so with confidence' quickly became trending topics.",
+        "h_t": "新浪微博上，「立場堅定鬥志強」、「黨媒姓黨，理直氣壯」很快成為熱門話題。",
+        "h_s": "新浪微博上，「立场坚定斗志强」、「党媒姓党，理直气壮」很快成为热门话题。"
+       },
+       "w_s": "理直气壮"
+      },
+      {
+       "w": "似曾相識",
+       "py": "sì céng xiāng shí",
+       "py_tw": "sì céng xiāng shì",
+       "lit": "seem-once-mutually-know",
+       "en": "familiar, déjà vu",
+       "ex": {
+        "h": "这看起来似曾相识。",
+        "py": "Zhè kàn qǐ lái sì céng xiāng shí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "This looks familiar.",
+        "h_t": "這看起來似曾相識。",
+        "h_s": "这看起来似曾相识。"
+       },
+       "w_s": "似曾相识"
+      },
+      {
+       "w": "因地制宜",
+       "py": "yīn dì zhì yí",
+       "lit": "follow-place-make-suitable",
+       "en": "to adapt to local conditions",
+       "origin": {
+        "work": "吳越春秋·闔閭內傳",
+        "text": "夫築城郭，立倉庫，因地制宜",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "夫筑城郭，立仓库，因地制宜"
+       },
+       "ex": {
+        "h": "這些方法要因地制宜，並且綜合取得最好的結果，…",
+        "py": "Zhè xiē fāng fǎ yào yīn dì zhì yí, bìng qiě zōng hé qǔ dé zuì hǎo de jié guǒ,…",
+        "py_auto": true,
+        "src": "wikipedia: 互花米草",
+        "en": "These methods must be adapted to local conditions and combined to get the best results.",
+        "h_t": "這些方法要因地制宜，並且綜合取得最好的結果，…",
+        "h_s": "这些方法要因地制宜，并且综合取得最好的结果，…"
+       },
+       "w_s": "因地制宜"
+      },
+      {
+       "w": "日新月異",
+       "py": "rì xīn yuè yì",
+       "lit": "day-new-month-different",
+       "en": "changing fast, rapid progress",
+       "origin": {
+        "work": "禮記·大學",
+        "text": "苟日新，日日新，又日新",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "苟日新，日日新，又日新"
+       },
+       "note": "King Tang's motto engraved on his bath basin: \"renew yourself every day\".",
+       "ex": {
+        "h": "建国后至今，竹管垅乡的基础建设日新月异。",
+        "py": "Jiàn guó hòu zhì jīn, Zhúguǎnlǒng Xiāng de jī chǔ jiàn shè rì xīn yuè yì.",
+        "py_auto": true,
+        "src": "wikipedia: 竹管垅乡",
+        "en": "Since the founding of the PRC, infrastructure in Zhuguanlong has changed beyond recognition.",
+        "h_t": "建國後至今，竹管壠鄉的基礎建設日新月異。",
+        "h_s": "建国后至今，竹管垅乡的基础建设日新月异。"
+       },
+       "w_s": "日新月异"
+      }
+     ],
+     "title_s": "意象"
+    },
+    {
+     "id": 6,
+     "slug": "patterns-2",
+     "title": "對稱與數字",
+     "title_py": "Duìchèn yǔ shùzì",
+     "title_en": "Mirrors and numbers, again",
+     "status": "draft",
+     "intro": "The frames of lessons 1 and 2 come back, with new members. 一 is again \"whole, single, at once\": 一針見血 \"one needle, and blood shows\", 一觸即發 \"one touch and it goes off\". Two new frames: X然一新 \"brand new\", and A來B去-type pairs of opposites that cover the whole range (大街小巷 \"big streets and small lanes\" = everywhere).\n",
+     "frames": [
+      {
+       "f": "接X連Y / 五X六Y / 千X萬Y",
+       "en": "numbers in pairs: 'one after another', 'all colours', 'countless'",
+       "ex": [
+        "接二連三",
+        "五顏六色",
+        "千言萬語"
+       ],
+       "f_s": "接X连Y / 五X六Y / 千X万Y",
+       "ex_s": [
+        "接二连三",
+        "五颜六色",
+        "千言万语"
+       ]
+      },
+      {
+       "f": "無X無Y / 不X不Y / 合X合Y",
+       "en": "the same word twice around two near-synonyms",
+       "ex": [
+        "無憂無慮",
+        "無時無刻",
+        "不聞不問",
+        "不折不扣",
+        "合情合理"
+       ],
+       "f_s": "无X无Y / 不X不Y / 合X合Y",
+       "ex_s": [
+        "无忧无虑",
+        "无时无刻",
+        "不闻不问",
+        "不折不扣",
+        "合情合理"
+       ]
+      },
+      {
+       "f": "一X一Y",
+       "en": "as in lesson 1: X and Y are near-synonyms",
+       "ex": [
+        "一心一意"
+       ],
+       "f_s": "一X一Y",
+       "ex_s": [
+        "一心一意"
+       ]
+      },
+      {
+       "f": "一 + V…",
+       "en": "'once…, at once…': a single action with a big result",
+       "ex": [
+        "一事無成",
+        "一針見血",
+        "一觸即發",
+        "一目瞭然"
+       ],
+       "f_s": "一 + V…",
+       "ex_s": [
+        "一事无成",
+        "一针见血",
+        "一触即发",
+        "一目了然"
+       ]
+      },
+      {
+       "f": "大X小Y / 大X特X",
+       "en": "big and small = all of them; big X special X = very X",
+       "ex": [
+        "大街小巷",
+        "大錯特錯"
+       ],
+       "f_s": "大X小Y / 大X特X",
+       "ex_s": [
+        "大街小巷",
+        "大错特错"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "接二連三",
+       "py": "jiē èr lián sān",
+       "lit": "follow-two-join-three",
+       "en": "one after another",
+       "ex": {
+        "h": "可惜在電影上映後接二連三地接獲負評，票房收入亦不理想。",
+        "py": "Kě xī zài diàn yǐng shàng yìng hòu jiē èr lián sān de jiē huò fù píng, piào fáng shōu rù yì bù lǐ xiǎng.",
+        "py_auto": true,
+        "src": "wikipedia: 夜魔俠",
+        "en": "Unfortunately, once the film came out, bad reviews came in one after another, and the box office was disappointing too.",
+        "h_t": "可惜在電影上映後接二連三地接獲負評，票房收入亦不理想。",
+        "h_s": "可惜在电影上映后接二连三地接获负评，票房收入亦不理想。"
+       },
+       "w_s": "接二连三"
+      },
+      {
+       "w": "無憂無慮",
+       "py": "wú yōu wú lǜ",
+       "lit": "without-worry-without-care",
+       "en": "carefree",
+       "ex": {
+        "h": "我父母在乡村过着无忧无虑的生活。",
+        "py": "Wǒ fù mǔ zài xiāng cūn guò zhe wú yōu wú lǜ de shēng huó.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "My parents live a carefree life in the countryside.",
+        "h_t": "我父母在鄉村過著無憂無慮的生活。",
+        "h_s": "我父母在乡村过着无忧无虑的生活。"
+       },
+       "w_s": "无忧无虑"
+      },
+      {
+       "w": "無時無刻",
+       "py": "wú shí wú kè",
+       "lit": "without-hour-without-moment",
+       "en": "all the time, at every moment",
+       "note": "Logically it should be 無時無刻不… \"there is no moment when not…\", and careful writers keep the 不. In speech the 不 is often dropped with the same meaning.",
+       "ex": {
+        "h": "汤姆和玛丽无时无刻不在辩论。",
+        "py": "Tāngmǔ hé Mǎlì wú shí wú kè bù zài biàn lùn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Tom and Mary argue all the time.",
+        "h_t": "湯姆和瑪麗無時無刻不在辯論。",
+        "h_s": "汤姆和玛丽无时无刻不在辩论。"
+       },
+       "w_s": "无时无刻"
+      },
+      {
+       "w": "一心一意",
+       "py": "yī xīn yī yì",
+       "lit": "one-heart-one-mind",
+       "en": "single-minded, with all one's heart",
+       "origin": {
+        "work": "杜氏新書",
+        "text": "故推一心，任一意",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "故推一心，任一意"
+       },
+       "ex": {
+        "h": "她一心一意地工作。",
+        "py": "Tā yī xīn yī yì de gōng zuò.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She works single-mindedly.",
+        "h_t": "她一心一意地工作。",
+        "h_s": "她一心一意地工作。"
+       },
+       "w_s": "一心一意"
+      },
+      {
+       "w": "五顏六色",
+       "py": "wǔ yán liù sè",
+       "lit": "five-colours-six-hues",
+       "en": "multicoloured, of every colour",
+       "ex": {
+        "h": "房子裏放滿了五顏六色的藝術品。",
+        "py": "Fáng zi lǐ fàng mǎn le wǔ yán liù sè de yì shù pǐn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The house was full of colourful works of art.",
+        "h_t": "房子裡放滿了五顏六色的藝術品。",
+        "h_s": "房子里放满了五颜六色的艺术品。"
+       },
+       "w_s": "五颜六色"
+      },
+      {
+       "w": "千言萬語",
+       "py": "qiān yán wàn yǔ",
+       "lit": "thousand-words-ten-thousand-sayings",
+       "en": "a thousand words, everything one wants to say",
+       "ex": {
+        "h": "歌曲另一個創作主題為「行動勝過言語」，寫出從友情發展為愛情的感覺，亦帶有「Kiss勝過千言萬語」的歌詞。",
+        "py": "Gē qǔ lìng yī gè chuàng zuò zhǔ tí wéi “xíng dòng shèng guò yán yǔ”, xiě chū cóng yǒu qíng fā zhǎn wéi ài qíng de gǎn jué, yì dài yǒu “Kiss shèng guò qiān yán wàn yǔ” de gē cí.",
+        "py_auto": true,
+        "src": "wikipedia: Kiss (倉木麻衣單曲)",
+        "en": "Another theme of the song is 'actions speak louder than words': it describes friendship turning into love, with the line 'a kiss is worth a thousand words'.",
+        "h_t": "歌曲另一個創作主題為「行動勝過言語」，寫出從友情發展為愛情的感覺，亦帶有「Kiss勝過千言萬語」的歌詞。",
+        "h_s": "歌曲另一个创作主题为「行动胜过言语」，写出从友情发展为爱情的感觉，亦带有「Kiss胜过千言万语」的歌词。"
+       },
+       "w_s": "千言万语"
+      },
+      {
+       "w": "不聞不問",
+       "py": "bù wén bù wèn",
+       "lit": "not-hear-not-ask",
+       "en": "to take no interest, to ignore completely",
+       "ex": {
+        "h": "黄氏女到太子会拜佛，路上遭雨淋，生了病，丈夫对其不闻不问。",
+        "py": "Huángshìnǚ dào Tàizǐ Huì bài fó, lù shàng zāo yǔ lín, shēng le bìng, zhàng fū duì qí bù wén bù wèn.",
+        "py_auto": true,
+        "src": "wikipedia: 黄氏女对金刚经",
+        "en": "Lady Huang went to worship at the temple fair, was caught in the rain and fell ill, and her husband paid her no attention at all.",
+        "h_t": "黃氏女到太子會拜佛，路上遭雨淋，生了病，丈夫對其不聞不問。",
+        "h_s": "黄氏女到太子会拜佛，路上遭雨淋，生了病，丈夫对其不闻不问。"
+       },
+       "w_s": "不闻不问"
+      },
+      {
+       "w": "合情合理",
+       "py": "hé qíng hé lǐ",
+       "lit": "fit-feeling-fit-reason",
+       "en": "fair and reasonable",
+       "ex": {
+        "h": "有时候，发生的事情并不是合情合理的。",
+        "py": "Yǒu shí hòu, fā shēng de shì qíng bìng bù shì hé qíng hé lǐ de.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Sometimes what happens isn't reasonable.",
+        "h_t": "有時候，發生的事情並不是合情合理的。",
+        "h_s": "有时候，发生的事情并不是合情合理的。"
+       },
+       "w_s": "合情合理"
+      },
+      {
+       "w": "大街小巷",
+       "py": "dà jiē xiǎo xiàng",
+       "lit": "big-streets-small-lanes",
+       "en": "all over town, everywhere",
+       "ex": {
+        "h": "每年正月十五元宵夜，大龍蜿蜒於鄉間村野，穿行於大街小巷。",
+        "py": "Měi nián zhēng yuè shí wǔ yuán xiāo yè, dà lóng wān yán yú xiāng jiān cūn yě, chuān xíng yú dà jiē xiǎo xiàng.",
+        "py_auto": true,
+        "src": "wikipedia: 客家文化",
+        "en": "Every year on the night of the Lantern Festival, a great dragon winds through the villages and fields and all through the streets of the town.",
+        "h_t": "每年正月十五元宵夜，大龍蜿蜒於鄉間村野，穿行於大街小巷。",
+        "h_s": "每年正月十五元宵夜，大龙蜿蜒于乡间村野，穿行于大街小巷。"
+       },
+       "w_s": "大街小巷"
+      },
+      {
+       "w": "自欺欺人",
+       "py": "zì qī qī rén",
+       "lit": "self-deceive-deceive-others",
+       "en": "to fool oneself as well as others",
+       "origin": {
+        "work": "惠洪《石門文字禪》",
+        "text": "其自欺欺人之狀，不窮而自露也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "其自欺欺人之状，不穷而自露也"
+       },
+       "ex": {
+        "h": "威廉姆斯认为，想要超越个人的观点，只能是自欺欺人。",
+        "py": "Wēiliánmǔsī rèn wéi, xiǎng yào chāo yuè gè rén de guān diǎn, zhǐ néng shì zì qī qī rén.",
+        "py_auto": true,
+        "src": "wikipedia: 伯纳德·威廉姆斯",
+        "en": "Williams held that trying to go beyond one's own point of view could only be self-deception.",
+        "h_t": "威廉姆斯認為，想要超越個人的觀點，只能是自欺欺人。",
+        "h_s": "威廉姆斯认为，想要超越个人的观点，只能是自欺欺人。"
+       },
+       "w_s": "自欺欺人"
+      },
+      {
+       "w": "大錯特錯",
+       "py": "dà cuò tè cuò",
+       "lit": "big-wrong-special-wrong",
+       "en": "completely wrong",
+       "ex": {
+        "h": "如果你认为我还会帮你这样的混蛋，那你大错特错了。",
+        "py": "Rú guǒ nǐ rèn wéi wǒ hái huì bāng nǐ zhè yàng de hùn dàn, nà nǐ dà cuò tè cuò le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "If you think I'd still help a jerk like you, you're dead wrong.",
+        "h_t": "如果你認為我還會幫你這樣的混蛋，那你大錯特錯了。",
+        "h_s": "如果你认为我还会帮你这样的混蛋，那你大错特错了。"
+       },
+       "w_s": "大错特错"
+      },
+      {
+       "w": "念念不忘",
+       "py": "niàn niàn bù wàng",
+       "lit": "think-think-not-forget",
+       "en": "to keep thinking of, never forget",
+       "note": "念念 in Buddhist texts means \"every thought, every instant\".",
+       "ex": {
+        "h": "第一次吃到的英介做的菜後念念不忘，並逐漸喜歡上英介。",
+        "py": "Dì yī cì chī dào de Yīngjiè zuò de cài hòu niàn niàn bù wàng, bìng zhú jiàn xǐ huān shàng Yīngjiè.",
+        "py_auto": true,
+        "src": "wikipedia: Hungry！",
+        "en": "After tasting Eisuke's cooking for the first time, she couldn't stop thinking about it, and gradually fell for him.",
+        "h_t": "第一次吃到的英介做的菜後念念不忘，並逐漸喜歡上英介。",
+        "h_s": "第一次吃到的英介做的菜后念念不忘，并逐渐喜欢上英介。"
+       },
+       "w_s": "念念不忘"
+      },
+      {
+       "w": "一事無成",
+       "py": "yī shì wú chéng",
+       "lit": "one-thing-not-achieve",
+       "en": "to have achieved nothing",
+       "origin": {
+        "work": "白居易〈除夜寄微之〉",
+        "text": "鬢毛不覺白毿毿，一事無成百不堪",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "鬓毛不觉白毵毵，一事无成百不堪"
+       },
+       "note": "Bai Juyi on New Year's Eve, grey-haired and with nothing done. Also met in the first page of 紅樓夢.",
+       "ex": {
+        "h": "你還一事無成呢。",
+        "py": "Nǐ hái yī shì wú chéng ne.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "You still haven't achieved anything.",
+        "h_t": "你還一事無成呢。",
+        "h_s": "你还一事无成呢。"
+       },
+       "w_s": "一事无成"
+      },
+      {
+       "w": "一針見血",
+       "py": "yī zhēn jiàn xiě",
+       "lit": "one-needle-see-blood",
+       "en": "to hit the nail on the head",
+       "origin": {
+        "work": "晉書·陶侃傳",
+        "text": "侃以針決之見血",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "侃以针决之见血"
+       },
+       "note": "Tao Kan pricked his finger to extend a lucky line on his palm; the blood wrote 公 \"duke\" on the wall.",
+       "ex": {
+        "h": "有話就直說，經常是一針見血，也因為這樣有時會被尼克責罵。",
+        "py": "Yǒu huà jiù zhí shuō, jīng cháng shì yī zhēn jiàn xiě, yě yīn wèi zhè yàng yǒu shí huì bèi Níkè zé mà.",
+        "py_auto": true,
+        "src": "wikipedia: 特命戰隊Go Busters VS 海賊戰隊豪快者 THE MOVIE",
+        "en": "He says what he thinks and often hits the nail on the head, which sometimes gets him scolded by Nick.",
+        "h_t": "有話就直說，經常是一針見血，也因為這樣有時會被尼克責罵。",
+        "h_s": "有话就直说，经常是一针见血，也因为这样有时会被尼克责骂。"
+       },
+       "w_s": "一针见血"
+      },
+      {
+       "w": "一觸即發",
+       "py": "yī chù jí fā",
+       "lit": "one-touch-at-once-fire",
+       "en": "about to explode, on a knife-edge",
+       "origin": {
+        "work": "李開先〈原性堂記〉",
+        "text": "觸而即發",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "触而即发"
+       },
+       "note": "At first about inspiration that comes at a touch; now about wars and crises.",
+       "ex": {
+        "h": "自从波兰和立陶宛都支持了造反者，一场大战一触即发。",
+        "py": "Zì cóng Bōlán hé Lìtáowǎn dōu zhī chí le zào fǎn zhě, yī cháng dà zhàn yī chù jí fā.",
+        "py_auto": true,
+        "src": "wikipedia: 维陶塔斯",
+        "en": "Once both Poland and Lithuania backed the rebels, a major war could break out at any moment.",
+        "h_t": "自從波蘭和立陶宛都支持了造反者，一場大戰一觸即發。",
+        "h_s": "自从波兰和立陶宛都支持了造反者，一场大战一触即发。"
+       },
+       "w_s": "一触即发"
+      },
+      {
+       "w": "一本正經",
+       "py": "yī běn zhèng jīng",
+       "lit": "one-volume-orthodox-classic",
+       "en": "in all seriousness, prim and proper",
+       "note": "正經 were the orthodox classics; to look as if holding one = to look very serious, often too serious.",
+       "ex": {
+        "h": "身形魁武的金髮帥哥，但性格一本正經，讓人難以親近。",
+        "py": "Shēn xíng kuí wǔ de jīn fà shuài gē, dàn xìng gé yī běn zhèng jīng, ràng rén nán yǐ qīn jìn.",
+        "py_auto": true,
+        "src": "wikipedia: 英雄傳說 軌跡系列角色列表",
+        "en": "A tall, handsome blond man, but so very proper that people find him hard to approach.",
+        "h_t": "身形魁武的金髮帥哥，但性格一本正經，讓人難以親近。",
+        "h_s": "身形魁武的金发帅哥，但性格一本正经，让人难以亲近。"
+       },
+       "w_s": "一本正经"
+      },
+      {
+       "w": "一目瞭然",
+       "py": "yī mù liǎo rán",
+       "lit": "one-glance-clear",
+       "en": "clear at a glance",
+       "origin": {
+        "work": "朱子語類·卷一三七",
+        "text": "從高視下，一目瞭然",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "从高视下，一目了然"
+       },
+       "note": "Simplified 一目了然: 瞭 merged into 了.",
+       "ex": {
+        "h": "这个证明的妙处是一目了然，而不必再用公式或语言叙述了。",
+        "py": "Zhè ge zhèng míng de miào chù shì yī mù liǎo rán, ér bù bì zài yòng gōng shì huò yǔ yán xù shù le.",
+        "py_auto": true,
+        "src": "wikipedia: 披薩定理",
+        "en": "The beauty of this proof is that it is clear at a glance, with no need for formulas or words.",
+        "h_t": "這個證明的妙處是一目瞭然，而不必再用公式或語言敘述了。",
+        "h_s": "这个证明的妙处是一目了然，而不必再用公式或语言叙述了。"
+       },
+       "w_s": "一目了然"
+      },
+      {
+       "w": "一應俱全",
+       "py": "yī yīng jù quán",
+       "lit": "all-that's-needed-all-complete",
+       "en": "everything one needs is there",
+       "ex": {
+        "h": "屋苑附近亦有多所中小學校，生活及娛樂設施一應俱全。",
+        "py": "Wū yuàn fù jìn yì yǒu duō suǒ zhōng xiǎo xué xiào, shēng huó jí yú lè shè shī yī yīng jù quán.",
+        "py_auto": true,
+        "src": "wikipedia: 環宇海灣",
+        "en": "There are also several schools near the estate, and every everyday and leisure facility you could need.",
+        "h_t": "屋苑附近亦有多所中小學校，生活及娛樂設施一應俱全。",
+        "h_s": "屋苑附近亦有多所中小学校，生活及娱乐设施一应俱全。"
+       },
+       "w_s": "一应俱全"
+      },
+      {
+       "w": "煥然一新",
+       "py": "huàn rán yī xīn",
+       "lit": "shining-like-all-new",
+       "en": "looking brand new, completely renewed",
+       "origin": {
+        "work": "張彥遠《歷代名畫記》",
+        "text": "其有晉宋名跡，煥然如新",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "其有晋宋名迹，焕然如新"
+       },
+       "note": "The source says \"shining as if new\" (如新), of paintings centuries old.",
+       "ex": {
+        "h": "适度的运动让身心焕然一新。",
+        "py": "Shì dù de yùn dòng ràng shēn xīn huàn rán yī xīn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Moderate exercise renews body and mind.",
+        "h_t": "適度的運動讓身心煥然一新。",
+        "h_s": "适度的运动让身心焕然一新。"
+       },
+       "w_s": "焕然一新"
+      },
+      {
+       "w": "不折不扣",
+       "py": "bù zhé bù kòu",
+       "lit": "not-break-not-deduct",
+       "en": "through and through, a real…",
+       "note": "Originally about money, \"no discount, no deduction\". Now usually before a noun, often negative (不折不扣的騙子 \"a real crook\").",
+       "ex": {
+        "h": "雖然是不折不扣的老菸槍，但也是個很有才幹的記者。",
+        "py": "Suī rán shì bù zhé bù kòu de lǎo yān qiāng, dàn yě shì gè hěn yǒu cái gàn de jì zhě.",
+        "py_auto": true,
+        "src": "wikipedia: 英雄傳說 軌跡系列角色列表",
+        "en": "He's a chain-smoker through and through, but also a very able journalist.",
+        "h_t": "雖然是不折不扣的老菸槍，但也是個很有才幹的記者。",
+        "h_s": "虽然是不折不扣的老烟枪，但也是个很有才干的记者。"
+       },
+       "w_s": "不折不扣"
+      }
+     ],
+     "title_s": "对称与数字"
+    },
+    {
+     "id": 7,
+     "slug": "particles-2",
+     "title": "虛詞（二）",
+     "title_py": "Xūcí (èr)",
+     "title_en": "Classical grammar, part 2",
+     "status": "draft",
+     "intro": "More 文言 function words, frozen inside modern 成語. 而 again links two verbs (\"and, and then, yet\"). 之 is now also an object pronoun \"it\" (持之以恆 \"hold it with constancy\"). 以 marks the means or the purpose (以身作則 \"with one's own person, make a model\"). 其 is \"its, the\" and 可 + verb is \"can be V-ed\" (屈指可數 \"can be counted on the fingers\"). 所 + verb, from lesson 3, turns a verb into \"what one Vs\".\n",
+     "frames": [
+      {
+       "f": "X而V",
+       "en": "而 joins a manner or a first action to the main verb",
+       "ex": [
+        "背道而馳",
+        "不得而知",
+        "脫口而出",
+        "不言而喻",
+        "從天而降",
+        "久而久之"
+       ],
+       "f_s": "X而V",
+       "ex_s": [
+        "背道而驰",
+        "不得而知",
+        "脱口而出",
+        "不言而喻",
+        "从天而降",
+        "久而久之"
+       ]
+      },
+      {
+       "f": "V之",
+       "en": "之 = 'it', the object",
+       "ex": [
+        "久而久之",
+        "持之以恆",
+        "不了了之"
+       ],
+       "f_s": "V之",
+       "ex_s": [
+        "久而久之",
+        "持之以恒",
+        "不了了之"
+       ]
+      },
+      {
+       "f": "以 + N / V",
+       "en": "'with, by means of' or 'so as to'",
+       "ex": [
+        "持之以恆",
+        "以身作則",
+        "拭目以待"
+       ],
+       "f_s": "以 + N / V",
+       "ex_s": [
+        "持之以恒",
+        "以身作则",
+        "拭目以待"
+       ]
+      },
+      {
+       "f": "其",
+       "en": "'its, his, the'",
+       "ex": [
+        "適得其反",
+        "若無其事"
+       ],
+       "f_s": "其",
+       "ex_s": [
+        "适得其反",
+        "若无其事"
+       ]
+      },
+      {
+       "f": "無可V / 可V",
+       "en": "'nothing that can be V-ed' / 'can be V-ed'",
+       "ex": [
+        "無可厚非",
+        "無可奈何",
+        "無計可施",
+        "屈指可數"
+       ],
+       "f_s": "无可V / 可V",
+       "ex_s": [
+        "无可厚非",
+        "无可奈何",
+        "无计可施",
+        "屈指可数"
+       ]
+      },
+      {
+       "f": "所V / 之N",
+       "en": "'what one Vs' / 'the N of'",
+       "ex": [
+        "匪夷所思",
+        "後顧之憂",
+        "有生之年"
+       ],
+       "f_s": "所V / 之N",
+       "ex_s": [
+        "匪夷所思",
+        "后顾之忧",
+        "有生之年"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "背道而馳",
+       "py": "bèi dào ér chí",
+       "lit": "turn-back-on-road-and-gallop",
+       "en": "to run in the opposite direction, to go against",
+       "origin": {
+        "work": "白居易〈為人上宰相書〉",
+        "text": "又將背古道而馳者也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "又将背古道而驰者也"
+       },
+       "ex": {
+        "h": "他的行為和他的信念背道而馳。",
+        "py": "Tā de xíng wéi hé tā de xìn niàn bèi dào ér chí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "His actions run counter to his beliefs.",
+        "h_t": "他的行為和他的信念背道而馳。",
+        "h_s": "他的行为和他的信念背道而驰。"
+       },
+       "w_s": "背道而驰"
+      },
+      {
+       "w": "不得而知",
+       "py": "bù dé ér zhī",
+       "lit": "not-able-to-and-know",
+       "en": "unknown, impossible to know",
+       "ex": {
+        "h": "这个计划能否成功还不得而知。",
+        "py": "Zhè ge jì huà néng fǒu chéng gōng hái bù dé ér zhī.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Whether this plan will succeed is not yet known.",
+        "h_t": "這個計劃能否成功還不得而知。",
+        "h_s": "这个计划能否成功还不得而知。"
+       },
+       "w_s": "不得而知"
+      },
+      {
+       "w": "脫口而出",
+       "py": "tuō kǒu ér chū",
+       "lit": "escape-mouth-and-come-out",
+       "en": "to blurt out",
+       "ex": {
+        "h": "汤姆不假思索脱口而出。",
+        "py": "Tāngmǔ bù jiǎ sī suǒ tuō kǒu ér chū.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Tom blurted it out without thinking.",
+        "h_t": "湯姆不假思索脫口而出。",
+        "h_s": "汤姆不假思索脱口而出。"
+       },
+       "w_s": "脱口而出"
+      },
+      {
+       "w": "不言而喻",
+       "py": "bù yán ér yù",
+       "lit": "not-speak-and-understood",
+       "en": "it goes without saying",
+       "origin": {
+        "work": "孟子·盡心上",
+        "text": "施於四體，四體不言而喻",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "施于四体，四体不言而喻"
+       },
+       "note": "Mencius says the virtues show in a man's whole body, which \"understands without being told\".",
+       "ex": {
+        "h": "當然，不言而喻，該宣言的效力與官方條約有很大不同。",
+        "py": "Dāng rán, bù yán ér yù, gāi xuān yán de xiào lì yǔ guān fāng tiáo yuē yǒu hěn dà bù tóng.",
+        "py_auto": true,
+        "src": "wikipedia: 第一共和國 (大韓民國)",
+        "en": "Of course, it goes without saying that such a declaration carries much less weight than an official treaty.",
+        "h_t": "當然，不言而喻，該宣言的效力與官方條約有很大不同。",
+        "h_s": "当然，不言而喻，该宣言的效力与官方条约有很大不同。"
+       },
+       "w_s": "不言而喻"
+      },
+      {
+       "w": "從天而降",
+       "py": "cóng tiān ér jiàng",
+       "lit": "from-sky-and-descend",
+       "en": "to fall from the sky, to come out of nowhere",
+       "note": "降 is jiàng \"come down\" here (xiáng = surrender).",
+       "ex": {
+        "h": "大炸彈從天而降，奪走了許多人的生命。",
+        "py": "Dà zhà dàn cóng tiān ér jiàng, duó zǒu le xǔ duō rén de shēng mìng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Huge bombs fell from the sky and took many lives.",
+        "h_t": "大炸彈從天而降，奪走了許多人的生命。",
+        "h_s": "大炸弹从天而降，夺走了许多人的生命。"
+       },
+       "w_s": "从天而降"
+      },
+      {
+       "w": "久而久之",
+       "py": "jiǔ ér jiǔ zhī",
+       "lit": "long-and-long-it",
+       "en": "over time, little by little",
+       "note": "之 here is an empty filler that rounds off the rhythm, a common classical use.",
+       "ex": {
+        "h": "久而久之，随着族群的融合交流，形成了新一代的自贡人。",
+        "py": "Jiǔ ér jiǔ zhī, suí zhe zú qún de róng hé jiāo liú, xíng chéng le xīn yī dài de Zìgòng rén.",
+        "py_auto": true,
+        "src": "wikipedia: 自貢話",
+        "en": "Over time, as the different groups mixed, a new generation of Zigong people took shape.",
+        "h_t": "久而久之，隨著族群的融合交流，形成了新一代的自貢人。",
+        "h_s": "久而久之，随着族群的融合交流，形成了新一代的自贡人。"
+       },
+       "w_s": "久而久之"
+      },
+      {
+       "w": "匪夷所思",
+       "py": "fěi yí suǒ sī",
+       "lit": "not-ordinary-what-think",
+       "en": "unimaginable, bizarre",
+       "note": "匪 = 非 \"not\", 夷 \"the ordinary\". \"Not what ordinary people would think of.\"",
+       "ex": {
+        "h": "個性大而化之，經常做出很多匪夷所思的事，讓家人無言以對。",
+        "py": "Gè xìng dà ér huà zhī, jīng cháng zuò chū hěn duō fěi yí suǒ sī de shì, ràng jiā rén wú yán yǐ duì.",
+        "py_auto": true,
+        "src": "wikipedia: 百姓貴族",
+        "en": "Easy-going by nature, always doing bizarre things that leave the family speechless.",
+        "h_t": "個性大而化之，經常做出很多匪夷所思的事，讓家人無言以對。",
+        "h_s": "个性大而化之，经常做出很多匪夷所思的事，让家人无言以对。"
+       },
+       "w_s": "匪夷所思"
+      },
+      {
+       "w": "持之以恆",
+       "py": "chí zhī yǐ héng",
+       "lit": "hold-it-with-constancy",
+       "en": "to persevere, to keep at it",
+       "ex": {
+        "h": "我对汤姆要持之以恒地学习法语口语这件事很怀疑。",
+        "py": "Wǒ duì Tāngmǔ yào chí zhī yǐ héng de xué xí Fǎyǔ kǒu yǔ zhè jiàn shì hěn huái yí.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I doubt Tom will keep at learning spoken French.",
+        "h_t": "我對湯姆要持之以恆地學習法語口語這件事很懷疑。",
+        "h_s": "我对汤姆要持之以恒地学习法语口语这件事很怀疑。"
+       },
+       "w_s": "持之以恒"
+      },
+      {
+       "w": "以身作則",
+       "py": "yǐ shēn zuò zé",
+       "lit": "with-self-make-model",
+       "en": "to set an example",
+       "origin": {
+        "work": "後漢書·第五倫傳",
+        "text": "以身教者從，以言教者訟",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "以身教者从，以言教者讼"
+       },
+       "ex": {
+        "h": "冯道根木讷少言，平时领兵带士，以身作则，对部下要求严格。",
+        "py": "Féng Dàogēn mù nè shǎo yán, píng shí lǐng bīng dài shì, yǐ shēn zuò zé, duì bù xià yāo qiú yán gé.",
+        "py_auto": true,
+        "src": "wikipedia: 冯道根",
+        "en": "Feng Daogen was a man of few words; leading his troops, he set the example and was strict with his men.",
+        "h_t": "馮道根木訥少言，平時領兵帶士，以身作則，對部下要求嚴格。",
+        "h_s": "冯道根木讷少言，平时领兵带士，以身作则，对部下要求严格。"
+       },
+       "w_s": "以身作则"
+      },
+      {
+       "w": "拭目以待",
+       "py": "shì mù yǐ dài",
+       "lit": "wipe-eyes-so-as-to-wait",
+       "en": "to wait and see, to watch this space",
+       "origin": {
+        "work": "漢書·張敞傳",
+        "text": "天下莫不拭目傾耳",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "天下莫不拭目倾耳"
+       },
+       "ex": {
+        "h": "這是一首充滿愛與感謝的歌曲，請大家拭目以待！",
+        "py": "Zhè shì yī shǒu chōng mǎn ài yǔ gǎn xiè de gē qǔ, qǐng dà jiā shì mù yǐ dài!",
+        "py_auto": true,
+        "src": "wikipedia: 4月19日 (歌曲)",
+        "en": "It is a song full of love and gratitude: everyone, watch this space!",
+        "h_t": "這是一首充滿愛與感謝的歌曲，請大家拭目以待！",
+        "h_s": "这是一首充满爱与感谢的歌曲，请大家拭目以待！"
+       },
+       "w_s": "拭目以待"
+      },
+      {
+       "w": "適得其反",
+       "py": "shì dé qí fǎn",
+       "lit": "just-get-its-opposite",
+       "en": "to have the opposite effect, to backfire",
+       "ex": {
+        "h": "但有意见认为这次修缮适得其反，是对古桥的\"破坏性保护\"。",
+        "py": "Dàn yǒu yì jiàn rèn wéi zhè cì xiū shàn shì dé qí fǎn, shì duì gǔ qiáo de “pò huài xìng bǎo hù”.",
+        "py_auto": true,
+        "src": "wikipedia: 七桥瓮",
+        "en": "But some held that the repairs backfired, a 'destructive protection' of the old bridge.",
+        "h_t": "但有意見認為這次修繕適得其反，是對古橋的\"破壞性保護\"。",
+        "h_s": "但有意见认为这次修缮适得其反，是对古桥的\"破坏性保护\"。"
+       },
+       "w_s": "适得其反"
+      },
+      {
+       "w": "若無其事",
+       "py": "ruò wú qí shì",
+       "lit": "as-if-without-the-matter",
+       "en": "as if nothing had happened",
+       "ex": {
+        "h": "他雖然擺着一副若無其事的樣子，但是我想他心裏一定擔心得不得了。",
+        "py": "Tā suī rán bǎi zhe yī fù ruò wú qí shì de yàng zi, dàn shì wǒ xiǎng tā xīn lǐ yī dìng dān xīn de bù dé le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He's acting as if nothing's wrong, but I think he must be terribly worried inside.",
+        "h_t": "他雖然擺著一副若無其事的樣子，但是我想他心裡一定擔心得不得了。",
+        "h_s": "他虽然摆着一副若无其事的样子，但是我想他心里一定担心得不得了。"
+       },
+       "w_s": "若无其事"
+      },
+      {
+       "w": "後顧之憂",
+       "py": "hòu gù zhī yōu",
+       "lit": "behind-look-'s-worry",
+       "en": "worries about what one leaves behind",
+       "note": "後顧 \"look back over one's shoulder\". Usually 沒有/解除後顧之憂 \"free from worry at home\".",
+       "ex": {
+        "h": "蒙古军队从此没有后顾之忧，可以无所顾忌地发起强大多的远征。",
+        "py": "Ménggǔ jūn duì cóng cǐ méi yǒu hòu gù zhī yōu, kě yǐ wú suǒ gù jì de fā qǐ qiáng dà duō de yuǎn zhēng.",
+        "py_auto": true,
+        "src": "wikipedia: 长子西征",
+        "en": "From then on the Mongol army had nothing to fear behind it and could launch much bigger campaigns without hesitation.",
+        "h_t": "蒙古軍隊從此沒有後顧之憂，可以無所顧忌地發起強大多的遠征。",
+        "h_s": "蒙古军队从此没有后顾之忧，可以无所顾忌地发起强大多的远征。"
+       },
+       "w_s": "后顾之忧"
+      },
+      {
+       "w": "有生之年",
+       "py": "yǒu shēng zhī nián",
+       "lit": "have-life-'s-years",
+       "en": "in one's lifetime",
+       "ex": {
+        "h": "就算可行，也会是设计者有生之年都无法建成的超级工程。",
+        "py": "Jiù suàn kě xíng, yě huì shì shè jì zhě yǒu shēng zhī nián dōu wú fǎ jiàn chéng de chāo jí gōng chéng.",
+        "py_auto": true,
+        "src": "wikipedia: 黄石火山",
+        "en": "Even if feasible, it would be a mega-project its designers could not complete in their lifetime.",
+        "h_t": "就算可行，也會是設計者有生之年都無法建成的超級工程。",
+        "h_s": "就算可行，也会是设计者有生之年都无法建成的超级工程。"
+       },
+       "w_s": "有生之年"
+      },
+      {
+       "w": "不了了之",
+       "py": "bù liǎo liǎo zhī",
+       "lit": "not-finish-finish-it",
+       "en": "to fizzle out, to leave unresolved",
+       "note": "The first 了 is \"settled\", the second \"to end\": \"end it by not settling it\".",
+       "ex": {
+        "h": "但其后巴英额切断了同孙中山方面的联系，此事不了了之。",
+        "py": "Dàn qí hòu Bāyīng'é qiē duàn le tóng Sūn Zhōngshān fāng miàn de lián xì, cǐ shì bù liǎo liǎo zhī.",
+        "py_auto": true,
+        "src": "wikipedia: 巴英额",
+        "en": "But Bayinge then cut off contact with Sun Yat-sen's side, and the matter fizzled out.",
+        "h_t": "但其後巴英額切斷了同孫中山方面的聯繫，此事不了了之。",
+        "h_s": "但其后巴英额切断了同孙中山方面的联系，此事不了了之。"
+       },
+       "w_s": "不了了之"
+      },
+      {
+       "w": "無可厚非",
+       "py": "wú kě hòu fēi",
+       "lit": "without-can-heavily-blame",
+       "en": "understandable, not to be blamed",
+       "ex": {
+        "h": "作為一個魔術師，他的選擇無可厚非，但作為一個父親，他無疑是不合格的。",
+        "py": "Zuò wéi yī gè mó shù shī, tā de xuǎn zé wú kě hòu fēi, dàn zuò wéi yī gè fù qīn, tā wú yí shì bù hé gé de.",
+        "py_auto": true,
+        "src": "wikipedia: Fate/Zero角色列表",
+        "en": "As a magus, his choice is understandable; as a father, he was without doubt a failure.",
+        "h_t": "作為一個魔術師，他的選擇無可厚非，但作為一個父親，他無疑是不合格的。",
+        "h_s": "作为一个魔术师，他的选择无可厚非，但作为一个父亲，他无疑是不合格的。"
+       },
+       "w_s": "无可厚非"
+      },
+      {
+       "w": "無可奈何",
+       "py": "wú kě nài hé",
+       "lit": "without-can-what-do",
+       "en": "to have no choice, helpless",
+       "origin": {
+        "work": "戰國策·燕策三",
+        "text": "既已，無可奈何",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "既已，无可奈何"
+       },
+       "note": "From the story of Jing Ke: the prince weeps over Fan Wuji's body, then, since nothing can be done, packs up his head.",
+       "ex": {
+        "h": "李太后虽然生气，卻也對此无可奈何。",
+        "py": "Lǐ tài hòu suī rán shēng qì, què yě duì cǐ wú kě nài hé.",
+        "py_auto": true,
+        "src": "wikipedia: 馮皇后 (後晉)",
+        "en": "Empress Dowager Li was angry, but could do nothing about it.",
+        "h_t": "李太后雖然生氣，卻也對此無可奈何。",
+        "h_s": "李太后虽然生气，却也对此无可奈何。"
+       },
+       "w_s": "无可奈何"
+      },
+      {
+       "w": "無計可施",
+       "py": "wú jì kě shī",
+       "lit": "without-plan-can-apply",
+       "en": "at one's wits' end",
+       "ex": {
+        "h": "無計可施之下，卡華拉達也被迫放棄，下令渡河的士兵返回。",
+        "py": "Wú jì kě shī zhī xià, Kǎhuálādá yě bèi pò fàng qì, xià lìng dù hé de shì bīng fǎn huí.",
+        "py_auto": true,
+        "src": "wikipedia: 特倫頓戰役",
+        "en": "With no options left, Cadwalader also had to give up and ordered the troops who had crossed the river to come back.",
+        "h_t": "無計可施之下，卡華拉達也被迫放棄，下令渡河的士兵返回。",
+        "h_s": "无计可施之下，卡华拉达也被迫放弃，下令渡河的士兵返回。"
+       },
+       "w_s": "无计可施"
+      },
+      {
+       "w": "屈指可數",
+       "py": "qū zhǐ kě shǔ",
+       "lit": "bend-fingers-can-count",
+       "en": "very few, can be counted on one's fingers",
+       "origin": {
+        "work": "三國志·張郃傳",
+        "text": "屈指計亮糧不至十日",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "屈指计亮粮不至十日"
+       },
+       "ex": {
+        "h": "王哲执法的国际比赛屈指可数，仅有東亞盃和一些友谊赛。",
+        "py": "Wáng Zhé zhí fǎ de guó jì bǐ sài qū zhǐ kě shǔ, jǐn yǒu Dōngyà Bēi hé yī xiē yǒu yì sài.",
+        "py_auto": true,
+        "src": "wikipedia: 王哲 (足球裁判)",
+        "en": "Wang Zhe has refereed very few international matches: only the East Asian Cup and some friendlies.",
+        "h_t": "王哲執法的國際比賽屈指可數，僅有東亞盃和一些友誼賽。",
+        "h_s": "王哲执法的国际比赛屈指可数，仅有东亚杯和一些友谊赛。"
+       },
+       "w_s": "屈指可数"
+      },
+      {
+       "w": "與日俱增",
+       "py": "yǔ rì jù zēng",
+       "lit": "with-days-together-grow",
+       "en": "to grow day by day",
+       "note": "與…俱 \"together with\": it grows as the days go by.",
+       "ex": {
+        "h": "缅甸社会趋于崩溃，饥贫交加，公序良俗不再，罪案与日俱增。",
+        "py": "Miǎndiàn shè huì qū yú bēng kuì, jī pín jiāo jiā, gōng xù liáng sú bù zài, zuì àn yǔ rì jù zēng.",
+        "py_auto": true,
+        "src": "wikipedia: 英屬緬甸",
+        "en": "Burmese society was close to collapse: hunger and poverty spread, public order broke down, and crime grew day by day.",
+        "h_t": "緬甸社會趨於崩潰，飢貧交加，公序良俗不再，罪案與日俱增。",
+        "h_s": "缅甸社会趋于崩溃，饥贫交加，公序良俗不再，罪案与日俱增。"
+       },
+       "w_s": "与日俱增"
+      }
+     ],
+     "title_s": "虚词（二）"
+    },
+    {
+     "id": 8,
+     "slug": "feelings",
+     "title": "心情",
+     "title_py": "Xīnqíng",
+     "title_en": "Feelings and reactions",
+     "status": "draft",
+     "intro": "How people feel and react: pleased, delighted, gloating, hesitant, suddenly enlightened, indifferent, worried, exasperated, caught off guard. Several share the 心 \"heart, mind\" family (心滿意足, 漠不關心, 憂心忡忡) and the 不忍 \"cannot bear to\" construction (忍無可忍, 慘不忍睹). The last group is about urgency and shock (刻不容緩, 迫在眉睫, 駭人聽聞).\n",
+     "frames": [
+      {
+       "f": "心X意Y",
+       "en": "heart and mind together",
+       "ex": [
+        "心滿意足"
+       ],
+       "f_s": "心X意Y",
+       "ex_s": [
+        "心满意足"
+       ]
+      },
+      {
+       "f": "X然大Y",
+       "en": "然 makes an adverb: 'suddenly, all at once'",
+       "ex": [
+        "恍然大悟",
+        "安然無恙"
+       ],
+       "f_s": "X然大Y",
+       "ex_s": [
+        "恍然大悟",
+        "安然无恙"
+       ]
+      },
+      {
+       "f": "X不忍Y / 忍無可忍",
+       "en": "忍 'bear, endure'",
+       "ex": [
+        "忍無可忍",
+        "慘不忍睹"
+       ],
+       "f_s": "X不忍Y / 忍无可忍",
+       "ex_s": [
+        "忍无可忍",
+        "惨不忍睹"
+       ]
+      },
+      {
+       "f": "X不及 / X不容Y",
+       "en": "'not in time' / 'does not allow'",
+       "ex": [
+        "措手不及",
+        "刻不容緩"
+       ],
+       "f_s": "X不及 / X不容Y",
+       "ex_s": [
+        "措手不及",
+        "刻不容缓"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "心滿意足",
+       "py": "xīn mǎn yì zú",
+       "lit": "heart-full-mind-satisfied",
+       "en": "perfectly content",
+       "origin": {
+        "work": "漢書·王莽傳中",
+        "text": "豐等爵位已盛，心意既滿",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "丰等爵位已盛，心意既满"
+       },
+       "ex": {
+        "h": "他對自己感到心滿意足。",
+        "py": "Tā duì zì jǐ gǎn dào xīn mǎn yì zú.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He is perfectly satisfied with himself.",
+        "h_t": "他對自己感到心滿意足。",
+        "h_s": "他对自己感到心满意足。"
+       },
+       "w_s": "心满意足"
+      },
+      {
+       "w": "興高采烈",
+       "py": "xìng gāo cǎi liè",
+       "lit": "mood-high-spirit-fierce",
+       "en": "in high spirits, delighted",
+       "origin": {
+        "work": "劉勰《文心雕龍·體性》",
+        "text": "叔夜俊俠，故興高而采烈",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "叔夜俊侠，故兴高而采烈"
+       },
+       "note": "Liu Xie was describing the poet Xi Kang's style, \"lofty in feeling, fierce in colour\". Only later did it come to mean \"cheerful\".",
+       "ex": {
+        "h": "當桂英興高采烈的找尋降龍木時，赫然發現它不翼而飛了！",
+        "py": "Dāng Guìyīng xìng gāo cǎi liè de zhǎo xún xiáng lóng mù shí, hè rán fā xiàn tā bù yì ér fēi le!",
+        "py_auto": true,
+        "src": "wikipedia: 穆桂英掛帥 (2012年電視劇)",
+        "en": "When Guiying went happily to look for the Dragon-Taming Wood, she found to her shock that it had vanished!",
+        "h_t": "當桂英興高采烈的找尋降龍木時，赫然發現它不翼而飛了！",
+        "h_s": "当桂英兴高采烈的找寻降龙木时，赫然发现它不翼而飞了！"
+       },
+       "w_s": "兴高采烈"
+      },
+      {
+       "w": "幸災樂禍",
+       "py": "xìng zāi lè huò",
+       "lit": "rejoice-disaster-enjoy-misfortune",
+       "en": "to gloat over others' misfortune",
+       "origin": {
+        "work": "左傳·僖公十四年",
+        "text": "背施無親，幸災不仁",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "背施无亲，幸灾不仁"
+       },
+       "note": "The German word Schadenfreude is usually translated with this 成語.",
+       "ex": {
+        "h": "“幸灾乐祸”一词只在德语中有。",
+        "py": "“Xìng zāi lè huò” yī cí zhǐ zài Déyǔ zhōng yǒu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Only German has a single word for 'Schadenfreude'.",
+        "h_t": "“幸災樂禍”一詞只在德語中有。",
+        "h_s": "“幸灾乐祸”一词只在德语中有。"
+       },
+       "w_s": "幸灾乐祸"
+      },
+      {
+       "w": "猶豫不決",
+       "py": "yóu yù bù jué",
+       "lit": "hesitate-not-decide",
+       "en": "unable to make up one's mind",
+       "origin": {
+        "work": "戰國策·趙策三",
+        "text": "平原君猶豫未有所決",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "平原君犹豫未有所决"
+       },
+       "ex": {
+        "h": "对于是否要去医院探望Mary,Tom有点犹豫不决。",
+        "py": "Duì yú shì fǒu yào qù yī yuàn tàn wàng Mary, Tom yǒu diǎn yóu yù bù jué.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Tom couldn't quite decide whether to visit Mary in hospital.",
+        "h_t": "對於是否要去醫院探望Mary,Tom有點猶豫不決。",
+        "h_s": "对于是否要去医院探望Mary,Tom有点犹豫不决。"
+       },
+       "w_s": "犹豫不决"
+      },
+      {
+       "w": "恍然大悟",
+       "py": "huǎng rán dà wù",
+       "lit": "suddenly-greatly-awaken",
+       "en": "to suddenly understand",
+       "origin": {
+        "work": "高彥休《唐闕史》",
+        "text": "裴公恍然始悟",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "裴公恍然始悟"
+       },
+       "ex": {
+        "h": "短短数天之后，珍珠港事变爆发，美方才恍然大悟。",
+        "py": "Duǎn duǎn shù tiān zhī hòu, Zhēnzhūgǎng shì biàn bào fā, měi fāng cái huǎng rán dà wù.",
+        "py_auto": true,
+        "src": "wikipedia: 毛庆祥",
+        "en": "Only a few days later Pearl Harbor was attacked, and the Americans suddenly understood.",
+        "h_t": "短短數天之後，珍珠港事變爆發，美方才恍然大悟。",
+        "h_s": "短短数天之后，珍珠港事变爆发，美方才恍然大悟。"
+       },
+       "w_s": "恍然大悟"
+      },
+      {
+       "w": "漠不關心",
+       "py": "mò bù guān xīn",
+       "lit": "cold-not-concern-heart",
+       "en": "completely indifferent",
+       "ex": {
+        "h": "她對她丈夫的死漠不關心。",
+        "py": "Tā duì tā zhàng fū de sǐ mò bù guān xīn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "She was indifferent to her husband's death.",
+        "h_t": "她對她丈夫的死漠不關心。",
+        "h_s": "她对她丈夫的死漠不关心。"
+       },
+       "w_s": "漠不关心"
+      },
+      {
+       "w": "憂心忡忡",
+       "py": "yōu xīn chōng chōng",
+       "lit": "worried-heart-anxious-anxious",
+       "en": "deeply worried",
+       "origin": {
+        "work": "詩經·召南·草蟲",
+        "text": "未見君子，憂心忡忡",
+        "checked": [
+         "moe_app"
+        ],
+        "text_s": "未见君子，忧心忡忡"
+       },
+       "note": "忡忡 \"troubled\", a reduplicated adjective typical of the 詩經.",
+       "ex": {
+        "h": "我想变富，不再因钱忧心忡忡。",
+        "py": "Wǒ xiǎng biàn fù, bù zài yīn qián yōu xīn chōng chōng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I want to get rich and stop worrying about money.",
+        "h_t": "我想變富，不再因錢憂心忡忡。",
+        "h_s": "我想变富，不再因钱忧心忡忡。"
+       },
+       "w_s": "忧心忡忡"
+      },
+      {
+       "w": "忍無可忍",
+       "py": "rěn wú kě rěn",
+       "lit": "endure-without-can-endure",
+       "en": "to be pushed beyond endurance",
+       "origin": {
+        "work": "三國志·孫禮傳",
+        "text": "且止，忍不可忍",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "且止，忍不可忍"
+       },
+       "note": "The source has 忍不可忍, \"endure the unendurable\", which is the opposite advice.",
+       "ex": {
+        "h": "忍无可忍，弱小者也会反抗。",
+        "py": "Rěn wú kě rěn, ruò xiǎo zhě yě huì fǎn kàng.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Pushed too far, even the weak will fight back.",
+        "h_t": "忍無可忍，弱小者也會反抗。",
+        "h_s": "忍无可忍，弱小者也会反抗。"
+       },
+       "w_s": "忍无可忍"
+      },
+      {
+       "w": "不由自主",
+       "py": "bù yóu zì zhǔ",
+       "lit": "not-from-self-master",
+       "en": "involuntarily, can't help it",
+       "ex": {
+        "h": "總統不由自主地笑了起來。",
+        "py": "Zǒng tǒng bù yóu zì zhǔ de xiào le qǐ lái.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The president couldn't help laughing.",
+        "h_t": "總統不由自主地笑了起來。",
+        "h_s": "总统不由自主地笑了起来。"
+       },
+       "w_s": "不由自主"
+      },
+      {
+       "w": "感同身受",
+       "py": "gǎn tóng shēn shòu",
+       "lit": "feel-same-body-receive",
+       "en": "to feel as if it happened to oneself",
+       "ex": {
+        "h": "艾莉絲看見邁爾斯追了出去後被瑪姬拒絕，心裡感同身受。",
+        "py": "Àilìsī kàn jiàn Mài'ěrsī zhuī le chū qù hòu bèi Mǎjī jù jué, xīn lǐ gǎn tóng shēn shòu.",
+        "py_auto": true,
+        "src": "wikipedia: 緣份精華遊",
+        "en": "Alice saw Miles run after Maggie and get turned down, and felt it as if it were her own pain.",
+        "h_t": "艾莉絲看見邁爾斯追了出去後被瑪姬拒絕，心裡感同身受。",
+        "h_s": "艾莉丝看见迈尔斯追了出去后被玛姬拒绝，心里感同身受。"
+       },
+       "w_s": "感同身受"
+      },
+      {
+       "w": "忘恩負義",
+       "py": "wàng ēn fù yì",
+       "lit": "forget-kindness-betray-duty",
+       "en": "ungrateful",
+       "origin": {
+        "work": "漢書·張敞傳",
+        "text": "背恩忘義，傷化薄俗",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "背恩忘义，伤化薄俗"
+       },
+       "ex": {
+        "h": "而项飞田是个忘恩负义的小人，后来反而拼命追查马走日的下落。",
+        "py": "Ér Xiàng Fēitián shì gè wàng ēn fù yì de xiǎo rén, hòu lái fǎn ér pīn mìng zhuī chá Mǎ Zǒurì de xià luò.",
+        "py_auto": true,
+        "src": "wikipedia: 一步之遥",
+        "en": "Xiang Feitian, an ungrateful scoundrel, later did all he could to track Ma Zouri down.",
+        "h_t": "而項飛田是個忘恩負義的小人，後來反而拼命追查馬走日的下落。",
+        "h_s": "而项飞田是个忘恩负义的小人，后来反而拼命追查马走日的下落。"
+       },
+       "w_s": "忘恩负义"
+      },
+      {
+       "w": "慘不忍睹",
+       "py": "cǎn bù rěn dǔ",
+       "lit": "horrible-not-bear-look",
+       "en": "too horrible to look at",
+       "origin": {
+        "work": "許奉恩《里乘》",
+        "text": "小人慘不忍睹",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "小人惨不忍睹"
+       },
+       "ex": {
+        "h": "之後，衛斯理接到通知，古九非慘死在檳城家中，屍體慘不忍睹。",
+        "py": "Zhī hòu, Wèisīlǐ jiē dào tōng zhī, Gǔ Jiǔfēi cǎn sǐ zài Bīnchéng jiā zhōng, shī tǐ cǎn bù rěn dǔ.",
+        "py_auto": true,
+        "src": "wikipedia: 瘟神 (小說)",
+        "en": "Later Wesley was told that Gu Jiufei had died a terrible death at his home in Penang; the body was too horrible to look at.",
+        "h_t": "之後，衛斯理接到通知，古九非慘死在檳城家中，屍體慘不忍睹。",
+        "h_s": "之后，卫斯理接到通知，古九非惨死在槟城家中，尸体惨不忍睹。"
+       },
+       "w_s": "惨不忍睹"
+      },
+      {
+       "w": "喜聞樂見",
+       "py": "xǐ wén lè jiàn",
+       "lit": "glad-hear-happy-see",
+       "en": "popular, loved by the public",
+       "ex": {
+        "h": "当代小品通过中央电视台春节联欢晚会的近20年的推广，取得了很大的进步，成为观众喜闻乐见的一个艺术形式。",
+        "py": "Dāng dài xiǎo pǐn tōng guò Zhōngyāng Diànshìtái Chūnjié Liánhuān Wǎnhuì de jìn 20 nián de tuī guǎng, qǔ dé le hěn dà de jìn bù, chéng wéi guān zhòng xǐ wén lè jiàn de yī gè yì shù xíng shì.",
+        "py_auto": true,
+        "src": "wikipedia: 喜剧小品",
+        "en": "Promoted for nearly twenty years by CCTV's Spring Festival Gala, the modern comic sketch has made great progress and become an art form audiences love.",
+        "h_t": "當代小品通過中央電視臺春節聯歡晚會的近20年的推廣，取得了很大的進步，成為觀眾喜聞樂見的一個藝術形式。",
+        "h_s": "当代小品通过中央电视台春节联欢晚会的近20年的推广，取得了很大的进步，成为观众喜闻乐见的一个艺术形式。"
+       },
+       "w_s": "喜闻乐见"
+      },
+      {
+       "w": "安然無恙",
+       "py": "ān rán wú yàng",
+       "lit": "safe-like-without-harm",
+       "en": "safe and sound",
+       "origin": {
+        "work": "戰國策·齊策四",
+        "text": "歲亦無恙耶？民亦無恙耶？王亦無恙耶？",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "岁亦无恙耶？民亦无恙耶？王亦无恙耶？"
+       },
+       "note": "The Queen Dowager of Zhao asks the envoy of Qi, in this order, whether the harvest, the people and the king are well. Then she explains why the king comes last.",
+       "ex": {
+        "h": "商人看見貝兒能夠安然無恙地回來不斷的擁抱著她不放。",
+        "py": "Shāng rén kàn jiàn Bèi'ér néng gòu ān rán wú yàng de huí lái bù duàn de yōng bào zhe tā bù fàng.",
+        "py_auto": true,
+        "src": "wikipedia: 美女与野兽",
+        "en": "When the merchant saw Belle come back safe and sound, he hugged her and wouldn't let go.",
+        "h_t": "商人看見貝兒能夠安然無恙地回來不斷的擁抱著她不放。",
+        "h_s": "商人看见贝儿能够安然无恙地回来不断的拥抱著她不放。"
+       },
+       "w_s": "安然无恙"
+      },
+      {
+       "w": "措手不及",
+       "py": "cuò shǒu bù jí",
+       "lit": "place-hands-not-in-time",
+       "en": "caught off guard",
+       "ex": {
+        "h": "入侵的日軍被打得措手不及，將领来岛通总也被击毙。",
+        "py": "Rù qīn de Rì jūn bèi dǎ de cuò shǒu bù jí, jiàng lǐng Láidǎo Tōngzǒng yě bèi jī bì.",
+        "py_auto": true,
+        "src": "wikipedia: 鸣梁海战",
+        "en": "The invading Japanese were caught off guard, and their commander Kurushima Michifusa was killed.",
+        "h_t": "入侵的日軍被打得措手不及，將領來島通總也被擊斃。",
+        "h_s": "入侵的日军被打得措手不及，将领来岛通总也被击毙。"
+       },
+       "w_s": "措手不及"
+      },
+      {
+       "w": "刻不容緩",
+       "py": "kè bù róng huǎn",
+       "lit": "moment-not-allow-delay",
+       "en": "extremely urgent",
+       "note": "刻 was a unit of time (a hundredth of a day).",
+       "ex": {
+        "h": "楊大郎明白母親苦衷，但父親有難刻不容緩，故向母親許下諾言，必會帶領老父和眾弟平安回家。",
+        "py": "Yáng Dàláng míng bái mǔ qīn kǔ zhōng, dàn fù qīn yǒu nán kè bù róng huǎn, gù xiàng mǔ qīn xǔ xià nuò yán, bì huì dài lǐng lǎo fù hé zhòng dì píng ān huí jiā.",
+        "py_auto": true,
+        "src": "wikipedia: 忠烈楊家將",
+        "en": "Yang the eldest understood his mother's concerns, but his father was in danger and there was no time to lose, so he promised her he would bring his father and brothers home safe.",
+        "h_t": "楊大郎明白母親苦衷，但父親有難刻不容緩，故向母親許下諾言，必會帶領老父和眾弟平安回家。",
+        "h_s": "杨大郎明白母亲苦衷，但父亲有难刻不容缓，故向母亲许下诺言，必会带领老父和众弟平安回家。"
+       },
+       "w_s": "刻不容缓"
+      },
+      {
+       "w": "迫在眉睫",
+       "py": "pò zài méi jié",
+       "lit": "pressing-on-eyebrows-eyelashes",
+       "en": "imminent, extremely urgent",
+       "ex": {
+        "h": "再加上馆舍三次火灾的发生，让新馆的建设迫在眉睫。",
+        "py": "Zài jiā shàng guǎn shě sān cì huǒ zāi de fā shēng, ràng xīn guǎn de jiàn shè pò zài méi jié.",
+        "py_auto": true,
+        "src": "wikipedia: 陕西省图书馆",
+        "en": "On top of that, the building caught fire three times, which made a new library extremely urgent.",
+        "h_t": "再加上館舍三次火災的發生，讓新館的建設迫在眉睫。",
+        "h_s": "再加上馆舍三次火灾的发生，让新馆的建设迫在眉睫。"
+       },
+       "w_s": "迫在眉睫"
+      },
+      {
+       "w": "駭人聽聞",
+       "py": "hài rén tīng wén",
+       "lit": "shock-people's-hearing",
+       "en": "shocking, appalling",
+       "origin": {
+        "work": "隋書·王劭傳",
+        "text": "駭人視聽",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "骇人视听"
+       },
+       "ex": {
+        "h": "僵尸审判作为中世纪教廷最为骇人听闻的片段之一而载入史册。",
+        "py": "Jiāng shī shěn pàn zuò wéi zhōng shì jì jiào tíng zuì wéi hài rén tīng wén de piàn duàn zhī yī ér zǎi rù shǐ cè.",
+        "py_auto": true,
+        "src": "wikipedia: 僵尸审判",
+        "en": "The Cadaver Synod went down in history as one of the most appalling episodes of the medieval papacy.",
+        "h_t": "殭屍審判作為中世紀教廷最為駭人聽聞的片段之一而載入史冊。",
+        "h_s": "僵尸审判作为中世纪教廷最为骇人听闻的片段之一而载入史册。"
+       },
+       "w_s": "骇人听闻"
+      },
+      {
+       "w": "直言不諱",
+       "py": "zhí yán bù huì",
+       "lit": "straight-speak-not-avoid",
+       "en": "to speak frankly",
+       "note": "諱 \"to avoid (a name)\": the names of rulers and parents were taboo, 諱.",
+       "ex": {
+        "h": "公众终于对关于空气污染的意见直言不讳了。",
+        "py": "Gōng zhòng zhōng yú duì guān yú kōng qì wū rǎn de yì jiàn zhí yán bù huì le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The public has finally spoken out frankly about air pollution.",
+        "h_t": "公眾終於對關於空氣汙染的意見直言不諱了。",
+        "h_s": "公众终于对关于空气污染的意见直言不讳了。"
+       },
+       "w_s": "直言不讳"
+      },
+      {
+       "w": "勇往直前",
+       "py": "yǒng wǎng zhí qián",
+       "lit": "brave-go-straight-forward",
+       "en": "to forge ahead",
+       "ex": {
+        "h": "樂觀而有野心，不太在意細節，決定目標便會勇往直前。",
+        "py": "Lè guān ér yǒu yě xīn, bù tài zài yì xì jié, jué dìng mù biāo biàn huì yǒng wǎng zhí qián.",
+        "py_auto": true,
+        "src": "wikipedia: 縣民性",
+        "en": "Optimistic and ambitious, not much bothered by details, they forge ahead once they've set a goal.",
+        "h_t": "樂觀而有野心，不太在意細節，決定目標便會勇往直前。",
+        "h_s": "乐观而有野心，不太在意细节，决定目标便会勇往直前。"
+       },
+       "w_s": "勇往直前"
+      }
+     ],
+     "title_s": "心情"
+    },
+    {
+     "id": 9,
+     "slug": "stories",
+     "title": "典故",
+     "title_py": "Diǎngù",
+     "title_en": "Stories and history",
+     "status": "draft",
+     "intro": "Every 成語 here has a story or a precise source behind it: a seller of spears and shields (自相矛盾), a poet at the river where Xiang Yu died (捲土重來), two princes splitting the road to Luoyang (分道揚鑣). You can use them without knowing the story, but the story is what makes them stick. 自相矛盾 is taught in full, from the 韓非子 text, in the main course.\n",
+     "items": [
+      {
+       "w": "自相矛盾",
+       "py": "zì xiāng máo dùn",
+       "lit": "self-mutually-spear-shield",
+       "en": "self-contradictory",
+       "origin": {
+        "work": "韓非子·難一",
+        "text": "楚人有鬻楯與矛者",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "楚人有鬻楯与矛者"
+       },
+       "note": "A man of Chu praised his shield (nothing can pierce it) and his spear (it pierces anything). \"What if your spear strikes your shield?\" He had no answer.",
+       "ex": {
+        "h": "你在自相矛盾。",
+        "py": "Nǐ zài zì xiāng máo dùn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "You're contradicting yourself.",
+        "h_t": "你在自相矛盾。",
+        "h_s": "你在自相矛盾。"
+       },
+       "w_s": "自相矛盾"
+      },
+      {
+       "w": "捲土重來",
+       "py": "juǎn tǔ chóng lái",
+       "lit": "roll-up-dust-again-come",
+       "en": "to make a comeback",
+       "origin": {
+        "work": "杜牧〈題烏江亭〉",
+        "text": "江東子弟多才俊，卷土重來未可知",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "江东子弟多才俊，卷土重来未可知"
+       },
+       "note": "Du Mu at the place where Xiang Yu killed himself rather than retreat. The young men east of the river were talented; he might have come back. The source writes 卷 for 捲.",
+       "ex": {
+        "h": "随着一战的结束，列强卷土重来，中国经济迅速转向萧条。",
+        "py": "Suí zhe Yī Zhàn de jié shù, liè qiáng juǎn tǔ chóng lái, Zhōngguó jīng jì xùn sù zhuǎn xiàng xiāo tiáo.",
+        "py_auto": true,
+        "src": "wikipedia: 董时进",
+        "en": "When the First World War ended, the great powers came back, and China's economy quickly fell into depression.",
+        "h_t": "隨著一戰的結束，列強捲土重來，中國經濟迅速轉向蕭條。",
+        "h_s": "随着一战的结束，列强卷土重来，中国经济迅速转向萧条。"
+       },
+       "w_s": "卷土重来"
+      },
+      {
+       "w": "先發制人",
+       "py": "xiān fā zhì rén",
+       "lit": "first-act-control-others",
+       "en": "to strike first, to pre-empt",
+       "origin": {
+        "work": "史記·項羽本紀",
+        "text": "先即制人，後則為人所制",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "先即制人，后则为人所制"
+       },
+       "ex": {
+        "h": "田令孜认为杨师立会反对自己和陈敬瑄，决定先发制人。",
+        "py": "Tián Lìngzī rèn wéi Yáng Shīlì huì fǎn duì zì jǐ hé Chén Jìngxuān, jué dìng xiān fā zhì rén.",
+        "py_auto": true,
+        "src": "wikipedia: 高仁厚",
+        "en": "Tian Lingzi thought Yang Shili would turn against him and Chen Jingxuan, and decided to strike first.",
+        "h_t": "田令孜認為楊師立會反對自己和陳敬瑄，決定先發制人。",
+        "h_s": "田令孜认为杨师立会反对自己和陈敬瑄，决定先发制人。"
+       },
+       "w_s": "先发制人"
+      },
+      {
+       "w": "分道揚鑣",
+       "py": "fēn dào yáng biāo",
+       "lit": "divide-road-raise-bit",
+       "en": "to part ways",
+       "origin": {
+        "work": "魏書·河間公齊傳",
+        "text": "洛陽我之豐沛，自應分路揚鑣",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "洛阳我之丰沛，自应分路扬镳"
+       },
+       "note": "Two officials quarrelled over which of them should give way in the streets of Luoyang. The emperor ruled that from then on they should take separate roads. 鑣 is the bit of a horse.",
+       "ex": {
+        "h": "罗明远把白求恩交给了护送部队，两人就此分道扬镳了。",
+        "py": "Luó Míngyuǎn bǎ Báiqiú'ēn jiāo gěi le hù sòng bù duì, liǎng rén jiù cǐ fēn dào yáng biāo le.",
+        "py_auto": true,
+        "src": "wikipedia: 罗明远",
+        "en": "Luo Mingyuan handed Bethune over to the escort, and there the two parted ways.",
+        "h_t": "羅明遠把白求恩交給了護送部隊，兩人就此分道揚鑣了。",
+        "h_s": "罗明远把白求恩交给了护送部队，两人就此分道扬镳了。"
+       },
+       "w_s": "分道扬镳"
+      },
+      {
+       "w": "家喻戶曉",
+       "py": "jiā yù hù xiǎo",
+       "lit": "house-told-door-know",
+       "en": "known to every household",
+       "origin": {
+        "work": "劉向《列女傳》",
+        "text": "豈家至戶曉也哉",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "岂家至户晓也哉"
+       },
+       "ex": {
+        "h": "張惠妹因為張雨生的協助，從默默無名成為家喻戶曉的歌手。",
+        "py": "Zhāng Huìmèi yīn wèi Zhāng Yǔshēng de xié zhù, cóng mò mò wú míng chéng wéi jiā yù hù xiǎo de gē shǒu.",
+        "py_auto": true,
+        "src": "wikipedia: 張雨生",
+        "en": "With Tom Chang's help, A-mei went from unknown to a household name.",
+        "h_t": "張惠妹因為張雨生的協助，從默默無名成為家喻戶曉的歌手。",
+        "h_s": "张惠妹因为张雨生的协助，从默默无名成为家喻户晓的歌手。"
+       },
+       "w_s": "家喻户晓"
+      },
+      {
+       "w": "針鋒相對",
+       "py": "zhēn fēng xiāng duì",
+       "lit": "needle-point-face-each-other",
+       "en": "tit for tat, in direct opposition",
+       "origin": {
+        "work": "景德傳燈錄·卷二五",
+        "text": "夫一切問答，如針鋒相投",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "夫一切问答，如针锋相投"
+       },
+       "note": "Zen at first. A good question-and-answer meets \"like needle point to needle point\", in perfect agreement. Now it means the reverse, direct confrontation.",
+       "ex": {
+        "h": "言談之間時常與長歌針鋒相對，但實際上相當疼惜她。",
+        "py": "Yán tán zhī jiān shí cháng yǔ Chánggē zhēn fēng xiāng duì, dàn shí jì shàng xiàng dāng téng xī tā.",
+        "py_auto": true,
+        "src": "wikipedia: 長歌行 (漫畫)",
+        "en": "When they talk, he is always at odds with Chang'ge, but in fact he cares for her a great deal.",
+        "h_t": "言談之間時常與長歌針鋒相對，但實際上相當疼惜她。",
+        "h_s": "言谈之间时常与长歌针锋相对，但实际上相当疼惜她。"
+       },
+       "w_s": "针锋相对"
+      },
+      {
+       "w": "如火如荼",
+       "py": "rú huǒ rú tú",
+       "lit": "like-fire-like-white-flowers",
+       "en": "in full swing",
+       "origin": {
+        "work": "國語·吳語",
+        "text": "皆白裳、白旂、素甲、白羽之矰，望之如荼",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "皆白裳、白旗、素甲、白羽之矰，望之如荼"
+       },
+       "note": "King Fuchai of Wu's army, one square all in white \"like 荼 (reed flowers)\", one all in red \"like fire\". It was a show of strength.",
+       "ex": {
+        "h": "戰爭如火如荼。",
+        "py": "Zhàn zhēng rú huǒ rú tú.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The war is raging.",
+        "h_t": "戰爭如火如荼。",
+        "h_s": "战争如火如荼。"
+       },
+       "w_s": "如火如荼"
+      },
+      {
+       "w": "軒然大波",
+       "py": "xuān rán dà bō",
+       "lit": "high-rising-great-wave",
+       "en": "an uproar, a storm",
+       "origin": {
+        "work": "韓愈〈岳陽樓別竇司直〉",
+        "text": "軒然大波起，宇宙隘而妨",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "轩然大波起，宇宙隘而妨"
+       },
+       "ex": {
+        "h": "琅威理返回英国后，宣传他在华受辱的经历，引起轩然大波。",
+        "py": "Láng Wēilǐ fǎn huí Yīngguó hòu, xuān chuán tā zài Huá shòu rǔ de jīng lì, yǐn qǐ xuān rán dà bō.",
+        "py_auto": true,
+        "src": "wikipedia: 琅威理",
+        "en": "Back in Britain, Lang publicised the humiliations he had suffered in China, causing an uproar.",
+        "h_t": "琅威理返回英國後，宣傳他在華受辱的經歷，引起軒然大波。",
+        "h_s": "琅威理返回英国后，宣传他在华受辱的经历，引起轩然大波。"
+       },
+       "w_s": "轩然大波"
+      },
+      {
+       "w": "行屍走肉",
+       "py": "xíng shī zǒu ròu",
+       "lit": "walking-corpse-moving-flesh",
+       "en": "a walking corpse, a living dead",
+       "origin": {
+        "work": "王嘉《拾遺記》",
+        "text": "不學者雖存，謂之行尸走肉耳",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "不学者虽存，谓之行尸走肉耳"
+       },
+       "note": "First said of people who don't study. 尸 is the old form of 屍.",
+       "ex": {
+        "h": "他已形同行屍走肉。",
+        "py": "Tā yǐ xíng tóng xíng shī zǒu ròu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He's become a walking corpse.",
+        "h_t": "他已形同行屍走肉。",
+        "h_s": "他已形同行尸走肉。"
+       },
+       "w_s": "行尸走肉"
+      },
+      {
+       "w": "無中生有",
+       "py": "wú zhōng shēng yǒu",
+       "lit": "from-nothing-produce-something",
+       "en": "to make something up out of nothing",
+       "origin": {
+        "work": "老子·第四十章",
+        "text": "天下萬物生於有，有生於無",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "天下万物生于有，有生于无"
+       },
+       "note": "In 老子, being comes from non-being. Now it means a fabrication, the opposite of a compliment.",
+       "ex": {
+        "h": "这完全是无中生有的东西。",
+        "py": "Zhè wán quán shì wú zhōng shēng yǒu de dōng xī.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "This is a complete fabrication.",
+        "h_t": "這完全是無中生有的東西。",
+        "h_s": "这完全是无中生有的东西。"
+       },
+       "w_s": "无中生有"
+      },
+      {
+       "w": "比比皆是",
+       "py": "bǐ bǐ jiē shì",
+       "py_tw": "bì bì jiē shì",
+       "lit": "everywhere-all-are",
+       "en": "to be found everywhere",
+       "origin": {
+        "work": "戰國策·秦策一",
+        "text": "斷死於前者比比是也",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "断死于前者比比是也"
+       },
+       "ex": {
+        "h": "這種敵對的稱呼和態度，在《朝鮮王朝實錄》中比比皆是。",
+        "py": "Zhè zhǒng dí duì de chēng hū hé tài dù, zài «Cháoxiǎn Wángcháo Shílù» zhōng bǐ bǐ jiē shì.",
+        "py_auto": true,
+        "src": "wikipedia: 丙子戰爭",
+        "en": "Such hostile names and attitudes are everywhere in the Annals of the Joseon Dynasty.",
+        "h_t": "這種敵對的稱呼和態度，在《朝鮮王朝實錄》中比比皆是。",
+        "h_s": "这种敌对的称呼和态度，在《朝鲜王朝实录》中比比皆是。"
+       },
+       "w_s": "比比皆是"
+      },
+      {
+       "w": "安居樂業",
+       "py": "ān jū lè yè",
+       "lit": "settled-dwelling-content-work",
+       "en": "to live in peace and work happily",
+       "origin": {
+        "work": "漢書·貨殖傳",
+        "text": "各安其居而樂其業",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "各安其居而乐其业"
+       },
+       "ex": {
+        "h": "王延彬治理泉州期間，官员和民众安居乐业，粮食连年丰收。",
+        "py": "Wáng Yánbīn zhì lǐ Quánzhōu qī jiān, guān yuán hé mín zhòng ān jū lè yè, liáng shí lián nián fēng shōu.",
+        "py_auto": true,
+        "src": "wikipedia: 王延彬",
+        "en": "While Wang Yanbin governed Quanzhou, officials and people lived in peace, with good harvests year after year.",
+        "h_t": "王延彬治理泉州期間，官員和民眾安居樂業，糧食連年豐收。",
+        "h_s": "王延彬治理泉州期间，官员和民众安居乐业，粮食连年丰收。"
+       },
+       "w_s": "安居乐业"
+      },
+      {
+       "w": "長治久安",
+       "py": "cháng zhì jiǔ ān",
+       "lit": "long-governed-lasting-peace",
+       "en": "lasting peace and stability",
+       "origin": {
+        "work": "漢書·賈誼傳",
+        "text": "建久安之勢，成長治之業",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "建久安之势，成长治之业"
+       },
+       "ex": {
+        "h": "在上者要施行的政务能办到，在下者能胜任交办的公务，因此国家才能长治久安。",
+        "py": "Zài shàng zhě yào shī xíng de zhèng wù néng bàn dào, zài xià zhě néng shèng rèn jiāo bàn de gōng wù, yīn cǐ guó jiā cái néng cháng zhì jiǔ ān.",
+        "py_auto": true,
+        "src": "wikipedia: 叔孙侨如",
+        "en": "Only when those above can carry out their policies, and those below can do the work given them, does a state enjoy lasting peace.",
+        "h_t": "在上者要施行的政務能辦到，在下者能勝任交辦的公務，因此國家才能長治久安。",
+        "h_s": "在上者要施行的政务能办到，在下者能胜任交办的公务，因此国家才能长治久安。"
+       },
+       "w_s": "长治久安"
+      },
+      {
+       "w": "大聲疾呼",
+       "py": "dà shēng jí hū",
+       "lit": "loud-voice-urgent-cry",
+       "en": "to cry out, to call loudly for",
+       "origin": {
+        "work": "韓愈〈後十九日復上書〉",
+        "text": "大其聲而疾呼矣",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "大其声而疾呼矣"
+       },
+       "note": "Han Yu, petitioning the chief minister for a post, compares himself to a drowning man shouting for help.",
+       "ex": {
+        "h": "姜昆称，“如果在路上，看到有人在往相反的方向走，我们必须大声疾呼，把他们叫回来。",
+        "py": "Jiāng Kūn chēng, “rú guǒ zài lù shàng, kàn dào yǒu rén zài wǎng xiāng fǎn de fāng xiàng zǒu, wǒ men bì xū dà shēng jí hū, bǎ tā men jiào huí lái.",
+        "py_auto": true,
+        "src": "wikipedia: 郭德纲徒弟打人事件",
+        "en": "Jiang Kun said, 'If we see someone on the road walking the wrong way, we have to call out loudly and bring them back.'",
+        "h_t": "姜昆稱，“如果在路上，看到有人在往相反的方向走，我們必須大聲疾呼，把他們叫回來。",
+        "h_s": "姜昆称，“如果在路上，看到有人在往相反的方向走，我们必须大声疾呼，把他们叫回来。"
+       },
+       "w_s": "大声疾呼"
+      },
+      {
+       "w": "雪上加霜",
+       "py": "xuě shàng jiā shuāng",
+       "lit": "snow-on-add-frost",
+       "en": "to make a bad situation worse",
+       "origin": {
+        "work": "景德傳燈錄·卷八",
+        "text": "雪上更加霜",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "雪上更加霜"
+       },
+       "ex": {
+        "h": "达濠为日占领，更是雪上加霜，地方饥馑严重，饿殍遍野。",
+        "py": "Dáháo wéi Rì zhàn lǐng, gèng shì xuě shàng jiā shuāng, dì fāng jī jǐn yán zhòng, è piǎo biàn yě.",
+        "py_auto": true,
+        "src": "wikipedia: 达濠万人墓",
+        "en": "Dahao's occupation by Japan made things even worse: famine was severe and the starving lay everywhere.",
+        "h_t": "達濠為日佔領，更是雪上加霜，地方饑饉嚴重，餓殍遍野。",
+        "h_s": "达濠为日占领，更是雪上加霜，地方饥馑严重，饿殍遍野。"
+       },
+       "w_s": "雪上加霜"
+      },
+      {
+       "w": "不合時宜",
+       "py": "bù hé shí yí",
+       "lit": "not-fit-time-suitable",
+       "en": "out of step with the times, ill-timed",
+       "origin": {
+        "work": "漢書·哀帝紀",
+        "text": "皆違經背古，不合時宜",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "皆违经背古，不合时宜"
+       },
+       "ex": {
+        "h": "那個州的立法單位把不合時宜的法律廢止了。",
+        "py": "Nà ge zhōu de lì fǎ dān wèi bǎ bù hé shí yí de fǎ lǜ fèi zhǐ le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "The state legislature repealed the outdated law.",
+        "h_t": "那個州的立法單位把不合時宜的法律廢止了。",
+        "h_s": "那个州的立法单位把不合时宜的法律废止了。"
+       },
+       "w_s": "不合时宜"
+      },
+      {
+       "w": "絕無僅有",
+       "py": "jué wú jǐn yǒu",
+       "lit": "absolutely-none-barely-have",
+       "en": "unique, almost unheard of",
+       "origin": {
+        "work": "蘇軾〈上神宗皇帝書〉",
+        "text": "秦漢以來之所絕無而僅有",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "秦汉以来之所绝无而仅有"
+       },
+       "ex": {
+        "h": "如羅力威這類名符其實的原創作歌手，在香港可說是絕無僅有。",
+        "py": "Rú Luó Lìwēi zhè lèi míng fú qí shí de yuán chuàng zuò gē shǒu, zài Xiānggǎng kě shuō shì jué wú jǐn yǒu.",
+        "py_auto": true,
+        "src": "wikipedia: 羅力威",
+        "en": "A true singer-songwriter like Law Lik-wai is almost unheard of in Hong Kong.",
+        "h_t": "如羅力威這類名符其實的原創作歌手，在香港可說是絕無僅有。",
+        "h_s": "如罗力威这类名符其实的原创作歌手，在香港可说是绝无仅有。"
+       },
+       "w_s": "绝无仅有"
+      },
+      {
+       "w": "引人入勝",
+       "py": "yǐn rén rù shèng",
+       "lit": "lead-people-into-fine-places",
+       "en": "fascinating, absorbing",
+       "origin": {
+        "work": "郭澄之《郭子》",
+        "text": "酒自引人入勝地耳",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "酒自引人入胜地耳"
+       },
+       "note": "Wang Chen's praise of wine. \"Wine leads one into marvellous places.\" Now said of books and films.",
+       "ex": {
+        "h": "它產生出大量引人入勝的文學作品，有的存留至今。",
+        "py": "Tā chǎn shēng chū dà liàng yǐn rén rù shèng de wén xué zuò pǐn, yǒu de cún liú zhì jīn.",
+        "py_auto": true,
+        "src": "wikipedia: 聖經啟示文學",
+        "en": "It produced a great deal of fascinating literature, some of which survives today.",
+        "h_t": "它產生出大量引人入勝的文學作品，有的存留至今。",
+        "h_s": "它产生出大量引人入胜的文学作品，有的存留至今。"
+       },
+       "w_s": "引人入胜"
+      },
+      {
+       "w": "推波助瀾",
+       "py": "tuī bō zhù lán",
+       "lit": "push-waves-help-billows",
+       "en": "to add fuel to the fire, to fan",
+       "origin": {
+        "work": "鮑照〈觀漏賦〉",
+        "text": "又吹波而助瀾",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "又吹波而助澜"
+       },
+       "ex": {
+        "h": "融资买股一定程度上对橡胶的股价起到推波助澜的作用。",
+        "py": "Róng zī mǎi gǔ yī dìng chéng dù shàng duì xiàng jiāo de gǔ jià qǐ dào tuī bō zhù lán de zuò yòng.",
+        "py_auto": true,
+        "src": "wikipedia: 橡皮股票风潮",
+        "en": "Buying shares on borrowed money helped push rubber share prices higher still.",
+        "h_t": "融資買股一定程度上對橡膠的股價起到推波助瀾的作用。",
+        "h_s": "融资买股一定程度上对橡胶的股价起到推波助澜的作用。"
+       },
+       "w_s": "推波助澜"
+      },
+      {
+       "w": "走投無路",
+       "py": "zǒu tóu wú lù",
+       "lit": "walk-head-for-without-road",
+       "en": "to have nowhere to turn",
+       "origin": {
+        "work": "楊顯之《瀟湘雨》",
+        "text": "淋的我走投無路",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "淋的我走投无路"
+       },
+       "note": "From a Yuan play. A wife, exiled in the rain, has nowhere to go.",
+       "ex": {
+        "h": "我们被逼得走投无路了。",
+        "py": "Wǒ men bèi bī de zǒu tóu wú lù le.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "We've been driven into a corner.",
+        "h_t": "我們被逼得走投無路了。",
+        "h_s": "我们被逼得走投无路了。"
+       },
+       "w_s": "走投无路"
+      }
+     ],
+     "title_s": "典故"
+    },
+    {
+     "id": 10,
+     "slug": "description",
+     "title": "描寫",
+     "title_py": "Miáoxiě",
+     "title_en": "Describing things and situations",
+     "status": "draft",
+     "intro": "成語 for describing: where something comes from (來龍去脈), how it is told (輕描淡寫, 淋漓盡致, 直截了當), what is there (應有盡有, 貨真價實), how stable it is (搖搖欲墜, 不堪一擊), how far apart two things are (大相徑庭). Several started in a specialised field: geomancy (來龍去脈), painting and drama (輕描淡寫), Zen (裝模作樣), and a novel (百花齊放, from 鏡花緣).\n",
+     "frames": [
+      {
+       "f": "A來B去 / AB去C",
+       "en": "'coming and going': the whole course of something",
+       "ex": [
+        "來龍去脈"
+       ],
+       "f_s": "A来B去 / AB去C",
+       "ex_s": [
+        "来龙去脉"
+       ]
+      },
+      {
+       "f": "應X盡X / 貨真價實",
+       "en": "two short clauses that mirror each other",
+       "ex": [
+        "應有盡有",
+        "貨真價實"
+       ],
+       "f_s": "应X尽X / 货真价实",
+       "ex_s": [
+        "应有尽有",
+        "货真价实"
+       ]
+      },
+      {
+       "f": "X欲Y",
+       "en": "欲 'about to': 搖搖欲墜 'swaying, about to fall'",
+       "ex": [
+        "搖搖欲墜"
+       ],
+       "f_s": "X欲Y",
+       "ex_s": [
+        "摇摇欲坠"
+       ]
+      },
+      {
+       "f": "不堪 / 無足",
+       "en": "'cannot bear' / 'not enough to'",
+       "ex": [
+        "不堪一擊",
+        "無足輕重"
+       ],
+       "f_s": "不堪 / 无足",
+       "ex_s": [
+        "不堪一击",
+        "无足轻重"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "w": "來龍去脈",
+       "py": "lái lóng qù mài",
+       "py_tw": "lái lóng qù mò",
+       "lit": "coming-dragon-going-vein",
+       "en": "the whole story, cause and effect",
+       "origin": {
+        "work": "明·無名氏《運甓記》",
+        "text": "此間前岡有塊好地，來龍去脈，靠嶺朝山",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "此间前冈有块好地，来龙去脉，靠岭朝山"
+       },
+       "note": "A geomancer's term. The \"dragon\" and \"veins\" are the lines of hills and rivers that make a site lucky.",
+       "ex": {
+        "h": "我想知道他的计划的来龙去脉。",
+        "py": "Wǒ xiǎng zhī dào tā de jì huà de lái lóng qù mài.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "I want to know the ins and outs of his plan.",
+        "h_t": "我想知道他的計劃的來龍去脈。",
+        "h_s": "我想知道他的计划的来龙去脉。"
+       },
+       "w_s": "来龙去脉"
+      },
+      {
+       "w": "輕描淡寫",
+       "py": "qīng miáo dàn xiě",
+       "lit": "light-sketch-pale-write",
+       "en": "to play down, to mention in passing",
+       "origin": {
+        "work": "祁彪佳《遠山堂曲品》",
+        "text": "輕描淡染",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "轻描淡染"
+       },
+       "ex": {
+        "h": "黃家後裔因有利害衝突，只能對黃南球食言之事輕描淡寫。",
+        "py": "Huáng jiā hòu yì yīn yǒu lì hài chōng tū, zhǐ néng duì Huáng Nánqiú shí yán zhī shì qīng miáo dàn xiě.",
+        "py_auto": true,
+        "src": "wikipedia: 羅成 (臺灣)",
+        "en": "Because of a conflict of interest, Huang's descendants could only play down the fact that Huang Nanqiu broke his word.",
+        "h_t": "黃家後裔因有利害衝突，只能對黃南球食言之事輕描淡寫。",
+        "h_s": "黄家后裔因有利害冲突，只能对黄南球食言之事轻描淡写。"
+       },
+       "w_s": "轻描淡写"
+      },
+      {
+       "w": "應有盡有",
+       "py": "yīng yǒu jìn yǒu",
+       "lit": "should-have-all-have",
+       "en": "to have everything one could want",
+       "origin": {
+        "work": "宋書·江智淵傳",
+        "text": "人所應有盡有，人所應無盡無",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "人所应有尽有，人所应无尽无"
+       },
+       "ex": {
+        "h": "我们应有尽有。",
+        "py": "Wǒ men yīng yǒu jìn yǒu.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "We have everything.",
+        "h_t": "我們應有盡有。",
+        "h_s": "我们应有尽有。"
+       },
+       "w_s": "应有尽有"
+      },
+      {
+       "w": "貨真價實",
+       "py": "huò zhēn jià shí",
+       "lit": "goods-real-price-honest",
+       "en": "genuine, the real thing",
+       "note": "A shop sign first, \"real goods at honest prices\".",
+       "ex": {
+        "h": "左书“至诚至上 货真价实”，右书“言无二价 童叟无欺”。",
+        "py": "Zuǒ shū “zhì chéng zhì shàng huò zhēn jià shí”, yòu shū “yán wú èr jià tóng sǒu wú qī”.",
+        "py_auto": true,
+        "src": "wikipedia: 天津瑞蚨祥绸布店",
+        "en": "On the left is written 'sincerity above all, real goods at honest prices'; on the right, 'one price only, fair to young and old'.",
+        "h_t": "左書“至誠至上 貨真價實”，右書“言無二價 童叟無欺”。",
+        "h_s": "左书“至诚至上 货真价实”，右书“言无二价 童叟无欺”。"
+       },
+       "w_s": "货真价实"
+      },
+      {
+       "w": "搖搖欲墜",
+       "py": "yáo yáo yù zhuì",
+       "lit": "sway-sway-about-to-fall",
+       "en": "tottering, on the verge of collapse",
+       "origin": {
+        "work": "三國演義·第一〇四回",
+        "text": "見其色昏暗，搖搖欲墜",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "见其色昏暗，摇摇欲坠"
+       },
+       "note": "Zhuge Liang points at his own star, dim and wavering. He dies in the same chapter.",
+       "ex": {
+        "h": "这个建筑摇摇欲坠。",
+        "py": "Zhè ge jiàn zhù yáo yáo yù zhuì.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "This building is about to collapse.",
+        "h_t": "這個建築搖搖欲墜。",
+        "h_s": "这个建筑摇摇欲坠。"
+       },
+       "w_s": "摇摇欲坠"
+      },
+      {
+       "w": "字裡行間",
+       "py": "zì lǐ háng jiān",
+       "lit": "characters-inside-lines-between",
+       "en": "between the lines",
+       "origin": {
+        "work": "梁簡文帝〈答新渝侯和詩書〉",
+        "text": "風雲吐於行間，珠玉生於字裏",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "风云吐于行间，珠玉生于字里"
+       },
+       "ex": {
+        "h": "她写的文章字里行间总是充满浪漫。",
+        "py": "Tā xiě de wén zhāng zì lǐ háng jiān zǒng shì chōng mǎn làng màn.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Her writing is always full of romance between the lines.",
+        "h_t": "她寫的文章字裡行間總是充滿浪漫。",
+        "h_s": "她写的文章字里行间总是充满浪漫。"
+       },
+       "w_s": "字里行间"
+      },
+      {
+       "w": "大張旗鼓",
+       "py": "dà zhāng qí gǔ",
+       "lit": "greatly-spread-flags-drums",
+       "en": "on a grand scale, with great fanfare",
+       "ex": {
+        "h": "建設時期曾大張旗鼓宣傳為“美國最後建造的聯合車站”。",
+        "py": "Jiàn shè shí qī céng dà zhāng qí gǔ xuān chuán wéi “Měiguó zuì hòu jiàn zào de lián hé chē zhàn”.",
+        "py_auto": true,
+        "src": "wikipedia: 洛杉磯聯合車站",
+        "en": "While it was being built, it was loudly promoted as 'the last great union station built in America'.",
+        "h_t": "建設時期曾大張旗鼓宣傳為“美國最後建造的聯合車站”。",
+        "h_s": "建设时期曾大张旗鼓宣传为“美国最后建造的联合车站”。"
+       },
+       "w_s": "大张旗鼓"
+      },
+      {
+       "w": "翻天覆地",
+       "py": "fān tiān fù dì",
+       "lit": "overturn-sky-overturn-earth",
+       "en": "earth-shaking, complete (change)",
+       "ex": {
+        "h": "相比二十年前的日本，现在的日本有了翻天覆地的变化。",
+        "py": "Xiāng bǐ èr shí nián qián de Rìběn, xiàn zài de Rìběn yǒu le fān tiān fù dì de biàn huà.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "Compared with twenty years ago, Japan has changed completely.",
+        "h_t": "相比二十年前的日本，現在的日本有了翻天覆地的變化。",
+        "h_s": "相比二十年前的日本，现在的日本有了翻天覆地的变化。"
+       },
+       "w_s": "翻天覆地"
+      },
+      {
+       "w": "齊心協力",
+       "py": "qí xīn xié lì",
+       "lit": "same-heart-joint-strength",
+       "en": "to pull together",
+       "ex": {
+        "h": "喜羊羊和灰太狼必须齐心协力解决这个问题，所以他们就这样和解了。",
+        "py": "Xǐyángyáng hé Huītàiláng bì xū qí xīn xié lì jiě jué zhè ge wèn tí, suǒ yǐ tā men jiù zhè yàng hé jiě le.",
+        "py_auto": true,
+        "src": "wikipedia: 喜羊羊",
+        "en": "Pleasant Goat and Big Big Wolf had to pull together to solve the problem, and so they made peace.",
+        "h_t": "喜羊羊和灰太狼必須齊心協力解決這個問題，所以他們就這樣和解了。",
+        "h_s": "喜羊羊和灰太狼必须齐心协力解决这个问题，所以他们就这样和解了。"
+       },
+       "w_s": "齐心协力"
+      },
+      {
+       "w": "得天獨厚",
+       "py": "dé tiān dú hòu",
+       "lit": "receive-heaven-alone-generous",
+       "en": "richly endowed by nature, uniquely favoured",
+       "ex": {
+        "h": "得天獨厚的地理條件，奠定了美斯樂茶業發展的先天優勢。",
+        "py": "Dé tiān dú hòu de dì lǐ tiáo jiàn, diàn dìng le Měisīlè chá yè fā zhǎn de xiān tiān yōu shì.",
+        "py_auto": true,
+        "src": "wikipedia: 美斯乐",
+        "en": "Its exceptional geography gave Mae Salong's tea industry a natural head start.",
+        "h_t": "得天獨厚的地理條件，奠定了美斯樂茶業發展的先天優勢。",
+        "h_s": "得天独厚的地理条件，奠定了美斯乐茶业发展的先天优势。"
+       },
+       "w_s": "得天独厚"
+      },
+      {
+       "w": "恰到好處",
+       "py": "qià dào hǎo chù",
+       "lit": "just-reach-good-point",
+       "en": "just right",
+       "ex": {
+        "h": "申東燁表示:「成始璄真的很會做菜，調味也恰到好處。",
+        "py": "Shēn Dōngyè biǎo shì: “Chéng Shǐjǐng zhēn de hěn huì zuò cài, tiáo wèi yě qià dào hǎo chù.",
+        "py_auto": true,
+        "src": "wikipedia: 成始璄",
+        "en": "Shin Dong-yup said, 'Sung Si-kyung is a really good cook, and his seasoning is just right.'",
+        "h_t": "申東燁表示:「成始璄真的很會做菜，調味也恰到好處。",
+        "h_s": "申东烨表示:「成始璄真的很会做菜，调味也恰到好处。"
+       },
+       "w_s": "恰到好处"
+      },
+      {
+       "w": "大相徑庭",
+       "py": "dà xiāng jìng tíng",
+       "lit": "greatly-mutual-path-courtyard",
+       "en": "poles apart, completely different",
+       "note": "From 莊子·逍遙遊 大有逕庭, \"as far apart as the road outside the gate and the courtyard inside\" (checked against the 大辞典 entry 大有逕庭). Compare 截然不同 (lesson 4).",
+       "ex": {
+        "h": "虽然外形看起来像是金字塔魔方，但两者的解法大相径庭。",
+        "py": "Suī rán wài xíng kàn qǐ lái xiàng shì jīn zì tǎ mó fāng, dàn liǎng zhě de jiě fǎ dà xiāng jìng tíng.",
+        "py_auto": true,
+        "src": "wikipedia: 粽子魔方",
+        "en": "It looks like a Pyraminx, but the two are solved in completely different ways.",
+        "h_t": "雖然外形看起來像是金字塔魔方，但兩者的解法大相徑庭。",
+        "h_s": "虽然外形看起来像是金字塔魔方，但两者的解法大相径庭。"
+       },
+       "w_s": "大相径庭"
+      },
+      {
+       "w": "旗幟鮮明",
+       "py": "qí zhì xiān míng",
+       "lit": "flag-bright-clear",
+       "en": "clear-cut, taking a clear stand",
+       "ex": {
+        "h": "在整个二战期间，诺克一直旗帜鲜明的反对战争，这在当时是极为罕见的。",
+        "py": "Zài zhěng gè Èr Zhàn qī jiān, Nuòkè yī zhí qí zhì xiān míng de fǎn duì zhàn zhēng, zhè zài dāng shí shì jí wéi hǎn jiàn de.",
+        "py_auto": true,
+        "src": "wikipedia: 艾尔伯特·杰伊·诺克",
+        "en": "Throughout the Second World War, Nock openly opposed the war, which was extremely rare at the time.",
+        "h_t": "在整個二戰期間，諾克一直旗幟鮮明的反對戰爭，這在當時是極為罕見的。",
+        "h_s": "在整个二战期间，诺克一直旗帜鲜明的反对战争，这在当时是极为罕见的。"
+       },
+       "w_s": "旗帜鲜明"
+      },
+      {
+       "w": "蛛絲馬跡",
+       "py": "zhū sī mǎ jī",
+       "lit": "spider-thread-horse-track",
+       "en": "a faint clue",
+       "origin": {
+        "work": "楊筠松《撼龍經》",
+        "text": "欲斷不斷馬跡過",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "欲断不断马迹过"
+       },
+       "note": "Another geomancer's image, for faint lines in the landscape. Now a detective's word.",
+       "ex": {
+        "h": "等偵探登場后，再通過各種蛛丝马迹查明真相、抓到犯人。",
+        "py": "Děng zhēn tàn dēng cháng hòu, zài tōng guò gè zhǒng zhū sī mǎ jī chá míng zhēn xiàng, zhuā dào fàn rén.",
+        "py_auto": true,
+        "src": "wikipedia: 倒叙推理",
+        "en": "Then the detective appears, follows all sorts of faint clues to the truth, and catches the culprit.",
+        "h_t": "等偵探登場後，再通過各種蛛絲馬跡查明真相、抓到犯人。",
+        "h_s": "等侦探登场后，再通过各种蛛丝马迹查明真相、抓到犯人。"
+       },
+       "w_s": "蛛丝马迹"
+      },
+      {
+       "w": "裝模作樣",
+       "py": "zhuāng mó zuò yàng",
+       "lit": "put-on-mould-make-shape",
+       "en": "to put on an act, to show off",
+       "origin": {
+        "work": "臨濟錄",
+        "text": "爾秖麼幻化上頭作模作樣",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "尔秖么幻化上头作模作样"
+       },
+       "note": "Linji, the Zen master, mocking monks who strike poses before illusions. The source has 作模作樣.",
+       "ex": {
+        "h": "自戀，同時受美少女歡迎，在美少女面前會說出裝模作樣的台詞。",
+        "py": "Zì liàn, tóng shí shòu měi shào nǚ huān yíng, zài měi shào nǚ miàn qián huì shuō chū zhuāng mó zuò yàng de tái cí.",
+        "py_auto": true,
+        "src": "wikipedia: Battle Spirits 少年激霸彈角色列表",
+        "en": "A narcissist who is popular with pretty girls, and puts on a show of fine words in front of them.",
+        "h_t": "自戀，同時受美少女歡迎，在美少女面前會說出裝模作樣的臺詞。",
+        "h_s": "自恋，同时受美少女欢迎，在美少女面前会说出装模作样的台词。"
+       },
+       "w_s": "装模作样"
+      },
+      {
+       "w": "淋漓盡致",
+       "py": "lín lí jìn zhì",
+       "lit": "dripping-completely-to-the-end",
+       "en": "thoroughly, vividly",
+       "origin": {
+        "work": "李清《三垣筆記》",
+        "text": "亦淋漓盡致",
+        "checked": [
+         "moe"
+        ],
+        "text_s": "亦淋漓尽致"
+       },
+       "ex": {
+        "h": "这样才能将自己浑厚的歌声淋漓尽致的发挥出来。",
+        "py": "Zhè yàng cái néng jiāng zì jǐ hún hòu de gē shēng lín lí jìn zhì de fā huī chū lái.",
+        "py_auto": true,
+        "src": "wikipedia: 小黑 (马来西亚歌手)",
+        "en": "Only then could he bring out his rich voice to the full.",
+        "h_t": "這樣才能將自己渾厚的歌聲淋漓盡致的發揮出來。",
+        "h_s": "这样才能将自己浑厚的歌声淋漓尽致的发挥出来。"
+       },
+       "w_s": "淋漓尽致"
+      },
+      {
+       "w": "無足輕重",
+       "py": "wú zú qīng zhòng",
+       "lit": "not-enough-light-heavy",
+       "en": "insignificant",
+       "note": "The opposite of 舉足輕重 (lesson 5).",
+       "ex": {
+        "h": "莫洛迪被苏联政府给了一个无足轻重的职位，并且经常饮酒为乐。",
+        "py": "Mòluòdí bèi Sūlián zhèng fǔ gěi le yī gè wú zú qīng zhòng de zhí wèi, bìng qiě jīng cháng yǐn jiǔ wéi lè.",
+        "py_auto": true,
+        "src": "wikipedia: 科伦·莫洛迪",
+        "en": "The Soviet government gave Molody an insignificant post, and he often drank for pleasure.",
+        "h_t": "莫洛迪被蘇聯政府給了一個無足輕重的職位，並且經常飲酒為樂。",
+        "h_s": "莫洛迪被苏联政府给了一个无足轻重的职位，并且经常饮酒为乐。"
+       },
+       "w_s": "无足轻重"
+      },
+      {
+       "w": "不堪一擊",
+       "py": "bù kān yī jī",
+       "py_tw": "bù kān yī jí",
+       "lit": "not-withstand-one-blow",
+       "en": "to collapse at the first blow",
+       "ex": {
+        "h": "然而，轉入學園之後，才發現自己是多麼不堪一擊。",
+        "py": "Rán ér, zhuǎn rù xué yuán zhī hòu, cái fā xiàn zì jǐ shì duō me bù kān yī jī.",
+        "py_auto": true,
+        "src": "wikipedia: PRAVE!",
+        "en": "But only after moving to the academy did they find out how easily they could be beaten.",
+        "h_t": "然而，轉入學園之後，才發現自己是多麼不堪一擊。",
+        "h_s": "然而，转入学园之后，才发现自己是多么不堪一击。"
+       },
+       "w_s": "不堪一击"
+      },
+      {
+       "w": "直截了當",
+       "py": "zhí jié liǎo dàng",
+       "lit": "straight-cut-finished-proper",
+       "en": "straightforward, blunt",
+       "ex": {
+        "h": "他是个直截了当的人，说得到，做得到。",
+        "py": "Tā shì gè zhí jié liǎo dàng de rén, shuō de dào, zuò de dào.",
+        "py_auto": true,
+        "src": "tatoeba",
+        "en": "He's a straightforward man: he does what he says.",
+        "h_t": "他是個直截了當的人，說得到，做得到。",
+        "h_s": "他是个直截了当的人，说得到，做得到。"
+       },
+       "w_s": "直截了当"
+      },
+      {
+       "w": "百花齊放",
+       "py": "bǎi huā qí fàng",
+       "lit": "hundred-flowers-together-bloom",
+       "en": "a hundred flowers bloom, a flourishing variety",
+       "origin": {
+        "work": "李汝珍《鏡花緣》第三回",
+        "text": "那知下界帝王忽有御旨命他百花齊放",
+        "checked": [
+         "dcd"
+        ],
+        "text_s": "那知下界帝王忽有御旨命他百花齐放"
+       },
+       "note": "In the novel, Empress Wu orders every flower to bloom at once in winter. Later a political slogan (1956), with 百家爭鳴.",
+       "ex": {
+        "h": "民間為了保護自己，紛紛習武，知名武術家百花齊放，當中最廣為人知的如「廣東十虎」。",
+        "py": "Mín jiān wèi le bǎo hù zì jǐ, fēn fēn xí wǔ, zhī míng wǔ shù jiā bǎi huā qí fàng, dāng zhōng zuì guǎng wéi rén zhī de rú “Guǎngdōng Shí Hǔ”.",
+        "py_auto": true,
+        "src": "wikipedia: 華南海盜",
+        "en": "To protect themselves people took up martial arts, and famous masters flourished everywhere, the best known being the Ten Tigers of Canton.",
+        "h_t": "民間為了保護自己，紛紛習武，知名武術家百花齊放，當中最廣為人知的如「廣東十虎」。",
+        "h_s": "民间为了保护自己，纷纷习武，知名武术家百花齐放，当中最广为人知的如「广东十虎」。"
+       },
+       "w_s": "百花齐放"
+      }
+     ],
+     "title_s": "描写"
+    }
+   ]
   }
  ]
 }

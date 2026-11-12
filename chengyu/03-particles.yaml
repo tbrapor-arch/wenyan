@@ -1,0 +1,139 @@
+id: 3
+slug: particles
+title: 虛詞
+title_py: Xūcí
+title_en: Classical grammar inside modern Chinese
+status: draft
+intro: >
+  Modern Chinese keeps a handful of classical function words alive, mostly inside 成語. Learn
+  these five and a large share of 成語 become readable: 所 + verb "what one Vs", 而 "and, and
+  then, yet", 之 "of" (= 的), 以 "by means of, in order to", 於 "at, to, than" (= 在, 對, 比). Two
+  more appear here: 其 "its, his, their" and 諸 "all the, the various". These are the same words the
+  main Wenyan course teaches in its first lessons.
+frames:
+  - {f: 所 + V, en: "'what one Vs', a noun: 前所未有 'what before has-not-had'", ex: [前所未有, 理所當然, 眾所周知, 為所欲為, 隨心所欲, 不知所措, 無所事事]}
+  - {f: V而V, en: "而 links two actions: 'and then' or 'yet'", ex: [脫穎而出, 視而不見, 取而代之, 挺身而出, 輕而易舉]}
+  - {f: X之Y, en: "之 = 的: 'the Y of X'", ex: [當務之急]}
+  - {f: X以Y, en: "以 = 'with, by means of, so as to'", ex: [夢寐以求, 全力以赴, 自以為是, 不以為然]}
+  - {f: X於Y, en: "於 = 'to, at, for'", ex: [無濟於事]}
+  - {f: 其 / 諸, en: "其 = 'its, their'; 諸 = 'all the, the various'", ex: [名副其實, 諸如此類]}
+items:
+  - w: 前所未有
+    py: qián suǒ wèi yǒu
+    lit: before-what-not-yet-have
+    en: unprecedented
+    ex: {h: "依靠不斷重複發券，古羅馬建築達到前所未有的宏偉規模。", py: "Yī kào bù duàn chóng fù fā xuàn, Gǔ Luómǎ jiàn zhù dá dào qián suǒ wèi yǒu de hóng wěi guī mó.", py_auto: true, src: "wikipedia: 古羅馬建築", en: "By repeating the arch again and again, Roman architecture reached an unprecedented scale."}
+  - w: 理所當然
+    py: lǐ suǒ dāng rán
+    lit: reason-what-should-so
+    en: of course, only natural; to take for granted
+    note: 視為理所當然 = to take for granted.
+    ex: {h: "我們視健康為理所當然, 直到疾病侵襲。", py: "Wǒ men shì jiàn kāng wéi lǐ suǒ dāng rán, zhí dào jí bìng qīn xí.", py_auto: true, src: "tatoeba", en: We take our health for granted until illness strikes.}
+  - w: 眾所周知
+    py: zhòng suǒ zhōu zhī
+    lit: crowd-what-all-know
+    en: as everyone knows
+    ex: {h: "众所周知，空气是多种气体的混合体。", py: "Zhòng suǒ zhōu zhī, kōng qì shì duō zhǒng qì tǐ de hùn hé tǐ.", py_auto: true, src: "tatoeba", en: "As everyone knows, air is a mixture of several gases."}
+  - w: 為所欲為
+    py: wéi suǒ yù wéi
+    lit: do-what-want-do
+    en: to do whatever one likes (with no limits)
+    note: Negative, unlike 隨心所欲 which can be neutral.
+    ex: {h: "上级的监督太远，同级的监督太软，于是一把手就变得为所欲为。", py: "Shàng jí de jiān dū tài yuǎn, tóng jí de jiān dū tài ruǎn, yú shì yī bǎ shǒu jiù biàn de wéi suǒ yù wéi.", py_auto: true, src: "wikipedia: 2008年中华人民共和国腐败案件", en: "Oversight from above is too distant and from colleagues too soft, so the man in charge does whatever he likes."}
+  - w: 隨心所欲
+    py: suí xīn suǒ yù
+    lit: follow-heart-what-desire
+    en: to do as one pleases
+    origin: {work: 論語·為政, text: 七十而從心所欲，不踰矩, checked: [moe]}
+    note: Confucius at seventy "followed what his heart desired without overstepping the rules". → main course, 論語 stage.
+    ex: {h: "你可以隨心所欲。", py: "Nǐ kě yǐ suí xīn suǒ yù.", py_auto: true, src: "tatoeba", en: You can do as you please.}
+  - w: 不知所措
+    py: bù zhī suǒ cuò
+    lit: not-know-where-place (one's hands and feet)
+    en: at a loss, not knowing what to do
+    origin: {work: 管子·七臣七主, text: 臣下振怒，不知所錯, checked: [moe]}
+    note: 措 "to place" (the source writes 錯, a loan for 措).
+    ex: {h: "他对意料外的结果茫然不知所措。", py: "Tā duì yì liào wài de jié guǒ máng rán bù zhī suǒ cuò.", py_auto: true, src: "tatoeba", en: He was completely at a loss at the unexpected result.}
+  - w: 無所事事
+    py: wú suǒ shì shì
+    lit: without-what-do-thing
+    en: to have nothing to do, to idle about
+    origin: {work: 史記·曹相國世家, text: 見參不事事, checked: [moe]}
+    note: "The first 事 is a verb \"to attend to\", the second a noun \"affairs\": a classical habit (→ 詞類活用)."
+    ex: {h: "吉姆工作努力，而约翰却无所事事。", py: "Jímǔ gōng zuò nǔ lì, ér Yuēhàn què wú suǒ shì shì.", py_auto: true, src: "tatoeba", en: "Jim works hard, but John just idles about."}
+  - w: 脫穎而出
+    py: tuō yǐng ér chū
+    lit: shed-tip-and-come-out
+    en: to stand out from the crowd
+    origin: {work: 史記·平原君虞卿列傳, text: 使遂蚤得處囊中，乃穎脫而出，非特其末見而已, checked: [moe]}
+    note: "Mao Sui compares himself to an awl in a bag: given the chance, the whole point would come through, not just the tip."
+    ex: {h: "玛丽从大约500名申请者中脱颖而出。", py: "Mǎlì cóng dà yuē 500 míng shēn qǐng zhě zhōng tuō yǐng ér chū.", py_auto: true, src: "tatoeba", en: Mary stood out from about 500 applicants.}
+  - w: 視而不見
+    py: shì ér bù jiàn
+    lit: look-yet-not-see
+    en: to look but not see; to turn a blind eye
+    ex: {h: "由于护工完全不具威胁，其他人基本上对它们视而不见。", py: "Yóu yú hù gōng wán quán bù jù wēi xié, qí tā rén jī běn shàng duì tā men shì ér bù jiàn.", py_auto: true, src: "wikipedia: 质量效应系列", en: "Since the keepers pose no threat at all, everyone else basically ignores them."}
+  - w: 取而代之
+    py: qǔ ér dài zhī
+    lit: take-and-replace-him
+    en: to take someone's place, to replace
+    origin: {work: 史記·項羽本紀, text: 彼可取而代也, checked: [dcd]}
+    note: The young Xiang Yu, watching the First Emperor's procession, says "he can be taken and replaced". 之 = him / it.
+    ex: {h: "元帝即位后几年，弘恭死了，石显取而代之，担任中书令。", py: "Yuándì jí wèi hòu jǐ nián, Hóng Gōng sǐ le, Shí Xiǎn qǔ ér dài zhī, dān rèn zhōng shū lìng.", py_auto: true, src: "wikipedia: 弘恭", en: "A few years after Emperor Yuan came to the throne, Hong Gong died and Shi Xian replaced him as Palace Secretary."}
+  - w: 挺身而出
+    py: tǐng shēn ér chū
+    lit: straighten-body-and-step-out
+    en: to step forward (to defend or help)
+    ex: {h: "這時呂陶、上官均挺身而出為蘇軾辯護，史稱蜀洛黨爭。", py: "Zhè shí Lǚ Táo, Shàngguān Jūn tǐng shēn ér chū wèi Sū Shì biàn hù, shǐ chēng Shǔ-Luò dǎng zhēng.", py_auto: true, src: "wikipedia: 賈易", en: "At this point Lü Tao and Shangguan Jun stepped forward to defend Su Shi: this is known as the Shu–Luo factional struggle."}
+  - w: 輕而易舉
+    py: qīng ér yì jǔ
+    lit: light-and-easy-lift
+    en: effortless, very easy
+    origin: {work: 朱熹《詩集傳》·大雅·烝民, text: 言人皆言德甚輕而易舉，然人莫能舉也, checked: [moe]}
+    ex: {h: "她輕而易舉的就把詩背熟了。", py: "Tā qīng ér yì jǔ de jiù bǎ shī bèi shú le.", py_auto: true, src: "tatoeba", en: She learned the poem by heart effortlessly.}
+  - w: 當務之急
+    py: dāng wù zhī jí
+    lit: present-task-'s-urgency
+    en: the most urgent task
+    origin: {work: 孟子·盡心上, text: 知者無不知也，當務之為急, checked: [moe]}
+    ex: {h: "這是當務之急。", py: "Zhè shì dāng wù zhī jí.", py_auto: true, src: "tatoeba", en: This is the most urgent thing.}
+  - w: 夢寐以求
+    py: mèng mèi yǐ qiú
+    lit: dream-sleep-by-seek
+    en: to long for, dreamed of
+    origin: {work: 詩經·周南·關雎, text: 窈窕淑女，寤寐求之, checked: [moe]}
+    note: "The opening poem of the 詩經: the young man seeks the girl \"awake and asleep\" (寤寐)."
+    ex: {h: "巴西海军梦寐以求40年的喷气式战斗机，终于即将变为现实。", py: "Bāxī hǎi jūn mèng mèi yǐ qiú 40 nián de pēn qì shì zhàn dòu jī, zhōng yú jí jiāng biàn wéi xiàn shí.", py_auto: true, src: "wikipedia: 米勒斯吉拿斯號航空母艦", en: "The jet fighters the Brazilian navy had dreamed of for forty years were finally about to become reality."}
+  - w: 全力以赴
+    py: quán lì yǐ fù
+    lit: whole-strength-with-go
+    en: to go all out, to give it everything
+    ex: {h: "我们全力以赴来完成工作。", py: "Wǒ men quán lì yǐ fù lái wán chéng gōng zuò.", py_auto: true, src: "tatoeba", en: We went all out to finish the work.}
+  - w: 自以為是
+    py: zì yǐ wéi shì
+    lit: self-consider-as-right
+    en: self-righteous, opinionated
+    origin: {work: 孟子·盡心下, text: 眾皆悅之，自以為是，而不可與入堯舜之道, checked: [moe]}
+    note: "以為 \"take as\" splits to 以…為… in classical Chinese: 自以為是 = 以自為是."
+    ex: {h: "法国人的自以为是真是让人难以忍受。", py: "Fǎguó rén de zì yǐ wéi shì zhēn shì ràng rén nán yǐ rěn shòu.", py_auto: true, src: "tatoeba", en: The self-righteousness of the French is really hard to bear.}
+  - w: 不以為然
+    py: bù yǐ wéi rán
+    lit: not-consider-as-so
+    en: to disagree, to not think much of
+    ex: {h: "巴顿脾气火爆，性格强硬，对战斗疲劳的病情不以为然。", py: "Bādùn pí qì huǒ bào, xìng gé qiáng yìng, duì zhàn dòu pí láo de bìng qíng bù yǐ wéi rán.", py_auto: true, src: "wikipedia: 乔治·巴顿掌掴事件", en: "Patton was hot-tempered and tough, and didn't think much of combat fatigue as a condition."}
+  - w: 無濟於事
+    py: wú jì yú shì
+    lit: without-help-to-matter
+    en: no use, of no help
+    ex: {h: "再试也无济于事了。", py: "Zài shì yě wú jì yú shì le.", py_auto: true, src: "tatoeba", en: There's no use trying again.}
+  - w: 名副其實
+    py: míng fù qí shí
+    lit: name-match-its-reality
+    en: worthy of the name, a real…
+    note: 名 "name" vs 實 "reality" is a classical pair (名實). 其 = its.
+    ex: {h: "前往罗马的旅程是一个名副其实的胜利进军。", py: "Qián wǎng Luómǎ de lǚ chéng shì yī gè míng fù qí shí de shèng lì jìn jūn.", py_auto: true, src: "wikipedia: 圣母进教之佑瞻礼", en: The journey to Rome was a true triumphal march.}
+  - w: 諸如此類
+    py: zhū rú cǐ lèi
+    lit: all-like-this-kind
+    en: and so on, things like that
+    ex: {h: "由于诸如此类的种种原因，禁酒运动开始受到人们的反对。", py: "Yóu yú zhū rú cǐ lèi de zhǒng zhǒng yuán yīn, jìn jiǔ yùn dòng kāi shǐ shòu dào rén men de fǎn duì.", py_auto: true, src: "wikipedia: 美國憲法第十八修正案", en: "For all these reasons and others like them, the temperance movement began to meet opposition."}
