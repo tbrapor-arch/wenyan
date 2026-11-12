@@ -111,8 +111,8 @@ code{font:13px ui-monospace,Menlo,monospace;background:var(--paper-2);padding:1p
 .en{font-size:16px}
 .lit{font-size:13px;color:var(--ink-2);margin-top:2px}
 html.nopy .py{display:none}
-html.cover .page.right .ln > *,html.cover .en-inline,html.cover .cy .cr > *{filter:blur(6px);opacity:.5;transition:.2s}
-html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline,html.cover .cy.peek .cr > *{filter:none;opacity:1}
+html.cover .page.right .ln > *,html.cover .en-inline{filter:blur(6px);opacity:.5;transition:.2s}
+html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline{filter:none;opacity:1}
 .w{cursor:pointer;border-radius:3px;transition:background .15s;text-decoration:underline dotted var(--rule);text-underline-offset:6px}
 .w:hover,.w.on{background:var(--hl)}
 sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super;padding:0 2px;border-radius:3px}
@@ -311,7 +311,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
       <div class="toggles">
         <button class="tg" id="tScript" aria-pressed="${simp}" title="Traditional / simplified">${simp ? "简 → 繁" : "繁 → 简"}</button>
         ${T.key === "wenyan" || T.key === "chengyu" ? `<button class="tg" id="tPy" aria-pressed="${py}">Pinyin</button>` : ""}
-        ${reading || T.key === "chengyu" ? `<button class="tg" id="tCover" aria-pressed="${cover}" title="Hide the English; tap a line to check">Cover</button>` : ""}
+        ${reading ? `<button class="tg" id="tCover" aria-pressed="${cover}" title="Hide the English; tap a line to check">Cover</button>` : ""}
       </div></div>`;
   }
   function finish(){
@@ -465,7 +465,6 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     if (id === "load") return $("#file").click();
     const ln = t.closest(".ln"), cy = t.closest(".cy");
     if (ln && cover) $$(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
-    if (cy && cover) cy.classList.toggle("peek");
   });
   document.addEventListener("change", async e => {
     if (e.target.id !== "file" || !e.target.files[0]) return;
