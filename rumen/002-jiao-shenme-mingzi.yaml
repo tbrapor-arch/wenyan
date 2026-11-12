@@ -6,81 +6,81 @@ title_fr: Comment tu t'appelles ?
 title_en: What's your name?
 status: draft
 setting:
-  fr: Le lendemain, au bureau. Xiaoyu présente Marc à Mme Li, qui donne des cours de chinois au personnel.
-  en: The next day, at the office. Xiaoyu introduces Marc to Ms Li, who teaches Chinese to the staff.
+  fr: "Le lendemain, au bureau. Xiaoyu présente Marc à Mme Li, qui donne des cours de chinois au personnel."
+  en: "The next day, at the office. Xiaoyu introduces Marc to Ms Li, who teaches Chinese to the staff."
 names:
 - {w: "李", py: "Lǐ", fr: "Li", en: "Li"}
 lines:
 - n: 1
-  who: 小雨
-  h: 李老师，您好！
-  py: Lǐ lǎoshī, nín hǎo!
-  fr: Bonjour, madame Li !
-  en: Good morning, Ms Li!
-  lit_fr: (Li professeur, vous bien !)
-  lit_en: (Li teacher, you good!)
+  who: "小雨"
+  h: "李老师，您好！"
+  py: "Lǐ lǎoshī, nín hǎo!"
+  fr: "Bonjour, madame Li !"
+  en: "Good morning, Ms Li!"
+  lit_fr: "(Li professeur, vous bien !)"
+  lit_en: "(Li teacher, you good!)"
 - n: 2
-  who: 李老师
-  h: 你好，小雨！他是……？
-  py: Nǐ hǎo, Xiǎoyǔ! Tā shì……?
-  fr: Bonjour, Xiaoyu ! Et lui, c'est… ?
-  en: Hello, Xiaoyu! And he is…?
+  who: "李老师"
+  h: "你好，小雨！他是……？"
+  py: "Nǐ hǎo, Xiǎoyǔ! Tā shì……?"
+  fr: "Bonjour, Xiaoyu ! Et lui, c'est… ?"
+  en: "Hello, Xiaoyu! And he is…?"
 - n: 3
-  who: 小雨
-  h: 他是我的同事。
-  py: Tā shì wǒ de tóngshì.
-  fr: C'est mon collègue.
-  en: He's my colleague.
+  who: "小雨"
+  h: "他是我的同事。"
+  py: "Tā shì wǒ de tóngshì."
+  fr: "C'est mon collègue."
+  en: "He's my colleague."
 - n: 4
-  who: 李老师
-  h: 你好！你叫什么名字？
-  py: Nǐ hǎo! Nǐ jiào shénme míngzi?
-  fr: Bonjour ! Comment tu t'appelles ?
-  en: Hello! What's your name?
-  lit_fr: (Tu appeler quel nom ?)
-  lit_en: (You called what name?)
+  who: "李老师"
+  h: "你好！你叫什么名字？"
+  py: "Nǐ hǎo! Nǐ jiào shénme míngzi?"
+  fr: "Bonjour ! Comment tu t'appelles ?"
+  en: "Hello! What's your name?"
+  lit_fr: "(Tu appeler quel nom ?)"
+  lit_en: "(You called what name?)"
 - n: 5
-  who: 马克
-  h: 我叫马克。您呢？
-  py: Wǒ jiào Mǎkè. Nín ne?
-  fr: Je m'appelle Marc. Et vous ?
-  en: I'm called Marc. And you?
+  who: "马克"
+  h: "我叫马克。您呢？"
+  py: "Wǒ jiào Mǎkè. Nín ne?"
+  fr: "Je m'appelle Marc. Et vous ?"
+  en: "I'm called Marc. And you?"
 - n: 6
-  who: 李老师
-  h: 我姓李。
-  py: Wǒ xìng Lǐ.
-  fr: Je m'appelle Li (c'est mon nom de famille).
-  en: My surname is Li.
-  lit_fr: (Je avoir-pour-nom-de-famille Li.)
-  lit_en: (I surnamed Li.)
+  who: "李老师"
+  h: "我姓李。"
+  py: "Wǒ xìng Lǐ."
+  fr: "Je m'appelle Li (c'est mon nom de famille)."
+  en: "My surname is Li."
+  lit_fr: "(Je avoir-pour-nom-de-famille Li.)"
+  lit_en: "(I surnamed Li.)"
 - n: 7
-  who: 马克
-  h: 李老师好！认识您很高兴。
-  py: Lǐ lǎoshī hǎo! Rènshi nín hěn gāoxìng.
-  fr: Bonjour, madame Li ! Enchanté.
-  en: Hello, Ms Li! Pleased to meet you.
-  lit_fr: (Li professeur bien ! Connaître vous très content.)
-  lit_en: (Li teacher good! Know you very glad.)
+  who: "马克"
+  h: "李老师好！认识您很高兴。"
+  py: "Lǐ lǎoshī hǎo! Rènshi nín hěn gāoxìng."
+  fr: "Bonjour, madame Li ! Enchanté."
+  en: "Hello, Ms Li! Pleased to meet you."
+  lit_fr: "(Li professeur bien ! Connaître vous très content.)"
+  lit_en: "(Li teacher good! Know you very glad.)"
 - n: 8
-  who: 李老师
-  h: 我也很高兴。
-  py: Wǒ yě hěn gāoxìng.
-  fr: Moi aussi.
-  en: Likewise.
-  lit_fr: (Je aussi très content.)
-  lit_en: (I also very glad.)
+  who: "李老师"
+  h: "我也很高兴。"
+  py: "Wǒ yě hěn gāoxìng."
+  fr: "Moi aussi."
+  en: "Likewise."
+  lit_fr: "(Je aussi très content.)"
+  lit_en: "(I also very glad.)"
 - n: 9
-  who: 马克
-  h: 她是你的老师吗？
-  py: Tā shì nǐ de lǎoshī ma?
-  fr: C'est ta prof ?
-  en: Is she your teacher?
+  who: "马克"
+  h: "她是你的老师吗？"
+  py: "Tā shì nǐ de lǎoshī ma?"
+  fr: "C'est ta prof ?"
+  en: "Is she your teacher?"
 - n: 10
-  who: 小雨
-  h: 是啊，她也是我的老师！
-  py: Shì a, tā yě shì wǒ de lǎoshī!
-  fr: Eh oui, c'est aussi ma prof !
-  en: Yes, she's my teacher too!
+  who: "小雨"
+  h: "是啊，她也是我的老师！"
+  py: "Shì a, tā yě shì wǒ de lǎoshī!"
+  fr: "Eh oui, c'est aussi ma prof !"
+  en: "Yes, she's my teacher too!"
 notes:
 - n: 1
   line: 1

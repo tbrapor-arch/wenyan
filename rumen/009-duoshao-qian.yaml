@@ -1,0 +1,201 @@
+id: 9
+slug: duoshao-qian
+title: 多少钱？
+title_py: Duōshao qián?
+title_fr: C'est combien ?
+title_en: How much is it?
+status: draft
+setting:
+  fr: "Au rayon fruits du supermarché. Marc et Zhang Wei font les courses pour l'appartement."
+  en: "At the supermarket's fruit counter. Marc and Zhang Wei are shopping for the flat."
+lines:
+- n: 1
+  who: "售货员"
+  h: "您好！您要什么？"
+  py: "Nín hǎo! Nín yào shénme?"
+  fr: "Bonjour ! Qu'est-ce qu'il vous faut ?"
+  en: "Hello! What would you like?"
+- n: 2
+  who: "马克"
+  h: "我想买苹果。苹果多少钱一斤？"
+  py: "Wǒ xiǎng mǎi píngguǒ. Píngguǒ duōshao qián yì jīn?"
+  fr: "Je voudrais des pommes. Combien la livre ?"
+  en: "I'd like some apples. How much is a jin?"
+  lit_fr: "(Je vouloir acheter pommes. Pommes combien argent une livre ?)"
+  lit_en: "(I want buy apple. Apple how-much money one jin?)"
+- n: 3
+  who: "售货员"
+  h: "八块一斤。"
+  py: "Bā kuài yì jīn."
+  fr: "Huit yuans la livre."
+  en: "Eight kuai a jin."
+- n: 4
+  who: "马克"
+  h: "真贵！有便宜的吗？"
+  py: "Zhēn guì! Yǒu piányi de ma?"
+  fr: "C'est cher ! Vous en avez des moins chères ?"
+  en: "That's expensive! Do you have cheaper ones?"
+- n: 5
+  who: "售货员"
+  h: "这些五块五一斤。"
+  py: "Zhèxiē wǔ kuài wǔ yì jīn."
+  fr: "Celles-ci sont à cinq yuans cinquante la livre."
+  en: "These are five fifty a jin."
+- n: 6
+  who: "马克"
+  h: "好，我要两斤。"
+  py: "Hǎo, wǒ yào liǎng jīn."
+  fr: "Bien, j'en prends un kilo."
+  en: "Good, I'll take two jin."
+- n: 7
+  who: "售货员"
+  h: "还要别的吗？"
+  py: "Hái yào bié de ma?"
+  fr: "Et avec ça ?"
+  en: "Anything else?"
+- n: 8
+  who: "张伟"
+  h: "马克，我们还要买水！"
+  py: "Mǎkè, wǒmen hái yào mǎi shuǐ!"
+  fr: "Marc, il faut aussi acheter de l'eau !"
+  en: "Marc, we need water too!"
+- n: 9
+  who: "马克"
+  h: "对！水在哪儿？"
+  py: "Duì! Shuǐ zài nǎr?"
+  fr: "C'est vrai ! Où est l'eau ?"
+  en: "Right! Where's the water?"
+- n: 10
+  who: "马克"
+  h: "一共多少钱？"
+  py: "Yígòng duōshao qián?"
+  fr: "Ça fait combien en tout ?"
+  en: "How much is it altogether?"
+- n: 11
+  who: "售货员"
+  h: "一共十六块。"
+  py: "Yígòng shíliù kuài."
+  fr: "Seize yuans en tout."
+  en: "Sixteen kuai altogether."
+- n: 12
+  who: "马克"
+  h: "给您。"
+  py: "Gěi nín."
+  fr: "Voilà."
+  en: "Here you are."
+  lit_fr: "(Donner vous.)"
+  lit_en: "(Give you.)"
+- n: 13
+  who: "张伟"
+  h: "北京的苹果不便宜啊！"
+  py: "Běijīng de píngguǒ bù piányi a!"
+  fr: "Elles ne sont pas données, les pommes à Pékin !"
+  en: "Apples aren't cheap in Beijing!"
+notes:
+- n: 1
+  line: 1
+  topic: vocab
+  fr: >
+    **要** yào « vouloir, prendre ; il faut » : 您要什么？« Qu'est-ce que vous désirez ? », 我要两斤 « j'en
+    prends deux livres ». C'est le verbe des commandes et des achats.
+  en: >
+    **要** yào "to want, to take; to need": 您要什么？"What would you like?", 我要两斤 "I'll take two jin". It's
+    the verb for ordering and buying.
+- n: 2
+  line: 2
+  topic: grammar
+  fr: >
+    **想** xiǎng + verbe = « avoir envie de, voudrais » : 我想买苹果. Plus doux que 要, qui annonce une décision.
+  en: >
+    **想** xiǎng + verb = "would like to": 我想买苹果. Softer than 要, which announces a decision.
+- n: 3
+  line: 2
+  topic: grammar
+  fr: >
+    **多少** duōshao « combien » vaut pour n'importe quel nombre et n'a pas besoin de classificateur, à la
+    différence de 几 (L4 n.2). 多少钱 « combien d'argent ». Le prix vient avant l'unité : 多少钱一斤 « combien
+    une livre », 八块一斤 « huit yuans la livre ».
+  en: >
+    **多少** duōshao "how much, how many" works for any number and needs no measure word, unlike 几 (L4 n.2).
+    多少钱 "how much money". The price comes before the unit: 多少钱一斤 "how much a jin", 八块一斤 "eight kuai a
+    jin".
+- n: 4
+  line: 3
+  topic: culture
+  fr: >
+    L'argent : 块 kuài à l'oral = 元 yuán à l'écrit (le yuan). Un dixième de yuan se dit 毛 máo : 五块五毛 =
+    5,50, et on laisse tomber le dernier mot : 五块五. **斤** jīn = 500 g, l'unité des marchés.
+  en: >
+    Money: 块 kuài in speech = 元 yuán in writing (the yuan). A tenth of a yuan is 毛 máo: 五块五毛 = 5.50, and
+    the last word is dropped: 五块五. **斤** jīn = 500 g, the market unit.
+- n: 5
+  line: 4
+  topic: grammar
+  fr: >
+    便宜的 « des pas chères » : adjectif + 的 = nom (L6 n.4). 有便宜的吗？« Vous en avez des pas chères ? ».
+  en: >
+    便宜的 "cheap ones": adjective + 的 = noun (L6 n.4). 有便宜的吗？"Do you have cheap ones?".
+- n: 6
+  line: 7
+  topic: grammar
+  fr: >
+    **还** hái « encore, en plus » devant le verbe : 还要别的吗 « vous voulez encore autre chose ? ». 我们还要买水
+    « il faut encore acheter de l'eau ». 别的 bié de « autre (chose) ».
+  en: >
+    **还** hái "also, in addition" before the verb: 还要别的吗 "do you want anything else?". 我们还要买水 "we
+    still need to buy water". 别的 bié de "other (things)".
+- n: 7
+  line: 10
+  topic: pron
+  fr: >
+    一共 yígòng « en tout » : yí devant un quatrième ton (L4 n.7). Le même 一 se dit yì devant 斤, premier ton
+    (ligne 2).
+  en: >
+    一共 yígòng "altogether": yí before a fourth tone (L4 n.7). The same 一 is yì before 斤, a first tone
+    (line 2).
+- n: 8
+  line: 12
+  topic: vocab
+  fr: >
+    **给** gěi « donner » : 给您 « (je vous) donne », la formule pour tendre l'argent ou un objet. On verra plus
+    tard 给 « pour, à » devant un verbe.
+  en: >
+    **给** gěi "to give": 给您 "(I) give you", what you say when handing over money or an object. Later, 给 will
+    also mean "for, to" before a verb.
+- n: 9
+  line: 13
+  topic: grammar
+  fr: >
+    不便宜 « pas bon marché » : une façon polie et courante de dire « cher ». 便宜 piányi : le 宜 est au ton
+    neutre.
+  en: >
+    不便宜 "not cheap": a common, mild way to say "expensive". 便宜 piányi: 宜 has a neutral tone.
+words:
+- {w: "要", py: "yào", fr: "vouloir, prendre ; falloir", en: "to want, take; to need"}
+- {w: "想", py: "xiǎng", fr: "avoir envie de, vouloir", en: "would like to"}
+- {w: "买", py: "mǎi", fr: "acheter", en: "to buy"}
+- {w: "苹果", py: "píngguǒ", fr: "pomme", en: "apple"}
+- {w: "多少", py: "duōshao", fr: "combien", en: "how much, how many"}
+- {w: "钱", py: "qián", fr: "argent", en: "money"}
+- {w: "斤", py: "jīn", fr: "livre (500 g)", en: "jin (500 g)"}
+- {w: "八", py: "bā", fr: "huit", en: "eight"}
+- {w: "块", py: "kuài", fr: "yuan (à l'oral)", en: "kuai, yuan (spoken)"}
+- {w: "贵", py: "guì", fr: "cher", en: "expensive"}
+- {w: "便宜", py: "piányi", fr: "bon marché", en: "cheap"}
+- {w: "还", py: "hái", fr: "encore, en plus", en: "also, still"}
+- {w: "别的", py: "bié de", fr: "autre chose", en: "something else"}
+- {w: "水", py: "shuǐ", fr: "eau", en: "water"}
+- {w: "一共", py: "yígòng", fr: "en tout", en: "altogether"}
+- {w: "六", py: "liù", fr: "six", en: "six"}
+- {w: "给", py: "gěi", fr: "donner", en: "to give"}
+exercise:
+  translate:
+  - {h: "这个多少钱？", py: "Zhège duōshao qián?", fr: "Combien coûte celui-ci ?", en: "How much is this one?"}
+  - {h: "我想买一个新桌子。", py: "Wǒ xiǎng mǎi yí ge xīn zhuōzi.", fr: "Je voudrais acheter un nouveau bureau.", en: "I'd like to buy a new desk."}
+  - {h: "超市的苹果很便宜。", py: "Chāoshì de píngguǒ hěn piányi.", fr: "Les pommes du supermarché sont bon marché.", en: "The supermarket's apples are cheap."}
+  - {h: "我们还要买别的吗？", py: "Wǒmen hái yào mǎi bié de ma?", fr: "Il faut acheter autre chose ?", en: "Do we need to buy anything else?"}
+  choose:
+  - {h: "苹果＿＿钱一斤？", opts: [多少, 几, 什么], a: 多少, py: "Píngguǒ duōshao qián yì jīn?", fr: "Les pommes, combien la livre ?", en: "How much is a jin of apples?"}
+  - {h: "我＿＿买水。", opts: [想, 有, 在], a: 想, py: "Wǒ xiǎng mǎi shuǐ.", fr: "Je voudrais acheter de l'eau.", en: "I'd like to buy water."}
+  - {h: "＿＿要别的吗？", opts: [还, 都, 也], a: 还, py: "Hái yào bié de ma?", fr: "Et avec ça ?", en: "Anything else?"}
+  - {h: "一共十六＿＿。", opts: [块, 个, 斤], a: 块, py: "Yígòng shíliù kuài.", fr: "Seize yuans en tout.", en: "Sixteen kuai altogether."}

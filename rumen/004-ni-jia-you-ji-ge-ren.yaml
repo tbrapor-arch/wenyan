@@ -1,0 +1,184 @@
+id: 4
+slug: ni-jia-you-ji-ge-ren
+title: 你家有几个人？
+title_py: Nǐ jiā yǒu jǐ ge rén?
+title_fr: Combien êtes-vous dans ta famille ?
+title_en: How many in your family?
+status: draft
+setting:
+  fr: "Pause café au bureau. Marc montre une photo sur son téléphone."
+  en: "Coffee break at the office. Marc shows a photo on his phone."
+lines:
+- n: 1
+  who: "小雨"
+  h: "马克，你家有几个人？"
+  py: "Mǎkè, nǐ jiā yǒu jǐ ge rén?"
+  fr: "Marc, vous êtes combien dans ta famille ?"
+  en: "Marc, how many are there in your family?"
+  lit_fr: "(Marc, ta famille avoir combien [unité] personnes ?)"
+  lit_en: "(Marc, your family have how-many [unit] people?)"
+- n: 2
+  who: "马克"
+  h: "我家有五个人：爸爸、妈妈、两个妹妹和我。"
+  py: "Wǒ jiā yǒu wǔ ge rén：bàba、māma、liǎng ge mèimei hé wǒ."
+  fr: "Nous sommes cinq : mon père, ma mère, mes deux petites sœurs et moi."
+  en: "There are five of us: my dad, my mum, my two younger sisters and me."
+- n: 3
+  who: "马克"
+  h: "你看！"
+  py: "Nǐ kàn!"
+  fr: "Regarde !"
+  en: "Look!"
+- n: 4
+  who: "小雨"
+  h: "你妹妹很漂亮！你有哥哥吗？"
+  py: "Nǐ mèimei hěn piàoliang! Nǐ yǒu gēge ma?"
+  fr: "Tes sœurs sont très jolies ! Tu as un grand frère ?"
+  en: "Your sisters are very pretty! Do you have an older brother?"
+- n: 5
+  who: "马克"
+  h: "没有。你呢？你有哥哥姐姐吗？"
+  py: "Méiyǒu. Nǐ ne? Nǐ yǒu gēge jiějie ma?"
+  fr: "Non. Et toi ? Tu as des grands frères, des grandes sœurs ?"
+  en: "No. And you? Do you have older brothers or sisters?"
+- n: 6
+  who: "小雨"
+  h: "我没有哥哥，也没有姐姐。我有一个弟弟。"
+  py: "Wǒ méiyǒu gēge, yě méiyǒu jiějie. Wǒ yǒu yí ge dìdi."
+  fr: "Je n'ai ni grand frère ni grande sœur. J'ai un petit frère."
+  en: "I have no older brother and no older sister. I have a younger brother."
+- n: 7
+  who: "小雨"
+  h: "他是大学生。"
+  py: "Tā shì dàxuéshēng."
+  fr: "Il est étudiant."
+  en: "He's at university."
+- n: 8
+  who: "马克"
+  h: "你爸爸妈妈是老师吗？"
+  py: "Nǐ bàba māma shì lǎoshī ma?"
+  fr: "Tes parents sont professeurs ?"
+  en: "Are your parents teachers?"
+- n: 9
+  who: "小雨"
+  h: "我妈妈是老师，我爸爸是医生。"
+  py: "Wǒ māma shì lǎoshī, wǒ bàba shì yīshēng."
+  fr: "Ma mère est professeur, mon père est médecin."
+  en: "My mum is a teacher, my dad is a doctor."
+- n: 10
+  who: "马克"
+  h: "我爸爸也是医生！"
+  py: "Wǒ bàba yě shì yīshēng!"
+  fr: "Mon père aussi est médecin !"
+  en: "My dad's a doctor too!"
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    Entre un nombre et un nom, il faut un **classificateur** (量词 liàngcí). Le plus courant est **个** ge :
+    几个人 « combien de personnes », 五个人 « cinq personnes ». Jamais 五人 à l'oral courant.
+  en: >
+    Between a number and a noun you need a **measure word** (量词 liàngcí). The most common is **个** ge:
+    几个人 "how many people", 五个人 "five people". Never just 五人 in ordinary speech.
+- n: 2
+  line: 1
+  topic: grammar
+  fr: >
+    **几** jǐ « combien » attend une petite réponse (moins de dix, en gros) et prend toujours un
+    classificateur : 几个人。Pour un grand nombre, on verra 多少 (leçon 9).
+  en: >
+    **几** jǐ "how many" expects a small answer (under ten or so) and always takes a measure word: 几个人。For
+    a big number, 多少 comes in lesson 9.
+- n: 3
+  line: 1
+  topic: grammar
+  fr: >
+    Avec la famille, le 的 de possession (L1 n.6) tombe : 你家 « ta famille », 你妹妹 « ta sœur », 我爸爸
+    « mon père ». 家 jiā veut dire « maison » et « famille ».
+  en: >
+    With family, the possessive 的 (L1 n.6) drops: 你家 "your family", 你妹妹 "your sister", 我爸爸 "my dad".
+    家 jiā means both "home" and "family".
+- n: 4
+  line: 2
+  topic: grammar
+  fr: >
+    **两** liǎng « deux » devant un classificateur : 两个妹妹. Pour compter (un, deux, trois) ou dans un
+    nombre (十二), on dit 二 èr. **和** hé « et » relie des noms, jamais des phrases.
+  en: >
+    **两** liǎng "two" before a measure word: 两个妹妹. When counting (one, two, three) or inside a number (十二),
+    say 二 èr. **和** hé "and" joins nouns, never sentences.
+- n: 5
+  line: 2
+  topic: culture
+  fr: >
+    Le chinois distingue aîné et cadet : 哥哥 gēge « grand frère », 姐姐 jiějie « grande sœur », 弟弟 dìdi
+    « petit frère », 妹妹 mèimei « petite sœur ». Il n'y a pas de mot courant pour « frère » tout court.
+  en: >
+    Chinese tells older from younger: 哥哥 gēge "older brother", 姐姐 jiějie "older sister", 弟弟 dìdi "younger
+    brother", 妹妹 mèimei "younger sister". There's no everyday word for just "brother".
+- n: 6
+  line: 5
+  topic: grammar
+  fr: >
+    **有** yǒu « avoir » se nie avec **没** méi, jamais avec 不 : 没有 « ne pas avoir ». Comme pour 是 (L3 n.4),
+    on répond en reprenant le verbe : 有 « oui », 没有 « non ».
+  en: >
+    **有** yǒu "to have" is negated with **没** méi, never with 不: 没有 "not have". As with 是 (L3 n.4), you
+    answer with the verb: 有 "yes", 没有 "no".
+- n: 7
+  line: 6
+  topic: pron
+  fr: >
+    一 yī change de ton comme 不 (L1 n.8) : **yí** devant un quatrième ton, **yì** devant les autres, et yī
+    seul ou dans un nombre. 一个 se dit yí ge, car 个 est à l'origine un quatrième ton (gè).
+  en: >
+    一 yī changes tone like 不 (L1 n.8): **yí** before a fourth tone, **yì** before the others, and yī on its
+    own or inside a number. 一个 is said yí ge, since 个 is a fourth tone at heart (gè).
+- n: 8
+  line: 7
+  topic: vocab
+  fr: >
+    大学生 dàxuéshēng « étudiant d'université » : 大学 « université » (litt. « grande étude ») + 生 « élève ».
+  en: >
+    大学生 dàxuéshēng "university student": 大学 "university" (lit. "great learning") + 生 "pupil".
+- n: 9
+  line: 9
+  topic: grammar
+  fr: >
+    Pas d'article ni d'« un » devant un métier : 我爸爸是医生 « mon père est médecin ». Les noms n'ont
+    pas de pluriel non plus : 老师 = « professeur » ou « professeurs ».
+  en: >
+    No article before a job: 我爸爸是医生 "my dad is a doctor". Nouns have no plural either: 老师 = "teacher" or
+    "teachers".
+words:
+- {w: "家", py: "jiā", fr: "famille ; maison", en: "family; home"}
+- {w: "有", py: "yǒu", fr: "avoir ; il y a", en: "to have; there is"}
+- {w: "几", py: "jǐ", fr: "combien (petit nombre)", en: "how many (small number)"}
+- {w: "个", py: "ge", fr: "(classificateur général)", en: "(general measure word)"}
+- {w: "五", py: "wǔ", fr: "cinq", en: "five"}
+- {w: "爸爸", py: "bàba", fr: "papa, père", en: "dad, father"}
+- {w: "妈妈", py: "māma", fr: "maman, mère", en: "mum, mother"}
+- {w: "两", py: "liǎng", fr: "deux (devant un classificateur)", en: "two (before a measure word)"}
+- {w: "妹妹", py: "mèimei", fr: "petite sœur", en: "younger sister"}
+- {w: "和", py: "hé", fr: "et (entre des noms)", en: "and (between nouns)"}
+- {w: "看", py: "kàn", fr: "regarder", en: "to look, watch"}
+- {w: "漂亮", py: "piàoliang", fr: "joli, beau", en: "pretty, beautiful"}
+- {w: "哥哥", py: "gēge", fr: "grand frère", en: "older brother"}
+- {w: "没有", py: "méiyǒu", fr: "ne pas avoir ; non", en: "not have; no"}
+- {w: "姐姐", py: "jiějie", fr: "grande sœur", en: "older sister"}
+- {w: "一", py: "yī", fr: "un", en: "one"}
+- {w: "弟弟", py: "dìdi", fr: "petit frère", en: "younger brother"}
+- {w: "大学生", py: "dàxuéshēng", fr: "étudiant (d'université)", en: "university student"}
+- {w: "医生", py: "yīshēng", fr: "médecin", en: "doctor"}
+exercise:
+  translate:
+  - {h: "我有两个哥哥。", py: "Wǒ yǒu liǎng ge gēge.", fr: "J'ai deux grands frères.", en: "I have two older brothers."}
+  - {h: "小雨没有姐姐。", py: "Xiǎoyǔ méiyǒu jiějie.", fr: "Xiaoyu n'a pas de grande sœur.", en: "Xiaoyu has no older sister."}
+  - {h: "张伟家有几个人？", py: "Zhāng Wěi jiā yǒu jǐ ge rén?", fr: "Ils sont combien dans la famille de Zhang Wei ?", en: "How many are there in Zhang Wei's family?"}
+  - {h: "我妹妹也是大学生。", py: "Wǒ mèimei yě shì dàxuéshēng.", fr: "Ma petite sœur aussi est étudiante.", en: "My younger sister is a student too."}
+  choose:
+  - {h: "我有两＿＿弟弟。", opts: [个, 几, 和], a: 个, py: "Wǒ yǒu liǎng ge dìdi.", fr: "J'ai deux petits frères.", en: "I have two younger brothers."}
+  - {h: "我＿＿有哥哥。", opts: [不, 没, 也], a: 没, py: "Wǒ méiyǒu gēge.", fr: "Je n'ai pas de grand frère.", en: "I don't have an older brother."}
+  - {h: "你家有＿＿个人？", opts: [几, 什么, 哪], a: 几, py: "Nǐ jiā yǒu jǐ ge rén?", fr: "Vous êtes combien dans ta famille ?", en: "How many in your family?"}
+  - {h: "爸爸＿＿妈妈是医生。", opts: [和, 也, 吗], a: 和, py: "Bàba hé māma shì yīshēng.", fr: "Papa et maman sont médecins.", en: "Dad and mum are doctors."}

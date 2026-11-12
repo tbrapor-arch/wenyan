@@ -1,0 +1,189 @@
+id: 13
+slug: zuo-ditie-qu
+title: 我们坐地铁去
+title_py: Wǒmen zuò dìtiě qù
+title_fr: On y va en métro
+title_en: Let's take the metro
+status: draft
+setting:
+  fr: "Samedi soir, l'anniversaire de Xiaoyu. Marc ne sait pas comment aller à Wudaokou, le quartier des karaokés."
+  en: "Saturday evening, Xiaoyu's birthday. Marc doesn't know how to get to Wudaokou, where the karaoke places are."
+names:
+- {w: "五道口", py: "Wǔdàokǒu", fr: "Wudaokou", en: "Wudaokou"}
+lines:
+- n: 1
+  who: "马克"
+  h: "张伟，我想去五道口。怎么去？"
+  py: "Zhāng Wěi, wǒ xiǎng qù Wǔdàokǒu. Zěnme qù?"
+  fr: "Zhang Wei, je voudrais aller à Wudaokou. Comment on y va ?"
+  en: "Zhang Wei, I want to go to Wudaokou. How do I get there?"
+- n: 2
+  who: "张伟"
+  h: "你坐地铁去吧。"
+  py: "Nǐ zuò dìtiě qù ba."
+  fr: "Prends le métro."
+  en: "Take the metro."
+  lit_fr: "(Tu t'asseoir métro aller donc.)"
+  lit_en: "(You sit metro go then.)"
+- n: 3
+  who: "马克"
+  h: "地铁站远吗？"
+  py: "Dìtiě zhàn yuǎn ma?"
+  fr: "La station est loin ?"
+  en: "Is the station far?"
+- n: 4
+  who: "张伟"
+  h: "不远，走路十分钟。"
+  py: "Bù yuǎn, zǒulù shí fēnzhōng."
+  fr: "Non, à dix minutes à pied."
+  en: "No, ten minutes on foot."
+- n: 5
+  who: "马克"
+  h: "到五道口要多少分钟？"
+  py: "Dào Wǔdàokǒu yào duōshao fēnzhōng?"
+  fr: "Et jusqu'à Wudaokou, il faut combien de minutes ?"
+  en: "And how many minutes to Wudaokou?"
+- n: 6
+  who: "张伟"
+  h: "二十分钟。坐出租车很快，也不贵。"
+  py: "Èrshí fēnzhōng. Zuò chūzūchē hěn kuài, yě bú guì."
+  fr: "Vingt minutes. En taxi c'est rapide, et pas cher non plus."
+  en: "Twenty minutes. A taxi is quick, and not expensive either."
+- n: 7
+  who: "马克"
+  h: "你怎么去上班？"
+  py: "Nǐ zěnme qù shàngbān?"
+  fr: "Et toi, tu vas au travail comment ?"
+  en: "How do you get to work?"
+- n: 8
+  who: "张伟"
+  h: "我开车去。"
+  py: "Wǒ kāichē qù."
+  fr: "En voiture."
+  en: "I drive."
+  lit_fr: "(Je conduire-voiture aller.)"
+  lit_en: "(I drive-car go.)"
+- n: 9
+  who: "马克"
+  h: "你有车？"
+  py: "Nǐ yǒu chē?"
+  fr: "Tu as une voiture ?"
+  en: "You have a car?"
+- n: 10
+  who: "张伟"
+  h: "有。可是北京车很多，开车很慢！"
+  py: "Yǒu. Kěshì Běijīng chē hěn duō, kāichē hěn màn!"
+  fr: "Oui. Mais à Pékin il y a tellement de voitures qu'on roule très lentement !"
+  en: "Yes. But Beijing has so many cars that driving is really slow!"
+- n: 11
+  who: "马克"
+  h: "那我坐地铁！"
+  py: "Nà wǒ zuò dìtiě!"
+  fr: "Alors je prends le métro !"
+  en: "Then I'll take the metro!"
+- n: 12
+  who: "张伟"
+  h: "去吧，去吧！小雨在等你！"
+  py: "Qù ba, qù ba! Xiǎoyǔ zài děng nǐ!"
+  fr: "Vas-y, vas-y ! Xiaoyu t'attend !"
+  en: "Go on, go! Xiaoyu's waiting for you!"
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    **去** qù « aller » prend directement le lieu, sans préposition : 去五道口 « aller à Wudaokou ». **来** lái
+    « venir » (L11) fonctionne de même : 来北京.
+  en: >
+    **去** qù "to go" takes the place directly, with no preposition: 去五道口 "go to Wudaokou". **来** lái "to
+    come" (L11) works the same way: 来北京.
+- n: 2
+  line: 1
+  topic: grammar
+  fr: >
+    **怎么** zěnme + verbe = « comment (faire) » : 怎么去？« comment y aller ? ». Comme les autres mots
+    interrogatifs, il reste devant le verbe, là où serait la réponse (ligne 2).
+  en: >
+    **怎么** zěnme + verb = "how (to do)": 怎么去？"how do I get there?". Like other question words, it stays
+    before the verb, where the answer goes (line 2).
+- n: 3
+  line: 2
+  topic: grammar
+  fr: >
+    Le moyen vient **avant** le verbe principal : 坐地铁去 « (en) s'asseyant-dans le métro, aller ». **坐** zuò
+    « s'asseoir » sert pour tous les transports où l'on est passager : 坐地铁, 坐出租车. Pour conduire soi-même :
+    开车 kāichē (ligne 8).
+  en: >
+    The means comes **before** the main verb: 坐地铁去 "sitting-in the metro, go". **坐** zuò "to sit" is used
+    for any transport you ride as a passenger: 坐地铁, 坐出租车. For driving yourself: 开车 kāichē (line 8).
+- n: 4
+  line: 4
+  topic: vocab
+  fr: >
+    **分钟** fēnzhōng « minute » pour une durée, à distinguer de 分 (L10 n.1) pour l'heure : 十分钟 « dix
+    minutes », mais 九点十分 « neuf heures dix ». 走路 zǒulù « marcher, à pied », litt. « marcher la route ».
+  en: >
+    **分钟** fēnzhōng "minute" for a length of time, unlike 分 (L10 n.1) for clock time: 十分钟 "ten minutes",
+    but 九点十分 "ten past nine". 走路 zǒulù "walk, on foot", lit. "walk the road".
+- n: 5
+  line: 5
+  topic: grammar
+  fr: >
+    **到** dào « arriver à, jusqu'à » + lieu. 要 (L9 n.1) devant une durée = « il faut, ça prend » : 要多少分钟
+    « ça prend combien de minutes ».
+  en: >
+    **到** dào "to arrive at, to" + place. 要 (L9 n.1) before an amount of time = "it takes": 要多少分钟 "how many
+    minutes does it take".
+- n: 6
+  line: 10
+  topic: grammar
+  fr: >
+    **可是** kěshì « mais » ouvre la deuxième phrase. 车很多 « les voitures (sont) nombreuses » : 多 duō
+    « nombreux » est un adjectif comme un autre, avec 很.
+  en: >
+    **可是** kěshì "but" starts the second clause. 车很多 "cars (are) many": 多 duō "many" is an adjective like
+    any other, with 很.
+- n: 7
+  line: 11
+  topic: grammar
+  fr: >
+    **那** nà en tête de phrase = « alors, dans ce cas » : 那我坐地铁 « alors je prends le métro ». C'est le même
+    caractère que 那 « cela » (L6 n.1).
+  en: >
+    **那** nà at the start of a sentence = "then, in that case": 那我坐地铁 "then I'll take the metro". The same
+    character as 那 "that" (L6 n.1).
+- n: 8
+  line: 12
+  topic: grammar
+  fr: >
+    **在** devant un verbe marque l'action en cours : 小雨在等你 « Xiaoyu est en train de t'attendre ». On le
+    reverra en leçon 17 ; c'est le même 在 que « se trouver » (L8 n.3).
+  en: >
+    **在** before a verb marks an action in progress: 小雨在等你 "Xiaoyu is waiting for you". It comes back in
+    lesson 17; it's the same 在 as "to be at" (L8 n.3).
+words:
+- {w: "去", py: "qù", fr: "aller", en: "to go"}
+- {w: "怎么", py: "zěnme", fr: "comment", en: "how"}
+- {w: "坐", py: "zuò", fr: "s'asseoir ; prendre (un transport)", en: "to sit; to take (transport)"}
+- {w: "地铁", py: "dìtiě", fr: "métro", en: "metro, subway"}
+- {w: "站", py: "zhàn", fr: "station, arrêt", en: "station, stop"}
+- {w: "走路", py: "zǒulù", fr: "marcher, à pied", en: "to walk, on foot"}
+- {w: "分钟", py: "fēnzhōng", fr: "minute (durée)", en: "minute (duration)"}
+- {w: "到", py: "dào", fr: "arriver à, jusqu'à", en: "to arrive, to (a place)"}
+- {w: "出租车", py: "chūzūchē", fr: "taxi", en: "taxi"}
+- {w: "开车", py: "kāichē", fr: "conduire", en: "to drive"}
+- {w: "车", py: "chē", fr: "voiture, véhicule", en: "car, vehicle"}
+- {w: "可是", py: "kěshì", fr: "mais", en: "but"}
+- {w: "慢", py: "màn", fr: "lent", en: "slow"}
+- {w: "等", py: "děng", fr: "attendre", en: "to wait"}
+exercise:
+  translate:
+  - {h: "我每天坐地铁去上班。", py: "Wǒ měi tiān zuò dìtiě qù shàngbān.", fr: "Je vais au travail en métro tous les jours.", en: "I take the metro to work every day."}
+  - {h: "你怎么去超市？", py: "Nǐ zěnme qù chāoshì?", fr: "Comment tu vas au supermarché ?", en: "How do you get to the supermarket?"}
+  - {h: "到银行走路要五分钟。", py: "Dào yínháng zǒulù yào wǔ fēnzhōng.", fr: "Jusqu'à la banque, il faut cinq minutes à pied.", en: "It's five minutes' walk to the bank."}
+  - {h: "张伟开车很慢。", py: "Zhāng Wěi kāichē hěn màn.", fr: "Zhang Wei conduit très lentement.", en: "Zhang Wei drives very slowly."}
+  choose:
+  - {h: "我们＿＿地铁去吧。", opts: [坐, 开, 在], a: 坐, py: "Wǒmen zuò dìtiě qù ba.", fr: "Prenons le métro.", en: "Let's take the metro."}
+  - {h: "你＿＿去五道口？", opts: [怎么, 什么, 哪儿], a: 怎么, py: "Nǐ zěnme qù Wǔdàokǒu?", fr: "Comment tu vas à Wudaokou ?", en: "How are you getting to Wudaokou?"}
+  - {h: "走路十＿＿。", opts: [分钟, 分, 点], a: 分钟, py: "Zǒulù shí fēnzhōng.", fr: "Dix minutes à pied.", en: "Ten minutes on foot."}
+  - {h: "小雨＿＿等你！", opts: [在, 有, 去], a: 在, py: "Xiǎoyǔ zài děng nǐ!", fr: "Xiaoyu t'attend !", en: "Xiaoyu's waiting for you!"}

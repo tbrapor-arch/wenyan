@@ -344,7 +344,9 @@ text, notes are numbered, and every 7th lesson is a review.
 
 ### Rules the build enforces
 
-- **Words.** Each line is cut into words, longest match on NHSK + the course's words + names.
+- **Words.** Each line is cut into words, longest match on the words taught so far + names
+  (so an NHSK compound not taught yet, 个人 in 几个人, can't swallow two taught words). Notes are cut
+  on all of NHSK, so any Chinese word in a note gets a card.
   Every word in a dialogue or an exercise must be taught in this lesson or an earlier one
   (a warning in `draft`, an error from `good` up). Every new word must be used in the dialogue as a
   word of its own, and is taught only once.
@@ -353,6 +355,9 @@ text, notes are numbered, and every 7th lesson is a review.
   change them. Third-tone sandhi (你好 ní hǎo) is not written; L1 n.2 explains it. Neutral tones
   unmarked (xièxie, péngyou). The build splits the line into syllables, gives one to each character,
   and checks it against pypinyin's readings. An apostrophe separates ambiguous syllables (Lǐ'áng).
+- **YAML.** French punctuation (« : ») breaks plain YAML values: run `python3 tools/rumen_quote.py
+  rumen/*.yaml` after writing a lesson, which quotes every one-line `h`, `py`, `fr`, `en`, `lit_*`.
+- **Erhua.** 这儿 zhèr: the "r" counts as the syllable of 儿 (the build checks it sits on 儿).
 - **Simplified only** in the files. If OpenCC gets a traditional character wrong, fix it in the
   build, never by hand.
 

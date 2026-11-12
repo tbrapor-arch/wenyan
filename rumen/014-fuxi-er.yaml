@@ -1,0 +1,152 @@
+id: 14
+kind: review
+slug: fuxi-er
+title: 复习（二）
+title_py: Fùxí (èr)
+title_fr: Révision 2
+title_en: Review 2
+status: draft
+setting:
+  fr: "Pas de mot nouveau. Relisez ces points et leurs notes, puis le dialogue du dimanche matin, au lendemain de l'anniversaire de Xiaoyu."
+  en: "No new words. Go over these points and their notes, then the Sunday-morning dialogue, the day after Xiaoyu's birthday."
+recap:
+- fr: >
+    **Où ?** Lieu + 有 + chose présente quelque chose de nouveau ; chose + 在 + lieu situe ce qu'on connaît
+    (L8 n.2, L8 n.3, L8 n.9). Les mots de position suivent le nom : 银行旁边, 这儿附近 (L8 n.4). 哪儿, 这儿,
+    那儿 et leur « r » pékinois (L8 n.6).
+  en: >
+    **Where?** Place + 有 + thing brings in something new; thing + 在 + place locates something known (L8 n.2,
+    L8 n.3, L8 n.9). Position words follow the noun: 银行旁边, 这儿附近 (L8 n.4). 哪儿, 这儿, 那儿 and their
+    Beijing "r" (L8 n.6).
+- fr: >
+    **Quand ?** L'heure : 点, 分, 半 (L10 n.1). La date du plus grand au plus petit : 十月十五号, 星期六晚上
+    (L11 n.1, L11 n.6) ; les jours numérotés (L11 n.2). Le temps se met devant le verbe (L10 n.3), et le verbe
+    ne change pas (L10 n.5).
+  en: >
+    **When?** Clock time: 点, 分, 半 (L10 n.1). Dates from largest to smallest: 十月十五号, 星期六晚上 (L11 n.1,
+    L11 n.6); numbered weekdays (L11 n.2). Time goes before the verb (L10 n.3), and the verb never changes
+    (L10 n.5).
+- fr: >
+    **Combien ?** 几 pour un petit nombre avec un classificateur, 多少 pour tout le reste (L9 n.3). L'argent : 块,
+    毛 (L9 n.4). Certains noms servent de classificateur : 两碗米饭 (L12 n.6). Durée : 分钟, pas 分 (L13 n.4).
+  en: >
+    **How many?** 几 for a small number with a measure word, 多少 for the rest (L9 n.3). Money: 块, 毛 (L9 n.4).
+    Some nouns are measure words: 两碗米饭 (L12 n.6). Duration: 分钟, not 分 (L13 n.4).
+- fr: >
+    **Vouloir, aimer.** 要 pour commander ou décider (L9 n.1), 想 + verbe pour un souhait (L9 n.2), 喜欢 +
+    nom ou verbe (L12 n.2).
+  en: >
+    **Wanting and liking.** 要 to order or decide (L9 n.1), 想 + verb for a wish (L9 n.2), 喜欢 + noun or verb
+    (L12 n.2).
+- fr: >
+    **D'autres questions.** 还是 pour un choix, sans 吗 (L12 n.7) ; 怎么 + verbe, « comment » (L13 n.2) ; 吧
+    pour demander confirmation (L12 n.8) ; 是吗 « ah bon ? » (L11 n.5).
+  en: >
+    **More questions.** 还是 for a choice, with no 吗 (L12 n.7); 怎么 + verb, "how" (L13 n.2); 吧 to ask for
+    agreement (L12 n.8); 是吗 "really?" (L11 n.5).
+- fr: >
+    **Devant le verbe.** Le moyen : 坐地铁去 (L13 n.3). 在 pour l'action en cours (L13 n.8). 还 « en plus »
+    (L9 n.6), 就 « juste ; alors » (L8 n.5, L11 n.8), 每天都 (L12 n.10). 去 et 来 prennent le lieu sans
+    préposition (L13 n.1).
+  en: >
+    **Before the verb.** The means: 坐地铁去 (L13 n.3). 在 for an action in progress (L13 n.8). 还 "also" (L9
+    n.6), 就 "just; then" (L8 n.5, L11 n.8), 每天都 (L12 n.10). 去 and 来 take the place with no preposition
+    (L13 n.1).
+lines:
+- n: 1
+  who: "张伟"
+  h: "早！你今天起床真晚！"
+  py: "Zǎo! Nǐ jīntiān qǐchuáng zhēn wǎn!"
+  fr: "Bonjour ! Tu t'es levé bien tard aujourd'hui !"
+  en: "Morning! You got up really late today!"
+- n: 2
+  who: "马克"
+  h: "现在几点？"
+  py: "Xiànzài jǐ diǎn?"
+  fr: "Quelle heure il est ?"
+  en: "What time is it?"
+- n: 3
+  who: "张伟"
+  h: "十一点半。"
+  py: "Shíyī diǎn bàn."
+  fr: "Onze heures et demie."
+  en: "Half past eleven."
+- n: 4
+  who: "马克"
+  h: "昨天晚上我们唱歌，很晚！"
+  py: "Zuótiān wǎnshang wǒmen chàng gē, hěn wǎn!"
+  fr: "Hier soir on a chanté, jusqu'à très tard !"
+  en: "We went singing last night, very late!"
+- n: 5
+  who: "张伟"
+  h: "小雨高兴吗？"
+  py: "Xiǎoyǔ gāoxìng ma?"
+  fr: "Xiaoyu était contente ?"
+  en: "Was Xiaoyu happy?"
+- n: 6
+  who: "马克"
+  h: "很高兴！她的朋友都很可爱。"
+  py: "Hěn gāoxìng! Tā de péngyou dōu hěn kě'ài."
+  fr: "Très ! Ses amis sont tous adorables."
+  en: "Very! Her friends are all lovely."
+- n: 7
+  who: "张伟"
+  h: "你的礼物是什么？"
+  py: "Nǐ de lǐwù shì shénme?"
+  fr: "C'était quoi, ton cadeau ?"
+  en: "What was your present?"
+- n: 8
+  who: "马克"
+  h: "法国的东西：法国咖啡！"
+  py: "Fǎguó de dōngxi：Fǎguó kāfēi!"
+  fr: "Quelque chose de France : du café français !"
+  en: "Something from France: French coffee!"
+- n: 9
+  who: "张伟"
+  h: "她喜欢喝咖啡吗？"
+  py: "Tā xǐhuan hē kāfēi ma?"
+  fr: "Elle aime le café ?"
+  en: "Does she like coffee?"
+- n: 10
+  who: "马克"
+  h: "她每天都喝！"
+  py: "Tā měi tiān dōu hē!"
+  fr: "Elle en boit tous les jours !"
+  en: "She drinks it every day!"
+- n: 11
+  who: "张伟"
+  h: "附近有一个饭馆，很不错。我们去吃饺子吧！"
+  py: "Fùjìn yǒu yí ge fànguǎn, hěn búcuò. Wǒmen qù chī jiǎozi ba!"
+  fr: "Il y a un restaurant pas mal près d'ici. Allons manger des raviolis !"
+  en: "There's a nice restaurant nearby. Let's go and have dumplings!"
+- n: 12
+  who: "马克"
+  h: "好！怎么去？"
+  py: "Hǎo! Zěnme qù?"
+  fr: "D'accord ! On y va comment ?"
+  en: "OK! How do we get there?"
+- n: 13
+  who: "张伟"
+  h: "走路去，不远，就在地铁站旁边。"
+  py: "Zǒulù qù, bù yuǎn, jiù zài dìtiě zhàn pángbiān."
+  fr: "À pied, ce n'est pas loin, c'est juste à côté du métro."
+  en: "On foot, it's not far, right next to the metro station."
+- n: 14
+  who: "马克"
+  h: "走吧！"
+  py: "Zǒu ba!"
+  fr: "Allons-y !"
+  en: "Let's go!"
+exercise:
+  translate:
+  - {h: "请问，地铁站在哪儿？", py: "Qǐngwèn, dìtiě zhàn zài nǎr?", fr: "Excusez-moi, où est la station de métro ?", en: "Excuse me, where's the metro station?"}
+  - {h: "我们星期五晚上七点见。", py: "Wǒmen xīngqīwǔ wǎnshang qī diǎn jiàn.", fr: "On se voit vendredi soir à sept heures.", en: "See you on Friday evening at seven."}
+  - {h: "你想喝茶还是喝咖啡？", py: "Nǐ xiǎng hē chá háishi hē kāfēi?", fr: "Tu veux du thé ou du café ?", en: "Would you like tea or coffee?"}
+  - {h: "这儿附近没有银行。", py: "Zhèr fùjìn méiyǒu yínháng.", fr: "Il n'y a pas de banque près d'ici.", en: "There's no bank near here."}
+  - {h: "到超市坐出租车要十分钟。", py: "Dào chāoshì zuò chūzūchē yào shí fēnzhōng.", fr: "Jusqu'au supermarché, il faut dix minutes en taxi.", en: "It's ten minutes by taxi to the supermarket."}
+  choose:
+  - {h: "银行＿＿超市旁边。", opts: [在, 有, 去], a: 在, py: "Yínháng zài chāoshì pángbiān.", fr: "La banque est à côté du supermarché.", en: "The bank is next to the supermarket."}
+  - {h: "苹果＿＿钱一斤？", opts: [多少, 几, 怎么], a: 多少, py: "Píngguǒ duōshao qián yì jīn?", fr: "Les pommes, combien la livre ?", en: "How much is a jin of apples?"}
+  - {h: "我每天八点＿＿起床。", opts: [半, 分钟, 号], a: 半, py: "Wǒ měi tiān bā diǎn bàn qǐchuáng.", fr: "Je me lève à huit heures et demie tous les jours.", en: "I get up at half past eight every day."}
+  - {h: "我们＿＿地铁去吧。", opts: [坐, 开, 走], a: 坐, py: "Wǒmen zuò dìtiě qù ba.", fr: "Allons-y en métro.", en: "Let's go by metro."}
+  - {h: "你喝茶＿＿喝咖啡？", opts: [还是, 和, 都], a: 还是, py: "Nǐ hē chá háishi hē kāfēi?", fr: "Tu bois du thé ou du café ?", en: "Do you drink tea or coffee?"}

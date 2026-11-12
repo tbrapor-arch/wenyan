@@ -1,0 +1,208 @@
+id: 11
+slug: jintian-xingqi-ji
+title: 今天星期几？
+title_py: Jīntiān xīngqī jǐ?
+title_fr: On est quel jour ?
+title_en: What day is it?
+status: draft
+setting:
+  fr: "Au bureau, Xiaoyu a une question pour Marc."
+  en: "At the office, Xiaoyu has a question for Marc."
+lines:
+- n: 1
+  who: "小雨"
+  h: "马克，今天几号？"
+  py: "Mǎkè, jīntiān jǐ hào?"
+  fr: "Marc, on est le combien aujourd'hui ?"
+  en: "Marc, what's the date today?"
+- n: 2
+  who: "马克"
+  h: "今天十月十五号。"
+  py: "Jīntiān shíyuè shíwǔ hào."
+  fr: "Aujourd'hui, c'est le 15 octobre."
+  en: "Today's the fifteenth of October."
+  lit_fr: "(Aujourd'hui dix-mois quinze numéro.)"
+  lit_en: "(Today ten-month fifteen number.)"
+- n: 3
+  who: "小雨"
+  h: "星期几？"
+  py: "Xīngqī jǐ?"
+  fr: "Quel jour de la semaine ?"
+  en: "What day of the week?"
+- n: 4
+  who: "马克"
+  h: "昨天是星期二，今天星期三。"
+  py: "Zuótiān shì xīngqī'èr, jīntiān xīngqīsān."
+  fr: "Hier c'était mardi, donc aujourd'hui mercredi."
+  en: "Yesterday was Tuesday, so today's Wednesday."
+- n: 5
+  who: "小雨"
+  h: "星期六是我的生日！"
+  py: "Xīngqīliù shì wǒ de shēngrì!"
+  fr: "Samedi, c'est mon anniversaire !"
+  en: "Saturday is my birthday!"
+- n: 6
+  who: "马克"
+  h: "是吗？你的生日是十月十八号？"
+  py: "Shì ma? Nǐ de shēngrì shì shíyuè shíbā hào?"
+  fr: "Ah bon ? Ton anniversaire, c'est le 18 octobre ?"
+  en: "Really? Your birthday's the eighteenth of October?"
+- n: 7
+  who: "小雨"
+  h: "对。星期六晚上你有时间吗？"
+  py: "Duì. Xīngqīliù wǎnshang nǐ yǒu shíjiān ma?"
+  fr: "Oui. Tu es libre samedi soir ?"
+  en: "Yes. Are you free on Saturday evening?"
+  lit_fr: "(Oui. Samedi soir tu avoir temps ?)"
+  lit_en: "(Yes. Saturday evening you have time?)"
+- n: 8
+  who: "小雨"
+  h: "我和朋友一起唱歌，你也来吧！"
+  py: "Wǒ hé péngyou yìqǐ chàng gē, nǐ yě lái ba!"
+  fr: "Je vais chanter au karaoké avec des amis, viens aussi !"
+  en: "I'm going to sing karaoke with friends, come along!"
+- n: 9
+  who: "马克"
+  h: "好啊！我要买一个礼物！"
+  py: "Hǎo a! Wǒ yào mǎi yí ge lǐwù!"
+  fr: "Avec plaisir ! Je vais t'acheter un cadeau !"
+  en: "I'd love to! I'll buy you a present!"
+- n: 10
+  who: "小雨"
+  h: "谢谢！你来，我就很高兴。"
+  py: "Xièxie! Nǐ lái, wǒ jiù hěn gāoxìng."
+  fr: "Merci ! Si tu viens, ça me fera déjà très plaisir."
+  en: "Thanks! If you come, that's enough to make me happy."
+- n: 11
+  who: "马克"
+  h: "张伟也来吗？"
+  py: "Zhāng Wěi yě lái ma?"
+  fr: "Zhang Wei vient aussi ?"
+  en: "Is Zhang Wei coming too?"
+- n: 12
+  who: "小雨"
+  h: "他后天不在北京。"
+  py: "Tā hòutiān bú zài Běijīng."
+  fr: "Après-demain, il n'est pas à Pékin."
+  en: "He's not in Beijing the day after tomorrow."
+- n: 13
+  who: "马克"
+  h: "后天是星期五，不是星期六！"
+  py: "Hòutiān shì xīngqīwǔ, bú shì xīngqīliù!"
+  fr: "Après-demain, c'est vendredi, pas samedi !"
+  en: "The day after tomorrow is Friday, not Saturday!"
+- n: 14
+  who: "小雨"
+  h: "哦！对不起，我真忙……星期六见！"
+  py: "Ò! Duìbuqǐ, wǒ zhēn máng…… Xīngqīliù jiàn!"
+  fr: "Oh ! Pardon, je suis débordée… À samedi !"
+  en: "Oh! Sorry, I'm so busy… See you Saturday!"
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    La date : **月** yuè « mois » et **号** hào « numéro (du jour) », en allant du plus grand au plus petit :
+    十月十五号 « dix-mois quinze » = le 15 octobre. Les mois sont numérotés : 一月 janvier… 十二月 décembre.
+    À l'écrit, on met 日 rì à la place de 号.
+  en: >
+    Dates: **月** yuè "month" and **号** hào "number (of the day)", from the largest unit to the smallest:
+    十月十五号 "ten-month fifteen" = 15 October. Months are numbered: 一月 January… 十二月 December. In writing,
+    日 rì replaces 号.
+- n: 2
+  line: 3
+  topic: grammar
+  fr: >
+    Les jours de la semaine aussi sont numérotés : **星期** xīngqī « semaine » + un nombre. 星期一 lundi,
+    星期二 mardi… 星期六 samedi. Dimanche fait exception : 星期天 (ou 星期日). 星期几 « quel jour ? ».
+  en: >
+    Weekdays are numbered too: **星期** xīngqī "week" + a number. 星期一 Monday, 星期二 Tuesday… 星期六
+    Saturday. Sunday is the exception: 星期天 (or 星期日). 星期几 "which day?".
+- n: 3
+  line: 4
+  topic: grammar
+  fr: >
+    Avec une date ou un jour, 是 peut tomber : 今天星期三 « aujourd'hui mercredi ». Mais à la négation il
+    revient : 不是星期六 (ligne 13).
+  en: >
+    With a date or a day, 是 can drop: 今天星期三 "today Wednesday". In the negative it comes back: 不是星期六
+    (line 13).
+- n: 4
+  line: 4
+  topic: vocab
+  fr: >
+    昨天 zuótiān « hier », 今天 jīntiān « aujourd'hui », 明天 míngtiān « demain » (L10), 后天 hòutiān
+    « après-demain ». Tous en 天 « jour » (L10 n.5).
+  en: >
+    昨天 zuótiān "yesterday", 今天 jīntiān "today", 明天 míngtiān "tomorrow" (L10), 后天 hòutiān "the day after
+    tomorrow". All built on 天 "day" (L10 n.5).
+- n: 5
+  line: 6
+  topic: vocab
+  fr: >
+    是吗？« ah bon ? », litt. « c'est ça ? » : on marque la surprise, sans vraiment douter.
+  en: >
+    是吗？"really?", lit. "is that so?": it shows surprise, without real doubt.
+- n: 6
+  line: 7
+  topic: grammar
+  fr: >
+    Plusieurs mots de temps se suivent du plus grand au plus petit : 星期六晚上 « samedi soir ». Ils restent
+    devant le verbe (L10 n.3). 有时间 « avoir du temps » = être libre.
+  en: >
+    Several time words go from largest to smallest: 星期六晚上 "Saturday evening". They stay before the verb
+    (L10 n.3). 有时间 "to have time" = to be free.
+- n: 7
+  line: 8
+  topic: culture
+  fr: >
+    **唱歌** chàng gē « chanter (des chansons) » : pour un anniversaire entre jeunes collègues, on va souvent au
+    KTV, des salons de karaoké qu'on loue entre amis.
+  en: >
+    **唱歌** chàng gē "to sing (songs)": for a birthday among young colleagues, people often go to KTV, private
+    karaoke rooms rented with friends.
+- n: 8
+  line: 10
+  topic: grammar
+  fr: >
+    Deux phrases côte à côte peuvent former une condition, sans « si » : 你来，我就很高兴 « (si) tu viens,
+    alors je suis contente ». 就 (L8 n.5) marque ici la conséquence.
+  en: >
+    Two clauses side by side can make a condition, with no "if": 你来，我就很高兴 "(if) you come, then I'm
+    happy". 就 (L8 n.5) marks the result here.
+- n: 9
+  line: 14
+  topic: vocab
+  fr: >
+    **见** jiàn « voir, rencontrer » : 星期六见 « à samedi », litt. « samedi se-voir ». De même 明天见 « à
+    demain ». 再见 zàijiàn « au revoir » = « se revoir ».
+  en: >
+    **见** jiàn "to see, meet": 星期六见 "see you Saturday", lit. "Saturday meet". Likewise 明天见 "see you
+    tomorrow". 再见 zàijiàn "goodbye" = "see again".
+words:
+- {w: "今天", py: "jīntiān", fr: "aujourd'hui", en: "today"}
+- {w: "号", py: "hào", fr: "numéro ; (jour du mois)", en: "number; (day of the month)"}
+- {w: "月", py: "yuè", fr: "mois ; lune", en: "month; moon"}
+- {w: "星期", py: "xīngqī", fr: "semaine", en: "week"}
+- {w: "昨天", py: "zuótiān", fr: "hier", en: "yesterday"}
+- {w: "生日", py: "shēngrì", fr: "anniversaire", en: "birthday"}
+- {w: "晚上", py: "wǎnshang", fr: "le soir", en: "evening"}
+- {w: "时间", py: "shíjiān", fr: "temps", en: "time"}
+- {w: "唱", py: "chàng", fr: "chanter", en: "to sing"}
+- {w: "歌", py: "gē", fr: "chanson", en: "song"}
+- {w: "来", py: "lái", fr: "venir", en: "to come"}
+- {w: "礼物", py: "lǐwù", fr: "cadeau", en: "present"}
+- {w: "后天", py: "hòutiān", fr: "après-demain", en: "the day after tomorrow"}
+- {w: "哦", py: "ò", fr: "oh ! (je comprends)", en: "oh! (I see)"}
+- {w: "见", py: "jiàn", fr: "voir, se voir", en: "to see, meet"}
+exercise:
+  translate:
+  - {h: "明天是几月几号？", py: "Míngtiān shì jǐ yuè jǐ hào?", fr: "Demain, c'est le combien ?", en: "What's the date tomorrow?"}
+  - {h: "我的生日是七月九号。", py: "Wǒ de shēngrì shì qīyuè jiǔ hào.", fr: "Mon anniversaire est le 9 juillet.", en: "My birthday is the ninth of July."}
+  - {h: "星期五晚上你有时间吗？", py: "Xīngqīwǔ wǎnshang nǐ yǒu shíjiān ma?", fr: "Tu es libre vendredi soir ?", en: "Are you free on Friday evening?"}
+  - {h: "后天我们一起唱歌吧！", py: "Hòutiān wǒmen yìqǐ chàng gē ba!", fr: "Allons chanter ensemble après-demain !", en: "Let's go singing together the day after tomorrow!"}
+  choose:
+  - {h: "今天星期＿＿？", opts: [几, 多少, 什么], a: 几, py: "Jīntiān xīngqī jǐ?", fr: "On est quel jour ?", en: "What day is it today?"}
+  - {h: "今天十月十五＿＿。", opts: [号, 月, 天], a: 号, py: "Jīntiān shíyuè shíwǔ hào.", fr: "Aujourd'hui, c'est le 15 octobre.", en: "Today's 15 October."}
+  - {h: "明天＿＿！", opts: [见, 来, 问], a: 见, py: "Míngtiān jiàn!", fr: "À demain !", en: "See you tomorrow!"}
+  - {h: "你星期六＿＿时间吗？", opts: [有, 在, 是], a: 有, py: "Nǐ xīngqīliù yǒu shíjiān ma?", fr: "Tu es libre samedi ?", en: "Are you free on Saturday?"}

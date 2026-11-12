@@ -1,0 +1,204 @@
+id: 8
+slug: chaoshi-zai-nar
+title: 超市在哪儿？
+title_py: Chāoshì zài nǎr?
+title_fr: Où est le supermarché ?
+title_en: Where's the supermarket?
+status: draft
+setting:
+  fr: "Premier samedi à Pékin. Le frigo est vide ; Marc cherche un supermarché et arrête un passant."
+  en: "First Saturday in Beijing. The fridge is empty; Marc looks for a supermarket and stops a passer-by."
+lines:
+- n: 1
+  who: "马克"
+  h: "请问，这儿附近有超市吗？"
+  py: "Qǐngwèn, zhèr fùjìn yǒu chāoshì ma?"
+  fr: "Excusez-moi, il y a un supermarché près d'ici ?"
+  en: "Excuse me, is there a supermarket near here?"
+  lit_fr: "(Puis-je-demander, ici alentours avoir supermarché ?)"
+  lit_en: "(May-I-ask, here nearby have supermarket?)"
+- n: 2
+  who: "路人"
+  h: "有。超市在前面。"
+  py: "Yǒu. Chāoshì zài qiánmiàn."
+  fr: "Oui. Le supermarché est devant, tout droit."
+  en: "Yes. The supermarket is up ahead."
+- n: 3
+  who: "马克"
+  h: "远吗？"
+  py: "Yuǎn ma?"
+  fr: "C'est loin ?"
+  en: "Is it far?"
+- n: 4
+  who: "路人"
+  h: "不远，就在银行旁边。"
+  py: "Bù yuǎn, jiù zài yínháng pángbiān."
+  fr: "Non, c'est juste à côté de la banque."
+  en: "No, it's right next to the bank."
+  lit_fr: "(Pas loin, justement être banque côté.)"
+  lit_en: "(Not far, just be bank side.)"
+- n: 5
+  who: "马克"
+  h: "银行在哪儿？"
+  py: "Yínháng zài nǎr?"
+  fr: "Et la banque, elle est où ?"
+  en: "And where's the bank?"
+- n: 6
+  who: "路人"
+  h: "在那儿，你看！"
+  py: "Zài nàr, nǐ kàn!"
+  fr: "Là-bas, regardez !"
+  en: "Over there, look!"
+- n: 7
+  who: "马克"
+  h: "好，谢谢您！"
+  py: "Hǎo, xièxie nín!"
+  fr: "D'accord, merci beaucoup !"
+  en: "OK, thank you!"
+- n: 8
+  who: "路人"
+  h: "不客气。"
+  py: "Bú kèqi."
+  fr: "Je vous en prie."
+  en: "You're welcome."
+- n: 9
+  who: "马克"
+  h: "对不起！"
+  py: "Duìbuqǐ!"
+  fr: "Pardon !"
+  en: "Sorry!"
+- n: 10
+  who: "张伟"
+  h: "没关系……马克？你也在这儿！"
+  py: "Méi guānxi…… Mǎkè? Nǐ yě zài zhèr!"
+  fr: "Ce n'est rien… Marc ? Toi aussi, tu es là !"
+  en: "No problem… Marc? You're here too!"
+- n: 11
+  who: "马克"
+  h: "张伟！你也找超市？"
+  py: "Zhāng Wěi! Nǐ yě zhǎo chāoshì?"
+  fr: "Zhang Wei ! Toi aussi, tu cherches le supermarché ?"
+  en: "Zhang Wei! Are you looking for the supermarket too?"
+- n: 12
+  who: "张伟"
+  h: "对！我们一起走吧。"
+  py: "Duì! Wǒmen yìqǐ zǒu ba."
+  fr: "Oui ! Allons-y ensemble."
+  en: "Yes! Let's go together."
+notes:
+- n: 1
+  line: 1
+  topic: vocab
+  fr: >
+    **请问** qǐngwèn « puis-je demander » : 请 « prier, s'il vous plaît » + 问 « demander » (L5). C'est la
+    façon polie d'aborder un inconnu, comme « excusez-moi ».
+  en: >
+    **请问** qǐngwèn "may I ask": 请 "please" + 问 "to ask" (L5). The polite way to stop a stranger, like
+    "excuse me".
+- n: 2
+  line: 1
+  topic: grammar
+  fr: >
+    **Lieu + 有 + chose** = « il y a » : 这儿附近有超市 « près d'ici, il y a un supermarché ». Le lieu vient
+    en premier. Même 有 que « avoir » (L4 n.6) : on le nie aussi avec 没.
+  en: >
+    **Place + 有 + thing** = "there is": 这儿附近有超市 "near here there's a supermarket". The place comes
+    first. The same 有 as "to have" (L4 n.6), negated with 没 too.
+- n: 3
+  line: 2
+  topic: grammar
+  fr: >
+    **Chose + 在 + lieu** = « se trouver » : 超市在前面 « le supermarché est devant ». Comparez avec la note
+    2 : 有 présente quelque chose de nouveau, 在 situe une chose déjà connue.
+  en: >
+    **Thing + 在 + place** = "to be (located)": 超市在前面 "the supermarket is ahead". Compare note 2: 有
+    brings in something new, 在 places something already known.
+- n: 4
+  line: 4
+  topic: grammar
+  fr: >
+    Les mots de position suivent le nom, à l'inverse du français : 银行旁边 « banque-côté » = « à côté de la
+    banque ». De même 前面 « devant », 附近 « alentours » : 这儿附近 « près d'ici ».
+  en: >
+    Position words come after the noun, the reverse of English: 银行旁边 "bank-side" = "next to the bank".
+    Likewise 前面 "in front", 附近 "nearby": 这儿附近 "near here".
+- n: 5
+  line: 4
+  topic: vocab
+  fr: >
+    **就** jiù devant un verbe insiste : « justement, tout juste ». 就在银行旁边 « c'est juste à côté de la
+    banque ». 就 a beaucoup d'emplois ; on les verra au fil des leçons.
+  en: >
+    **就** jiù before a verb adds emphasis: "just, right". 就在银行旁边 "it's right next to the bank". 就 has
+    many uses; they'll come one by one.
+- n: 6
+  line: 5
+  topic: pron
+  fr: >
+    **哪儿** nǎr, **这儿** zhèr, **那儿** nàr : le 儿 ne fait pas de syllabe, il ajoute un « r » à la fin
+    (l'erhua, typique de Pékin). Dans le Sud et à Taïwan, on dit 哪里, 这里, 那里 (comme le 哪里 de L3 n.9).
+  en: >
+    **哪儿** nǎr, **这儿** zhèr, **那儿** nàr: the 儿 is not a syllable, it adds an "r" at the end (erhua,
+    typical of Beijing). In the south and in Taiwan people say 哪里, 这里, 那里 (like the 哪里 of L3 n.9).
+- n: 7
+  line: 8
+  topic: vocab
+  fr: >
+    **不客气** bú kèqi « de rien », litt. « ne sois pas poli ». 客气 kèqi = « poli, cérémonieux ».
+  en: >
+    **不客气** bú kèqi "you're welcome", lit. "don't be polite". 客气 kèqi = "polite, formal".
+- n: 8
+  line: 10
+  topic: vocab
+  fr: >
+    **对不起** duìbuqǐ « pardon, désolé », litt. « ne pas pouvoir faire face ». On répond **没关系** méi
+    guānxi « ce n'est rien », litt. « pas de rapport ».
+  en: >
+    **对不起** duìbuqǐ "sorry", lit. "can't face (you)". The answer is **没关系** méi guānxi "no problem", lit.
+    "no connection".
+- n: 9
+  line: 10
+  topic: grammar
+  fr: >
+    在 peut aussi s'employer pour une personne : 你也在这儿 « toi aussi, tu es là ». Le même schéma que la
+    note 3 : qui + 在 + où.
+  en: >
+    在 works for people too: 你也在这儿 "you're here too". The same pattern as note 3: who + 在 + where.
+- n: 10
+  line: 12
+  topic: pron
+  fr: >
+    **一起** yìqǐ « ensemble » : 一 devant un troisième ton se dit yì (L4 n.7). Il se place devant le verbe,
+    comme 也 et 都.
+  en: >
+    **一起** yìqǐ "together": 一 before a third tone is said yì (L4 n.7). It goes before the verb, like 也 and
+    都.
+words:
+- {w: "请问", py: "qǐngwèn", fr: "excusez-moi (pour demander)", en: "excuse me (to ask)"}
+- {w: "这儿", py: "zhèr", fr: "ici", en: "here"}
+- {w: "附近", py: "fùjìn", fr: "alentours, près de", en: "nearby, near"}
+- {w: "超市", py: "chāoshì", fr: "supermarché", en: "supermarket"}
+- {w: "在", py: "zài", fr: "se trouver, être (à)", en: "to be (at, in)"}
+- {w: "前面", py: "qiánmiàn", fr: "devant", en: "in front, ahead"}
+- {w: "远", py: "yuǎn", fr: "loin", en: "far"}
+- {w: "就", py: "jiù", fr: "justement, juste", en: "just, right"}
+- {w: "银行", py: "yínháng", fr: "banque", en: "bank"}
+- {w: "旁边", py: "pángbiān", fr: "à côté", en: "beside, next to"}
+- {w: "哪儿", py: "nǎr", fr: "où", en: "where"}
+- {w: "那儿", py: "nàr", fr: "là-bas", en: "there"}
+- {w: "不客气", py: "bú kèqi", fr: "de rien", en: "you're welcome"}
+- {w: "对不起", py: "duìbuqǐ", fr: "pardon, désolé", en: "sorry"}
+- {w: "没关系", py: "méi guānxi", fr: "ce n'est rien", en: "no problem"}
+- {w: "找", py: "zhǎo", fr: "chercher", en: "to look for"}
+- {w: "一起", py: "yìqǐ", fr: "ensemble", en: "together"}
+exercise:
+  translate:
+  - {h: "请问，银行在哪儿？", py: "Qǐngwèn, yínháng zài nǎr?", fr: "Excusez-moi, où est la banque ?", en: "Excuse me, where's the bank?"}
+  - {h: "我家附近没有超市。", py: "Wǒ jiā fùjìn méiyǒu chāoshì.", fr: "Il n'y a pas de supermarché près de chez moi.", en: "There's no supermarket near my home."}
+  - {h: "我的床就在桌子旁边。", py: "Wǒ de chuáng jiù zài zhuōzi pángbiān.", fr: "Mon lit est juste à côté du bureau.", en: "My bed is right next to the desk."}
+  - {h: "小雨不在这儿，她在那儿。", py: "Xiǎoyǔ bú zài zhèr, tā zài nàr.", fr: "Xiaoyu n'est pas ici, elle est là-bas.", en: "Xiaoyu isn't here, she's over there."}
+  choose:
+  - {h: "超市＿＿银行旁边。", opts: [在, 有, 是], a: 在, py: "Chāoshì zài yínháng pángbiān.", fr: "Le supermarché est à côté de la banque.", en: "The supermarket is next to the bank."}
+  - {h: "这儿附近＿＿银行吗？", opts: [有, 在, 就], a: 有, py: "Zhèr fùjìn yǒu yínháng ma?", fr: "Il y a une banque près d'ici ?", en: "Is there a bank near here?"}
+  - {h: "对不起！——＿＿。", opts: [没关系, 不客气, 请问], a: 没关系, py: "Duìbuqǐ! — Méi guānxi.", fr: "Pardon ! — Ce n'est rien.", en: "Sorry! — No problem."}
+  - {h: "谢谢！——＿＿。", opts: [不客气, 对不起, 没关系], a: 不客气, py: "Xièxie! — Bú kèqi.", fr: "Merci ! — De rien.", en: "Thanks! — You're welcome."}

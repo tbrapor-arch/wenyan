@@ -1,0 +1,168 @@
+id: 10
+slug: xianzai-ji-dian
+title: 现在几点？
+title_py: Xiànzài jǐ diǎn?
+title_fr: Quelle heure est-il ?
+title_en: What time is it?
+status: draft
+setting:
+  fr: "Lundi matin, dans l'appartement. Marc dort encore ; Zhang Wei frappe à sa porte."
+  en: "Monday morning, in the flat. Marc is still asleep; Zhang Wei knocks on his door."
+lines:
+- n: 1
+  who: "张伟"
+  h: "马克！起床！"
+  py: "Mǎkè! Qǐchuáng!"
+  fr: "Marc ! Debout !"
+  en: "Marc! Get up!"
+- n: 2
+  who: "马克"
+  h: "现在几点？"
+  py: "Xiànzài jǐ diǎn?"
+  fr: "Quelle heure il est ?"
+  en: "What time is it?"
+  lit_fr: "(Maintenant combien heures ?)"
+  lit_en: "(Now how-many o'clock?)"
+- n: 3
+  who: "张伟"
+  h: "现在八点半。"
+  py: "Xiànzài bā diǎn bàn."
+  fr: "Huit heures et demie."
+  en: "Half past eight."
+- n: 4
+  who: "马克"
+  h: "八点半？我们几点上班？"
+  py: "Bā diǎn bàn? Wǒmen jǐ diǎn shàngbān?"
+  fr: "Huit heures et demie ? On commence à quelle heure ?"
+  en: "Half past eight? What time do we start work?"
+- n: 5
+  who: "张伟"
+  h: "九点。快！"
+  py: "Jiǔ diǎn. Kuài!"
+  fr: "À neuf heures. Vite !"
+  en: "Nine. Hurry!"
+- n: 6
+  who: "马克"
+  h: "你每天几点起床？"
+  py: "Nǐ měi tiān jǐ diǎn qǐchuáng?"
+  fr: "Tu te lèves à quelle heure, toi, tous les jours ?"
+  en: "What time do you get up every day?"
+- n: 7
+  who: "张伟"
+  h: "我每天六点起床。"
+  py: "Wǒ měi tiān liù diǎn qǐchuáng."
+  fr: "Tous les jours à six heures."
+  en: "Six o'clock every day."
+- n: 8
+  who: "马克"
+  h: "六点？真早！"
+  py: "Liù diǎn? Zhēn zǎo!"
+  fr: "Six heures ? C'est tôt !"
+  en: "Six? That's early!"
+- n: 9
+  who: "张伟"
+  h: "我早上很忙。"
+  py: "Wǒ zǎoshang hěn máng."
+  fr: "J'ai beaucoup à faire le matin."
+  en: "I'm busy in the mornings."
+- n: 10
+  who: "小雨"
+  h: "现在九点五分。张伟，你也很晚！"
+  py: "Xiànzài jiǔ diǎn wǔ fēn. Zhāng Wěi, nǐ yě hěn wǎn!"
+  fr: "Il est neuf heures cinq. Zhang Wei, toi aussi tu es en retard !"
+  en: "It's five past nine. Zhang Wei, you're late too!"
+- n: 11
+  who: "马克"
+  h: "对不起！明天我七点起床！"
+  py: "Duìbuqǐ! Míngtiān wǒ qī diǎn qǐchuáng!"
+  fr: "Pardon ! Demain je me lève à sept heures !"
+  en: "Sorry! Tomorrow I'll get up at seven!"
+notes:
+- n: 1
+  line: 2
+  topic: grammar
+  fr: >
+    L'heure : nombre + **点** diǎn : 八点 « huit heures ». Les minutes avec **分** fēn : 九点五分 « neuf heures
+    cinq ». La demie : **半** bàn, 八点半. Pour demander : 几点 « combien d'heures » (几, L4 n.2).
+  en: >
+    Telling the time: number + **点** diǎn: 八点 "eight o'clock". Minutes with **分** fēn: 九点五分 "five past
+    nine". Half past: **半** bàn, 八点半. To ask: 几点 "how many o'clock" (几, L4 n.2).
+- n: 2
+  line: 2
+  topic: vocab
+  fr: >
+    **现在** xiànzài « maintenant ». Comme 今年 (L5 n.2), il va en tête ou devant le verbe.
+  en: >
+    **现在** xiànzài "now". Like 今年 (L5 n.2), it goes first or before the verb.
+- n: 3
+  line: 4
+  topic: grammar
+  fr: >
+    L'heure d'une action se met **devant le verbe**, jamais après : 我们几点上班 « nous à-quelle-heure
+    commençons », 我每天六点起床 « je chaque-jour six-heures me-lève ». L'ordre : sujet, quand, verbe.
+  en: >
+    The time of an action goes **before the verb**, never after: 我们几点上班 "we at-what-time start-work",
+    我每天六点起床 "I every-day six-o'clock get-up". The order: subject, when, verb.
+- n: 4
+  line: 4
+  topic: vocab
+  fr: >
+    **上班** shàngbān « aller au travail, commencer le travail », litt. « monter à l'équipe ». Le contraire :
+    下班 xiàbān « finir le travail ».
+  en: >
+    **上班** shàngbān "go to work, start work", lit. "go up to the shift". Its opposite: 下班 xiàbān "finish
+    work".
+- n: 5
+  line: 6
+  topic: grammar
+  fr: >
+    **每** měi « chaque » + **天** tiān « jour » : 每天 « tous les jours ». 天 n'a pas besoin de classificateur.
+    Le verbe n'indique pas le temps : 我七点起床 peut être « je me lève » ou « je me lèverai » (ligne 11) ; le
+    contexte et les mots de temps suffisent.
+  en: >
+    **每** měi "every" + **天** tiān "day": 每天 "every day". 天 takes no measure word. The verb doesn't show
+    tense: 我七点起床 can be "I get up" or "I'll get up" (line 11); context and time words do the job.
+- n: 6
+  line: 8
+  topic: vocab
+  fr: >
+    **早** zǎo « tôt », **晚** wǎn « tard ». 早上 zǎoshang « le matin », 晚上 wǎnshang « le soir » (leçon 11).
+    Au bureau, on se salue souvent d'un simple 早！« bonjour ! » le matin.
+  en: >
+    **早** zǎo "early", **晚** wǎn "late". 早上 zǎoshang "morning", 晚上 wǎnshang "evening" (lesson 11). At work
+    people often greet each other with just 早！"morning!".
+- n: 7
+  line: 10
+  topic: grammar
+  fr: >
+    你也很晚 « toi aussi (tu es) très tard » : un adjectif avec 很 (L1 n.9), sans 是. Le chinois dit « être tard »
+    là où le français dit « être en retard ».
+  en: >
+    你也很晚 "you also (are) very late": an adjective with 很 (L1 n.9), no 是.
+words:
+- {w: "起床", py: "qǐchuáng", fr: "se lever", en: "to get up"}
+- {w: "现在", py: "xiànzài", fr: "maintenant", en: "now"}
+- {w: "点", py: "diǎn", fr: "heure (à l'horloge)", en: "o'clock"}
+- {w: "半", py: "bàn", fr: "demi, et demie", en: "half"}
+- {w: "上班", py: "shàngbān", fr: "aller au travail, commencer le travail", en: "to go to work, start work"}
+- {w: "快", py: "kuài", fr: "vite ; rapide", en: "quick; hurry"}
+- {w: "每", py: "měi", fr: "chaque", en: "every"}
+- {w: "天", py: "tiān", fr: "jour ; ciel", en: "day; sky"}
+- {w: "早", py: "zǎo", fr: "tôt ; bonjour (le matin)", en: "early; good morning"}
+- {w: "早上", py: "zǎoshang", fr: "le matin", en: "morning"}
+- {w: "忙", py: "máng", fr: "occupé", en: "busy"}
+- {w: "分", py: "fēn", fr: "minute", en: "minute"}
+- {w: "晚", py: "wǎn", fr: "tard, en retard", en: "late"}
+- {w: "明天", py: "míngtiān", fr: "demain", en: "tomorrow"}
+- {w: "七", py: "qī", fr: "sept", en: "seven"}
+exercise:
+  translate:
+  - {h: "现在几点？——现在七点半。", py: "Xiànzài jǐ diǎn? — Xiànzài qī diǎn bàn.", fr: "Quelle heure est-il ? — Sept heures et demie.", en: "What time is it? — Half past seven."}
+  - {h: "我每天九点上班。", py: "Wǒ měi tiān jiǔ diǎn shàngbān.", fr: "Je commence le travail à neuf heures tous les jours.", en: "I start work at nine every day."}
+  - {h: "明天你几点起床？", py: "Míngtiān nǐ jǐ diǎn qǐchuáng?", fr: "Demain, tu te lèves à quelle heure ?", en: "What time are you getting up tomorrow?"}
+  - {h: "小雨早上很忙。", py: "Xiǎoyǔ zǎoshang hěn máng.", fr: "Xiaoyu est très occupée le matin.", en: "Xiaoyu is busy in the mornings."}
+  choose:
+  - {h: "现在八＿＿半。", opts: [点, 分, 个], a: 点, py: "Xiànzài bā diǎn bàn.", fr: "Il est huit heures et demie.", en: "It's half past eight."}
+  - {h: "我＿＿六点起床。", opts: [每天, 现在, 几点], a: 每天, py: "Wǒ měi tiān liù diǎn qǐchuáng.", fr: "Je me lève tous les jours à six heures.", en: "I get up at six every day."}
+  - {h: "你们＿＿点上班？", opts: [几, 多少, 什么], a: 几, py: "Nǐmen jǐ diǎn shàngbān?", fr: "Vous commencez à quelle heure ?", en: "What time do you start work?"}
+  - {h: "九点五＿＿。", opts: [分, 点, 半], a: 分, py: "Jiǔ diǎn wǔ fēn.", fr: "Neuf heures cinq.", en: "Five past nine."}

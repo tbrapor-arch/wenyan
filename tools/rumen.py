@@ -36,7 +36,8 @@ def toneless(s):
     return "".join(c for c in s if not unicodedata.combining(c))
 
 
-SYL = {toneless(p) for v in pinyin_dict.values() for p in v.split(",")} - {"", "m", "n", "ng", "hm", "hng"}
+SYL = {toneless(p) for v in pinyin_dict.values() for p in v.split(",")} - {"", "m", "n", "ng", "hm", "hng"} | {"r"}
+# "r" is the 儿 of Beijing erhua: zhèr = 这 zhè + 儿 r
 
 
 def split_syllables(word):
@@ -92,7 +93,10 @@ class Rumen:
         self.lex = set(self.nhsk)
 
     # ---------- words
-    def cut(self, h, cut=None):
+    def cut(self, h, cut=None, lex=None):
+        """Longest match. Lines are cut on the words taught so far (+ names), so an NHSK compound
+        not taught yet (个人 in 几个人) can't swallow two taught words; notes are cut on all of NHSK."""
+        lex = self.lex if lex is None else lex
         if cut:
             toks = cut.split()
             if "".join(toks) != h:
@@ -102,7 +106,7 @@ class Rumen:
         while i < len(h):
             if HAN.match(h[i]):
                 for j in range(min(len(h), i + 8), i, -1):
-                    if h[i:j] in self.lex or h[i:j] in self.names or j == i + 1:
+                    if h[i:j] in lex or h[i:j] in self.names or j == i + 1:
                         out.append(h[i:j]); i = j; break
             else:
                 j = i
@@ -127,7 +131,7 @@ class Rumen:
     def sentence(self, f, L, where, h, py, cut=None, check=True, intro=()):
         """Cut a sentence into tokens with their pinyin and traditional form."""
         try:
-            words = self.cut(h, cut)
+            words = self.cut(h, cut, self.known | set(intro))
         except ValueError as e:
             self.fail(f, f"{where}: {e}"); return []
         sy = []
@@ -141,7 +145,11 @@ class Rumen:
                 self.fail(f, f"{where}: {nh} characters but {len(sy)} pinyin syllables ({' '.join(x for x, _ in sy)})"); return []
             for c, (s, _) in zip(HAN.findall(h), sy):
                 reads = pinyin(c, style=Style.TONE, heteronym=True)[0]
-                if toneless(s) not in {toneless(r) for r in reads}:
+                if (c == "儿") != (s == "r") and s == "r":
+                    self.fail(f, f"{where}: erhua r on {c}, not on 儿")
+                elif c == "儿" and s == "r":
+                    pass
+                elif toneless(s) not in {toneless(r) for r in reads}:
                     self.fail(f, f"{where}: {c} read '{s}', pypinyin knows {'/'.join(reads)}")
                 elif s.lower() not in reads and toneless(s) != s.lower() and c not in "一不":
                     print(f"{f.name}: {where}: {c} '{s}'? pypinyin gives {'/'.join(reads)}")

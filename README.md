@@ -31,6 +31,7 @@ baihua/NNN-slug.yaml    白話 lessons (§11)
 chengyu/NN-slug.yaml    成語 lessons (§10)
 tools/build.py          validates everything, adds simplified forms → app/course.json + dist/wenyan.html
 tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
+tools/rumen_quote.py    入門: quotes one-line YAML values (French « : » breaks plain YAML)
 data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
 tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts

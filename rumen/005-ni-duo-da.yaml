@@ -1,0 +1,190 @@
+id: 5
+slug: ni-duo-da
+title: 你多大？
+title_py: Nǐ duō dà?
+title_fr: Quel âge as-tu ?
+title_en: How old are you?
+status: draft
+setting:
+  fr: "Au bureau, Zhang Wei et Marc font connaissance. Xiaoyu passe par là."
+  en: "At the office, Zhang Wei and Marc get to know each other. Xiaoyu walks by."
+lines:
+- n: 1
+  who: "张伟"
+  h: "马克，你今年多大？"
+  py: "Mǎkè, nǐ jīnnián duō dà?"
+  fr: "Marc, tu as quel âge ?"
+  en: "Marc, how old are you?"
+  lit_fr: "(Marc, toi cette-année combien grand ?)"
+  lit_en: "(Marc, you this-year how big?)"
+- n: 2
+  who: "马克"
+  h: "我今年二十五岁。你呢？"
+  py: "Wǒ jīnnián èrshíwǔ suì. Nǐ ne?"
+  fr: "J'ai vingt-cinq ans. Et toi ?"
+  en: "I'm twenty-five. And you?"
+  lit_fr: "(Je cette-année deux-dix-cinq ans.)"
+  lit_en: "(I this-year two-ten-five years.)"
+- n: 3
+  who: "张伟"
+  h: "我三十岁。"
+  py: "Wǒ sānshí suì."
+  fr: "J'ai trente ans."
+  en: "I'm thirty."
+- n: 4
+  who: "马克"
+  h: "你有孩子吗？"
+  py: "Nǐ yǒu háizi ma?"
+  fr: "Tu as des enfants ?"
+  en: "Do you have children?"
+- n: 5
+  who: "张伟"
+  h: "有，我有一个女儿。"
+  py: "Yǒu, wǒ yǒu yí ge nǚ'ér."
+  fr: "Oui, j'ai une fille."
+  en: "Yes, I have a daughter."
+- n: 6
+  who: "马克"
+  h: "你女儿几岁？"
+  py: "Nǐ nǚ'ér jǐ suì?"
+  fr: "Elle a quel âge, ta fille ?"
+  en: "How old is your daughter?"
+- n: 7
+  who: "张伟"
+  h: "她三岁，很可爱！"
+  py: "Tā sān suì, hěn kě'ài!"
+  fr: "Trois ans. Elle est adorable !"
+  en: "She's three, and very cute!"
+- n: 8
+  who: "马克"
+  h: "小雨多大？"
+  py: "Xiǎoyǔ duō dà?"
+  fr: "Et Xiaoyu, elle a quel âge ?"
+  en: "How old is Xiaoyu?"
+- n: 9
+  who: "张伟"
+  h: "我不知道。你问她吧！"
+  py: "Wǒ bù zhīdào. Nǐ wèn tā ba!"
+  fr: "Je ne sais pas. Demande-lui !"
+  en: "I don't know. Ask her!"
+- n: 10
+  who: "马克"
+  h: "小雨，你多大？"
+  py: "Xiǎoyǔ, nǐ duō dà?"
+  fr: "Xiaoyu, tu as quel âge ?"
+  en: "Xiaoyu, how old are you?"
+- n: 11
+  who: "小雨"
+  h: "你猜！"
+  py: "Nǐ cāi!"
+  fr: "Devine !"
+  en: "Guess!"
+- n: 12
+  who: "马克"
+  h: "二十二？"
+  py: "Èrshí'èr?"
+  fr: "Vingt-deux ?"
+  en: "Twenty-two?"
+- n: 13
+  who: "小雨"
+  h: "谢谢！我二十九岁。"
+  py: "Xièxie! Wǒ èrshíjiǔ suì."
+  fr: "Merci ! J'ai vingt-neuf ans."
+  en: "Thank you! I'm twenty-nine."
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    **多大** duō dà « combien grand » demande l'âge d'un adulte ou d'un jeune. Pour un petit enfant, on dit
+    **几岁** jǐ suì (ligne 6), puisque 几 attend un petit nombre (L4 n.2). À une personne âgée, on demande
+    多大年纪 avec respect.
+  en: >
+    **多大** duō dà "how big" asks the age of an adult or a young person. For a small child, say **几岁** jǐ suì
+    (line 6), since 几 expects a small number (L4 n.2). An elderly person is asked 多大年纪, politely.
+- n: 2
+  line: 1
+  topic: grammar
+  fr: >
+    Les mots de temps se placent **devant le verbe** (ou en tête de phrase), jamais à la fin : 我今年二十五岁
+    « je, cette année, (ai) vingt-cinq ans ». 今年 jīnnián = « cette année ».
+  en: >
+    Time words go **before the verb** (or at the start), never at the end: 我今年二十五岁 "I, this year, (am)
+    twenty-five". 今年 jīnnián = "this year".
+- n: 3
+  line: 2
+  topic: grammar
+  fr: >
+    Les nombres se construisent comme ils se lisent : 十 « dix », 十二 « dix-deux » = 12, 二十 « deux-dix » = 20,
+    二十五 = 25, 九十九 = 99. Pas de mot spécial pour 70 ou 80 : 七十, 八十.
+  en: >
+    Numbers are built as they read: 十 "ten", 十二 "ten-two" = 12, 二十 "two-ten" = 20, 二十五 = 25, 九十九 = 99.
+- n: 4
+  line: 2
+  topic: grammar
+  fr: >
+    L'âge se dit sans verbe : 我二十五岁 « je vingt-cinq ans ». Comme l'adjectif (L1 n.7), le nombre + 岁
+    fonctionne seul. 岁 suì = « an (d'âge) ».
+  en: >
+    Age needs no verb: 我二十五岁 "I twenty-five years". Like an adjective (L1 n.7), number + 岁 stands on its
+    own. 岁 suì = "year (of age)".
+- n: 5
+  line: 5
+  topic: pron
+  fr: >
+    L'apostrophe de nǚ'ér (comme Lǐ'áng, L3 n.3) marque le début d'une syllabe qui commence par a, o ou e.
+    Le ü de nǚ garde ses deux points après n et l.
+  en: >
+    The apostrophe in nǚ'ér (like Lǐ'áng, L3 n.3) marks a new syllable starting with a, o or e. The ü in nǚ
+    keeps its dots after n and l.
+- n: 6
+  line: 9
+  topic: grammar
+  fr: >
+    **知道** zhīdào « savoir (un fait) », à distinguer de 认识 « connaître (une personne) » (L2 n.6). Ici 不 garde
+    son ton bù, car 知 est un premier ton.
+  en: >
+    **知道** zhīdào "to know (a fact)", unlike 认识 "to know (a person)" (L2 n.6). 不 keeps its bù tone here,
+    since 知 is a first tone.
+- n: 7
+  line: 9
+  topic: grammar
+  fr: >
+    Encore **吧** (L1 n.10) : 你问她吧 « demande-lui donc ». Avec 你, il adoucit un conseil ou un ordre.
+  en: >
+    **吧** again (L1 n.10): 你问她吧 "go on, ask her". With 你, it softens advice or an order.
+- n: 8
+  line: 11
+  topic: culture
+  fr: >
+    Demander son âge à quelqu'un n'a rien d'impoli en Chine, même à une femme. Xiaoyu joue le jeu avec
+    **猜** cāi « devine », et prend un âge trop jeune pour un compliment.
+  en: >
+    Asking someone's age isn't rude in China, even with a woman. Xiaoyu plays along with **猜** cāi "guess", and
+    takes a too-young number as a compliment.
+words:
+- {w: "今年", py: "jīnnián", fr: "cette année", en: "this year"}
+- {w: "多", py: "duō", fr: "combien ; beaucoup", en: "how (much); many"}
+- {w: "大", py: "dà", fr: "grand ; âgé", en: "big; old (age)"}
+- {w: "二", py: "èr", fr: "deux", en: "two"}
+- {w: "十", py: "shí", fr: "dix", en: "ten"}
+- {w: "岁", py: "suì", fr: "an (d'âge)", en: "year (of age)"}
+- {w: "三", py: "sān", fr: "trois", en: "three"}
+- {w: "孩子", py: "háizi", fr: "enfant", en: "child"}
+- {w: "女儿", py: "nǚ'ér", fr: "fille (enfant)", en: "daughter"}
+- {w: "可爱", py: "kě'ài", fr: "mignon, adorable", en: "cute, lovely"}
+- {w: "知道", py: "zhīdào", fr: "savoir", en: "to know (a fact)"}
+- {w: "问", py: "wèn", fr: "demander, interroger", en: "to ask"}
+- {w: "猜", py: "cāi", fr: "deviner", en: "to guess"}
+- {w: "九", py: "jiǔ", fr: "neuf", en: "nine"}
+exercise:
+  translate:
+  - {h: "你女儿今年几岁？", py: "Nǐ nǚ'ér jīnnián jǐ suì?", fr: "Ta fille a quel âge cette année ?", en: "How old is your daughter this year?"}
+  - {h: "我妈妈五十五岁。", py: "Wǒ māma wǔshíwǔ suì.", fr: "Ma mère a cinquante-cinq ans.", en: "My mum is fifty-five."}
+  - {h: "张伟三十岁，小雨二十九岁。", py: "Zhāng Wěi sānshí suì, Xiǎoyǔ èrshíjiǔ suì.", fr: "Zhang Wei a trente ans, Xiaoyu vingt-neuf.", en: "Zhang Wei is thirty, Xiaoyu twenty-nine."}
+  - {h: "我不知道李老师多大。", py: "Wǒ bù zhīdào Lǐ lǎoshī duō dà.", fr: "Je ne sais pas quel âge a Mme Li.", en: "I don't know how old Ms Li is."}
+  choose:
+  - {h: "你今年＿＿大？", opts: [多, 几, 什么], a: 多, py: "Nǐ jīnnián duō dà?", fr: "Tu as quel âge ?", en: "How old are you?"}
+  - {h: "你女儿＿＿岁？", opts: [几, 多, 哪], a: 几, py: "Nǐ nǚ'ér jǐ suì?", fr: "Ta fille a quel âge ?", en: "How old is your daughter?"}
+  - {h: "我三十＿＿。", opts: [岁, 个, 大], a: 岁, py: "Wǒ sānshí suì.", fr: "J'ai trente ans.", en: "I'm thirty."}
+  - {h: "我不＿＿。你问她吧！", opts: [知道, 认识, 猜], a: 知道, py: "Wǒ bù zhīdào. Nǐ wèn tā ba!", fr: "Je ne sais pas. Demande-lui !", en: "I don't know. Ask her!"}

@@ -1,0 +1,145 @@
+id: 7
+kind: review
+slug: fuxi-yi
+title: 复习（一）
+title_py: Fùxí (yī)
+title_fr: Révision 1
+title_en: Review 1
+status: draft
+setting:
+  fr: "Pas de mot nouveau aujourd'hui. Relisez les points ci-dessous, suivez les renvois vers les notes, puis lisez le dialogue, qui ne reprend que ce que vous savez déjà."
+  en: "No new words today. Go over the points below, follow the links to the notes, then read the dialogue, which only uses what you already know."
+names:
+- {w: "小月", py: "Xiǎoyuè", fr: "Xiaoyue", en: "Xiaoyue"}
+recap:
+- fr: >
+    **Les questions.** 吗 à la fin pour oui / non (L1 n.3). Les mots interrogatifs restent à la place de la
+    réponse, sans 吗 : 什么 (L2 n.3), 哪 (L3 n.1), 几 (L4 n.2), 多大 (L5 n.1), 谁 (L6 n.6). 呢 renvoie la
+    question : 你呢？ (L2 n.4). On répond oui ou non en reprenant le verbe : 是 / 不是, 有 / 没有 (L1 n.4,
+    L4 n.6).
+  en: >
+    **Questions.** 吗 at the end for yes / no (L1 n.3). Question words stay where the answer goes, with no 吗:
+    什么 (L2 n.3), 哪 (L3 n.1), 几 (L4 n.2), 多大 (L5 n.1), 谁 (L6 n.6). 呢 bounces the question back: 你呢？
+    (L2 n.4). You answer yes or no with the verb: 是 / 不是, 有 / 没有 (L1 n.4, L4 n.6).
+- fr: >
+    **La négation.** 不 devant les verbes et les adjectifs (L1 n.7), mais 没 devant 有 (L4 n.6). 不 et 一
+    changent de ton devant un quatrième ton : 不是 bú shì, 一个 yí ge (L1 n.8, L4 n.7).
+  en: >
+    **Negation.** 不 before verbs and adjectives (L1 n.7), but 没 before 有 (L4 n.6). 不 and 一 change tone
+    before a fourth tone: 不是 bú shì, 一个 yí ge (L1 n.8, L4 n.7).
+- fr: >
+    **Être.** 是 relie deux noms (L1 n.4). Devant un adjectif, pas de 是 mais souvent 很 (L1 n.7, L1 n.9) ;
+    pour s'exclamer, 真 (L6 n.7). L'âge se dit sans verbe : 我二十五岁 (L5 n.4).
+  en: >
+    **Being.** 是 links two nouns (L1 n.4). Before an adjective, no 是 but usually 很 (L1 n.7, L1 n.9); to
+    exclaim, 真 (L6 n.7). Age needs no verb: 我二十五岁 (L5 n.4).
+- fr: >
+    **Le 的.** Possession : 你的同事 (L1 n.6), mais pas avec la famille ni la maison : 我妈妈, 你家
+    (L4 n.3). Après un adjectif, il fait un nom : 新的 (L6 n.4).
+  en: >
+    **的.** Possession: 你的同事 (L1 n.6), but not with family or home: 我妈妈, 你家 (L4 n.3). After an
+    adjective it makes a noun: 新的 (L6 n.4).
+- fr: >
+    **Compter.** Nombre + classificateur + nom : 五个人 (L4 n.1). 两 devant un classificateur, 二 pour compter
+    (L4 n.4). Les nombres jusqu'à 99 (L5 n.3). 这个, 那个, 哪个 (L6 n.5).
+  en: >
+    **Counting.** Number + measure word + noun: 五个人 (L4 n.1). 两 before a measure word, 二 when counting
+    (L4 n.4). Numbers up to 99 (L5 n.3). 这个, 那个, 哪个 (L6 n.5).
+- fr: >
+    **L'ordre des mots.** Sujet, puis temps, puis adverbe, puis verbe : 我今年也二十五岁. Les mots de temps
+    (L5 n.2), 也 (L2 n.7) et 都 (L6 n.2) se mettent tous devant le verbe.
+  en: >
+    **Word order.** Subject, then time, then adverb, then verb: 我今年也二十五岁. Time words (L5 n.2), 也
+    (L2 n.7) and 都 (L6 n.2) all go before the verb.
+lines:
+- n: 1
+  who: "张伟"
+  h: "马克，你累吗？"
+  py: "Mǎkè, nǐ lèi ma?"
+  fr: "Marc, tu es fatigué ?"
+  en: "Marc, are you tired?"
+- n: 2
+  who: "马克"
+  h: "不累。你呢？"
+  py: "Bú lèi. Nǐ ne?"
+  fr: "Non. Et toi ?"
+  en: "No. And you?"
+- n: 3
+  who: "张伟"
+  h: "我也不累。你看，这是我女儿！"
+  py: "Wǒ yě bú lèi. Nǐ kàn, zhè shì wǒ nǚ'ér!"
+  fr: "Moi non plus. Regarde, c'est ma fille !"
+  en: "Me neither. Look, this is my daughter!"
+- n: 4
+  who: "马克"
+  h: "她真可爱！她叫什么名字？"
+  py: "Tā zhēn kě'ài! Tā jiào shénme míngzi?"
+  fr: "Elle est vraiment mignonne ! Comment elle s'appelle ?"
+  en: "She's so cute! What's her name?"
+- n: 5
+  who: "张伟"
+  h: "她叫小月，今年三岁。"
+  py: "Tā jiào Xiǎoyuè, jīnnián sān suì."
+  fr: "Elle s'appelle Xiaoyue, elle a trois ans."
+  en: "She's called Xiaoyue, she's three."
+- n: 6
+  who: "张伟"
+  h: "她和她妈妈都住上海。"
+  py: "Tā hé tā māma dōu zhù Shànghǎi."
+  fr: "Elle et sa mère habitent à Shanghai."
+  en: "She and her mum both live in Shanghai."
+- n: 7
+  who: "马克"
+  h: "你有哥哥姐姐吗？"
+  py: "Nǐ yǒu gēge jiějie ma?"
+  fr: "Tu as des grands frères, des grandes sœurs ?"
+  en: "Do you have older brothers or sisters?"
+- n: 8
+  who: "张伟"
+  h: "我没有哥哥，也没有姐姐。我有两个妹妹。"
+  py: "Wǒ méiyǒu gēge, yě méiyǒu jiějie. Wǒ yǒu liǎng ge mèimei."
+  fr: "Ni l'un ni l'autre. J'ai deux petites sœurs."
+  en: "Neither. I have two younger sisters."
+- n: 9
+  who: "马克"
+  h: "我也有两个妹妹！你看，这是我妹妹。"
+  py: "Wǒ yě yǒu liǎng ge mèimei! Nǐ kàn, zhè shì wǒ mèimei."
+  fr: "Moi aussi, j'ai deux petites sœurs ! Regarde, ce sont elles."
+  en: "I have two younger sisters too! Look, these are my sisters."
+- n: 10
+  who: "张伟"
+  h: "你妹妹是大学生吗？"
+  py: "Nǐ mèimei shì dàxuéshēng ma?"
+  fr: "Tes sœurs sont étudiantes ?"
+  en: "Are your sisters at university?"
+- n: 11
+  who: "马克"
+  h: "是，我妹妹都是大学生。"
+  py: "Shì, wǒ mèimei dōu shì dàxuéshēng."
+  fr: "Oui, elles sont étudiantes toutes les deux."
+  en: "Yes, they're both at university."
+- n: 12
+  who: "张伟"
+  h: "我们是同事，是邻居，也是朋友！"
+  py: "Wǒmen shì tóngshì, shì línjū, yě shì péngyou!"
+  fr: "On est collègues, voisins, et amis aussi !"
+  en: "We're colleagues, neighbours, and friends too!"
+- n: 13
+  who: "马克"
+  h: "对！"
+  py: "Duì!"
+  fr: "Exactement !"
+  en: "That's right!"
+exercise:
+  translate:
+  - {h: "你的中国朋友叫什么名字？", py: "Nǐ de Zhōngguó péngyou jiào shénme míngzi?", fr: "Comment s'appelle ton ami chinois ?", en: "What's your Chinese friend called?"}
+  - {h: "我没有孩子，张伟有一个女儿。", py: "Wǒ méiyǒu háizi, Zhāng Wěi yǒu yí ge nǚ'ér.", fr: "Je n'ai pas d'enfant ; Zhang Wei a une fille.", en: "I have no children; Zhang Wei has a daughter."}
+  - {h: "这些椅子是谁的？", py: "Zhèxiē yǐzi shì shéi de?", fr: "À qui sont ces chaises ?", en: "Whose are these chairs?"}
+  - {h: "李老师不是北京人，她是上海人。", py: "Lǐ lǎoshī bú shì Běijīng rén, tā shì Shànghǎi rén.", fr: "Mme Li n'est pas de Pékin, elle est de Shanghai.", en: "Ms Li isn't from Beijing, she's from Shanghai."}
+  - {h: "我们都很高兴。", py: "Wǒmen dōu hěn gāoxìng.", fr: "Nous sommes tous très contents.", en: "We're all very glad."}
+  choose:
+  - {h: "你有妹妹＿＿？", opts: [吗, 呢, 吧], a: 吗, py: "Nǐ yǒu mèimei ma?", fr: "Tu as une petite sœur ?", en: "Do you have a younger sister?"}
+  - {h: "我＿＿是医生。", opts: [不, 没, 很], a: 不, py: "Wǒ bú shì yīshēng.", fr: "Je ne suis pas médecin.", en: "I'm not a doctor."}
+  - {h: "他有＿＿个孩子。", opts: [两, 二, 几], a: 两, py: "Tā yǒu liǎng ge háizi.", fr: "Il a deux enfants.", en: "He has two children."}
+  - {h: "我们＿＿是法国人。", opts: [都, 很, 的], a: 都, py: "Wǒmen dōu shì Fǎguó rén.", fr: "Nous sommes tous français.", en: "We're all French."}
+  - {h: "这是＿＿的东西？", opts: [谁, 哪, 几], a: 谁, py: "Zhè shì shéi de dōngxi?", fr: "C'est à qui, ces affaires ?", en: "Whose things are these?"}

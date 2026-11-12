@@ -6,69 +6,69 @@ title_fr: Bonjour !
 title_en: Hello!
 status: draft
 setting:
-  fr: Aéroport de Pékin, hall des arrivées. Marc, français, vient faire un stage d'un an. Une jeune femme l'attend avec une pancarte.
-  en: Beijing airport, arrivals hall. Marc, who is French, has come for a one-year internship. A young woman is waiting with a sign.
+  fr: "Aéroport de Pékin, hall des arrivées. Marc, français, vient faire un stage d'un an. Une jeune femme l'attend avec une pancarte."
+  en: "Beijing airport, arrivals hall. Marc, who is French, has come for a one-year internship. A young woman is waiting with a sign."
 names:
 - {w: "马克", py: "Mǎkè", fr: "Marc", en: "Marc"}
 - {w: "王小雨", py: "Wáng Xiǎoyǔ", fr: "Wang Xiaoyu", en: "Wang Xiaoyu"}
 - {w: "小雨", py: "Xiǎoyǔ", fr: "Xiaoyu", en: "Xiaoyu"}
 lines:
 - n: 1
-  who: 小雨
-  h: 你好！你是马克吗？
-  py: Nǐ hǎo! Nǐ shì Mǎkè ma?
-  fr: Bonjour ! Tu es Marc ?
-  en: Hello! Are you Marc?
+  who: "小雨"
+  h: "你好！你是马克吗？"
+  py: "Nǐ hǎo! Nǐ shì Mǎkè ma?"
+  fr: "Bonjour ! Tu es Marc ?"
+  en: "Hello! Are you Marc?"
 - n: 2
-  who: 马克
-  h: 是，我是马克。你是……？
-  py: Shì, wǒ shì Mǎkè. Nǐ shì……?
-  fr: Oui, je suis Marc. Et tu es… ?
-  en: Yes, I'm Marc. And you are…?
-  lit_fr: (Être, je être Marc. Tu être… ?)
-  lit_en: (Be, I be Marc. You be…?)
+  who: "马克"
+  h: "是，我是马克。你是……？"
+  py: "Shì, wǒ shì Mǎkè. Nǐ shì……?"
+  fr: "Oui, je suis Marc. Et tu es… ?"
+  en: "Yes, I'm Marc. And you are…?"
+  lit_fr: "(Être, je être Marc. Tu être… ?)"
+  lit_en: "(Be, I be Marc. You be…?)"
 - n: 3
-  who: 小雨
-  h: 我是王小雨，你的同事。
-  py: Wǒ shì Wáng Xiǎoyǔ, nǐ de tóngshì.
-  fr: Je suis Wang Xiaoyu, ta collègue.
-  en: I'm Wang Xiaoyu, your colleague.
+  who: "小雨"
+  h: "我是王小雨，你的同事。"
+  py: "Wǒ shì Wáng Xiǎoyǔ, nǐ de tóngshì."
+  fr: "Je suis Wang Xiaoyu, ta collègue."
+  en: "I'm Wang Xiaoyu, your colleague."
 - n: 4
-  who: 马克
-  h: 你好，小雨！谢谢！
-  py: Nǐ hǎo, Xiǎoyǔ! Xièxie!
-  fr: Bonjour, Xiaoyu ! Merci !
-  en: Hello, Xiaoyu! Thank you!
+  who: "马克"
+  h: "你好，小雨！谢谢！"
+  py: "Nǐ hǎo, Xiǎoyǔ! Xièxie!"
+  fr: "Bonjour, Xiaoyu ! Merci !"
+  en: "Hello, Xiaoyu! Thank you!"
 - n: 5
-  who: 小雨
-  h: 你累吗？
-  py: Nǐ lèi ma?
-  fr: Tu es fatigué ?
-  en: Are you tired?
-  lit_fr: (Tu fatigué ?)
-  lit_en: (You tired?)
+  who: "小雨"
+  h: "你累吗？"
+  py: "Nǐ lèi ma?"
+  fr: "Tu es fatigué ?"
+  en: "Are you tired?"
+  lit_fr: "(Tu fatigué ?)"
+  lit_en: "(You tired?)"
 - n: 6
-  who: 马克
-  h: 不累，我很好。
-  py: Bú lèi, wǒ hěn hǎo.
-  fr: Non, ça va très bien.
-  en: No, I'm fine.
-  lit_fr: (Pas fatigué, je très bien.)
-  lit_en: (Not tired, I very good.)
+  who: "马克"
+  h: "不累，我很好。"
+  py: "Bú lèi, wǒ hěn hǎo."
+  fr: "Non, ça va très bien."
+  en: "No, I'm fine."
+  lit_fr: "(Pas fatigué, je très bien.)"
+  lit_en: "(Not tired, I very good.)"
 - n: 7
-  who: 小雨
-  h: 好，我们走吧！
-  py: Hǎo, wǒmen zǒu ba!
-  fr: Bon, on y va !
-  en: Right, let's go!
-  lit_fr: (Bien, nous partir donc !)
-  lit_en: (Good, we go then!)
+  who: "小雨"
+  h: "好，我们走吧！"
+  py: "Hǎo, wǒmen zǒu ba!"
+  fr: "Bon, on y va !"
+  en: "Right, let's go!"
+  lit_fr: "(Bien, nous partir donc !)"
+  lit_en: "(Good, we go then!)"
 - n: 8
-  who: 马克
-  h: 走吧！
-  py: Zǒu ba!
-  fr: Allons-y !
-  en: Let's go!
+  who: "马克"
+  h: "走吧！"
+  py: "Zǒu ba!"
+  fr: "Allons-y !"
+  en: "Let's go!"
 notes:
 - n: 1
   line: 1

@@ -618,7 +618,7 @@ details.allnotes summary{cursor:pointer;font:600 13px var(--en);letter-spacing:.
       <div class="meta"><span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
       ${wave ? `<p class="setting">${esc(t_("waveIntro"))}</p>` : (L.setting ? `<p class="setting">${esc(RT(L.setting))}</p>` : "")}
       ${!wave && waveL ? `<a class="wavecard" href="#rumen/${w}/wave"><span class="kicker">${t_("wave")}${done["rumen:" + w + ":wave"] ? " · ✓" : ""}</span><br>${esc(t_("waveDo").replace("{n}", w))}</a>` : ""}
-      ${wave ? "" : `<nav class="lnav">${[["dlg", t_("dialogue")], ["sec-notes", t_("notes")], ["sec-words", t_("words")], ["sec-ex", t_("practice")]].map(([id, x]) => `<button data-jump="${id}">${x}</button>`).join("")}</nav>`}
+      ${wave ? "" : `<nav class="lnav">${[["dlg", t_("dialogue"), 1], ["sec-notes", t_("notes"), L.notes?.length], ["sec-words", t_("words"), L.words?.length], ["sec-ex", t_("practice"), ex.translate || ex.choose]].filter(c => c[2]).map(([id, x]) => `<button data-jump="${id}">${x}</button>`).join("")}</nav>`}
       ${L.recap ? `<h2>${t_("review")}</h2><div class="recap">${L.recap.map((r, i) => `<div class="rc"><span class="num">${i + 1}</span><div><p class="ntext">${noteHTML(rtrad ? r[rlang + "_t"] : r[rlang])}</p></div></div>`).join("")}</div>` : ""}
       <h2 id="dlg">${t_("dialogue")}</h2>
       <div class="dlg">${L.lines.map((l, li) => `<div class="sent" id="line-${l.n}">

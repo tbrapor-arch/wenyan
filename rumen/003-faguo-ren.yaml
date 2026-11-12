@@ -6,8 +6,8 @@ title_fr: Je suis français
 title_en: I'm French
 status: draft
 setting:
-  fr: À la cantine de l'entreprise. Xiaoyu déjeune avec Marc et Zhang Wei, un autre collègue.
-  en: In the company canteen. Xiaoyu has lunch with Marc and Zhang Wei, another colleague.
+  fr: "À la cantine de l'entreprise. Xiaoyu déjeune avec Marc et Zhang Wei, un autre collègue."
+  en: "In the company canteen. Xiaoyu has lunch with Marc and Zhang Wei, another colleague."
 names:
 - {w: "张伟", py: "Zhāng Wěi", fr: "Zhang Wei", en: "Zhang Wei"}
 - {w: "巴黎", py: "Bālí", fr: "Paris", en: "Paris"}
@@ -16,73 +16,73 @@ names:
 - {w: "上海", py: "Shànghǎi", fr: "Shanghai", en: "Shanghai"}
 lines:
 - n: 1
-  who: 张伟
-  h: 你好！你是哪国人？
-  py: Nǐ hǎo! Nǐ shì nǎ guó rén?
-  fr: Salut ! Tu es de quel pays ?
-  en: Hi! Where are you from?
-  lit_fr: (Tu être quel pays personne ?)
-  lit_en: (You be which country person?)
+  who: "张伟"
+  h: "你好！你是哪国人？"
+  py: "Nǐ hǎo! Nǐ shì nǎ guó rén?"
+  fr: "Salut ! Tu es de quel pays ?"
+  en: "Hi! Where are you from?"
+  lit_fr: "(Tu être quel pays personne ?)"
+  lit_en: "(You be which country person?)"
 - n: 2
-  who: 马克
-  h: 我是法国人。
-  py: Wǒ shì Fǎguó rén.
-  fr: Je suis français.
-  en: I'm French.
-  lit_fr: (Je être France personne.)
-  lit_en: (I be France person.)
+  who: "马克"
+  h: "我是法国人。"
+  py: "Wǒ shì Fǎguó rén."
+  fr: "Je suis français."
+  en: "I'm French."
+  lit_fr: "(Je être France personne.)"
+  lit_en: "(I be France person.)"
 - n: 3
-  who: 张伟
-  h: 你是巴黎人吗？
-  py: Nǐ shì Bālí rén ma?
-  fr: Tu es de Paris ?
-  en: Are you from Paris?
+  who: "张伟"
+  h: "你是巴黎人吗？"
+  py: "Nǐ shì Bālí rén ma?"
+  fr: "Tu es de Paris ?"
+  en: "Are you from Paris?"
 - n: 4
-  who: 马克
-  h: 不是，我是里昂人。
-  py: Bú shì, wǒ shì Lǐ'áng rén.
-  fr: Non, je suis de Lyon.
-  en: No, I'm from Lyon.
+  who: "马克"
+  h: "不是，我是里昂人。"
+  py: "Bú shì, wǒ shì Lǐ'áng rén."
+  fr: "Non, je suis de Lyon."
+  en: "No, I'm from Lyon."
 - n: 5
-  who: 马克
-  h: 你们是北京人吗？
-  py: Nǐmen shì Běijīng rén ma?
-  fr: Vous êtes de Pékin ?
-  en: Are you two from Beijing?
+  who: "马克"
+  h: "你们是北京人吗？"
+  py: "Nǐmen shì Běijīng rén ma?"
+  fr: "Vous êtes de Pékin ?"
+  en: "Are you two from Beijing?"
 - n: 6
-  who: 张伟
-  h: 我不是，我是上海人。小雨是北京人。
-  py: Wǒ bú shì, wǒ shì Shànghǎi rén. Xiǎoyǔ shì Běijīng rén.
-  fr: Moi non, je suis de Shanghai. Xiaoyu est de Pékin.
-  en: I'm not, I'm from Shanghai. Xiaoyu is from Beijing.
+  who: "张伟"
+  h: "我不是，我是上海人。小雨是北京人。"
+  py: "Wǒ bú shì, wǒ shì Shànghǎi rén. Xiǎoyǔ shì Běijīng rén."
+  fr: "Moi non, je suis de Shanghai. Xiaoyu est de Pékin."
+  en: "I'm not, I'm from Shanghai. Xiaoyu is from Beijing."
 - n: 7
-  who: 马克
-  h: 你们是我的中国朋友！
-  py: Nǐmen shì wǒ de Zhōngguó péngyou!
-  fr: Vous êtes mes amis chinois !
-  en: You're my Chinese friends!
+  who: "马克"
+  h: "你们是我的中国朋友！"
+  py: "Nǐmen shì wǒ de Zhōngguó péngyou!"
+  fr: "Vous êtes mes amis chinois !"
+  en: "You're my Chinese friends!"
 - n: 8
-  who: 小雨
-  h: 对！你是我们的法国朋友。
-  py: Duì! Nǐ shì wǒmen de Fǎguó péngyou.
-  fr: Exactement ! Et toi, tu es notre ami français.
-  en: That's right! And you're our French friend.
+  who: "小雨"
+  h: "对！你是我们的法国朋友。"
+  py: "Duì! Nǐ shì wǒmen de Fǎguó péngyou."
+  fr: "Exactement ! Et toi, tu es notre ami français."
+  en: "That's right! And you're our French friend."
 - n: 9
-  who: 张伟
-  h: 你的汉语很好！
-  py: Nǐ de Hànyǔ hěn hǎo!
-  fr: Tu parles bien chinois !
-  en: Your Chinese is good!
-  lit_fr: (Ton chinois très bien !)
-  lit_en: (Your Chinese very good!)
+  who: "张伟"
+  h: "你的汉语很好！"
+  py: "Nǐ de Hànyǔ hěn hǎo!"
+  fr: "Tu parles bien chinois !"
+  en: "Your Chinese is good!"
+  lit_fr: "(Ton chinois très bien !)"
+  lit_en: "(Your Chinese very good!)"
 - n: 10
-  who: 马克
-  h: 哪里，哪里……
-  py: Nǎli, nǎli……
-  fr: Oh, pas du tout…
-  en: Oh, not really…
-  lit_fr: (Où ça, où ça…)
-  lit_en: (Where, where…)
+  who: "马克"
+  h: "哪里，哪里……"
+  py: "Nǎli, nǎli……"
+  fr: "Oh, pas du tout…"
+  en: "Oh, not really…"
+  lit_fr: "(Où ça, où ça…)"
+  lit_en: "(Where, where…)"
 notes:
 - n: 1
   line: 1

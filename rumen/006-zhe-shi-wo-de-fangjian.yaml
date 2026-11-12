@@ -1,0 +1,187 @@
+id: 6
+slug: zhe-shi-wo-de-fangjian
+title: 这是我的房间
+title_py: Zhè shì wǒ de fángjiān
+title_fr: Voici ma chambre
+title_en: This is my room
+status: draft
+setting:
+  fr: "Marc emménage dans un appartement partagé. Xiaoyu lui fait visiter."
+  en: "Marc moves into a shared flat. Xiaoyu shows him round."
+lines:
+- n: 1
+  who: "小雨"
+  h: "马克，这是你的房间。"
+  py: "Mǎkè, zhè shì nǐ de fángjiān."
+  fr: "Marc, voici ta chambre."
+  en: "Marc, this is your room."
+- n: 2
+  who: "马克"
+  h: "很大！那是我的床吗？"
+  py: "Hěn dà! Nà shì wǒ de chuáng ma?"
+  fr: "Elle est grande ! Ça, c'est mon lit ?"
+  en: "It's big! Is that my bed?"
+- n: 3
+  who: "小雨"
+  h: "对。这是你的桌子，那是你的椅子。"
+  py: "Duì. Zhè shì nǐ de zhuōzi, nà shì nǐ de yǐzi."
+  fr: "Oui. Ici ton bureau, là ta chaise."
+  en: "Yes. This is your desk, that's your chair."
+- n: 4
+  who: "马克"
+  h: "这些东西都是新的吗？"
+  py: "Zhèxiē dōngxi dōu shì xīn de ma?"
+  fr: "Toutes ces affaires sont neuves ?"
+  en: "Are all these things new?"
+  lit_fr: "(Ces choses toutes être neuves-de ?)"
+  lit_en: "(These things all be new-ones?)"
+- n: 5
+  who: "小雨"
+  h: "都是新的。"
+  py: "Dōu shì xīn de."
+  fr: "Tout est neuf."
+  en: "All new."
+- n: 6
+  who: "马克"
+  h: "真好看！那个房间是谁的？"
+  py: "Zhēn hǎokàn! Nàge fángjiān shì shéi de?"
+  fr: "C'est vraiment joli ! Et cette chambre-là, c'est à qui ?"
+  en: "It's really nice! Whose is that room?"
+- n: 7
+  who: "小雨"
+  h: "是张伟的。他也住这个家。"
+  py: "Shì Zhāng Wěi de. Tā yě zhù zhège jiā."
+  fr: "À Zhang Wei. Il habite ici, lui aussi."
+  en: "Zhang Wei's. He lives here too."
+  lit_fr: "(Être Zhang Wei-de. Il aussi habiter cette maison.)"
+  lit_en: "(Be Zhang Wei's. He also live this home.)"
+- n: 8
+  who: "马克"
+  h: "张伟？我们的同事张伟？"
+  py: "Zhāng Wěi? Wǒmen de tóngshì Zhāng Wěi?"
+  fr: "Zhang Wei ? Notre collègue Zhang Wei ?"
+  en: "Zhang Wei? Our colleague Zhang Wei?"
+- n: 9
+  who: "小雨"
+  h: "对！你们是同事，也是邻居。"
+  py: "Duì! Nǐmen shì tóngshì, yě shì línjū."
+  fr: "Oui ! Vous êtes collègues, et voisins aussi."
+  en: "Yes! You're colleagues and neighbours too."
+- n: 10
+  who: "马克"
+  h: "真好！哪个是洗手间？"
+  py: "Zhēn hǎo! Nǎge shì xǐshǒujiān?"
+  fr: "Super ! Et les toilettes, c'est laquelle ?"
+  en: "Great! Which one is the bathroom?"
+- n: 11
+  who: "小雨"
+  h: "那个。"
+  py: "Nàge."
+  fr: "Celle-là."
+  en: "That one."
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    **这** zhè « ceci, ici » et **那** nà « cela, là-bas » : 这是你的房间 « ceci est ta chambre ». Pas besoin
+    de nom après 这 / 那 devant 是.
+  en: >
+    **这** zhè "this" and **那** nà "that": 这是你的房间 "this is your room". No noun is needed after 这 / 那 in
+    front of 是.
+- n: 2
+  line: 4
+  topic: grammar
+  fr: >
+    **都** dōu « tous, tout » se place devant le verbe et reprend ce qui précède : 这些东西都是新的 « ces
+    choses sont toutes neuves ». Jamais devant le nom comme le « tous » français.
+  en: >
+    **都** dōu "all" goes before the verb and points back to what came before: 这些东西都是新的 "these things
+    are all new". Never in front of the noun, as "all" is in English.
+- n: 3
+  line: 4
+  topic: grammar
+  fr: >
+    **这些** zhèxiē « ces… (ci) », **那些** nàxiē « ces… (là) » : le pluriel de 这 et 那. 东西 dōngxi « chose,
+    affaire », litt. « est-ouest ».
+  en: >
+    **这些** zhèxiē "these", **那些** nàxiē "those": the plurals of 这 and 那. 东西 dōngxi "thing, stuff", lit.
+    "east-west".
+- n: 4
+  line: 4
+  topic: grammar
+  fr: >
+    **的** après un adjectif en fait un nom : 新的 « (du) neuf, des neufs ». 是新的 « est du neuf ». Même 的
+    que dans 我的 (L1 n.6) : « ce qui est à moi, ce qui est neuf ».
+  en: >
+    **的** after an adjective makes it a noun: 新的 "new one(s)". 是新的 "is a new one". The same 的 as in 我的
+    (L1 n.6): "that of mine, that which is new".
+- n: 5
+  line: 6
+  topic: grammar
+  fr: >
+    **这个 / 那个 / 哪个** : avec un classificateur, 这 / 那 / 哪 se mettent devant un nom : 那个房间 « cette
+    chambre-là », 哪个 « lequel ». Seuls, ils remplacent le nom : 那个 « celui-là ». On dit souvent zhèige,
+    nèige à l'oral.
+  en: >
+    **这个 / 那个 / 哪个**: with a measure word, 这 / 那 / 哪 go before a noun: 那个房间 "that room", 哪个
+    "which one". On their own they stand for the noun: 那个 "that one". In speech you often hear zhèige,
+    nèige.
+- n: 6
+  line: 6
+  topic: grammar
+  fr: >
+    **谁** shéi « qui » reste à la place de la réponse (L2 n.3) ; 谁的 « à qui ». Le dictionnaire donne aussi
+    shuí, plus rare à l'oral.
+  en: >
+    **谁** shéi "who" stays where the answer goes (L2 n.3); 谁的 "whose". Dictionaries also give shuí, rarer
+    in speech.
+- n: 7
+  line: 6
+  topic: vocab
+  fr: >
+    **真** zhēn « vraiment » sert aux exclamations : 真好看！« que c'est joli ! ». Contrairement à 很 (L1 n.9),
+    il garde toute sa force. 好看 « beau à voir » : 好 + 看.
+  en: >
+    **真** zhēn "really" makes exclamations: 真好看！"how nice!". Unlike 很 (L1 n.9), it keeps its full force.
+    好看 "nice to look at": 好 + 看.
+- n: 8
+  line: 7
+  topic: vocab
+  fr: >
+    **住** zhù « habiter » se construit ici directement avec le lieu. On verra en leçon 8 la tournure plus
+    courante avec 在 : 住在北京 « habiter à Pékin ».
+  en: >
+    **住** zhù "to live (somewhere)" takes the place directly here. Lesson 8 brings the more usual form with
+    在: 住在北京 "live in Beijing".
+words:
+- {w: "这", py: "zhè", fr: "ceci, ce…-ci", en: "this"}
+- {w: "房间", py: "fángjiān", fr: "chambre, pièce", en: "room"}
+- {w: "那", py: "nà", fr: "cela, ce…-là", en: "that"}
+- {w: "床", py: "chuáng", fr: "lit", en: "bed"}
+- {w: "桌子", py: "zhuōzi", fr: "table, bureau", en: "table, desk"}
+- {w: "椅子", py: "yǐzi", fr: "chaise", en: "chair"}
+- {w: "这些", py: "zhèxiē", fr: "ces… -ci", en: "these"}
+- {w: "东西", py: "dōngxi", fr: "chose, affaires", en: "thing, stuff"}
+- {w: "都", py: "dōu", fr: "tous, tout", en: "all, both"}
+- {w: "新", py: "xīn", fr: "neuf, nouveau", en: "new"}
+- {w: "真", py: "zhēn", fr: "vraiment", en: "really"}
+- {w: "好看", py: "hǎokàn", fr: "joli, beau", en: "nice-looking"}
+- {w: "那个", py: "nàge", fr: "celui-là, ce…-là", en: "that one, that"}
+- {w: "谁", py: "shéi", fr: "qui", en: "who"}
+- {w: "住", py: "zhù", fr: "habiter", en: "to live, stay"}
+- {w: "这个", py: "zhège", fr: "celui-ci, ce…-ci", en: "this one, this"}
+- {w: "邻居", py: "línjū", fr: "voisin", en: "neighbour"}
+- {w: "哪个", py: "nǎge", fr: "lequel", en: "which one"}
+- {w: "洗手间", py: "xǐshǒujiān", fr: "toilettes, salle de bains", en: "bathroom, toilet"}
+exercise:
+  translate:
+  - {h: "那是谁的床？", py: "Nà shì shéi de chuáng?", fr: "C'est le lit de qui ?", en: "Whose bed is that?"}
+  - {h: "这些椅子都是新的。", py: "Zhèxiē yǐzi dōu shì xīn de.", fr: "Ces chaises sont toutes neuves.", en: "These chairs are all new."}
+  - {h: "我们都是法国人。", py: "Wǒmen dōu shì Fǎguó rén.", fr: "Nous sommes tous français.", en: "We're all French."}
+  - {h: "这个房间真漂亮！", py: "Zhège fángjiān zhēn piàoliang!", fr: "Cette chambre est vraiment jolie !", en: "This room is really pretty!"}
+  choose:
+  - {h: "我们＿＿是同事。", opts: [都, 也, 和], a: 都, py: "Wǒmen dōu shì tóngshì.", fr: "Nous sommes tous collègues.", en: "We're all colleagues."}
+  - {h: "那个房间是＿＿的？", opts: [谁, 哪, 几], a: 谁, py: "Nàge fángjiān shì shéi de?", fr: "Cette chambre est à qui ?", en: "Whose room is that?"}
+  - {h: "这些东西是新＿＿。", opts: [的, 吗, 都], a: 的, py: "Zhèxiē dōngxi shì xīn de.", fr: "Ces affaires sont neuves.", en: "These things are new."}
+  - {h: "＿＿个是洗手间？", opts: [哪, 谁, 什么], a: 哪, py: "Nǎge shì xǐshǒujiān?", fr: "Ce sont lesquelles, les toilettes ?", en: "Which one is the bathroom?"}

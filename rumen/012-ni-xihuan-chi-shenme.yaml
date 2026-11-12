@@ -1,0 +1,208 @@
+id: 12
+slug: ni-xihuan-chi-shenme
+title: 你喜欢吃什么？
+title_py: Nǐ xǐhuan chī shénme?
+title_fr: Qu'est-ce que tu aimes manger ?
+title_en: What do you like to eat?
+status: draft
+setting:
+  fr: "Midi. Xiaoyu emmène Marc dans un petit restaurant près du bureau."
+  en: "Lunchtime. Xiaoyu takes Marc to a small restaurant near the office."
+lines:
+- n: 1
+  who: "服务员"
+  h: "你们好！你们吃什么？"
+  py: "Nǐmen hǎo! Nǐmen chī shénme?"
+  fr: "Bonjour ! Qu'est-ce que vous prenez ?"
+  en: "Hello! What will you have?"
+- n: 2
+  who: "小雨"
+  h: "马克，你喜欢吃什么？"
+  py: "Mǎkè, nǐ xǐhuan chī shénme?"
+  fr: "Marc, qu'est-ce que tu aimes manger ?"
+  en: "Marc, what do you like to eat?"
+- n: 3
+  who: "马克"
+  h: "我喜欢中国菜！饺子、鱼、肉……都喜欢！"
+  py: "Wǒ xǐhuan Zhōngguó cài! Jiǎozi、yú、ròu…… dōu xǐhuan!"
+  fr: "J'adore la cuisine chinoise ! Les raviolis, le poisson, la viande… j'aime tout !"
+  en: "I love Chinese food! Dumplings, fish, meat… I like it all!"
+- n: 4
+  who: "小雨"
+  h: "你吃辣的吗？"
+  py: "Nǐ chī là de ma?"
+  fr: "Tu manges épicé ?"
+  en: "Do you eat spicy food?"
+- n: 5
+  who: "马克"
+  h: "吃，我很喜欢辣的。"
+  py: "Chī, wǒ hěn xǐhuan là de."
+  fr: "Oui, j'aime beaucoup ça."
+  en: "Yes, I really like spicy food."
+- n: 6
+  who: "小雨"
+  h: "好。我们要一个鱼、一个肉，还要饺子。"
+  py: "Hǎo. Wǒmen yào yí ge yú、yí ge ròu, hái yào jiǎozi."
+  fr: "Bon. On prend un plat de poisson, un plat de viande, et aussi des raviolis."
+  en: "Right. We'll have a fish dish, a meat dish, and some dumplings too."
+- n: 7
+  who: "服务员"
+  h: "要米饭吗？"
+  py: "Yào mǐfàn ma?"
+  fr: "Vous voulez du riz ?"
+  en: "Would you like rice?"
+- n: 8
+  who: "小雨"
+  h: "要两碗米饭。"
+  py: "Yào liǎng wǎn mǐfàn."
+  fr: "Deux bols de riz."
+  en: "Two bowls of rice."
+- n: 9
+  who: "服务员"
+  h: "喝什么？茶还是咖啡？"
+  py: "Hē shénme? Chá háishi kāfēi?"
+  fr: "Et comme boisson ? Thé ou café ?"
+  en: "What to drink? Tea or coffee?"
+- n: 10
+  who: "马克"
+  h: "我喝茶。"
+  py: "Wǒ hē chá."
+  fr: "Du thé pour moi."
+  en: "Tea for me."
+- n: 11
+  who: "小雨"
+  h: "我也喝茶。"
+  py: "Wǒ yě hē chá."
+  fr: "Pour moi aussi."
+  en: "Me too."
+- n: 12
+  who: "马克"
+  h: "这个鱼真好吃！"
+  py: "Zhège yú zhēn hǎochī!"
+  fr: "Ce poisson est vraiment délicieux !"
+  en: "This fish is really good!"
+- n: 13
+  who: "小雨"
+  h: "是啊，这个饭馆不错吧？"
+  py: "Shì a, zhège fànguǎn búcuò ba?"
+  fr: "Oui, pas mal, ce restaurant, hein ?"
+  en: "Yes, this restaurant's not bad, right?"
+- n: 14
+  who: "马克"
+  h: "不错！我每天都想来！"
+  py: "Búcuò! Wǒ měi tiān dōu xiǎng lái!"
+  fr: "Pas mal du tout ! J'ai envie d'y venir tous les jours !"
+  en: "Not bad at all! I'd like to come every day!"
+notes:
+- n: 1
+  line: 1
+  topic: vocab
+  fr: >
+    **吃** chī « manger » et **喝** hē « boire ». Le chinois aime nommer l'objet : on dit souvent 吃饭 « manger
+    du riz » pour « manger, prendre un repas ».
+  en: >
+    **吃** chī "to eat" and **喝** hē "to drink". Chinese likes to name the object: 吃饭 "eat rice" is the usual
+    way to say "have a meal".
+- n: 2
+  line: 2
+  topic: grammar
+  fr: >
+    **喜欢** xǐhuan « aimer » + verbe : 喜欢吃 « aimer manger ». Avec un nom : 我喜欢中国菜. Pour dire « beaucoup »,
+    很 se place devant : 很喜欢 (ligne 5).
+  en: >
+    **喜欢** xǐhuan "to like" + verb: 喜欢吃 "like eating". With a noun: 我喜欢中国菜. For "a lot", put 很 in
+    front: 很喜欢 (line 5).
+- n: 3
+  line: 3
+  topic: grammar
+  fr: >
+    L'objet peut venir en tête pour être mis en avant, puis 都 le reprend : 饺子、鱼、肉……都喜欢 « raviolis,
+    poisson, viande… (j')aime tout ». 都 regarde toujours vers ce qui précède (L6 n.2). La virgule
+    d'énumération 、 sépare les éléments d'une liste.
+  en: >
+    The object can come first for emphasis, then 都 picks it up: 饺子、鱼、肉……都喜欢 "dumplings, fish, meat…
+    (I) like them all". 都 always looks back (L6 n.2). The enumeration comma 、 separates items in a list.
+- n: 4
+  line: 3
+  topic: vocab
+  fr: >
+    **菜** cài « plat ; légume ; cuisine » : 中国菜 « cuisine chinoise ». Au restaurant, on compte les plats
+    avec 个 : 一个鱼 « un (plat de) poisson » (ligne 6).
+  en: >
+    **菜** cài "dish; vegetable; cuisine": 中国菜 "Chinese food". In a restaurant, dishes are counted with 个:
+    一个鱼 "a fish (dish)" (line 6).
+- n: 5
+  line: 5
+  topic: grammar
+  fr: >
+    On répond encore avec le verbe (L1 n.4) : 你吃辣的吗？— 吃。« Tu manges épicé ? — (J'en) mange. »
+  en: >
+    Again, the answer is the verb (L1 n.4): 你吃辣的吗？— 吃。"Do you eat spicy? — (I) eat."
+- n: 6
+  line: 8
+  topic: grammar
+  fr: >
+    **碗** wǎn « bol » sert lui-même de classificateur : 两碗米饭 « deux bols de riz ». Pas de 个 entre les deux.
+  en: >
+    **碗** wǎn "bowl" is itself a measure word: 两碗米饭 "two bowls of rice". No 个 in between.
+- n: 7
+  line: 9
+  topic: grammar
+  fr: >
+    **还是** háishi « ou bien » dans une question de choix : 茶还是咖啡？ Pas de 吗 : la question est déjà dans
+    le choix. Dans une phrase affirmative, « ou » se dit autrement (on le verra plus tard).
+  en: >
+    **还是** háishi "or" in a choice question: 茶还是咖啡？ No 吗: the choice already makes it a question. In a
+    statement, "or" is said differently (later).
+- n: 8
+  line: 13
+  topic: grammar
+  fr: >
+    **吧** en fin de question demande confirmation : 不错吧？« pas mal, non ? ». C'est le même 吧 que pour
+    proposer (L1 n.10) : il adoucit toujours.
+  en: >
+    **吧** at the end of a question asks for agreement: 不错吧？"not bad, right?". The same 吧 as in
+    suggestions (L1 n.10): it always softens.
+- n: 9
+  line: 13
+  topic: vocab
+  fr: >
+    **不错** búcuò « pas mal », litt. « pas faux » : en chinois, c'est un vrai compliment, un peu plus fort que
+    le français « pas mal ».
+  en: >
+    **不错** búcuò "not bad", lit. "not wrong": a real compliment in Chinese, a little warmer than the English.
+- n: 10
+  line: 14
+  topic: grammar
+  fr: >
+    每天都 « tous les jours sans exception » : avec 每, on ajoute presque toujours 都 devant le verbe.
+  en: >
+    每天都 "every single day": with 每, 都 almost always goes before the verb too.
+words:
+- {w: "吃", py: "chī", fr: "manger", en: "to eat"}
+- {w: "喜欢", py: "xǐhuan", fr: "aimer (bien)", en: "to like"}
+- {w: "菜", py: "cài", fr: "plat ; cuisine ; légume", en: "dish; food; vegetable"}
+- {w: "饺子", py: "jiǎozi", fr: "raviolis", en: "dumplings"}
+- {w: "鱼", py: "yú", fr: "poisson", en: "fish"}
+- {w: "肉", py: "ròu", fr: "viande", en: "meat"}
+- {w: "辣", py: "là", fr: "épicé, pimenté", en: "spicy, hot"}
+- {w: "米饭", py: "mǐfàn", fr: "riz (cuit)", en: "(cooked) rice"}
+- {w: "碗", py: "wǎn", fr: "bol", en: "bowl"}
+- {w: "喝", py: "hē", fr: "boire", en: "to drink"}
+- {w: "茶", py: "chá", fr: "thé", en: "tea"}
+- {w: "还是", py: "háishi", fr: "ou bien (question)", en: "or (in questions)"}
+- {w: "咖啡", py: "kāfēi", fr: "café", en: "coffee"}
+- {w: "好吃", py: "hǎochī", fr: "bon (à manger)", en: "tasty"}
+- {w: "饭馆", py: "fànguǎn", fr: "restaurant", en: "restaurant"}
+- {w: "不错", py: "búcuò", fr: "pas mal, bien", en: "not bad, good"}
+exercise:
+  translate:
+  - {h: "你喜欢喝茶还是喝咖啡？", py: "Nǐ xǐhuan hē chá háishi hē kāfēi?", fr: "Tu préfères le thé ou le café ?", en: "Do you like tea or coffee?"}
+  - {h: "这个饭馆的饺子很好吃。", py: "Zhège fànguǎn de jiǎozi hěn hǎochī.", fr: "Les raviolis de ce restaurant sont très bons.", en: "This restaurant's dumplings are very good."}
+  - {h: "张伟不吃辣的。", py: "Zhāng Wěi bù chī là de.", fr: "Zhang Wei ne mange pas épicé.", en: "Zhang Wei doesn't eat spicy food."}
+  - {h: "我们要三碗米饭。", py: "Wǒmen yào sān wǎn mǐfàn.", fr: "Nous voulons trois bols de riz.", en: "We'd like three bowls of rice."}
+  choose:
+  - {h: "你喝茶＿＿喝咖啡？", opts: [还是, 和, 也], a: 还是, py: "Nǐ hē chá háishi hē kāfēi?", fr: "Tu bois du thé ou du café ?", en: "Do you drink tea or coffee?"}
+  - {h: "我很＿＿吃饺子。", opts: [喜欢, 好吃, 想], a: 喜欢, py: "Wǒ hěn xǐhuan chī jiǎozi.", fr: "J'aime beaucoup les raviolis.", en: "I really like eating dumplings."}
+  - {h: "两＿＿米饭。", opts: [碗, 个, 斤], a: 碗, py: "Liǎng wǎn mǐfàn.", fr: "Deux bols de riz.", en: "Two bowls of rice."}
+  - {h: "这个菜真＿＿！", opts: [好吃, 喜欢, 多少], a: 好吃, py: "Zhège cài zhēn hǎochī!", fr: "Ce plat est vraiment bon !", en: "This dish is really good!"}
