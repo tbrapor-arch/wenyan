@@ -16,7 +16,7 @@ throughout.
 | 白話 | Modern prose | `baihua/` | the written language beyond HSK 5, through public-domain essays and fiction (§11) |
 | 成語 | Idioms | `chengyu/` | by modern frequency, twenty at a time (§10) |
 
-Plus **溫習** (review cards for the words of every lesson you mark as done) and **設定**.
+Plus **設定** (script, pinyin, cover, night mode, progress file).
 
 ## Layout
 
@@ -40,7 +40,7 @@ python3 tools/smoke.py          # needs playwright
 
 Tap a word for its gloss, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to
 jump to that note. **Cover** blurs the translation the Assimil way: read the Chinese, then tap a
-line to check. **Mark as done** sends the lesson's words to 溫習.
+line to check. **Mark as done** ticks the lesson on its tile.
 
 ## Status
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Click through the built app in a phone-sized browser: every tab, every lesson, one review.
+"""Click through the built app in a phone-sized browser: every tab and every lesson, marking each lesson done.
 
   pip install playwright && playwright install chromium
   python3 tools/build.py && python3 tools/smoke.py [--shots DIR]
@@ -48,11 +48,6 @@ def run(page, name):
                     page.locator("sup.nn").first.click(); page.wait_for_selector("#pop.note-pop"); shot(f"{t['key']}-1-note")
                     page.keyboard.press("Escape")
                 page.locator("#markdone").click(); page.wait_for_selector("#undo")
-    page.goto((ROOT / "dist" / "wenyan.html").as_uri() + "#review")
-    page.wait_for_selector("#startrv"); shot("review")
-    page.locator("#startrv").click(); page.locator("#show").click(); shot("review-card"); page.locator("#got").click()
-    page.locator("#show").click(); page.locator("#again").click()
-    check("review")
     page.goto((ROOT / "dist" / "wenyan.html").as_uri() + "#settings")
     page.locator("#sSimp").click(); page.locator("#sNight").click(); check("settings"); shot("settings-night")
 

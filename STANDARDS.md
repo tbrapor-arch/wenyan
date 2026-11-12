@@ -155,7 +155,7 @@ A long text is cut into lessons of 20–30 lines at paragraph breaks. Every 7th 
 |---|---|
 | `lines[]` | one **sentence** per line; no `py` (the learner reads characters; readings are on the words). `p: true` starts a paragraph. `lit` only where the structure needs it |
 | `notes[]` | priority: 1. a written word or function word and the classical word inside it, with a link to the 文言 note that teaches it (`→ 文言 L1 n.4`; the build checks the note exists); 2. a period spelling or usage; 3. a 成語 or four-character phrase; 4. culture |
-| `glossary[]` | only words **beyond HSK 5** or used in an unusual sense, with `py`. Shown as "Words beyond HSK 5"; these become the lesson's review cards |
+| `glossary[]` | only words **beyond HSK 5** or used in an unusual sense, with `py`. Shown as "Words beyond HSK 5" |
 | `exercise[]` | "Roots": the classical sentences behind the lesson's written words. `h` + `ref: 文言 L2` + `tests`; the sentence must be a run of lines of that lesson (quotation marks aside), and the build copies its pinyin and translation from there. Sentences from outside the course need `src`, `en` and a checked transcription, as in §7 |
 
 `checked` works as in §6. For modern words `cyz` applies only when the classical sense is the one
@@ -163,21 +163,18 @@ in the passage (夜闌, 賤價); otherwise `wikt`.
 
 ## 12. The app
 
-One page, three tracks, five tabs: **文言 · 白話 · 成語 · 溫習 · 設定**. `tools/build.py` reads
+One page, three tracks, four tabs: **文言 · 白話 · 成語 · 設定**. `tools/build.py` reads
 `lessons/`, `baihua/` and `chengyu/` and writes `app/course.json` and the single file
 `dist/wenyan.html`.
 
 - **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews).
 - **Lesson:** a bar that stays on top (back, previous / next, also ← → keys; 繁/简, Pinyin, Cover),
   then the page as before. Cross-references in notes are buttons, across tracks too.
-- **Mark as done** dates the lesson and puts its glossary words (or 成語) in the review deck; Undo
-  takes them out.
-- **溫習:** one card per word, shown in the sentence where it was met. Leitner boxes at 1 / 3 / 7 /
-  16 / 35 days; a missed word returns to the first box and comes back in the same session. Keys:
-  space, 1, 2.
-- **Always light**; night mode is a switch in Settings. Progress lives in the browser; Settings
-  saves and loads it as a file (loading merges: earliest finish date, most advanced card).
-- Routes: `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#review`, `#settings`. Every route maps to a tab
+- **Mark as done** dates the lesson (✓ on its tile); Undo removes the date. There is no review deck:
+  review happens by reading, with the 7th-lesson reviews and the "Roots" exercises.
+- **Always light**; night mode is a switch in Settings. Progress (the done dates) lives in the browser; Settings
+  saves and loads it as a file (loading merges: earliest finish date).
+- Routes: `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#settings`. Every route maps to a tab
   in `TABS`, so the tab bar keeps its highlight.
 - `python3 tools/smoke.py` clicks through every tab and lesson at phone and desktop width.
 

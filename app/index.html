@@ -41,15 +41,13 @@ nav.tabs a{display:flex;align-items:baseline;gap:6px;padding:8px 12px;border-rad
 nav.tabs a b{font:600 17px var(--zh);color:var(--ink);letter-spacing:.04em}
 nav.tabs a[aria-current="page"]{background:var(--seal-soft);color:var(--seal)}
 nav.tabs a[aria-current="page"] b{color:var(--seal)}
-.due-dot{position:absolute;top:3px;right:2px;min-width:17px;height:17px;border-radius:9px;background:var(--seal);color:var(--paper);font:600 10px/17px var(--en);text-align:center;padding:0 4px}
 @media (max-width:720px){
   .brand small{display:none}
   header.bar .wrap{height:46px}
   nav.tabs{top:auto;left:0;right:0;bottom:0;height:auto;gap:0;background:var(--paper);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom)}
   nav.tabs a{flex:1;flex-direction:column;align-items:center;gap:0;padding:7px 2px 6px;border-radius:0;font-size:10.5px;letter-spacing:.02em;height:var(--nav-h);justify-content:center}
   nav.tabs a[aria-current="page"]{background:transparent;box-shadow:inset 0 2px 0 var(--seal)}
-  .due-dot{top:5px;right:calc(50% - 30px)}
-}
+  }
 
 /* shared pieces */
 .kicker{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--seal)}
@@ -185,25 +183,6 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
 .cy .lab{font:600 11px var(--en);letter-spacing:.08em;text-transform:uppercase;color:var(--seal);margin-right:6px}
 .auto{font:600 9px var(--en);letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);border-radius:3px;padding:0 3px;margin-left:5px;vertical-align:middle}
 
-/* review */
-.rv{max-width:560px;margin:0 auto;padding-top:28px}
-.rvtop{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-2);margin-bottom:10px}
-.fc{border:1px solid var(--rule);border-radius:14px;background:var(--card);padding:30px 22px 24px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center}
-.fc .big{font:600 clamp(40px,11vw,60px)/1.2 var(--zh);letter-spacing:.08em}
-.fc .ctx{font:400 19px/1.6 var(--zh);color:var(--ink-2);margin-top:16px}
-.fc .ctx mark{background:var(--hl);color:var(--ink);border-radius:3px;padding:0 2px}
-.fc .back{margin-top:18px;padding-top:16px;border-top:1px dashed var(--rule)}
-.fc .back .p{font-style:italic;color:var(--ink-2)}
-.fc .back .d{font-size:18px;margin-top:2px}
-.fc .from{font-size:12px;color:var(--ink-2);margin-top:12px}
-.fc .from a{color:var(--seal)}
-.rvbtn{display:flex;gap:10px;margin-top:14px}
-.rvbtn .btn{flex:1;padding:13px}
-.boxes{display:flex;gap:6px;margin-top:8px}
-.boxes div{flex:1;border:1px solid var(--rule);border-radius:8px;padding:8px 4px;text-align:center;font-size:12px;color:var(--ink-2);background:var(--card)}
-.boxes b{display:block;font:600 20px var(--en);color:var(--ink)}
-.missed{font:20px/1.8 var(--zh);letter-spacing:.06em}
-
 /* settings */
 .set{max-width:620px;padding-top:26px}
 .row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule)}
@@ -245,25 +224,21 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   const md = (t, own) => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>")
     .replace(REF, (m, tr, l, n) => `<button class="ref" data-to="${TRACK_OF[tr] || own}/${l}/n${n}">${m}</button>`);
   const today = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-  const addDays = n => { const d = new Date(); d.setDate(d.getDate() + n); return today(d); };
-  const STEPS = [1, 3, 7, 16, 35];   // Leitner: days until the next review, per box
 
-  let course, T, L, session = null;
+  let course, T, L;
   let simp = store.get("simp", false), py = store.get("py", true), cover = store.get("cover", false);
-  let done = store.get("done", {}), deck = store.get("deck", {});
+  let done = store.get("done", {});
   const Z = (o, k) => simp && o[k + "_s"] ? o[k + "_s"] : o[k];
   const track = k => course.tracks.find(t => t.key === k);
   const isDone = (t, l) => !!done[t.key + ":" + l.id];
-  const dueIds = () => Object.keys(deck).filter(id => deck[id].due <= today());
 
   /* ---------- routing ---------- */
   // Every route maps to a tab here, so a redrawn tab bar keeps its highlight.
   const TABS = [["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
-                ["review", "溫習", "Review"], ["settings", "設定", "Settings"]];
+                ["settings", "設定", "Settings"]];
   const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "wenyan"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
   function drawTabs(tab){
-    const due = dueIds().length;
-    $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}${k === "review" && due ? `<span class="due-dot">${due}</span>` : ""}</a>`).join("");
+    $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}</a>`).join("");
   }
   function go(){
     hidePop();
@@ -271,8 +246,6 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     H.classList.toggle("simp", simp); H.classList.toggle("nopy", !py); H.classList.toggle("cover", cover);
     H.dataset.theme = store.get("night", false) ? "dark" : "light";
     drawTabs(r.tab); L = null;
-    if (r.tab !== "review") session = null;
-    if (r.tab === "review") return review();
     if (r.tab === "settings") return settings();
     store.set("tab", r.tab);
     T = track(r.tab); L = r.id ? T.lessons.find(l => l.id === r.id) : null;
@@ -319,9 +292,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   }
   function finish(){
     const d = done[T.key + ":" + L.id], i = T.lessons.indexOf(L), n = T.lessons[i + 1];
-    const words = cardsOf(T, L).length;
-    return `<div class="finish"><div class="msg">${d ? `<b>Done</b> on ${esc(d)}.<small>${words ? `${words} words are in your review deck.` : ""}</small>`
-        : `<b>Finished reading?</b><small>${words ? `Marking it done adds its ${words} words to Review.` : "Mark it done to move on."}</small>`}</div>
+    return `<div class="finish"><div class="msg">${d ? `<b>Done</b> on ${esc(d)}.` : `<b>Finished reading?</b><small>Mark it done to keep your place.</small>`}</div>
       ${d ? `<button class="btn ghost" id="undo">Undo</button>` : `<button class="btn red" id="markdone">Mark as done</button>`}
       ${n ? `<a class="btn ghost" href="#${T.key}/${n.id}">Next lesson ›</a>` : ""}</div>`;
   }
@@ -430,50 +401,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   function hidePop(){ pop.style.display = "none"; pop.className = ""; $$(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); }
   function flash(n){ if (!n) return; n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); }
 
-  /* ---------- review deck ---------- */
-  // One card per glossary word (or 成語), shown in the sentence it was met in.
-  function cardsOf(t, l){
-    if (t.key === "chengyu") return (l.items || []).map(it => ({id: `${t.key}:${l.id}:${it.w}`, t, l, w: it, py: it.py, en: it.en, ctx: it.ex && it.ex.h}));
-    return (l.glossary || []).map(g => ({id: `${t.key}:${l.id}:${g.w}`, t, l, w: g, py: g.py, en: g.en, sw: g.sw, line: l.lines.find(x => x.h.includes(g.w))}));
-  }
-  const allCards = () => Object.fromEntries(course.tracks.flatMap(t => t.lessons.flatMap(l => cardsOf(t, l))).map(c => [c.id, c]));
-  function saveDeck(){ store.set("deck", deck); store.set("done", done); }
-  function review(){
-    const cards = allCards(), due = dueIds().filter(id => cards[id]), total = Object.keys(deck).filter(id => cards[id]).length;
-    if (!session){
-      const boxes = [0, 0, 0, 0, 0]; Object.keys(deck).forEach(id => { if (cards[id]) boxes[deck[id].b]++; });
-      app.innerHTML = `<div class="rv"><div class="kicker">Review</div><h1>溫習</h1>
-        ${total ? `<p>${due.length ? `<b>${due.length}</b> of your ${total} words are due today.` : `Nothing due today. ${total} words are in the deck.`}</p>
-          <button class="btn red" id="startrv" ${due.length ? "" : "disabled"}>Review ${due.length || ""} due</button>
-          <h2>Deck</h2><div class="boxes">${boxes.map((n, i) => `<div><b>${n}</b>${STEPS[i]} d</div>`).join("")}</div>
-          <p class="prog">A word you know moves one box to the right and comes back after that many days; a word you miss goes back to the first box.</p>`
-        : `<div class="empty"><b>Your deck is empty.</b><br>Mark a lesson as done and its words come here, each shown in the sentence where you met it.</div>`}</div>`;
-      scrollTo(0, 0); return;
-    }
-    const s = session;
-    if (!s.q.length){
-      app.innerHTML = `<div class="rv"><div class="kicker">Review done</div><h1>${s.first} / ${s.n}</h1><p>remembered the first time.</p>
-        ${s.missed.length ? `<h2>Missed</h2><div class="missed">${[...new Set(s.missed)].map(id => esc(Z(cards[id].w, "w"))).join("　")}</div>` : ""}
-        <p style="margin-top:22px"><a class="btn" href="#${store.get("tab", "wenyan")}">Back to lessons</a></p></div>`;
-      session = null; drawTabs("review"); return;
-    }
-    const c = cards[s.q[0]], word = Z(c.w, "w");
-    let ctx = c.line ? Z(c.line, "h") : c.ctx || "";
-    ctx = ctx ? esc(ctx).replace(esc(word), `<mark>${esc(word)}</mark>`) : "";
-    app.innerHTML = `<div class="rv"><div class="rvtop"><span>${s.n - new Set(s.q).size} / ${s.n}</span><span>${esc(c.t.zh)} ${c.l.id} · ${esc(Z(c.l, "title"))}</span></div>
-      <div class="fc"><div class="big">${esc(word)}</div>${ctx ? `<div class="ctx">${ctx}</div>` : ""}
-        ${s.shown ? `<div class="back"><div class="p">${esc(c.py)}</div><div class="d">${esc(c.en)}</div>
-          ${c.line && c.line.en ? `<div class="from">${esc(c.line.en)}</div>` : ""}
-          <div class="from"><a href="#${c.t.key}/${c.l.id}">Open the lesson</a></div></div>` : ""}</div>
-      <div class="rvbtn">${s.shown ? `<button class="btn ghost" id="again">Again <small>1</small></button><button class="btn red" id="got">Got it <small>2</small></button>`
-        : `<button class="btn" id="show">Show <small>space</small></button>`}</div></div>`;
-  }
-  function answer(ok){
-    const s = session, id = s.q.shift(), d = deck[id];
-    if (ok){ if (!s.missed.includes(id)) s.first++; d.due = addDays(STEPS[d.b]); d.b = Math.min(d.b + 1, STEPS.length - 1); }
-    else { s.missed.push(id); d.b = 0; d.due = today(); s.q.push(id); }
-    s.shown = false; saveDeck(); review();
-  }
+  function saveDone(){ store.set("done", done); }
 
   /* ---------- settings ---------- */
   function settings(){
@@ -484,7 +412,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
       <div class="row"><div class="l">Cover the English<small>Read the Chinese first; tap a line to check yourself.</small></div>${sw("sCover", cover)}</div>
       <div class="row"><div class="l">Night mode<small>The app stays light unless you switch this on.</small></div>${sw("sNight", store.get("night", false))}</div>
       <h2>Progress</h2>
-      <div class="row"><div class="l">${Object.keys(done).length} lessons done · ${Object.keys(deck).length} words in review<small>Kept in this browser only. Save a file to move it to another device.</small></div>
+      <div class="row"><div class="l">${Object.keys(done).length} lessons done<small>Kept in this browser only. Save a file to move it to another device.</small></div>
         <button class="btn ghost" id="save">Save</button><button class="btn ghost" id="load">Load</button><input type="file" id="file" accept="application/json,.json" hidden></div>
       <footer>Wenyan 文言 · lessons, notes and translations CC BY-SA 4.0 · code MIT.</footer></div>`;
     scrollTo(0, 0);
@@ -504,13 +432,9 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     if (id === "tPy" || id === "sPy"){ py = !py; store.set("py", py); return go(); }
     if (id === "tCover" || id === "sCover"){ cover = !cover; store.set("cover", cover); return go(); }
     if (id === "sNight"){ store.set("night", !store.get("night", false)); return go(); }
-    if (id === "markdone"){ done[T.key + ":" + L.id] = today(); cardsOf(T, L).forEach(c => { deck[c.id] ||= {b: 0, due: today()}; }); saveDeck(); const y = scrollY; go(); scrollTo(0, y); return; }
-    if (id === "undo"){ delete done[T.key + ":" + L.id]; cardsOf(T, L).forEach(c => delete deck[c.id]); saveDeck(); const y = scrollY; go(); scrollTo(0, y); return; }
-    if (id === "startrv"){ const cards = allCards(), q = dueIds().filter(i => cards[i]); session = {q, n: q.length, first: 0, missed: [], shown: false}; return review(); }
-    if (id === "show"){ session.shown = true; return review(); }
-    if (id === "again") return answer(false);
-    if (id === "got") return answer(true);
-    if (id === "save"){ const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify({app: "wenyan", saved: today(), done, deck}, null, 1)], {type: "application/json"})); a.download = `wenyan-progress-${today()}.json`; a.click(); return; }
+    if (id === "markdone"){ done[T.key + ":" + L.id] = today(); saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
+    if (id === "undo"){ delete done[T.key + ":" + L.id]; saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
+    if (id === "save"){ const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify({app: "wenyan", saved: today(), done}, null, 1)], {type: "application/json"})); a.download = `wenyan-progress-${today()}.json`; a.click(); return; }
     if (id === "load") return $("#file").click();
     const ln = t.closest(".ln"), cy = t.closest(".cy");
     if (ln && cover) $$(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
@@ -519,15 +443,13 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   document.addEventListener("change", async e => {
     if (e.target.id !== "file" || !e.target.files[0]) return;
     try{ const d = JSON.parse(await e.target.files[0].text()); if (d.app !== "wenyan") throw 0;
-      // merge: keep the earliest finish date and the most advanced state of each card
+      // merge: keep the earliest finish date of each lesson (a "deck" in an older file is ignored)
       for (const k in d.done) if (!done[k] || d.done[k] < done[k]) done[k] = d.done[k];
-      for (const k in d.deck) if (!deck[k] || d.deck[k].due > deck[k].due) deck[k] = d.deck[k];
-      saveDeck(); go();
+      saveDone(); go();
     }catch(x){ alert("That file is not a Wenyan progress file."); }
   });
   addEventListener("keydown", e => {
     if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (session){ if (e.key === " "){ e.preventDefault(); if (!session.shown){ session.shown = true; review(); } } else if (session.shown && e.key === "1") answer(false); else if (session.shown && e.key === "2") answer(true); return; }
     if (e.key === "Escape") hidePop();
     if (L && e.key === "ArrowLeft") $("#prev")?.click();
     if (L && e.key === "ArrowRight") $("#next")?.click();
