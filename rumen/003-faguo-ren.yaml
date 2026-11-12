@@ -1,0 +1,187 @@
+id: 3
+slug: faguo-ren
+title: 我是法国人
+title_py: Wǒ shì Fǎguó rén
+title_fr: Je suis français
+title_en: I'm French
+status: draft
+setting:
+  fr: À la cantine de l'entreprise. Xiaoyu déjeune avec Marc et Zhang Wei, un autre collègue.
+  en: In the company canteen. Xiaoyu has lunch with Marc and Zhang Wei, another colleague.
+names:
+- {w: "张伟", py: "Zhāng Wěi", fr: "Zhang Wei", en: "Zhang Wei"}
+- {w: "巴黎", py: "Bālí", fr: "Paris", en: "Paris"}
+- {w: "里昂", py: "Lǐ'áng", fr: "Lyon", en: "Lyon"}
+- {w: "北京", py: "Běijīng", fr: "Pékin", en: "Beijing"}
+- {w: "上海", py: "Shànghǎi", fr: "Shanghai", en: "Shanghai"}
+lines:
+- n: 1
+  who: 张伟
+  h: 你好！你是哪国人？
+  py: Nǐ hǎo! Nǐ shì nǎ guó rén?
+  fr: Salut ! Tu es de quel pays ?
+  en: Hi! Where are you from?
+  lit_fr: (Tu être quel pays personne ?)
+  lit_en: (You be which country person?)
+- n: 2
+  who: 马克
+  h: 我是法国人。
+  py: Wǒ shì Fǎguó rén.
+  fr: Je suis français.
+  en: I'm French.
+  lit_fr: (Je être France personne.)
+  lit_en: (I be France person.)
+- n: 3
+  who: 张伟
+  h: 你是巴黎人吗？
+  py: Nǐ shì Bālí rén ma?
+  fr: Tu es de Paris ?
+  en: Are you from Paris?
+- n: 4
+  who: 马克
+  h: 不是，我是里昂人。
+  py: Bú shì, wǒ shì Lǐ'áng rén.
+  fr: Non, je suis de Lyon.
+  en: No, I'm from Lyon.
+- n: 5
+  who: 马克
+  h: 你们是北京人吗？
+  py: Nǐmen shì Běijīng rén ma?
+  fr: Vous êtes de Pékin ?
+  en: Are you two from Beijing?
+- n: 6
+  who: 张伟
+  h: 我不是，我是上海人。小雨是北京人。
+  py: Wǒ bú shì, wǒ shì Shànghǎi rén. Xiǎoyǔ shì Běijīng rén.
+  fr: Moi non, je suis de Shanghai. Xiaoyu est de Pékin.
+  en: I'm not, I'm from Shanghai. Xiaoyu is from Beijing.
+- n: 7
+  who: 马克
+  h: 你们是我的中国朋友！
+  py: Nǐmen shì wǒ de Zhōngguó péngyou!
+  fr: Vous êtes mes amis chinois !
+  en: You're my Chinese friends!
+- n: 8
+  who: 小雨
+  h: 对！你是我们的法国朋友。
+  py: Duì! Nǐ shì wǒmen de Fǎguó péngyou.
+  fr: Exactement ! Et toi, tu es notre ami français.
+  en: That's right! And you're our French friend.
+- n: 9
+  who: 张伟
+  h: 你的汉语很好！
+  py: Nǐ de Hànyǔ hěn hǎo!
+  fr: Tu parles bien chinois !
+  en: Your Chinese is good!
+  lit_fr: (Ton chinois très bien !)
+  lit_en: (Your Chinese very good!)
+- n: 10
+  who: 马克
+  h: 哪里，哪里……
+  py: Nǎli, nǎli……
+  fr: Oh, pas du tout…
+  en: Oh, not really…
+  lit_fr: (Où ça, où ça…)
+  lit_en: (Where, where…)
+notes:
+- n: 1
+  line: 1
+  topic: grammar
+  fr: >
+    哪国人 « personne de quel pays » : **哪** nǎ « quel » + **国** guó « pays » + **人** rén « personne ».
+    Comme 什么 (L2 n.3), 哪 reste à la place de la réponse : 你是**哪国**人？ → 我是**法国**人。
+  en: >
+    哪国人 "person of which country": **哪** nǎ "which" + **国** guó "country" + **人** rén "person". Like 什么
+    (L2 n.3), 哪 stays where the answer goes: 你是**哪国**人？ → 我是**法国**人。
+- n: 2
+  line: 2
+  topic: vocab
+  fr: >
+    Nationalité = pays + 人 : 法国人 « Français », 中国人 « Chinois ». Même chose pour une ville : 巴黎人
+    « Parisien », 北京人 « Pékinois ». Un seul mot pour le nom et l'adjectif, et ni genre ni nombre.
+  en: >
+    Nationality = country + 人: 法国人 "French person", 中国人 "Chinese person". Same with a city: 巴黎人
+    "Parisian", 北京人 "Beijinger". No gender, no plural.
+- n: 3
+  line: 3
+  topic: vocab
+  fr: >
+    Les noms étrangers sont transcrits par le son : 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 马克 Mǎkè (Marc).
+    L'apostrophe de Lǐ'áng sépare deux syllabes, pour ne pas lire « li-ang » en une.
+  en: >
+    Foreign names are spelled by sound: 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 马克 Mǎkè (Marc). The apostrophe
+    in Lǐ'áng splits two syllables, so it isn't read as one.
+- n: 4
+  line: 4
+  topic: grammar
+  fr: >
+    Pour répondre « non » à une question en 是…吗, on nie le verbe : 不是 bú shì « (ce n'est) pas ». Le
+    chinois n'a pas de vrai « oui » ni de vrai « non » : on reprend le verbe (L1 n.4, L1 n.8).
+  en: >
+    To answer "no" to a 是…吗 question, negate the verb: 不是 bú shì "(it) is not". Chinese has no all-purpose
+    yes or no: you repeat the verb (L1 n.4, L1 n.8).
+- n: 5
+  line: 5
+  topic: grammar
+  fr: >
+    **你们** nǐmen « vous » (pluriel), avec le 们 de 我们 (L1 n.10). Le « vous » de politesse, lui, est 您
+    (L2 n.1), qui ne prend pas 们 à l'oral.
+  en: >
+    **你们** nǐmen "you" (plural), with the 们 of 我们 (L1 n.10). The polite singular "you" is 您 (L2 n.1),
+    which doesn't take 们 in speech.
+- n: 6
+  line: 7
+  topic: grammar
+  fr: >
+    Un nom placé devant un autre le qualifie, sans 的 : 中国朋友 « ami(s) chinois », 法国朋友 « ami
+    français ». Le 的 de possession (L1 n.6) reste devant le tout : 我的中国朋友 « mes amis chinois ».
+  en: >
+    A noun in front of another describes it, with no 的: 中国朋友 "Chinese friend(s)", 法国朋友 "French
+    friend". The possessive 的 (L1 n.6) goes before the whole: 我的中国朋友 "my Chinese friends".
+- n: 7
+  line: 8
+  topic: vocab
+  fr: >
+    **对** duì « juste, c'est ça » : la façon la plus courante d'approuver ce qu'on vient de dire.
+  en: >
+    **对** duì "right, correct": the usual way to agree with what was just said.
+- n: 8
+  line: 9
+  topic: vocab
+  fr: >
+    **汉语** Hànyǔ « la langue chinoise » (litt. « langue des Han », l'ethnie majoritaire). On dit aussi
+    中文 Zhōngwén, plutôt pour l'écrit.
+  en: >
+    **汉语** Hànyǔ "the Chinese language" (lit. "language of the Han", the majority people). 中文 Zhōngwén is
+    also used, more for the written language.
+- n: 9
+  line: 10
+  topic: culture
+  fr: >
+    **哪里，哪里** « où ça, où ça » : on refuse un compliment, comme si on ne voyait pas où est la qualité.
+    Dire « merci » sonne un peu prétentieux pour certains, même si les jeunes le font de plus en plus.
+  en: >
+    **哪里，哪里** "where, where": you turn down a compliment, as if you couldn't see where the merit is.
+    Saying "thank you" sounds a bit vain to some, though young people do it more and more.
+words:
+- {w: "哪", py: "nǎ", fr: "quel", en: "which"}
+- {w: "国", py: "guó", fr: "pays", en: "country"}
+- {w: "人", py: "rén", fr: "personne", en: "person, people"}
+- {w: "法国", py: "Fǎguó", fr: "France", en: "France"}
+- {w: "你们", py: "nǐmen", fr: "vous (pluriel)", en: "you (plural)"}
+- {w: "中国", py: "Zhōngguó", fr: "Chine", en: "China"}
+- {w: "朋友", py: "péngyou", fr: "ami", en: "friend"}
+- {w: "对", py: "duì", fr: "juste, c'est ça", en: "right, correct"}
+- {w: "汉语", py: "Hànyǔ", fr: "chinois (la langue)", en: "Chinese (the language)"}
+- {w: "哪里", py: "nǎli", fr: "où ; (modestie) pas du tout", en: "where; (modest) not at all"}
+exercise:
+  translate:
+  - {h: "他是哪国人？", py: "Tā shì nǎ guó rén?", fr: "Il est de quel pays ?", en: "Where is he from?"}
+  - {h: "小雨不是上海人。", py: "Xiǎoyǔ bú shì Shànghǎi rén.", fr: "Xiaoyu n'est pas de Shanghai.", en: "Xiaoyu isn't from Shanghai."}
+  - {h: "你们是我的朋友。", py: "Nǐmen shì wǒ de péngyou.", fr: "Vous êtes mes amis.", en: "You're my friends."}
+  - {h: "我的中国朋友也是老师。", py: "Wǒ de Zhōngguó péngyou yě shì lǎoshī.", fr: "Mon ami chinois est professeur, lui aussi.", en: "My Chinese friend is a teacher too."}
+  choose:
+  - {h: "你是＿＿国人？", opts: [哪, 什么, 呢], a: 哪, py: "Nǐ shì nǎ guó rén?", fr: "Tu es de quel pays ?", en: "Where are you from?"}
+  - {h: "我＿＿是北京人。", opts: [不, 吗, 对], a: 不, py: "Wǒ bú shì Běijīng rén.", fr: "Je ne suis pas de Pékin.", en: "I'm not from Beijing."}
+  - {h: "张伟是我们＿＿朋友。", opts: [的, 也, 吧], a: 的, py: "Zhāng Wěi shì wǒmen de péngyou.", fr: "Zhang Wei est notre ami.", en: "Zhang Wei is our friend."}
+  - {h: "你的汉语很好！——＿＿，＿＿……", opts: [哪里, 什么, 谢谢], a: 哪里, py: "Nǐ de Hànyǔ hěn hǎo! — Nǎli, nǎli……", fr: "Ton chinois est très bon ! — Oh, pas du tout…", en: "Your Chinese is good! — Oh, not really…"}

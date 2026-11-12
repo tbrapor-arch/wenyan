@@ -1,0 +1,192 @@
+id: 1
+slug: ni-hao
+title: 你好！
+title_py: Nǐ hǎo!
+title_fr: Bonjour !
+title_en: Hello!
+status: draft
+setting:
+  fr: Aéroport de Pékin, hall des arrivées. Marc, français, vient faire un stage d'un an. Une jeune femme l'attend avec une pancarte.
+  en: Beijing airport, arrivals hall. Marc, who is French, has come for a one-year internship. A young woman is waiting with a sign.
+names:
+- {w: "马克", py: "Mǎkè", fr: "Marc", en: "Marc"}
+- {w: "王小雨", py: "Wáng Xiǎoyǔ", fr: "Wang Xiaoyu", en: "Wang Xiaoyu"}
+- {w: "小雨", py: "Xiǎoyǔ", fr: "Xiaoyu", en: "Xiaoyu"}
+lines:
+- n: 1
+  who: 小雨
+  h: 你好！你是马克吗？
+  py: Nǐ hǎo! Nǐ shì Mǎkè ma?
+  fr: Bonjour ! Tu es Marc ?
+  en: Hello! Are you Marc?
+- n: 2
+  who: 马克
+  h: 是，我是马克。你是……？
+  py: Shì, wǒ shì Mǎkè. Nǐ shì……?
+  fr: Oui, je suis Marc. Et tu es… ?
+  en: Yes, I'm Marc. And you are…?
+  lit_fr: (Être, je être Marc. Tu être… ?)
+  lit_en: (Be, I be Marc. You be…?)
+- n: 3
+  who: 小雨
+  h: 我是王小雨，你的同事。
+  py: Wǒ shì Wáng Xiǎoyǔ, nǐ de tóngshì.
+  fr: Je suis Wang Xiaoyu, ta collègue.
+  en: I'm Wang Xiaoyu, your colleague.
+- n: 4
+  who: 马克
+  h: 你好，小雨！谢谢！
+  py: Nǐ hǎo, Xiǎoyǔ! Xièxie!
+  fr: Bonjour, Xiaoyu ! Merci !
+  en: Hello, Xiaoyu! Thank you!
+- n: 5
+  who: 小雨
+  h: 你累吗？
+  py: Nǐ lèi ma?
+  fr: Tu es fatigué ?
+  en: Are you tired?
+  lit_fr: (Tu fatigué ?)
+  lit_en: (You tired?)
+- n: 6
+  who: 马克
+  h: 不累，我很好。
+  py: Bú lèi, wǒ hěn hǎo.
+  fr: Non, ça va très bien.
+  en: No, I'm fine.
+  lit_fr: (Pas fatigué, je très bien.)
+  lit_en: (Not tired, I very good.)
+- n: 7
+  who: 小雨
+  h: 好，我们走吧！
+  py: Hǎo, wǒmen zǒu ba!
+  fr: Bon, on y va !
+  en: Right, let's go!
+  lit_fr: (Bien, nous partir donc !)
+  lit_en: (Good, we go then!)
+- n: 8
+  who: 马克
+  h: 走吧！
+  py: Zǒu ba!
+  fr: Allons-y !
+  en: Let's go!
+notes:
+- n: 1
+  line: 1
+  topic: pron
+  fr: >
+    Le mandarin a **quatre tons** : mā (haut et plat), má (montant), mǎ (bas), mà (descendant), plus un ton
+    neutre, court et léger, sans accent : ma. Le ton fait partie du mot : 马 mǎ « cheval », 吗 ma (particule).
+    Écoutez-vous le dire, et exagérez au début.
+  en: >
+    Mandarin has **four tones**: mā (high and level), má (rising), mǎ (low), mà (falling), plus a short, light
+    neutral tone with no mark: ma. The tone is part of the word: 马 mǎ "horse", 吗 ma (a particle). Exaggerate
+    them at first.
+- n: 2
+  line: 1
+  topic: pron
+  fr: >
+    你好 s'écrit nǐ hǎo mais se dit **ní hǎo** : quand deux troisièmes tons se suivent, le premier devient
+    montant. Le pinyin garde le ton du dictionnaire ; c'est à vous de faire le changement (même chose pour
+    很好 hěn hǎo, dit hén hǎo).
+  en: >
+    你好 is written nǐ hǎo but said **ní hǎo**: when two third tones meet, the first one rises. Pinyin keeps
+    the dictionary tone and leaves the change to you (likewise 很好 hěn hǎo, said hén hǎo).
+- n: 3
+  line: 1
+  topic: grammar
+  fr: >
+    **吗** ma à la fin d'une phrase en fait une question fermée (oui / non), sans rien changer d'autre :
+    你是马克。« Tu es Marc. » → 你是马克吗？« Tu es Marc ? »
+  en: >
+    **吗** ma at the end of a sentence turns it into a yes / no question, with nothing else changed:
+    你是马克。"You are Marc." → 你是马克吗？"Are you Marc?"
+- n: 4
+  line: 2
+  topic: grammar
+  fr: >
+    **是** shì « être » relie deux noms. Le verbe ne se conjugue jamais : 我是, 你是 (je suis, tu es). Pour
+    répondre « oui », on reprend le verbe de la question : 是 « (je) suis ».
+  en: >
+    **是** shì "to be" links two nouns. Verbs never change: 我是, 你是 (I am, you are). To answer "yes",
+    repeat the verb of the question: 是 "(I) am".
+- n: 5
+  line: 3
+  topic: culture
+  fr: >
+    Le nom de famille vient en premier : 王 Wáng est le nom, 小雨 Xiǎoyǔ (« petite pluie ») le prénom. Ses
+    amis et ses collègues l'appellent 小雨.
+  en: >
+    The surname comes first: 王 Wáng is the family name, 小雨 Xiǎoyǔ ("light rain") the given name. Friends and
+    colleagues call her 小雨.
+- n: 6
+  line: 3
+  topic: grammar
+  fr: >
+    **的** de marque l'appartenance, comme « de » mais dans l'ordre inverse : 你的同事 « ta collègue »
+    (litt. « toi-de collègue »). Le possesseur d'abord, la chose ensuite.
+  en: >
+    **的** de marks possession, like the English 's: 你的同事 "your colleague" (lit. "you-'s colleague"). The
+    owner first, then the thing.
+- n: 7
+  line: 5
+  topic: grammar
+  fr: >
+    Pas de 是 devant un adjectif : 你累吗？« Tu (es) fatigué ? ». En chinois, l'adjectif fonctionne comme un
+    verbe. Pour le nier, **不** bù devant : 不累 « pas fatigué ».
+  en: >
+    No 是 before an adjective: 你累吗？"You tired?". In Chinese an adjective works like a verb. To negate it,
+    put **不** bù in front: 不累 "not tired".
+- n: 8
+  line: 6
+  topic: pron
+  fr: >
+    不 se lit bù, mais **bú** devant un quatrième ton : 不累 bú lèi, 不是 bú shì. Contrairement au 你好 de
+    la note 2, ce changement-là s'écrit dans les leçons.
+  en: >
+    不 is read bù, but **bú** before a fourth tone: 不累 bú lèi, 不是 bú shì. Unlike 你好 in note 2, this
+    change is written in the lessons.
+- n: 9
+  line: 6
+  topic: grammar
+  fr: >
+    **很** hěn « très » se met presque toujours devant un adjectif dans une phrase affirmative, et il y perd
+    son sens : 我很好 « je vais bien ». Sans 很, la phrase sonne comme une comparaison inachevée.
+  en: >
+    **很** hěn "very" almost always goes before an adjective in a plain statement, and loses its meaning
+    there: 我很好 "I'm fine". Without 很 the sentence sounds like an unfinished comparison.
+- n: 10
+  line: 7
+  topic: grammar
+  fr: >
+    **们** men fait le pluriel des pronoms : 我 « je », 我们 « nous ». **吧** ba en fin de phrase propose :
+    我们走吧 « allons-y ». Comparez 吗 (question) et 吧 (suggestion).
+  en: >
+    **们** men makes pronouns plural: 我 "I", 我们 "we". **吧** ba at the end makes a suggestion:
+    我们走吧 "let's go". Compare 吗 (question) and 吧 (suggestion).
+words:
+- {w: "你", py: "nǐ", fr: "tu", en: "you"}
+- {w: "好", py: "hǎo", fr: "bon, bien", en: "good, well"}
+- {w: "你好", py: "nǐ hǎo", fr: "bonjour", en: "hello"}
+- {w: "是", py: "shì", fr: "être ; oui", en: "to be; yes"}
+- {w: "吗", py: "ma", fr: "(question oui / non)", en: "(yes / no question)"}
+- {w: "我", py: "wǒ", fr: "je, moi", en: "I, me"}
+- {w: "的", py: "de", fr: "(possession) de", en: "(possession) 's"}
+- {w: "同事", py: "tóngshì", fr: "collègue", en: "colleague"}
+- {w: "谢谢", py: "xièxie", fr: "merci", en: "thank you"}
+- {w: "累", py: "lèi", fr: "fatigué", en: "tired"}
+- {w: "不", py: "bù", fr: "ne… pas", en: "not"}
+- {w: "很", py: "hěn", fr: "très", en: "very"}
+- {w: "我们", py: "wǒmen", fr: "nous", en: "we, us"}
+- {w: "走", py: "zǒu", fr: "partir ; marcher", en: "to go, leave; to walk"}
+- {w: "吧", py: "ba", fr: "(suggestion) donc", en: "(suggestion) then"}
+exercise:
+  translate:
+  - {h: "你是王小雨吗？", py: "Nǐ shì Wáng Xiǎoyǔ ma?", fr: "Tu es Wang Xiaoyu ?", en: "Are you Wang Xiaoyu?"}
+  - {h: "我不累。", py: "Wǒ bú lèi.", fr: "Je ne suis pas fatigué.", en: "I'm not tired."}
+  - {h: "小雨是我的同事。", py: "Xiǎoyǔ shì wǒ de tóngshì.", fr: "Xiaoyu est ma collègue.", en: "Xiaoyu is my colleague."}
+  - {h: "我们很好，谢谢！", py: "Wǒmen hěn hǎo, xièxie!", fr: "Nous allons bien, merci !", en: "We're fine, thank you!"}
+  choose:
+  - {h: "你是马克＿＿？", opts: [吗, 吧, 的], a: "吗", py: "Nǐ shì Mǎkè ma?", fr: "Tu es Marc ?", en: "Are you Marc?"}
+  - {h: "我＿＿累。", opts: [是, 不, 吗], a: "不", py: "Wǒ bú lèi.", fr: "Je ne suis pas fatigué.", en: "I'm not tired."}
+  - {h: "我们走＿＿！", opts: [吗, 很, 吧], a: "吧", py: "Wǒmen zǒu ba!", fr: "Allons-y !", en: "Let's go!"}
+  - {h: "我是你＿＿同事。", opts: [的, 很, 不], a: "的", py: "Wǒ shì nǐ de tóngshì.", fr: "Je suis ta collègue.", en: "I'm your colleague."}

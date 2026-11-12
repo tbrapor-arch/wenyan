@@ -1,0 +1,178 @@
+id: 2
+slug: jiao-shenme-mingzi
+title: 你叫什么名字？
+title_py: Nǐ jiào shénme míngzi?
+title_fr: Comment tu t'appelles ?
+title_en: What's your name?
+status: draft
+setting:
+  fr: Le lendemain, au bureau. Xiaoyu présente Marc à Mme Li, qui donne des cours de chinois au personnel.
+  en: The next day, at the office. Xiaoyu introduces Marc to Ms Li, who teaches Chinese to the staff.
+names:
+- {w: "李", py: "Lǐ", fr: "Li", en: "Li"}
+lines:
+- n: 1
+  who: 小雨
+  h: 李老师，您好！
+  py: Lǐ lǎoshī, nín hǎo!
+  fr: Bonjour, madame Li !
+  en: Good morning, Ms Li!
+  lit_fr: (Li professeur, vous bien !)
+  lit_en: (Li teacher, you good!)
+- n: 2
+  who: 李老师
+  h: 你好，小雨！他是……？
+  py: Nǐ hǎo, Xiǎoyǔ! Tā shì……?
+  fr: Bonjour, Xiaoyu ! Et lui, c'est… ?
+  en: Hello, Xiaoyu! And he is…?
+- n: 3
+  who: 小雨
+  h: 他是我的同事。
+  py: Tā shì wǒ de tóngshì.
+  fr: C'est mon collègue.
+  en: He's my colleague.
+- n: 4
+  who: 李老师
+  h: 你好！你叫什么名字？
+  py: Nǐ hǎo! Nǐ jiào shénme míngzi?
+  fr: Bonjour ! Comment tu t'appelles ?
+  en: Hello! What's your name?
+  lit_fr: (Tu appeler quel nom ?)
+  lit_en: (You called what name?)
+- n: 5
+  who: 马克
+  h: 我叫马克。您呢？
+  py: Wǒ jiào Mǎkè. Nín ne?
+  fr: Je m'appelle Marc. Et vous ?
+  en: I'm called Marc. And you?
+- n: 6
+  who: 李老师
+  h: 我姓李。
+  py: Wǒ xìng Lǐ.
+  fr: Je m'appelle Li (c'est mon nom de famille).
+  en: My surname is Li.
+  lit_fr: (Je avoir-pour-nom-de-famille Li.)
+  lit_en: (I surnamed Li.)
+- n: 7
+  who: 马克
+  h: 李老师好！认识您很高兴。
+  py: Lǐ lǎoshī hǎo! Rènshi nín hěn gāoxìng.
+  fr: Bonjour, madame Li ! Enchanté.
+  en: Hello, Ms Li! Pleased to meet you.
+  lit_fr: (Li professeur bien ! Connaître vous très content.)
+  lit_en: (Li teacher good! Know you very glad.)
+- n: 8
+  who: 李老师
+  h: 我也很高兴。
+  py: Wǒ yě hěn gāoxìng.
+  fr: Moi aussi.
+  en: Likewise.
+  lit_fr: (Je aussi très content.)
+  lit_en: (I also very glad.)
+- n: 9
+  who: 马克
+  h: 她是你的老师吗？
+  py: Tā shì nǐ de lǎoshī ma?
+  fr: C'est ta prof ?
+  en: Is she your teacher?
+- n: 10
+  who: 小雨
+  h: 是啊，她也是我的老师！
+  py: Shì a, tā yě shì wǒ de lǎoshī!
+  fr: Eh oui, c'est aussi ma prof !
+  en: Yes, she's my teacher too!
+notes:
+- n: 1
+  line: 1
+  topic: culture
+  fr: >
+    On s'adresse à un professeur par son nom suivi de **老师** lǎoshī : 李老师 « professeur Li », jamais par
+    le prénom. **您** nín est le « vous » de politesse ; entre collègues du même âge, 你 suffit.
+  en: >
+    A teacher is addressed by surname + **老师** lǎoshī: 李老师 "Teacher Li", never by the given name. **您**
+    nín is the polite "you"; between colleagues of the same age, 你 is enough.
+- n: 2
+  line: 2
+  topic: writing
+  fr: >
+    **他** « il » et **她** « elle » se prononcent tous deux tā. À l'oral rien ne les distingue ; à l'écrit,
+    la partie gauche change : 亻 (personne) pour 他, 女 (femme) pour 她.
+  en: >
+    **他** "he" and **她** "she" are both pronounced tā. Speech doesn't tell them apart; in writing the left part
+    differs: 亻 (person) in 他, 女 (woman) in 她.
+- n: 3
+  line: 4
+  topic: grammar
+  fr: >
+    Le mot interrogatif reste à la place de la réponse : 你叫**什么**名字？ → 我叫**马克**。Pas d'inversion,
+    pas de 吗 : 什么 shénme suffit à faire la question.
+  en: >
+    The question word stays where the answer goes: 你叫**什么**名字？ → 我叫**马克**。No inversion and no 吗:
+    什么 shénme is enough to make it a question.
+- n: 4
+  line: 5
+  topic: grammar
+  fr: >
+    **呢** ne après un nom ou un pronom renvoie la question : 您呢？« Et vous ? ». Il évite de répéter toute
+    la phrase.
+  en: >
+    **呢** ne after a noun or pronoun bounces the question back: 您呢？"And you?". It saves repeating the
+    whole sentence.
+- n: 5
+  line: 6
+  topic: vocab
+  fr: >
+    **姓** xìng « avoir pour nom de famille » est un verbe : 我姓李。Pour le nom complet ou le prénom, on
+    utilise **叫** jiào « s'appeler » : 我叫王小雨。
+  en: >
+    **姓** xìng "to be surnamed" is a verb: 我姓李。For the full name or the given name, use **叫** jiào "to be
+    called": 我叫王小雨。
+- n: 6
+  line: 7
+  topic: grammar
+  fr: >
+    认识您很高兴 « vous connaître, très content » est la formule figée pour « enchanté ». 认识 rènshi =
+    connaître (une personne), avec un ton neutre sur 识.
+  en: >
+    认识您很高兴 "knowing you, very glad" is the set phrase for "pleased to meet you". 认识 rènshi = to know (a
+    person), with a neutral tone on 识.
+- n: 7
+  line: 8
+  topic: grammar
+  fr: >
+    **也** yě « aussi » se place devant le verbe ou l'adjectif, jamais en fin de phrase : 我也很高兴,
+    她也是我的老师。
+  en: >
+    **也** yě "also" goes before the verb or adjective, never at the end: 我也很高兴, 她也是我的老师。
+- n: 8
+  line: 10
+  topic: vocab
+  fr: >
+    **啊** a en fin de phrase adoucit ou appuie la réponse : 是啊 « eh oui ». C'est un ton neutre.
+  en: >
+    **啊** a at the end softens or stresses the answer: 是啊 "yes, indeed". It has a neutral tone.
+words:
+- {w: "老师", py: "lǎoshī", fr: "professeur", en: "teacher"}
+- {w: "您", py: "nín", fr: "vous (politesse)", en: "you (polite)"}
+- {w: "他", py: "tā", fr: "il, lui", en: "he, him"}
+- {w: "叫", py: "jiào", fr: "s'appeler ; appeler", en: "to be called; to call"}
+- {w: "什么", py: "shénme", fr: "quoi, quel", en: "what"}
+- {w: "名字", py: "míngzi", fr: "nom, prénom", en: "name"}
+- {w: "呢", py: "ne", fr: "et… ? (renvoie la question)", en: "and…? (bounces the question)"}
+- {w: "姓", py: "xìng", fr: "avoir pour nom de famille ; nom de famille", en: "to be surnamed; surname"}
+- {w: "认识", py: "rènshi", fr: "connaître (une personne)", en: "to know (a person), meet"}
+- {w: "高兴", py: "gāoxìng", fr: "content", en: "glad, happy"}
+- {w: "也", py: "yě", fr: "aussi", en: "also, too"}
+- {w: "她", py: "tā", fr: "elle", en: "she, her"}
+- {w: "啊", py: "a", fr: "(appuie la réponse)", en: "(stresses the answer)"}
+exercise:
+  translate:
+  - {h: "他叫什么名字？", py: "Tā jiào shénme míngzi?", fr: "Comment s'appelle-t-il ?", en: "What's his name?"}
+  - {h: "我也是老师。", py: "Wǒ yě shì lǎoshī.", fr: "Je suis professeur, moi aussi.", en: "I'm a teacher too."}
+  - {h: "她叫王小雨。", py: "Tā jiào Wáng Xiǎoyǔ.", fr: "Elle s'appelle Wang Xiaoyu.", en: "She's called Wang Xiaoyu."}
+  - {h: "认识你很高兴！", py: "Rènshi nǐ hěn gāoxìng!", fr: "Enchanté !", en: "Nice to meet you!"}
+  choose:
+  - {h: "你叫＿＿名字？", opts: [什么, 呢, 也], a: 什么, py: "Nǐ jiào shénme míngzi?", fr: "Comment tu t'appelles ?", en: "What's your name?"}
+  - {h: "我很好，你＿＿？", opts: [吗, 呢, 也], a: 呢, py: "Wǒ hěn hǎo, nǐ ne?", fr: "Je vais bien, et toi ?", en: "I'm fine, and you?"}
+  - {h: "我＿＿是老师。", opts: [呢, 什么, 也], a: 也, py: "Wǒ yě shì lǎoshī.", fr: "Je suis professeur, moi aussi.", en: "I'm a teacher too."}
+  - {h: "我＿＿李。", opts: [姓, 是, 呢], a: 姓, py: "Wǒ xìng Lǐ.", fr: "Mon nom de famille est Li.", en: "My surname is Li."}

@@ -40,7 +40,22 @@ def run(page, name):
             if not page.locator("h1").inner_text().strip():
                 errors.append(f"{name} {t['key']}/{l['id']}: no title")
             check(f"{t['key']}/{l['id']}")
-            if l["id"] == 1:
+            if l["id"] == 1 and t["key"] == "rumen":
+                shot("rumen-1")
+                page.locator(".tok").first.click(); page.wait_for_selector("#sheet.open"); shot("rumen-1-card")
+                page.locator("#sheet .x").click()
+                page.locator(".nlink").first.click(); page.wait_for_selector("#sheet.open .ntext"); shot("rumen-1-note")
+                page.locator("#sheet .ntext .wt").first.click(); page.wait_for_selector("#sheet.open .wh")
+                page.keyboard.press("Escape")
+                page.locator("details.allnotes summary").click()
+                q = l["exercise"]["choose"][0]
+                page.locator(f'.opt[data-q="0"][data-o="{q["opts"].index(q["a"])}"]').click()
+                page.wait_for_selector('.q[data-q="0"] .after', state="visible"); shot("rumen-1-practice")
+                for b in ("#rMode", "#rScript", "#rLang"):
+                    page.locator(b).click(); page.wait_for_selector(".lbar"); check(f"rumen/1 {b}")
+                shot("rumen-1-toggled")
+                page.locator("#rDone").click(); page.wait_for_selector("#rUndo")
+            elif l["id"] == 1:
                 shot(f"{t['key']}-1")
                 if page.locator(".w").count():
                     page.locator(".w").first.scroll_into_view_if_needed(); page.wait_for_timeout(200)  # a scroll closes the word pop-up

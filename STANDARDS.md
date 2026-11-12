@@ -232,15 +232,15 @@ Rules:
 - `tools/build.py` adds the simplified forms and the example's traditional form (`h_t`, OpenCC
   s2tw, so 為 and 裡 come out in the Taiwan standard), and fails if an example lacks its 成語.
 
-## 11. 白話 track: the written language beyond the old HSK 5
+## 11. 白話 track: the written language beyond HSK 5
 
 A third track beside 文言 and 成語, for a reader who has finished the textbooks and wants to read
 novels.
 
-**Which HSK.** "HSK 5" in this course always means the **old HSK 5** (HSK 2.0, official 2012
-lists: 2,500 words cumulative), the level the course was designed for. The HSK has since been
-rebuilt into nine levels (HSK 3.0, first exams 2026) with larger lists, so a new "HSK 5" is a
-different and bigger level. Never write a bare "HSK 5": say "old HSK 5". What stands between the two is not grammar but the **written register**
+**Which HSK.** Two names, never mixed (user, 2026-11-13): **HSK** is the 2012 test (six levels,
+HSK 5 = 2,500 words cumulative), the level this track starts from; **NHSK** is HSK 3.0, the nine-level
+test of the November 2025 syllabus (NHSK 5 = 3,600 words). Never write "old HSK" or "new HSK".
+What stands between HSK 5 and novels is not grammar but the **written register**
 (書面語): one-character classical words living on inside modern ones (隙地, 夜闌), written function
 words (如何, 然而, 固然, 令, 於), and four-character phrasing. The track teaches it the same way as
 the rest of the course: **real texts only**.
@@ -276,7 +276,7 @@ A long text is cut into lessons of 20–30 lines at paragraph breaks. Every 7th 
 |---|---|
 | `lines[]` | one **sentence** per line; no `py` (the learner reads characters; readings are on the words). `p: true` starts a paragraph. `lit` only where the structure needs it |
 | `notes[]` | priority: 1. a written word or function word and the classical word inside it, with a link to the 文言 note that teaches it (`→ 文言 L1 n.4`; the build checks the note exists); 2. a period spelling or usage; 3. a 成語 or four-character phrase; 4. culture |
-| `glossary[]` | words **not in the old HSK 1–5 lists** (2012), or used in an unusual sense, with `py`. A word that *is* in those lists stays only if a note teaches it (既然, 然而…) and carries `hsk: N` (its old level); the app shows it apart, under "Already in old HSK 1–5". Check every new lesson against the 2012 lists |
+| `glossary[]` | words **not in the HSK 1–5 lists** (2012), or used in an unusual sense, with `py`. A word that *is* in those lists stays only if a note teaches it (既然, 然而…) and carries `hsk: N` (its HSK level); the app shows it apart, under "Already in HSK 1–5". Check every new lesson against the 2012 lists |
 | `exercise[]` | "Roots": the classical sentences behind the lesson's written words. `h` + `ref: 文言 L2` + `tests`; the sentence must be a run of lines of that lesson (quotation marks aside), and the build copies its pinyin and translation from there. Sentences from outside the course need `src`, `en` and a checked transcription, as in §7 |
 
 `checked` works as in §6. For modern words `cyz` applies only when the classical sense is the one
@@ -284,8 +284,8 @@ in the passage (夜闌, 賤價); otherwise `wikt`.
 
 ## 12. The app
 
-One page, three tracks, four tabs: **文言 · 白話 · 成語 · 設定**. `tools/build.py` reads
-`lessons/`, `baihua/` and `chengyu/` and writes `app/course.json` and the single file
+One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設定**. `tools/build.py` reads
+`rumen/`, `lessons/`, `baihua/` and `chengyu/` and writes `app/course.json` and the single file
 `dist/wenyan.html`.
 
 - **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews).
@@ -295,7 +295,77 @@ One page, three tracks, four tabs: **文言 · 白話 · 成語 · 設定**. `to
   review happens by reading, with the 7th-lesson reviews and the "Roots" exercises.
 - **Always light**; night mode is a switch in Settings. Progress (the done dates) lives in the browser; Settings
   saves and loads it as a file (loading merges: earliest finish date).
-- Routes: `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#settings`. Every route maps to a tab
+- Routes: `#rumen`, `#rumen/52/wave`, `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#settings`. A first visit opens 入門. Every route maps to a tab
   in `TABS`, so the tab bar keeps its highlight.
 - `python3 tools/smoke.py` clicks through every tab and lesson at phone and desktop width.
 
+
+## 13. 入門 track: Mandarin from zero to NHSK 4
+
+A course for friends who start from nothing, on the model of a 100-lesson Assimil, laid out like
+Tsheh-tû. It is the one place in Wenyan with **invented texts**: the dialogues are written for the
+course, because a beginner can't read real texts yet. Everything else stays: the build checks the
+text, notes are numbered, and every 7th lesson is a review.
+
+**Which HSK.** **NHSK** = HSK 3.0, final syllabus of November 2025 (NHSK 1–4 = 300, 500, 1,000,
+2,000 words cumulative). **HSK** = the 2012 test. Never "old" / "new". The word list is
+`data/nhsk.tsv` (from github.com/bezlant/hsk-3-vocabulary, CC BY-SA 4.0).
+
+### Target and pace
+
+- **100 lessons, 86 with a dialogue, 14 reviews** (7, 14, … 98). End: **NHSK 4**, ~2,000 words.
+- New words per dialogue lesson grow from 14 to 32 (`tools/rumen.py` computes each lesson's quota
+  from its place in `rumen/plan.yaml`). Milestones: NHSK 1 ≈ L21, NHSK 2 ≈ L35, NHSK 3 ≈ L63,
+  NHSK 4 = L100. The build prints each lesson's count against its quota, by NHSK level, and the
+  course's NHSK 1–4 coverage. Words outside NHSK are allowed (names of dishes, places) but count.
+- **Second wave** from lesson 50: with lesson N, redo lesson N − 49 the other way round
+  (`#rumen/1/wave`: translation shown, "Show Chinese" per line). Done separately.
+- Grammar follows the NHSK grammar syllabus, loosely; `plan.yaml` gives each lesson its points.
+- **Story:** Marc (马克), from Lyon, spends a year in Beijing; 王小雨 (colleague), 李老师 (teacher),
+  张伟 (colleague, later flatmate). Lessons grow from 8 lines to about 20.
+
+### Lesson file
+
+`rumen/NNN-slug.yaml`, **simplified characters, mainland standard**; traditional is derived
+(OpenCC s2t on the whole line). Explanations in **French and English** (`fr`, `en` everywhere).
+
+| Field | Content |
+|---|---|
+| `id`, `slug`, `status` | as in §2 |
+| `title`, `title_py`, `title_fr`, `title_en` | |
+| `setting` | `fr`, `en`: where we are, one or two sentences |
+| `names[]` | `w`, `py`, `fr`, `en`: people and places; never counted as words |
+| `lines[]` | `n`, `who` (speaker), `h`, `py` (the whole line), `fr`, `en`, optional `lit_fr` / `lit_en` (word for word), optional `cut` (the line's words separated by spaces, when the automatic cut is wrong) |
+| `notes[]` | `n`, `line` (a line's `n`; 0 = general), `topic` (`grammar`, `vocab`, `pron`, `culture`, `writing`), `fr`, `en`. A point is explained once, then referenced: `L1 n.4` (the build checks it exists) |
+| `words[]` | the lesson's new words: `w`, `py`, `fr`, `en` (our gloss, the sense used here). The NHSK level is added by the build |
+| `exercise.translate[]` | `h`, `py`, `fr`, `en`: sentences built only from words taught so far |
+| `exercise.choose[]` | multiple choice: `h` with `＿＿` for the gap, `opts`, `a` (the answer), `py` of the full sentence, `fr`, `en` |
+| `recap[]` | review lessons only: `fr`, `en` (with `L3 n.5` references); a review dialogue teaches no new word |
+
+### Rules the build enforces
+
+- **Words.** Each line is cut into words, longest match on NHSK + the course's words + names.
+  Every word in a dialogue or an exercise must be taught in this lesson or an earlier one
+  (a warning in `draft`, an error from `good` up). Every new word must be used in the dialogue as a
+  word of its own, and is taught only once.
+- **Pinyin.** Words joined as in ordinary pinyin, sentence capitals, proper names capitalised.
+  Dictionary tones, with two exceptions written as spoken: 不 bú and 一 yí / yì before the tones that
+  change them. Third-tone sandhi (你好 ní hǎo) is not written; L1 n.2 explains it. Neutral tones
+  unmarked (xièxie, péngyou). The build splits the line into syllables, gives one to each character,
+  and checks it against pypinyin's readings. An apostrophe separates ambiguous syllables (Lǐ'áng).
+- **Simplified only** in the files. If OpenCC gets a traditional character wrong, fix it in the
+  build, never by hand.
+
+### In the app (Tsheh-tû layout)
+
+- Home: next lesson, progress, NHSK 1–4 bars (words of the lessons marked done), the grid of the
+  100 planned lessons (written ones open; the rest greyed with their planned title).
+- Lesson: bar with **拼音** (above / on tap / characters only), **简/繁**, **FR/EN**, **Cover** (blurs the
+  translation; tap to check). Dialogue lines with the speaker, the words with pinyin above, the
+  translation and word-for-word line, and the note numbers under each line.
+- **Tap a word** (in the dialogue, an exercise, the new-word grid, or **inside a note**) for its card in
+  a bottom sheet: both scripts, pinyin, NHSK level, our gloss (else the NHSK list's English, marked),
+  the lesson that teaches it, the lessons that use it, its characters.
+- **Tap a note number** for the note in the sheet, with previous / next; the line is highlighted.
+- Practice: translate (answer on tap), then multiple choice (a right answer fills the gap and shows the
+  full sentence with pinyin and translation).

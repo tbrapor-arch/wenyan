@@ -1,0 +1,115 @@
+# 入門 · the plan for 100 lessons (STANDARDS.md §13)
+#
+# Story: Marc (马克), French, spends a year in Beijing: an internship, then a job. Around him:
+# 王小雨 (his colleague and guide), 李老师 (his Chinese teacher), 张伟 (flatmate), 小雨's family.
+#
+# Every 7th lesson is a review. New words per lesson grow from 14 to 32 (tools/rumen.py computes
+# the quota from the position of the lesson), so that lesson 100 reaches NHSK 4 (2,000 words).
+# Milestones: NHSK 1 (300) ≈ L21, NHSK 2 (500) ≈ L35, NHSK 3 (1,000) ≈ L63, NHSK 4 (2,000) = L100.
+# `gram` follows the order of the NHSK grammar syllabus (语法等级大纲), loosely.
+
+lessons:
+# ---- I. Arrival (→ NHSK 1)
+- {id: 1,  zh: 你好！,       fr: "Bonjour !",              en: "Hello!",                 gram: "是 · 吗 · personal pronouns"}
+- {id: 2,  zh: 你叫什么名字？, fr: "Comment tu t'appelles ?", en: "What's your name?",      gram: "叫 · 什么 · 呢 · 也"}
+- {id: 3,  zh: 我是法国人,    fr: "Je suis français",       en: "I'm French",             gram: "哪国人 · 的 · 不"}
+- {id: 4,  zh: 你家有几个人？, fr: "Combien êtes-vous dans ta famille ?", en: "How many in your family?", gram: "有 / 没有 · 几 · 个 · 1–10"}
+- {id: 5,  zh: 你多大？,      fr: "Quel âge as-tu ?",       en: "How old are you?",       gram: "numbers to 99 · 岁 · 多大"}
+- {id: 6,  zh: 这是我的房间,  fr: "Voici ma chambre",       en: "This is my room",        gram: "这 / 那 / 哪 · 都"}
+- {id: 7,  review: true}
+- {id: 8,  zh: 超市在哪儿？,  fr: "Où est le supermarché ?", en: "Where's the supermarket?", gram: "在 · 哪儿 · 这儿 / 那儿"}
+- {id: 9,  zh: 多少钱？,      fr: "C'est combien ?",        en: "How much is it?",        gram: "要 · 想 · 块 / 毛 · 多少钱"}
+- {id: 10, zh: 现在几点？,    fr: "Quelle heure est-il ?",  en: "What time is it?",       gram: "点 / 分 · time before the verb"}
+- {id: 11, zh: 今天星期几？,  fr: "On est quel jour ?",     en: "What day is it?",        gram: "年月日 · 星期 · 号"}
+- {id: 12, zh: 你喜欢吃什么？, fr: "Qu'est-ce que tu aimes manger ?", en: "What do you like to eat?", gram: "喜欢 · verb + object · 还是"}
+- {id: 13, zh: 我们坐地铁去,  fr: "On y va en métro",       en: "Let's take the metro",   gram: "去 / 来 · 坐 · 怎么"}
+- {id: 14, review: true}
+- {id: 15, zh: 你会说汉语吗？, fr: "Tu parles chinois ?",    en: "Do you speak Chinese?",  gram: "会 · 能 · 可以"}
+- {id: 16, zh: 第一节汉语课,  fr: "Premier cours de chinois", en: "First Chinese class",  gram: "很 · 太…了 · adjective predicates"}
+- {id: 17, zh: 你在做什么呢？, fr: "Qu'est-ce que tu fais ?", en: "What are you doing?",    gram: "在 / 正在…呢"}
+- {id: 18, zh: 我买了一个手机, fr: "J'ai acheté un téléphone", en: "I bought a phone",     gram: "了 (action done) · 没 (有)"}
+- {id: 19, zh: 你去过长城吗？, fr: "Tu es déjà allé à la Grande Muraille ?", en: "Have you been to the Great Wall?", gram: "过 · 次"}
+- {id: 20, zh: 北京比巴黎大,  fr: "Pékin est plus grand que Paris", en: "Beijing is bigger than Paris", gram: "比 · 没有…那么"}
+- {id: 21, review: true}
+# ---- II. Settling in (→ NHSK 2)
+- {id: 22, zh: 今天天气怎么样？, fr: "Quel temps fait-il ?",  en: "What's the weather like?", gram: "怎么样 · 有点儿 · 一点儿"}
+- {id: 23, zh: 喂，是小雨吗？, fr: "Allô, c'est Xiaoyu ?",   en: "Hello, is that Xiaoyu?", gram: "给 · 打电话 · 喂"}
+- {id: 24, zh: 下班以后,     fr: "Après le travail",       en: "After work",             gram: "以前 / 以后 · …的时候"}
+- {id: 25, zh: 我感冒了,      fr: "J'ai attrapé un rhume",  en: "I've caught a cold",     gram: "因为…所以… · 了 (new situation)"}
+- {id: 26, zh: 火车要开了,    fr: "Le train va partir",     en: "The train is about to leave", gram: "要…了 · 快…了"}
+- {id: 27, zh: 跟朋友一起吃饭, fr: "Dîner entre amis",      en: "Dinner with friends",    gram: "跟…一起 · 和 · 还"}
+- {id: 28, review: true}
+- {id: 29, zh: 你学了多长时间？, fr: "Depuis combien de temps tu étudies ?", en: "How long have you studied?", gram: "duration · 了…了 · 多长时间"}
+- {id: 30, zh: 作业写完了,    fr: "J'ai fini mes devoirs",  en: "Homework done",          gram: "result complements 完 · 好 · 到 · 见 · 懂"}
+- {id: 31, zh: 我们休息一下吧, fr: "Faisons une pause",     en: "Let's take a break",     gram: "吧 · 一下 · reduplication 看看"}
+- {id: 32, zh: 你说得很好,    fr: "Tu parles bien",         en: "You speak well",         gram: "得 (degree complement)"}
+- {id: 33, zh: 虽然很贵，但是很好吃, fr: "Cher, mais délicieux", en: "Pricey but delicious", gram: "虽然…但是… · 可是"}
+- {id: 34, zh: 门开着呢,      fr: "La porte est ouverte",   en: "The door is open",       gram: "着 · 在 + place after the verb"}
+- {id: 35, review: true}
+# ---- III. Daily life and travel (→ NHSK 3)
+- {id: 36, zh: 快进来吧！,    fr: "Entre vite !",           en: "Come on in!",            gram: "direction complements 来 / 去"}
+- {id: 37, zh: 他跑出去了,    fr: "Il est sorti en courant", en: "He ran out",            gram: "compound directions 上来 · 出去 · 回来"}
+- {id: 38, zh: 我听不懂,      fr: "Je ne comprends pas (à l'oral)", en: "I can't understand", gram: "potential complements 听不懂 · 买得到"}
+- {id: 39, zh: 把行李放在这儿, fr: "Pose les bagages ici",  en: "Put the luggage here",   gram: "把"}
+- {id: 40, zh: 我的自行车被偷了, fr: "On m'a volé mon vélo", en: "My bike was stolen",     gram: "被"}
+- {id: 41, zh: 你是什么时候来的？, fr: "Tu es arrivé quand ?", en: "When did you arrive?", gram: "是…的"}
+- {id: 42, review: true}
+- {id: 43, zh: 一到西安就去吃面, fr: "Des nouilles dès l'arrivée à Xi'an", en: "Noodles as soon as we reach Xi'an", gram: "一…就…"}
+- {id: 44, zh: 越来越冷了,    fr: "Il fait de plus en plus froid", en: "It's getting colder", gram: "越来越 · 越…越…"}
+- {id: 45, zh: 如果下雨怎么办？, fr: "Et s'il pleut ?",      en: "What if it rains?",      gram: "如果…就… · 要是"}
+- {id: 46, zh: 除了饺子以外,  fr: "À part les raviolis",    en: "Apart from dumplings",   gram: "除了…以外"}
+- {id: 47, zh: 连小孩都知道,  fr: "Même les enfants le savent", en: "Even kids know it",   gram: "连…都 / 也"}
+- {id: 48, zh: 不但便宜，而且方便, fr: "Pas cher, et en plus pratique", en: "Cheap, and handy too", gram: "不但…而且…"}
+- {id: 49, review: true}
+- {id: 50, zh: 什么都想买,    fr: "On veut tout acheter",   en: "Wanting to buy everything", gram: "question words as 'any': 什么都 · 谁都 · 哪儿都"}
+- {id: 51, zh: 只要努力就行,  fr: "Il suffit de travailler", en: "Effort is all it takes", gram: "只要…就… · second wave starts"}
+- {id: 52, zh: 只有周末才有空, fr: "Libre seulement le week-end", en: "Only free at weekends", gram: "只有…才…"}
+- {id: 53, zh: 难道你不知道？, fr: "Tu ne le savais pas ?",  en: "Didn't you know?",       gram: "难道 · rhetorical questions"}
+- {id: 54, zh: 既然来了，就多住几天, fr: "Puisque tu es là, reste quelques jours", en: "Since you're here, stay a few days", gram: "既然…就…"}
+- {id: 55, zh: 对我来说,      fr: "Pour moi",               en: "For me",                 gram: "对…来说 · 对于"}
+- {id: 56, review: true}
+- {id: 57, zh: 春节快到了,    fr: "Le Nouvel An approche",  en: "Spring Festival is near", gram: "不管…都…"}
+- {id: 58, zh: 在小雨家过年,  fr: "Le Nouvel An chez Xiaoyu", en: "New Year at Xiaoyu's", gram: "一边…一边… · 先…再…然后"}
+- {id: 59, zh: 即使很累也要去, fr: "Même fatigué, il faut y aller", en: "Even if tired, we go", gram: "即使…也…"}
+- {id: 60, zh: 我找到工作了,  fr: "J'ai trouvé du travail", en: "I found a job",          gram: "让 / 使 / 叫 (causative)"}
+- {id: 61, zh: 第一天上班,    fr: "Premier jour de travail", en: "First day at work",     gram: "叫 / 让 (passive) · 被…所"}
+- {id: 62, zh: 搬家,          fr: "Le déménagement",        en: "Moving house",           gram: "把 + result / direction complements"}
+- {id: 63, review: true}
+# ---- IV. Work, opinions, culture (→ NHSK 4)
+- {id: 64, zh: 开会,          fr: "La réunion",             en: "The meeting",            gram: "关于 · 由于 · 通过"}
+- {id: 65, zh: 我的看法,      fr: "Mon avis",               en: "My view",                gram: "我认为 · 看来 · 可见"}
+- {id: 66, zh: 不得不加班,    fr: "Obligé de faire des heures sup", en: "Having to work late", gram: "不得不 · 非…不可"}
+- {id: 67, zh: 网上购物,      fr: "Acheter en ligne",       en: "Shopping online",        gram: "无论…都… · 随便"}
+- {id: 68, zh: 幸亏你提醒我,  fr: "Heureusement que tu m'as prévenu", en: "Good thing you reminded me", gram: "幸亏 · 万一 · 否则"}
+- {id: 69, zh: 去医院看病,    fr: "Chez le médecin",        en: "Seeing a doctor",        gram: "按照 · 根据 · 一旦"}
+- {id: 70, review: true}
+- {id: 71, zh: 银行开户,      fr: "Ouvrir un compte",       en: "Opening an account",     gram: "以便 · 为了"}
+- {id: 72, zh: 与其等车，不如走路, fr: "Plutôt marcher qu'attendre le bus", en: "Better to walk than wait", gram: "与其…不如… · 宁可"}
+- {id: 73, zh: 他甚至不会做饭, fr: "Il ne sait même pas cuisiner", en: "He can't even cook", gram: "甚至 · 何况"}
+- {id: 74, zh: 随着科技的发展, fr: "Avec les progrès de la technique", en: "As technology develops", gram: "随着 · 在…下"}
+- {id: 75, zh: 尽管有困难,    fr: "Malgré les difficultés", en: "Despite the difficulties", gram: "尽管 · 反而"}
+- {id: 76, zh: 简直像做梦一样, fr: "Comme dans un rêve",    en: "Just like a dream",      gram: "简直 · 像…一样 / 似的"}
+- {id: 77, review: true}
+- {id: 78, zh: 环境保护,      fr: "Protéger l'environnement", en: "Protecting the environment", gram: "不仅…还… · 并且"}
+- {id: 79, zh: 看新闻,        fr: "Les informations",       en: "The news",               gram: "据说 · 听说 · 于是"}
+- {id: 80, zh: 中国菜的八大菜系, fr: "Les huit cuisines chinoises", en: "China's eight cuisines", gram: "以…为… · 其中"}
+- {id: 81, zh: 毕竟是第一次,  fr: "Après tout, c'est la première fois", en: "It's the first time, after all", gram: "毕竟 · 究竟 · 到底"}
+- {id: 82, zh: 去面试,        fr: "L'entretien d'embauche", en: "The job interview",      gram: "formal register · 并 (不) · 从来"}
+- {id: 83, zh: 你的意思是……,  fr: "Tu veux dire que…",      en: "You mean…",              gram: "是不是 · 并不是…而是…"}
+- {id: 84, review: true}
+- {id: 85, zh: 汉字的故事,    fr: "L'histoire des caractères", en: "The story of characters", gram: "之一 · 所 + verb · 以及"}
+- {id: 86, zh: 成语和故事,    fr: "Les chengyu et leurs histoires", en: "Chengyu and their stories", gram: "first 成语: 马马虎虎 · 一路平安"}
+- {id: 87, zh: 去南方旅行,    fr: "Voyage dans le Sud",     en: "A trip south",           gram: "不是…就是… · 要么…要么…"}
+- {id: 88, zh: 茶馆里,        fr: "Au salon de thé",        en: "In the teahouse",        gram: "动不动 · 好在 · 难免"}
+- {id: 89, zh: 写一封信,      fr: "Écrire une lettre",      en: "Writing a letter",       gram: "written forms: 此 · 其 · 而"}
+- {id: 90, zh: 一场比赛,      fr: "Un match",               en: "A match",                gram: "再…也… · 总算 · 终于"}
+- {id: 91, review: true}
+- {id: 92, zh: 城市和农村,    fr: "Ville et campagne",      en: "City and countryside",   gram: "comparisons: 不如 · 跟…相比 · 最"}
+- {id: 93, zh: 中国人怎么过节, fr: "Les fêtes chinoises",   en: "How China celebrates",   gram: "每当…的时候 · 一般来说"}
+- {id: 94, zh: 学汉语的方法,  fr: "Comment apprendre le chinois", en: "How to learn Chinese", gram: "总之 · 首先 · 其次 · 最后"}
+- {id: 95, zh: 小雨的婚礼,    fr: "Le mariage de Xiaoyu",   en: "Xiaoyu's wedding",       gram: "祝 · set phrases for occasions"}
+- {id: 96, zh: 告别,          fr: "Les adieux",             en: "Saying goodbye",         gram: "舍不得 · 恐怕 · 不见得"}
+- {id: 97, zh: 回到巴黎,      fr: "De retour à Paris",      en: "Back in Paris",          gram: "looking back: 当初 · 原来 · 本来"}
+- {id: 98, review: true}
+- {id: 99, zh: 一年以后,      fr: "Un an plus tard",        en: "A year later",           gram: "the whole course in one story"}
+- {id: 100, zh: 下一步,       fr: "Et maintenant ?",        en: "What next?",             gram: "how to go on: graded readers, 白話, 成語"}

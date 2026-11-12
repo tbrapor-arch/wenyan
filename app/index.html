@@ -223,6 +223,85 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
 #pop .nh .c{font-size:22px}
 #pop .nb{font-size:15px;line-height:1.5}
 #pop .goto{margin-top:10px;font:13px var(--en);color:var(--seal);background:none;border:0;padding:0;cursor:pointer}
+/* 入門: the Tsheh-tû lesson layout (dialogue lines with speakers, tappable words with pinyin above,
+   numbered notes under each line, word card and notes in a bottom sheet) */
+.setting{max-width:720px;margin:18px 0 0;font-style:italic;color:var(--ink-2)}
+.lnav{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 0}
+.lnav button{font:13px var(--en);border:1px solid var(--rule);background:var(--card);border-radius:999px;padding:4px 12px;cursor:pointer}
+.wavecard{display:block;margin:16px 0 0;border:1px dashed var(--seal);border-radius:10px;padding:12px 16px;background:var(--card);text-decoration:none;color:var(--ink);font-size:15px}
+.dlg{margin-top:8px}
+.sent{display:grid;grid-template-columns:7.5em 1fr;gap:4px 18px;padding:14px 0;border-bottom:1px dashed var(--rule)}
+.sent:last-child{border-bottom:0}
+.sent.noted{background:linear-gradient(90deg,var(--seal-soft),transparent 70%)}
+.who{font-size:13.5px;color:var(--ink-2);display:flex;align-items:center;gap:7px;padding-top:12px;font-family:var(--zh)}
+.who .n{margin-left:auto;font:600 11px var(--en);color:var(--rule)}
+.av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--seal);color:var(--paper);font:600 13px var(--zh);flex:none}
+.av.b{background:var(--ink-2)}
+.av.c{background:#3d6b4f}
+.txt{font:400 25px/1.5 var(--zh);letter-spacing:.03em}
+.tok{cursor:pointer;border-radius:4px;display:inline-block;padding:0 1px;transition:background .15s}
+.tok:hover,.tok.sel{background:var(--hl)}
+.tok ruby{ruby-position:over}
+.tok rt{font:italic 12.5px var(--en);color:var(--ink-2);letter-spacing:0;padding-bottom:1px}
+html.rm-han .tok rt,html.rm-tap .tok:not(.show) rt{visibility:hidden}
+.tr{grid-column:2;font-size:16px}
+.tr .lit{display:block}
+html.cover .tr:not(.peek){filter:blur(6px);opacity:.5;cursor:pointer}
+.under{grid-column:2;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.nlink{width:24px;height:24px;border-radius:50%;border:0;background:var(--seal-soft);color:var(--seal);font:600 12px var(--en);cursor:pointer;padding:0}
+.showzh{font:13px var(--en);border:1px solid var(--rule);background:var(--card);border-radius:999px;padding:3px 12px;cursor:pointer;justify-self:start}
+details.allnotes summary{cursor:pointer;font:600 13px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:40px 0 14px}
+.rnote{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;margin:0 0 16px;max-width:760px}
+.rnote .tag,.ntag{font:600 10.5px var(--en);letter-spacing:.1em;text-transform:uppercase;color:var(--seal)}
+.rnote p{margin:2px 0 0;grid-column:2}
+.ntext .wt{cursor:pointer;font-family:var(--zh);border-bottom:1px dotted var(--ink-2)}
+.ntext .wt:hover{background:var(--hl)}
+.ntext b{font-weight:600}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.wchip{text-align:left;border:1px solid var(--rule);border-radius:8px;background:var(--card);padding:8px 12px;cursor:pointer;display:grid;gap:1px}
+.wchip b{font:600 22px/1.25 var(--zh)}
+.wchip .r{font-size:13px;font-style:italic;color:var(--ink-2)}
+.wchip .g{font-size:14px;line-height:1.3}
+.lv{font:600 10px var(--en);letter-spacing:.06em;color:var(--seal);border:1px solid currentColor;border-radius:3px;padding:0 4px;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.lv.off{color:var(--ink-2)}
+.prac{display:grid;gap:12px;max-width:760px}
+.q{border-left:3px solid var(--seal);padding:6px 0 6px 16px}
+.q .txt{font-size:22px}
+.q .ans{margin-top:4px}
+.q .ans summary{cursor:pointer;color:var(--seal);font-size:14px}
+.gap{display:inline-block;min-width:2.2em;border-bottom:2px solid var(--seal);text-align:center;color:var(--seal)}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.opt{font:22px var(--zh);border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:4px 16px;cursor:pointer;min-width:2.6em}
+.opt.ok{background:var(--ok);color:var(--paper);border-color:var(--ok)}
+.opt.no{opacity:.35;text-decoration:line-through}
+.q .after{margin-top:6px;font-size:15px}
+.planned{opacity:.55;cursor:default;border-style:dotted}
+.planned .z{font-weight:400}
+.cov{display:grid;grid-template-columns:auto 1fr auto;gap:6px 12px;align-items:center;max-width:520px;font-size:13px;color:var(--ink-2);margin-top:14px}
+.cov .bar{height:6px;border-radius:3px;background:var(--paper-2);overflow:hidden}
+.cov .bar i{display:block;height:100%;background:var(--seal)}
+#sheet{position:fixed;z-index:30;left:50%;bottom:0;transform:translate(-50%,105%);width:min(620px,100vw);max-height:78vh;overflow:auto;background:var(--paper);border:1px solid var(--rule);border-bottom:0;border-radius:14px 14px 0 0;box-shadow:0 -10px 40px #0003;padding:6px 20px calc(22px + env(safe-area-inset-bottom));transition:transform .22s ease,visibility .22s;visibility:hidden}
+#sheet.open{transform:translate(-50%,0);visibility:visible}
+#sheet .grab{width:42px;height:4px;border-radius:2px;background:var(--rule);margin:4px auto 8px}
+#sheet .top{display:flex;gap:12px;align-items:flex-start;position:sticky;top:-6px;background:var(--paper);padding:4px 0 8px;border-bottom:1px solid var(--rule)}
+#sheet .top .hd{flex:1;min-width:0}
+#sheet .x{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:transparent;cursor:pointer;font-size:18px;flex:none}
+#sheet .wh{font:600 38px/1.2 var(--zh);letter-spacing:.04em}
+#sheet .wh small{font-weight:400;font-size:18px;color:var(--ink-2);margin-left:10px}
+#sheet .wp{font-style:italic;color:var(--ink-2)}
+#sheet h3{font:600 11.5px var(--en);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:16px 0 4px}
+#sheet .gloss{font-size:18px}
+#sheet .src{font-size:12px;color:var(--ink-2)}
+#sheet .chips{display:flex;gap:6px;flex-wrap:wrap}
+#sheet .chips button{border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:3px 10px;cursor:pointer;font-size:14px}
+#sheet .chips button .han{font:18px var(--zh)}
+#sheet .nrow{display:flex;gap:8px;margin-top:16px}
+@media (max-width:720px){
+  .sent{grid-template-columns:1fr;gap:4px}
+  .who{padding-top:0}
+  .tr,.under{grid-column:1}
+  .txt{font-size:23px}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -233,6 +312,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
 <nav class="tabs" id="tabs" aria-label="Sections"></nav>
 <main class="wrap" id="app"></main>
 <div id="pop" role="tooltip"></div>
+<div id="sheet" role="dialog" aria-hidden="true"></div>
 <script id="course-data" type="application/json"></script>
 <script>
 (() => {
@@ -252,28 +332,31 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   let course, T, L;
   let simp = store.get("simp", false), py = store.get("py", true), cover = store.get("cover", false);
   let done = store.get("done", {});
+  let rmode = store.get("rmode", "py"), rlang = store.get("rlang", "fr"), rtrad = store.get("rtrad", false);
   const Z = (o, k) => simp && o[k + "_s"] ? o[k + "_s"] : o[k];
   const track = k => course.tracks.find(t => t.key === k);
   const isDone = (t, l) => !!done[t.key + ":" + l.id];
 
   /* ---------- routing ---------- */
   // Every route maps to a tab here, so a redrawn tab bar keeps its highlight.
-  const TABS = [["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
+  const TABS = [["rumen", "入門", "Start"], ["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
                 ["settings", "設定", "Settings"]];
-  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "wenyan"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
+  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "rumen"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
   function drawTabs(tab){
     $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}</a>`).join("");
   }
   function go(){
-    hidePop();
+    hidePop(); closeSheet();
     const r = route();
     H.classList.toggle("simp", simp); H.classList.toggle("nopy", !py); H.classList.toggle("cover", cover);
     H.dataset.theme = store.get("night", false) ? "dark" : "light";
+    H.classList.toggle("rm-han", r.tab === "rumen" && rmode === "han"); H.classList.toggle("rm-tap", r.tab === "rumen" && rmode === "tap");
     drawTabs(r.tab); L = null;
     if (r.tab === "settings") return settings();
     store.set("tab", r.tab);
     T = track(r.tab); L = r.id ? T.lessons.find(l => l.id === r.id) : null;
-    if (!L) return home();
+    if (!L) return T.key === "rumen" ? rHome() : home();
+    if (T.key === "rumen"){ rLesson(r.note === "wave"); if (r.note && r.note !== "wave") rJump(r.note); else scrollTo(0, 0); return; }
     lesson();
     if (r.note){ const n = $("#" + r.note); if (n){ n.scrollIntoView({block: "center"}); n.classList.add("flash"); } }
     else scrollTo(0, 0);
@@ -340,7 +423,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     <div class="src">${esc(e.src)}${e.to ? ` · <button class="ref" data-to="${e.to.track}/${e.to.id}">open</button>` : ""}</div>
     <details><summary>Answer</summary><p>${esc(e.en)}</p>${e.tests ? `<p class="tests">Practises: ${esc(e.tests)}</p>` : ""}</details></div>`).join("")}</div>` : "";
 
-  const glHTML = (gs, known) => `<div class="gl ${known ? "known" : ""}">${gs.map(g => `<div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}${g.hsk ? ` · old HSK ${g.hsk}` : ""}</span><span class="d">${esc(g.en)}</span>
+  const glHTML = (gs, known) => `<div class="gl ${known ? "known" : ""}">${gs.map(g => `<div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}${g.hsk ? ` · HSK ${g.hsk}` : ""}</span><span class="d">${esc(g.en)}</span>
     ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>`;
   function lesson(){
     if (T.key === "chengyu") return chengyuLesson();
@@ -367,8 +450,8 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
       </div>
       <h2>Notes</h2>
       <div class="notes">${L.notes.map(n => `<div class="note" id="n${n.n}"><span class="num">${n.n}</span><p><span class="at">${esc(Z(n, "at"))}</span>${md(n.text, T.key)}</p></div>`).join("")}</div>
-      ${prose ? `<h2>Words beyond old HSK 5</h2>${glHTML(L.glossary.filter(g => !g.hsk))}
-        ${L.glossary.some(g => g.hsk) ? `<h2>Already in old HSK 1–5 · here for the notes</h2>${glHTML(L.glossary.filter(g => g.hsk), true)}` : ""}`
+      ${prose ? `<h2>Words beyond HSK 5</h2>${glHTML(L.glossary.filter(g => !g.hsk))}
+        ${L.glossary.some(g => g.hsk) ? `<h2>Already in HSK 1–5 · here for the notes</h2>${glHTML(L.glossary.filter(g => g.hsk), true)}` : ""}`
         : `<h2>Glossary</h2>${glHTML(L.glossary)}`}
       ${exerciseHTML(prose ? "Roots · the classical sentences behind these words" : "Exercise · translate")}
       ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture, T.key)}</div>` : ""}
@@ -430,6 +513,211 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
 
   function saveDone(){ store.set("done", done); }
 
+  /* ---------- 入門: Mandarin from zero, in the Tsheh-tû layout ---------- */
+  const RL = {
+    fr: {lesson: "Leçon", review: "Révision", start: "Commencer", cont: "Continuer", next: "Leçon suivante", nextL: "Prochaine leçon",
+         startHere: "Pour commencer", done: "terminées", plan: "Les 100 leçons", planned: "à venir", dialogue: "Dialogue", notes: "Notes",
+         allNotes: "Toutes les notes", words: "Mots nouveaux", practice: "Exercices", translate: "Traduisez", choose: "Choisissez le bon mot",
+         answer: "Réponse", note: "Note", of: "sur", line: "ligne", prev: "‹ Précédente", nextN: "Suivante ›", taught: "Appris en leçon",
+         usedIn: "Aussi dans", chars: "Caractères", meaning: "Sens", name: "nom propre", outside: "hors NHSK", auto: "Liste NHSK (anglais)",
+         wave: "Deuxième vague", waveDo: "Avec cette leçon, refaites la leçon {n} en sens inverse : lisez la traduction, dites le chinois.",
+         waveIntro: "Chaque ligne montre la traduction. Dites-la en chinois à voix haute, puis touchez « Voir le chinois » pour vérifier.",
+         showZh: "Voir le chinois", showAll: "Tout afficher", markDone: "Marquer comme terminée", finished: "Leçon finie ?",
+         keep: "Marquez-la pour garder votre place.", doneOn: "Terminée le", undo: "Annuler", cover: "Cacher la traduction",
+         topics: {grammar: "grammaire", vocab: "vocabulaire", pron: "prononciation", culture: "culture", writing: "écriture"},
+         about: "Le mandarin depuis zéro, à la manière d'Assimil : 100 leçons qui suivent Marc pendant un an à Pékin, jusqu'au NHSK 4 (2 000 mots).",
+         nhsk: "Mots appris (leçons terminées)", lit: "litt."},
+    en: {lesson: "Lesson", review: "Review", start: "Start", cont: "Continue", next: "Next lesson", nextL: "Next lesson",
+         startHere: "Start here", done: "done", plan: "The 100 lessons", planned: "to come", dialogue: "Dialogue", notes: "Notes",
+         allNotes: "All notes", words: "New words", practice: "Practice", translate: "Translate", choose: "Pick the right word",
+         answer: "Answer", note: "Note", of: "of", line: "line", prev: "‹ Previous", nextN: "Next ›", taught: "Taught in lesson",
+         usedIn: "Also in", chars: "Characters", meaning: "Meaning", name: "name", outside: "not in NHSK", auto: "NHSK list (English)",
+         wave: "Second wave", waveDo: "With this lesson, also redo lesson {n} the other way round: read the translation, say the Chinese.",
+         waveIntro: "Each line shows the translation. Say it in Chinese out loud, then tap “Show Chinese” to check.",
+         showZh: "Show Chinese", showAll: "Show all", markDone: "Mark as done", finished: "Finished the lesson?",
+         keep: "Mark it done to keep your place.", doneOn: "Done on", undo: "Undo", cover: "Hide the translation",
+         topics: {grammar: "grammar", vocab: "vocabulary", pron: "pronunciation", culture: "culture", writing: "writing"},
+         about: "Mandarin from zero, the Assimil way: 100 lessons following Marc through a year in Beijing, up to NHSK 4 (2,000 words).",
+         nhsk: "Words learned (lessons done)", lit: "lit."}
+  };
+  const t_ = k => RL[rlang][k];
+  const R = (o, k) => rtrad && o[k + "_t"] != null ? o[k + "_t"] : o[k];   // simplified is the text; traditional is derived
+  const RT = o => o[rlang];                                                 // our French or English
+  let RW = {}, RD = {}, RIDX = null;                                        // rendered words; dictionary; script index
+  const rDict = () => track("rumen").dict;
+  // a word on screen: characters with the pinyin above
+  const tokHTML = (tok, i) => tok.k ? `<span class="tok" tabindex="0" data-k="${esc(tok.k)}"><ruby>${esc(R(tok, "s") || tok.s)}<rt>${esc(tok.p || "")}</rt></ruby></span>` : esc(rtrad ? tok.t : tok.s);
+  const sentHTML = toks => toks.map(x => tokHTML({...x, s_t: x.t})).join("");
+  // Chinese words inside a note are tappable too (longest match on the course's word cards)
+  function noteHTML(txt){
+    const D = rDict();
+    if (!RIDX || RIDX.trad !== rtrad){ RIDX = {trad: rtrad, m: {}}; for (const k in D) RIDX.m[rtrad ? D[k].t : k] = k; }
+    let h = esc(txt).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+      .replace(/(?<!文言 |白話 )\bL(\d+) n\.(\d+)/g, (m, l, n) => `<button class="ref" data-to="rumen/${l}/n${n}">${rlang === "fr" ? "L" + l + " n." + n : m}</button>`);
+    return h.replace(/[㐀-鿿豈-﫿]+/g, run => {
+      let out = "", i = 0;
+      while (i < run.length){
+        let j = Math.min(run.length, i + 8);
+        for (; j > i + 1; j--) if (RIDX.m[run.slice(i, j)]) break;
+        const w = run.slice(i, j), k = RIDX.m[w];
+        out += k ? `<span class="wt" data-k="${esc(k)}">${esc(w)}</span>` : esc(w); i = j;
+      }
+      return out;
+    });
+  }
+  const lvHTML = d => d.name ? `<span class="lv off">${t_("name")}</span>` : d.lvl ? `<span class="lv">NHSK ${esc(d.lvl)}</span>` : `<span class="lv off">${t_("outside")}</span>`;
+  const plan = () => track("rumen").plan;
+  const rTitle = p => rtrad ? (p.zh_t || p.zh) : p.zh;
+
+  function rHome(){
+    const tr = track("rumen"), ls = tr.lessons, byId = Object.fromEntries(ls.map(l => [l.id, l]));
+    const nDone = ls.filter(l => isDone(tr, l)).length, next = ls.find(l => !isDone(tr, l));
+    // NHSK words from the lessons marked done
+    const got = {1: 0, 2: 0, 3: 0, 4: 0};
+    ls.filter(l => isDone(tr, l)).forEach(l => (l.words || []).forEach(w => { if (got[w.lvl] != null) got[w.lvl]++; }));
+    const cov = ["1", "2", "3", "4"].map(k => `<span>NHSK ${k}</span><span class="bar"><i style="width:${Math.min(100, 100 * got[k] / tr.nhsk_total[k])}%"></i></span><span>${got[k]} / ${tr.nhsk_total[k]}</span>`).join("");
+    app.innerHTML = `<section class="thead">${sealHTML("入門")}<div><div class="kicker">${rlang === "fr" ? "Débutant" : "Start"}</div><h1>${rtrad ? "入門" : "入门"}</h1><p>${esc(t_("about"))}</p></div></section>
+      ${next ? `<div class="next"><div class="t"><div class="kicker">${nDone ? t_("nextL") : t_("startHere")} · ${next.id}</div>
+          <div class="zh1">${esc(R(next, "title"))}</div><div class="te">${esc(next["title_" + rlang])}</div></div>
+          <a class="btn red" href="#rumen/${next.id}">${nDone ? t_("cont") : t_("start")}</a></div>` : ""}
+      <div class="prog">${nDone} / ${ls.length} ${t_("done")}</div>
+      <div class="cov" aria-label="${esc(t_("nhsk"))}">${cov}</div>
+      <h2>${t_("plan")}</h2>
+      <div class="grid">${plan().map(p => { const l = byId[p.id];
+        if (p.review) return `<${l ? `a href="#rumen/${p.id}"` : "div"} class="tile rev ${l ? (isDone(tr, l) ? "done" : "") : "planned"}"><div class="n">${p.id} · ${t_("review").toUpperCase()}</div><div class="z">復習</div></${l ? "a" : "div"}>`;
+        return l ? `<a class="tile ${isDone(tr, l) ? "done" : ""}" href="#rumen/${p.id}"><div class="n">${p.id}</div><div class="z">${esc(R(l, "title"))}</div><div class="te">${esc(l["title_" + rlang])}</div></a>`
+          : `<div class="tile planned"><div class="n">${p.id} · ${t_("planned")}</div><div class="z">${esc(rTitle(p))}</div><div class="te">${esc(p[rlang])}</div></div>`; }).join("")}</div>
+      <footer>NHSK = HSK 3.0, syllabus of November 2025 (word list: github.com/bezlant/hsk-3-vocabulary, CC BY-SA 4.0). Course content CC BY-SA 4.0 · code MIT.</footer>`;
+    scrollTo(0, 0);
+  }
+
+  function rBar(){
+    const tr = track("rumen"), i = tr.lessons.indexOf(L), p = tr.lessons[i - 1], n = tr.lessons[i + 1];
+    const modeLabel = {py: "拼音", tap: "拼音 ☝", han: rtrad ? "漢字" : "汉字"}[rmode];
+    return `<div class="lbar">
+      <a class="ic" href="#rumen" aria-label="Back">←</a>
+      <div class="ttl">${t_("lesson")} ${L.id} ·<b>${esc(R(L, "title"))}</b></div>
+      <a class="ic" id="prev" ${p ? `href="#rumen/${p.id}"` : 'aria-disabled="true"'} aria-label="Previous lesson">‹</a>
+      <a class="ic" id="next" ${n ? `href="#rumen/${n.id}"` : 'aria-disabled="true"'} aria-label="Next lesson">›</a>
+      <div class="toggles">
+        <button class="tg" id="rMode" title="Pinyin above / on tap / characters only">${modeLabel}</button>
+        <button class="tg" id="rScript" title="Simplified / traditional">${rtrad ? "繁 → 简" : "简 → 繁"}</button>
+        <button class="tg" id="rLang">${rlang === "fr" ? "FR → EN" : "EN → FR"}</button>
+        <button class="tg" id="tCover" aria-pressed="${cover}" title="${esc(t_("cover"))}">Cover</button>
+      </div></div>`;
+  }
+  function rLesson(wave){
+    const tr = track("rumen"), notesBy = {};
+    (L.notes || []).forEach((n, i) => (notesBy[n.line] ||= []).push(i));
+    const who = [...new Set(L.lines.map(l => l.who))];
+    const trHTML = l => `<div class="tr">${esc(RT(l))}${l["lit_" + rlang] ? `<span class="lit">${esc(l["lit_" + rlang])}</span>` : ""}</div>`;
+    const w = L.id - 49, waveL = L.id >= 50 && tr.lessons.find(l => l.id === w);
+    const ex = L.exercise || {};
+    app.innerHTML = rBar() + `<section class="hero">${sealHTML(R(L, "title"))}<div><div class="kicker">${wave ? t_("wave") + " · " : ""}${t_("lesson")} ${L.id}${L.kind === "review" ? " · " + t_("review") : ""}</div>
+        <h1>${esc(R(L, "title"))}</h1><div class="sub">${esc(L.title_py)} — ${esc(L["title_" + rlang])}</div></div></section>
+      <div class="meta"><span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
+      ${wave ? `<p class="setting">${esc(t_("waveIntro"))}</p>` : (L.setting ? `<p class="setting">${esc(RT(L.setting))}</p>` : "")}
+      ${!wave && waveL ? `<a class="wavecard" href="#rumen/${w}/wave"><span class="kicker">${t_("wave")}${done["rumen:" + w + ":wave"] ? " · ✓" : ""}</span><br>${esc(t_("waveDo").replace("{n}", w))}</a>` : ""}
+      ${wave ? "" : `<nav class="lnav">${[["dlg", t_("dialogue")], ["sec-notes", t_("notes")], ["sec-words", t_("words")], ["sec-ex", t_("practice")]].map(([id, x]) => `<button data-jump="${id}">${x}</button>`).join("")}</nav>`}
+      ${L.recap ? `<h2>${t_("review")}</h2><div class="recap">${L.recap.map((r, i) => `<div class="rc"><span class="num">${i + 1}</span><div><p class="ntext">${noteHTML(rtrad ? r[rlang + "_t"] : r[rlang])}</p></div></div>`).join("")}</div>` : ""}
+      <h2 id="dlg">${t_("dialogue")}</h2>
+      <div class="dlg">${L.lines.map((l, li) => `<div class="sent" id="line-${l.n}">
+        <div class="who">${l.who ? `<span class="av ${["", "b", "c"][who.indexOf(l.who) % 3]}">${esc([...R(l, "who")][0])}</span>${esc(R(l, "who"))}` : ""}<span class="n">${l.n}</span></div>
+        ${wave ? `${trHTML(l)}<button class="showzh" data-show="${li}">${t_("showZh")}</button><div class="txt" id="zh-${li}" hidden>${sentHTML(l.toks)}</div>`
+          : `<div class="txt">${sentHTML(l.toks)}</div>${trHTML(l)}`}
+        ${wave ? "" : `<div class="under">${(notesBy[l.n] || []).map(k => `<button class="nlink" data-note="${k}" aria-label="${t_("note")} ${k + 1}">${k + 1}</button>`).join("")}</div>`}
+      </div>`).join("")}</div>
+      ${wave ? `<div class="row" style="border:0"><button class="btn ghost" id="showAll">${t_("showAll")}</button></div>` : `
+      ${L.notes && L.notes.length ? `<details class="allnotes" id="sec-notes"><summary>${t_("allNotes")} (${L.notes.length})</summary>
+        ${L.notes.map((n, i) => `<div class="rnote" id="n${n.n}"><span class="num">${n.n}</span><span class="tag">${esc(t_("topics")[n.topic] || n.topic)} · <button class="ref" data-line="${n.line}">${t_("line")} ${n.line}</button></span>
+          <p class="ntext">${noteHTML(rtrad ? n[rlang + "_t"] : n[rlang])}</p></div>`).join("")}</details>` : ""}
+      ${L.words && L.words.length ? `<h2 id="sec-words">${t_("words")} · ${L.words.length}</h2>
+        <div class="wgrid">${L.words.map(x => `<button class="wchip" data-k="${esc(x.w)}"><b>${esc(rtrad ? x.t : x.w)}</b><span class="r">${esc(x.py)}${x.lvl ? `<span class="lv">NHSK ${esc(x.lvl)}</span>` : `<span class="lv off">${t_("outside")}</span>`}</span><span class="g">${esc(RT(x))}</span></button>`).join("")}</div>` : ""}
+      ${ex.translate || ex.choose ? `<h2 id="sec-ex">${t_("practice")}</h2><div class="prac">
+        ${ex.translate ? `<div class="ntag">1 · ${t_("translate")}</div>${ex.translate.map(e => `<div class="q"><div class="txt">${sentHTML(e.toks)}</div>
+          <details class="ans"><summary>${t_("answer")}</summary><p>${esc(RT(e))}</p></details></div>`).join("")}` : ""}
+        ${ex.choose ? `<div class="ntag">2 · ${t_("choose")}</div>${ex.choose.map((e, qi) => `<div class="q" data-q="${qi}"><div class="txt">${esc(R(e, "h")).split("＿＿").join('<span class="gap">？</span>')}</div>
+          <div class="opts">${(rtrad ? e.opts_t : e.opts).map((o, oi) => `<button class="opt" data-q="${qi}" data-o="${oi}">${esc(o)}</button>`).join("")}</div>
+          <div class="after" hidden><div class="txt">${sentHTML(e.toks)}</div><div>${esc(RT(e))}</div></div></div>`).join("")}` : ""}
+      </div>` : ""}`}
+      ${rFinish(wave)}
+      <footer>${rlang === "fr" ? "Dialogues écrits pour le cours" : "Dialogues written for the course"} · CC BY-SA 4.0 · NHSK list: bezlant/hsk-3-vocabulary, CC BY-SA 4.0.</footer>`;
+  }
+  function rFinish(wave){
+    const key = "rumen:" + L.id + (wave ? ":wave" : ""), d = done[key], tr = track("rumen"), n = tr.lessons[tr.lessons.indexOf(L) + 1];
+    return `<div class="finish"><div class="msg">${d ? `<b>${t_("doneOn")}</b> ${esc(d)}.` : `<b>${t_("finished")}</b><small>${t_("keep")}</small>`}</div>
+      ${d ? `<button class="btn ghost" id="rUndo" data-key="${key}">${t_("undo")}</button>` : `<button class="btn red" id="rDone" data-key="${key}">${t_("markDone")}</button>`}
+      ${n && !wave ? `<a class="btn ghost" href="#rumen/${n.id}">${t_("next")} ›</a>` : ""}</div>`;
+  }
+  function rJump(id){
+    const el = $("#" + id); if (!el) return;
+    if (el.closest("details")) el.closest("details").open = true;
+    flash(el);
+  }
+
+  /* bottom sheet: word card, note */
+  function openSheet(html){
+    const sh = $("#sheet"); sh.innerHTML = `<div class="grab"></div>` + html;
+    sh.classList.add("open"); sh.setAttribute("aria-hidden", "false"); sh.scrollTop = 0;
+  }
+  function closeSheet(){
+    const sh = $("#sheet"); if (!sh) return;
+    sh.classList.remove("open"); sh.setAttribute("aria-hidden", "true");
+    $$(".tok.sel").forEach(x => x.classList.remove("sel")); $$(".sent.noted").forEach(x => x.classList.remove("noted"));
+  }
+  function openCard(k){
+    const D = rDict(), d = D[k]; if (!d) return;
+    const main = rtrad ? d.t : d.s, other = rtrad ? d.s : d.t;
+    const gloss = d[rlang] || d.en || "";
+    const chars = [...d.s].length > 1 ? [...d.s].map(c => D[c] ? `<button data-k="${esc(c)}"><span class="han">${esc(rtrad ? D[c].t : c)}</span> ${esc(D[c].py)}${D[c][rlang] || D[c].en ? " · " + esc(D[c][rlang] || D[c].en) : ""}</button>` : "").join("") : "";
+    const seen = (d.seen || []).filter(x => x !== d.first && x !== L?.id);
+    openSheet(`<div class="top"><div class="hd"><div class="wh">${esc(main)}${other !== main ? `<small>${esc(other)}</small>` : ""}</div>
+        <div class="wp">${esc(d.py)} ${lvHTML(d)}</div></div><button class="x" aria-label="Close">×</button></div>
+      ${gloss ? `<h3>${t_("meaning")}</h3><div class="gloss">${esc(gloss)}</div>` : d.auto ? `<h3>${t_("meaning")}</h3><div class="gloss">${esc(d.auto)}</div><div class="src">${t_("auto")}</div>` : ""}
+      ${d.first ? `<h3>${t_("taught")}</h3><div class="chips"><button data-to="rumen/${d.first}">${t_("lesson")} ${d.first}</button></div>` : ""}
+      ${seen.length ? `<h3>${t_("usedIn")}</h3><div class="chips">${seen.map(x => `<button data-to="rumen/${x}">${t_("lesson")} ${x}</button>`).join("")}</div>` : ""}
+      ${chars ? `<h3>${t_("chars")}</h3><div class="chips">${chars}</div>` : ""}`);
+  }
+  function openNote(i){
+    const n = L.notes[i], total = L.notes.length;
+    $$(".sent.noted").forEach(x => x.classList.remove("noted")); $("#line-" + n.line)?.classList.add("noted");
+    openSheet(`<div class="top"><div class="hd"><span class="ntag">${t_("note")} ${i + 1} ${t_("of")} ${total} · ${esc(t_("topics")[n.topic] || n.topic)} · ${t_("line")} ${n.line}</span></div><button class="x" aria-label="Close">×</button></div>
+      <p class="ntext" style="font-size:16.5px">${noteHTML(rtrad ? n[rlang + "_t"] : n[rlang])}</p>
+      <div class="nrow"><button class="btn ghost" data-note="${i - 1}" ${i < 1 ? "disabled" : ""}>${t_("prev")}</button>
+        <button class="btn" data-note="${i + 1}" ${i >= total - 1 ? "disabled" : ""}>${t_("nextN")}</button></div>`);
+  }
+  // a click inside 入門; returns true when handled
+  function rClick(e){
+    const t = e.target, b = t.closest("button,a,.tok,.wt,.tr");
+    if (!b) return false;
+    if (b.classList.contains("x")){ closeSheet(); return true; }
+    if (b.dataset.to && b.tagName === "BUTTON" && !b.classList.contains("ref")){ closeSheet(); location.hash = b.dataset.to; return true; }
+    if (b.classList.contains("tok")){
+      if (rmode === "tap" && !b.classList.contains("show")){ b.classList.add("show"); return true; }
+      $$(".tok.sel").forEach(x => x.classList.remove("sel")); b.classList.add("sel"); openCard(b.dataset.k); return true;
+    }
+    if (b.classList.contains("wt") || b.classList.contains("wchip") || (b.dataset.k && b.closest("#sheet"))){ openCard(b.dataset.k); return true; }
+    if (b.dataset.note != null && b.tagName === "BUTTON"){ openNote(+b.dataset.note); return true; }
+    if (b.dataset.line){ closeSheet(); const el = $("#line-" + b.dataset.line); el?.classList.add("noted"); flash(el); return true; }
+    if (b.dataset.jump){ rJump(b.dataset.jump); return true; }
+    if (b.classList.contains("tr") && cover){ b.classList.toggle("peek"); return true; }
+    if (b.dataset.show){ $("#zh-" + b.dataset.show).hidden = false; b.remove(); return true; }
+    if (b.id === "showAll"){ $$(".txt[hidden]").forEach(x => x.hidden = false); $$(".showzh").forEach(x => x.remove()); return true; }
+    if (b.classList.contains("opt")){
+      const e2 = L.exercise.choose[+b.dataset.q], q = b.closest(".q"), right = +b.dataset.o === e2.opts.indexOf(e2.a);
+      if (q.dataset.ok) return true;
+      b.classList.add(right ? "ok" : "no");
+      if (right){ q.dataset.ok = 1; q.querySelectorAll(".gap").forEach(g => g.textContent = rtrad ? e2.opts_t[e2.opts.indexOf(e2.a)] : e2.a); q.querySelector(".after").hidden = false; }
+      return true;
+    }
+    if (b.id === "rMode"){ rmode = {py: "tap", tap: "han", han: "py"}[rmode]; store.set("rmode", rmode); go(); return true; }
+    if (b.id === "rScript" || b.id === "sRtrad"){ rtrad = !rtrad; store.set("rtrad", rtrad); go(); return true; }
+    if (b.id === "rLang" || b.id === "sRlang"){ rlang = rlang === "fr" ? "en" : "fr"; store.set("rlang", rlang); go(); return true; }
+    if (b.id === "rDone"){ done[b.dataset.key] = today(); saveDone(); const y = scrollY; go(); scrollTo(0, y); return true; }
+    if (b.id === "rUndo"){ delete done[b.dataset.key]; saveDone(); const y = scrollY; go(); scrollTo(0, y); return true; }
+    return false;
+  }
+
   /* ---------- settings ---------- */
   function settings(){
     const sw = (id, on) => `<button class="tg" id="${id}" aria-pressed="${on}">${on ? "On" : "Off"}</button>`;
@@ -437,6 +725,8 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
       <div class="row"><div class="l">Simplified characters<small>The course is written in traditional characters; simplified is derived from it.</small></div>${sw("sSimp", simp)}</div>
       <div class="row"><div class="l">Pinyin under each line<small>文言 and 成語. In 白話 lessons, tap a word to see its reading.</small></div>${sw("sPy", py)}</div>
       <div class="row"><div class="l">Cover the English<small>Read the Chinese first; tap a line to check yourself.</small></div>${sw("sCover", cover)}</div>
+      <div class="row"><div class="l">入門 · explanations in<small>French or English, for the beginner course.</small></div><button class="tg" id="sRlang">${rlang === "fr" ? "Français" : "English"}</button></div>
+      <div class="row"><div class="l">入門 · traditional characters<small>The beginner course is written in simplified characters; traditional is derived from it.</small></div>${sw("sRtrad", rtrad)}</div>
       <div class="row"><div class="l">Night mode<small>The app stays light unless you switch this on.</small></div>${sw("sNight", store.get("night", false))}</div>
       <h2>Progress</h2>
       <div class="row"><div class="l">${Object.keys(done).length} lessons done<small>Kept in this browser only. Save a file to move it to another device.</small></div>
@@ -449,7 +739,10 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   document.addEventListener("click", e => {
     const t = e.target, id = t.closest("button,a")?.id;
     const ref = t.closest(".ref");
-    if (ref && ref.dataset.to){ location.hash = ref.dataset.to; return; }
+    if (ref && ref.dataset.to){ closeSheet(); location.hash = ref.dataset.to; return; }
+    if (T && T.key === "rumen" && rClick(e)) return;
+    if (t.closest("#sheet")) return;
+    closeSheet();
     if (t.closest("#pop .goto")){ const n = $("#n" + t.closest(".goto").dataset.n); hidePop(); flash(n); return; }
     if (t.closest("#pop")) return;
     if (t.closest("sup.nn")){ showNote(t.closest("sup.nn")); return; }
@@ -458,6 +751,8 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     if (id === "tScript" || id === "sSimp"){ simp = !simp; store.set("simp", simp); return go(); }
     if (id === "tPy" || id === "sPy"){ py = !py; store.set("py", py); return go(); }
     if (id === "tCover" || id === "sCover"){ cover = !cover; store.set("cover", cover); return go(); }
+    if (id === "sRlang"){ rlang = rlang === "fr" ? "en" : "fr"; store.set("rlang", rlang); return go(); }
+    if (id === "sRtrad"){ rtrad = !rtrad; store.set("rtrad", rtrad); return go(); }
     if (id === "sNight"){ store.set("night", !store.get("night", false)); return go(); }
     if (id === "markdone"){ done[T.key + ":" + L.id] = today(); saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
     if (id === "undo"){ delete done[T.key + ":" + L.id]; saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
@@ -476,7 +771,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   });
   addEventListener("keydown", e => {
     if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "Escape") hidePop();
+    if (e.key === "Escape"){ hidePop(); closeSheet(); }
     if (L && e.key === "ArrowLeft") $("#prev")?.click();
     if (L && e.key === "ArrowRight") $("#next")?.click();
   });

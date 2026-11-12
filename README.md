@@ -8,23 +8,30 @@ glossary, and a short exercise built from other real sentences.
 Traditional characters by default, with a one-click switch to simplified; Mandarin pinyin
 throughout.
 
-## Three tracks, one app
+## Four tracks, one app
 
 | Tab | Track | Folder | What |
 |---|---|---|---|
+| 入門 | Start | `rumen/` | Mandarin from zero to NHSK 4, 100 Assimil-style dialogue lessons, notes in French or English (§13) |
 | 文言 | Classical | `lessons/` | fables first, then the 論語 and on (STANDARDS §1–7) |
-| 白話 | Modern prose | `baihua/` | the written language beyond the old HSK 5 (2012 lists), through public-domain essays and fiction (§11) |
+| 白話 | Modern prose | `baihua/` | the written language beyond HSK 5 (2012 lists), through public-domain essays and fiction (§11) |
 | 成語 | Idioms | `chengyu/` | by modern frequency, twenty at a time (§10) |
+
+HSK = the 2012 test, NHSK = HSK 3.0 (2025 syllabus); never "old" or "new".
 
 Plus **設定** (script, pinyin, cover, night mode, progress file).
 
 ## Layout
 
 ```
+rumen/plan.yaml         入門: the 100 planned lessons (§13)
+rumen/NNN-slug.yaml     入門 lessons (§13)
 lessons/NNN-slug.yaml   文言 lessons (schema in STANDARDS.md §2; kind: review for review lessons)
 baihua/NNN-slug.yaml    白話 lessons (§11)
 chengyu/NN-slug.yaml    成語 lessons (§10)
 tools/build.py          validates everything, adds simplified forms → app/course.json + dist/wenyan.html
+tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
+data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
 tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts
 tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pinyin-words.yaml)
@@ -34,7 +41,7 @@ dist/wenyan.html        single-file build (data inlined; opens offline)
 ```
 
 ```sh
-pip install pyyaml opencc-python-reimplemented
+pip install pyyaml opencc-python-reimplemented pypinyin
 python3 tools/build.py
 python3 -m http.server -d app   # or just open dist/wenyan.html
 python3 tools/smoke.py          # needs playwright

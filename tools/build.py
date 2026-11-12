@@ -4,18 +4,21 @@
   lessons/*.yaml   文言  classical reading lessons   (STANDARDS.md §2)
   baihua/*.yaml    白話  modern written Chinese      (STANDARDS.md §11)
   chengyu/*.yaml   成語  frequency-ordered idioms    (STANDARDS.md §10)
+  rumen/*.yaml     入門  from zero to NHSK 4          (STANDARDS.md §13, tools/rumen.py)
 
 Adds simplified forms (field + "_s") with OpenCC t2s, applying tools/overrides.yaml afterwards,
 and validates every lesson. Cross-references ("文言 L1 n.4", "L3 n.5") must point at a note
 that exists; exercise sentences with a `ref` must be lines of the lesson they name.
 
-  pip install pyyaml opencc-python-reimplemented
+  pip install pyyaml opencc-python-reimplemented pypinyin
   python3 tools/build.py
 """
 import json, re, sys
 from pathlib import Path
 import yaml
 from opencc import OpenCC
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rumen import Rumen
 
 ROOT = Path(__file__).resolve().parent.parent
 cc = OpenCC("t2s")
@@ -23,10 +26,13 @@ tw = OpenCC("s2tw")      # 成語 example sentences are stored as found; this gi
 OVR = yaml.safe_load((ROOT / "tools" / "overrides.yaml").read_text(encoding="utf-8")) or {}
 STATUS = {"draft", "good", "solid"}
 TRACKS = [
+    {"key": "rumen", "dir": "rumen", "zh": "入門", "en": "Start",
+     "about": "Mandarin from zero, the Assimil way: 100 lessons that follow Marc through a year in Beijing, "
+              "up to NHSK 4 (2,000 words). Explanations in French or English."},
     {"key": "wenyan", "dir": "lessons", "zh": "文言", "en": "Classical",
      "about": "Classical Chinese through real texts: fables first, then the 論語, argument, narrative and verse."},
     {"key": "baihua", "dir": "baihua", "zh": "白話", "en": "Modern prose",
-     "about": "The written language beyond the old HSK 5 (the 2,500-word level before 2021): "
+     "about": "The written language beyond HSK 5 (the 2012 level, 2,500 words): "
               "public-domain essays and fiction, read for the literary words that textbooks stop before."},
     {"key": "chengyu", "dir": "chengyu", "zh": "成語", "en": "Idioms",
      "about": "成語 in order of modern frequency, twenty at a time, grouped by pattern."},
@@ -47,7 +53,7 @@ def fail(f, msg):
 
 
 def load(d):
-    files = sorted((ROOT / d).glob("*.yaml")) if (ROOT / d).is_dir() else []
+    files = sorted((ROOT / d).glob("[0-9]*.yaml")) if (ROOT / d).is_dir() else []
     return [(f, yaml.safe_load(f.read_text(encoding="utf-8"))) for f in files]
 
 
@@ -86,7 +92,7 @@ def check_reading(L, f, need_py):
                 fail(f, f"status {L['status']} but {g['w']} not checked against wikt or cyz")
     for g in L["glossary"]:
         if "hsk" in g and g["hsk"] not in range(1, 7):
-            fail(f, f"glossary {g['w']}: hsk must be an old (2012) level 1–6")
+            fail(f, f"glossary {g['w']}: hsk must be an HSK (2012) level 1–6")
     todo = [g["w"] for g in L["glossary"] if not g.get("checked")]
     if todo:
         print(f"{f.name}: {len(todo)} unchecked gloss(es): {' '.join(todo)}")
@@ -194,6 +200,7 @@ def main():
                         fail(f, f"exercise {e.get('h', '?')}: missing {k}")
     for f, L in loaded["chengyu"]:
         check_chengyu(L, f)
+    rumen = Rumen(fail).track(loaded["rumen"])
     if errors:
         sys.exit("\n".join(errors))
     for key in ("wenyan", "baihua"):
@@ -203,6 +210,7 @@ def main():
     course = {"tracks": [{"key": t["key"], "zh": t["zh"], "en": t["en"], "about": t["about"],
                           "lessons": sorted((L for _, L in loaded[t["key"]]), key=lambda L: L["id"])}
                          for t in TRACKS]}
+    course["tracks"][0].update(rumen)
     out = ROOT / "app" / "course.json"
     out.write_text(json.dumps(course, ensure_ascii=False, indent=1), encoding="utf-8")
     print(" · ".join(f"{t['zh']} {len(t['lessons'])}" for t in course["tracks"]), f"-> {out.relative_to(ROOT)}")

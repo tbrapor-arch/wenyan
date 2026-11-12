@@ -1,6 +1,4667 @@
 {
  "tracks": [
   {
+   "key": "rumen",
+   "zh": "入門",
+   "en": "Start",
+   "about": "Mandarin from zero, the Assimil way: 100 lessons that follow Marc through a year in Beijing, up to NHSK 4 (2,000 words). Explanations in French or English.",
+   "lessons": [
+    {
+     "id": 1,
+     "slug": "ni-hao",
+     "title": "你好！",
+     "title_py": "Nǐ hǎo!",
+     "title_fr": "Bonjour !",
+     "title_en": "Hello!",
+     "status": "draft",
+     "setting": {
+      "fr": "Aéroport de Pékin, hall des arrivées. Marc, français, vient faire un stage d'un an. Une jeune femme l'attend avec une pancarte.",
+      "en": "Beijing airport, arrivals hall. Marc, who is French, has come for a one-year internship. A young woman is waiting with a sign."
+     },
+     "names": [
+      {
+       "w": "马克",
+       "py": "Mǎkè",
+       "fr": "Marc",
+       "en": "Marc"
+      },
+      {
+       "w": "王小雨",
+       "py": "Wáng Xiǎoyǔ",
+       "fr": "Wang Xiaoyu",
+       "en": "Wang Xiaoyu"
+      },
+      {
+       "w": "小雨",
+       "py": "Xiǎoyǔ",
+       "fr": "Xiaoyu",
+       "en": "Xiaoyu"
+      }
+     ],
+     "lines": [
+      {
+       "n": 1,
+       "who": "小雨",
+       "h": "你好！你是马克吗？",
+       "py": "Nǐ hǎo! Nǐ shì Mǎkè ma?",
+       "fr": "Bonjour ! Tu es Marc ?",
+       "en": "Hello! Are you Marc?",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "你好",
+         "t": "你好",
+         "p": "Nǐ hǎo",
+         "k": "你好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "马克",
+         "t": "馬克",
+         "p": "Mǎkè",
+         "k": "马克"
+        },
+        {
+         "s": "吗",
+         "t": "嗎",
+         "p": "ma",
+         "k": "吗"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "who": "马克",
+       "h": "是，我是马克。你是……？",
+       "py": "Shì, wǒ shì Mǎkè. Nǐ shì……?",
+       "fr": "Oui, je suis Marc. Et tu es… ?",
+       "en": "Yes, I'm Marc. And you are…?",
+       "lit_fr": "(Être, je être Marc. Tu être… ?)",
+       "lit_en": "(Be, I be Marc. You be…?)",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "是",
+         "t": "是",
+         "p": "Shì",
+         "k": "是"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "马克",
+         "t": "馬克",
+         "p": "Mǎkè",
+         "k": "马克"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "……？",
+         "t": "……？"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "who": "小雨",
+       "h": "我是王小雨，你的同事。",
+       "py": "Wǒ shì Wáng Xiǎoyǔ, nǐ de tóngshì.",
+       "fr": "Je suis Wang Xiaoyu, ta collègue.",
+       "en": "I'm Wang Xiaoyu, your colleague.",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "王小雨",
+         "t": "王小雨",
+         "p": "Wáng Xiǎoyǔ",
+         "k": "王小雨"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "nǐ",
+         "k": "你"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "同事",
+         "t": "同事",
+         "p": "tóngshì",
+         "k": "同事"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "who": "马克",
+       "h": "你好，小雨！谢谢！",
+       "py": "Nǐ hǎo, Xiǎoyǔ! Xièxie!",
+       "fr": "Bonjour, Xiaoyu ! Merci !",
+       "en": "Hello, Xiaoyu! Thank you!",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "你好",
+         "t": "你好",
+         "p": "Nǐ hǎo",
+         "k": "你好"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "小雨",
+         "t": "小雨",
+         "p": "Xiǎoyǔ",
+         "k": "小雨"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "谢谢",
+         "t": "謝謝",
+         "p": "Xièxie",
+         "k": "谢谢"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      },
+      {
+       "n": 5,
+       "who": "小雨",
+       "h": "你累吗？",
+       "py": "Nǐ lèi ma?",
+       "fr": "Tu es fatigué ?",
+       "en": "Are you tired?",
+       "lit_fr": "(Tu fatigué ?)",
+       "lit_en": "(You tired?)",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "累",
+         "t": "累",
+         "p": "lèi",
+         "k": "累"
+        },
+        {
+         "s": "吗",
+         "t": "嗎",
+         "p": "ma",
+         "k": "吗"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 6,
+       "who": "马克",
+       "h": "不累，我很好。",
+       "py": "Bú lèi, wǒ hěn hǎo.",
+       "fr": "Non, ça va très bien.",
+       "en": "No, I'm fine.",
+       "lit_fr": "(Pas fatigué, je très bien.)",
+       "lit_en": "(Not tired, I very good.)",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "不",
+         "t": "不",
+         "p": "Bú",
+         "k": "不"
+        },
+        {
+         "s": "累",
+         "t": "累",
+         "p": "lèi",
+         "k": "累"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "很",
+         "t": "很",
+         "p": "hěn",
+         "k": "很"
+        },
+        {
+         "s": "好",
+         "t": "好",
+         "p": "hǎo",
+         "k": "好"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 7,
+       "who": "小雨",
+       "h": "好，我们走吧！",
+       "py": "Hǎo, wǒmen zǒu ba!",
+       "fr": "Bon, on y va !",
+       "en": "Right, let's go!",
+       "lit_fr": "(Bien, nous partir donc !)",
+       "lit_en": "(Good, we go then!)",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "好",
+         "t": "好",
+         "p": "Hǎo",
+         "k": "好"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "我们",
+         "t": "我們",
+         "p": "wǒmen",
+         "k": "我们"
+        },
+        {
+         "s": "走",
+         "t": "走",
+         "p": "zǒu",
+         "k": "走"
+        },
+        {
+         "s": "吧",
+         "t": "吧",
+         "p": "ba",
+         "k": "吧"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      },
+      {
+       "n": 8,
+       "who": "马克",
+       "h": "走吧！",
+       "py": "Zǒu ba!",
+       "fr": "Allons-y !",
+       "en": "Let's go!",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "走",
+         "t": "走",
+         "p": "Zǒu",
+         "k": "走"
+        },
+        {
+         "s": "吧",
+         "t": "吧",
+         "p": "ba",
+         "k": "吧"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 1,
+       "topic": "pron",
+       "fr": "Le mandarin a **quatre tons** : mā (haut et plat), má (montant), mǎ (bas), mà (descendant), plus un ton neutre, court et léger, sans accent : ma. Le ton fait partie du mot : 马 mǎ « cheval », 吗 ma (particule). Écoutez-vous le dire, et exagérez au début.\n",
+       "en": "Mandarin has **four tones**: mā (high and level), má (rising), mǎ (low), mà (falling), plus a short, light neutral tone with no mark: ma. The tone is part of the word: 马 mǎ \"horse\", 吗 ma (a particle). Exaggerate them at first.\n",
+       "fr_t": "Le mandarin a **quatre tons** : mā (haut et plat), má (montant), mǎ (bas), mà (descendant), plus un ton neutre, court et léger, sans accent : ma. Le ton fait partie du mot : 馬 mǎ « cheval », 嗎 ma (particule). Écoutez-vous le dire, et exagérez au début.\n",
+       "en_t": "Mandarin has **four tones**: mā (high and level), má (rising), mǎ (low), mà (falling), plus a short, light neutral tone with no mark: ma. The tone is part of the word: 馬 mǎ \"horse\", 嗎 ma (a particle). Exaggerate them at first.\n"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "topic": "pron",
+       "fr": "你好 s'écrit nǐ hǎo mais se dit **ní hǎo** : quand deux troisièmes tons se suivent, le premier devient montant. Le pinyin garde le ton du dictionnaire ; c'est à vous de faire le changement (même chose pour 很好 hěn hǎo, dit hén hǎo).\n",
+       "en": "你好 is written nǐ hǎo but said **ní hǎo**: when two third tones meet, the first one rises. Pinyin keeps the dictionary tone and leaves the change to you (likewise 很好 hěn hǎo, said hén hǎo).\n",
+       "fr_t": "你好 s'écrit nǐ hǎo mais se dit **ní hǎo** : quand deux troisièmes tons se suivent, le premier devient montant. Le pinyin garde le ton du dictionnaire ; c'est à vous de faire le changement (même chose pour 很好 hěn hǎo, dit hén hǎo).\n",
+       "en_t": "你好 is written nǐ hǎo but said **ní hǎo**: when two third tones meet, the first one rises. Pinyin keeps the dictionary tone and leaves the change to you (likewise 很好 hěn hǎo, said hén hǎo).\n"
+      },
+      {
+       "n": 3,
+       "line": 1,
+       "topic": "grammar",
+       "fr": "**吗** ma à la fin d'une phrase en fait une question fermée (oui / non), sans rien changer d'autre : 你是马克。« Tu es Marc. » → 你是马克吗？« Tu es Marc ? »\n",
+       "en": "**吗** ma at the end of a sentence turns it into a yes / no question, with nothing else changed: 你是马克。\"You are Marc.\" → 你是马克吗？\"Are you Marc?\"\n",
+       "fr_t": "**嗎** ma à la fin d'une phrase en fait une question fermée (oui / non), sans rien changer d'autre : 你是馬克。« Tu es Marc. » → 你是馬克嗎？« Tu es Marc ? »\n",
+       "en_t": "**嗎** ma at the end of a sentence turns it into a yes / no question, with nothing else changed: 你是馬克。\"You are Marc.\" → 你是馬克嗎？\"Are you Marc?\"\n"
+      },
+      {
+       "n": 4,
+       "line": 2,
+       "topic": "grammar",
+       "fr": "**是** shì « être » relie deux noms. Le verbe ne se conjugue jamais : 我是, 你是 (je suis, tu es). Pour répondre « oui », on reprend le verbe de la question : 是 « (je) suis ».\n",
+       "en": "**是** shì \"to be\" links two nouns. Verbs never change: 我是, 你是 (I am, you are). To answer \"yes\", repeat the verb of the question: 是 \"(I) am\".\n",
+       "fr_t": "**是** shì « être » relie deux noms. Le verbe ne se conjugue jamais : 我是, 你是 (je suis, tu es). Pour répondre « oui », on reprend le verbe de la question : 是 « (je) suis ».\n",
+       "en_t": "**是** shì \"to be\" links two nouns. Verbs never change: 我是, 你是 (I am, you are). To answer \"yes\", repeat the verb of the question: 是 \"(I) am\".\n"
+      },
+      {
+       "n": 5,
+       "line": 3,
+       "topic": "culture",
+       "fr": "Le nom de famille vient en premier : 王 Wáng est le nom, 小雨 Xiǎoyǔ (« petite pluie ») le prénom. Ses amis et ses collègues l'appellent 小雨.\n",
+       "en": "The surname comes first: 王 Wáng is the family name, 小雨 Xiǎoyǔ (\"light rain\") the given name. Friends and colleagues call her 小雨.\n",
+       "fr_t": "Le nom de famille vient en premier : 王 Wáng est le nom, 小雨 Xiǎoyǔ (« petite pluie ») le prénom. Ses amis et ses collègues l'appellent 小雨.\n",
+       "en_t": "The surname comes first: 王 Wáng is the family name, 小雨 Xiǎoyǔ (\"light rain\") the given name. Friends and colleagues call her 小雨.\n"
+      },
+      {
+       "n": 6,
+       "line": 3,
+       "topic": "grammar",
+       "fr": "**的** de marque l'appartenance, comme « de » mais dans l'ordre inverse : 你的同事 « ta collègue » (litt. « toi-de collègue »). Le possesseur d'abord, la chose ensuite.\n",
+       "en": "**的** de marks possession, like the English 's: 你的同事 \"your colleague\" (lit. \"you-'s colleague\"). The owner first, then the thing.\n",
+       "fr_t": "**的** de marque l'appartenance, comme « de » mais dans l'ordre inverse : 你的同事 « ta collègue » (litt. « toi-de collègue »). Le possesseur d'abord, la chose ensuite.\n",
+       "en_t": "**的** de marks possession, like the English 's: 你的同事 \"your colleague\" (lit. \"you-'s colleague\"). The owner first, then the thing.\n"
+      },
+      {
+       "n": 7,
+       "line": 5,
+       "topic": "grammar",
+       "fr": "Pas de 是 devant un adjectif : 你累吗？« Tu (es) fatigué ? ». En chinois, l'adjectif fonctionne comme un verbe. Pour le nier, **不** bù devant : 不累 « pas fatigué ».\n",
+       "en": "No 是 before an adjective: 你累吗？\"You tired?\". In Chinese an adjective works like a verb. To negate it, put **不** bù in front: 不累 \"not tired\".\n",
+       "fr_t": "Pas de 是 devant un adjectif : 你累嗎？« Tu (es) fatigué ? ». En chinois, l'adjectif fonctionne comme un verbe. Pour le nier, **不** bù devant : 不累 « pas fatigué ».\n",
+       "en_t": "No 是 before an adjective: 你累嗎？\"You tired?\". In Chinese an adjective works like a verb. To negate it, put **不** bù in front: 不累 \"not tired\".\n"
+      },
+      {
+       "n": 8,
+       "line": 6,
+       "topic": "pron",
+       "fr": "不 se lit bù, mais **bú** devant un quatrième ton : 不累 bú lèi, 不是 bú shì. Contrairement au 你好 de la note 2, ce changement-là s'écrit dans les leçons.\n",
+       "en": "不 is read bù, but **bú** before a fourth tone: 不累 bú lèi, 不是 bú shì. Unlike 你好 in note 2, this change is written in the lessons.\n",
+       "fr_t": "不 se lit bù, mais **bú** devant un quatrième ton : 不累 bú lèi, 不是 bú shì. Contrairement au 你好 de la note 2, ce changement-là s'écrit dans les leçons.\n",
+       "en_t": "不 is read bù, but **bú** before a fourth tone: 不累 bú lèi, 不是 bú shì. Unlike 你好 in note 2, this change is written in the lessons.\n"
+      },
+      {
+       "n": 9,
+       "line": 6,
+       "topic": "grammar",
+       "fr": "**很** hěn « très » se met presque toujours devant un adjectif dans une phrase affirmative, et il y perd son sens : 我很好 « je vais bien ». Sans 很, la phrase sonne comme une comparaison inachevée.\n",
+       "en": "**很** hěn \"very\" almost always goes before an adjective in a plain statement, and loses its meaning there: 我很好 \"I'm fine\". Without 很 the sentence sounds like an unfinished comparison.\n",
+       "fr_t": "**很** hěn « très » se met presque toujours devant un adjectif dans une phrase affirmative, et il y perd son sens : 我很好 « je vais bien ». Sans 很, la phrase sonne comme une comparaison inachevée.\n",
+       "en_t": "**很** hěn \"very\" almost always goes before an adjective in a plain statement, and loses its meaning there: 我很好 \"I'm fine\". Without 很 the sentence sounds like an unfinished comparison.\n"
+      },
+      {
+       "n": 10,
+       "line": 7,
+       "topic": "grammar",
+       "fr": "**们** men fait le pluriel des pronoms : 我 « je », 我们 « nous ». **吧** ba en fin de phrase propose : 我们走吧 « allons-y ». Comparez 吗 (question) et 吧 (suggestion).\n",
+       "en": "**们** men makes pronouns plural: 我 \"I\", 我们 \"we\". **吧** ba at the end makes a suggestion: 我们走吧 \"let's go\". Compare 吗 (question) and 吧 (suggestion).\n",
+       "fr_t": "**們** men fait le pluriel des pronoms : 我 « je », 我們 « nous ». **吧** ba en fin de phrase propose : 我們走吧 « allons-y ». Comparez 嗎 (question) et 吧 (suggestion).\n",
+       "en_t": "**們** men makes pronouns plural: 我 \"I\", 我們 \"we\". **吧** ba at the end makes a suggestion: 我們走吧 \"let's go\". Compare 嗎 (question) and 吧 (suggestion).\n"
+      }
+     ],
+     "words": [
+      {
+       "w": "你",
+       "py": "nǐ",
+       "fr": "tu",
+       "en": "you",
+       "t": "你",
+       "lvl": "1"
+      },
+      {
+       "w": "好",
+       "py": "hǎo",
+       "fr": "bon, bien",
+       "en": "good, well",
+       "t": "好",
+       "lvl": "1"
+      },
+      {
+       "w": "你好",
+       "py": "nǐ hǎo",
+       "fr": "bonjour",
+       "en": "hello",
+       "t": "你好",
+       "lvl": "1"
+      },
+      {
+       "w": "是",
+       "py": "shì",
+       "fr": "être ; oui",
+       "en": "to be; yes",
+       "t": "是",
+       "lvl": "1"
+      },
+      {
+       "w": "吗",
+       "py": "ma",
+       "fr": "(question oui / non)",
+       "en": "(yes / no question)",
+       "t": "嗎",
+       "lvl": "1"
+      },
+      {
+       "w": "我",
+       "py": "wǒ",
+       "fr": "je, moi",
+       "en": "I, me",
+       "t": "我",
+       "lvl": "1"
+      },
+      {
+       "w": "的",
+       "py": "de",
+       "fr": "(possession) de",
+       "en": "(possession) 's",
+       "t": "的",
+       "lvl": "1"
+      },
+      {
+       "w": "同事",
+       "py": "tóngshì",
+       "fr": "collègue",
+       "en": "colleague",
+       "t": "同事",
+       "lvl": "3"
+      },
+      {
+       "w": "谢谢",
+       "py": "xièxie",
+       "fr": "merci",
+       "en": "thank you",
+       "t": "謝謝",
+       "lvl": "1"
+      },
+      {
+       "w": "累",
+       "py": "lèi",
+       "fr": "fatigué",
+       "en": "tired",
+       "t": "累",
+       "lvl": "2"
+      },
+      {
+       "w": "不",
+       "py": "bù",
+       "fr": "ne… pas",
+       "en": "not",
+       "t": "不",
+       "lvl": "1"
+      },
+      {
+       "w": "很",
+       "py": "hěn",
+       "fr": "très",
+       "en": "very",
+       "t": "很",
+       "lvl": "1"
+      },
+      {
+       "w": "我们",
+       "py": "wǒmen",
+       "fr": "nous",
+       "en": "we, us",
+       "t": "我們",
+       "lvl": "1"
+      },
+      {
+       "w": "走",
+       "py": "zǒu",
+       "fr": "partir ; marcher",
+       "en": "to go, leave; to walk",
+       "t": "走",
+       "lvl": "2"
+      },
+      {
+       "w": "吧",
+       "py": "ba",
+       "fr": "(suggestion) donc",
+       "en": "(suggestion) then",
+       "t": "吧",
+       "lvl": "1"
+      }
+     ],
+     "exercise": {
+      "translate": [
+       {
+        "h": "你是王小雨吗？",
+        "py": "Nǐ shì Wáng Xiǎoyǔ ma?",
+        "fr": "Tu es Wang Xiaoyu ?",
+        "en": "Are you Wang Xiaoyu?",
+        "toks": [
+         {
+          "s": "你",
+          "t": "你",
+          "p": "Nǐ",
+          "k": "你"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "王小雨",
+          "t": "王小雨",
+          "p": "Wáng Xiǎoyǔ",
+          "k": "王小雨"
+         },
+         {
+          "s": "吗",
+          "t": "嗎",
+          "p": "ma",
+          "k": "吗"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ]
+       },
+       {
+        "h": "我不累。",
+        "py": "Wǒ bú lèi.",
+        "fr": "Je ne suis pas fatigué.",
+        "en": "I'm not tired.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "不",
+          "t": "不",
+          "p": "bú",
+          "k": "不"
+         },
+         {
+          "s": "累",
+          "t": "累",
+          "p": "lèi",
+          "k": "累"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "小雨是我的同事。",
+        "py": "Xiǎoyǔ shì wǒ de tóngshì.",
+        "fr": "Xiaoyu est ma collègue.",
+        "en": "Xiaoyu is my colleague.",
+        "toks": [
+         {
+          "s": "小雨",
+          "t": "小雨",
+          "p": "Xiǎoyǔ",
+          "k": "小雨"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "我",
+          "t": "我",
+          "p": "wǒ",
+          "k": "我"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "同事",
+          "t": "同事",
+          "p": "tóngshì",
+          "k": "同事"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "我们很好，谢谢！",
+        "py": "Wǒmen hěn hǎo, xièxie!",
+        "fr": "Nous allons bien, merci !",
+        "en": "We're fine, thank you!",
+        "toks": [
+         {
+          "s": "我们",
+          "t": "我們",
+          "p": "Wǒmen",
+          "k": "我们"
+         },
+         {
+          "s": "很",
+          "t": "很",
+          "p": "hěn",
+          "k": "很"
+         },
+         {
+          "s": "好",
+          "t": "好",
+          "p": "hǎo",
+          "k": "好"
+         },
+         {
+          "s": "，",
+          "t": "，"
+         },
+         {
+          "s": "谢谢",
+          "t": "謝謝",
+          "p": "xièxie",
+          "k": "谢谢"
+         },
+         {
+          "s": "！",
+          "t": "！"
+         }
+        ]
+       }
+      ],
+      "choose": [
+       {
+        "h": "你是马克＿＿？",
+        "opts": [
+         "吗",
+         "吧",
+         "的"
+        ],
+        "a": "吗",
+        "py": "Nǐ shì Mǎkè ma?",
+        "fr": "Tu es Marc ?",
+        "en": "Are you Marc?",
+        "toks": [
+         {
+          "s": "你",
+          "t": "你",
+          "p": "Nǐ",
+          "k": "你"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "马克",
+          "t": "馬克",
+          "p": "Mǎkè",
+          "k": "马克"
+         },
+         {
+          "s": "吗",
+          "t": "嗎",
+          "p": "ma",
+          "k": "吗"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ],
+        "h_t": "你是馬克＿＿？",
+        "opts_t": [
+         "嗎",
+         "吧",
+         "的"
+        ]
+       },
+       {
+        "h": "我＿＿累。",
+        "opts": [
+         "是",
+         "不",
+         "吗"
+        ],
+        "a": "不",
+        "py": "Wǒ bú lèi.",
+        "fr": "Je ne suis pas fatigué.",
+        "en": "I'm not tired.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "不",
+          "t": "不",
+          "p": "bú",
+          "k": "不"
+         },
+         {
+          "s": "累",
+          "t": "累",
+          "p": "lèi",
+          "k": "累"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "我＿＿累。",
+        "opts_t": [
+         "是",
+         "不",
+         "嗎"
+        ]
+       },
+       {
+        "h": "我们走＿＿！",
+        "opts": [
+         "吗",
+         "很",
+         "吧"
+        ],
+        "a": "吧",
+        "py": "Wǒmen zǒu ba!",
+        "fr": "Allons-y !",
+        "en": "Let's go!",
+        "toks": [
+         {
+          "s": "我们",
+          "t": "我們",
+          "p": "Wǒmen",
+          "k": "我们"
+         },
+         {
+          "s": "走",
+          "t": "走",
+          "p": "zǒu",
+          "k": "走"
+         },
+         {
+          "s": "吧",
+          "t": "吧",
+          "p": "ba",
+          "k": "吧"
+         },
+         {
+          "s": "！",
+          "t": "！"
+         }
+        ],
+        "h_t": "我們走＿＿！",
+        "opts_t": [
+         "嗎",
+         "很",
+         "吧"
+        ]
+       },
+       {
+        "h": "我是你＿＿同事。",
+        "opts": [
+         "的",
+         "很",
+         "不"
+        ],
+        "a": "的",
+        "py": "Wǒ shì nǐ de tóngshì.",
+        "fr": "Je suis ta collègue.",
+        "en": "I'm your colleague.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "你",
+          "t": "你",
+          "p": "nǐ",
+          "k": "你"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "同事",
+          "t": "同事",
+          "p": "tóngshì",
+          "k": "同事"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "我是你＿＿同事。",
+        "opts_t": [
+         "的",
+         "很",
+         "不"
+        ]
+       }
+      ]
+     },
+     "title_t": "你好！"
+    },
+    {
+     "id": 2,
+     "slug": "jiao-shenme-mingzi",
+     "title": "你叫什么名字？",
+     "title_py": "Nǐ jiào shénme míngzi?",
+     "title_fr": "Comment tu t'appelles ?",
+     "title_en": "What's your name?",
+     "status": "draft",
+     "setting": {
+      "fr": "Le lendemain, au bureau. Xiaoyu présente Marc à Mme Li, qui donne des cours de chinois au personnel.",
+      "en": "The next day, at the office. Xiaoyu introduces Marc to Ms Li, who teaches Chinese to the staff."
+     },
+     "names": [
+      {
+       "w": "李",
+       "py": "Lǐ",
+       "fr": "Li",
+       "en": "Li"
+      }
+     ],
+     "lines": [
+      {
+       "n": 1,
+       "who": "小雨",
+       "h": "李老师，您好！",
+       "py": "Lǐ lǎoshī, nín hǎo!",
+       "fr": "Bonjour, madame Li !",
+       "en": "Good morning, Ms Li!",
+       "lit_fr": "(Li professeur, vous bien !)",
+       "lit_en": "(Li teacher, you good!)",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "李",
+         "t": "李",
+         "p": "Lǐ",
+         "k": "李"
+        },
+        {
+         "s": "老师",
+         "t": "老師",
+         "p": "lǎoshī",
+         "k": "老师"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "您",
+         "t": "您",
+         "p": "nín",
+         "k": "您"
+        },
+        {
+         "s": "好",
+         "t": "好",
+         "p": "hǎo",
+         "k": "好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "who": "李老师",
+       "h": "你好，小雨！他是……？",
+       "py": "Nǐ hǎo, Xiǎoyǔ! Tā shì……?",
+       "fr": "Bonjour, Xiaoyu ! Et lui, c'est… ?",
+       "en": "Hello, Xiaoyu! And he is…?",
+       "who_t": "李老師",
+       "toks": [
+        {
+         "s": "你好",
+         "t": "你好",
+         "p": "Nǐ hǎo",
+         "k": "你好"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "小雨",
+         "t": "小雨",
+         "p": "Xiǎoyǔ",
+         "k": "小雨"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "他",
+         "t": "他",
+         "p": "Tā",
+         "k": "他"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "……？",
+         "t": "……？"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "who": "小雨",
+       "h": "他是我的同事。",
+       "py": "Tā shì wǒ de tóngshì.",
+       "fr": "C'est mon collègue.",
+       "en": "He's my colleague.",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "他",
+         "t": "他",
+         "p": "Tā",
+         "k": "他"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "同事",
+         "t": "同事",
+         "p": "tóngshì",
+         "k": "同事"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "who": "李老师",
+       "h": "你好！你叫什么名字？",
+       "py": "Nǐ hǎo! Nǐ jiào shénme míngzi?",
+       "fr": "Bonjour ! Comment tu t'appelles ?",
+       "en": "Hello! What's your name?",
+       "lit_fr": "(Tu appeler quel nom ?)",
+       "lit_en": "(You called what name?)",
+       "who_t": "李老師",
+       "toks": [
+        {
+         "s": "你好",
+         "t": "你好",
+         "p": "Nǐ hǎo",
+         "k": "你好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "叫",
+         "t": "叫",
+         "p": "jiào",
+         "k": "叫"
+        },
+        {
+         "s": "什么",
+         "t": "什麼",
+         "p": "shénme",
+         "k": "什么"
+        },
+        {
+         "s": "名字",
+         "t": "名字",
+         "p": "míngzi",
+         "k": "名字"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 5,
+       "who": "马克",
+       "h": "我叫马克。您呢？",
+       "py": "Wǒ jiào Mǎkè. Nín ne?",
+       "fr": "Je m'appelle Marc. Et vous ?",
+       "en": "I'm called Marc. And you?",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "叫",
+         "t": "叫",
+         "p": "jiào",
+         "k": "叫"
+        },
+        {
+         "s": "马克",
+         "t": "馬克",
+         "p": "Mǎkè",
+         "k": "马克"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        },
+        {
+         "s": "您",
+         "t": "您",
+         "p": "Nín",
+         "k": "您"
+        },
+        {
+         "s": "呢",
+         "t": "呢",
+         "p": "ne",
+         "k": "呢"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 6,
+       "who": "李老师",
+       "h": "我姓李。",
+       "py": "Wǒ xìng Lǐ.",
+       "fr": "Je m'appelle Li (c'est mon nom de famille).",
+       "en": "My surname is Li.",
+       "lit_fr": "(Je avoir-pour-nom-de-famille Li.)",
+       "lit_en": "(I surnamed Li.)",
+       "who_t": "李老師",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "姓",
+         "t": "姓",
+         "p": "xìng",
+         "k": "姓"
+        },
+        {
+         "s": "李",
+         "t": "李",
+         "p": "Lǐ",
+         "k": "李"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 7,
+       "who": "马克",
+       "h": "李老师好！认识您很高兴。",
+       "py": "Lǐ lǎoshī hǎo! Rènshi nín hěn gāoxìng.",
+       "fr": "Bonjour, madame Li ! Enchanté.",
+       "en": "Hello, Ms Li! Pleased to meet you.",
+       "lit_fr": "(Li professeur bien ! Connaître vous très content.)",
+       "lit_en": "(Li teacher good! Know you very glad.)",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "李",
+         "t": "李",
+         "p": "Lǐ",
+         "k": "李"
+        },
+        {
+         "s": "老师",
+         "t": "老師",
+         "p": "lǎoshī",
+         "k": "老师"
+        },
+        {
+         "s": "好",
+         "t": "好",
+         "p": "hǎo",
+         "k": "好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "认识",
+         "t": "認識",
+         "p": "Rènshi",
+         "k": "认识"
+        },
+        {
+         "s": "您",
+         "t": "您",
+         "p": "nín",
+         "k": "您"
+        },
+        {
+         "s": "很",
+         "t": "很",
+         "p": "hěn",
+         "k": "很"
+        },
+        {
+         "s": "高兴",
+         "t": "高興",
+         "p": "gāoxìng",
+         "k": "高兴"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 8,
+       "who": "李老师",
+       "h": "我也很高兴。",
+       "py": "Wǒ yě hěn gāoxìng.",
+       "fr": "Moi aussi.",
+       "en": "Likewise.",
+       "lit_fr": "(Je aussi très content.)",
+       "lit_en": "(I also very glad.)",
+       "who_t": "李老師",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "也",
+         "t": "也",
+         "p": "yě",
+         "k": "也"
+        },
+        {
+         "s": "很",
+         "t": "很",
+         "p": "hěn",
+         "k": "很"
+        },
+        {
+         "s": "高兴",
+         "t": "高興",
+         "p": "gāoxìng",
+         "k": "高兴"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 9,
+       "who": "马克",
+       "h": "她是你的老师吗？",
+       "py": "Tā shì nǐ de lǎoshī ma?",
+       "fr": "C'est ta prof ?",
+       "en": "Is she your teacher?",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "她",
+         "t": "她",
+         "p": "Tā",
+         "k": "她"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "nǐ",
+         "k": "你"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "老师",
+         "t": "老師",
+         "p": "lǎoshī",
+         "k": "老师"
+        },
+        {
+         "s": "吗",
+         "t": "嗎",
+         "p": "ma",
+         "k": "吗"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 10,
+       "who": "小雨",
+       "h": "是啊，她也是我的老师！",
+       "py": "Shì a, tā yě shì wǒ de lǎoshī!",
+       "fr": "Eh oui, c'est aussi ma prof !",
+       "en": "Yes, she's my teacher too!",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "是",
+         "t": "是",
+         "p": "Shì",
+         "k": "是"
+        },
+        {
+         "s": "啊",
+         "t": "啊",
+         "p": "a",
+         "k": "啊"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "她",
+         "t": "她",
+         "p": "tā",
+         "k": "她"
+        },
+        {
+         "s": "也",
+         "t": "也",
+         "p": "yě",
+         "k": "也"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "老师",
+         "t": "老師",
+         "p": "lǎoshī",
+         "k": "老师"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 1,
+       "topic": "culture",
+       "fr": "On s'adresse à un professeur par son nom suivi de **老师** lǎoshī : 李老师 « professeur Li », jamais par le prénom. **您** nín est le « vous » de politesse ; entre collègues du même âge, 你 suffit.\n",
+       "en": "A teacher is addressed by surname + **老师** lǎoshī: 李老师 \"Teacher Li\", never by the given name. **您** nín is the polite \"you\"; between colleagues of the same age, 你 is enough.\n",
+       "fr_t": "On s'adresse à un professeur par son nom suivi de **老師** lǎoshī : 李老師 « professeur Li », jamais par le prénom. **您** nín est le « vous » de politesse ; entre collègues du même âge, 你 suffit.\n",
+       "en_t": "A teacher is addressed by surname + **老師** lǎoshī: 李老師 \"Teacher Li\", never by the given name. **您** nín is the polite \"you\"; between colleagues of the same age, 你 is enough.\n"
+      },
+      {
+       "n": 2,
+       "line": 2,
+       "topic": "writing",
+       "fr": "**他** « il » et **她** « elle » se prononcent tous deux tā. À l'oral rien ne les distingue ; à l'écrit, la partie gauche change : 亻 (personne) pour 他, 女 (femme) pour 她.\n",
+       "en": "**他** \"he\" and **她** \"she\" are both pronounced tā. Speech doesn't tell them apart; in writing the left part differs: 亻 (person) in 他, 女 (woman) in 她.\n",
+       "fr_t": "**他** « il » et **她** « elle » se prononcent tous deux tā. À l'oral rien ne les distingue ; à l'écrit, la partie gauche change : 亻 (personne) pour 他, 女 (femme) pour 她.\n",
+       "en_t": "**他** \"he\" and **她** \"she\" are both pronounced tā. Speech doesn't tell them apart; in writing the left part differs: 亻 (person) in 他, 女 (woman) in 她.\n"
+      },
+      {
+       "n": 3,
+       "line": 4,
+       "topic": "grammar",
+       "fr": "Le mot interrogatif reste à la place de la réponse : 你叫**什么**名字？ → 我叫**马克**。Pas d'inversion, pas de 吗 : 什么 shénme suffit à faire la question.\n",
+       "en": "The question word stays where the answer goes: 你叫**什么**名字？ → 我叫**马克**。No inversion and no 吗: 什么 shénme is enough to make it a question.\n",
+       "fr_t": "Le mot interrogatif reste à la place de la réponse : 你叫**什麼**名字？ → 我叫**馬克**。Pas d'inversion, pas de 嗎 : 什麼 shénme suffit à faire la question.\n",
+       "en_t": "The question word stays where the answer goes: 你叫**什麼**名字？ → 我叫**馬克**。No inversion and no 嗎: 什麼 shénme is enough to make it a question.\n"
+      },
+      {
+       "n": 4,
+       "line": 5,
+       "topic": "grammar",
+       "fr": "**呢** ne après un nom ou un pronom renvoie la question : 您呢？« Et vous ? ». Il évite de répéter toute la phrase.\n",
+       "en": "**呢** ne after a noun or pronoun bounces the question back: 您呢？\"And you?\". It saves repeating the whole sentence.\n",
+       "fr_t": "**呢** ne après un nom ou un pronom renvoie la question : 您呢？« Et vous ? ». Il évite de répéter toute la phrase.\n",
+       "en_t": "**呢** ne after a noun or pronoun bounces the question back: 您呢？\"And you?\". It saves repeating the whole sentence.\n"
+      },
+      {
+       "n": 5,
+       "line": 6,
+       "topic": "vocab",
+       "fr": "**姓** xìng « avoir pour nom de famille » est un verbe : 我姓李。Pour le nom complet ou le prénom, on utilise **叫** jiào « s'appeler » : 我叫王小雨。\n",
+       "en": "**姓** xìng \"to be surnamed\" is a verb: 我姓李。For the full name or the given name, use **叫** jiào \"to be called\": 我叫王小雨。\n",
+       "fr_t": "**姓** xìng « avoir pour nom de famille » est un verbe : 我姓李。Pour le nom complet ou le prénom, on utilise **叫** jiào « s'appeler » : 我叫王小雨。\n",
+       "en_t": "**姓** xìng \"to be surnamed\" is a verb: 我姓李。For the full name or the given name, use **叫** jiào \"to be called\": 我叫王小雨。\n"
+      },
+      {
+       "n": 6,
+       "line": 7,
+       "topic": "grammar",
+       "fr": "认识您很高兴 « vous connaître, très content » est la formule figée pour « enchanté ». 认识 rènshi = connaître (une personne), avec un ton neutre sur 识.\n",
+       "en": "认识您很高兴 \"knowing you, very glad\" is the set phrase for \"pleased to meet you\". 认识 rènshi = to know (a person), with a neutral tone on 识.\n",
+       "fr_t": "認識您很高興 « vous connaître, très content » est la formule figée pour « enchanté ». 認識 rènshi = connaître (une personne), avec un ton neutre sur 識.\n",
+       "en_t": "認識您很高興 \"knowing you, very glad\" is the set phrase for \"pleased to meet you\". 認識 rènshi = to know (a person), with a neutral tone on 識.\n"
+      },
+      {
+       "n": 7,
+       "line": 8,
+       "topic": "grammar",
+       "fr": "**也** yě « aussi » se place devant le verbe ou l'adjectif, jamais en fin de phrase : 我也很高兴, 她也是我的老师。\n",
+       "en": "**也** yě \"also\" goes before the verb or adjective, never at the end: 我也很高兴, 她也是我的老师。\n",
+       "fr_t": "**也** yě « aussi » se place devant le verbe ou l'adjectif, jamais en fin de phrase : 我也很高興, 她也是我的老師。\n",
+       "en_t": "**也** yě \"also\" goes before the verb or adjective, never at the end: 我也很高興, 她也是我的老師。\n"
+      },
+      {
+       "n": 8,
+       "line": 10,
+       "topic": "vocab",
+       "fr": "**啊** a en fin de phrase adoucit ou appuie la réponse : 是啊 « eh oui ». C'est un ton neutre.\n",
+       "en": "**啊** a at the end softens or stresses the answer: 是啊 \"yes, indeed\". It has a neutral tone.\n",
+       "fr_t": "**啊** a en fin de phrase adoucit ou appuie la réponse : 是啊 « eh oui ». C'est un ton neutre.\n",
+       "en_t": "**啊** a at the end softens or stresses the answer: 是啊 \"yes, indeed\". It has a neutral tone.\n"
+      }
+     ],
+     "words": [
+      {
+       "w": "老师",
+       "py": "lǎoshī",
+       "fr": "professeur",
+       "en": "teacher",
+       "t": "老師",
+       "lvl": "1"
+      },
+      {
+       "w": "您",
+       "py": "nín",
+       "fr": "vous (politesse)",
+       "en": "you (polite)",
+       "t": "您",
+       "lvl": "1"
+      },
+      {
+       "w": "他",
+       "py": "tā",
+       "fr": "il, lui",
+       "en": "he, him",
+       "t": "他",
+       "lvl": "1"
+      },
+      {
+       "w": "叫",
+       "py": "jiào",
+       "fr": "s'appeler ; appeler",
+       "en": "to be called; to call",
+       "t": "叫",
+       "lvl": "1"
+      },
+      {
+       "w": "什么",
+       "py": "shénme",
+       "fr": "quoi, quel",
+       "en": "what",
+       "t": "什麼",
+       "lvl": "1"
+      },
+      {
+       "w": "名字",
+       "py": "míngzi",
+       "fr": "nom, prénom",
+       "en": "name",
+       "t": "名字",
+       "lvl": "1"
+      },
+      {
+       "w": "呢",
+       "py": "ne",
+       "fr": "et… ? (renvoie la question)",
+       "en": "and…? (bounces the question)",
+       "t": "呢",
+       "lvl": "1"
+      },
+      {
+       "w": "姓",
+       "py": "xìng",
+       "fr": "avoir pour nom de famille ; nom de famille",
+       "en": "to be surnamed; surname",
+       "t": "姓",
+       "lvl": "2"
+      },
+      {
+       "w": "认识",
+       "py": "rènshi",
+       "fr": "connaître (une personne)",
+       "en": "to know (a person), meet",
+       "t": "認識",
+       "lvl": "1"
+      },
+      {
+       "w": "高兴",
+       "py": "gāoxìng",
+       "fr": "content",
+       "en": "glad, happy",
+       "t": "高興",
+       "lvl": "1"
+      },
+      {
+       "w": "也",
+       "py": "yě",
+       "fr": "aussi",
+       "en": "also, too",
+       "t": "也",
+       "lvl": "1"
+      },
+      {
+       "w": "她",
+       "py": "tā",
+       "fr": "elle",
+       "en": "she, her",
+       "t": "她",
+       "lvl": "1"
+      },
+      {
+       "w": "啊",
+       "py": "a",
+       "fr": "(appuie la réponse)",
+       "en": "(stresses the answer)",
+       "t": "啊",
+       "lvl": "2"
+      }
+     ],
+     "exercise": {
+      "translate": [
+       {
+        "h": "他叫什么名字？",
+        "py": "Tā jiào shénme míngzi?",
+        "fr": "Comment s'appelle-t-il ?",
+        "en": "What's his name?",
+        "toks": [
+         {
+          "s": "他",
+          "t": "他",
+          "p": "Tā",
+          "k": "他"
+         },
+         {
+          "s": "叫",
+          "t": "叫",
+          "p": "jiào",
+          "k": "叫"
+         },
+         {
+          "s": "什么",
+          "t": "什麼",
+          "p": "shénme",
+          "k": "什么"
+         },
+         {
+          "s": "名字",
+          "t": "名字",
+          "p": "míngzi",
+          "k": "名字"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ]
+       },
+       {
+        "h": "我也是老师。",
+        "py": "Wǒ yě shì lǎoshī.",
+        "fr": "Je suis professeur, moi aussi.",
+        "en": "I'm a teacher too.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "也",
+          "t": "也",
+          "p": "yě",
+          "k": "也"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "老师",
+          "t": "老師",
+          "p": "lǎoshī",
+          "k": "老师"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "她叫王小雨。",
+        "py": "Tā jiào Wáng Xiǎoyǔ.",
+        "fr": "Elle s'appelle Wang Xiaoyu.",
+        "en": "She's called Wang Xiaoyu.",
+        "toks": [
+         {
+          "s": "她",
+          "t": "她",
+          "p": "Tā",
+          "k": "她"
+         },
+         {
+          "s": "叫",
+          "t": "叫",
+          "p": "jiào",
+          "k": "叫"
+         },
+         {
+          "s": "王小雨",
+          "t": "王小雨",
+          "p": "Wáng Xiǎoyǔ",
+          "k": "王小雨"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "认识你很高兴！",
+        "py": "Rènshi nǐ hěn gāoxìng!",
+        "fr": "Enchanté !",
+        "en": "Nice to meet you!",
+        "toks": [
+         {
+          "s": "认识",
+          "t": "認識",
+          "p": "Rènshi",
+          "k": "认识"
+         },
+         {
+          "s": "你",
+          "t": "你",
+          "p": "nǐ",
+          "k": "你"
+         },
+         {
+          "s": "很",
+          "t": "很",
+          "p": "hěn",
+          "k": "很"
+         },
+         {
+          "s": "高兴",
+          "t": "高興",
+          "p": "gāoxìng",
+          "k": "高兴"
+         },
+         {
+          "s": "！",
+          "t": "！"
+         }
+        ]
+       }
+      ],
+      "choose": [
+       {
+        "h": "你叫＿＿名字？",
+        "opts": [
+         "什么",
+         "呢",
+         "也"
+        ],
+        "a": "什么",
+        "py": "Nǐ jiào shénme míngzi?",
+        "fr": "Comment tu t'appelles ?",
+        "en": "What's your name?",
+        "toks": [
+         {
+          "s": "你",
+          "t": "你",
+          "p": "Nǐ",
+          "k": "你"
+         },
+         {
+          "s": "叫",
+          "t": "叫",
+          "p": "jiào",
+          "k": "叫"
+         },
+         {
+          "s": "什么",
+          "t": "什麼",
+          "p": "shénme",
+          "k": "什么"
+         },
+         {
+          "s": "名字",
+          "t": "名字",
+          "p": "míngzi",
+          "k": "名字"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ],
+        "h_t": "你叫＿＿名字？",
+        "opts_t": [
+         "什麼",
+         "呢",
+         "也"
+        ]
+       },
+       {
+        "h": "我很好，你＿＿？",
+        "opts": [
+         "吗",
+         "呢",
+         "也"
+        ],
+        "a": "呢",
+        "py": "Wǒ hěn hǎo, nǐ ne?",
+        "fr": "Je vais bien, et toi ?",
+        "en": "I'm fine, and you?",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "很",
+          "t": "很",
+          "p": "hěn",
+          "k": "很"
+         },
+         {
+          "s": "好",
+          "t": "好",
+          "p": "hǎo",
+          "k": "好"
+         },
+         {
+          "s": "，",
+          "t": "，"
+         },
+         {
+          "s": "你",
+          "t": "你",
+          "p": "nǐ",
+          "k": "你"
+         },
+         {
+          "s": "呢",
+          "t": "呢",
+          "p": "ne",
+          "k": "呢"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ],
+        "h_t": "我很好，你＿＿？",
+        "opts_t": [
+         "嗎",
+         "呢",
+         "也"
+        ]
+       },
+       {
+        "h": "我＿＿是老师。",
+        "opts": [
+         "呢",
+         "什么",
+         "也"
+        ],
+        "a": "也",
+        "py": "Wǒ yě shì lǎoshī.",
+        "fr": "Je suis professeur, moi aussi.",
+        "en": "I'm a teacher too.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "也",
+          "t": "也",
+          "p": "yě",
+          "k": "也"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "老师",
+          "t": "老師",
+          "p": "lǎoshī",
+          "k": "老师"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "我＿＿是老師。",
+        "opts_t": [
+         "呢",
+         "什麼",
+         "也"
+        ]
+       },
+       {
+        "h": "我＿＿李。",
+        "opts": [
+         "姓",
+         "是",
+         "呢"
+        ],
+        "a": "姓",
+        "py": "Wǒ xìng Lǐ.",
+        "fr": "Mon nom de famille est Li.",
+        "en": "My surname is Li.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "姓",
+          "t": "姓",
+          "p": "xìng",
+          "k": "姓"
+         },
+         {
+          "s": "李",
+          "t": "李",
+          "p": "Lǐ",
+          "k": "李"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "我＿＿李。",
+        "opts_t": [
+         "姓",
+         "是",
+         "呢"
+        ]
+       }
+      ]
+     },
+     "title_t": "你叫什麼名字？"
+    },
+    {
+     "id": 3,
+     "slug": "faguo-ren",
+     "title": "我是法国人",
+     "title_py": "Wǒ shì Fǎguó rén",
+     "title_fr": "Je suis français",
+     "title_en": "I'm French",
+     "status": "draft",
+     "setting": {
+      "fr": "À la cantine de l'entreprise. Xiaoyu déjeune avec Marc et Zhang Wei, un autre collègue.",
+      "en": "In the company canteen. Xiaoyu has lunch with Marc and Zhang Wei, another colleague."
+     },
+     "names": [
+      {
+       "w": "张伟",
+       "py": "Zhāng Wěi",
+       "fr": "Zhang Wei",
+       "en": "Zhang Wei"
+      },
+      {
+       "w": "巴黎",
+       "py": "Bālí",
+       "fr": "Paris",
+       "en": "Paris"
+      },
+      {
+       "w": "里昂",
+       "py": "Lǐ'áng",
+       "fr": "Lyon",
+       "en": "Lyon"
+      },
+      {
+       "w": "北京",
+       "py": "Běijīng",
+       "fr": "Pékin",
+       "en": "Beijing"
+      },
+      {
+       "w": "上海",
+       "py": "Shànghǎi",
+       "fr": "Shanghai",
+       "en": "Shanghai"
+      }
+     ],
+     "lines": [
+      {
+       "n": 1,
+       "who": "张伟",
+       "h": "你好！你是哪国人？",
+       "py": "Nǐ hǎo! Nǐ shì nǎ guó rén?",
+       "fr": "Salut ! Tu es de quel pays ?",
+       "en": "Hi! Where are you from?",
+       "lit_fr": "(Tu être quel pays personne ?)",
+       "lit_en": "(You be which country person?)",
+       "who_t": "張偉",
+       "toks": [
+        {
+         "s": "你好",
+         "t": "你好",
+         "p": "Nǐ hǎo",
+         "k": "你好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "哪",
+         "t": "哪",
+         "p": "nǎ",
+         "k": "哪"
+        },
+        {
+         "s": "国",
+         "t": "國",
+         "p": "guó",
+         "k": "国"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "who": "马克",
+       "h": "我是法国人。",
+       "py": "Wǒ shì Fǎguó rén.",
+       "fr": "Je suis français.",
+       "en": "I'm French.",
+       "lit_fr": "(Je être France personne.)",
+       "lit_en": "(I be France person.)",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "法国",
+         "t": "法國",
+         "p": "Fǎguó",
+         "k": "法国"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "who": "张伟",
+       "h": "你是巴黎人吗？",
+       "py": "Nǐ shì Bālí rén ma?",
+       "fr": "Tu es de Paris ?",
+       "en": "Are you from Paris?",
+       "who_t": "張偉",
+       "toks": [
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "巴黎",
+         "t": "巴黎",
+         "p": "Bālí",
+         "k": "巴黎"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "吗",
+         "t": "嗎",
+         "p": "ma",
+         "k": "吗"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "who": "马克",
+       "h": "不是，我是里昂人。",
+       "py": "Bú shì, wǒ shì Lǐ'áng rén.",
+       "fr": "Non, je suis de Lyon.",
+       "en": "No, I'm from Lyon.",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "不",
+         "t": "不",
+         "p": "Bú",
+         "k": "不"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "里昂",
+         "t": "里昂",
+         "p": "Lǐ'áng",
+         "k": "里昂"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 5,
+       "who": "马克",
+       "h": "你们是北京人吗？",
+       "py": "Nǐmen shì Běijīng rén ma?",
+       "fr": "Vous êtes de Pékin ?",
+       "en": "Are you two from Beijing?",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "你们",
+         "t": "你們",
+         "p": "Nǐmen",
+         "k": "你们"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "北京",
+         "t": "北京",
+         "p": "Běijīng",
+         "k": "北京"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "吗",
+         "t": "嗎",
+         "p": "ma",
+         "k": "吗"
+        },
+        {
+         "s": "？",
+         "t": "？"
+        }
+       ]
+      },
+      {
+       "n": 6,
+       "who": "张伟",
+       "h": "我不是，我是上海人。小雨是北京人。",
+       "py": "Wǒ bú shì, wǒ shì Shànghǎi rén. Xiǎoyǔ shì Běijīng rén.",
+       "fr": "Moi non, je suis de Shanghai. Xiaoyu est de Pékin.",
+       "en": "I'm not, I'm from Shanghai. Xiaoyu is from Beijing.",
+       "who_t": "張偉",
+       "toks": [
+        {
+         "s": "我",
+         "t": "我",
+         "p": "Wǒ",
+         "k": "我"
+        },
+        {
+         "s": "不",
+         "t": "不",
+         "p": "bú",
+         "k": "不"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "上海",
+         "t": "上海",
+         "p": "Shànghǎi",
+         "k": "上海"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        },
+        {
+         "s": "小雨",
+         "t": "小雨",
+         "p": "Xiǎoyǔ",
+         "k": "小雨"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "北京",
+         "t": "北京",
+         "p": "Běijīng",
+         "k": "北京"
+        },
+        {
+         "s": "人",
+         "t": "人",
+         "p": "rén",
+         "k": "人"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 7,
+       "who": "马克",
+       "h": "你们是我的中国朋友！",
+       "py": "Nǐmen shì wǒ de Zhōngguó péngyou!",
+       "fr": "Vous êtes mes amis chinois !",
+       "en": "You're my Chinese friends!",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "你们",
+         "t": "你們",
+         "p": "Nǐmen",
+         "k": "你们"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "我",
+         "t": "我",
+         "p": "wǒ",
+         "k": "我"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "中国",
+         "t": "中國",
+         "p": "Zhōngguó",
+         "k": "中国"
+        },
+        {
+         "s": "朋友",
+         "t": "朋友",
+         "p": "péngyou",
+         "k": "朋友"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      },
+      {
+       "n": 8,
+       "who": "小雨",
+       "h": "对！你是我们的法国朋友。",
+       "py": "Duì! Nǐ shì wǒmen de Fǎguó péngyou.",
+       "fr": "Exactement ! Et toi, tu es notre ami français.",
+       "en": "That's right! And you're our French friend.",
+       "who_t": "小雨",
+       "toks": [
+        {
+         "s": "对",
+         "t": "對",
+         "p": "Duì",
+         "k": "对"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        },
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "是",
+         "t": "是",
+         "p": "shì",
+         "k": "是"
+        },
+        {
+         "s": "我们",
+         "t": "我們",
+         "p": "wǒmen",
+         "k": "我们"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "法国",
+         "t": "法國",
+         "p": "Fǎguó",
+         "k": "法国"
+        },
+        {
+         "s": "朋友",
+         "t": "朋友",
+         "p": "péngyou",
+         "k": "朋友"
+        },
+        {
+         "s": "。",
+         "t": "。"
+        }
+       ]
+      },
+      {
+       "n": 9,
+       "who": "张伟",
+       "h": "你的汉语很好！",
+       "py": "Nǐ de Hànyǔ hěn hǎo!",
+       "fr": "Tu parles bien chinois !",
+       "en": "Your Chinese is good!",
+       "lit_fr": "(Ton chinois très bien !)",
+       "lit_en": "(Your Chinese very good!)",
+       "who_t": "張偉",
+       "toks": [
+        {
+         "s": "你",
+         "t": "你",
+         "p": "Nǐ",
+         "k": "你"
+        },
+        {
+         "s": "的",
+         "t": "的",
+         "p": "de",
+         "k": "的"
+        },
+        {
+         "s": "汉语",
+         "t": "漢語",
+         "p": "Hànyǔ",
+         "k": "汉语"
+        },
+        {
+         "s": "很",
+         "t": "很",
+         "p": "hěn",
+         "k": "很"
+        },
+        {
+         "s": "好",
+         "t": "好",
+         "p": "hǎo",
+         "k": "好"
+        },
+        {
+         "s": "！",
+         "t": "！"
+        }
+       ]
+      },
+      {
+       "n": 10,
+       "who": "马克",
+       "h": "哪里，哪里……",
+       "py": "Nǎli, nǎli……",
+       "fr": "Oh, pas du tout…",
+       "en": "Oh, not really…",
+       "lit_fr": "(Où ça, où ça…)",
+       "lit_en": "(Where, where…)",
+       "who_t": "馬克",
+       "toks": [
+        {
+         "s": "哪里",
+         "t": "哪裏",
+         "p": "Nǎli",
+         "k": "哪里"
+        },
+        {
+         "s": "，",
+         "t": "，"
+        },
+        {
+         "s": "哪里",
+         "t": "哪裏",
+         "p": "nǎli",
+         "k": "哪里"
+        },
+        {
+         "s": "……",
+         "t": "……"
+        }
+       ]
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 1,
+       "topic": "grammar",
+       "fr": "哪国人 « personne de quel pays » : **哪** nǎ « quel » + **国** guó « pays » + **人** rén « personne ». Comme 什么 (L2 n.3), 哪 reste à la place de la réponse : 你是**哪国**人？ → 我是**法国**人。\n",
+       "en": "哪国人 \"person of which country\": **哪** nǎ \"which\" + **国** guó \"country\" + **人** rén \"person\". Like 什么 (L2 n.3), 哪 stays where the answer goes: 你是**哪国**人？ → 我是**法国**人。\n",
+       "fr_t": "哪國人 « personne de quel pays » : **哪** nǎ « quel » + **國** guó « pays » + **人** rén « personne ». Comme 什麼 (L2 n.3), 哪 reste à la place de la réponse : 你是**哪國**人？ → 我是**法國**人。\n",
+       "en_t": "哪國人 \"person of which country\": **哪** nǎ \"which\" + **國** guó \"country\" + **人** rén \"person\". Like 什麼 (L2 n.3), 哪 stays where the answer goes: 你是**哪國**人？ → 我是**法國**人。\n"
+      },
+      {
+       "n": 2,
+       "line": 2,
+       "topic": "vocab",
+       "fr": "Nationalité = pays + 人 : 法国人 « Français », 中国人 « Chinois ». Même chose pour une ville : 巴黎人 « Parisien », 北京人 « Pékinois ». Un seul mot pour le nom et l'adjectif, et ni genre ni nombre.\n",
+       "en": "Nationality = country + 人: 法国人 \"French person\", 中国人 \"Chinese person\". Same with a city: 巴黎人 \"Parisian\", 北京人 \"Beijinger\". No gender, no plural.\n",
+       "fr_t": "Nationalité = pays + 人 : 法國人 « Français », 中國人 « Chinois ». Même chose pour une ville : 巴黎人 « Parisien », 北京人 « Pékinois ». Un seul mot pour le nom et l'adjectif, et ni genre ni nombre.\n",
+       "en_t": "Nationality = country + 人: 法國人 \"French person\", 中國人 \"Chinese person\". Same with a city: 巴黎人 \"Parisian\", 北京人 \"Beijinger\". No gender, no plural.\n"
+      },
+      {
+       "n": 3,
+       "line": 3,
+       "topic": "vocab",
+       "fr": "Les noms étrangers sont transcrits par le son : 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 马克 Mǎkè (Marc). L'apostrophe de Lǐ'áng sépare deux syllabes, pour ne pas lire « li-ang » en une.\n",
+       "en": "Foreign names are spelled by sound: 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 马克 Mǎkè (Marc). The apostrophe in Lǐ'áng splits two syllables, so it isn't read as one.\n",
+       "fr_t": "Les noms étrangers sont transcrits par le son : 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 馬克 Mǎkè (Marc). L'apostrophe de Lǐ'áng sépare deux syllabes, pour ne pas lire « li-ang » en une.\n",
+       "en_t": "Foreign names are spelled by sound: 巴黎 Bālí (Paris), 里昂 Lǐ'áng (Lyon), 馬克 Mǎkè (Marc). The apostrophe in Lǐ'áng splits two syllables, so it isn't read as one.\n"
+      },
+      {
+       "n": 4,
+       "line": 4,
+       "topic": "grammar",
+       "fr": "Pour répondre « non » à une question en 是…吗, on nie le verbe : 不是 bú shì « (ce n'est) pas ». Le chinois n'a pas de vrai « oui » ni de vrai « non » : on reprend le verbe (L1 n.4, L1 n.8).\n",
+       "en": "To answer \"no\" to a 是…吗 question, negate the verb: 不是 bú shì \"(it) is not\". Chinese has no all-purpose yes or no: you repeat the verb (L1 n.4, L1 n.8).\n",
+       "fr_t": "Pour répondre « non » à une question en 是…嗎, on nie le verbe : 不是 bú shì « (ce n'est) pas ». Le chinois n'a pas de vrai « oui » ni de vrai « non » : on reprend le verbe (L1 n.4, L1 n.8).\n",
+       "en_t": "To answer \"no\" to a 是…嗎 question, negate the verb: 不是 bú shì \"(it) is not\". Chinese has no all-purpose yes or no: you repeat the verb (L1 n.4, L1 n.8).\n"
+      },
+      {
+       "n": 5,
+       "line": 5,
+       "topic": "grammar",
+       "fr": "**你们** nǐmen « vous » (pluriel), avec le 们 de 我们 (L1 n.10). Le « vous » de politesse, lui, est 您 (L2 n.1), qui ne prend pas 们 à l'oral.\n",
+       "en": "**你们** nǐmen \"you\" (plural), with the 们 of 我们 (L1 n.10). The polite singular \"you\" is 您 (L2 n.1), which doesn't take 们 in speech.\n",
+       "fr_t": "**你們** nǐmen « vous » (pluriel), avec le 們 de 我們 (L1 n.10). Le « vous » de politesse, lui, est 您 (L2 n.1), qui ne prend pas 們 à l'oral.\n",
+       "en_t": "**你們** nǐmen \"you\" (plural), with the 們 of 我們 (L1 n.10). The polite singular \"you\" is 您 (L2 n.1), which doesn't take 們 in speech.\n"
+      },
+      {
+       "n": 6,
+       "line": 7,
+       "topic": "grammar",
+       "fr": "Un nom placé devant un autre le qualifie, sans 的 : 中国朋友 « ami(s) chinois », 法国朋友 « ami français ». Le 的 de possession (L1 n.6) reste devant le tout : 我的中国朋友 « mes amis chinois ».\n",
+       "en": "A noun in front of another describes it, with no 的: 中国朋友 \"Chinese friend(s)\", 法国朋友 \"French friend\". The possessive 的 (L1 n.6) goes before the whole: 我的中国朋友 \"my Chinese friends\".\n",
+       "fr_t": "Un nom placé devant un autre le qualifie, sans 的 : 中國朋友 « ami(s) chinois », 法國朋友 « ami français ». Le 的 de possession (L1 n.6) reste devant le tout : 我的中國朋友 « mes amis chinois ».\n",
+       "en_t": "A noun in front of another describes it, with no 的: 中國朋友 \"Chinese friend(s)\", 法國朋友 \"French friend\". The possessive 的 (L1 n.6) goes before the whole: 我的中國朋友 \"my Chinese friends\".\n"
+      },
+      {
+       "n": 7,
+       "line": 8,
+       "topic": "vocab",
+       "fr": "**对** duì « juste, c'est ça » : la façon la plus courante d'approuver ce qu'on vient de dire.\n",
+       "en": "**对** duì \"right, correct\": the usual way to agree with what was just said.\n",
+       "fr_t": "**對** duì « juste, c'est ça » : la façon la plus courante d'approuver ce qu'on vient de dire.\n",
+       "en_t": "**對** duì \"right, correct\": the usual way to agree with what was just said.\n"
+      },
+      {
+       "n": 8,
+       "line": 9,
+       "topic": "vocab",
+       "fr": "**汉语** Hànyǔ « la langue chinoise » (litt. « langue des Han », l'ethnie majoritaire). On dit aussi 中文 Zhōngwén, plutôt pour l'écrit.\n",
+       "en": "**汉语** Hànyǔ \"the Chinese language\" (lit. \"language of the Han\", the majority people). 中文 Zhōngwén is also used, more for the written language.\n",
+       "fr_t": "**漢語** Hànyǔ « la langue chinoise » (litt. « langue des Han », l'ethnie majoritaire). On dit aussi 中文 Zhōngwén, plutôt pour l'écrit.\n",
+       "en_t": "**漢語** Hànyǔ \"the Chinese language\" (lit. \"language of the Han\", the majority people). 中文 Zhōngwén is also used, more for the written language.\n"
+      },
+      {
+       "n": 9,
+       "line": 10,
+       "topic": "culture",
+       "fr": "**哪里，哪里** « où ça, où ça » : on refuse un compliment, comme si on ne voyait pas où est la qualité. Dire « merci » sonne un peu prétentieux pour certains, même si les jeunes le font de plus en plus.\n",
+       "en": "**哪里，哪里** \"where, where\": you turn down a compliment, as if you couldn't see where the merit is. Saying \"thank you\" sounds a bit vain to some, though young people do it more and more.\n",
+       "fr_t": "**哪裏，哪裏** « où ça, où ça » : on refuse un compliment, comme si on ne voyait pas où est la qualité. Dire « merci » sonne un peu prétentieux pour certains, même si les jeunes le font de plus en plus.\n",
+       "en_t": "**哪裏，哪裏** \"where, where\": you turn down a compliment, as if you couldn't see where the merit is. Saying \"thank you\" sounds a bit vain to some, though young people do it more and more.\n"
+      }
+     ],
+     "words": [
+      {
+       "w": "哪",
+       "py": "nǎ",
+       "fr": "quel",
+       "en": "which",
+       "t": "哪",
+       "lvl": "1"
+      },
+      {
+       "w": "国",
+       "py": "guó",
+       "fr": "pays",
+       "en": "country",
+       "t": "國",
+       "lvl": "1"
+      },
+      {
+       "w": "人",
+       "py": "rén",
+       "fr": "personne",
+       "en": "person, people",
+       "t": "人",
+       "lvl": "1"
+      },
+      {
+       "w": "法国",
+       "py": "Fǎguó",
+       "fr": "France",
+       "en": "France",
+       "t": "法國",
+       "lvl": null
+      },
+      {
+       "w": "你们",
+       "py": "nǐmen",
+       "fr": "vous (pluriel)",
+       "en": "you (plural)",
+       "t": "你們",
+       "lvl": "1"
+      },
+      {
+       "w": "中国",
+       "py": "Zhōngguó",
+       "fr": "Chine",
+       "en": "China",
+       "t": "中國",
+       "lvl": "1"
+      },
+      {
+       "w": "朋友",
+       "py": "péngyou",
+       "fr": "ami",
+       "en": "friend",
+       "t": "朋友",
+       "lvl": "1"
+      },
+      {
+       "w": "对",
+       "py": "duì",
+       "fr": "juste, c'est ça",
+       "en": "right, correct",
+       "t": "對",
+       "lvl": "1"
+      },
+      {
+       "w": "汉语",
+       "py": "Hànyǔ",
+       "fr": "chinois (la langue)",
+       "en": "Chinese (the language)",
+       "t": "漢語",
+       "lvl": "1"
+      },
+      {
+       "w": "哪里",
+       "py": "nǎli",
+       "fr": "où ; (modestie) pas du tout",
+       "en": "where; (modest) not at all",
+       "t": "哪裏",
+       "lvl": "1"
+      }
+     ],
+     "exercise": {
+      "translate": [
+       {
+        "h": "他是哪国人？",
+        "py": "Tā shì nǎ guó rén?",
+        "fr": "Il est de quel pays ?",
+        "en": "Where is he from?",
+        "toks": [
+         {
+          "s": "他",
+          "t": "他",
+          "p": "Tā",
+          "k": "他"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "哪",
+          "t": "哪",
+          "p": "nǎ",
+          "k": "哪"
+         },
+         {
+          "s": "国",
+          "t": "國",
+          "p": "guó",
+          "k": "国"
+         },
+         {
+          "s": "人",
+          "t": "人",
+          "p": "rén",
+          "k": "人"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ]
+       },
+       {
+        "h": "小雨不是上海人。",
+        "py": "Xiǎoyǔ bú shì Shànghǎi rén.",
+        "fr": "Xiaoyu n'est pas de Shanghai.",
+        "en": "Xiaoyu isn't from Shanghai.",
+        "toks": [
+         {
+          "s": "小雨",
+          "t": "小雨",
+          "p": "Xiǎoyǔ",
+          "k": "小雨"
+         },
+         {
+          "s": "不",
+          "t": "不",
+          "p": "bú",
+          "k": "不"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "上海",
+          "t": "上海",
+          "p": "Shànghǎi",
+          "k": "上海"
+         },
+         {
+          "s": "人",
+          "t": "人",
+          "p": "rén",
+          "k": "人"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "你们是我的朋友。",
+        "py": "Nǐmen shì wǒ de péngyou.",
+        "fr": "Vous êtes mes amis.",
+        "en": "You're my friends.",
+        "toks": [
+         {
+          "s": "你们",
+          "t": "你們",
+          "p": "Nǐmen",
+          "k": "你们"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "我",
+          "t": "我",
+          "p": "wǒ",
+          "k": "我"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "朋友",
+          "t": "朋友",
+          "p": "péngyou",
+          "k": "朋友"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       },
+       {
+        "h": "我的中国朋友也是老师。",
+        "py": "Wǒ de Zhōngguó péngyou yě shì lǎoshī.",
+        "fr": "Mon ami chinois est professeur, lui aussi.",
+        "en": "My Chinese friend is a teacher too.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "中国",
+          "t": "中國",
+          "p": "Zhōngguó",
+          "k": "中国"
+         },
+         {
+          "s": "朋友",
+          "t": "朋友",
+          "p": "péngyou",
+          "k": "朋友"
+         },
+         {
+          "s": "也",
+          "t": "也",
+          "p": "yě",
+          "k": "也"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "老师",
+          "t": "老師",
+          "p": "lǎoshī",
+          "k": "老师"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ]
+       }
+      ],
+      "choose": [
+       {
+        "h": "你是＿＿国人？",
+        "opts": [
+         "哪",
+         "什么",
+         "呢"
+        ],
+        "a": "哪",
+        "py": "Nǐ shì nǎ guó rén?",
+        "fr": "Tu es de quel pays ?",
+        "en": "Where are you from?",
+        "toks": [
+         {
+          "s": "你",
+          "t": "你",
+          "p": "Nǐ",
+          "k": "你"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "哪",
+          "t": "哪",
+          "p": "nǎ",
+          "k": "哪"
+         },
+         {
+          "s": "国",
+          "t": "國",
+          "p": "guó",
+          "k": "国"
+         },
+         {
+          "s": "人",
+          "t": "人",
+          "p": "rén",
+          "k": "人"
+         },
+         {
+          "s": "？",
+          "t": "？"
+         }
+        ],
+        "h_t": "你是＿＿國人？",
+        "opts_t": [
+         "哪",
+         "什麼",
+         "呢"
+        ]
+       },
+       {
+        "h": "我＿＿是北京人。",
+        "opts": [
+         "不",
+         "吗",
+         "对"
+        ],
+        "a": "不",
+        "py": "Wǒ bú shì Běijīng rén.",
+        "fr": "Je ne suis pas de Pékin.",
+        "en": "I'm not from Beijing.",
+        "toks": [
+         {
+          "s": "我",
+          "t": "我",
+          "p": "Wǒ",
+          "k": "我"
+         },
+         {
+          "s": "不",
+          "t": "不",
+          "p": "bú",
+          "k": "不"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "北京",
+          "t": "北京",
+          "p": "Běijīng",
+          "k": "北京"
+         },
+         {
+          "s": "人",
+          "t": "人",
+          "p": "rén",
+          "k": "人"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "我＿＿是北京人。",
+        "opts_t": [
+         "不",
+         "嗎",
+         "對"
+        ]
+       },
+       {
+        "h": "张伟是我们＿＿朋友。",
+        "opts": [
+         "的",
+         "也",
+         "吧"
+        ],
+        "a": "的",
+        "py": "Zhāng Wěi shì wǒmen de péngyou.",
+        "fr": "Zhang Wei est notre ami.",
+        "en": "Zhang Wei is our friend.",
+        "toks": [
+         {
+          "s": "张伟",
+          "t": "張偉",
+          "p": "Zhāng Wěi",
+          "k": "张伟"
+         },
+         {
+          "s": "是",
+          "t": "是",
+          "p": "shì",
+          "k": "是"
+         },
+         {
+          "s": "我们",
+          "t": "我們",
+          "p": "wǒmen",
+          "k": "我们"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "朋友",
+          "t": "朋友",
+          "p": "péngyou",
+          "k": "朋友"
+         },
+         {
+          "s": "。",
+          "t": "。"
+         }
+        ],
+        "h_t": "張偉是我們＿＿朋友。",
+        "opts_t": [
+         "的",
+         "也",
+         "吧"
+        ]
+       },
+       {
+        "h": "你的汉语很好！——＿＿，＿＿……",
+        "opts": [
+         "哪里",
+         "什么",
+         "谢谢"
+        ],
+        "a": "哪里",
+        "py": "Nǐ de Hànyǔ hěn hǎo! — Nǎli, nǎli……",
+        "fr": "Ton chinois est très bon ! — Oh, pas du tout…",
+        "en": "Your Chinese is good! — Oh, not really…",
+        "toks": [
+         {
+          "s": "你",
+          "t": "你",
+          "p": "Nǐ",
+          "k": "你"
+         },
+         {
+          "s": "的",
+          "t": "的",
+          "p": "de",
+          "k": "的"
+         },
+         {
+          "s": "汉语",
+          "t": "漢語",
+          "p": "Hànyǔ",
+          "k": "汉语"
+         },
+         {
+          "s": "很",
+          "t": "很",
+          "p": "hěn",
+          "k": "很"
+         },
+         {
+          "s": "好",
+          "t": "好",
+          "p": "hǎo",
+          "k": "好"
+         },
+         {
+          "s": "！——",
+          "t": "！——"
+         },
+         {
+          "s": "哪里",
+          "t": "哪裏",
+          "p": "Nǎli",
+          "k": "哪里"
+         },
+         {
+          "s": "，",
+          "t": "，"
+         },
+         {
+          "s": "哪里",
+          "t": "哪裏",
+          "p": "nǎli",
+          "k": "哪里"
+         },
+         {
+          "s": "……",
+          "t": "……"
+         }
+        ],
+        "h_t": "你的漢語很好！——＿＿，＿＿……",
+        "opts_t": [
+         "哪裏",
+         "什麼",
+         "謝謝"
+        ]
+       }
+      ]
+     },
+     "title_t": "我是法國人"
+    }
+   ],
+   "plan": [
+    {
+     "id": 1,
+     "zh": "你好！",
+     "fr": "Bonjour !",
+     "en": "Hello!",
+     "gram": "是 · 吗 · personal pronouns",
+     "zh_t": "你好！",
+     "quota": 14
+    },
+    {
+     "id": 2,
+     "zh": "你叫什么名字？",
+     "fr": "Comment tu t'appelles ?",
+     "en": "What's your name?",
+     "gram": "叫 · 什么 · 呢 · 也",
+     "zh_t": "你叫什麼名字？",
+     "quota": 14
+    },
+    {
+     "id": 3,
+     "zh": "我是法国人",
+     "fr": "Je suis français",
+     "en": "I'm French",
+     "gram": "哪国人 · 的 · 不",
+     "zh_t": "我是法國人",
+     "quota": 14
+    },
+    {
+     "id": 4,
+     "zh": "你家有几个人？",
+     "fr": "Combien êtes-vous dans ta famille ?",
+     "en": "How many in your family?",
+     "gram": "有 / 没有 · 几 · 个 · 1–10",
+     "zh_t": "你家有幾個人？",
+     "quota": 15
+    },
+    {
+     "id": 5,
+     "zh": "你多大？",
+     "fr": "Quel âge as-tu ?",
+     "en": "How old are you?",
+     "gram": "numbers to 99 · 岁 · 多大",
+     "zh_t": "你多大？",
+     "quota": 15
+    },
+    {
+     "id": 6,
+     "zh": "这是我的房间",
+     "fr": "Voici ma chambre",
+     "en": "This is my room",
+     "gram": "这 / 那 / 哪 · 都",
+     "zh_t": "這是我的房間",
+     "quota": 15
+    },
+    {
+     "id": 7,
+     "review": true
+    },
+    {
+     "id": 8,
+     "zh": "超市在哪儿？",
+     "fr": "Où est le supermarché ?",
+     "en": "Where's the supermarket?",
+     "gram": "在 · 哪儿 · 这儿 / 那儿",
+     "zh_t": "超市在哪兒？",
+     "quota": 15
+    },
+    {
+     "id": 9,
+     "zh": "多少钱？",
+     "fr": "C'est combien ?",
+     "en": "How much is it?",
+     "gram": "要 · 想 · 块 / 毛 · 多少钱",
+     "zh_t": "多少錢？",
+     "quota": 15
+    },
+    {
+     "id": 10,
+     "zh": "现在几点？",
+     "fr": "Quelle heure est-il ?",
+     "en": "What time is it?",
+     "gram": "点 / 分 · time before the verb",
+     "zh_t": "現在幾點？",
+     "quota": 16
+    },
+    {
+     "id": 11,
+     "zh": "今天星期几？",
+     "fr": "On est quel jour ?",
+     "en": "What day is it?",
+     "gram": "年月日 · 星期 · 号",
+     "zh_t": "今天星期幾？",
+     "quota": 16
+    },
+    {
+     "id": 12,
+     "zh": "你喜欢吃什么？",
+     "fr": "Qu'est-ce que tu aimes manger ?",
+     "en": "What do you like to eat?",
+     "gram": "喜欢 · verb + object · 还是",
+     "zh_t": "你喜歡喫什麼？",
+     "quota": 16
+    },
+    {
+     "id": 13,
+     "zh": "我们坐地铁去",
+     "fr": "On y va en métro",
+     "en": "Let's take the metro",
+     "gram": "去 / 来 · 坐 · 怎么",
+     "zh_t": "我們坐地鐵去",
+     "quota": 16
+    },
+    {
+     "id": 14,
+     "review": true
+    },
+    {
+     "id": 15,
+     "zh": "你会说汉语吗？",
+     "fr": "Tu parles chinois ?",
+     "en": "Do you speak Chinese?",
+     "gram": "会 · 能 · 可以",
+     "zh_t": "你會說漢語嗎？",
+     "quota": 17
+    },
+    {
+     "id": 16,
+     "zh": "第一节汉语课",
+     "fr": "Premier cours de chinois",
+     "en": "First Chinese class",
+     "gram": "很 · 太…了 · adjective predicates",
+     "zh_t": "第一節漢語課",
+     "quota": 17
+    },
+    {
+     "id": 17,
+     "zh": "你在做什么呢？",
+     "fr": "Qu'est-ce que tu fais ?",
+     "en": "What are you doing?",
+     "gram": "在 / 正在…呢",
+     "zh_t": "你在做什麼呢？",
+     "quota": 17
+    },
+    {
+     "id": 18,
+     "zh": "我买了一个手机",
+     "fr": "J'ai acheté un téléphone",
+     "en": "I bought a phone",
+     "gram": "了 (action done) · 没 (有)",
+     "zh_t": "我買了一個手機",
+     "quota": 17
+    },
+    {
+     "id": 19,
+     "zh": "你去过长城吗？",
+     "fr": "Tu es déjà allé à la Grande Muraille ?",
+     "en": "Have you been to the Great Wall?",
+     "gram": "过 · 次",
+     "zh_t": "你去過長城嗎？",
+     "quota": 17
+    },
+    {
+     "id": 20,
+     "zh": "北京比巴黎大",
+     "fr": "Pékin est plus grand que Paris",
+     "en": "Beijing is bigger than Paris",
+     "gram": "比 · 没有…那么",
+     "zh_t": "北京比巴黎大",
+     "quota": 18
+    },
+    {
+     "id": 21,
+     "review": true
+    },
+    {
+     "id": 22,
+     "zh": "今天天气怎么样？",
+     "fr": "Quel temps fait-il ?",
+     "en": "What's the weather like?",
+     "gram": "怎么样 · 有点儿 · 一点儿",
+     "zh_t": "今天天氣怎麼樣？",
+     "quota": 18
+    },
+    {
+     "id": 23,
+     "zh": "喂，是小雨吗？",
+     "fr": "Allô, c'est Xiaoyu ?",
+     "en": "Hello, is that Xiaoyu?",
+     "gram": "给 · 打电话 · 喂",
+     "zh_t": "喂，是小雨嗎？",
+     "quota": 18
+    },
+    {
+     "id": 24,
+     "zh": "下班以后",
+     "fr": "Après le travail",
+     "en": "After work",
+     "gram": "以前 / 以后 · …的时候",
+     "zh_t": "下班以後",
+     "quota": 18
+    },
+    {
+     "id": 25,
+     "zh": "我感冒了",
+     "fr": "J'ai attrapé un rhume",
+     "en": "I've caught a cold",
+     "gram": "因为…所以… · 了 (new situation)",
+     "zh_t": "我感冒了",
+     "quota": 18
+    },
+    {
+     "id": 26,
+     "zh": "火车要开了",
+     "fr": "Le train va partir",
+     "en": "The train is about to leave",
+     "gram": "要…了 · 快…了",
+     "zh_t": "火車要開了",
+     "quota": 19
+    },
+    {
+     "id": 27,
+     "zh": "跟朋友一起吃饭",
+     "fr": "Dîner entre amis",
+     "en": "Dinner with friends",
+     "gram": "跟…一起 · 和 · 还",
+     "zh_t": "跟朋友一起喫飯",
+     "quota": 19
+    },
+    {
+     "id": 28,
+     "review": true
+    },
+    {
+     "id": 29,
+     "zh": "你学了多长时间？",
+     "fr": "Depuis combien de temps tu étudies ?",
+     "en": "How long have you studied?",
+     "gram": "duration · 了…了 · 多长时间",
+     "zh_t": "你學了多長時間？",
+     "quota": 19
+    },
+    {
+     "id": 30,
+     "zh": "作业写完了",
+     "fr": "J'ai fini mes devoirs",
+     "en": "Homework done",
+     "gram": "result complements 完 · 好 · 到 · 见 · 懂",
+     "zh_t": "作業寫完了",
+     "quota": 19
+    },
+    {
+     "id": 31,
+     "zh": "我们休息一下吧",
+     "fr": "Faisons une pause",
+     "en": "Let's take a break",
+     "gram": "吧 · 一下 · reduplication 看看",
+     "zh_t": "我們休息一下吧",
+     "quota": 20
+    },
+    {
+     "id": 32,
+     "zh": "你说得很好",
+     "fr": "Tu parles bien",
+     "en": "You speak well",
+     "gram": "得 (degree complement)",
+     "zh_t": "你說得很好",
+     "quota": 20
+    },
+    {
+     "id": 33,
+     "zh": "虽然很贵，但是很好吃",
+     "fr": "Cher, mais délicieux",
+     "en": "Pricey but delicious",
+     "gram": "虽然…但是… · 可是",
+     "zh_t": "雖然很貴，但是很好喫",
+     "quota": 20
+    },
+    {
+     "id": 34,
+     "zh": "门开着呢",
+     "fr": "La porte est ouverte",
+     "en": "The door is open",
+     "gram": "着 · 在 + place after the verb",
+     "zh_t": "門開着呢",
+     "quota": 20
+    },
+    {
+     "id": 35,
+     "review": true
+    },
+    {
+     "id": 36,
+     "zh": "快进来吧！",
+     "fr": "Entre vite !",
+     "en": "Come on in!",
+     "gram": "direction complements 来 / 去",
+     "zh_t": "快進來吧！",
+     "quota": 20
+    },
+    {
+     "id": 37,
+     "zh": "他跑出去了",
+     "fr": "Il est sorti en courant",
+     "en": "He ran out",
+     "gram": "compound directions 上来 · 出去 · 回来",
+     "zh_t": "他跑出去了",
+     "quota": 21
+    },
+    {
+     "id": 38,
+     "zh": "我听不懂",
+     "fr": "Je ne comprends pas (à l'oral)",
+     "en": "I can't understand",
+     "gram": "potential complements 听不懂 · 买得到",
+     "zh_t": "我聽不懂",
+     "quota": 21
+    },
+    {
+     "id": 39,
+     "zh": "把行李放在这儿",
+     "fr": "Pose les bagages ici",
+     "en": "Put the luggage here",
+     "gram": "把",
+     "zh_t": "把行李放在這兒",
+     "quota": 21
+    },
+    {
+     "id": 40,
+     "zh": "我的自行车被偷了",
+     "fr": "On m'a volé mon vélo",
+     "en": "My bike was stolen",
+     "gram": "被",
+     "zh_t": "我的自行車被偷了",
+     "quota": 21
+    },
+    {
+     "id": 41,
+     "zh": "你是什么时候来的？",
+     "fr": "Tu es arrivé quand ?",
+     "en": "When did you arrive?",
+     "gram": "是…的",
+     "zh_t": "你是什麼時候來的？",
+     "quota": 21
+    },
+    {
+     "id": 42,
+     "review": true
+    },
+    {
+     "id": 43,
+     "zh": "一到西安就去吃面",
+     "fr": "Des nouilles dès l'arrivée à Xi'an",
+     "en": "Noodles as soon as we reach Xi'an",
+     "gram": "一…就…",
+     "zh_t": "一到西安就去喫麪",
+     "quota": 22
+    },
+    {
+     "id": 44,
+     "zh": "越来越冷了",
+     "fr": "Il fait de plus en plus froid",
+     "en": "It's getting colder",
+     "gram": "越来越 · 越…越…",
+     "zh_t": "越來越冷了",
+     "quota": 22
+    },
+    {
+     "id": 45,
+     "zh": "如果下雨怎么办？",
+     "fr": "Et s'il pleut ?",
+     "en": "What if it rains?",
+     "gram": "如果…就… · 要是",
+     "zh_t": "如果下雨怎麼辦？",
+     "quota": 22
+    },
+    {
+     "id": 46,
+     "zh": "除了饺子以外",
+     "fr": "À part les raviolis",
+     "en": "Apart from dumplings",
+     "gram": "除了…以外",
+     "zh_t": "除了餃子以外",
+     "quota": 22
+    },
+    {
+     "id": 47,
+     "zh": "连小孩都知道",
+     "fr": "Même les enfants le savent",
+     "en": "Even kids know it",
+     "gram": "连…都 / 也",
+     "zh_t": "連小孩都知道",
+     "quota": 22
+    },
+    {
+     "id": 48,
+     "zh": "不但便宜，而且方便",
+     "fr": "Pas cher, et en plus pratique",
+     "en": "Cheap, and handy too",
+     "gram": "不但…而且…",
+     "zh_t": "不但便宜，而且方便",
+     "quota": 23
+    },
+    {
+     "id": 49,
+     "review": true
+    },
+    {
+     "id": 50,
+     "zh": "什么都想买",
+     "fr": "On veut tout acheter",
+     "en": "Wanting to buy everything",
+     "gram": "question words as 'any': 什么都 · 谁都 · 哪儿都",
+     "zh_t": "什麼都想買",
+     "quota": 23
+    },
+    {
+     "id": 51,
+     "zh": "只要努力就行",
+     "fr": "Il suffit de travailler",
+     "en": "Effort is all it takes",
+     "gram": "只要…就… · second wave starts",
+     "zh_t": "只要努力就行",
+     "quota": 23
+    },
+    {
+     "id": 52,
+     "zh": "只有周末才有空",
+     "fr": "Libre seulement le week-end",
+     "en": "Only free at weekends",
+     "gram": "只有…才…",
+     "zh_t": "只有週末纔有空",
+     "quota": 23
+    },
+    {
+     "id": 53,
+     "zh": "难道你不知道？",
+     "fr": "Tu ne le savais pas ?",
+     "en": "Didn't you know?",
+     "gram": "难道 · rhetorical questions",
+     "zh_t": "難道你不知道？",
+     "quota": 24
+    },
+    {
+     "id": 54,
+     "zh": "既然来了，就多住几天",
+     "fr": "Puisque tu es là, reste quelques jours",
+     "en": "Since you're here, stay a few days",
+     "gram": "既然…就…",
+     "zh_t": "既然來了，就多住幾天",
+     "quota": 24
+    },
+    {
+     "id": 55,
+     "zh": "对我来说",
+     "fr": "Pour moi",
+     "en": "For me",
+     "gram": "对…来说 · 对于",
+     "zh_t": "對我來說",
+     "quota": 24
+    },
+    {
+     "id": 56,
+     "review": true
+    },
+    {
+     "id": 57,
+     "zh": "春节快到了",
+     "fr": "Le Nouvel An approche",
+     "en": "Spring Festival is near",
+     "gram": "不管…都…",
+     "zh_t": "春節快到了",
+     "quota": 24
+    },
+    {
+     "id": 58,
+     "zh": "在小雨家过年",
+     "fr": "Le Nouvel An chez Xiaoyu",
+     "en": "New Year at Xiaoyu's",
+     "gram": "一边…一边… · 先…再…然后",
+     "zh_t": "在小雨家過年",
+     "quota": 24
+    },
+    {
+     "id": 59,
+     "zh": "即使很累也要去",
+     "fr": "Même fatigué, il faut y aller",
+     "en": "Even if tired, we go",
+     "gram": "即使…也…",
+     "zh_t": "即使很累也要去",
+     "quota": 25
+    },
+    {
+     "id": 60,
+     "zh": "我找到工作了",
+     "fr": "J'ai trouvé du travail",
+     "en": "I found a job",
+     "gram": "让 / 使 / 叫 (causative)",
+     "zh_t": "我找到工作了",
+     "quota": 25
+    },
+    {
+     "id": 61,
+     "zh": "第一天上班",
+     "fr": "Premier jour de travail",
+     "en": "First day at work",
+     "gram": "叫 / 让 (passive) · 被…所",
+     "zh_t": "第一天上班",
+     "quota": 25
+    },
+    {
+     "id": 62,
+     "zh": "搬家",
+     "fr": "Le déménagement",
+     "en": "Moving house",
+     "gram": "把 + result / direction complements",
+     "zh_t": "搬家",
+     "quota": 25
+    },
+    {
+     "id": 63,
+     "review": true
+    },
+    {
+     "id": 64,
+     "zh": "开会",
+     "fr": "La réunion",
+     "en": "The meeting",
+     "gram": "关于 · 由于 · 通过",
+     "zh_t": "開會",
+     "quota": 25
+    },
+    {
+     "id": 65,
+     "zh": "我的看法",
+     "fr": "Mon avis",
+     "en": "My view",
+     "gram": "我认为 · 看来 · 可见",
+     "zh_t": "我的看法",
+     "quota": 26
+    },
+    {
+     "id": 66,
+     "zh": "不得不加班",
+     "fr": "Obligé de faire des heures sup",
+     "en": "Having to work late",
+     "gram": "不得不 · 非…不可",
+     "zh_t": "不得不加班",
+     "quota": 26
+    },
+    {
+     "id": 67,
+     "zh": "网上购物",
+     "fr": "Acheter en ligne",
+     "en": "Shopping online",
+     "gram": "无论…都… · 随便",
+     "zh_t": "網上購物",
+     "quota": 26
+    },
+    {
+     "id": 68,
+     "zh": "幸亏你提醒我",
+     "fr": "Heureusement que tu m'as prévenu",
+     "en": "Good thing you reminded me",
+     "gram": "幸亏 · 万一 · 否则",
+     "zh_t": "幸虧你提醒我",
+     "quota": 26
+    },
+    {
+     "id": 69,
+     "zh": "去医院看病",
+     "fr": "Chez le médecin",
+     "en": "Seeing a doctor",
+     "gram": "按照 · 根据 · 一旦",
+     "zh_t": "去醫院看病",
+     "quota": 26
+    },
+    {
+     "id": 70,
+     "review": true
+    },
+    {
+     "id": 71,
+     "zh": "银行开户",
+     "fr": "Ouvrir un compte",
+     "en": "Opening an account",
+     "gram": "以便 · 为了",
+     "zh_t": "銀行開戶",
+     "quota": 27
+    },
+    {
+     "id": 72,
+     "zh": "与其等车，不如走路",
+     "fr": "Plutôt marcher qu'attendre le bus",
+     "en": "Better to walk than wait",
+     "gram": "与其…不如… · 宁可",
+     "zh_t": "與其等車，不如走路",
+     "quota": 27
+    },
+    {
+     "id": 73,
+     "zh": "他甚至不会做饭",
+     "fr": "Il ne sait même pas cuisiner",
+     "en": "He can't even cook",
+     "gram": "甚至 · 何况",
+     "zh_t": "他甚至不會做飯",
+     "quota": 27
+    },
+    {
+     "id": 74,
+     "zh": "随着科技的发展",
+     "fr": "Avec les progrès de la technique",
+     "en": "As technology develops",
+     "gram": "随着 · 在…下",
+     "zh_t": "隨着科技的發展",
+     "quota": 27
+    },
+    {
+     "id": 75,
+     "zh": "尽管有困难",
+     "fr": "Malgré les difficultés",
+     "en": "Despite the difficulties",
+     "gram": "尽管 · 反而",
+     "zh_t": "儘管有困難",
+     "quota": 28
+    },
+    {
+     "id": 76,
+     "zh": "简直像做梦一样",
+     "fr": "Comme dans un rêve",
+     "en": "Just like a dream",
+     "gram": "简直 · 像…一样 / 似的",
+     "zh_t": "簡直像做夢一樣",
+     "quota": 28
+    },
+    {
+     "id": 77,
+     "review": true
+    },
+    {
+     "id": 78,
+     "zh": "环境保护",
+     "fr": "Protéger l'environnement",
+     "en": "Protecting the environment",
+     "gram": "不仅…还… · 并且",
+     "zh_t": "環境保護",
+     "quota": 28
+    },
+    {
+     "id": 79,
+     "zh": "看新闻",
+     "fr": "Les informations",
+     "en": "The news",
+     "gram": "据说 · 听说 · 于是",
+     "zh_t": "看新聞",
+     "quota": 28
+    },
+    {
+     "id": 80,
+     "zh": "中国菜的八大菜系",
+     "fr": "Les huit cuisines chinoises",
+     "en": "China's eight cuisines",
+     "gram": "以…为… · 其中",
+     "zh_t": "中國菜的八大菜系",
+     "quota": 28
+    },
+    {
+     "id": 81,
+     "zh": "毕竟是第一次",
+     "fr": "Après tout, c'est la première fois",
+     "en": "It's the first time, after all",
+     "gram": "毕竟 · 究竟 · 到底",
+     "zh_t": "畢竟是第一次",
+     "quota": 29
+    },
+    {
+     "id": 82,
+     "zh": "去面试",
+     "fr": "L'entretien d'embauche",
+     "en": "The job interview",
+     "gram": "formal register · 并 (不) · 从来",
+     "zh_t": "去面試",
+     "quota": 29
+    },
+    {
+     "id": 83,
+     "zh": "你的意思是……",
+     "fr": "Tu veux dire que…",
+     "en": "You mean…",
+     "gram": "是不是 · 并不是…而是…",
+     "zh_t": "你的意思是……",
+     "quota": 29
+    },
+    {
+     "id": 84,
+     "review": true
+    },
+    {
+     "id": 85,
+     "zh": "汉字的故事",
+     "fr": "L'histoire des caractères",
+     "en": "The story of characters",
+     "gram": "之一 · 所 + verb · 以及",
+     "zh_t": "漢字的故事",
+     "quota": 29
+    },
+    {
+     "id": 86,
+     "zh": "成语和故事",
+     "fr": "Les chengyu et leurs histoires",
+     "en": "Chengyu and their stories",
+     "gram": "first 成语: 马马虎虎 · 一路平安",
+     "zh_t": "成語和故事",
+     "quota": 29
+    },
+    {
+     "id": 87,
+     "zh": "去南方旅行",
+     "fr": "Voyage dans le Sud",
+     "en": "A trip south",
+     "gram": "不是…就是… · 要么…要么…",
+     "zh_t": "去南方旅行",
+     "quota": 30
+    },
+    {
+     "id": 88,
+     "zh": "茶馆里",
+     "fr": "Au salon de thé",
+     "en": "In the teahouse",
+     "gram": "动不动 · 好在 · 难免",
+     "zh_t": "茶館裏",
+     "quota": 30
+    },
+    {
+     "id": 89,
+     "zh": "写一封信",
+     "fr": "Écrire une lettre",
+     "en": "Writing a letter",
+     "gram": "written forms: 此 · 其 · 而",
+     "zh_t": "寫一封信",
+     "quota": 30
+    },
+    {
+     "id": 90,
+     "zh": "一场比赛",
+     "fr": "Un match",
+     "en": "A match",
+     "gram": "再…也… · 总算 · 终于",
+     "zh_t": "一場比賽",
+     "quota": 30
+    },
+    {
+     "id": 91,
+     "review": true
+    },
+    {
+     "id": 92,
+     "zh": "城市和农村",
+     "fr": "Ville et campagne",
+     "en": "City and countryside",
+     "gram": "comparisons: 不如 · 跟…相比 · 最",
+     "zh_t": "城市和農村",
+     "quota": 31
+    },
+    {
+     "id": 93,
+     "zh": "中国人怎么过节",
+     "fr": "Les fêtes chinoises",
+     "en": "How China celebrates",
+     "gram": "每当…的时候 · 一般来说",
+     "zh_t": "中國人怎麼過節",
+     "quota": 31
+    },
+    {
+     "id": 94,
+     "zh": "学汉语的方法",
+     "fr": "Comment apprendre le chinois",
+     "en": "How to learn Chinese",
+     "gram": "总之 · 首先 · 其次 · 最后",
+     "zh_t": "學漢語的方法",
+     "quota": 31
+    },
+    {
+     "id": 95,
+     "zh": "小雨的婚礼",
+     "fr": "Le mariage de Xiaoyu",
+     "en": "Xiaoyu's wedding",
+     "gram": "祝 · set phrases for occasions",
+     "zh_t": "小雨的婚禮",
+     "quota": 31
+    },
+    {
+     "id": 96,
+     "zh": "告别",
+     "fr": "Les adieux",
+     "en": "Saying goodbye",
+     "gram": "舍不得 · 恐怕 · 不见得",
+     "zh_t": "告別",
+     "quota": 31
+    },
+    {
+     "id": 97,
+     "zh": "回到巴黎",
+     "fr": "De retour à Paris",
+     "en": "Back in Paris",
+     "gram": "looking back: 当初 · 原来 · 本来",
+     "zh_t": "回到巴黎",
+     "quota": 32
+    },
+    {
+     "id": 98,
+     "review": true
+    },
+    {
+     "id": 99,
+     "zh": "一年以后",
+     "fr": "Un an plus tard",
+     "en": "A year later",
+     "gram": "the whole course in one story",
+     "zh_t": "一年以後",
+     "quota": 32
+    },
+    {
+     "id": 100,
+     "zh": "下一步",
+     "fr": "Et maintenant ?",
+     "en": "What next?",
+     "gram": "how to go on: graded readers, 白話, 成語",
+     "zh_t": "下一步",
+     "quota": 32
+    }
+   ],
+   "dict": {
+    "你好": {
+     "s": "你好",
+     "t": "你好",
+     "lvl": "1",
+     "py": "nǐ hǎo",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "bonjour",
+     "en": "hello",
+     "first": 1
+    },
+    "你": {
+     "s": "你",
+     "t": "你",
+     "lvl": "1",
+     "py": "nǐ",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "tu",
+     "en": "you",
+     "first": 1
+    },
+    "是": {
+     "s": "是",
+     "t": "是",
+     "lvl": "1",
+     "py": "shì",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "être ; oui",
+     "en": "to be; yes",
+     "first": 1
+    },
+    "马克": {
+     "s": "马克",
+     "t": "馬克",
+     "lvl": null,
+     "py": "Mǎkè",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "name": true,
+     "fr": "Marc",
+     "en": "Marc"
+    },
+    "吗": {
+     "s": "吗",
+     "t": "嗎",
+     "lvl": "1",
+     "py": "ma",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "(question oui / non)",
+     "en": "(yes / no question)",
+     "first": 1
+    },
+    "我": {
+     "s": "我",
+     "t": "我",
+     "lvl": "1",
+     "py": "wǒ",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "je, moi",
+     "en": "I, me",
+     "first": 1
+    },
+    "王小雨": {
+     "s": "王小雨",
+     "t": "王小雨",
+     "lvl": null,
+     "py": "Wáng Xiǎoyǔ",
+     "seen": [
+      1,
+      2
+     ],
+     "name": true,
+     "fr": "Wang Xiaoyu",
+     "en": "Wang Xiaoyu"
+    },
+    "的": {
+     "s": "的",
+     "t": "的",
+     "lvl": "1",
+     "py": "de",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "(possession) de",
+     "en": "(possession) 's",
+     "first": 1
+    },
+    "同事": {
+     "s": "同事",
+     "t": "同事",
+     "lvl": "3",
+     "py": "tóngshì",
+     "seen": [
+      1,
+      2
+     ],
+     "fr": "collègue",
+     "en": "colleague",
+     "first": 1
+    },
+    "小雨": {
+     "s": "小雨",
+     "t": "小雨",
+     "lvl": null,
+     "py": "Xiǎoyǔ",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "name": true,
+     "fr": "Xiaoyu",
+     "en": "Xiaoyu"
+    },
+    "谢谢": {
+     "s": "谢谢",
+     "t": "謝謝",
+     "lvl": "1",
+     "py": "xièxie",
+     "seen": [
+      1
+     ],
+     "fr": "merci",
+     "en": "thank you",
+     "first": 1
+    },
+    "累": {
+     "s": "累",
+     "t": "累",
+     "lvl": "2",
+     "py": "lèi",
+     "seen": [
+      1
+     ],
+     "fr": "fatigué",
+     "en": "tired",
+     "first": 1
+    },
+    "不": {
+     "s": "不",
+     "t": "不",
+     "lvl": "1",
+     "py": "bù",
+     "seen": [
+      1,
+      3
+     ],
+     "fr": "ne… pas",
+     "en": "not",
+     "first": 1
+    },
+    "很": {
+     "s": "很",
+     "t": "很",
+     "lvl": "1",
+     "py": "hěn",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "très",
+     "en": "very",
+     "first": 1
+    },
+    "好": {
+     "s": "好",
+     "t": "好",
+     "lvl": "1",
+     "py": "hǎo",
+     "seen": [
+      1,
+      2,
+      3
+     ],
+     "fr": "bon, bien",
+     "en": "good, well",
+     "first": 1
+    },
+    "我们": {
+     "s": "我们",
+     "t": "我們",
+     "lvl": "1",
+     "py": "wǒmen",
+     "seen": [
+      1,
+      3
+     ],
+     "fr": "nous",
+     "en": "we, us",
+     "first": 1
+    },
+    "走": {
+     "s": "走",
+     "t": "走",
+     "lvl": "2",
+     "py": "zǒu",
+     "seen": [
+      1
+     ],
+     "fr": "partir ; marcher",
+     "en": "to go, leave; to walk",
+     "first": 1
+    },
+    "吧": {
+     "s": "吧",
+     "t": "吧",
+     "lvl": "1",
+     "py": "ba",
+     "seen": [
+      1
+     ],
+     "fr": "(suggestion) donc",
+     "en": "(suggestion) then",
+     "first": 1
+    },
+    "马": {
+     "s": "马",
+     "t": "馬",
+     "lvl": "3",
+     "py": "mǎ",
+     "auto": "horse; horse or cavalry piece in Chinese chess; knight in Western chess",
+     "seen": [
+      1
+     ]
+    },
+    "王": {
+     "s": "王",
+     "t": "王",
+     "lvl": null,
+     "py": "wáng",
+     "seen": [
+      1
+     ]
+    },
+    "们": {
+     "s": "们",
+     "t": "們",
+     "lvl": "1",
+     "py": "men",
+     "auto": "(after pronouns or people words) plural",
+     "seen": [
+      1,
+      3
+     ]
+    },
+    "李": {
+     "s": "李",
+     "t": "李",
+     "lvl": null,
+     "py": "Lǐ",
+     "seen": [
+      2
+     ],
+     "name": true,
+     "fr": "Li",
+     "en": "Li"
+    },
+    "老师": {
+     "s": "老师",
+     "t": "老師",
+     "lvl": "1",
+     "py": "lǎoshī",
+     "seen": [
+      2,
+      3
+     ],
+     "fr": "professeur",
+     "en": "teacher",
+     "first": 2
+    },
+    "您": {
+     "s": "您",
+     "t": "您",
+     "lvl": "1",
+     "py": "nín",
+     "seen": [
+      2,
+      3
+     ],
+     "fr": "vous (politesse)",
+     "en": "you (polite)",
+     "first": 2
+    },
+    "他": {
+     "s": "他",
+     "t": "他",
+     "lvl": "1",
+     "py": "tā",
+     "seen": [
+      2,
+      3
+     ],
+     "fr": "il, lui",
+     "en": "he, him",
+     "first": 2
+    },
+    "叫": {
+     "s": "叫",
+     "t": "叫",
+     "lvl": "1",
+     "py": "jiào",
+     "seen": [
+      2
+     ],
+     "fr": "s'appeler ; appeler",
+     "en": "to be called; to call",
+     "first": 2
+    },
+    "什么": {
+     "s": "什么",
+     "t": "什麼",
+     "lvl": "1",
+     "py": "shénme",
+     "seen": [
+      2,
+      3
+     ],
+     "fr": "quoi, quel",
+     "en": "what",
+     "first": 2
+    },
+    "名字": {
+     "s": "名字",
+     "t": "名字",
+     "lvl": "1",
+     "py": "míngzi",
+     "seen": [
+      2
+     ],
+     "fr": "nom, prénom",
+     "en": "name",
+     "first": 2
+    },
+    "呢": {
+     "s": "呢",
+     "t": "呢",
+     "lvl": "1",
+     "py": "ne",
+     "seen": [
+      2
+     ],
+     "fr": "et… ? (renvoie la question)",
+     "en": "and…? (bounces the question)",
+     "first": 2
+    },
+    "姓": {
+     "s": "姓",
+     "t": "姓",
+     "lvl": "2",
+     "py": "xìng",
+     "seen": [
+      2
+     ],
+     "fr": "avoir pour nom de famille ; nom de famille",
+     "en": "to be surnamed; surname",
+     "first": 2
+    },
+    "认识": {
+     "s": "认识",
+     "t": "認識",
+     "lvl": "1",
+     "py": "rènshi",
+     "seen": [
+      2
+     ],
+     "fr": "connaître (une personne)",
+     "en": "to know (a person), meet",
+     "first": 2
+    },
+    "高兴": {
+     "s": "高兴",
+     "t": "高興",
+     "lvl": "1",
+     "py": "gāoxìng",
+     "seen": [
+      2
+     ],
+     "fr": "content",
+     "en": "glad, happy",
+     "first": 2
+    },
+    "也": {
+     "s": "也",
+     "t": "也",
+     "lvl": "1",
+     "py": "yě",
+     "seen": [
+      2,
+      3
+     ],
+     "fr": "aussi",
+     "en": "also, too",
+     "first": 2
+    },
+    "她": {
+     "s": "她",
+     "t": "她",
+     "lvl": "1",
+     "py": "tā",
+     "seen": [
+      2
+     ],
+     "fr": "elle",
+     "en": "she, her",
+     "first": 2
+    },
+    "啊": {
+     "s": "啊",
+     "t": "啊",
+     "lvl": "2",
+     "py": "a",
+     "seen": [
+      2
+     ],
+     "fr": "(appuie la réponse)",
+     "en": "(stresses the answer)",
+     "first": 2
+    },
+    "亻": {
+     "s": "亻",
+     "t": "亻",
+     "lvl": null,
+     "py": "rén",
+     "seen": [
+      2
+     ]
+    },
+    "女": {
+     "s": "女",
+     "t": "女",
+     "lvl": "1",
+     "py": "nǚ",
+     "auto": "female; woman; daughter",
+     "seen": [
+      2
+     ]
+    },
+    "识": {
+     "s": "识",
+     "t": "識",
+     "lvl": "6",
+     "py": "shí",
+     "auto": "to know; knowledge",
+     "seen": [
+      2
+     ]
+    },
+    "哪": {
+     "s": "哪",
+     "t": "哪",
+     "lvl": "1",
+     "py": "nǎ",
+     "seen": [
+      3
+     ],
+     "fr": "quel",
+     "en": "which",
+     "first": 3
+    },
+    "国": {
+     "s": "国",
+     "t": "國",
+     "lvl": "1",
+     "py": "guó",
+     "seen": [
+      3
+     ],
+     "fr": "pays",
+     "en": "country",
+     "first": 3
+    },
+    "人": {
+     "s": "人",
+     "t": "人",
+     "lvl": "1",
+     "py": "rén",
+     "seen": [
+      3
+     ],
+     "fr": "personne",
+     "en": "person, people",
+     "first": 3
+    },
+    "法国": {
+     "s": "法国",
+     "t": "法國",
+     "lvl": null,
+     "py": "Fǎguó",
+     "seen": [
+      3
+     ],
+     "fr": "France",
+     "en": "France",
+     "first": 3
+    },
+    "巴黎": {
+     "s": "巴黎",
+     "t": "巴黎",
+     "lvl": null,
+     "py": "Bālí",
+     "seen": [
+      3
+     ],
+     "name": true,
+     "fr": "Paris",
+     "en": "Paris"
+    },
+    "里昂": {
+     "s": "里昂",
+     "t": "里昂",
+     "lvl": null,
+     "py": "Lǐ'áng",
+     "seen": [
+      3
+     ],
+     "name": true,
+     "fr": "Lyon",
+     "en": "Lyon"
+    },
+    "你们": {
+     "s": "你们",
+     "t": "你們",
+     "lvl": "1",
+     "py": "nǐmen",
+     "seen": [
+      3
+     ],
+     "fr": "vous (pluriel)",
+     "en": "you (plural)",
+     "first": 3
+    },
+    "北京": {
+     "s": "北京",
+     "t": "北京",
+     "lvl": null,
+     "py": "Běijīng",
+     "seen": [
+      3
+     ],
+     "name": true,
+     "fr": "Pékin",
+     "en": "Beijing"
+    },
+    "上海": {
+     "s": "上海",
+     "t": "上海",
+     "lvl": null,
+     "py": "Shànghǎi",
+     "seen": [
+      3
+     ],
+     "name": true,
+     "fr": "Shanghai",
+     "en": "Shanghai"
+    },
+    "中国": {
+     "s": "中国",
+     "t": "中國",
+     "lvl": "1",
+     "py": "Zhōngguó",
+     "seen": [
+      3
+     ],
+     "fr": "Chine",
+     "en": "China",
+     "first": 3
+    },
+    "朋友": {
+     "s": "朋友",
+     "t": "朋友",
+     "lvl": "1",
+     "py": "péngyou",
+     "seen": [
+      3
+     ],
+     "fr": "ami",
+     "en": "friend",
+     "first": 3
+    },
+    "对": {
+     "s": "对",
+     "t": "對",
+     "lvl": "1",
+     "py": "duì",
+     "seen": [
+      3
+     ],
+     "fr": "juste, c'est ça",
+     "en": "right, correct",
+     "first": 3
+    },
+    "汉语": {
+     "s": "汉语",
+     "t": "漢語",
+     "lvl": "1",
+     "py": "Hànyǔ",
+     "seen": [
+      3
+     ],
+     "fr": "chinois (la langue)",
+     "en": "Chinese (the language)",
+     "first": 3
+    },
+    "哪里": {
+     "s": "哪里",
+     "t": "哪裏",
+     "lvl": "1",
+     "py": "nǎli",
+     "seen": [
+      3
+     ],
+     "fr": "où ; (modestie) pas du tout",
+     "en": "where; (modest) not at all",
+     "first": 3
+    },
+    "中文": {
+     "s": "中文",
+     "t": "中文",
+     "lvl": "1",
+     "py": "Zhōng wén",
+     "auto": "Chinese language",
+     "seen": [
+      3
+     ]
+    },
+    "张伟": {
+     "s": "张伟",
+     "t": "張偉",
+     "lvl": null,
+     "py": "Zhāng Wěi",
+     "seen": [
+      3
+     ],
+     "name": true,
+     "fr": "Zhang Wei",
+     "en": "Zhang Wei"
+    }
+   },
+   "nhsk_total": {
+    "1": 300,
+    "2": 197,
+    "3": 493,
+    "4": 990
+   }
+  },
+  {
    "key": "wenyan",
    "zh": "文言",
    "en": "Classical",
@@ -3240,7 +7901,7 @@
    "key": "baihua",
    "zh": "白話",
    "en": "Modern prose",
-   "about": "The written language beyond the old HSK 5 (the 2,500-word level before 2021): public-domain essays and fiction, read for the literary words that textbooks stop before.",
+   "about": "The written language beyond HSK 5 (the 2012 level, 2,500 words): public-domain essays and fiction, read for the literary words that textbooks stop before.",
    "lessons": [
     {
      "id": 1,
@@ -3256,7 +7917,7 @@
       "work_s": "落花生"
      },
      "status": "draft",
-     "intro": "Xu Dishan was born in Tainan in 1894; his family left Taiwan for Fujian after the Japanese takeover the next year. He became a scholar of religion, ended his career as professor of Chinese at the University of Hong Kong, and signed his fiction 落華生, \"Peanut\". This essay was published in 1922 and has been in Chinese school readers ever since. The sentences are short and the story is a family evening, which makes it a good first step: nearly every word you don't know here is a *written* word, the layer of vocabulary that starts where the old HSK 5 stopped. Watch the five words built on 然.\n",
+     "intro": "Xu Dishan was born in Tainan in 1894; his family left Taiwan for Fujian after the Japanese takeover the next year. He became a scholar of religion, ended his career as professor of Chinese at the University of Hong Kong, and signed his fiction 落華生, \"Peanut\". This essay was published in 1922 and has been in Chinese school readers ever since. The sentences are short and the story is a family evening, which makes it a good first step: nearly every word you don't know here is a *written* word, the layer of vocabulary that starts where the HSK 5 stopped. Watch the five words built on 然.\n",
      "lines": [
       {
        "h": "我們屋後有半畝隙地。",
