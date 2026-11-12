@@ -2,81 +2,139 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
 <title>Wenyan 文言</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Serif+SC:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
+/* Always light, whatever the phone says; night is a manual switch in Settings. */
 :root{
-  --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#24201b; --ink-2:#6b6257; --rule:#d9cdb6;
-  --seal:#a8321e; --seal-soft:#a8321e1a; --hl:#e9d9a8;
+  color-scheme:only light;
+  --paper:#f6f1e7; --paper-2:#efe7d6; --card:#fbf8f1; --ink:#24201b; --ink-2:#6b6257; --rule:#d9cdb6;
+  --seal:#a8321e; --seal-soft:#a8321e1a; --hl:#e9d9a8; --ok:#3d6b4f;
   --zh:"Noto Serif TC","Noto Serif SC",serif; --en:"Source Serif 4",Georgia,serif;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#1b1916; --paper-2:#24211d; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
-    --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22;
-  }
+  --nav-h:58px;
 }
 :root[data-theme="dark"]{
-  --paper:#1b1916; --paper-2:#24211d; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
-  --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22;
+  color-scheme:only dark;
+  --paper:#1b1916; --paper-2:#24211d; --card:#211e1a; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
+  --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22; --ok:#7fb894;
 }
 html.simp{--zh:"Noto Serif SC","Noto Serif TC",serif}
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--en);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px 80px}
-header.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
-header.bar .wrap{display:flex;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
-.brand{font-family:var(--zh);font-weight:600;font-size:20px;letter-spacing:.08em}
-.brand small{font-family:var(--en);font-weight:400;font-size:13px;color:var(--ink-2);letter-spacing:0;margin-left:6px}
-.sp{flex:1}
-.toggles{display:flex;gap:6px;flex-wrap:wrap}
-.tg{font:13px var(--en);border:1px solid var(--rule);background:transparent;color:var(--ink);padding:5px 10px;border-radius:999px;cursor:pointer}
-.tg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-select.tg{appearance:none;padding-right:12px}
-.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;padding:44px 0 26px;border-bottom:1px solid var(--rule)}
-.seal{width:76px;height:76px;border:2px solid var(--seal);color:var(--seal);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;place-items:center;font:600 26px/1 var(--zh);padding:6px;transform:rotate(-2deg)}
-.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--seal)}
-h1{font:600 clamp(34px,6vw,52px)/1.1 var(--zh);margin:6px 0 4px;letter-spacing:.06em}
-.sub{color:var(--ink-2);font-style:italic}
-.intro{max-width:720px;margin:22px 0 0;color:var(--ink)}
-.meta{font-size:13px;color:var(--ink-2);margin-top:10px}
-.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid currentColor;border-radius:4px;padding:0 6px;margin-left:6px}
-h2{font:600 13px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:42px 0 14px;display:flex;align-items:center;gap:10px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+main.wrap{padding-bottom:120px;min-height:70vh}
+
+/* top bar + tabs (tabs drop to the bottom of the screen on a phone) */
+header.bar{position:sticky;top:0;z-index:6;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+header.bar .wrap{display:flex;align-items:center;gap:18px;height:54px}
+.brand{font:600 20px var(--zh);letter-spacing:.08em;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand small{font:400 13px var(--en);color:var(--ink-2);letter-spacing:0;margin-left:6px}
+nav.tabs{display:flex;gap:2px;position:fixed;z-index:8;top:0;right:max(16px,calc(50vw - 504px));height:54px;align-items:center}
+nav.tabs a{display:flex;align-items:baseline;gap:6px;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink-2);font-size:13px;position:relative}
+nav.tabs a b{font:600 17px var(--zh);color:var(--ink);letter-spacing:.04em}
+nav.tabs a[aria-current="page"]{background:var(--seal-soft);color:var(--seal)}
+nav.tabs a[aria-current="page"] b{color:var(--seal)}
+.due-dot{position:absolute;top:3px;right:2px;min-width:17px;height:17px;border-radius:9px;background:var(--seal);color:var(--paper);font:600 10px/17px var(--en);text-align:center;padding:0 4px}
+@media (max-width:720px){
+  .brand small{display:none}
+  header.bar .wrap{height:46px}
+  nav.tabs{top:auto;left:0;right:0;bottom:0;height:auto;gap:0;background:var(--paper);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom)}
+  nav.tabs a{flex:1;flex-direction:column;align-items:center;gap:0;padding:7px 2px 6px;border-radius:0;font-size:10.5px;letter-spacing:.02em;height:var(--nav-h);justify-content:center}
+  nav.tabs a[aria-current="page"]{background:transparent;box-shadow:inset 0 2px 0 var(--seal)}
+  .due-dot{top:5px;right:calc(50% - 30px)}
+}
+
+/* shared pieces */
+.kicker{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--seal)}
+h1{font:600 clamp(32px,6vw,50px)/1.1 var(--zh);margin:6px 0 4px;letter-spacing:.06em}
+h2{font:600 13px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:40px 0 14px;display:flex;align-items:center;gap:10px}
 h2::after{content:"";flex:1;height:1px;background:var(--rule)}
-.pages{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper-2)}
+.sub{color:var(--ink-2);font-style:italic}
+.btn{text-decoration:none;display:inline-block;text-align:center;border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:9px 20px;cursor:pointer;font-size:15px}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
+.btn.red{background:var(--seal);border-color:var(--seal)}
+.btn:disabled{opacity:.4;cursor:default}
+.tg{font:13px var(--en);border:1px solid var(--rule);background:transparent;color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.tg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid currentColor;border-radius:4px;padding:0 6px;margin-left:6px}
+.seal{width:76px;height:76px;border:2px solid var(--seal);color:var(--seal);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;place-items:center;font:600 26px/1 var(--zh);padding:6px;transform:rotate(-2deg);flex:none}
+.seal.one{grid-template-columns:1fr}
+.empty{border:1px dashed var(--rule);border-radius:10px;padding:22px;color:var(--ink-2);max-width:640px}
+.empty b{color:var(--ink)}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--paper-2);padding:1px 5px;border-radius:4px}
+
+/* track home */
+.thead{display:flex;gap:20px;align-items:flex-start;padding:34px 0 20px}
+.thead p{margin:6px 0 0;max-width:560px;color:var(--ink-2);font-size:15.5px}
+.next{display:flex;gap:16px;align-items:center;border:1px solid var(--rule);border-left:4px solid var(--seal);border-radius:10px;background:var(--card);padding:16px 18px;margin:6px 0 4px}
+.next .t{flex:1;min-width:0}
+.next .t .zh1{font:600 24px/1.25 var(--zh);letter-spacing:.05em}
+.next .t .te{color:var(--ink-2);font-size:14.5px}
+.prog{font-size:13px;color:var(--ink-2);margin:10px 2px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{position:relative;text-align:left;border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:12px 12px 11px;cursor:pointer;text-decoration:none;color:var(--ink);display:block;min-height:104px}
+.tile:hover{border-color:var(--ink-2)}
+.tile .n{font:600 12px var(--en);color:var(--ink-2);letter-spacing:.08em}
+.tile .z{font:600 20px/1.25 var(--zh);letter-spacing:.04em;margin:5px 0 3px}
+.tile .te{font-size:12.5px;line-height:1.3;color:var(--ink-2)}
+.tile.done{background:var(--paper-2)}
+.tile.done::after{content:"✓";position:absolute;top:9px;right:11px;color:var(--ok);font-weight:600}
+.tile.rev{border-style:dashed}
+
+/* lesson bar */
+.lbar{position:sticky;top:54px;z-index:5;background:color-mix(in srgb,var(--paper) 96%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);margin:0 -16px;padding:7px 16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lbar .ttl{flex:1;min-width:0;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lbar .ttl b{font:600 16px var(--zh);margin-left:4px}
+.ic{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:transparent;cursor:pointer;font-size:16px;line-height:1;display:grid;place-items:center;text-decoration:none;color:var(--ink);flex:none}
+.ic[aria-disabled="true"]{opacity:.3;pointer-events:none}
+.toggles{display:flex;gap:6px}
+@media (max-width:720px){.lbar{top:46px}.lbar .toggles{order:5;width:100%}}
+
+/* lesson */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;padding:36px 0 24px;border-bottom:1px solid var(--rule)}
+.intro{max-width:720px;margin:22px 0 0}
+.meta{font-size:13px;color:var(--ink-2);margin-top:10px}
+.pages{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper-2)}
 .page{padding:22px 24px}
 .page.left{border-right:1px solid var(--rule);background:var(--paper)}
-.row{display:contents}
 .ln{padding:9px 0;border-bottom:1px dashed var(--rule);min-height:64px}
 .ln:last-child{border-bottom:0}
+.ln.p:not(:first-child){border-top:1px solid var(--rule);margin-top:-1px;padding-top:18px}
 .zh{font:400 26px/1.5 var(--zh);letter-spacing:.06em}
+.prose .zh{font-size:22px;line-height:1.65;letter-spacing:.03em}
 .py{font-size:14px;color:var(--ink-2);font-style:italic;margin-top:2px}
 .en{font-size:16px}
 .lit{font-size:13px;color:var(--ink-2);margin-top:2px}
 html.nopy .py{display:none}
-html.cover .page.right .ln > *{filter:blur(6px);opacity:.5;transition:.2s}
-html.cover .page.right .ln:hover > *, html.cover .page.right .ln.peek > *{filter:none;opacity:1}
-.w{cursor:pointer;border-radius:3px;transition:background .15s}
+html.cover .page.right .ln > *,html.cover .en-inline,html.cover .cy .mean{filter:blur(6px);opacity:.5;transition:.2s}
+html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline,html.cover .cy.peek .mean{filter:none;opacity:1}
+.w{cursor:pointer;border-radius:3px;transition:background .15s;text-decoration:underline dotted var(--rule);text-underline-offset:6px}
 .w:hover,.w.on{background:var(--hl)}
-sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super}
+sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super;padding:0 2px;border-radius:3px}
+sup.nn.on{background:var(--seal);color:var(--paper)}
 .notes{columns:2 340px;column-gap:34px}
 .note{break-inside:avoid;margin:0 0 18px;padding-left:34px;position:relative}
-.note .num{position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 12px/24px var(--en);text-align:center}
+.num{width:24px;height:24px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 12px/24px var(--en);text-align:center;display:inline-block;flex:none}
+.note > .num{position:absolute;left:0;top:2px}
 .note .at{font-family:var(--zh);font-size:18px;margin-right:4px}
-.note.flash{animation:fl 1.2s}
+.note.flash{animation:fl 1.6s}
 @keyframes fl{0%{background:var(--hl)}100%{background:transparent}}
 .note p{margin:0}
 .gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
-.g{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline;background:var(--paper)}
+.g{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline;background:var(--card)}
 .g .c{font:600 24px/1.2 var(--zh);grid-row:span 2}
 .g .p{font-size:13px;color:var(--ink-2);font-style:italic}
 .g .d{font-size:14px;line-height:1.35}
 .g .sw{grid-column:1/-1;font:13px var(--zh);color:var(--ink-2);border-top:1px dotted var(--rule);padding-top:4px;margin-top:4px}
-.g .sw b{font-family:var(--en);font-weight:600;font-size:11px;letter-spacing:.06em;color:var(--seal);margin-right:6px}
-.ex{counter-reset:ex;display:grid;gap:10px}
+.g .sw b{font:600 11px var(--en);letter-spacing:.06em;color:var(--seal);margin-right:6px}
+.ex{display:grid;gap:10px}
 .e{border-left:3px solid var(--seal);padding:8px 0 8px 16px}
 .e .zh{font-size:22px}
 .e .src{font-size:12px;color:var(--ink-2);letter-spacing:.04em}
@@ -85,237 +143,407 @@ sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;
 .e .tests{font-size:13px;color:var(--ink-2)}
 .culture{max-width:760px;font-size:16px;background:var(--paper-2);border-radius:10px;padding:18px 22px}
 .recap{display:grid;gap:14px}
-.rc{display:grid;grid-template-columns:34px 1fr;gap:14px;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;background:var(--paper)}
-.rn{width:30px;height:30px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 14px/30px var(--en);text-align:center}
+.rc{display:grid;grid-template-columns:34px 1fr;gap:14px;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;background:var(--card)}
+.rc .num{width:30px;height:30px;line-height:30px;font-size:14px}
 .rc h3{margin:2px 0 6px;font:600 17px var(--en)}
 .rc p{margin:0 0 10px;font-size:15.5px}
 .rx{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
 .rx span{font:20px/1.4 var(--zh);letter-spacing:.04em}
 .refs{display:flex;flex-wrap:wrap;gap:6px}
-.ref{font:12px var(--en);color:var(--seal);background:var(--seal-soft);border:0;border-radius:999px;padding:3px 10px;cursor:pointer}
+.ref{font:12px var(--en);color:var(--seal);background:var(--seal-soft);border:0;border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+p .ref,.nb .ref{padding:1px 8px}
+.finish{margin-top:44px;border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:18px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.finish .msg{flex:1;min-width:200px;font-size:15px}
+.finish .msg small{display:block;color:var(--ink-2)}
+.en-inline{display:none;font-size:15px;margin-top:4px}
+footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
+@media (max-width:720px){
+  .pages{grid-template-columns:1fr}
+  .page.left{border-right:0}
+  .page{padding:12px 16px}
+  .page.right{display:none}
+  .en-inline{display:block}
+  .hero{grid-template-columns:1fr;gap:14px;padding-top:24px}
+  .seal{width:60px;height:60px;font-size:20px}
+  .zh{font-size:23px}
+  .prose .zh{font-size:20px}
+  .thead{padding-top:22px;gap:14px}
+  .thead .seal{margin-top:6px}
+}
+
+/* 成語 lesson */
+.frames{display:flex;flex-wrap:wrap;gap:8px}
+.frame{border:1px solid var(--rule);border-radius:8px;padding:6px 12px;background:var(--card);font-size:14px}
+.frame b{font:600 18px var(--zh);margin-right:8px}
+.cys{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+.cy{border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:14px 16px}
+.cy .hw{font:600 27px/1.3 var(--zh);letter-spacing:.08em}
+.cy .lit{font-size:13px}
+.cy .mean{font-size:16px;margin-top:6px}
+.cy .nt,.cy .or,.cy .xs{font-size:14px;margin-top:8px;padding-top:8px;border-top:1px dotted var(--rule)}
+.cy .or .zh,.cy .xs .zh{font-size:17px;letter-spacing:.02em}
+.cy .lab{font:600 11px var(--en);letter-spacing:.08em;text-transform:uppercase;color:var(--seal);margin-right:6px}
+.auto{font:600 9px var(--en);letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);border-radius:3px;padding:0 3px;margin-left:5px;vertical-align:middle}
+
+/* review */
+.rv{max-width:560px;margin:0 auto;padding-top:28px}
+.rvtop{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-2);margin-bottom:10px}
+.fc{border:1px solid var(--rule);border-radius:14px;background:var(--card);padding:30px 22px 24px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center}
+.fc .big{font:600 clamp(40px,11vw,60px)/1.2 var(--zh);letter-spacing:.08em}
+.fc .ctx{font:400 19px/1.6 var(--zh);color:var(--ink-2);margin-top:16px}
+.fc .ctx mark{background:var(--hl);color:var(--ink);border-radius:3px;padding:0 2px}
+.fc .back{margin-top:18px;padding-top:16px;border-top:1px dashed var(--rule)}
+.fc .back .p{font-style:italic;color:var(--ink-2)}
+.fc .back .d{font-size:18px;margin-top:2px}
+.fc .from{font-size:12px;color:var(--ink-2);margin-top:12px}
+.fc .from a{color:var(--seal)}
+.rvbtn{display:flex;gap:10px;margin-top:14px}
+.rvbtn .btn{flex:1;padding:13px}
+.boxes{display:flex;gap:6px;margin-top:8px}
+.boxes div{flex:1;border:1px solid var(--rule);border-radius:8px;padding:8px 4px;text-align:center;font-size:12px;color:var(--ink-2);background:var(--card)}
+.boxes b{display:block;font:600 20px var(--en);color:var(--ink)}
+.missed{font:20px/1.8 var(--zh);letter-spacing:.06em}
+
+/* settings */
+.set{max-width:620px;padding-top:26px}
+.row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule)}
+.row .l{flex:1}
+.row .l small{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.4}
+
+/* pop-up */
 #pop{position:fixed;z-index:20;max-width:300px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 8px 28px #0004;display:none}
 #pop .c{font:600 26px var(--zh)}
 #pop .p{font-style:italic;opacity:.75;margin-left:8px}
 #pop .sw{font-family:var(--zh);opacity:.8;margin-top:6px;font-size:13px}
 #pop.note-pop{max-width:min(420px,calc(100vw - 16px));max-height:60vh;overflow:auto;padding:14px 16px;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--seal)}
 #pop .nh{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-#pop .nh .num{width:24px;height:24px;border-radius:50%;background:var(--seal-soft);color:var(--seal);font:600 12px/24px var(--en);text-align:center}
 #pop .nh .c{font-size:22px}
 #pop .nb{font-size:15px;line-height:1.5}
 #pop .goto{margin-top:10px;font:13px var(--en);color:var(--seal);background:none;border:0;padding:0;cursor:pointer}
-sup.nn{padding:0 2px;border-radius:3px}
-sup.nn.on{background:var(--seal);color:var(--paper)}
-footer{margin-top:60px;font-size:12px;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
-@media (max-width:720px){
-  .pages{grid-template-columns:1fr}
-  .page.left{border-right:0}
-  .page{padding:14px 16px}
-  .page.right{display:none}
-  .brand small{display:none}
-  .tg{padding:5px 8px}
-  .ln .en-inline{display:block}
-  .hero{grid-template-columns:1fr;padding-top:28px}
-  .seal{width:60px;height:60px;font-size:20px}
-  .zh{font-size:23px}
-}
-.en-inline{display:none;font-size:15px;margin-top:4px}
-html.cover .en-inline{filter:blur(6px);opacity:.5}
-html.cover .ln.peek .en-inline{filter:none;opacity:1}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 <header class="bar"><div class="wrap">
-  <div class="brand">文言<small>Wenyan</small></div>
-  <div class="sp"></div>
-  <div class="toggles">
-    <select class="tg" id="lesson" aria-label="Lesson"></select>
-    <button class="tg" id="tScript" aria-pressed="false" title="Traditional / simplified">繁 → 简</button>
-    <button class="tg" id="tPy" aria-pressed="true">Pinyin</button>
-    <button class="tg" id="tCover" aria-pressed="false" title="Hide the translation; hover or tap a line to peek">Cover</button>
-  </div>
+  <a class="brand" href="#wenyan">文言<small>Wenyan</small></a>
 </div></header>
+<nav class="tabs" id="tabs" aria-label="Sections"></nav>
 <main class="wrap" id="app"></main>
 <div id="pop" role="tooltip"></div>
 <script id="course-data" type="application/json"></script>
 <script>
 (() => {
-  const $ = s => document.querySelector(s);
-  const H = document.documentElement;
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const H = document.documentElement, app = $("#app"), pop = $("#pop");
   const store = {
-    get(k, d){ try{ const v = localStorage.getItem("wy."+k); return v===null?d:JSON.parse(v);}catch(e){return d;} },
-    set(k, v){ try{ localStorage.setItem("wy."+k, JSON.stringify(v)); }catch(e){} }
+    get(k, d){ try{ const v = localStorage.getItem("wy." + k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
+    set(k, v){ try{ localStorage.setItem("wy." + k, JSON.stringify(v)); }catch(e){} }
   };
-  let course, L, simp = store.get("simp", false), py = store.get("py", true), cover = store.get("cover", false);
-  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  const md = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>");
-  const Z = (o, k) => simp && o[k + "_s"] ? o[k + "_s"] : o[k];
+  const esc = t => String(t ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const REF = /(?:(文言|白話) )?L(\d+) n\.(\d+)/g, TRACK_OF = {"文言": "wenyan", "白話": "baihua"};
+  // **bold**, *italic*, and cross-references (L3 n.5 · 文言 L1 n.4) as buttons.
+  const md = (t, own) => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>")
+    .replace(REF, (m, tr, l, n) => `<button class="ref" data-to="${TRACK_OF[tr] || own}/${l}/n${n}">${m}</button>`);
+  const today = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const addDays = n => { const d = new Date(); d.setDate(d.getDate() + n); return today(d); };
+  const STEPS = [1, 3, 7, 16, 35];   // Leitner: days until the next review, per box
 
-  function apply(){
+  let course, T, L, session = null;
+  let simp = store.get("simp", false), py = store.get("py", true), cover = store.get("cover", false);
+  let done = store.get("done", {}), deck = store.get("deck", {});
+  const Z = (o, k) => simp && o[k + "_s"] ? o[k + "_s"] : o[k];
+  const track = k => course.tracks.find(t => t.key === k);
+  const isDone = (t, l) => !!done[t.key + ":" + l.id];
+  const dueIds = () => Object.keys(deck).filter(id => deck[id].due <= today());
+
+  /* ---------- routing ---------- */
+  // Every route maps to a tab here, so a redrawn tab bar keeps its highlight.
+  const TABS = [["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
+                ["review", "溫習", "Review"], ["settings", "設定", "Settings"]];
+  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "wenyan"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
+  function drawTabs(tab){
+    const due = dueIds().length;
+    $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}${k === "review" && due ? `<span class="due-dot">${due}</span>` : ""}</a>`).join("");
+  }
+  function go(){
+    hidePop();
+    const r = route();
     H.classList.toggle("simp", simp); H.classList.toggle("nopy", !py); H.classList.toggle("cover", cover);
-    $("#tScript").setAttribute("aria-pressed", simp); $("#tScript").textContent = simp ? "简 → 繁" : "繁 → 简";
-    $("#tPy").setAttribute("aria-pressed", py); $("#tCover").setAttribute("aria-pressed", cover);
+    H.dataset.theme = store.get("night", false) ? "dark" : "light";
+    drawTabs(r.tab); L = null;
+    if (r.tab !== "review") session = null;
+    if (r.tab === "review") return review();
+    if (r.tab === "settings") return settings();
+    store.set("tab", r.tab);
+    T = track(r.tab); L = r.id ? T.lessons.find(l => l.id === r.id) : null;
+    if (!L) return home();
+    lesson();
+    if (r.note){ const n = $("#" + r.note); if (n){ n.scrollIntoView({block: "center"}); n.classList.add("flash"); } }
+    else scrollTo(0, 0);
   }
 
+  /* ---------- track home ---------- */
+  const sealHTML = (t, cls = "") => { const cs = [...t].filter(c => /\p{Script=Han}/u.test(c)).slice(0, 4); return `<div class="seal ${cs.length < 2 ? "one" : ""} ${cls}" aria-hidden="true">${cs.map(c => `<span>${esc(c)}</span>`).join("")}</div>`; };
+  function home(){
+    const ls = T.lessons, nDone = ls.filter(l => isDone(T, l)).length, next = ls.find(l => !isDone(T, l));
+    let body;
+    if (!ls.length) body = `<div class="empty"><b>No ${esc(T.zh)} lessons in this build yet.</b><br>
+      The tab is ready: put the lesson files in <code>${T.key === "wenyan" ? "lessons" : T.key}/</code> and run <code>python3 tools/build.py</code>.</div>`;
+    else body = `
+      ${next ? `<div class="next"><div class="t"><div class="kicker">${nDone ? "Next lesson" : "Start here"} · ${next.id}</div>
+          <div class="zh1">${esc(Z(next, "title"))}</div><div class="te">${esc(next.title_en)}</div></div>
+          <a class="btn red" href="#${T.key}/${next.id}">${nDone ? "Continue" : "Start"}</a></div>`
+        : `<div class="next"><div class="t"><div class="kicker">All done</div><div class="te">Every lesson written so far is marked as done.</div></div></div>`}
+      <div class="prog">${nDone} of ${ls.length} done</div>
+      <h2>Lessons</h2>
+      <div class="grid">${ls.map(l => `<a class="tile ${isDone(T, l) ? "done" : ""} ${l.kind === "review" ? "rev" : ""}" href="#${T.key}/${l.id}">
+        <div class="n">${l.id}${l.kind === "review" ? " · REVIEW" : ""}</div><div class="z">${esc(Z(l, "title"))}</div><div class="te">${esc(l.title_en)}</div></a>`).join("")}</div>`;
+    app.innerHTML = `<section class="thead">${sealHTML(T.zh)}<div><div class="kicker">${esc(T.en)}</div><h1>${esc(T.zh)}</h1><p>${esc(T.about)}</p></div></section>${body}
+      <footer>Course content CC BY-SA 4.0 · code MIT · classical and pre-1950s texts are in the public domain.</footer>`;
+    scrollTo(0, 0);
+  }
+
+  /* ---------- lesson ---------- */
+  function bar(){
+    const i = T.lessons.indexOf(L), p = T.lessons[i - 1], n = T.lessons[i + 1], reading = T.key !== "chengyu" && L.kind !== "review";
+    return `<div class="lbar">
+      <a class="ic" href="#${T.key}" aria-label="Back to ${esc(T.en)} lessons">←</a>
+      <div class="ttl">${esc(T.zh)} ${L.id} ·<b>${esc(Z(L, "title"))}</b></div>
+      <a class="ic" id="prev" ${p ? `href="#${T.key}/${p.id}"` : 'aria-disabled="true"'} aria-label="Previous lesson">‹</a>
+      <a class="ic" id="next" ${n ? `href="#${T.key}/${n.id}"` : 'aria-disabled="true"'} aria-label="Next lesson">›</a>
+      <div class="toggles">
+        <button class="tg" id="tScript" aria-pressed="${simp}" title="Traditional / simplified">${simp ? "简 → 繁" : "繁 → 简"}</button>
+        ${T.key === "wenyan" || T.key === "chengyu" ? `<button class="tg" id="tPy" aria-pressed="${py}">Pinyin</button>` : ""}
+        ${reading || T.key === "chengyu" ? `<button class="tg" id="tCover" aria-pressed="${cover}" title="Hide the English; tap a line to check">Cover</button>` : ""}
+      </div></div>`;
+  }
+  function finish(){
+    const d = done[T.key + ":" + L.id], i = T.lessons.indexOf(L), n = T.lessons[i + 1];
+    const words = cardsOf(T, L).length;
+    return `<div class="finish"><div class="msg">${d ? `<b>Done</b> on ${esc(d)}.<small>${words ? `${words} words are in your review deck.` : ""}</small>`
+        : `<b>Finished reading?</b><small>${words ? `Marking it done adds its ${words} words to Review.` : "Mark it done to move on."}</small>`}</div>
+      ${d ? `<button class="btn ghost" id="undo">Undo</button>` : `<button class="btn red" id="markdone">Mark as done</button>`}
+      ${n ? `<a class="btn ghost" href="#${T.key}/${n.id}">Next lesson ›</a>` : ""}</div>`;
+  }
   // Mark glossary words (longest match first) and note anchors in a line.
   function markLine(line, i){
     const t = Z(line, "h");
     const words = L.glossary.map((g, gi) => ({w: Z(g, "w"), gi})).sort((a, b) => b.w.length - a.w.length);
-    const ends = {}; // char index -> note numbers placed after it
-    L.notes.filter(n => n.line === i).forEach(n => {
-      const at = Z(n, "at"), p = t.indexOf(at);
-      if (p >= 0) (ends[p + at.length - 1] ||= []).push(n.n);
-    });
+    const ends = {};
+    L.notes.filter(n => n.line === i).forEach(n => { const at = Z(n, "at"), p = t.indexOf(at); if (p >= 0) (ends[p + at.length - 1] ||= []).push(n.n); });
     let out = "", k = 0;
     while (k < t.length){
-      const m = words.find(x => t.startsWith(x.w, k));
-      const len = m ? m.w.length : 1;
-      const seg = t.slice(k, k + len);
+      const m = words.find(x => t.startsWith(x.w, k)), len = m ? m.w.length : 1, seg = t.slice(k, k + len);
       out += m ? `<span class="w" data-g="${m.gi}">${esc(seg)}</span>` : esc(seg);
       for (let j = k; j < k + len; j++) if (ends[j]) out += ends[j].map(n => `<sup class="nn" data-n="${n}">${n}</sup>`).join("");
       k += len;
     }
     return out;
   }
+  const exerciseHTML = title => L.exercise ? `<h2>${title}</h2><div class="ex">${L.exercise.map(e => `
+    <div class="e"><div class="zh">${esc(Z(e, "h"))}</div>${e.py ? `<div class="py">${esc(e.py)}</div>` : ""}
+    <div class="src">${esc(e.src)}${e.to ? ` · <button class="ref" data-to="${e.to.track}/${e.to.id}">open</button>` : ""}</div>
+    <details><summary>Answer</summary><p>${esc(e.en)}</p>${e.tests ? `<p class="tests">Practises: ${esc(e.tests)}</p>` : ""}</details></div>`).join("")}</div>` : "";
 
-  const exerciseHTML = () => L.exercise ? `<h2>Exercise · translate</h2><div class="ex">${L.exercise.map(e => `
-        <div class="e"><div class="zh">${esc(Z(e, "h"))}</div><div class="py">${esc(e.py)}</div>
-        <div class="src">${esc(e.src)}</div>
-        <details><summary>Answer</summary><p>${esc(e.en)}</p><p class="tests">Practises: ${esc(e.tests || "")}</p></details></div>`).join("")}</div>` : "";
-
-  function renderReview(seal){
-    $("#app").innerHTML = `
-      <section class="hero">
-        <div class="seal" aria-hidden="true">${seal}</div>
-        <div>
-          <div class="kicker">Lesson ${L.id} · Review</div>
-          <h1>${esc(Z(L, "title"))}</h1>
-          <div class="sub">${esc(L.title_py)} — ${esc(L.title_en)}</div>
-        </div>
-      </section>
-      <p class="intro">${md(L.intro)}</p>
-      <div class="meta"><span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
-      <h2>What you've learned</h2>
-      <div class="recap">${L.recap.map((r, i) => `
-        <div class="rc"><div class="rn">${i + 1}</div><div>
-          <h3>${md(r.topic)}</h3><p>${md(r.text)}</p>
+  function lesson(){
+    if (T.key === "chengyu") return chengyuLesson();
+    const hero = (k, extra = "") => `<section class="hero">${sealHTML(Z(L, "title"))}<div><div class="kicker">${k}</div>
+      <h1>${esc(Z(L, "title"))}</h1><div class="sub">${esc(L.title_py || "")}${L.title_py ? " — " : ""}${esc(L.title_en)}</div></div></section>
+      ${L.intro ? `<p class="intro">${md(L.intro, T.key)}</p>` : ""}<div class="meta">${extra}<span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>`;
+    if (L.kind === "review"){
+      app.innerHTML = bar() + hero(`Lesson ${L.id} · Review`) + `<h2>What you've learned</h2>
+        <div class="recap">${L.recap.map((r, i) => `<div class="rc"><span class="num">${i + 1}</span><div>
+          <h3>${md(r.topic, T.key)}</h3><p>${md(r.text, T.key)}</p>
           ${r.examples ? `<div class="rx">${(simp ? r.examples_s : r.examples).map(x => `<span>${esc(x)}</span>`).join("")}</div>` : ""}
-          <div class="refs">${(r.refs || []).map(x => `<button class="ref" data-ref="${esc(x)}">${esc(x)}</button>`).join("")}</div>
-        </div></div>`).join("")}</div>
-      ${exerciseHTML()}
-      <footer>Exercise texts: public domain. Course content CC BY-SA 4.0.</footer>`;
-  }
-
-  function goRef(ref){
-    const m = /^L(\d+) n\.(\d+)$/.exec(ref); if (!m) return;
-    const idx = course.lessons.findIndex(l => l.id === +m[1]); if (idx < 0) return;
-    L = course.lessons[idx]; $("#lesson").value = idx; store.set("lesson", idx); render();
-    const n = $("#n" + m[2]); if (!n) return;
-    n.scrollIntoView({block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash");
-  }
-
-  function render(){
-    const seal = [...L.title_s && simp ? L.title_s : L.title].slice(0, 4).map(c => `<span>${esc(c)}</span>`).join("");
-    if (L.kind === "review") return renderReview(seal);
-    const lines = L.lines;
-    $("#app").innerHTML = `
-      <section class="hero">
-        <div class="seal" aria-hidden="true">${seal}</div>
-        <div>
-          <div class="kicker">Lesson ${L.id} · ${esc(simp && L.source.work_s ? L.source.work_s : L.source.work)}</div>
-          <h1>${esc(Z(L, "title"))}</h1>
-          <div class="sub">${esc(L.title_py)} — ${esc(L.title_en)}</div>
-        </div>
-      </section>
-      <p class="intro">${md(L.intro)}</p>
-      <div class="meta">${esc(L.source.author)} · ${esc(L.source.period)}<span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
-
+          <div class="refs">${(r.refs || []).map(x => md(x, T.key)).join("")}</div></div></div>`).join("")}</div>
+        ${exerciseHTML("Exercise · translate")}${finish()}<footer>Exercise texts: public domain. Course content CC BY-SA 4.0.</footer>`;
+      return;
+    }
+    const prose = T.key === "baihua";
+    app.innerHTML = bar() + hero(`Lesson ${L.id} · ${esc(prose ? L.source.author : Z(L.source, "work"))}`, `${esc(prose ? Z(L.source, "work") : L.source.author)} · ${esc(L.source.period)}`) + `
       <h2>Text</h2>
-      <div class="pages">
-        <div class="page left">${lines.map((l, i) => `
-          <div class="ln" data-i="${i}"><div class="zh">${markLine(l, i)}</div><div class="py">${esc(l.py)}</div>
-          <div class="en-inline">${esc(l.en)}</div></div>`).join("")}</div>
-        <div class="page right">${lines.map((l, i) => `
-          <div class="ln" data-i="${i}"><div class="en">${esc(l.en)}</div>${l.lit ? `<div class="lit">lit. ${esc(l.lit)}</div>` : ""}</div>`).join("")}</div>
+      <div class="pages ${prose ? "prose" : ""}">
+        <div class="page left">${L.lines.map((l, i) => `<div class="ln ${l.p ? "p" : ""}" data-i="${i}"><div class="zh">${markLine(l, i)}</div>
+          ${l.py ? `<div class="py">${esc(l.py)}</div>` : ""}<div class="en-inline">${esc(l.en)}</div></div>`).join("")}</div>
+        <div class="page right">${L.lines.map((l, i) => `<div class="ln ${l.p ? "p" : ""}" data-i="${i}"><div class="en">${esc(l.en)}</div>
+          ${l.lit ? `<div class="lit">lit. ${esc(l.lit)}</div>` : ""}</div>`).join("")}</div>
       </div>
-
       <h2>Notes</h2>
-      <div class="notes">${L.notes.map(n => `
-        <div class="note" id="n${n.n}"><span class="num">${n.n}</span><p><span class="at">${esc(Z(n, "at"))}</span>${md(n.text)}</p></div>`).join("")}</div>
-
-      <h2>Glossary</h2>
-      <div class="gl">${L.glossary.map(g => `
-        <div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><span class="d">${esc(g.en)}</span>
+      <div class="notes">${L.notes.map(n => `<div class="note" id="n${n.n}"><span class="num">${n.n}</span><p><span class="at">${esc(Z(n, "at"))}</span>${md(n.text, T.key)}</p></div>`).join("")}</div>
+      <h2>${prose ? "Words beyond HSK 5" : "Glossary"}</h2>
+      <div class="gl">${L.glossary.map(g => `<div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><span class="d">${esc(g.en)}</span>
         ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>
-
-      ${exerciseHTML()}
-
-      ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture)}</div>` : ""}
+      ${exerciseHTML(prose ? "Roots · the classical sentences behind these words" : "Exercise · translate")}
+      ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture, T.key)}</div>` : ""}
+      ${finish()}
       <footer>Text: public domain (${esc(L.source.text_from)}). Course content CC BY-SA 4.0.</footer>`;
     syncHeights();
   }
-
+  function chengyuLesson(){
+    const ex = x => x ? `<div class="xs"><span class="lab">Example</span><span class="zh">${esc(x.h)}</span>
+      ${x.py ? `<div class="py">${esc(x.py)}${x.py_auto ? '<span class="auto" title="Generated pinyin, not yet checked by hand">AUTO</span>' : ""}</div>` : ""}
+      <div class="mean">${esc(x.en)}</div><div class="lit">${esc(x.src)}</div></div>` : "";
+    app.innerHTML = bar() + `<section class="hero">${sealHTML(Z(L, "title"))}<div><div class="kicker">成語 · Lesson ${L.id}</div>
+        <h1>${esc(Z(L, "title"))}</h1><div class="sub">${esc(L.title_en)}</div></div></section>
+      ${L.intro ? `<p class="intro">${md(L.intro, T.key)}</p>` : ""}<div class="meta"><span class="badge">${esc(L.status)}</span></div>
+      ${L.frames?.length ? `<h2>Patterns</h2><div class="frames">${L.frames.map(f => `<div class="frame"><b>${esc(f.f)}</b>${esc(f.en)}</div>`).join("")}</div>` : ""}
+      <h2>${L.items.length} 成語</h2>
+      <div class="cys">${L.items.map(it => `<div class="cy"><div class="hw">${esc(Z(it, "w"))}</div>
+        <div class="py">${esc(it.py)}${it.py_tw ? ` · TW ${esc(it.py_tw)}` : ""}</div>${it.lit ? `<div class="lit">${esc(it.lit)}</div>` : ""}
+        <div class="mean">${esc(it.en)}</div>
+        ${it.note ? `<div class="nt">${md(it.note, "wenyan")}</div>` : ""}
+        ${it.origin ? `<div class="or"><span class="lab">Origin</span>${esc(it.origin.work)}${it.origin.text ? `<div class="zh">${esc(it.origin.text)}</div>` : ""}</div>` : ""}
+        ${ex(it.ex)}</div>`).join("")}</div>
+      ${finish()}<footer>Examples: Tatoeba (CC BY 2.0 FR), Chinese Wikipedia (CC BY-SA). Course content CC BY-SA 4.0.</footer>`;
+  }
   // Keep left/right lines aligned on wide screens.
   function syncHeights(){
-    const left = document.querySelectorAll(".page.left .ln"), right = document.querySelectorAll(".page.right .ln");
+    const left = $$(".page.left .ln"), right = $$(".page.right .ln");
     left.forEach((l, i) => { l.style.minHeight = ""; right[i].style.minHeight = ""; });
     if (innerWidth <= 720) return;
     left.forEach((l, i) => { const h = Math.max(l.offsetHeight, right[i].offsetHeight); l.style.minHeight = right[i].style.minHeight = h + "px"; });
   }
 
-  const pop = $("#pop");
-  function showPop(el){
-    const g = L.glossary[+el.dataset.g];
-    document.querySelectorAll(".w.on").forEach(x => x.classList.remove("on"));
-    el.classList.add("on");
-    pop.className = "";
-    pop.innerHTML = `<span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><div>${esc(g.en)}</div>${g.sw ? `<div class="sw">說文：${esc(g.sw)}</div>` : ""}`;
-    place(el);
-  }
+  /* ---------- pop-ups ---------- */
+  let popY = 0;
   function place(el){
-    pop.style.display = "block";
+    pop.style.display = "block"; popY = scrollY;
     const r = el.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
     pop.style.left = Math.max(8, Math.min(innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) + "px";
     pop.style.top = Math.max(8, r.bottom + 8 + ph > innerHeight ? r.top - ph - 8 : r.bottom + 8) + "px";
   }
-  function showNote(el){
-    const n = L.notes.find(x => x.n === +el.dataset.n);
-    document.querySelectorAll(".w.on,sup.nn.on").forEach(x => x.classList.remove("on"));
-    el.classList.add("on");
-    pop.className = "note-pop";
-    pop.innerHTML = `<div class="nh"><span class="num">${n.n}</span><span class="c">${esc(Z(n, "at"))}</span></div>
-      <div class="nb">${md(n.text)}</div><button class="goto" data-n="${n.n}">All notes ↓</button>`;
+  function showWord(el){
+    const g = L.glossary[+el.dataset.g];
+    $$(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); el.classList.add("on");
+    pop.className = "";
+    pop.innerHTML = `<span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><div>${esc(g.en)}</div>${g.sw ? `<div class="sw">說文：${esc(g.sw)}</div>` : ""}`;
     place(el);
   }
-  function hidePop(){ pop.style.display = "none"; pop.className = ""; document.querySelectorAll(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); }
+  function showNote(el){
+    const n = L.notes.find(x => x.n === +el.dataset.n);
+    $$(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); el.classList.add("on");
+    pop.className = "note-pop";
+    pop.innerHTML = `<div class="nh"><span class="num">${n.n}</span><span class="c">${esc(Z(n, "at"))}</span></div>
+      <div class="nb">${md(n.text, T.key)}</div><button class="goto" data-n="${n.n}">All notes ↓</button>`;
+    place(el);
+  }
+  function hidePop(){ pop.style.display = "none"; pop.className = ""; $$(".w.on,sup.nn.on").forEach(x => x.classList.remove("on")); }
+  function flash(n){ if (!n) return; n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); }
 
+  /* ---------- review deck ---------- */
+  // One card per glossary word (or 成語), shown in the sentence it was met in.
+  function cardsOf(t, l){
+    if (t.key === "chengyu") return (l.items || []).map(it => ({id: `${t.key}:${l.id}:${it.w}`, t, l, w: it, py: it.py, en: it.en, ctx: it.ex && it.ex.h}));
+    return (l.glossary || []).map(g => ({id: `${t.key}:${l.id}:${g.w}`, t, l, w: g, py: g.py, en: g.en, sw: g.sw, line: l.lines.find(x => x.h.includes(g.w))}));
+  }
+  const allCards = () => Object.fromEntries(course.tracks.flatMap(t => t.lessons.flatMap(l => cardsOf(t, l))).map(c => [c.id, c]));
+  function saveDeck(){ store.set("deck", deck); store.set("done", done); }
+  function review(){
+    const cards = allCards(), due = dueIds().filter(id => cards[id]), total = Object.keys(deck).filter(id => cards[id]).length;
+    if (!session){
+      const boxes = [0, 0, 0, 0, 0]; Object.keys(deck).forEach(id => { if (cards[id]) boxes[deck[id].b]++; });
+      app.innerHTML = `<div class="rv"><div class="kicker">Review</div><h1>溫習</h1>
+        ${total ? `<p>${due.length ? `<b>${due.length}</b> of your ${total} words are due today.` : `Nothing due today. ${total} words are in the deck.`}</p>
+          <button class="btn red" id="startrv" ${due.length ? "" : "disabled"}>Review ${due.length || ""} due</button>
+          <h2>Deck</h2><div class="boxes">${boxes.map((n, i) => `<div><b>${n}</b>${STEPS[i]} d</div>`).join("")}</div>
+          <p class="prog">A word you know moves one box to the right and comes back after that many days; a word you miss goes back to the first box.</p>`
+        : `<div class="empty"><b>Your deck is empty.</b><br>Mark a lesson as done and its words come here, each shown in the sentence where you met it.</div>`}</div>`;
+      scrollTo(0, 0); return;
+    }
+    const s = session;
+    if (!s.q.length){
+      app.innerHTML = `<div class="rv"><div class="kicker">Review done</div><h1>${s.first} / ${s.n}</h1><p>remembered the first time.</p>
+        ${s.missed.length ? `<h2>Missed</h2><div class="missed">${[...new Set(s.missed)].map(id => esc(Z(cards[id].w, "w"))).join("　")}</div>` : ""}
+        <p style="margin-top:22px"><a class="btn" href="#${store.get("tab", "wenyan")}">Back to lessons</a></p></div>`;
+      session = null; drawTabs("review"); return;
+    }
+    const c = cards[s.q[0]], word = Z(c.w, "w");
+    let ctx = c.line ? Z(c.line, "h") : c.ctx || "";
+    ctx = ctx ? esc(ctx).replace(esc(word), `<mark>${esc(word)}</mark>`) : "";
+    app.innerHTML = `<div class="rv"><div class="rvtop"><span>${s.n - new Set(s.q).size} / ${s.n}</span><span>${esc(c.t.zh)} ${c.l.id} · ${esc(Z(c.l, "title"))}</span></div>
+      <div class="fc"><div class="big">${esc(word)}</div>${ctx ? `<div class="ctx">${ctx}</div>` : ""}
+        ${s.shown ? `<div class="back"><div class="p">${esc(c.py)}</div><div class="d">${esc(c.en)}</div>
+          ${c.line && c.line.en ? `<div class="from">${esc(c.line.en)}</div>` : ""}
+          <div class="from"><a href="#${c.t.key}/${c.l.id}">Open the lesson</a></div></div>` : ""}</div>
+      <div class="rvbtn">${s.shown ? `<button class="btn ghost" id="again">Again <small>1</small></button><button class="btn red" id="got">Got it <small>2</small></button>`
+        : `<button class="btn" id="show">Show <small>space</small></button>`}</div></div>`;
+  }
+  function answer(ok){
+    const s = session, id = s.q.shift(), d = deck[id];
+    if (ok){ if (!s.missed.includes(id)) s.first++; d.due = addDays(STEPS[d.b]); d.b = Math.min(d.b + 1, STEPS.length - 1); }
+    else { s.missed.push(id); d.b = 0; d.due = today(); s.q.push(id); }
+    s.shown = false; saveDeck(); review();
+  }
+
+  /* ---------- settings ---------- */
+  function settings(){
+    const sw = (id, on) => `<button class="tg" id="${id}" aria-pressed="${on}">${on ? "On" : "Off"}</button>`;
+    app.innerHTML = `<div class="set"><div class="kicker">Settings</div><h1>設定</h1>
+      <div class="row"><div class="l">Simplified characters<small>The course is written in traditional characters; simplified is derived from it.</small></div>${sw("sSimp", simp)}</div>
+      <div class="row"><div class="l">Pinyin under each line<small>文言 and 成語. In 白話 lessons, tap a word to see its reading.</small></div>${sw("sPy", py)}</div>
+      <div class="row"><div class="l">Cover the English<small>Read the Chinese first; tap a line to check yourself.</small></div>${sw("sCover", cover)}</div>
+      <div class="row"><div class="l">Night mode<small>The app stays light unless you switch this on.</small></div>${sw("sNight", store.get("night", false))}</div>
+      <h2>Progress</h2>
+      <div class="row"><div class="l">${Object.keys(done).length} lessons done · ${Object.keys(deck).length} words in review<small>Kept in this browser only. Save a file to move it to another device.</small></div>
+        <button class="btn ghost" id="save">Save</button><button class="btn ghost" id="load">Load</button><input type="file" id="file" accept="application/json,.json" hidden></div>
+      <footer>Wenyan 文言 · lessons, notes and translations CC BY-SA 4.0 · code MIT.</footer></div>`;
+    scrollTo(0, 0);
+  }
+
+  /* ---------- events ---------- */
   document.addEventListener("click", e => {
-    const w = e.target.closest(".w"), nn = e.target.closest("sup.nn"), ln = e.target.closest(".ln");
-    if (e.target.closest("#pop .goto")){ const n = $("#n" + e.target.closest(".goto").dataset.n); hidePop(); n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); return; }
-    if (e.target.closest("#pop")) return;
-    const ref = e.target.closest(".ref");
-    if (ref){ goRef(ref.dataset.ref); return; }
-    if (nn){ showNote(nn); e.stopPropagation(); return; }
-    if (w){ showPop(w); e.stopPropagation(); return; }
+    const t = e.target, id = t.closest("button,a")?.id;
+    const ref = t.closest(".ref");
+    if (ref && ref.dataset.to){ location.hash = ref.dataset.to; return; }
+    if (t.closest("#pop .goto")){ const n = $("#n" + t.closest(".goto").dataset.n); hidePop(); flash(n); return; }
+    if (t.closest("#pop")) return;
+    if (t.closest("sup.nn")){ showNote(t.closest("sup.nn")); return; }
+    if (t.closest(".w")){ showWord(t.closest(".w")); return; }
     hidePop();
-    if (ln && cover) document.querySelectorAll(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
+    if (id === "tScript" || id === "sSimp"){ simp = !simp; store.set("simp", simp); return go(); }
+    if (id === "tPy" || id === "sPy"){ py = !py; store.set("py", py); return go(); }
+    if (id === "tCover" || id === "sCover"){ cover = !cover; store.set("cover", cover); return go(); }
+    if (id === "sNight"){ store.set("night", !store.get("night", false)); return go(); }
+    if (id === "markdone"){ done[T.key + ":" + L.id] = today(); cardsOf(T, L).forEach(c => { deck[c.id] ||= {b: 0, due: today()}; }); saveDeck(); const y = scrollY; go(); scrollTo(0, y); return; }
+    if (id === "undo"){ delete done[T.key + ":" + L.id]; cardsOf(T, L).forEach(c => delete deck[c.id]); saveDeck(); const y = scrollY; go(); scrollTo(0, y); return; }
+    if (id === "startrv"){ const cards = allCards(), q = dueIds().filter(i => cards[i]); session = {q, n: q.length, first: 0, missed: [], shown: false}; return review(); }
+    if (id === "show"){ session.shown = true; return review(); }
+    if (id === "again") return answer(false);
+    if (id === "got") return answer(true);
+    if (id === "save"){ const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify({app: "wenyan", saved: today(), done, deck}, null, 1)], {type: "application/json"})); a.download = `wenyan-progress-${today()}.json`; a.click(); return; }
+    if (id === "load") return $("#file").click();
+    const ln = t.closest(".ln"), cy = t.closest(".cy");
+    if (ln && cover) $$(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
+    if (cy && cover) cy.classList.toggle("peek");
   });
-  addEventListener("scroll", () => { if (!pop.classList.contains("note-pop")) hidePop(); }, {passive: true});
-  addEventListener("resize", syncHeights);
-  $("#tScript").onclick = () => { simp = !simp; store.set("simp", simp); apply(); render(); };
-  $("#tPy").onclick = () => { py = !py; store.set("py", py); apply(); syncHeights(); };
-  $("#tCover").onclick = () => { cover = !cover; store.set("cover", cover); apply(); };
-  $("#lesson").onchange = e => { L = course.lessons[+e.target.value]; store.set("lesson", +e.target.value); render(); scrollTo(0, 0); };
+  document.addEventListener("change", async e => {
+    if (e.target.id !== "file" || !e.target.files[0]) return;
+    try{ const d = JSON.parse(await e.target.files[0].text()); if (d.app !== "wenyan") throw 0;
+      // merge: keep the earliest finish date and the most advanced state of each card
+      for (const k in d.done) if (!done[k] || d.done[k] < done[k]) done[k] = d.done[k];
+      for (const k in d.deck) if (!deck[k] || d.deck[k].due > deck[k].due) deck[k] = d.deck[k];
+      saveDeck(); go();
+    }catch(x){ alert("That file is not a Wenyan progress file."); }
+  });
+  addEventListener("keydown", e => {
+    if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (session){ if (e.key === " "){ e.preventDefault(); if (!session.shown){ session.shown = true; review(); } } else if (session.shown && e.key === "1") answer(false); else if (session.shown && e.key === "2") answer(true); return; }
+    if (e.key === "Escape") hidePop();
+    if (L && e.key === "ArrowLeft") $("#prev")?.click();
+    if (L && e.key === "ArrowRight") $("#next")?.click();
+  });
+  // A word pop-up closes once the page has really moved (a few pixels of font-loading shift don't count).
+  addEventListener("scroll", () => { if (!pop.classList.contains("note-pop") && Math.abs(scrollY - popY) > 30) hidePop(); }, {passive: true});
+  addEventListener("resize", () => { if (L) syncHeights(); });
+  addEventListener("hashchange", go);
 
-  async function boot(){
+  (async () => {
     const inline = $("#course-data").textContent.trim();
     course = inline ? JSON.parse(inline) : await (await fetch("course.json")).json();
-    const idx = Math.min(store.get("lesson", 0), course.lessons.length - 1);
-    $("#lesson").innerHTML = course.lessons.map((l, i) => `<option value="${i}">${l.id}. ${esc(l.title)}</option>`).join("");
-    $("#lesson").value = idx; L = course.lessons[idx];
-    apply(); render();
-    if (document.fonts) document.fonts.ready.then(syncHeights);
-  }
-  boot();
+    if (!store.get("migrated", false)){ store.set("migrated", true); const old = store.get("lesson", null); if (old !== null && !location.hash && course.tracks[0].lessons[old]) location.hash = "wenyan/" + course.tracks[0].lessons[old].id; }
+    go();
+    if (document.fonts) document.fonts.ready.then(() => { if (L) syncHeights(); });
+  })();
 })();
 </script>
 </body>

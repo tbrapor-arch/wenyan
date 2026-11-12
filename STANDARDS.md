@@ -115,3 +115,69 @@ sentences checked against a transcription.
 
 Course content (`lessons/`, notes, translations): **CC BY-SA 4.0**. Code (`tools/`, `app/`): MIT.
 Classical texts are public domain.
+
+## 11. 白話 track: the written language beyond HSK 5
+
+A third track beside 文言 and 成語, for a reader who has finished the textbooks (HSK 5 or so) and
+wants to read novels. What stands between the two is not grammar but the **written register**
+(書面語): one-character classical words living on inside modern ones (隙地, 夜闌), written function
+words (如何, 然而, 固然, 令, 於), and four-character phrasing. The track teaches it the same way as
+the rest of the course: **real texts only**.
+
+### Texts
+
+- Modern authors **dead for 70 years or more** (public domain in France and in China): 魯迅,
+  許地山, 朱自清, 蕭紅, 郁達夫, 徐志摩, 聞一多, 夏丏尊, 梁啟超… Then the classic vernacular novels.
+  Check the author's death year before starting a lesson; 老舍, 沈從文, 巴金, 張愛玲 are **not** free yet.
+- `source.text_from` names the edition and the date it was compared. A text is typed in only
+  after a line-by-line comparison with that edition. Never convert a simplified transcription
+  to traditional and call it the text: OpenCC cannot know 著/着, 裡/裏, 吃/喫, and modern editions
+  differ in wording (the first 落花生 we found differed from the second in 25 places).
+- Republican-era spelling (罷 = 吧, 麼 = 嗎, 底 = 的, 那末, 牠, 伊) is kept as the edition has it and
+  explained in a note the first time.
+
+### Path
+
+| Stage | Texts | Why |
+|---|---|---|
+| I. Short essays | 許地山 落花生, 朱自清 匆匆 / 背影 / 春, 魯迅 一件小事, 夏丏尊 | one sitting each, plain syntax, the core written words |
+| II. Stories | 魯迅 孔乙己, 故鄉, 社戲; 蕭紅 呼蘭河傳 (excerpts); 郁達夫 | narrative, dialogue, description; several lessons per text |
+| III. Classic novels | 儒林外史, 紅樓夢, 水滸傳, 西遊記 (famous scenes) | older vernacular; where 成語 are densest |
+| IV. Half-classical | 梁啟超 少年中國說, 聊齋誌異 | the meeting point with the 文言 track |
+
+A long text is cut into lessons of 20–30 lines at paragraph breaks. Every 7th lesson is a review.
+
+### Lesson file
+
+`baihua/NNN-slug.yaml`, the same schema as a reading lesson (§2), with these differences:
+
+| Field | Difference |
+|---|---|
+| `lines[]` | one **sentence** per line; no `py` (the learner reads characters; readings are on the words). `p: true` starts a paragraph. `lit` only where the structure needs it |
+| `notes[]` | priority: 1. a written word or function word and the classical word inside it, with a link to the 文言 note that teaches it (`→ 文言 L1 n.4`; the build checks the note exists); 2. a period spelling or usage; 3. a 成語 or four-character phrase; 4. culture |
+| `glossary[]` | only words **beyond HSK 5** or used in an unusual sense, with `py`. Shown as "Words beyond HSK 5"; these become the lesson's review cards |
+| `exercise[]` | "Roots": the classical sentences behind the lesson's written words. `h` + `ref: 文言 L2` + `tests`; the sentence must be a run of lines of that lesson (quotation marks aside), and the build copies its pinyin and translation from there. Sentences from outside the course need `src`, `en` and a checked transcription, as in §7 |
+
+`checked` works as in §6. For modern words `cyz` applies only when the classical sense is the one
+in the passage (夜闌, 賤價); otherwise `wikt`.
+
+## 12. The app
+
+One page, three tracks, five tabs: **文言 · 白話 · 成語 · 溫習 · 設定**. `tools/build.py` reads
+`lessons/`, `baihua/` and `chengyu/` and writes `app/course.json` and the single file
+`dist/wenyan.html`.
+
+- **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews).
+- **Lesson:** a bar that stays on top (back, previous / next, also ← → keys; 繁/简, Pinyin, Cover),
+  then the page as before. Cross-references in notes are buttons, across tracks too.
+- **Mark as done** dates the lesson and puts its glossary words (or 成語) in the review deck; Undo
+  takes them out.
+- **溫習:** one card per word, shown in the sentence where it was met. Leitner boxes at 1 / 3 / 7 /
+  16 / 35 days; a missed word returns to the first box and comes back in the same session. Keys:
+  space, 1, 2.
+- **Always light**; night mode is a switch in Settings. Progress lives in the browser; Settings
+  saves and loads it as a file (loading merges: earliest finish date, most advanced card).
+- Routes: `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#review`, `#settings`. Every route maps to a tab
+  in `TABS`, so the tab bar keeps its highlight.
+- `python3 tools/smoke.py` clicks through every tab and lesson at phone and desktop width.
+

@@ -1,0 +1,297 @@
+id: 1
+slug: luo-hua-sheng
+title: 落花生
+title_py: Luòhuāshēng
+title_en: Peanuts
+source:
+  work: 落花生
+  author: 許地山 (1894–1941)
+  period: 1922
+  text_from: 《許地山作品選集》(好讀出版), as excerpted by 遠見 gvm.com.tw/article/60672; compared line by line on 2026-11-12
+status: draft  # text compared with the edition through an automated reader, not by eye; most glosses unchecked
+
+intro: >
+  Xu Dishan was born in Tainan in 1894; his family left Taiwan for Fujian after the Japanese
+  takeover the next year. He became a scholar of religion, ended his career as professor of
+  Chinese at the University of Hong Kong, and signed his fiction 落華生, "Peanut". This essay
+  was published in 1922 and has been in Chinese school readers ever since. The
+  sentences are short and the story is a family evening, which makes it a good first step:
+  nearly every word you don't know here is a *written* word, the layer of vocabulary that
+  starts where HSK 5 stops. Watch the five words built on 然.
+
+lines:
+  - h: 我們屋後有半畝隙地。
+    en: Behind our house there was half a mu of unused ground.
+    p: true
+  - h: 母親說：「讓它荒蕪著怪可惜，既然你們那麼愛吃花生，就闢來做花生園罷。」
+    en: Mother said, "It's rather a shame to leave it lying waste. Since you're all so fond of peanuts, let's clear it and make a peanut garden."
+  - h: 我們幾姊弟和幾個小丫頭都很喜歡——買種的買種，動土的動土，灌園的灌園；
+    en: We children and the few young maids were all delighted. Some bought seed, some dug the ground, some watered the plot;
+  - h: 過不了幾個月，居然收穫了！
+    en: and before many months had gone by, to our surprise, there was a harvest!
+  - h: 媽媽說：「今晚我們可以做一個收穫節，也請你們爹爹來嘗嘗我們的新花生，如何？」
+    en: Mama said, "Tonight we could hold a harvest festival, and ask your father to come and taste our new peanuts. What do you say?"
+    p: true
+  - h: 我們都答應了。
+    en: We all agreed.
+  - h: 母親把花生做成好幾樣的食品，還吩咐這節期要在園裡的茅亭舉行。
+    en: Mother made the peanuts into a good many dishes, and gave word that the festival was to be held in the thatched pavilion in the garden.
+  - h: 那晚上的天色不大好，可是爹爹也到來，實在很難得！
+    en: The sky was not very promising that evening, but Father came all the same, which was a rare thing indeed!
+    p: true
+  - h: 爹爹說：「你們愛吃花生麼？」
+    en: Father said, "Do you like eating peanuts?"
+  - h: 我們都爭著答應：「愛！」
+    en: We all raced to answer, "We do!"
+    p: true
+  - h: 「誰能把花生的好處說出來？」
+    en: '"Who can tell me what is good about the peanut?"'
+    p: true
+  - h: 姊姊說：「花生的氣味很美。」
+    en: Elder sister said, "Peanuts have a lovely flavour."
+    p: true
+  - h: 哥哥說：「花生可以製油。」
+    en: Elder brother said, "You can make oil from peanuts."
+    p: true
+  - h: 我說：「無論何等人都可以用賤價買它來吃；都喜歡吃它。這就是它的好處。」
+    en: I said, "People of every sort can buy them cheaply to eat, and everyone likes them. That is what's good about them."
+    p: true
+  - h: 爹爹說：「花生的用處固然很多，但有一樣是很可貴的。
+    en: Father said, "The peanut has many uses, to be sure, but one thing about it is truly precious.
+    p: true
+  - h: 這小小的豆不像那好看的蘋果、桃子、石榴，把它們的果實懸在枝上，
+    en: This little bean is not like the handsome apple, peach and pomegranate, which hang their fruit on the branch,
+  - h: 鮮紅嫩綠的顏色，令人一望而發生羨慕的心。
+    en: bright red and tender green, so that one look is enough to make people admire them.
+    lit: causing people, at one glance, to have an admiring heart arise
+  - h: 它只把果子埋在地下，等到成熟，才容人把它挖出來。
+    en: It just buries its fruit in the ground, and only when it is ripe does it let anyone dig it up.
+  - h: 你們偶然看見一棵花生瑟縮地長在地上，不能立刻辨出它有沒有果實，
+    en: If you happen to see a peanut plant huddled low on the ground, you can't tell straight away whether it has any fruit;
+  - h: 必得等到你接觸它才能知道。」
+    en: you have to wait until you touch it to know."
+  - h: 我們都說：「是的。」母親也點點頭。
+    en: We all said, "That's true." Mother nodded too.
+    p: true
+  - h: 爹爹接下去說：「所以你們要像花生，因為它是有用的，不是偉大、好看的東西。」
+    en: Father went on, "So you must be like the peanut, because it is a useful thing, not a grand or good-looking one."
+  - h: 我說：「那麼，人要做有用的人，不要做偉大、體面的人了。」
+    en: I said, "Then a person should be a useful person, and not a great or grand-looking one."
+    p: true
+  - h: 爹爹說：「這是我對於你們的希望。」
+    en: Father said, "That is what I hope for you."
+    p: true
+  - h: 我們談到夜闌才散，
+    en: We talked until the night was nearly over before we parted.
+    p: true
+  - h: 所有花生食品雖然沒有了，然而父親的話現在還印在我心版上。
+    en: All the peanut dishes are long gone, yet Father's words are printed on my heart to this day.
+
+notes:
+  - n: 1
+    line: 0
+    at: 隙地
+    text: >
+      **隙** xì is a crack or gap (空隙, 縫隙), so 隙地 is the bit of land left over between
+      things: a spare plot. In speech you would say 空地. This is the pattern of the whole
+      lesson: a one-character classical word (隙) living on inside a two-character written one.
+  - n: 2
+    line: 1
+    at: 怪可惜
+    text: >
+      **怪** as an adverb, "rather, quite", is colloquial northern usage, normally 怪…的 (怪可惜的).
+      **可惜** is 可 + verb, "worth regretting": the same 可 as in 可貴 "worth prizing" (line 15),
+      可愛, 可怕, 可笑. In Classical Chinese this 可 is still a free word with a passive sense
+      (→ 文言 L1 n.8).
+  - n: 3
+    line: 1
+    at: 既然
+    text: >
+      **既然 … 就 …** "since (it is already the case that) …, then …". 既 jì is classical for
+      "already, having done". The 然 is the first of five in this text: 既然, 居然, 固然, 雖然,
+      然而. Classical 然 means "so, like that"; stuck onto a word it makes "in such a way"
+      (→ 文言 L3 n.3), and that is how the written language builds its adverbs and conjunctions.
+  - n: 4
+    line: 1
+    at: 闢
+    text: >
+      **闢** pì "to open up, clear (land)", as in 開闢. Careful with the simplified form: 辟
+      stands for two different words, 闢 pì "open up" and 辟 bì "sovereign; to ward off"
+      (復辟 fùbì "restoration of a monarch").
+  - n: 5
+    line: 1
+    at: 罷
+    text: >
+      **罷** here is the particle *ba*, today written 吧. Writers of the 1920s wrote 罷 for it,
+      and 麼 for 嗎 (line 9: 愛吃花生麼？). Both are read as the modern particles. As a full
+      word 罷 is bà "to stop" (罷工, 罷了).
+  - n: 6
+    line: 2
+    at: 買種的買種
+    text: >
+      **A 的 A, B 的 B** "some did A, some did B": each 的 phrase is "the ones who …". 種 is
+      zhǒng "seed" here, not zhòng "to plant". 動土 "break ground" and 灌園 "water the garden"
+      are verb + object in the classical way, one character each.
+  - n: 7
+    line: 3
+    at: 居然
+    text: >
+      **居然** "unexpectedly, against what one would think". The children are amazed their own
+      work produced anything. Its near-twin 竟然 is a little stronger and can be used for bad
+      surprises.
+  - n: 8
+    line: 4
+    at: 我們的新花生
+    text: >
+      In the first printing (《小說月報》, 1922) this was 我們**底**新花生, and the last line
+      父親**底**話. For some years in the 1920s many writers kept 的 for descriptions (好看的蘋果)
+      and wrote 底 for possession. Later editions, like ours, print 的 throughout; in
+      an old edition of 魯迅 or 許地山 you will meet 底 on every page.
+  - n: 9
+    line: 4
+    at: 如何
+    text: >
+      **如何** at the end of a proposal: "how about it?". It is the classical question 何如 / 如何,
+      "what is it like?" (→ 文言 L6 n.3), and still the normal written word for 怎麼樣.
+  - n: 10
+    line: 6
+    at: 吩咐
+    text: >
+      **吩咐** fēnfù "to give instructions" (to children, servants, juniors). 節期 "the time of
+      a festival" is rare; the "harvest festival" is the mother's own invention. 茅亭 is a
+      pavilion roofed with 茅 máo, thatch grass.
+  - n: 11
+    line: 13
+    at: 無論何等人
+    text: >
+      **何等** "what kind, what rank of": 何 is the classical "what". Today 何等 is mostly an
+      exclamation, "how very" (何等重要!). **賤價** "low price": 賤 keeps its oldest sense,
+      "cheap", the opposite of 貴; in today's speech it is mostly an insult.
+  - n: 12
+    line: 14
+    at: 固然
+    text: >
+      **固然 …, 但 …** "admittedly …, but …": the speaker grants a point before making his own.
+      固 is classical "certainly, by nature" (→ 文言 L5 n.10: 蛇固無足).
+  - n: 13
+    line: 16
+    at: 令人一望而發生羨慕的心
+    text: >
+      Three written features in one clause. **令** "to cause, make" is the written word for
+      讓 / 叫 (令人感動). **一 … 而 …** "at a single …, then …": 而 joins two verbs exactly as in
+      Classical Chinese (→ 文言 L1 n.4). And **發生** means "to arise, come into being"; today
+      it is nearly always "to happen". 羨慕的心 is the classical 羨慕之心 with 的 for 之.
+  - n: 14
+    line: 17
+    at: 容
+    text: >
+      **容** "to allow, permit", as in 不容 "does not allow", 容許, 容忍. 才容人 "only then does it
+      let people …".
+  - n: 15
+    line: 18
+    at: 瑟縮
+    text: >
+      **瑟縮** sèsuō "huddled, shrinking (as if from cold)". Both syllables begin with s-: it
+      is an alliterative two-syllable word of the classical type, where the sound carries the
+      picture and the characters cannot be translated one by one (compare 彷彿, 徘徊, 參差).
+  - n: 16
+    line: 19
+    at: 必得
+    text: >
+      **必得** bìděi "must, have no choice but to". 得 is děi "must", not dé "to get".
+  - n: 17
+    line: 23
+    at: 對於
+    text: >
+      **於** yú is the all-purpose classical preposition, "at, in, to, with regard to"
+      (→ 文言 L2 n.5). Written Chinese keeps it inside 對於, 關於, 由於, 至於, 等於, and on its
+      own after a verb: 生於台南 "born in Tainan".
+  - n: 18
+    line: 24
+    at: 夜闌
+    text: >
+      **闌** lán "nearly over, at its end". 夜闌 "deep in the night" is a poetic word; the
+      four-character phrase 夜闌人靜 "the night far gone and everyone quiet" is where you
+      will meet it most.
+  - n: 19
+    line: 25
+    at: 雖然
+    text: >
+      **雖然 …, 然而 …** "although …, yet …". 然而 is literally "so, and yet": it is the written
+      "but", heavier than 但是 or 可是, and it usually opens the clause that matters most.
+      **心版** is "the printing block of the heart": 版 is a woodblock, which is why the words
+      are 印, printed, on it.
+
+glossary:
+  - {w: 隙地, py: xìdì, en: "a spare, unused plot of land"}
+  - {w: 荒蕪, py: huāngwú, en: "(of land) lying waste, overgrown", checked: [cyz]}
+  - {w: 怪, py: guài, en: "rather, quite (colloquial)"}
+  - {w: 既然, py: jìrán, en: "since, given that"}
+  - {w: 闢, py: pì, en: "to open up, clear (land)", checked: [cyz]}
+  - {w: 罷, py: ba, en: "= 吧, the suggestion particle (1920s spelling)"}
+  - {w: 姊弟, py: zǐdì, en: "sisters and brothers, siblings"}
+  - {w: 丫頭, py: yātou, en: "a young maidservant; a girl"}
+  - {w: 動土, py: dòngtǔ, en: "to break ground, start digging"}
+  - {w: 灌園, py: guànyuán, en: "to water a garden"}
+  - {w: 居然, py: jūrán, en: "unexpectedly, to one's surprise"}
+  - {w: 收穫, py: shōuhuò, en: "to harvest; a harvest"}
+  - {w: 嘗, py: cháng, en: "to taste"}
+  - {w: 如何, py: rúhé, en: "how about it? (written for 怎麼樣)"}
+  - {w: 吩咐, py: fēnfù, en: "to give instructions, tell someone to"}
+  - {w: 節期, py: jiéqī, en: "the time of a festival (rare)"}
+  - {w: 茅亭, py: máotíng, en: "a thatched pavilion"}
+  - {w: 天色, py: tiānsè, en: "the look of the sky, the weather"}
+  - {w: 難得, py: nándé, en: "rare, hard to come by"}
+  - {w: 爭, py: zhēng, en: "to compete, vie (to be first)"}
+  - {w: 製油, py: zhìyóu, en: "to make oil"}
+  - {w: 無論, py: wúlùn, en: "no matter (what, who)"}
+  - {w: 何等, py: héděng, en: "what kind of, of whatever rank"}
+  - {w: 賤價, py: jiànjià, en: "a low price", checked: [cyz]}
+  - {w: 固然, py: gùrán, en: "admittedly, it is true that"}
+  - {w: 可貴, py: kěguì, en: "worth prizing, precious"}
+  - {w: 石榴, py: shíliu, en: "pomegranate"}
+  - {w: 懸, py: xuán, en: "to hang, suspend"}
+  - {w: 嫩綠, py: nènlǜ, en: "tender green"}
+  - {w: 令, py: lìng, en: "to cause, make (someone feel or do)", checked: [cyz]}
+  - {w: 羨慕, py: xiànmù, en: "to admire, envy"}
+  - {w: 成熟, py: chéngshú, en: "ripe"}
+  - {w: 容, py: róng, en: "to allow, let", checked: [cyz]}
+  - {w: 偶然, py: ǒurán, en: "by chance"}
+  - {w: 瑟縮, py: sèsuō, en: "huddled up, shrinking"}
+  - {w: 辨, py: biàn, en: "to tell apart, make out", checked: [cyz]}
+  - {w: 必得, py: bìděi, en: "must, have to"}
+  - {w: 接觸, py: jiēchù, en: "to touch, come into contact with"}
+  - {w: 體面, py: tǐmiàn, en: "respectable-looking, grand"}
+  - {w: 對於, py: duìyú, en: "with regard to, for"}
+  - {w: 夜闌, py: yèlán, en: "late at night, when the night is nearly over", checked: [cyz]}
+  - {w: 散, py: sàn, en: "to break up, disperse"}
+  - {w: 雖然, py: suīrán, en: "although"}
+  - {w: 然而, py: rán'ér, en: "yet, but (written)"}
+  - {w: 心版, py: xīnbǎn, en: "the 'printing block' of the heart: one's memory"}
+
+# The classical sentences these written words come from. Each is a line of a 文言 lesson
+# (checked by the build), so nothing here is quoted from memory.
+exercise:
+  - h: 以子之矛，陷子之楯，何如？
+    ref: 文言 L2
+    tests: 如何 (line 5). The classical order is usually 何如.
+  - h: 蛇固無足，子安能為之足？
+    ref: 文言 L5
+    tests: 固 in 固然 (line 15).
+  - h: 兔走觸株，折頸而死。
+    ref: 文言 L1
+    tests: 而 joining two verbs, as in 一望而發生 (line 17).
+  - h: 虎以為然，故遂與之行，
+    ref: 文言 L6
+    tests: 然 "so" as a full word; the 然 of 既然, 居然, 固然, 雖然, 然而.
+  - h: 兔不可復得，
+    ref: 文言 L1
+    tests: 可 + verb, as in 可惜 and 可貴.
+  - h: 吾矛之利，於物無不陷也。
+    ref: 文言 L2
+    tests: 於 in 對於 (line 24); 無 in 無論.
+
+culture: >
+  **The other ending.** The version most people in China know is the primary-school one, which
+  was cut and reworded for children. The text here is the adult original in a modern edition
+  (see note 8 for what the first printing looked like).

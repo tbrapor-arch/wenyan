@@ -8,13 +8,26 @@ glossary, and a short exercise built from other real sentences.
 Traditional characters by default, with a one-click switch to simplified; Mandarin pinyin
 throughout.
 
+## Three tracks, one app
+
+| Tab | Track | Folder | What |
+|---|---|---|---|
+| 文言 | Classical | `lessons/` | fables first, then the 論語 and on (STANDARDS §1–7) |
+| 白話 | Modern prose | `baihua/` | the written language beyond HSK 5, through public-domain essays and fiction (§11) |
+| 成語 | Idioms | `chengyu/` | by modern frequency, twenty at a time (§10) |
+
+Plus **溫習** (review cards for the words of every lesson you mark as done) and **設定**.
+
 ## Layout
 
 ```
-lessons/NNN-slug.yaml   one lesson per file (schema in STANDARDS.md §2; kind: review for review lessons)
-tools/build.py          validates lessons, adds simplified forms → app/course.json + dist/wenyan.html
+lessons/NNN-slug.yaml   文言 lessons (schema in STANDARDS.md §2; kind: review for review lessons)
+baihua/NNN-slug.yaml    白話 lessons (§11)
+chengyu/NN-slug.yaml    成語 lessons (§10)
+tools/build.py          validates everything, adds simplified forms → app/course.json + dist/wenyan.html
+tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts
-app/index.html          the reader (loads course.json)
+app/index.html          the app (loads course.json)
 dist/wenyan.html        single-file build (data inlined; opens offline)
 ```
 
@@ -22,11 +35,12 @@ dist/wenyan.html        single-file build (data inlined; opens offline)
 pip install pyyaml opencc-python-reimplemented
 python3 tools/build.py
 python3 -m http.server -d app   # or just open dist/wenyan.html
+python3 tools/smoke.py          # needs playwright
 ```
 
-In the reader: tap a character for its gloss, tap a superscript number to open its note. In review
-lessons, tap a reference (L3 n.5) to jump to that note.
-**Cover** blurs the translation the Assimil way: read the Chinese, then tap a line to check.
+Tap a word for its gloss, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to
+jump to that note. **Cover** blurs the translation the Assimil way: read the Chinese, then tap a
+line to check. **Mark as done** sends the lesson's words to 溫習.
 
 ## Status
 
@@ -39,6 +53,7 @@ lessons, tap a reference (L3 n.5) to jump to that note.
 | 5 | 畫蛇添足 | 戰國策·齊策二 | draft: 3 glosses pending |
 | 6 | 狐假虎威 | 戰國策·楚策一 | draft: 8 glosses pending; text and notes match 王力《古代漢語》 |
 | 7 | 複習一 | review of 1–6 | draft |
+| 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
 
 ## License
 
