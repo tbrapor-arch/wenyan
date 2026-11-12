@@ -17,7 +17,7 @@ intro: >
   was published in 1922 and has been in Chinese school readers ever since. The
   sentences are short and the story is a family evening, which makes it a good first step:
   nearly every word you don't know here is a *written* word, the layer of vocabulary that
-  starts where HSK 5 stops. Watch the five words built on 然.
+  starts where the old HSK 5 stopped. Watch the five words built on 然.
 
 lines:
   - h: 我們屋後有半畝隙地。
@@ -226,17 +226,17 @@ glossary:
   - {w: 隙地, py: xìdì, en: "a spare, unused plot of land"}
   - {w: 荒蕪, py: huāngwú, en: "(of land) lying waste, overgrown", checked: [cyz]}
   - {w: 怪, py: guài, en: "rather, quite (colloquial)"}
-  - {w: 既然, py: jìrán, en: "since, given that"}
+  - {w: 既然, py: jìrán, en: "since, given that", hsk: 4}
   - {w: 闢, py: pì, en: "to open up, clear (land)", checked: [cyz]}
   - {w: 罷, py: ba, en: "= 吧, the suggestion particle (1920s spelling)"}
   - {w: 姊弟, py: zǐdì, en: "sisters and brothers, siblings"}
   - {w: 丫頭, py: yātou, en: "a young maidservant; a girl"}
   - {w: 動土, py: dòngtǔ, en: "to break ground, start digging"}
   - {w: 灌園, py: guànyuán, en: "to water a garden"}
-  - {w: 居然, py: jūrán, en: "unexpectedly, to one's surprise"}
-  - {w: 收穫, py: shōuhuò, en: "to harvest; a harvest"}
-  - {w: 嘗, py: cháng, en: "to taste"}
-  - {w: 如何, py: rúhé, en: "how about it? (written for 怎麼樣)"}
+  - {w: 居然, py: jūrán, en: "unexpectedly, to one's surprise", hsk: 5}
+  - {w: 收穫, py: shōuhuò, en: "to harvest; a harvest", hsk: 5}
+  - {w: 嘗, py: cháng, en: "to taste", hsk: 4}
+  - {w: 如何, py: rúhé, en: "how about it? (written for 怎麼樣)", hsk: 5}
   - {w: 吩咐, py: fēnfù, en: "to give instructions, tell someone to"}
   - {w: 節期, py: jiéqī, en: "the time of a festival (rare)"}
   - {w: 茅亭, py: máotíng, en: "a thatched pavilion"}
@@ -244,7 +244,7 @@ glossary:
   - {w: 難得, py: nándé, en: "rare, hard to come by"}
   - {w: 爭, py: zhēng, en: "to compete, vie (to be first)"}
   - {w: 製油, py: zhìyóu, en: "to make oil"}
-  - {w: 無論, py: wúlùn, en: "no matter (what, who)"}
+  - {w: 無論, py: wúlùn, en: "no matter (what, who)", hsk: 4}
   - {w: 何等, py: héděng, en: "what kind of, of whatever rank"}
   - {w: 賤價, py: jiànjià, en: "a low price", checked: [cyz]}
   - {w: 固然, py: gùrán, en: "admittedly, it is true that"}
@@ -253,20 +253,20 @@ glossary:
   - {w: 懸, py: xuán, en: "to hang, suspend"}
   - {w: 嫩綠, py: nènlǜ, en: "tender green"}
   - {w: 令, py: lìng, en: "to cause, make (someone feel or do)", checked: [cyz]}
-  - {w: 羨慕, py: xiànmù, en: "to admire, envy"}
-  - {w: 成熟, py: chéngshú, en: "ripe"}
+  - {w: 羨慕, py: xiànmù, en: "to admire, envy", hsk: 4}
+  - {w: 成熟, py: chéngshú, en: "ripe", hsk: 5}
   - {w: 容, py: róng, en: "to allow, let", checked: [cyz]}
-  - {w: 偶然, py: ǒurán, en: "by chance"}
+  - {w: 偶然, py: ǒurán, en: "by chance", hsk: 5}
   - {w: 瑟縮, py: sèsuō, en: "huddled up, shrinking"}
   - {w: 辨, py: biàn, en: "to tell apart, make out", checked: [cyz]}
   - {w: 必得, py: bìděi, en: "must, have to"}
-  - {w: 接觸, py: jiēchù, en: "to touch, come into contact with"}
+  - {w: 接觸, py: jiēchù, en: "to touch, come into contact with", hsk: 5}
   - {w: 體面, py: tǐmiàn, en: "respectable-looking, grand"}
-  - {w: 對於, py: duìyú, en: "with regard to, for"}
+  - {w: 對於, py: duìyú, en: "with regard to, for", hsk: 4}
   - {w: 夜闌, py: yèlán, en: "late at night, when the night is nearly over", checked: [cyz]}
   - {w: 散, py: sàn, en: "to break up, disperse"}
-  - {w: 雖然, py: suīrán, en: "although"}
-  - {w: 然而, py: rán'ér, en: "yet, but (written)"}
+  - {w: 雖然, py: suīrán, en: "although", hsk: 2}
+  - {w: 然而, py: rán'ér, en: "yet, but (written)", hsk: 4}
   - {w: 心版, py: xīnbǎn, en: "the 'printing block' of the heart: one's memory"}
 
 # The classical sentences these written words come from. Each is a line of a 文言 lesson

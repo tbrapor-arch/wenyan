@@ -116,10 +116,15 @@ sentences checked against a transcription.
 Course content (`lessons/`, notes, translations): **CC BY-SA 4.0**. Code (`tools/`, `app/`): MIT.
 Classical texts are public domain.
 
-## 11. 白話 track: the written language beyond HSK 5
+## 11. 白話 track: the written language beyond the old HSK 5
 
-A third track beside 文言 and 成語, for a reader who has finished the textbooks (HSK 5 or so) and
-wants to read novels. What stands between the two is not grammar but the **written register**
+A third track beside 文言 and 成語, for a reader who has finished the textbooks and wants to read
+novels.
+
+**Which HSK.** "HSK 5" in this course always means the **old HSK 5** (HSK 2.0, official 2012
+lists: 2,500 words cumulative), the level the course was designed for. The HSK has since been
+rebuilt into nine levels (HSK 3.0, first exams 2026) with larger lists, so a new "HSK 5" is a
+different and bigger level. Never write a bare "HSK 5": say "old HSK 5". What stands between the two is not grammar but the **written register**
 (書面語): one-character classical words living on inside modern ones (隙地, 夜闌), written function
 words (如何, 然而, 固然, 令, 於), and four-character phrasing. The track teaches it the same way as
 the rest of the course: **real texts only**.
@@ -155,7 +160,7 @@ A long text is cut into lessons of 20–30 lines at paragraph breaks. Every 7th 
 |---|---|
 | `lines[]` | one **sentence** per line; no `py` (the learner reads characters; readings are on the words). `p: true` starts a paragraph. `lit` only where the structure needs it |
 | `notes[]` | priority: 1. a written word or function word and the classical word inside it, with a link to the 文言 note that teaches it (`→ 文言 L1 n.4`; the build checks the note exists); 2. a period spelling or usage; 3. a 成語 or four-character phrase; 4. culture |
-| `glossary[]` | only words **beyond HSK 5** or used in an unusual sense, with `py`. Shown as "Words beyond HSK 5" |
+| `glossary[]` | words **not in the old HSK 1–5 lists** (2012), or used in an unusual sense, with `py`. A word that *is* in those lists stays only if a note teaches it (既然, 然而…) and carries `hsk: N` (its old level); the app shows it apart, under "Already in old HSK 1–5". Check every new lesson against the 2012 lists |
 | `exercise[]` | "Roots": the classical sentences behind the lesson's written words. `h` + `ref: 文言 L2` + `tests`; the sentence must be a run of lines of that lesson (quotation marks aside), and the build copies its pinyin and translation from there. Sentences from outside the course need `src`, `en` and a checked transcription, as in §7 |
 
 `checked` works as in §6. For modern words `cyz` applies only when the classical sense is the one

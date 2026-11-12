@@ -25,8 +25,8 @@ TRACKS = [
     {"key": "wenyan", "dir": "lessons", "zh": "文言", "en": "Classical",
      "about": "Classical Chinese through real texts: fables first, then the 論語, argument, narrative and verse."},
     {"key": "baihua", "dir": "baihua", "zh": "白話", "en": "Modern prose",
-     "about": "The written language beyond HSK 5: public-domain essays and fiction, read for the "
-              "literary words that textbooks stop before."},
+     "about": "The written language beyond the old HSK 5 (the 2,500-word level before 2021): "
+              "public-domain essays and fiction, read for the literary words that textbooks stop before."},
     {"key": "chengyu", "dir": "chengyu", "zh": "成語", "en": "Idioms",
      "about": "成語 in order of modern frequency, twenty at a time, grouped by pattern."},
 ]
@@ -83,6 +83,9 @@ def check_reading(L, f, need_py):
         for g in L["glossary"]:
             if not set(g.get("checked") or []) & {"wikt", "cyz"}:
                 fail(f, f"status {L['status']} but {g['w']} not checked against wikt or cyz")
+    for g in L["glossary"]:
+        if "hsk" in g and g["hsk"] not in range(1, 7):
+            fail(f, f"glossary {g['w']}: hsk must be an old (2012) level 1–6")
     todo = [g["w"] for g in L["glossary"] if not g.get("checked")]
     if todo:
         print(f"{f.name}: {len(todo)} unchecked gloss(es): {' '.join(todo)}")

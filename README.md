@@ -13,7 +13,7 @@ throughout.
 | Tab | Track | Folder | What |
 |---|---|---|---|
 | 文言 | Classical | `lessons/` | fables first, then the 論語 and on (STANDARDS §1–7) |
-| 白話 | Modern prose | `baihua/` | the written language beyond HSK 5, through public-domain essays and fiction (§11) |
+| 白話 | Modern prose | `baihua/` | the written language beyond the old HSK 5 (2012 lists), through public-domain essays and fiction (§11) |
 | 成語 | Idioms | `chengyu/` | by modern frequency, twenty at a time (§10) |
 
 Plus **設定** (script, pinyin, cover, night mode, progress file).

@@ -130,6 +130,8 @@ sup.nn.on{background:var(--seal);color:var(--paper)}
 .g .c{font:600 24px/1.2 var(--zh);grid-row:span 2}
 .g .p{font-size:13px;color:var(--ink-2);font-style:italic}
 .g .d{font-size:14px;line-height:1.35}
+.gl.known .g{background:transparent}
+.gl.known .g .c{font-size:20px;font-weight:400}
 .g .sw{grid-column:1/-1;font:13px var(--zh);color:var(--ink-2);border-top:1px dotted var(--rule);padding-top:4px;margin-top:4px}
 .g .sw b{font:600 11px var(--en);letter-spacing:.06em;color:var(--seal);margin-right:6px}
 .ex{display:grid;gap:10px}
@@ -316,6 +318,8 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
     <div class="src">${esc(e.src)}${e.to ? ` · <button class="ref" data-to="${e.to.track}/${e.to.id}">open</button>` : ""}</div>
     <details><summary>Answer</summary><p>${esc(e.en)}</p>${e.tests ? `<p class="tests">Practises: ${esc(e.tests)}</p>` : ""}</details></div>`).join("")}</div>` : "";
 
+  const glHTML = (gs, known) => `<div class="gl ${known ? "known" : ""}">${gs.map(g => `<div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}${g.hsk ? ` · old HSK ${g.hsk}` : ""}</span><span class="d">${esc(g.en)}</span>
+    ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>`;
   function lesson(){
     if (T.key === "chengyu") return chengyuLesson();
     const hero = (k, extra = "") => `<section class="hero">${sealHTML(Z(L, "title"))}<div><div class="kicker">${k}</div>
@@ -341,9 +345,9 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
       </div>
       <h2>Notes</h2>
       <div class="notes">${L.notes.map(n => `<div class="note" id="n${n.n}"><span class="num">${n.n}</span><p><span class="at">${esc(Z(n, "at"))}</span>${md(n.text, T.key)}</p></div>`).join("")}</div>
-      <h2>${prose ? "Words beyond HSK 5" : "Glossary"}</h2>
-      <div class="gl">${L.glossary.map(g => `<div class="g"><span class="c">${esc(Z(g, "w"))}</span><span class="p">${esc(g.py)}</span><span class="d">${esc(g.en)}</span>
-        ${g.sw ? `<div class="sw"><b>說文</b>${esc(g.sw)}</div>` : ""}</div>`).join("")}</div>
+      ${prose ? `<h2>Words beyond old HSK 5</h2>${glHTML(L.glossary.filter(g => !g.hsk))}
+        ${L.glossary.some(g => g.hsk) ? `<h2>Already in old HSK 1–5 · here for the notes</h2>${glHTML(L.glossary.filter(g => g.hsk), true)}` : ""}`
+        : `<h2>Glossary</h2>${glHTML(L.glossary)}`}
       ${exerciseHTML(prose ? "Roots · the classical sentences behind these words" : "Exercise · translate")}
       ${L.culture ? `<h2>Context</h2><div class="culture">${md(L.culture, T.key)}</div>` : ""}
       ${finish()}

@@ -3240,7 +3240,7 @@
    "key": "baihua",
    "zh": "白話",
    "en": "Modern prose",
-   "about": "The written language beyond HSK 5: public-domain essays and fiction, read for the literary words that textbooks stop before.",
+   "about": "The written language beyond the old HSK 5 (the 2,500-word level before 2021): public-domain essays and fiction, read for the literary words that textbooks stop before.",
    "lessons": [
     {
      "id": 1,
@@ -3256,7 +3256,7 @@
       "work_s": "落花生"
      },
      "status": "draft",
-     "intro": "Xu Dishan was born in Tainan in 1894; his family left Taiwan for Fujian after the Japanese takeover the next year. He became a scholar of religion, ended his career as professor of Chinese at the University of Hong Kong, and signed his fiction 落華生, \"Peanut\". This essay was published in 1922 and has been in Chinese school readers ever since. The sentences are short and the story is a family evening, which makes it a good first step: nearly every word you don't know here is a *written* word, the layer of vocabulary that starts where HSK 5 stops. Watch the five words built on 然.\n",
+     "intro": "Xu Dishan was born in Tainan in 1894; his family left Taiwan for Fujian after the Japanese takeover the next year. He became a scholar of religion, ended his career as professor of Chinese at the University of Hong Kong, and signed his fiction 落華生, \"Peanut\". This essay was published in 1922 and has been in Chinese school readers ever since. The sentences are short and the story is a family evening, which makes it a good first step: nearly every word you don't know here is a *written* word, the layer of vocabulary that starts where the old HSK 5 stopped. Watch the five words built on 然.\n",
      "lines": [
       {
        "h": "我們屋後有半畝隙地。",
@@ -3564,6 +3564,7 @@
        "w": "既然",
        "py": "jìrán",
        "en": "since, given that",
+       "hsk": 4,
        "w_s": "既然"
       },
       {
@@ -3609,24 +3610,28 @@
        "w": "居然",
        "py": "jūrán",
        "en": "unexpectedly, to one's surprise",
+       "hsk": 5,
        "w_s": "居然"
       },
       {
        "w": "收穫",
        "py": "shōuhuò",
        "en": "to harvest; a harvest",
+       "hsk": 5,
        "w_s": "收获"
       },
       {
        "w": "嘗",
        "py": "cháng",
        "en": "to taste",
+       "hsk": 4,
        "w_s": "尝"
       },
       {
        "w": "如何",
        "py": "rúhé",
        "en": "how about it? (written for 怎麼樣)",
+       "hsk": 5,
        "w_s": "如何"
       },
       {
@@ -3675,6 +3680,7 @@
        "w": "無論",
        "py": "wúlùn",
        "en": "no matter (what, who)",
+       "hsk": 4,
        "w_s": "无论"
       },
       {
@@ -3735,12 +3741,14 @@
        "w": "羨慕",
        "py": "xiànmù",
        "en": "to admire, envy",
+       "hsk": 4,
        "w_s": "羡慕"
       },
       {
        "w": "成熟",
        "py": "chéngshú",
        "en": "ripe",
+       "hsk": 5,
        "w_s": "成熟"
       },
       {
@@ -3756,6 +3764,7 @@
        "w": "偶然",
        "py": "ǒurán",
        "en": "by chance",
+       "hsk": 5,
        "w_s": "偶然"
       },
       {
@@ -3783,6 +3792,7 @@
        "w": "接觸",
        "py": "jiēchù",
        "en": "to touch, come into contact with",
+       "hsk": 5,
        "w_s": "接触"
       },
       {
@@ -3795,6 +3805,7 @@
        "w": "對於",
        "py": "duìyú",
        "en": "with regard to, for",
+       "hsk": 4,
        "w_s": "对于"
       },
       {
@@ -3816,12 +3827,14 @@
        "w": "雖然",
        "py": "suīrán",
        "en": "although",
+       "hsk": 2,
        "w_s": "虽然"
       },
       {
        "w": "然而",
        "py": "rán'ér",
        "en": "yet, but (written)",
+       "hsk": 4,
        "w_s": "然而"
       },
       {
