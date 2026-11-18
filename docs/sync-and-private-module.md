@@ -23,7 +23,8 @@ In the app: Settings › Sync between devices (published app only).
 3. Paste the token on each device and press Connect. The app finds or creates a secret gist with one file,
    `wenyan-progress.json`, and merges when the app opens, a few seconds after each change, when it comes back to the
    screen (at most every 2 minutes) and when the network returns; a change still waiting is sent when the app is put
-   away.
+   away. A sync that fails (GitHub down, rate limit) is tried again after 1 minute, then 2, 4 and every 5 minutes
+   until it works; not while offline (the network's return syncs) and not when the token is refused.
 4. Merge: for done / undone the latest change wins (`marks`, timestamps), so an Undo on one device is not brought back
    by another; a lesson done on both keeps the earliest finish date. Settings are not synced (they belong to each
    device).

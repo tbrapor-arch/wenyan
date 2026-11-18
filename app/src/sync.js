@@ -55,7 +55,7 @@
   // Pull + merge when the app opens, push a few seconds after each change, pull again when the app comes back to the
   // screen (at most every 2 minutes) or back online, and send a change still waiting when the app is put away.
   const Sync = {
-    FILE: "wenyan-progress.json", timer: null, busy: false, again: false, merging: false, last: "",
+    FILE: "wenyan-progress.json", timer: null, busy: false, again: false, merging: false, last: "", retryT: null, wait: 0,
     get token(){ return store.get("gistToken", ""); }, get id(){ return store.get("gistId", ""); },
     get on(){ return HOSTED && !!this.token; },
     async api(path, opts = {}){
@@ -109,16 +109,24 @@
     async run(){
       if (!this.on) return false;
       if (this.busy){ this.again = true; return false; }
-      clearTimeout(this.timer); this.timer = null;
+      clearTimeout(this.timer); this.timer = null; clearTimeout(this.retryT); this.retryT = null;
       if (navigator.onLine === false){ store.set("syncErr", "offline"); syncShow(); return false; }
       this.busy = true; this.again = false; syncShow();
       let changed = false;
-      try{ changed = await this.pull(); await this.push(); this.last = this.snap(); store.set("syncAt", Date.now()); store.set("syncErr", ""); }
-      catch(e){ store.set("syncErr", String(e.message || e)); }
+      try{ changed = await this.pull(); await this.push(); this.last = this.snap(); store.set("syncAt", Date.now()); store.set("syncErr", ""); this.wait = 0; }
+      catch(e){ store.set("syncErr", String(e.message || e)); this.retry(e); }
       finally{ this.busy = false; }
       if (this.again){ this.again = false; this.soon(); }   // a change made during this run was not in what it pushed
       syncShow();
       return changed;
+    },
+    // after a failed run: try again in 1 minute, then 2, 4, at most 5 (one timer, never more). Not when offline (the
+    // "online" event syncs), nor when GitHub refused the token or its permissions (a new token is needed).
+    retry(e){
+      if (e.message === "offline" || e.status === 401 || (e.status === 403 && !/rate limit/.test(e.message)) || navigator.onLine === false) return;
+      this.wait = Math.min(300e3, this.wait ? this.wait * 2 : 60e3);
+      clearTimeout(this.retryT);
+      this.retryT = setTimeout(() => { this.retryT = null; this.run().then(ch => { if (ch) syncRedraw(); }); }, this.wait);
     },
     soon(){
       if (!this.on || this.merging) return;

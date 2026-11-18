@@ -16,7 +16,8 @@ Serves _site/ on http://localhost (ports 8830, 8831) and checks:
      read the repo gets nothing;
   5. two tabs of one browser: both tabs' done dates kept, an Undo in one not brought back by the other (nor by a sync
      round), the other tab redraws (after its sheet closes);
-  6. clocks that differ: an Undo on a device whose clock is an hour behind the other's still wins.
+  6. clocks that differ: an Undo on a device whose clock is an hour behind the other's still wins;
+  7. a failed sync (GitHub 500) is tried again after 1, 2, 4, then 5 minutes (Playwright's clock); a refused token is not.
   --only NAME,…: run only those tests (offline_and_csp, single_file, sync, module, two_tabs, …).
 Screenshots of Settings (390 px) with sync not connected / connected / refused / offline go to DIR.
 """
@@ -369,6 +370,61 @@ def clock_skew(b):
     print("6. clocks: an Undo on a device whose clock is an hour behind still wins")
 
 
+# ---------------------------------------------------------------- 7. a failed push is tried again
+def retry(b):
+    """finding 4: a sync that fails (GitHub 500) is tried again after a minute, then less often (no storm); a
+    refused token is not retried. Time is moved by Playwright's clock, not waited for."""
+    srv = serve(8835)
+    url = "http://localhost:8835/"
+    gh = FakeGitHub()
+    fail = {"on": False}
+    def api(route):
+        if fail["on"] and route.request.method == "PATCH":
+            gh.log.append(("PATCH-500", "", ""))
+            return route.fulfill(status=500, json={}, headers={"access-control-allow-origin": "*"})
+        return gh(route)
+    ctx = b.new_context(service_workers="block", **PHONE)
+    no_fonts(ctx); ctx.add_init_script(WATCH); ctx.route("https://api.github.com/**", api)
+    page = ctx.new_page(); watch(page, "retry")
+    page.clock.install()
+    page.goto(url); page.wait_for_selector("main#app > *")
+    settings(page, url); check(connect(page, "tok-good") == "on", "retry: did not connect")
+    fail["on"] = True
+    n500 = lambda: sum(1 for m, _, _ in gh.log if m == "PATCH-500")
+    page.goto(url + "#baihua/1"); page.wait_for_selector(".lbar"); page.locator("#markdone").click(); page.wait_for_selector("#undo")
+    page.clock.run_for(5000); page.wait_for_timeout(300)
+    check(n500() == 1 and "baihua:1" not in gh.progress()["done"], f"retry: the first push did not fail as set up ({n500()})")
+    check(page.evaluate("JSON.parse(localStorage.getItem('wy.syncErr'))") == "GitHub error 500", "retry: the error is not kept")
+    page.clock.run_for(50_000); page.wait_for_timeout(300)
+    check(n500() == 1, "retry: tried again before a minute")
+    page.clock.run_for(15_000); page.wait_for_timeout(300)
+    check(n500() == 2, f"retry: not tried again after a minute ({n500()} failed pushes)")
+    page.clock.run_for(100_000); page.wait_for_timeout(300)
+    check(n500() == 2, "retry: the second wait is not longer than the first")
+    page.clock.run_for(25_000); page.wait_for_timeout(300)
+    check(n500() == 3, f"retry: not tried again after 2 minutes ({n500()})")
+    for _ in range(6):   # 4 minutes, then 5 at most: never more often
+        page.clock.run_for(60_000); page.wait_for_timeout(100)
+    check(n500() == 4, f"retry: {n500()} failed pushes in 6 more minutes (want one, after 4 minutes)")
+    fail["on"] = False
+    page.clock.run_for(300_000); page.wait_for_timeout(500)
+    check("baihua:1" in gh.progress()["done"], "retry: the change was not sent once GitHub answered again")
+    check(page.evaluate("JSON.parse(localStorage.getItem('wy.syncErr'))") == "", "retry: the error stays after a good sync")
+    # a refused token: no retry at all
+    n = len(gh.log)
+    del gh.tokens["tok-good"]
+    mark(page, url, "baihua:1", False); page.clock.run_for(5000); page.wait_for_timeout(300)
+    check(page.evaluate("JSON.parse(localStorage.getItem('wy.syncErr'))") == "token refused", "retry: token not refused")
+    m = len(gh.log)
+    for _ in range(4):
+        page.clock.run_for(300_000); page.wait_for_timeout(100)
+    check(len(gh.log) == m and m > n, f"retry: a refused token was tried again ({len(gh.log) - m} requests)")
+    ctx.close()
+    srv.shutdown(); srv.server_close()
+    print("7. retry: a failed push is tried again after 1, 2, 4 minutes (at most 5), sent once GitHub answers; a refused",
+          "token is not retried")
+
+
 # ---------------------------------------------------------------- 4. private module
 def module(b):
     srv = serve(8832)
@@ -420,7 +476,7 @@ if not SITE.joinpath("index.html").exists():
 SHOTS.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
     b = p.chromium.launch()
-    tests = (offline_and_csp, single_file, sync, module, two_tabs, clock_skew)
+    tests = (offline_and_csp, single_file, sync, module, two_tabs, clock_skew, retry)
     only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None   # --only sync,two_tabs
     for test in tests:
         if only and test.__name__ not in only:
