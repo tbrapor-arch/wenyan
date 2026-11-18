@@ -29,7 +29,8 @@ rumen/NNN-slug.yaml     入門 lessons (§13)
 lessons/NNN-slug.yaml   文言 lessons (schema in STANDARDS.md §2; kind: review for review lessons)
 baihua/NNN-slug.yaml    白話 lessons (§11)
 chengyu/NN-slug.yaml    成語 lessons (§10)
-tools/build.py          validates everything, adds simplified forms → app/course.json + dist/wenyan.html
+tools/build.py          validates everything, adds simplified forms → app/course.json + the app
+tools/build_app.py      joins app/index.template.html + app/src/ (order: PARTS) → app/dist/index.html + dist/wenyan.html
 tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
 tools/rumen_quote.py    入門: quotes one-line YAML values (French « : » breaks plain YAML)
 data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
@@ -37,16 +38,24 @@ tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts
 tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pinyin-words.yaml)
 data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
-app/index.html          the app (loads course.json)
-dist/wenyan.html        single-file build (data inlined; opens offline)
+app/index.template.html the page skeleton
+app/src/                the app's CSS and JS, one concern per part (app/src/README.md)
+data/fetch.sh           downloads CC-CEDICT, jieba and HSK lists into data/raw (make data)
+app/dist/index.html     built, not committed: single file, data inlined; what GitHub Pages serves
+dist/wenyan.html        built, not committed: the same file (opens offline)
 ```
 
 ```sh
-pip install pyyaml opencc-python-reimplemented pypinyin
-python3 tools/build.py
-python3 -m http.server -d app   # or just open dist/wenyan.html
-python3 tools/smoke.py          # needs playwright
+pip install -r requirements.txt
+make app                            # validate, build app/dist/index.html (python3 -I tools/build.py)
+python3 -m http.server -d app/dist  # or just open dist/wenyan.html
+make test                           # validate only
+make smoke                          # build, then click through the app (needs playwright)
+make data                           # download the dictionary sources into data/raw (needs npm, curl, git)
 ```
+
+A push to `main` builds the app and publishes `app/dist` on GitHub Pages (`.github/workflows/pages.yml`).
+Generated files (`app/course.json`, `app/dist/`, `dist/`, `data/raw/`, `data/build/`) are never committed.
 
 Tap a word for its gloss, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to
 jump to that note. **Cover** blurs the translation the Assimil way: read the Chinese, then tap a

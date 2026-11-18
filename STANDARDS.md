@@ -284,9 +284,10 @@ in the passage (夜闌, 賤價); otherwise `wikt`.
 
 ## 12. The app
 
-One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設定**. `tools/build.py` reads
-`rumen/`, `lessons/`, `baihua/` and `chengyu/` and writes `app/course.json` and the single file
-`dist/wenyan.html`.
+One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設定**. `tools/build.py` (`make app`) reads
+`rumen/`, `lessons/`, `baihua/` and `chengyu/` and writes `app/course.json`; `tools/build_app.py` joins
+`app/index.template.html` and the parts in `app/src/` (one concern per part, order in `PARTS`) into the single file
+`app/dist/index.html` (served by GitHub Pages; also written as `dist/wenyan.html`). None of these is committed.
 
 - **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews).
 - **Lesson:** a bar that stays on top (back, previous / next, also ← → keys; 繁/简, Pinyin, Cover),
@@ -297,7 +298,7 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   saves and loads it as a file (loading merges: earliest finish date).
 - Routes: `#rumen`, `#rumen/52/wave`, `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#settings`. A first visit opens 入門. Every route maps to a tab
   in `TABS`, so the tab bar keeps its highlight.
-- `python3 tools/smoke.py` clicks through every tab and lesson at phone and desktop width.
+- `make smoke` builds, then clicks through every tab and lesson at phone and desktop width.
 
 
 ## 13. 入門 track: Mandarin from zero to NHSK 4
