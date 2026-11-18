@@ -62,7 +62,7 @@
     const inline = $("#course-data").textContent.trim();
     course = inline ? JSON.parse(inline) : await (await fetch("course.json")).json();
     // links from the very first version (wy.lesson = an index into the 文言 lessons)
-    if (!store.get("migrated", false)){ store.set("migrated", true); const old = store.get("lesson", null); if (old !== null && !location.hash && course.tracks[1].lessons[old]) location.hash = "wenyan/" + course.tracks[1].lessons[old].id; }
+    if (!store.get("migrated", false)){ store.set("migrated", true); const old = store.get("lesson", null); if (Number.isInteger(old) && old >= 0 && !location.hash && course.tracks[1].lessons[old]) location.hash = "wenyan/" + course.tracks[1].lessons[old].id; }
     route();
     if (document.fonts) document.fonts.ready.then(() => { if ($(".pages")) syncHeights(); });
   })();

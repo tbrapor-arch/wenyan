@@ -323,6 +323,8 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   script switches were on (文言 / 白話 / 成語 simplified and 入門 traditional), traditional wins. If 入門's three-way
   pinyin switch was ever used, its value becomes the single pinyin setting; otherwise the old 文言 / 成語 pinyin on / off
   does. Settings belong to the device: they are not synced, and a progress file neither saves nor loads them.
+  Every stored value is checked when it is read (`wy.settings` field by field, `wy.done`, `wy.marks`, `wy.tab`…):
+  what is not valid falls back to its default, so no stored value can leave the page blank.
 - **Mark as done** dates the lesson (✓ on its tile); Undo removes the date. Every write to the done dates goes
   through `markDone`. There is no review deck: review happens by reading, with the 7th-lesson reviews and the
   "Roots" exercises.

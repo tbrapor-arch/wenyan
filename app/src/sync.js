@@ -20,7 +20,11 @@
   }
   // like done, marks are read again from storage before each change: another tab may have stamped some since
   let marks = null;
-  const marksReload = () => { const m = store.get("marks", null); return marks = m && typeof m === "object" && !Array.isArray(m) ? m : null; };
+  // (validated: an object of finite numbers; anything else stored there counts as no marks yet)
+  const marksReload = () => { const m = store.get("marks", null);
+    if (!m || typeof m !== "object" || Array.isArray(m)) return marks = null;
+    marks = {}; for (const k in m) if (typeof m[k] === "number" && isFinite(m[k])) marks[k] = m[k];
+    return marks; };
   function stampMarks(){
     marksReload();
     // monotonic: a new stamp is later than every mark already known here (this device's and those merged from the
@@ -56,7 +60,8 @@
   // screen (at most every 2 minutes) or back online, and send a change still waiting when the app is put away.
   const Sync = {
     FILE: "wenyan-progress.json", timer: null, busy: false, again: false, merging: false, last: "", retryT: null, wait: 0,
-    get token(){ return store.get("gistToken", ""); }, get id(){ return store.get("gistId", ""); },
+    get token(){ const t = store.get("gistToken", ""); return typeof t === "string" ? t : ""; },
+    get id(){ const t = store.get("gistId", ""); return typeof t === "string" ? t : ""; },
     get on(){ return HOSTED && !!this.token; },
     async api(path, opts = {}){
       let r;
@@ -152,7 +157,7 @@
   document.addEventListener("visibilitychange", () => {
     if (!Sync.on) return;
     if (document.visibilityState === "hidden"){ if (Sync.timer) Sync.run(); return; }
-    if (Date.now() - store.get("syncAt", 0) > 120e3) Sync.run().then(ch => { if (ch) syncRedraw(); });
+    if (!(Date.now() - store.get("syncAt", 0) <= 120e3)) Sync.run().then(ch => { if (ch) syncRedraw(); });
   });
   addEventListener("online", () => { if (Sync.on) Sync.run().then(ch => { if (ch) syncRedraw(); }); });
   addEventListener("offline", () => { if (Sync.on){ store.set("syncErr", "offline"); syncShow(); } });
@@ -168,7 +173,7 @@
     if (err === "offline" || navigator.onLine === false) return "offline";
     return "on";
   }
-  const syncWhen = t => t ? new Date(t).toLocaleString("en-GB", {day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}) : "never";
+  const syncWhen = t => typeof t === "number" && t > 0 ? new Date(t).toLocaleString("en-GB", {day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}) : "never";
   function syncShow(){ const el = $("#set-sync"); if (el) syncSettings(el); if (typeof moduleShow === "function") moduleShow(); }
   function syncSettings(el){
     if (!el) return;

@@ -40,15 +40,20 @@
   // Settings: one object, wy.settings. script: "src" (each track as written: 入門 简, the others 繁) | "trad" | "simp";
   // pinyin: "above" | "tap" | "off"; rlang: 入門 explanations "fr" | "en".
   const SET0 = {script: "src", pinyin: "above", cover: false, rlang: "fr", night: false};
-  const clean = s => ({script: ["src", "trad", "simp"].includes(s.script) ? s.script : "src",
-    pinyin: ["above", "tap", "off"].includes(s.pinyin) ? s.pinyin : "above", cover: !!s.cover,
-    rlang: s.rlang === "en" ? "en" : "fr", night: !!s.night});
+  // field by field: an unknown value falls back to the default; a switch is on only for true (or "true", 1, "on",
+  // "yes": hand-edited storage), so "false" or "no" never turn it on
+  const onOff = (v, d) => v === true || v === 1 || /^(true|1|on|yes)$/i.test(v) ? true
+    : v === false || v === 0 || /^(false|0|off|no)$/i.test(v) ? false : d;
+  const clean = s => { s = s && typeof s === "object" ? s : {};
+    return {script: ["src", "trad", "simp"].includes(s.script) ? s.script : SET0.script,
+      pinyin: ["above", "tap", "off"].includes(s.pinyin) ? s.pinyin : SET0.pinyin, cover: onOff(s.cover, SET0.cover),
+      rlang: ["fr", "en"].includes(s.rlang) ? s.rlang : SET0.rlang, night: onOff(s.night, SET0.night)}; };
   // Once: the old keys (wy.simp, wy.rtrad, wy.py, wy.rmode, wy.cover, wy.rlang, wy.night) become wy.settings. They are
   // left in place and only read while wy.settings does not exist, so running this twice changes nothing; wy.done is
   // not touched (same key, same format).
   function migrateSettings(){
     const s = store.get("settings", null);
-    if (s && typeof s === "object") return clean({...SET0, ...s});
+    if (s && typeof s === "object" && !Array.isArray(s)){ const c = clean(s); if (JSON.stringify(c) !== JSON.stringify(s)) store.set("settings", c); return c; }
     const simp = store.get("simp", false) === true, rtrad = store.get("rtrad", false) === true;
     const out = clean({
       // 文言 / 白話 / 成語 simplified (simp) or 入門 traditional (rtrad); both on: the later setting (rtrad) wins

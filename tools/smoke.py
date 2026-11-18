@@ -477,10 +477,61 @@ def trad_forms(b):
     print("smoke: trad forms: 歲 幾 詞 這裡 find their 入門 gloss in traditional text")
 
 
+def corrupt_storage(b):
+    """finding 8: whatever is in localStorage, the page opens: each stored value is checked on read and falls back to its
+    default field by field; nothing throws"""
+    page = b.new_context(viewport={"width": 1200, "height": 850}).new_page()
+    errs = []
+    page.on("pageerror", lambda e: errs.append(str(e)))
+    D = {"script": "src", "pinyin": "above", "cover": False, "rlang": "fr", "night": False}
+    cases = [  # raw localStorage values (strings, as stored), what wy.settings must become, what wy.done must hold
+        ({"done": "null"}, D, {}),
+        ({"done": "5"}, D, {}),
+        ({"done": '"text"'}, D, {}),
+        ({"done": "[1,2]"}, D, {}),
+        ({"done": "{"}, D, {}),
+        ({"done": '{"wenyan:1": "2026-01-02", "wenyan:2": 7, "wenyan:3": null}'}, D, {"wenyan:1": "2026-01-02"}),
+        ({"marks": "[1,2]", "done": '{"wenyan:1": "2026-01-02"}'}, D, {"wenyan:1": "2026-01-02"}),
+        ({"marks": '{"wenyan:1": "x", "wenyan:2": null}'}, D, {}),
+        ({"settings": '{"script": "klingon", "pinyin": 5, "cover": "false", "rlang": "de", "night": "no"}'}, D, {}),
+        ({"settings": '{"script": "simp", "pinyin": "tap", "cover": "no", "rlang": "en", "night": "false"}'},
+         {**D, "script": "simp", "pinyin": "tap", "rlang": "en"}, {}),
+        ({"settings": '{"cover": true, "night": "true"}'}, {**D, "cover": True, "night": True}, {}),
+        ({"settings": "[]"}, D, {}),
+        ({"settings": '"text"'}, D, {}),
+        ({"settings": "{"}, D, {}),
+        ({"tab": '"nope"'}, D, {}),
+        ({"tab": "42"}, D, {}),
+        ({"tab": '"settings"'}, D, {}),
+        ({"lesson": '"__proto__"', "migrated": "false"}, D, {}),
+        ({"gistToken": "{}", "syncAt": '"x"'}, D, {}),
+    ]
+    for raw, want, want_done in cases:
+        errs.clear()
+        page.goto(PAGE)
+        page.evaluate("r => { localStorage.clear(); localStorage.setItem('wy.migrated', 'true'); for (const k in r) localStorage.setItem('wy.' + k, r[k]); }", raw)
+        page.goto(PAGE + "#"); page.reload(); page.wait_for_timeout(200)
+        ok = page.locator(".thead").count() == 1 and page.locator('#tabs a[aria-current="page"]').get_attribute("href") == "#rumen"
+        got = page.evaluate("JSON.parse(localStorage.getItem('wy.settings'))")
+        if not ok:
+            errors.append(f"corrupt {raw}: the first page is blank or no tab is highlighted")
+        if got != want:
+            errors.append(f"corrupt {raw}: settings {got}, want {want}")
+        page.goto(PAGE + "#wenyan/2"); page.wait_for_selector(".lbar", timeout=5000)
+        page.locator("#markdone").click(); page.wait_for_selector("#undo", timeout=5000)
+        d = page.evaluate("JSON.parse(localStorage.getItem('wy.done'))")
+        if d != {**want_done, "wenyan:2": d.get("wenyan:2")} or not d.get("wenyan:2"):
+            errors.append(f"corrupt {raw}: done {d}, want {want_done} + wenyan:2")
+        for e in errs:
+            errors.append(f"corrupt {raw}: {e}")
+    page.context.close()
+    print(f"smoke: corrupt storage: {len(cases)} kinds of bad values, the page opens and works with each")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms}
+         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:
