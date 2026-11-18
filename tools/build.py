@@ -246,9 +246,40 @@ def zh_table(course):
           f"{bad} shown differently by the browser")
     if bad:
         sys.exit("zh_words: the browser would cut or read some texts differently (see above)")
+    zh_check_js(course, modern, classical)
     (ROOT / "data" / "build").mkdir(parents=True, exist_ok=True)
     (ROOT / "data" / "build" / "zh-texts.json").write_text(json.dumps({"modern": modern, "classical": classical},
                                                                      ensure_ascii=False), encoding="utf-8")
+
+
+def zh_check_js(course, modern, classical):
+    """run app/src/dict.js's own zhCut in Node on every text and compare with the build (skipped without node)"""
+    import shutil, subprocess
+    node = shutil.which("node")
+    if not node:
+        print("dictionary: no node on PATH, the check of app/src/dict.js itself is skipped (the Python one ran)")
+        return
+    want = {"m": [[t, zh_words.analyse(t)] for t in modern], "c": [[t, zh_words.analyse(t, True)] for t in classical]}
+    data = {k: course[k] for k in ("zh", "zhx", "zhqt", "zhm", "zhp")}
+    js = (ROOT / "app" / "src" / "dict.js").read_text(encoding="utf-8")
+    prog = """
+const fs = require("fs"), inp = JSON.parse(fs.readFileSync(0, "utf8"));
+const course = inp.data, esc = t => String(t ?? ""), $ = () => null, $$ = () => [];
+const document = {addEventListener(){}};
+""" + js + """
+const norm = c => c.map(t => typeof t === "string" ? t : [t[0], t[1] || null]);
+let bad = 0;
+for (const [k, cl] of [["m", false], ["c", true]]) for (const [t, want] of inp.want[k]) {
+  if (JSON.stringify(norm(zhCut(t, cl))) !== JSON.stringify(want)) { if (++bad <= 5) console.log("differs: " + t.slice(0, 60)); }
+}
+console.log(bad);
+"""
+    r = subprocess.run([node, "-e", prog], input=json.dumps({"data": data, "want": want}, ensure_ascii=False),
+                       capture_output=True, text=True, encoding="utf-8")
+    out = r.stdout.strip().splitlines()
+    if r.returncode or not out or out[-1] != "0":
+        sys.exit("dictionary: app/src/dict.js cuts or reads texts differently from the build\n" + r.stdout + r.stderr)
+    print(f"dictionary: app/src/dict.js (Node) cuts and reads all {len(modern) + len(classical)} texts as the build")
 
 
 def main():
