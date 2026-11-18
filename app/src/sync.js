@@ -128,11 +128,12 @@
   // until the shell sends every change of wy.done through markDone (which calls syncTouch), watch the writes here
   if (typeof markDone !== "function"){ const set0 = store.set; store.set = (k, v) => { set0.call(store, k, v); if (k === "done") syncTouch(); }; }
   stampMarks();
-  // redraw after other devices' progress arrived, without disturbing what is being read (not with a card open)
+  // redraw after other devices' progress arrived, without disturbing what is being read (not with a sheet open):
+  // the shell's rerender (route.js) keeps the scroll position
   function syncRedraw(){
-    if (typeof go !== "function" || typeof course === "undefined" || !course) return;
-    if ($("#sheet.open") || ($("#pop") && $("#pop").style.display === "block")) return syncShow();
-    const y = scrollY; go(); scrollTo(0, y);
+    if (typeof course === "undefined" || !course) return;
+    if (sheetOpen()) return syncShow();
+    rerender();
   }
   document.addEventListener("visibilitychange", () => {
     if (!Sync.on) return;
@@ -188,6 +189,6 @@
     el.onclick = async e => {
       const id = e.target.closest("button")?.id;
       if (id === "syncNow"){ const ch = await Sync.run(); if (ch) syncRedraw(); }
-      if (id === "syncOff"){ ["gistToken", "gistId", "syncErr", "syncAt"].forEach(k => store.set(k, k === "syncAt" ? 0 : "")); if (typeof moduleCheck === "function") await moduleCheck(); syncShow(); if (typeof go === "function") go(); }
+      if (id === "syncOff"){ ["gistToken", "gistId", "syncErr", "syncAt"].forEach(k => store.set(k, k === "syncAt" ? 0 : "")); if (typeof moduleCheck === "function") await moduleCheck(); syncShow(); rerender(); }
     };
   }

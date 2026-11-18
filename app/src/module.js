@@ -83,7 +83,7 @@
     return {
       v: 1, repo: Mod.REPO, index: Mod.index, main: app,
       file: p => Mod.file(p), text: async p => (await Mod.file(p)).text(), json: async p => (await Mod.file(p)).json(), media: p => Mod.media(p),
-      app: {openSheet, closeSheet, esc, go: () => go(), store: {get: (k, d) => store.get("mod." + k, d), set: (k, v) => store.set("mod." + k, v)}, ...opt},
+      app: {openSheet, closeSheet, esc, go: () => route(), store: {get: (k, d) => store.get("mod." + k, d), set: (k, v) => store.set("mod." + k, v)}, ...opt},
     };
   }
   // for the shell: the module's tabs ([key, zh, en]) on this device, and its routes
@@ -97,7 +97,7 @@
   async function moduleCheck(){
     const was = JSON.stringify(moduleTabs());
     await Mod.check();
-    if (JSON.stringify(moduleTabs()) !== was && typeof go === "function" && typeof course !== "undefined" && course && !$("#sheet.open")){ const y = scrollY; go(); scrollTo(0, y); }
+    if (JSON.stringify(moduleTabs()) !== was && typeof course !== "undefined" && course && !sheetOpen()) rerender();
     moduleShow();
   }
 
