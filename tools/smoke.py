@@ -185,6 +185,7 @@ def run(page, name):
     check("chengyu/1")
 
     dict_pass(page, name, check)
+    integration(page, name, expect)
 
     # Settings: every switch, then back to the defaults
     page.goto(PAGE + "#settings"); page.wait_for_selector(".set")
@@ -252,11 +253,105 @@ def dict_pass(page, name, check):
                     errors.append(f"{name} {t['key']}/{l['id']}: Characters -> Back did not return to {w}")
                 backed = True
             page.keyboard.press("Escape")
+        if not backed and t["key"] == "wenyan":
+            # 文言 is read one character at a time: Characters -> Back from a glossary word's card (its .dx)
+            page.goto(PAGE + f"#{t['key']}/1"); page.wait_for_selector(".lbar")
+            g = page.locator(".page.left .w").filter(has_text=re.compile(r"^..+$"))
+            if g.count():
+                w = g.first.inner_text(); g.first.scroll_into_view_if_needed(); g.first.click()
+                page.wait_for_selector("#sheet.open .dx [data-zact=word]")
+                page.locator("#sheet .dx [data-zact=word]").first.click(); page.wait_for_selector("#sheet .sback")
+                page.locator("#sheet .sback").click(); page.wait_for_selector("#sheet .gloss")
+                if not page.locator("#sheet .wh").inner_text().startswith(w):
+                    errors.append(f"{name} wenyan/1: Characters -> Back did not return to the card of {w}")
+                backed = True
+                page.keyboard.press("Escape")
         if not backed:
             errors.append(f"{name} {t['key']}: no word of two characters or more to test Characters -> Back")
     if total < 300:
         errors.append(f"{name}: only {total} dictionary words tapped (want at least 300)")
     print(f"smoke: {name}: {total} dictionary words tapped")
+
+
+def integration(page, name, expect):
+    """the three branches together: our gloss before the automatic layer, one way back, the script setting in the
+    dictionary, Cover and pinyin on tap with dictionary words, 入門 notes made of course words only"""
+    def sheet():
+        page.wait_for_selector("#sheet.open"); page.wait_for_timeout(200)
+
+    def close():
+        page.keyboard.press("Escape"); page.wait_for_selector("#sheet:not(.open)", state="attached")
+
+    def tap(loc):
+        loc.scroll_into_view_if_needed(); loc.click()
+
+    order = """([a, b]) => { const x = document.querySelector('#sheet ' + a), y = document.querySelector('#sheet ' + b);
+      return !!(x && y && (x.compareDocumentPosition(y) & Node.DOCUMENT_POSITION_FOLLOWING)); }"""
+    page.goto(PAGE + "#settings"); page.wait_for_selector(".set")
+    page.evaluate("localStorage.setItem('wy.settings', JSON.stringify({script: 'src', pinyin: 'above', cover: false, rlang: 'fr', night: false}))")
+    page.reload(); page.wait_for_selector(".set")
+    # 白話: a glossary word (our card): our gloss, then the automatic layer in .dx
+    page.goto(PAGE + "#baihua/1"); page.wait_for_selector(".lbar")
+    multi = page.locator(".page.left .w").filter(has_text=re.compile(r"^..+$")).first
+    w = multi.inner_text(); tap(multi); sheet()
+    expect(page.evaluate(order, [".gloss", ".dx .zauto"]), f"baihua: the card of {w} does not show our gloss, then the automatic layer")
+    # Characters -> ‹ Back returns to the card, through sheetBack
+    page.locator("#sheet .dx button.zchar, #sheet .dx button.zw").first.click(); page.wait_for_selector("#sheet .zd")
+    expect(page.locator("#sheet .sback").count() == 1, "baihua: a character of a card has no ‹ Back")
+    page.locator("#sheet .sback").click(); page.wait_for_selector("#sheet .gloss")
+    expect(page.locator("#sheet .wh").inner_text().startswith(w), f"baihua: ‹ Back did not return to the card of {w}")
+    close()
+    # a dictionary word the course glosses (入門): "In the course" first, then the automatic layer
+    D = TR["rumen"]["dict"]; known = set(D) | {d["t"] for d in D.values() if d.get("t")}
+    toks = page.locator(".page.left .ztok")
+    k = next((i for i in range(toks.count()) if toks.nth(i).get_attribute("data-z") in known), None)
+    expect(k is not None, "baihua: no dictionary word that 入門 glosses")
+    if k is not None:
+        tap(toks.nth(k)); sheet()
+        expect(page.evaluate(order, [".zours", ".zauto"]), "baihua: a word 入門 glosses does not show our gloss first")
+        close()
+    # Cover: the first tap on a word of a hidden line reveals it, the second opens the dictionary
+    page.locator("#tCover").click(); page.wait_for_selector("html.cover")
+    tok = page.locator('.page.left .ln[data-i="1"] .ztok').first
+    tap(tok); page.wait_for_timeout(150)
+    expect(page.locator('.ln[data-i="1"].peek').count() > 0 and not page.locator("#sheet.open").count(), "Cover: the first tap on a word did not only reveal its line")
+    tok.click(); sheet(); close()
+    page.locator("#tCover").click(); page.wait_for_selector("html:not(.cover)")
+    # script = simplified: a 白話 word opens under its simplified headword
+    page.evaluate("localStorage.setItem('wy.settings', JSON.stringify({script: 'simp', pinyin: 'above', cover: false, rlang: 'fr', night: false}))")
+    page.reload(); page.wait_for_selector(".lbar")
+    trad = [l["h"] for l in TR["baihua"]["lessons"][0]["lines"]]
+    z = page.evaluate("""trad => { for (const el of document.querySelectorAll('.page.left .ln .ztok')) {
+        const i = +el.closest('.ln').dataset.i; if (!trad[i].includes(el.dataset.z)) { el.classList.add('pick'); return el.dataset.z; } } return null; }""", trad)
+    expect(z is not None, "simplified: no 白話 word whose form differs")
+    if z:
+        tap(page.locator(".ztok.pick")); sheet()
+        expect(page.locator("#sheet .zd").get_attribute("data-hw") == z and page.evaluate("document.querySelector('#sheet .zd .wh').firstChild.textContent") == z,
+               f"simplified: the sheet of {z} does not have the simplified headword")
+        close()
+    page.evaluate("localStorage.setItem('wy.settings', JSON.stringify({script: 'src', pinyin: 'tap', cover: false, rlang: 'fr', night: false}))")
+    page.reload(); page.wait_for_selector(".lbar")
+    # 入門: notes are course words only (.wt), whose card has the automatic layer only inside .dx (in French)
+    for l in TR["rumen"]["lessons"]:
+        page.goto(PAGE + f"#rumen/{l['id']}"); page.wait_for_selector(".lbar")
+        n_z, n_wt = page.evaluate("[document.querySelectorAll('#sec-notes .ztok').length, document.querySelectorAll('#sec-notes .wt').length]")
+        expect(n_z == 0, f"rumen/{l['id']}: {n_z} Chinese words in the notes that no course card covers")
+    page.goto(PAGE + "#rumen/1"); page.wait_for_selector(".lbar")
+    page.locator(".nlink").first.click(); sheet()
+    wt = page.locator("#sheet .ntext .wt").first
+    wt.click(); page.wait_for_selector("#sheet .wh")
+    expect(page.evaluate(order, [".gloss", ".dx .zauto"]) and page.locator("#sheet .zauto").count() == page.locator("#sheet .dx .zauto").count(),
+           "rumen: a note's word card is not our gloss then the automatic layer inside .dx")
+    expect("automatique" in page.locator("#sheet .dx .zlab").first.inner_text().lower(), "rumen: the automatic layer is not in French")
+    if shots:
+        shots.mkdir(parents=True, exist_ok=True); page.screenshot(path=str(shots / f"{name}-rumen-note-card-dx.png"))
+    close()
+    # pinyin on tap: a dictionary word (no pinyin above it) opens at once
+    q = page.locator(".prac .q .txt .ztok").first
+    tap(q); sheet(); expect(page.locator("#sheet .zd").count() == 1, "rumen: pinyin on tap, a dictionary word did not open")
+    close()
+    page.evaluate("localStorage.setItem('wy.settings', JSON.stringify({script: 'src', pinyin: 'above', cover: false, rlang: 'fr', night: false}))")
+    page.reload(); page.wait_for_selector(".lbar")
 
 
 def migration(page):
