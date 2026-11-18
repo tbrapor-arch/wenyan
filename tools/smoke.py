@@ -431,10 +431,34 @@ def classical_gloss(b):
     print(f"smoke: classical: {n} words of classical text tapped, none with a 入門 gloss or a modern example")
 
 
+def progress_file(b):
+    """finding 6: Save writes the done dates only; Load merges them and ignores settings in the file (an older file has
+    them): this device's settings stay"""
+    page = b.new_context(viewport={"width": 1200, "height": 850}, accept_downloads=True).new_page()
+    page.on("pageerror", lambda e: errors.append(f"progress file: {e}"))
+    page.goto(PAGE); page.evaluate("localStorage.clear()")
+    mine = {"script": "src", "pinyin": "tap", "cover": False, "rlang": "en", "night": False}
+    page.evaluate("s => { localStorage.setItem('wy.settings', JSON.stringify(s)); localStorage.setItem('wy.done', JSON.stringify({'wenyan:1': '2026-01-02'})); }", mine)
+    page.goto(PAGE + "#settings"); page.reload(); page.wait_for_selector("#save")
+    with page.expect_download() as dl:
+        page.locator("#save").click()
+    saved = json.loads(Path(dl.value.path()).read_text(encoding="utf-8"))
+    if "settings" in saved or saved.get("done") != {"wenyan:1": "2026-01-02"} or saved.get("app") != "wenyan":
+        errors.append(f"progress file: Save wrote {saved}")
+    old = {"app": "wenyan", "done": {"wenyan:2": "2025-05-06"}, "settings": {"script": "simp", "pinyin": "off", "cover": True, "rlang": "fr", "night": True}}
+    page.set_input_files("#file", files=[{"name": "p.json", "mimeType": "application/json", "buffer": json.dumps(old).encode()}])
+    page.wait_for_function("JSON.parse(localStorage.getItem('wy.done'))['wenyan:2'] === '2025-05-06'")
+    got = page.evaluate("JSON.parse(localStorage.getItem('wy.settings'))")
+    if got != mine or page.evaluate("document.documentElement.dataset.theme") == "dark":
+        errors.append(f"progress file: Load changed this device's settings: {got}")
+    page.context.close()
+    print("smoke: progress file: Save writes the done dates only; Load keeps this device's settings")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss}
+         "classical": classical_gloss, "progress_file": progress_file}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:

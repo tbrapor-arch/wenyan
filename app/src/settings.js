@@ -26,7 +26,7 @@
   }
   async function loadFile(f){
     try{ const d = JSON.parse(await f.text()); if (d.app !== "wenyan") throw 0;
-      // merge: the earliest finish date of each lesson (a "deck" in an older file is ignored); settings if the file has them
+      // merge: the earliest finish date of each lesson (a "deck" or "settings" in an older file is ignored)
       setProgress(d); touch(); route();
     }catch(x){ alert("That file is not a Wenyan progress file."); }
   }

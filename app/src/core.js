@@ -107,10 +107,11 @@
   // every write to done goes through here. on: true (today), a date "YYYY-MM-DD", or false (undo); quiet: no syncTouch
   // (a merge from a file or from sync)
   function markDone(key, on, quiet){ doneReload(); if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); if (!quiet) touch(); }
-  const getProgress = () => ({done: {...doneReload()}, settings: {...S}});
+  // the progress: the done dates only. Settings belong to the device: neither a progress file nor sync carries them.
+  const getProgress = () => ({done: {...doneReload()}});
   // merge (a progress file): the earliest finish date of each lesson wins. {replace: true} (sync, which has already
-  // merged with its done / undone marks): done becomes exactly obj.done, removals included. Settings, when given,
-  // replace ours; without them ours are kept.
+  // merged with its done / undone marks): done becomes exactly obj.done, removals included. Settings in obj (an
+  // older progress file has them) are ignored: this device's are kept.
   function setProgress(obj, opt = {}){
     const d = obj && obj.done && typeof obj.done === "object" ? obj.done : {};
     doneReload();
@@ -118,5 +119,4 @@
       for (const k of Object.keys(done)) if (typeof d[k] !== "string") markDone(k, false, true);
       for (const k in d) if (typeof d[k] === "string" && done[k] !== d[k]) markDone(k, d[k], true);
     } else for (const k in d) if (typeof d[k] === "string" && (!done[k] || d[k] < done[k])) markDone(k, d[k], true);
-    if (obj && obj.settings && typeof obj.settings === "object"){ S = clean({...S, ...obj.settings}); store.set("settings", S); }
   }

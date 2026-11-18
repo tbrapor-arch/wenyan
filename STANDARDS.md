@@ -319,14 +319,16 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   the first tap on any word of a hidden line reveals the line, the next opens the word.
 - **Settings:** one script choice for every track (as written / traditional / simplified; the dictionary follows it),
   one pinyin choice, Cover, 入門 language (also the dictionary's labels in 入門), night. They live in `wy.settings`;
-  the older keys (`wy.simp`, `wy.rtrad`, `wy.py`, `wy.rmode`…) are read once when it does not exist yet. Settings
-  belong to the device: they are not synced.
+  the older keys (`wy.simp`, `wy.rtrad`, `wy.py`, `wy.rmode`…) are read once when it does not exist yet. If both old
+  script switches were on (文言 / 白話 / 成語 simplified and 入門 traditional), traditional wins. If 入門's three-way
+  pinyin switch was ever used, its value becomes the single pinyin setting; otherwise the old 文言 / 成語 pinyin on / off
+  does. Settings belong to the device: they are not synced, and a progress file neither saves nor loads them.
 - **Mark as done** dates the lesson (✓ on its tile); Undo removes the date. Every write to the done dates goes
   through `markDone`. There is no review deck: review happens by reading, with the 7th-lesson reviews and the
   "Roots" exercises.
 - **Progress** lives in the browser (`wy.done`; several tabs of one browser share it: every write starts from what is
-  stored, and a tab redraws when another one changes it, once its sheet is closed). Settings saves and loads it as a file (loading merges: earliest
-  finish date), and can sync it between devices through a secret GitHub gist with the user's own token (done and
+  stored, and a tab redraws when another one changes it, once its sheet is closed). Settings saves and loads it as a file (the done dates only; loading
+  merges, earliest finish date, and ignores the settings an older file may hold), and can sync it between devices through a secret GitHub gist with the user's own token (done and
   undone are merged by the latest change, the earliest date kept; `docs/sync-and-private-module.md`).
 - **Offline.** The published site is installable; a service worker keeps the page (which holds all the course data
   and the dictionary) for offline use. A Content Security Policy allows only the page's own script, the private
