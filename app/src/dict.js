@@ -7,9 +7,11 @@
      first word on a tie): `make app` fails if a text would be cut or read differently. The text is never altered:
      only its words are wrapped in spans. Automatic, not checked by a person. */
 
-  // The two settings the dictionary reads (the integrator can repoint them): the script shown, the label language.
-  function dictScript(){ try{ return T && T.key === "rumen" ? (rtrad ? "t" : "s") : (simp ? "s" : "t"); }catch(e){ return "t"; } }
-  function dictLang(){ try{ return T && T.key === "rumen" && rlang === "fr" ? "fr" : "en"; }catch(e){ return "en"; } }
+  // The two settings the dictionary reads, from the shell (core.js): the script on screen ("s" | "t": the track's
+  // own script when Settings say "as written", SIMP), and the language of its labels (French only in 入門 with French
+  // explanations, lang()). Off a track (Settings, a module tab): the script setting itself, English.
+  function dictScript(){ try{ return T ? (SIMP ? "s" : "t") : S.script === "simp" ? "s" : "t"; }catch(e){ return "t"; } }
+  function dictLang(){ try{ return lang() === "fr" ? "fr" : "en"; }catch(e){ return "en"; } }
 
   const DICT_CREDIT = "Dictionary: CC-CEDICT (MDBG, CC BY-SA 4.0), word frequencies from jieba (MIT), HSK lists from complete-hsk-vocabulary (MIT); cut and readings are automatic.";
   const ZH_V = 2;   // table format (Tsheh-tû's): a private module adds its own words only to a page that has this one
