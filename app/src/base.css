@@ -1,10 +1,12 @@
 /* base.css: colours and fonts (light / night), page frame, top bar and tabs, shared pieces, track home */
 /* Always light, whatever the phone says; night is a manual switch in Settings. */
+/* Fonts: Google Fonts (the published app keeps the files it has used, sw.js); before that, or in the single file
+   offline, the system's own Chinese serif (Songti on Apple, Noto / Source Han Serif on Android and Linux). */
 :root{
   color-scheme:only light;
   --paper:#f6f1e7; --paper-2:#efe7d6; --card:#fbf8f1; --ink:#24201b; --ink-2:#6b6257; --rule:#d9cdb6;
   --seal:#a8321e; --seal-soft:#a8321e1a; --hl:#e9d9a8; --ok:#3d6b4f;
-  --zh:"Noto Serif TC","Noto Serif SC",serif; --en:"Source Serif 4",Georgia,serif;
+  --zh:"Noto Serif TC","Noto Serif SC","Noto Serif CJK TC","Source Han Serif TC","Songti TC","PMingLiU",serif; --en:"Source Serif 4",Georgia,serif;
   --nav-h:58px;
 }
 :root[data-theme="dark"]{
@@ -12,7 +14,7 @@
   --paper:#1b1916; --paper-2:#24211d; --card:#211e1a; --ink:#ece4d4; --ink-2:#a69b8a; --rule:#3a352e;
   --seal:#e0664c; --seal-soft:#e0664c22; --hl:#5a4a22; --ok:#7fb894;
 }
-html.simp{--zh:"Noto Serif SC","Noto Serif TC",serif}
+html.simp{--zh:"Noto Serif SC","Noto Serif TC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--en);-webkit-font-smoothing:antialiased}
