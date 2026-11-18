@@ -80,6 +80,7 @@
     if (typeof zhAdd === "function") opt.zhAdd = zhAdd;
     if (typeof ZH_V !== "undefined") opt.ZH_V = ZH_V;
     if (typeof openCard === "function") opt.openCard = openCard;
+    if (typeof openZhWord === "function") opt.openZhWord = w => openZhWord(w);
     return {
       v: 1, repo: Mod.REPO, index: Mod.index, main: app,
       file: p => Mod.file(p), text: async p => (await Mod.file(p)).text(), json: async p => (await Mod.file(p)).json(), media: p => Mod.media(p),

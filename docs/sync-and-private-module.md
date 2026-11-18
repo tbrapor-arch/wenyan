@@ -34,8 +34,11 @@ In the app: Settings › Sync between devices (published app only).
 ### Progress format
 - `wy.done` (unchanged): `{"wenyan:3": "2026-11-02", "rumen:5:wave": "2026-11-10", …}`, lesson key → finish date.
 - `wy.marks` (new): lesson key → `+ms` when last marked done, `−ms` when last undone (`Date.now()`). Kept by
-  comparing `wy.done` with it (`stampMarks` in `app/src/sync.js`), so whatever writes `wy.done` needs no change as long
-  as it calls `syncTouch()` afterwards. The first time, lessons already done get `+1`: older than any Undo.
+  comparing `wy.done` with it (`stampMarks` in `app/src/sync.js`). Every write to `wy.done` goes through the shell's
+  `markDone(key, on, quiet)` (`app/src/core.js`), which calls `syncTouch()` (quiet: a merge, from a file or from sync,
+  stamps nothing new by itself). Sync reads `getProgress()` and writes its merged copy with
+  `setProgress({done}, {replace: true})` (done becomes exactly that copy, removals included); Load uses
+  `setProgress(file)`, which merges (earliest date). The first time, lessons already done get `+1`: older than any Undo.
 - The gist file: `{"app": "wenyan", "v": 2, "at": ISO time, "done": {…}, "marks": {…}}`. A copy without `marks`
   (a progress file, an older app) merges as before: earliest date, and its lessons count as older than any Undo.
 
@@ -58,12 +61,13 @@ Loader contract (`Mod` in `app/src/module.js`):
   module draws into `loader.main` (the page's `<main>`).
 - `loader`: `v` (1), `repo`, `index`, `main`, `file(path)` → Response, `text(path)`, `json(path)`, `media(path)` →
   `blob:` URL, and `app`, the app's shared pieces (the app's names live in one closure, not on `window`):
-  - `openSheet(html)`, `closeSheet()`: the bottom sheet; `esc(text)`: HTML-escape; `go()`: redraw the current route;
+  - `openSheet(html)`, `closeSheet()`: the bottom sheet; `esc(text)`: HTML-escape; `go()`: redraw the current route (the shell's `route()`);
     `store.get(k, d)` / `store.set(k, v)`: the module's own keys in localStorage (prefixed `wy.mod.`).
   - when the page has them: `zhLine(text)` (HTML: the text unaltered, its words as tappable spans that open the
     dictionary sheet), `zhAdd({qt, w, x})` (adds the module's own words, `w`, and readings, `x`, made by the public
     `tools/zh_words.py`, to the app's dictionary; refused when `qt` differs from the page's), `ZH_V` (the
-    dictionary's version: use `zhLine` / `zhAdd` only when it is present), `openCard(…)` (the word card). The module
+    dictionary's version: use `zhLine` / `zhAdd` only when it is present), `openZhWord(word)` (the dictionary sheet
+    of a word), `openCard("k", word)` (the card of a 入門 word). The module
     falls back to plain text when they are missing (an older cached app page).
 - Settings › the module's status on this device (on / not available, Check again); nothing is shown without a token.
 
