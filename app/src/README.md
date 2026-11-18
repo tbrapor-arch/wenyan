@@ -14,25 +14,30 @@ starts with a one-line comment saying what it owns.
 
 | # | CSS part | Owns |
 |---|---|---|
-| 1 | `base.css` | colours and fonts (light / night), page frame, top bar and tabs, shared pieces (buttons, seal, badges), track home, reduced motion |
-| 2 | `lesson.css` | lesson bar, 文言 / 白話 reading lesson (pages, notes, glossary, exercise, finish), word / note pop-up |
-| 3 | `chengyu.css` | 成語 lesson |
+| 1 | `base.css` | colours and fonts (light / night), page frame, top bar and tabs, shared pieces (buttons, seal, badges), track home and its tiles, reduced motion |
+| 2 | `lesson.css` | lesson bar, the lesson page of every track (hero, two pages, notes, word chips, exercises, recap, finish), pinyin modes, Cover |
+| 3 | `chengyu.css` | 成語: patterns, the two-row 成語 card |
 | 4 | `settings.css` | Settings page |
-| 5 | `rumen.css` | 入門 lesson (dialogue, words with pinyin, notes, new words, practice, NHSK bars) |
-| 6 | `sheet.css` | bottom sheet (word card, note) |
-| 7 | `dict.css` | dictionary (empty for now) |
+| 5 | `rumen.css` | 入門 only: section chips, second wave, dialogue with speakers, words with pinyin above, note numbers, multiple choice, NHSK bars |
+| 6 | `sheet.css` | bottom sheet (word card, note, "‹ Back to …") |
+| 7 | `dict.css` | dictionary |
 
 | # | JS part | Owns |
 |---|---|---|
-| 1 | `core.js` | `$`, `$$`, `store`, `esc`, `md`, `today`, state (`course`, `T`, `L`, settings, `done`), `Z`, `track`, `isDone`, `saveDone` |
-| 2 | `route.js` | `TABS`, `route`, `drawTabs`, `go` |
-| 3 | `home.js` | track home (文言, 白話, 成語), `sealHTML` |
-| 4 | `lesson.js` | 文言 / 白話 lesson (`bar`, `finish`, `markLine`, exercise, glossary, review), `syncHeights`, word / note pop-up, `flash` |
-| 5 | `chengyu.js` | 成語 lesson |
-| 6 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet` |
-| 7 | `rumen.js` | 入門: strings (`RL`), words and notes, `rHome`, `rBar`, `rLesson`, `rFinish`, `rJump`, `openCard`, `openNote`, `rClick` |
-| 8 | `dict.js` | dictionary: `zhCut`, `zhLine`, `openZh` (empty for now) |
-| 9 | `settings.js` | Settings page |
-| 10 | `sync.js` | progress sync through a secret gist (empty for now) |
-| 11 | `module.js` | private-module loader (empty for now) |
-| 12 | `events.js` | the delegated click / change / key / scroll / resize / hashchange listeners, then boot |
+| 1 | `core.js` | `$`, `$$`, `store`, `esc`, `today`, `han`, `md`, `flash`, `jump`, state (`course`, `T`, `L`, `SIMP`, settings `S`), the settings migration, `Z`, `t_` / `UI`, `tx`, progress (`done`, `isDone`, `markDone`, `getProgress`, `setProgress`) |
+| 2 | `track.js` | `CFG`: what each track's lessons are made of (script, pinyin, languages, sections, notes, words, exercises, Cover) |
+| 3 | `route.js` | `TABS`, `parseHash`, `currentTab`, `drawTabs`, `route`, `rerender` |
+| 4 | `home.js` | the track home of every track (`showHome`, tiles), `sealHTML` |
+| 5 | `toolbar.js` | the lesson bar (`toolbar`) and the switches (`toggle`), shared with Settings |
+| 6 | `lesson.js` | the lesson page (`showLesson`, `hero`, `finish`), the sections `SEC` (`pages`, `notes`, `words`, `practice`, `recap`, `culture`), `markLine`, word chips, `syncHeights` |
+| 7 | `chengyu.js` | 成語 sections: `frames`, `cards` |
+| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetBack`, `sheetCur`; the word card (`openCard`, `cardHTML`), the note (`openNote`), `courseGloss` |
+| 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
+| 10 | `dict.js` | dictionary: `zhLine`, `zhLineClassical`, `dictExtra` |
+| 11 | `settings.js` | Settings page, progress file (Save / Load) |
+| 12 | `sync.js` | progress sync through a secret gist |
+| 13 | `module.js` | private-module loader |
+| 14 | `events.js` | the delegated click / change / key / resize / hashchange listeners, then boot |
+
+**A new track** is a `CFG` entry (and its sections in `SEC` if it needs new ones), not a new page function.
+Every plain Chinese text goes through `han(text, classical)`; every write to `done` through `markDone`.
