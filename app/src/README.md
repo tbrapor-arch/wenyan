@@ -20,7 +20,7 @@ starts with a one-line comment saying what it owns.
 | 4 | `settings.css` | Settings page |
 | 5 | `rumen.css` | 入門 only: section chips, second wave, dialogue with speakers, words with pinyin above, note numbers, multiple choice, NHSK bars |
 | 6 | `sheet.css` | bottom sheet (word card, note, "‹ Back to …") |
-| 7 | `dict.css` | dictionary |
+| 7 | `dict.css` | dictionary: tappable words (`.ztok`), the dictionary sheet (`.zd`), its layer inside curated cards (`.dx`) |
 
 | # | JS part | Owns |
 |---|---|---|
@@ -33,7 +33,7 @@ starts with a one-line comment saying what it owns.
 | 7 | `chengyu.js` | 成語 sections: `frames`, `cards` |
 | 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetBack`, `sheetCur`; the word card (`openCard`, `cardHTML`), the note (`openNote`), `courseGloss` |
 | 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
-| 10 | `dict.js` | dictionary: `zhLine`, `zhLineClassical`, `dictExtra` |
+| 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang`, `zhCut`, `zhLine`, `zhLineClassical`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 11 | `settings.js` | Settings page, progress file (Save / Load) |
 | 12 | `sync.js` | progress sync through a secret gist |
 | 13 | `module.js` | private-module loader |

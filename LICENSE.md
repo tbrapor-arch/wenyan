@@ -4,6 +4,11 @@
   [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 - **Code** (`tools/`, `app/`): MIT License, below.
 - **Classical texts** quoted in the lessons are in the public domain.
+- **Dictionary data** built into the page by `tools/zh_words.py` (downloaded by `make data`, not in the repository):
+  CC-CEDICT (MDBG), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) (pinyin and English
+  senses); jieba's `dict.txt` and `idf.txt` (fxsjy/jieba), MIT (word frequencies); complete-hsk-vocabulary
+  (drkameleon), MIT (HSK levels and readings); NHSK levels from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
+  (`data/nhsk.tsv`). The page that carries them is shared under the same terms (attribution, share-alike).
 
 ## MIT License
 

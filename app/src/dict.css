@@ -1,1 +1,42 @@
-/* dict.css: dictionary (agent B). Empty for now. */
+/* dict.css: dictionary: tappable words (.ztok) and the dictionary sheet (.zd), also inside curated cards (.dx) */
+.ztok{cursor:pointer;border-radius:3px;-webkit-tap-highlight-color:transparent}
+.ztok:hover,.ztok.sel{background:var(--hl)}
+.ztok:focus-visible{outline:2px solid var(--seal);outline-offset:1px}
+#sheet .zd .wh{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 10px;overflow-wrap:anywhere}
+#sheet .zd .wh small{margin-left:0}
+.zbadge{align-self:center;font:600 13px var(--zh);color:var(--seal);border:1px solid currentColor;border-radius:4px;padding:0 6px;letter-spacing:.06em}
+#sheet .zsay{font-size:14px}
+#sheet .zsay.on{background:var(--seal-soft);color:var(--seal)}
+.zback{margin-top:10px;font-size:14px}
+.zours{font-size:17px}
+.zauto{margin-top:14px;border-left:3px solid var(--rule);padding-left:12px}
+.zauto.zclass{border-left-color:var(--seal)}
+.zlab{display:inline-block;font:600 11px var(--en);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);background:var(--paper-2);border-radius:999px;padding:1px 9px}
+.zclass .zlab{color:var(--seal);background:var(--seal-soft);text-transform:none;letter-spacing:.02em;font-size:12.5px}
+.zent{margin:2px 0 8px}
+.zent .zpy,.zpart .zpy{font-style:italic;color:var(--seal)}
+.zent ol{margin:2px 0 0;padding-left:1.4em;font-size:15.5px;line-height:1.45}
+.zent ol.one{list-style:none;padding-left:0}
+.zcl{font-size:14px;color:var(--ink-2);margin-top:2px}
+.zx i{color:var(--ink-2)}
+.zw{border:0;background:none;padding:0 1px;font:inherit;font-family:var(--zh);color:var(--seal);cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+.zparts{display:grid;gap:4px;font-size:15px}
+.zpart .zw,.zpart .han{font-size:19px}
+.zchars{display:grid;gap:6px}
+.zchar{display:flex;gap:10px;align-items:baseline;text-align:left;border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:14px;min-width:0}
+span.zchar{cursor:default}
+.zchar .han{font:22px var(--zh);flex:none}
+.zchar .d{min-width:0;overflow-wrap:anywhere;color:var(--ink-2)}
+.zchar .d b{color:var(--seal);font-weight:400;font-style:italic}
+.zcuts button[aria-pressed="true"]{border-color:var(--seal);color:var(--seal)}
+.zcuts .zsh{font-weight:600}
+.zcuts button:disabled{opacity:.35;cursor:default}
+.zex{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.zex li{font-size:15px;line-height:1.5}
+.zex .zh{font:18px/1.6 var(--zh);overflow-wrap:anywhere}
+.zex mark{background:var(--hl);color:inherit;border-radius:3px}
+.zgo{border:1px solid var(--rule);background:var(--card);border-radius:6px;padding:0 7px;font-size:12.5px;cursor:pointer;white-space:nowrap;color:var(--ink-2)}
+.zles{margin-top:14px}
+.zlv .badge{margin-left:0}
+.zcredit{margin-top:16px}
+.dx{margin-top:10px}

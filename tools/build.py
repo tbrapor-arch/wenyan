@@ -23,6 +23,7 @@ from opencc import OpenCC
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rumen import Rumen
 import build_app
+import zh_words
 
 ROOT = Path(__file__).resolve().parent.parent
 cc = OpenCC("t2s")
@@ -182,6 +183,105 @@ def check_chengyu(L, f):
                 fail(f, f"item {it['w']}: the example does not contain the 成語")
 
 
+HAN_RUN = re.compile(r"[㐀-鿿豈-﫿\U00020000-\U0003134f]")
+s2t = OpenCC("s2tw")
+# Paths (track.key.key…, lists skipped) of the texts shown one character at a time: classical Chinese (STANDARDS §2),
+# the classical sentences behind 白話 words ("Roots") and the classical origin of a 成語. Everything else is cut into words.
+CLASSICAL = re.compile(r"^wenyan\.|^baihua\.lessons\.exercise\.|^chengyu\.lessons\.items\.origin\.text")
+# Course words (glossaries, 成語, 入門 word cards): in the table even where the cut does not find them, so a curated
+# card can show the automatic layer too (dictExtra in app/src/dict.js); a word CC-CEDICT lacks gets its parts.
+WORDS = re.compile(r"^(wenyan|baihua)\.lessons\.glossary\.w(_s)?$|^chengyu\.lessons\.items\.w(_s)?$|"
+                   r"^rumen\.lessons\.(words\.(w|t)|names\.w)$|^rumen\.dict\.[^.]+\.(s|t)$")
+SKIP = re.compile(r"\.(py|py_tw|title_py|ref|slug|status|checked|key)$")
+
+
+def zh_texts(course):
+    """every Chinese text the app shows -> (modern texts, classical texts, course words), each text also in the other
+    script (the app shows both; a derived field may be missing)"""
+    modern, classical, words = {}, {}, {}
+    def walk(o, path):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                walk(v, f"{path}.{k}")
+        elif isinstance(o, list):
+            for v in o:
+                walk(v, path)
+        elif isinstance(o, str) and HAN_RUN.search(o) and not SKIP.search(path):
+            if WORDS.search(path):
+                words[o] = 1
+            (classical if CLASSICAL.search(path) else modern)[o] = 1
+    for t in course["tracks"]:
+        walk(t, t["key"])
+    for d in (modern, classical, words):
+        for x in list(d):
+            for y in (s(x), cc.convert(x), s2t.convert(x)):
+                d.setdefault(y, 1)
+    return list(modern), list(classical), list(words)
+
+
+def zh_table(course):
+    """the dictionary of the app's Chinese (tools/zh_words.py): DATA.zh, zhx, zhqt, zhm, zhp; fails when the browser's
+    cut would differ from the build's"""
+    gone = zh_words.missing()
+    if gone:
+        sys.exit("make app needs the dictionary sources: " + ", ".join(gone) + " are missing. Run `make data` first "
+                 "(downloads CC-CEDICT, jieba and complete-hsk-vocabulary into data/raw).")
+    modern, classical, words = zh_texts(course)
+    lex = zh_words.Lexicon()
+    for t in modern:
+        lex.add(t)
+    for t in classical:
+        lex.add(t, classical=True)
+    for w in words:
+        lex.add_word(w)
+    course["zh"], course["zhx"], course["zhqt"] = lex.table(), lex.exceptions(), zh_words.model().QT
+    course["zhm"], course["zhp"] = lex.meta(), lex.parts()
+    cl = set(classical)
+    bad = zh_words.check(modern + classical, course["zh"], course["zhx"], cl - set(modern)) \
+        + zh_words.check([t for t in classical if t in modern], course["zh"], course["zhx"], cl)
+    kb = lambda o: len(json.dumps(o, ensure_ascii=False).encode()) // 1024
+    print(f"dictionary: {len(course['zh'])} words ({kb(course['zh'])} KB), readings set by the sentence in "
+          f"{len(course['zhx'])} runs ({kb(course['zhx'])} KB), meta {kb(course['zhm'])} KB, {len(course['zhp'])} "
+          f"course words shown as parts; {len(modern)} modern + {len(classical)} classical texts; "
+          f"{bad} shown differently by the browser")
+    if bad:
+        sys.exit("zh_words: the browser would cut or read some texts differently (see above)")
+    zh_check_js(course, modern, classical)
+    (ROOT / "data" / "build").mkdir(parents=True, exist_ok=True)
+    (ROOT / "data" / "build" / "zh-texts.json").write_text(json.dumps({"modern": modern, "classical": classical},
+                                                                     ensure_ascii=False), encoding="utf-8")
+
+
+def zh_check_js(course, modern, classical):
+    """run app/src/dict.js's own zhCut in Node on every text and compare with the build (skipped without node)"""
+    import shutil, subprocess
+    node = shutil.which("node")
+    if not node:
+        print("dictionary: no node on PATH, the check of app/src/dict.js itself is skipped (the Python one ran)")
+        return
+    want = {"m": [[t, zh_words.analyse(t)] for t in modern], "c": [[t, zh_words.analyse(t, True)] for t in classical]}
+    data = {k: course[k] for k in ("zh", "zhx", "zhqt", "zhm", "zhp")}
+    js = (ROOT / "app" / "src" / "dict.js").read_text(encoding="utf-8")
+    prog = """
+const fs = require("fs"), inp = JSON.parse(fs.readFileSync(0, "utf8"));
+const course = inp.data, esc = t => String(t ?? ""), $ = () => null, $$ = () => [];
+const document = {addEventListener(){}};
+""" + js + """
+const norm = c => c.map(t => typeof t === "string" ? t : [t[0], t[1] || null]);
+let bad = 0;
+for (const [k, cl] of [["m", false], ["c", true]]) for (const [t, want] of inp.want[k]) {
+  if (JSON.stringify(norm(zhCut(t, cl))) !== JSON.stringify(want)) { if (++bad <= 5) console.log("differs: " + t.slice(0, 60)); }
+}
+console.log(bad);
+"""
+    r = subprocess.run([node, "-e", prog], input=json.dumps({"data": data, "want": want}, ensure_ascii=False),
+                       capture_output=True, text=True, encoding="utf-8")
+    out = r.stdout.strip().splitlines()
+    if r.returncode or not out or out[-1] != "0":
+        sys.exit("dictionary: app/src/dict.js cuts or reads texts differently from the build\n" + r.stdout + r.stderr)
+    print(f"dictionary: app/src/dict.js (Node) cuts and reads all {len(modern) + len(classical)} texts as the build")
+
+
 def main():
     loaded = {t["key"]: load(t["dir"]) for t in TRACKS}
     tracks = {k: {L["id"]: L for _, L in v} for k, v in loaded.items()}
@@ -218,6 +318,8 @@ def main():
                           "lessons": sorted((L for _, L in loaded[t["key"]]), key=lambda L: L["id"])}
                          for t in TRACKS]}
     course["tracks"][0].update(rumen)
+    # The dictionary: every Chinese text of the app made tappable (tools/zh_words.py, app/src/dict.js).
+    zh_table(course)
     out = ROOT / "app" / "course.json"
     out.write_text(json.dumps(course, ensure_ascii=False, indent=1), encoding="utf-8")
     print(" · ".join(f"{t['zh']} {len(t['lessons'])}" for t in course["tracks"]), f"-> {out.relative_to(ROOT)}")
