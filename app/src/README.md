@@ -33,6 +33,6 @@ starts with a one-line comment saying what it owns.
 | 7 | `rumen.js` | 入門: strings (`RL`), words and notes, `rHome`, `rBar`, `rLesson`, `rFinish`, `rJump`, `openCard`, `openNote`, `rClick` |
 | 8 | `dict.js` | dictionary: `zhCut`, `zhLine`, `openZh` (empty for now) |
 | 9 | `settings.js` | Settings page |
-| 10 | `sync.js` | progress sync through a secret gist (empty for now) |
-| 11 | `module.js` | private-module loader (empty for now) |
+| 10 | `sync.js` | installed app (service worker registration, published site only); sync between devices through a secret gist: `Sync`, `wy.marks`, `syncTouch`, `syncSettings` (docs/sync-and-private-module.md) |
+| 11 | `module.js` | private-module loader: `Mod`, `moduleTabs`, `moduleRoute`, `moduleSettings` (docs/sync-and-private-module.md) |
 | 12 | `events.js` | the delegated click / change / key / scroll / resize / hashchange listeners, then boot |
