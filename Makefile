@@ -2,7 +2,7 @@
 # make app       validate the lessons, write app/course.json, app/dist/index.html and dist/wenyan.html
 # make test      validate the lessons only (non-zero exit on an error)
 # make site      the published site in _site/: the page with its CSP, manifest, icons, offline service worker
-# make smoke     build, then click through the app at phone and desktop width (needs playwright)
+# make smoke     build, click through the app at phone and desktop width, then test the site's services (needs playwright)
 PY = python3 -I
 
 .PHONY: data app site test smoke clean
@@ -20,6 +20,7 @@ test:
 
 smoke: site
 	$(PY) tools/smoke.py
+	$(PY) tools/smoke_services.py
 
 clean:
 	rm -rf app/dist dist app/course.json data/build _site
