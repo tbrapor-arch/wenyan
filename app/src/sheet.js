@@ -83,20 +83,22 @@
     if (r && (r.top < 110 || r.bottom > innerHeight * .45)) scrollTo(0, scrollY + r.top - 120);
   }
   // Our own gloss of a word (either script), for the dictionary's sheet to show first: the glossary entry or 成語 of
-  // the lesson on screen, else the 入門 word, with the lesson that teaches it. {html, key} or null.
-  function courseGloss(word){
+  // the lesson on screen, else the 入門 word, with the lesson that teaches it. {html, key, py} or null.
+  // classical (a word tapped in classical text): only the lesson's own glossary or 成語, never the modern 入門 layer.
+  function courseGloss(word, classical){
     if (!word) return null;
     const chip = (to, label) => `<button class="ref" data-to="${to}">${esc(label)}</button>`;
     const box = (py, gloss, ch) => `<div class="cg"><span class="cg-py">${esc(py)}</span> <span class="cg-g">${esc(gloss)}</span> ${ch}</div>`;
     const here = L && T && T.key !== "rumen" ? `${T.key}/${L.id}` : "";
     const g = L && (L.glossary || []).find(x => x.w === word || x.w_s === word);
-    if (g) return {key: `${T.key}:${L.id}:${g.w}`, html: box(g.py, g.en, chip(here, `${T.zh} L${L.id}`))};
+    if (g) return {key: `${T.key}:${L.id}:${g.w}`, py: g.py, html: box(g.py, g.en, chip(here, `${T.zh} L${L.id}`))};
     const it = L && (L.items || []).find(x => x.w === word || x.w_s === word);
-    if (it) return {key: `chengyu:${L.id}:${it.w}`, html: box(it.py, it.en, chip(here, `成語 L${L.id}`))};
+    if (it) return {key: `chengyu:${L.id}:${it.w}`, py: it.py, html: box(it.py, it.en, chip(here, `成語 L${L.id}`))};
+    if (classical) return null;
     const k = rumenKey(word), D = track("rumen").dict, d = k && D[k];
     if (!d) return null;
     const gl = d[lang()] || d.en || d.auto || "";
-    return gl ? {key: "rumen:" + k, html: box(d.py, gl, d.first ? chip(`rumen/${d.first}`, `入門 L${d.first}`) : "")} : null;
+    return gl ? {key: "rumen:" + k, py: d.py, html: box(d.py, gl, d.first ? chip(`rumen/${d.first}`, `入門 L${d.first}`) : "")} : null;
   }
   // swipe the sheet down to close it (phones): past 90 px, or a quick flick
   (() => {

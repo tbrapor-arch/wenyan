@@ -4,7 +4,7 @@ word card, a note with previous / next, every toolbar switch, Cover tap-to-revea
 and the migration of the old settings keys.
 
   pip install playwright && playwright install chromium
-  make smoke     (builds first, then python3 -I tools/smoke.py [--shots DIR])
+  make smoke     (builds first, then python3 -I tools/smoke.py [--shots DIR] [--only phone,wide,…])
 
 Opens the built page, app/dist/index.html (what GitHub Pages serves), and reads app/course.json: both are written by
 the build and not committed.
@@ -389,11 +389,58 @@ def migration(page):
     page.evaluate("localStorage.clear()")
 
 
+CLASSICAL_SWEEP = """() => {
+  // every word of classical text on the page (and, for a 成語, of its origin in the card): no 入門 gloss, no modern example
+  const out = {n: 0, bad: []}, sh = document.querySelector('#sheet');
+  const test = (el, where) => {
+    el.click(); out.n++;
+    const zd = sh.querySelector('.zd');
+    if (!zd) return out.bad.push(where + ' ' + el.dataset.z + ': no dictionary sheet');
+    const ours = zd.querySelector('.zours');
+    if (ours && (ours.querySelector('[data-to^="rumen"]') || /入門|入门/.test(ours.textContent))) out.bad.push(where + ' ' + el.dataset.z + ': 入門 gloss "' + ours.textContent.trim() + '"');
+    for (const li of zd.querySelectorAll('.zex li'))
+      if (li.querySelector('[data-to^="rumen"]') || !li.querySelector('[data-zh="classical"]')) out.bad.push(where + ' ' + el.dataset.z + ': modern example "' + li.textContent.trim().slice(0, 30) + '"');
+  };
+  const sel = '[data-zh="classical"] .ztok';
+  document.querySelectorAll('#app ' + sel).forEach(el => test(el, location.hash));
+  document.querySelectorAll('#app .cy .cw').forEach((cw, i) => {
+    cw.click(); const n = sh.querySelectorAll(sel).length;
+    for (let j = 0; j < n; j++){ document.querySelectorAll('#app .cy .cw')[i].click(); test(sh.querySelectorAll(sel)[j], location.hash + ' origin'); }
+  });
+  return out;
+}"""
+
+
+def classical_gloss(b):
+    """finding 1: inside classical text (文言, 白話 Roots, 成語 origins) the course gloss is the lesson's own, never 入門's,
+    and the examples are classical lines only"""
+    page = b.new_context(viewport={"width": 1200, "height": 850}).new_page()
+    page.on("pageerror", lambda e: errors.append(f"classical: {e}"))
+    n = 0
+    for t in ("wenyan", "baihua", "chengyu"):
+        for l in TR[t]["lessons"]:
+            page.goto(PAGE + f"#{t}/{l['id']}"); page.wait_for_selector(".lbar")
+            r = page.evaluate(CLASSICAL_SWEEP)
+            n += r["n"]
+            errors.extend(f"classical: {x}" for x in r["bad"][:5])
+            if len(r["bad"]) > 5:
+                errors.append(f"classical: {t}/{l['id']}: {len(r['bad']) - 5} more")
+    if n < 1000:
+        errors.append(f"classical: only {n} classical words tapped")
+    page.context.close()
+    print(f"smoke: classical: {n} words of classical text tapped, none with a 入門 gloss or a modern example")
+
+
+TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
+         "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
+         "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
+         "classical": classical_gloss}
+# --only a,b: run only these tests (while working on one)
+ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:
     b = p.chromium.launch()
-    run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone")
-    run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide")
-    migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page())
+    for k in ONLY:
+        TESTS[k](b)
     b.close()
 if errors:
     sys.exit("\n".join(errors))

@@ -31,7 +31,7 @@ starts with a one-line comment saying what it owns.
 | 5 | `toolbar.js` | the lesson bar (`toolbar`) and the switches (`toggle`), shared with Settings |
 | 6 | `lesson.js` | the lesson page (`showLesson`, `hero`, `finish`), the sections `SEC` (`pages`, `notes`, `words`, `practice`, `recap`, `culture`), `markLine`, word chips, `syncHeights` |
 | 7 | `chengyu.js` | 成語 sections: `frames`, `cards` |
-| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetOpen`, `sheetReveal`, the one way back (`sheetCur`, `sheetBack`); the word card (`openCard`, `cardHTML`, its `.dx` = `dictExtra`), the note (`openNote`), `courseGloss` (our gloss, for the dictionary sheet) |
+| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetOpen`, `sheetReveal`, the one way back (`sheetCur`, `sheetBack`); the word card (`openCard`, `cardHTML`, its `.dx` = `dictExtra`), the note (`openNote`), `courseGloss(word, classical)` (our gloss, for the dictionary sheet; classical: the lesson's own only) |
 | 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
 | 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang` (read `SIMP` / `S` / `lang()`), `zhCut`, `zhLine`, `zhLineClassical`, `zhPieces`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 11 | `settings.js` | Settings page, progress file (Save / Load) |

@@ -221,15 +221,21 @@
     for (const tr of course.tracks) for (const l of tr.lessons){
       const at = `${tr.zh} L${l.id}`;
       if (tr.key === "rumen") (l.lines || []).forEach(x => ZH_LINES.push({v: [x.h, (x.toks || []).map(t => t.t ?? t.s).join("")], to: `rumen/${l.id}/line-${x.n}`, at}));
-      else if (tr.key === "chengyu") (l.items || []).forEach(it => it.ex && ZH_LINES.push({v: [it.ex.h_t, it.ex.h_s], to: `chengyu/${l.id}`, at}));
-      else (l.lines || []).forEach(x => ZH_LINES.push({v: [x.h, x.h_s], to: `${tr.key}/${l.id}`, at, c: tr.key === "wenyan"}));
+      else if (tr.key === "chengyu") (l.items || []).forEach(it => { if (it.ex) ZH_LINES.push({v: [it.ex.h_t, it.ex.h_s], to: `chengyu/${l.id}`, at});
+        if (it.origin && it.origin.text) ZH_LINES.push({v: [it.origin.text, it.origin.text_s], to: `chengyu/${l.id}`, at, c: true}); });   // the origin: classical
+      else {
+        (l.lines || []).forEach(x => ZH_LINES.push({v: [x.h, x.h_s], to: `${tr.key}/${l.id}`, at, c: tr.key === "wenyan"}));
+        if (tr.key === "baihua") (l.exercise || []).forEach(x => x.h && ZH_LINES.push({v: [x.h, x.h_s], to: `${tr.key}/${l.id}`, at, c: true}));   // the Roots: classical
+      }
     }
     return ZH_LINES;
   }
   const zhHan = t => (String(t || "").match(/[\u3400-\u9fff\uf900-\ufaff\u{20000}-\u{3134f}]/gu) || []).join("");
-  function zhExamplesHTML(w, skip){
+  // classical (a word tapped in classical text): only classical lines (文言, 成語 origins, 白話 Roots), never modern ones
+  function zhExamplesHTML(w, skip, classical){
     const sc = dictScript(), hits = [];
     for (const x of zhCourseLines()){
+      if (classical && !x.c) continue;
       const vs = x.v.filter(Boolean), v = vs.find(t => t.includes(w)); if (!v) continue;
       if (skip && vs.some(t => { const h = zhHan(t); return h === skip || (skip.length >= 4 && (h.includes(skip) || skip.includes(h))); })) continue;   // the line the word was tapped in
       if (!x.c && !ZHP[w] && !zhCut(v).some(t => typeof t !== "string" && t[0] === w)) continue;   // modern: the word, not a piece of another
@@ -265,7 +271,7 @@
     const sh = $("#sheet"), inside = (!!(o.from && sh && sh.contains(o.from)) || !!o.inside) && sheetOpen();
     const prev = inside ? sheetCur : null;
     const cls = !!o.classical, m = zhMeta(w), L0 = zhLines(w), r = Math.min(o.r || 0, Math.max(0, L0.length - 1));
-    const gl = typeof courseGloss === "function" ? courseGloss(w) : null;
+    const gl = typeof courseGloss === "function" ? courseGloss(w, cls) : null;
     const py = L0.length ? zhPy(L0[r][0]) : ZHP[w] ? ZHP[w].split(" ").map(p => (zhLines(p)[0] || [""])[0]).join(" ") : "";
     const idiom = !cls && (m.idiom || L0.some(l => /\(idiom\b/.test(l[1])));
     const lv = [m.nhsk ? `NHSK ${m.nhsk.replace("-", "–")}` : "", m.hsk ? `HSK ${m.hsk}` : ""].filter(Boolean);
@@ -275,7 +281,7 @@
         <button class="x" data-zact="close" aria-label="${dl("close")}">×</button></div>
       ${gl && gl.html ? `<h3>${dl("ours")}</h3><div class="zours">${gl.html}</div>` : ""}
       ${zhAutoHTML(w, {r, classical: cls, ctx: o.ctx}) || `<div class="src">${dl("none")}</div>`}
-      ${zhExamplesHTML(w, o.skip || (o.ctx && o.ctx.run.length >= 4 ? o.ctx.run : ""))}
+      ${zhExamplesHTML(w, o.skip || (o.ctx && o.ctx.run.length >= 4 ? o.ctx.run : ""), cls)}
       ${lv.length ? `<h3>${dl("level")}</h3><div class="zlv">${lv.map(x => `<span class="badge">${x}</span>`).join(" ")}</div>` : ""}
       ${zhLessonChips(w)}
       <div class="src zcredit">${esc(DICT_CREDIT)}</div></div>`;

@@ -310,7 +310,9 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   list stays at the bottom of 文言 / 白話 lessons (folded in 入門).
 - **Classical policy.** Classical text is never cut into words: 文言 (everything in the track), the "Roots" of 白話
   and the origin of a 成語 are read one character at a time, and the sheet labels CC-CEDICT as modern Mandarin
-  that may not be the classical sense; the lesson's glossary and notes are the authority. Modern text is cut by the
+  that may not be the classical sense; the lesson's glossary and notes are the authority. There, "In the course" is
+  only the lesson's own glossary word or 成語 (never the modern 入門 gloss), and "Examples in the course" lists only
+  classical lines (文言, 成語 origins, 白話 Roots). Modern text is cut by the
   build's rule (`tools/zh_words.py`), and `make app` fails if the page's own code (`app/src/dict.js`, run in Node)
   would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole.
 - **Taps.** With pinyin on tap, the first tap on a 入門 word shows its pinyin, the next opens the card; with Cover,
