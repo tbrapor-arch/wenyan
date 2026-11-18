@@ -17,10 +17,13 @@ Serves _site/ on http://localhost (ports 8830, 8831) and checks:
   5. two tabs of one browser: both tabs' done dates kept, an Undo in one not brought back by the other (nor by a sync
      round), the other tab redraws (after its sheet closes);
   6. clocks that differ: an Undo on a device whose clock is an hour behind the other's still wins;
-  7. a failed sync (GitHub 500) is tried again after 1, 2, 4, then 5 minutes (Playwright's clock); a refused token is not.
+  7. a failed sync (GitHub 500) is tried again after 1, 2, 4, then 5 minutes (Playwright's clock); a refused token is not;
+  8. the module's files are checked against index.json's hashes (a mismatch is not run, not cached, and Settings says
+     so); paths outside module/ are refused; old cache entries are deleted; tab keys of the app's own are refused.
   --only NAME,…: run only those tests (offline_and_csp, single_file, sync, module, two_tabs, …).
 Screenshots of Settings (390 px) with sync not connected / connected / refused / offline go to DIR.
 """
+import hashlib
 import http.server
 import json
 import re
@@ -152,10 +155,18 @@ class FakeGitHub:
         self.gists, self.n, self.log, self.down = {}, 0, [], False
         self.tokens = {"tok-good": {"gists"}, "tok-mod": {"gists", "repo"}, "tok-gist2": {"gists"}}
         self.mod = {
-            "index.json": json.dumps({"files": {"app.js": "a1", "app.css": "c1"}, "tabs": [["books", "讀冊", "Books"]]}),
             "app.css": "#modh{color:var(--seal)}",
             "app.js": "window.WenyanModule={init(l){this.l=l;},route(h){this.l.main.innerHTML='<div class=\"set\"><h1 id=\"modh\">讀冊</h1><p id=\"modp\">'+this.l.app.esc(h)+'</p></div>';}};",
         }
+        self.reindex()
+
+    def reindex(self, tabs=(("books", "讀冊", "Books"),), skip=()):
+        """index.json from the files as they are: SHA-256 for app.js, git blob SHA-1 for the others (both accepted)"""
+        def h(name, body):
+            b = body.encode()
+            return hashlib.sha256(b).hexdigest() if name == "app.js" else hashlib.sha1(b"blob %d\0" % len(b) + b).hexdigest()
+        self.mod["index.json"] = json.dumps({"files": {n: h(n, v) for n, v in self.mod.items() if n != "index.json" and n not in skip},
+                                             "tabs": [list(t) for t in tabs]})
 
     def __call__(self, route):
         req = route.request
@@ -172,7 +183,7 @@ class FakeGitHub:
         if p.startswith("/repos/tbrapor-arch/wenyan-private/contents/module/"):
             if "repo" not in self.tokens[tok]:
                 return route.fulfill(status=404, json={"message": "Not Found"}, headers=H)
-            f = p.rsplit("/", 1)[1]
+            f = p.split("/contents/module/", 1)[1]
             return route.fulfill(status=200, body=self.mod[f], headers=H) if f in self.mod else route.fulfill(status=404, json={}, headers=H)
         if p == "/gists" and req.method == "GET":
             return route.fulfill(json=[{"id": k, "files": {n: {} for n in g["files"]}} for k, g in self.gists.items() if g["owner"] == tok.replace("tok-gist2", "tok-good").replace("tok-mod", "tok-good")], headers=H)
@@ -425,6 +436,63 @@ def retry(b):
           "token is not retried")
 
 
+# ---------------------------------------------------------------- 8. the private module's files are checked
+def module_integrity(b):
+    """finding 5: a module file that does not match its hash in index.json is neither run nor kept, and Settings says
+    so; paths with "..", a leading "/" or outside module/ are refused without a request; files no longer listed leave
+    the cache; a tab whose key is one of the app's own is refused"""
+    srv = serve(8836)
+    url = "http://localhost:8836/"
+    gh = FakeGitHub()
+    gh.mod["app.js"] = ("window.WenyanModule={async init(l){this.l=l;const t=[];for(const p of ['../index.json','/etc/x','a/../../x','..','./app.js','x%2f..%2f..%2fy','sub\\\\..\\\\x'])"
+                        "{try{await l.text(p);t.push(p+':read')}catch(e){t.push(p+':refused')}}window.modTrav=t;},"
+                        "route(h){this.l.main.innerHTML='<div class=\"set\"><h1 id=\"modh\">x</h1></div>';}};")
+    gh.reindex(tabs=(("books", "讀冊", "Books"), ("settings", "假", "Fake"), ("rumen", "假", "Fake")))
+    good_js = gh.mod["app.js"]
+    # 1. the file as listed: runs; path tricks refused, never requested
+    c1, p1 = device(b, gh, "mod-int", url)
+    p1.evaluate("localStorage.setItem('wy.gistToken', JSON.stringify('tok-mod'))")
+    p1.reload(); p1.wait_for_selector('nav a[href="#books"]', timeout=10000)
+    p1.locator('nav a[href="#books"]').click(); p1.wait_for_selector("#modh")
+    trav = p1.evaluate("window.modTrav")
+    check(trav and all(x.endswith(":refused") for x in trav), f"module: a path outside module/ was read {trav}")
+    check(not [pth for _, pth, _ in gh.log if ".." in pth or "%2f" in pth.lower() or "/module//" in pth], f"module: a path trick reached GitHub")
+    hrefs = p1.evaluate("[...document.querySelectorAll('#tabs a')].map(a => a.getAttribute('href'))")
+    check(hrefs.count("#settings") == 1 and hrefs.count("#rumen") == 1, f"module: a tab key of the app's own was accepted {hrefs}")
+    p1.goto(url + "#settings"); p1.wait_for_selector(".set")
+    check(p1.locator("h1").inner_text() == "設定", "module: the module's 'settings' tab replaced Settings")
+    keys = lambda pg: pg.evaluate("caches.open('wenyan-module').then(c => c.keys()).then(ks => ks.map(k => k.url))")
+    old_keys = keys(p1)
+    check(any("app.js?" in k for k in old_keys), f"module: app.js not cached {old_keys}")
+    # 2. app.js changed, index.json not: refused, not run, not cached; Settings says so
+    c1.close()
+    gh.mod["app.js"] = good_js; gh.reindex()
+    gh.mod["app.js"] = good_js + "window.evilRan=1;"          # a different file under the listed hash
+    c2, p2 = device(b, gh, "mod-bad", url)
+    p2.evaluate("localStorage.setItem('wy.gistToken', JSON.stringify('tok-mod'))")
+    p2.reload(); p2.wait_for_selector('nav a[href="#books"]', timeout=10000)
+    p2.goto(url + "#books"); p2.wait_for_selector(".empty", timeout=10000)
+    check(not p2.evaluate("window.evilRan || window.WenyanModule"), "module: a file that does not match its hash ran")
+    check(not [k for k in keys(p2) if "app.js?" in k], "module: a file that does not match its hash was cached")
+    settings(p2, url); p2.wait_for_selector("#set-module[data-state]")
+    check(p2.get_attribute("#set-module", "data-state") == "bad" and "hash" in p2.inner_text("#set-module"),
+          f"module: Settings does not say the module was refused ({p2.get_attribute('#set-module', 'data-state')})")
+    p2.screenshot(path=str(SHOTS / "settings-module-refused.png"), full_page=True)
+    c2.close()
+    # 3. a new version (new hash), and app.css no longer listed: the old entries leave the cache
+    gh.mod["app.js"] = good_js.replace("x</h1>", "v2</h1>")
+    gh.reindex(skip=("app.css",))
+    c3, p3 = device(b, gh, "mod-new", url)
+    p3.evaluate("localStorage.setItem('wy.gistToken', JSON.stringify('tok-mod'))")
+    p3.reload(); p3.wait_for_selector('nav a[href="#books"]', timeout=10000); p3.wait_for_timeout(1000)
+    ks = keys(p3)
+    check(not set(ks) & set(k for k in old_keys if "index.json" not in k), f"module: entries no longer listed stay in the cache {ks}")
+    c3.close()
+    srv.shutdown(); srv.server_close()
+    print("8. module files: checked against index.json's hash before they are kept or run (Settings: refused);",
+          "paths outside module/ refused without a request; old entries leave the cache; tab keys of the app refused")
+
+
 # ---------------------------------------------------------------- 4. private module
 def module(b):
     srv = serve(8832)
@@ -476,7 +544,7 @@ if not SITE.joinpath("index.html").exists():
 SHOTS.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
     b = p.chromium.launch()
-    tests = (offline_and_csp, single_file, sync, module, two_tabs, clock_skew, retry)
+    tests = (offline_and_csp, single_file, sync, module, two_tabs, clock_skew, retry, module_integrity)
     only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None   # --only sync,two_tabs
     for test in tests:
         if only and test.__name__ not in only:

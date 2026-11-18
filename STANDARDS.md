@@ -332,7 +332,9 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   and the dictionary) for offline use. A Content Security Policy allows only the page's own script, the private
   module's `blob:` script, Google Fonts and GitHub's API. The single file opens offline as it is, without sync.
 - **Private module.** A device whose token can read the private repo gets that repo's extra tabs (before Settings),
-  loaded through the GitHub API and kept for offline use; nothing of it is in this repo or the public page.
+  loaded through the GitHub API and kept for offline use; nothing of it is in this repo or the public page. Each file
+  is checked against the hash `module/index.json` lists before it is kept or run. The module runs with the app's
+  rights (and its token): whoever can write to the private repo controls the app (docs/sync-and-private-module.md).
 - **Always light**; night mode is a switch in Settings.
 - Routes: `#rumen`, `#rumen/52/wave`, `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#chengyu/3`, `#settings`, a module's
   own tabs. A first visit opens 入門. Every route maps to a tab (`currentTab()`), so the tab bar keeps its highlight.

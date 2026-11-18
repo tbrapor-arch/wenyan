@@ -54,8 +54,14 @@ also needs **Repository access: wenyan-private** with **Contents: Read** (a toke
 
 Loader contract (`Mod` in `app/src/module.js`):
 - `module/index.json` in the private repo: `{"files": {"app.js": "<hash>", "app.css": "<hash>", …}, "tabs": [["key",
-  "中文", "English"], …]}`. `files` maps each file of `module/` to a hash of its content (any string that changes when
-  the file changes); `tabs` are the tabs the module adds (key: lowercase letters, digits, `-`), shown before Settings.
+  "中文", "English"], …]}`. `files` maps each file of `module/` to the hash of its content: the SHA-256 of its bytes in
+  hex (`sha256sum`, 64 digits) or its git blob SHA-1 (`git hash-object`, 40 digits). `tabs` are the tabs the module adds
+  (key: lowercase letters, digits, `-`; a key of the app's own tabs, `rumen` … `settings`, is refused), shown before
+  Settings.
+- Every file is checked before it is kept or used: a file not listed in `files`, or whose bytes do not match its
+  hash, is refused (not run, not cached; Settings › "Private module: refused" names the file). A path with an empty,
+  `.` or `..` part, a leading `/`, a `\` or a `%` is refused without a request: the loader reads only inside `module/`.
+  When a new `index.json` arrives, the cached files it no longer lists (or lists under another hash) are deleted.
 - The app asks for `module/index.json` through the GitHub API with the saved token when it opens (no token: no
   request at all). 200: the module is on for this device; 401 / 403 / 404: off; no network: the last answer stands.
 - `app.css` and `app.js` (and any file the module asks for) are fetched through the API, kept in the browser cache
@@ -76,13 +82,20 @@ Loader contract (`Mod` in `app/src/module.js`):
     falls back to plain text when they are missing (an older cached app page).
 - Settings › the module's status on this device (on / not available, Check again); nothing is shown without a token.
 
+**What the module can do.** The module's script runs in the app's own origin, like the app: it can read
+localStorage, including the saved GitHub token, and do anything the app can. Whoever can write to the private repo
+therefore has full control of the app on every device that loads the module, and of that token. Use a fine-grained
+token limited to what is needed: **Gists: Read and write** and, on the one repository `wenyan-private` only,
+**Contents: Read**; set an expiry. Keep write access to that repo to yourself.
+
 Keep this document generic: do not describe the module's content here.
 
 ## Content Security Policy
 `tools/site.py` puts a CSP in the published page: only the page's own inline script (by hash, recomputed at each
 build), `blob:` scripts (the module), Google Fonts (stylesheet and files) and GitHub's API (`api.github.com`, and
 `gist.githubusercontent.com` for a large gist) are allowed; no forms are sent anywhere. The module must therefore not
-rely on `eval`, inline `<script>` or `on…=` attributes. A new outside source (script, API, frame) has to be added to
+rely on `eval`, inline `<script>` or `on…=` attributes. Known limit: styles are allowed inline (`style-src
+'unsafe-inline'`), as the page itself uses them. A new outside source (script, API, frame) has to be added to
 the list in `tools/site.py`, or the browser refuses it.
 
 ## Tests
