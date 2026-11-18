@@ -1,0 +1,36 @@
+/* chengyu.css: 成語 lesson (patterns, the two-row 成語 card) */
+/* 成語 lesson: the reading lessons' two-column card. Each 成語 is two rows:
+   成語 | meaning, then example | translation (stacked in that order on a phone). */
+.frames{border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+.frame{display:grid;grid-template-columns:10em 1fr;gap:2px 16px;padding:9px 16px;border-top:1px dashed var(--rule);font-size:15px}
+.frame:first-child{border-top:0}
+.frame b{font:400 18px var(--zh);color:var(--seal)}
+.frame .fx{grid-column:2;font:15px var(--zh);color:var(--ink-2)}
+.cys{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper)}
+.cy{border-top:1.5px solid var(--rule)}
+.cy:first-child{border-top:0}
+.cyr{display:grid;grid-template-columns:1fr 1fr}
+.cyr + .cyr{border-top:1px dotted var(--rule)}
+.cl{padding:16px 22px}
+.cr{padding:16px 22px;background:var(--paper-2);border-left:1px solid var(--rule)}
+.cy .hw{font:600 30px/1.25 var(--zh);letter-spacing:.04em}
+.cy .hw .cn{font:12px var(--en);color:var(--seal);vertical-align:super;margin-right:5px;letter-spacing:0}
+.cy .hw .alt{font-weight:400;font-size:16px;color:var(--ink-2);margin-left:8px}
+.cy .py small{font-style:normal;font-size:12px;margin-left:6px}
+.cy .mean{font-size:17.5px;font-weight:600}
+.cy .nt{font-size:15px;color:var(--ink-2);margin-top:6px}
+.cy .or{font-size:14px;margin-top:8px;color:var(--seal)}
+.cy .or .zh{font-size:15px}
+.cy .or .ow{color:var(--ink-2)}
+.cy .xz{font:19px/1.75 var(--zh)}
+.cy .xz mark{background:none;color:var(--seal);font-weight:600}
+.cy .xe{font-size:16px}
+.cy .xs{font-size:12px;color:var(--ink-2)}
+@media (max-width:720px){
+  .cyr{grid-template-columns:1fr}
+  .cr{border-left:0;border-top:1px solid var(--rule)}
+  .cl,.cr{padding:13px 16px}
+  .frame{grid-template-columns:1fr}
+  .frame .fx{grid-column:1}
+}
+.auto{font:600 9px var(--en);letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);border-radius:3px;padding:0 3px;margin-left:5px;vertical-align:middle}

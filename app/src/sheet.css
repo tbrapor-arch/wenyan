@@ -1,0 +1,17 @@
+/* sheet.css: bottom sheet (word card, note) */
+#sheet{position:fixed;z-index:30;left:50%;bottom:0;transform:translate(-50%,105%);width:min(620px,100vw);max-height:78vh;overflow:auto;background:var(--paper);border:1px solid var(--rule);border-bottom:0;border-radius:14px 14px 0 0;box-shadow:0 -10px 40px #0003;padding:6px 20px calc(22px + env(safe-area-inset-bottom));transition:transform .22s ease,visibility .22s;visibility:hidden}
+#sheet.open{transform:translate(-50%,0);visibility:visible}
+#sheet .grab{width:42px;height:4px;border-radius:2px;background:var(--rule);margin:4px auto 8px}
+#sheet .top{display:flex;gap:12px;align-items:flex-start;position:sticky;top:-6px;background:var(--paper);padding:4px 0 8px;border-bottom:1px solid var(--rule)}
+#sheet .top .hd{flex:1;min-width:0}
+#sheet .x{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:transparent;cursor:pointer;font-size:18px;flex:none}
+#sheet .wh{font:600 38px/1.2 var(--zh);letter-spacing:.04em}
+#sheet .wh small{font-weight:400;font-size:18px;color:var(--ink-2);margin-left:10px}
+#sheet .wp{font-style:italic;color:var(--ink-2)}
+#sheet h3{font:600 11.5px var(--en);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:16px 0 4px}
+#sheet .gloss{font-size:18px}
+#sheet .src{font-size:12px;color:var(--ink-2)}
+#sheet .chips{display:flex;gap:6px;flex-wrap:wrap}
+#sheet .chips button{border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:3px 10px;cursor:pointer;font-size:14px}
+#sheet .chips button .han{font:18px var(--zh)}
+#sheet .nrow{display:flex;gap:8px;margin-top:16px}

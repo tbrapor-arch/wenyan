@@ -1,0 +1,6 @@
+/* settings.css: Settings page rows */
+/* settings */
+.set{max-width:620px;padding-top:26px}
+.row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule)}
+.row .l{flex:1}
+.row .l small{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.4}

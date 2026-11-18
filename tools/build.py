@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build app/course.json and dist/wenyan.html from the three tracks.
+"""Build app/course.json and the app (app/dist/index.html, dist/wenyan.html) from the four tracks.
 
   lessons/*.yaml   文言  classical reading lessons   (STANDARDS.md §2)
   baihua/*.yaml    白話  modern written Chinese      (STANDARDS.md §11)
@@ -10,8 +10,11 @@ Adds simplified forms (field + "_s") with OpenCC t2s, applying tools/overrides.y
 and validates every lesson. Cross-references ("文言 L1 n.4", "L3 n.5") must point at a note
 that exists; exercise sentences with a `ref` must be lines of the lesson they name.
 
-  pip install pyyaml opencc-python-reimplemented pypinyin
-  python3 tools/build.py
+  pip install -r requirements.txt
+  make app      (python3 -I tools/build.py)
+  make test     (python3 -I tools/build.py --check: validate only, write nothing)
+
+The page itself is joined by tools/build_app.py from app/index.template.html and app/src/.
 """
 import json, re, sys
 from pathlib import Path
@@ -19,6 +22,7 @@ import yaml
 from opencc import OpenCC
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rumen import Rumen
+import build_app
 
 ROOT = Path(__file__).resolve().parent.parent
 cc = OpenCC("t2s")
@@ -203,6 +207,9 @@ def main():
     rumen = Rumen(fail).track(loaded["rumen"])
     if errors:
         sys.exit("\n".join(errors))
+    if "--check" in sys.argv:
+        print("check: ok")
+        return
     for key in ("wenyan", "baihua"):
         for _, L in loaded[key]:
             simp_reading(L)
@@ -214,15 +221,8 @@ def main():
     out = ROOT / "app" / "course.json"
     out.write_text(json.dumps(course, ensure_ascii=False, indent=1), encoding="utf-8")
     print(" · ".join(f"{t['zh']} {len(t['lessons'])}" for t in course["tracks"]), f"-> {out.relative_to(ROOT)}")
-    # Single-file version (data inlined): opens offline, and is what gets shared.
-    page = (ROOT / "app" / "index.html").read_text(encoding="utf-8")
-    slot = '<script id="course-data" type="application/json"></script>'
-    assert slot in page, "app/index.html lost its course-data slot"
-    data = json.dumps(course, ensure_ascii=False).replace("</", "<\\/")
-    (ROOT / "dist").mkdir(exist_ok=True)
-    (ROOT / "dist" / "wenyan.html").write_text(
-        page.replace(slot, f'<script id="course-data" type="application/json">{data}</script>'), encoding="utf-8")
-    print("single file -> dist/wenyan.html")
+    # Single-file version (data inlined): opens offline, and is what gets shared and served.
+    build_app.build(course)
 
 
 if __name__ == "__main__":

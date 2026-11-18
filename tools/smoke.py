@@ -2,7 +2,10 @@
 """Click through the built app in a phone-sized browser: every tab and every lesson, marking each lesson done.
 
   pip install playwright && playwright install chromium
-  python3 tools/build.py && python3 tools/smoke.py [--shots DIR]
+  make smoke     (builds first, then python3 -I tools/smoke.py [--shots DIR])
+
+Opens the built page, app/dist/index.html (what GitHub Pages serves), and reads app/course.json: both are written by
+the build and not committed.
 
 Fails on any JavaScript error, on a lesson that renders no text, and on horizontal page scroll.
 """
@@ -13,6 +16,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parent.parent
 shots = Path(sys.argv[sys.argv.index("--shots") + 1]) if "--shots" in sys.argv else None
 course = json.loads((ROOT / "app" / "course.json").read_text(encoding="utf-8"))
+PAGE = (ROOT / "app" / "dist" / "index.html").as_uri()
 errors = []
 
 
@@ -29,13 +33,13 @@ def run(page, name):
 
     page.on("pageerror", lambda e: errors.append(f"{name}: {e}"))
     page.on("console", lambda m: errors.append(f"{name}: console {m.text}") if m.type == "error" and "fonts.g" not in m.text and "ERR_" not in m.text else None)
-    page.goto((ROOT / "dist" / "wenyan.html").as_uri())
+    page.goto(PAGE)
     for t in course["tracks"]:
-        page.goto((ROOT / "dist" / "wenyan.html").as_uri() + "#" + t["key"])
+        page.goto(PAGE + "#" + t["key"])
         page.wait_for_selector(".thead")
         check(t["key"]); shot(t["key"])
         for l in t["lessons"]:
-            page.goto((ROOT / "dist" / "wenyan.html").as_uri() + f"#{t['key']}/{l['id']}")
+            page.goto(PAGE + f"#{t['key']}/{l['id']}")
             page.wait_for_selector(".lbar")
             if not page.locator("h1").inner_text().strip():
                 errors.append(f"{name} {t['key']}/{l['id']}: no title")
@@ -63,7 +67,7 @@ def run(page, name):
                     page.locator("sup.nn").first.click(); page.wait_for_selector("#pop.note-pop"); shot(f"{t['key']}-1-note")
                     page.keyboard.press("Escape")
                 page.locator("#markdone").click(); page.wait_for_selector("#undo")
-    page.goto((ROOT / "dist" / "wenyan.html").as_uri() + "#settings")
+    page.goto(PAGE + "#settings")
     page.locator("#sSimp").click(); page.locator("#sNight").click(); check("settings"); shot("settings-night")
 
 
