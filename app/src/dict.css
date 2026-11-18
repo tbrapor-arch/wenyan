@@ -7,7 +7,6 @@
 .zbadge{align-self:center;font:600 13px var(--zh);color:var(--seal);border:1px solid currentColor;border-radius:4px;padding:0 6px;letter-spacing:.06em}
 #sheet .zsay{font-size:14px}
 #sheet .zsay.on{background:var(--seal-soft);color:var(--seal)}
-.zback{margin-top:10px;font-size:14px}
 .zours{font-size:17px}
 .zauto{margin-top:14px;border-left:3px solid var(--rule);padding-left:12px}
 .zauto.zclass{border-left-color:var(--seal)}

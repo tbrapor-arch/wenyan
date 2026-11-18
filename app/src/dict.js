@@ -117,13 +117,13 @@
          classical: "Modern Mandarin (CC-CEDICT) — may not be the classical sense", classicalNote: "Read one character at a time: the lesson's glossary and notes give the classical sense.",
          here: "Here", dict: "Dictionary", other: "Other readings", cl: "Classifier", parts: "Not in CC-CEDICT: its parts", chars: "Characters",
          cuts: "Other cuts", cutsPrev: "Start one character earlier", cutsNext: "Start one character later", ex: "Examples in the course", more: "more",
-         level: "Level", listen: "Listen", close: "Close", back: "Back to", chengyu: "成語 lesson", wenyan: "文言 lesson", ours: "In the course", none: "No entry",
+         level: "Level", listen: "Listen", close: "Close", chengyu: "成語 lesson", wenyan: "文言 lesson", ours: "In the course", none: "No entry",
          noEx: "No other line of the course has this word yet.", idiom: "成語", sensesEn: ""},
     fr: {auto: "Automatique · CC-CEDICT", autoNote: "Découpage et lecture choisis par le programme, non vérifiés. CC-CEDICT, CC BY-SA 4.0.",
          classical: "Mandarin moderne (CC-CEDICT) — pas forcément le sens classique", classicalNote: "Lu caractère par caractère : le glossaire et les notes de la leçon donnent le sens classique.",
          here: "Ici", dict: "Dictionnaire", other: "Autres lectures", cl: "Classificateur", parts: "Absent de CC-CEDICT : ses parties", chars: "Caractères",
          cuts: "Autres découpages", cutsPrev: "Commencer un caractère plus tôt", cutsNext: "Commencer un caractère plus loin", ex: "Exemples dans le cours", more: "de plus",
-         level: "Niveau", listen: "Écouter", close: "Fermer", back: "Retour à", chengyu: "Leçon de 成語", wenyan: "Leçon de 文言", ours: "Dans le cours", none: "Pas d'entrée",
+         level: "Niveau", listen: "Écouter", close: "Fermer", chengyu: "Leçon de 成語", wenyan: "Leçon de 文言", ours: "Dans le cours", none: "Pas d'entrée",
          noEx: "Aucune autre ligne du cours n'a encore ce mot.", idiom: "成語", sensesEn: " (anglais, CC-CEDICT)"}
   };
   const dl = k => DL[dictLang()][k];
@@ -243,39 +243,30 @@
 
   /* ---------- the sheet ---------- */
   const zhSay = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
-  let ZH_BACK = [];   // cards opened from inside the sheet: the way back
+  // The way back is the shell's (sheet.js): a word opened from inside the sheet (a character, another cut, a word of
+  // an example or of a note) reads sheetCur before openSheet clears it, and offers "‹ Back to …" through sheetBack.
   function openZhWord(w, o = {}){
     if (!zhData()) return;
-    const sh = $("#sheet"), inside = !!(o.from && sh && sh.contains(o.from)) || !!o.inside;
-    if (inside && sh.classList.contains("open")){
-      const hw = sh.querySelector("[data-hw]"), lab = hw ? hw.dataset.hw : (sh.querySelector(".wh")?.firstChild?.textContent || "…");
-      ZH_BACK.push({html: sh.innerHTML, top: sh.scrollTop, label: lab});
-    } else ZH_BACK = [];
-    if (typeof hidePop === "function") try{ hidePop(); }catch(e){}
+    const sh = $("#sheet"), inside = (!!(o.from && sh && sh.contains(o.from)) || !!o.inside) && sheetOpen();
+    const prev = inside ? sheetCur : null;
     const cls = !!o.classical, m = zhMeta(w), L0 = zhLines(w), r = Math.min(o.r || 0, Math.max(0, L0.length - 1));
     const gl = typeof courseGloss === "function" ? courseGloss(w) : null;
     const py = L0.length ? zhPy(L0[r][0]) : ZHP[w] ? ZHP[w].split(" ").map(p => (zhLines(p)[0] || [""])[0]).join(" ") : "";
     const idiom = !cls && (m.idiom || L0.some(l => /\(idiom\b/.test(l[1])));
     const lv = [m.nhsk ? `NHSK ${m.nhsk.replace("-", "–")}` : "", m.hsk ? `HSK ${m.hsk}` : ""].filter(Boolean);
-    const back = ZH_BACK.length ? ZH_BACK[ZH_BACK.length - 1] : null, useA = back && typeof sheetBack === "function";
     const html = `<div class="zd" data-hw="${esc(w)}"><div class="top"><div class="hd"><div class="wh" lang="zh">${esc(w)}${m.other.length ? `<small>${esc(m.other.join(" · "))}</small>` : ""}${idiom ? `<span class="zbadge">${dl("idiom")}</span>` : ""}</div>
         <div class="wp" lang="zh-Latn-pinyin">${esc(py)}</div></div>
         ${zhSay() ? `<button class="x zsay" data-zact="say" data-zw="${esc(w)}" aria-label="${dl("listen")}" title="${dl("listen")}">▶</button>` : ""}
         <button class="x" data-zact="close" aria-label="${dl("close")}">×</button></div>
-      ${back && !useA ? `<button class="btn ghost zback" data-zact="back">‹ ${dl("back")} ${esc(back.label)}</button>` : ""}
       ${gl && gl.html ? `<h3>${dl("ours")}</h3><div class="zours">${gl.html}</div>` : ""}
       ${zhAutoHTML(w, {r, classical: cls, ctx: o.ctx}) || `<div class="src">${dl("none")}</div>`}
       ${zhExamplesHTML(w, o.skip || (o.ctx && o.ctx.run.length >= 4 ? o.ctx.run : ""))}
       ${lv.length ? `<h3>${dl("level")}</h3><div class="zlv">${lv.map(x => `<span class="badge">${x}</span>`).join(" ")}</div>` : ""}
       ${zhLessonChips(w)}
       <div class="src zcredit">${esc(DICT_CREDIT)}</div></div>`;
-    if (typeof openSheet === "function") openSheet(html);
-    if (useA) sheetBack(back.label, zhBack);
-  }
-  function zhBack(){
-    const b = ZH_BACK.pop(), sh = $("#sheet"); if (!b || !sh) return;
-    sh.innerHTML = b.html; sh.scrollTop = b.top;
-    if (ZH_BACK.length && typeof sheetBack === "function" && !sh.querySelector(".zback")) sheetBack(ZH_BACK[ZH_BACK.length - 1].label, zhBack);
+    openSheet(html);
+    sheetCur = {label: w, open: () => openZhWord(w, {...o, from: null, inside: false})};
+    if (prev) sheetBack(prev.label, prev.open);
   }
   function openZh(el){
     if (!zhData()) return;
@@ -297,10 +288,9 @@
   }
   function zhAct(b){
     const a = b.dataset.zact, inside = !!b.closest("#sheet");
-    if (a === "close") return typeof closeSheet === "function" && closeSheet();
-    if (a === "back") return zhBack();
+    if (a === "close") return closeSheet();
     if (a === "say") return zhSpeak(b.dataset.zw, b);
-    if (a === "go"){ if (typeof closeSheet === "function") closeSheet(); location.hash = b.dataset.to; return; }
+    if (a === "go"){ closeSheet(); location.hash = b.dataset.to; return; }
     const cls = b.dataset.zc === "1" || !!b.closest(".zclass");
     const ctx = b.dataset.zrun != null ? {run: b.dataset.zrun, start: +b.dataset.zs} : null;
     if (a === "shift"){ const w = zhStarts(ctx.run, ctx.start)[0]; if (w) openZhWord(w, {classical: cls, ctx, inside}); return; }
