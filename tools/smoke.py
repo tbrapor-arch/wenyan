@@ -219,6 +219,13 @@ def migration(page):
             errors.append(f"migration {seed}: not applied to the page")
         if page.locator(".tile.done").count() != 1:
             errors.append(f"migration {seed}: the 文言 home does not show lesson 1 done")
+    # Load: a progress file merges, the earliest date of each lesson wins
+    page.goto(PAGE + "#settings"); page.wait_for_selector("#file", state="attached")
+    page.set_input_files("#file", files=[{"name": "p.json", "mimeType": "application/json",
+        "buffer": json.dumps({"app": "wenyan", "done": {"wenyan:1": "2027-01-01", "wenyan:2": "2025-05-06"}}).encode()}])
+    page.wait_for_function("JSON.parse(localStorage.getItem('wy.done'))['wenyan:2'] === '2025-05-06'")
+    if page.evaluate("JSON.parse(localStorage.getItem('wy.done'))['wenyan:1']") != "2026-01-02":
+        errors.append("Load: the earliest date did not win")
     page.evaluate("localStorage.clear()")
 
 
