@@ -14,6 +14,12 @@
     $$(".tok.sel,.ztok.sel,.w.sel,.wchip.sel,.cw.sel").forEach(x => x.classList.remove("sel")); $$(".noted").forEach(x => x.classList.remove("noted"));
     $$("sup.nn.on").forEach(x => x.classList.remove("on"));
   }
+  // the sheet covers the bottom of the screen: bring the word tapped on the page above it
+  function sheetReveal(el){
+    const sh = $("#sheet"); if (!sh || !el || sh.contains(el)) return;
+    const r = el.getBoundingClientRect(), lim = innerHeight - sh.offsetHeight - 12;
+    if (r.bottom > lim && r.top > 60) scrollBy({top: Math.min(r.bottom - lim, r.top - 60), behavior: "smooth"});
+  }
   // a "‹ Back to …" line at the top of the sheet now open: fn reopens what was there
   function sheetBack(label, fn){
     const sh = $("#sheet"); if (!sh || !fn) return;
@@ -33,7 +39,7 @@
       ${d.taught && d.taught.length ? `<h3>${t_("taught")}</h3>${chips(d.taught)}` : ""}
       ${d.seen && d.seen.length ? `<h3>${t_("usedIn")}</h3>${chips(d.seen)}` : ""}
       ${d.chars && d.chars.length ? `<h3>${t_("chars")}</h3>${chips(d.chars)}` : ""}
-      <div class="dx">${typeof dictExtra === "function" ? dictExtra(d.word, d.sentence || "") : ""}</div>`;
+      <div class="dx">${typeof dictExtra === "function" ? dictExtra(d.word, d.sentence || "", {noChars: !!(d.chars && d.chars.length)}) : ""}</div>`;
   }
   // a glossary word of the 文言 / 白話 lesson on screen
   function glossCard(gi){
@@ -54,7 +60,7 @@
     d.sentence = (el && el.closest("[data-zhs]")?.dataset.zhs) || "";
     $$(".tok.sel,.w.sel,.wchip.sel,.cw.sel").forEach(x => x.classList.remove("sel"));
     openSheet(cardHTML(d));
-    if (el && !el.closest("#sheet")) el.classList.add("sel");
+    if (el && !el.closest("#sheet")){ el.classList.add("sel"); sheetReveal(el); }
     sheetCur = {label: d.main, open: () => openCard(kind, key)};
     if (prev) sheetBack(prev.label, prev.open);
   }

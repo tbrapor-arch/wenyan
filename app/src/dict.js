@@ -198,18 +198,19 @@
     } else return "";
     const cs = [...w];
     const run = o.ctx ? o.ctx.run : w, at = o.ctx ? o.ctx.start : 0;
-    if (cs.length > 1 && cs.length <= 8 && !(ZHP[w] && !L0.length && ZHP[w].split(" ").every(p => [...p].length === 1))) h += `<h3>${dl("chars")}</h3><div class="zchars">${cs.map((c, i) => { const l = zhLines(c)[0];
+    if (!o.noChars && cs.length > 1 && cs.length <= 8 && !(ZHP[w] && !L0.length && ZHP[w].split(" ").every(p => [...p].length === 1))) h += `<h3>${dl("chars")}</h3><div class="zchars">${cs.map((c, i) => { const l = zhLines(c)[0];
       return l ? `<button class="zchar" data-zact="word" data-zw="${esc(c)}" data-zrun="${esc(run)}" data-zs="${at + i}"${cls ? ' data-zc="1"' : ""}><span class="han">${esc(c)}</span><span class="d"><b>${esc(l[0])}</b> ${esc(l[1].split("/").filter(s => !s.startsWith("CL:")).slice(0, 3).join("; ").slice(0, 90))}</span></button>`
         : `<span class="zchar"><span class="han">${esc(c)}</span></span>`; }).join("")}</div>`;
     h += zhCutsHTML(w, o.ctx, cls);
     return h;
   }
   // HTML of the automatic layer for a curated card (agent A appends it in <div class="dx">); "" when the table lacks it
-  function dictExtra(word, sentence){
+  // o.noChars: the card already lists the word's characters (a 入門 card): not twice
+  function dictExtra(word, sentence, o = {}){
     if (!zhData() || !word || (!zhTap(word) && !ZHP[word])) return "";
     let r = 0;
     if (sentence){ const t = zhCut(sentence).find(t => typeof t !== "string" && t[0] === word); if (t) r = t[1]; }
-    return zhAutoHTML(word, {r, ctx: zhCtxIn(sentence, word)});
+    return zhAutoHTML(word, {r, ctx: zhCtxIn(sentence, word), noChars: !!o.noChars});
   }
 
   /* ---------- examples: other lines of the course (real lines only) ---------- */
@@ -288,8 +289,7 @@
     $$(".ztok.sel").forEach(y => y.classList.remove("sel")); el.classList.add("sel");
     const blk = el.closest("p, li, td, div");   // the line it was tapped in: not an example of itself
     openZhWord(w, {r: +el.dataset.r || 0, classical: cls, ctx: zhCtxEl(el), from: el, skip: blk && !blk.closest("#sheet") ? zhHan(blk.textContent) : ""});
-    const sh = $("#sheet");   // the sheet covers the bottom of the screen: bring the tapped word above it
-    if (sh && !sh.contains(el)){ const r = el.getBoundingClientRect(), lim = innerHeight - sh.offsetHeight - 12; if (r.bottom > lim && r.top > 60) scrollBy({top: Math.min(r.bottom - lim, r.top - 60), behavior: "smooth"}); }
+    sheetReveal(el);
   }
   function zhSpeak(w, btn){
     if (!zhSay() || !w) return;
