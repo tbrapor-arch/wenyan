@@ -1,0 +1,4 @@
+pyyaml>=6
+opencc-python-reimplemented>=0.1.7
+pypinyin>=0.49
+# for `make smoke` only (not needed to build): playwright>=1.40, then `playwright install chromium`
