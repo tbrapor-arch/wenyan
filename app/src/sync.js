@@ -23,7 +23,10 @@
   const marksReload = () => { const m = store.get("marks", null); return marks = m && typeof m === "object" && !Array.isArray(m) ? m : null; };
   function stampMarks(){
     marksReload();
-    const d = progDone(), now = Date.now();
+    // monotonic: a new stamp is later than every mark already known here (this device's and those merged from the
+    // gist), so a device whose clock is behind another's still has its Undo win over an earlier "done"
+    const top = Math.max(0, ...Object.values(marks || {}).filter(t => typeof t === "number" && isFinite(t)).map(Math.abs));
+    const d = progDone(), now = Math.max(Date.now(), top + 1);
     let ch = false;
     // first time: lessons finished before marks were kept count as older than any Undo made since
     if (!marks || typeof marks !== "object"){ marks = {}; for (const k in d) marks[k] = 1; ch = true; }

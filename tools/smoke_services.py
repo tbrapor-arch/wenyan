@@ -15,7 +15,8 @@ Serves _site/ on http://localhost (ports 8830, 8831) and checks:
      repo gets the tab and its route; with GitHub unreachable the cached module still opens; a token that cannot
      read the repo gets nothing;
   5. two tabs of one browser: both tabs' done dates kept, an Undo in one not brought back by the other (nor by a sync
-     round), the other tab redraws (after its sheet closes).
+     round), the other tab redraws (after its sheet closes);
+  6. clocks that differ: an Undo on a device whose clock is an hour behind the other's still wins.
   --only NAME,…: run only those tests (offline_and_csp, single_file, sync, module, two_tabs, …).
 Screenshots of Settings (390 px) with sync not connected / connected / refused / offline go to DIR.
 """
@@ -191,9 +192,11 @@ class FakeGitHub:
         return json.loads(g["files"]["wenyan-progress.json"]["content"])
 
 
-def device(b, gh, name, url):
+def device(b, gh, name, url, skew_ms=0):
     ctx = b.new_context(service_workers="block", **PHONE)   # requests then reach the fake GitHub directly
     no_fonts(ctx)
+    if skew_ms:   # this device's clock is off by skew_ms
+        ctx.add_init_script(f"(() => {{ const n = Date.now.bind(Date); Date.now = () => n() + {skew_ms}; }})()")
     ctx.add_init_script(WATCH)
     ctx.route("https://api.github.com/**", gh)
     # the token goes to api.github.com only
@@ -344,6 +347,28 @@ def two_tabs(b):
           "the other tab redraws, after its sheet closes")
 
 
+# ---------------------------------------------------------------- 6. clocks that differ
+def clock_skew(b):
+    """finding 3: device 1's clock is an hour fast; an Undo made after on device 2 (right clock) still wins"""
+    srv = serve(8834)
+    url = "http://localhost:8834/"
+    gh = FakeGitHub()
+    d1, p1 = device(b, gh, "fast", url, skew_ms=3600_000)
+    d2, p2 = device(b, gh, "right", url)
+    settings(p1, url); connect(p1, "tok-good")
+    mark(p1, url, "wenyan:1", True); sync_now(p1, url)
+    settings(p2, url); connect(p2, "tok-good")
+    check("wenyan:1" in done_of(p2), "clock: device 2 did not get the lesson")
+    mark(p2, url, "wenyan:1", False); sync_now(p2, url)
+    check("wenyan:1" not in done_of(p2) and "wenyan:1" not in gh.progress()["done"], f"clock: the Undo lost on device 2 {done_of(p2)}")
+    sync_now(p1, url)
+    check("wenyan:1" not in done_of(p1), f"clock: device 1 (fast clock) brought back the Undo {done_of(p1)}")
+    for c in (d1, d2):
+        c.close()
+    srv.shutdown(); srv.server_close()
+    print("6. clocks: an Undo on a device whose clock is an hour behind still wins")
+
+
 # ---------------------------------------------------------------- 4. private module
 def module(b):
     srv = serve(8832)
@@ -395,7 +420,7 @@ if not SITE.joinpath("index.html").exists():
 SHOTS.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
     b = p.chromium.launch()
-    tests = (offline_and_csp, single_file, sync, module, two_tabs)
+    tests = (offline_and_csp, single_file, sync, module, two_tabs, clock_skew)
     only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None   # --only sync,two_tabs
     for test in tests:
         if only and test.__name__ not in only:

@@ -33,7 +33,9 @@ In the app: Settings › Sync between devices (published app only).
 
 ### Progress format
 - `wy.done` (unchanged): `{"wenyan:3": "2026-11-02", "rumen:5:wave": "2026-11-10", …}`, lesson key → finish date.
-- `wy.marks` (new): lesson key → `+ms` when last marked done, `−ms` when last undone (`Date.now()`). Kept by
+- `wy.marks` (new): lesson key → `+ms` when last marked done, `−ms` when last undone (`Date.now()`, but always later
+  than every mark already known on this device, its own and those merged from the gist, so a device whose clock is
+  behind another's still has its later change win). Kept by
   comparing `wy.done` with it (`stampMarks` in `app/src/sync.js`). Every write to `wy.done` goes through the shell's
   `markDone(key, on, quiet)` (`app/src/core.js`), which calls `syncTouch()` (quiet: a merge, from a file or from sync,
   stamps nothing new by itself). `done` and `marks` are read again from storage before every change (`doneReload`,
