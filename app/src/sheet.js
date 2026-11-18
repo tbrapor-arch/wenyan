@@ -64,7 +64,7 @@
     const total = L.notes.length;
     $$(".noted").forEach(x => x.classList.remove("noted")); $$("sup.nn.on").forEach(x => x.classList.remove("on"));
     openSheet(`<div class="top"><div class="hd"><span class="ntag">${t_("note")} ${n.n} ${t_("of")} ${total}${n.topic ? ` · ${esc(t_("topics")[n.topic] || n.topic)} · ${t_("line")} ${n.line}` : ""}</span>
-        ${n.at ? `<div class="nat">${esc(Z(n, "at"))}</div>` : ""}</div><button class="x" aria-label="Close">×</button></div>
+        ${n.at ? `<div class="nat"${CL(CFG[T.key].classical)}>${han(Z(n, "at"), CFG[T.key].classical)}</div>` : ""}</div><button class="x" aria-label="Close">×</button></div>
       <p class="ntext nbody">${noteText(n)}</p>
       <div class="nrow"><button class="btn ghost" data-note="${i - 1}" ${i < 1 ? "disabled" : ""}>${t_("prev")}</button>
         <button class="btn" data-note="${i + 1}" ${i >= total - 1 ? "disabled" : ""}>${t_("nextN")}</button>

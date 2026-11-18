@@ -16,9 +16,10 @@
   const han = (text, classical) => classical && typeof zhLineClassical === "function" ? zhLineClassical(text)
     : typeof zhLine === "function" ? zhLine(text) : esc(text);
   const HANRUN = /[㐀-鿿豈-﫿\u{20000}-\u{3ffff}〇]+/gu;
-  // **bold**, *italic*, cross-references (L3 n.5 · 文言 L1 n.4) as buttons, Chinese runs through zh (default: han).
+  // **bold**, *italic*, cross-references (L3 n.5 · 文言 L1 n.4) as buttons, Chinese runs through zh (default: han,
+  // one character at a time in a classical track: everything in 文言 is classical, as the build's dictionary check has it).
   const REF = /((?:(文言|白話|入門) )?\bL(\d+) n\.(\d+))/, TRACK_OF = {"文言": "wenyan", "白話": "baihua", "入門": "rumen"};
-  function md(t, own = T && T.key, zh = run => han(run)){
+  function md(t, own = T && T.key, zh = run => han(run, !!(T && CFG[T.key].classical))){
     const p = String(t ?? "").split(REF);
     let out = "";
     for (let i = 0; i < p.length; i += 5){

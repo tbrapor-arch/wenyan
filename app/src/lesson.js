@@ -21,20 +21,22 @@
   }
 
   // Glossary words (longest match first) as tappable words, note numbers after the characters they are about; the
-  // rest of the line goes through han() in runs.
+  // rest of the line is the dictionary's words of the whole line (zhPieces: cut once, so a word keeps the reading the
+  // whole sentence gives it), else han() in runs.
   function markLine(line, i, classical){
     const t = Z(line, "h"), ends = {};
     const words = L.glossary.map((g, gi) => ({w: Z(g, "w"), gi})).filter(x => x.w).sort((a, b) => b.w.length - a.w.length);
     L.notes.forEach((n, ni) => { if (n.line !== i) return; const at = Z(n, "at"), p = t.indexOf(at); if (p >= 0) (ends[p + at.length - 1] ||= []).push(ni); });
-    let out = "", plain = "", k = 0;
-    const flush = () => { if (plain) out += han(plain, classical); plain = ""; };
+    const piece = typeof zhPieces === "function" ? zhPieces(t, classical) : (a, b) => han(t.slice(a, b), classical);
+    let out = "", p0 = -1, k = 0;
+    const flush = end => { if (p0 >= 0) out += piece(p0, end); p0 = -1; };
     while (k < t.length){
       const m = words.find(x => t.startsWith(x.w, k)), len = m ? m.w.length : 1;
-      if (m){ flush(); out += `<span class="w" data-g="${m.gi}">${esc(t.slice(k, k + len))}</span>`; } else plain += t[k];
-      for (let j = k; j < k + len; j++) if (ends[j]){ flush(); out += ends[j].map(ni => `<sup class="nn" data-note="${ni}" role="button" aria-label="${t_("note")} ${L.notes[ni].n}">${L.notes[ni].n}</sup>`).join(""); }
+      if (m){ flush(k); out += `<span class="w" data-g="${m.gi}">${esc(t.slice(k, k + len))}</span>`; } else if (p0 < 0) p0 = k;
+      for (let j = k; j < k + len; j++) if (ends[j]){ flush(j + 1); out += ends[j].map(ni => `<sup class="nn" data-note="${ni}" role="button" aria-label="${t_("note")} ${L.notes[ni].n}">${L.notes[ni].n}</sup>`).join(""); }
       k += len;
     }
-    flush();
+    flush(t.length);
     return out;
   }
   // a word chip (new words, glossary): {attr: 'data-k="…"' or 'data-g="…"', w, py, lv, g, sw, known}
@@ -48,7 +50,7 @@
     return `<div class="q">${e.toks ? `<div class="txt"${zs(e.toks.map(x => SIMP ? x.s : x.t).join(""))}>${sentHTML(e.toks)}</div>` : `<div class="txt"${CL(cl)}${zs(h)}>${han(h, cl)}</div>`}
       ${e.py && !e.toks ? `<div class="py">${esc(e.py)}</div>` : ""}
       ${e.src ? `<div class="src">${esc(e.src)}${e.to ? ` · <button class="ref" data-to="${e.to.track}/${e.to.id}">${t_("open")}</button>` : ""}</div>` : ""}
-      <details class="ans"><summary>${t_("answer")}</summary><p>${esc(tx(e))}</p>${e.tests ? `<p class="tests">${t_("practises")}: ${esc(e.tests)}</p>` : ""}</details></div>`;
+      <details class="ans"><summary>${t_("answer")}</summary><p>${esc(tx(e))}</p>${e.tests ? `<p class="tests">${t_("practises")}: ${md(e.tests, T.key, run => han(run, cl))}</p>` : ""}</details></div>`;
   }
 
   // The sections a lesson is made of, in the order CFG gives (rumen.js and chengyu.js add theirs).
@@ -68,7 +70,7 @@
       if (!L.notes || !L.notes.length) return "";
       const list = `<div class="notes">${L.notes.map(n => `<div class="note" id="n${n.n}"><span class="num">${n.n}</span><p>
         ${n.topic ? `<span class="tag">${esc(t_("topics")[n.topic] || n.topic)} · <button class="ref" data-line="${n.line}">${t_("line")} ${n.line}</button></span>` : ""}
-        ${n.at ? `<span class="at">${esc(Z(n, "at"))}</span>` : ""}<span class="ntext">${noteText(n)}</span></p></div>`).join("")}</div>`;
+        ${n.at ? `<span class="at"${CL(CFG[T.key].classical)}>${han(Z(n, "at"), CFG[T.key].classical)}</span>` : ""}<span class="ntext">${noteText(n)}</span></p></div>`).join("")}</div>`;
       return CFG[T.key].notes === "folded" ? `<details class="allnotes" id="sec-notes"><summary>${t_("allNotes")} (${L.notes.length})</summary>${list}</details>`
         : `<h2 id="sec-notes">${t_("notes")}</h2>${list}`;
     },

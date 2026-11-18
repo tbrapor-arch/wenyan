@@ -72,6 +72,20 @@
   function zhLine(text){ return zhCut(text).map(t => typeof t === "string" ? esc(t) : zhTok(t)).join(""); }
   // classical Chinese: never cut into words (the lesson's glossary is the authority), one character at a time
   function zhLineClassical(text){ return zhCut(text, true).map(t => typeof t === "string" ? esc(t) : zhTok(t, 1)).join(""); }
+  // A text drawn in pieces (a lesson line between its glossary words and note numbers): the whole text is cut once,
+  // so every piece keeps the words and readings of the whole line (the build checked that cut); a word that a piece's
+  // edge cuts through is cut again inside the piece. -> (start, end) => HTML of text.slice(start, end)
+  function zhPieces(text, classical){
+    const t = String(text ?? ""), segs = []; let p = 0;
+    for (const x of zhCut(t, classical)){ const s = typeof x === "string" ? x : x[0]; segs.push([p, p + s.length, x]); p += s.length; }
+    return (a, b) => segs.map(([s, e, x]) => {
+      if (e <= a || s >= b) return "";
+      if (typeof x === "string") return esc(t.slice(Math.max(a, s), Math.min(b, e)));
+      if (s >= a && e <= b) return zhTok(x, classical);
+      const part = t.slice(Math.max(a, s), Math.min(b, e));
+      return classical ? zhLineClassical(part) : zhLine(part);
+    }).join("");
+  }
   // HTML already escaped (md() output) -> the same HTML with the Chinese of its text tappable; tags and buttons kept
   function zhHTML(html, classical){
     let skip = 0;
