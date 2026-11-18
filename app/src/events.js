@@ -1,53 +1,53 @@
-  /* events.js: delegated click / change / key / scroll / resize / hashchange listeners, then boot (runs last) */
-  /* ---------- events ---------- */
+  /* events.js: the delegated click / change / key / resize / hashchange listeners, then boot (runs last) */
   document.addEventListener("click", e => {
-    const t = e.target, id = t.closest("button,a")?.id;
-    const ref = t.closest(".ref");
-    if (ref && ref.dataset.to){ closeSheet(); location.hash = ref.dataset.to; return; }
-    if (T && T.key === "rumen" && rClick(e)) return;
-    if (t.closest("#sheet")) return;
-    closeSheet();
-    if (t.closest("#pop .goto")){ const n = $("#n" + t.closest(".goto").dataset.n); hidePop(); flash(n); return; }
-    if (t.closest("#pop")) return;
-    if (t.closest("sup.nn")){ showNote(t.closest("sup.nn")); return; }
-    if (t.closest(".w")){ showWord(t.closest(".w")); return; }
-    hidePop();
-    if (id === "tScript" || id === "sSimp"){ simp = !simp; store.set("simp", simp); return go(); }
-    if (id === "tPy" || id === "sPy"){ py = !py; store.set("py", py); return go(); }
-    if (id === "tCover" || id === "sCover"){ cover = !cover; store.set("cover", cover); return go(); }
-    if (id === "sRlang"){ rlang = rlang === "fr" ? "en" : "fr"; store.set("rlang", rlang); return go(); }
-    if (id === "sRtrad"){ rtrad = !rtrad; store.set("rtrad", rtrad); return go(); }
-    if (id === "sNight"){ store.set("night", !store.get("night", false)); return go(); }
-    if (id === "markdone"){ done[T.key + ":" + L.id] = today(); saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
-    if (id === "undo"){ delete done[T.key + ":" + L.id]; saveDone(); const y = scrollY; go(); scrollTo(0, y); return; }
-    if (id === "save"){ const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify({app: "wenyan", saved: today(), done}, null, 1)], {type: "application/json"})); a.download = `wenyan-progress-${today()}.json`; a.click(); return; }
-    if (id === "load") return $("#file").click();
-    const ln = t.closest(".ln"), cy = t.closest(".cy");
-    if (ln && cover) $$(`.ln[data-i="${ln.dataset.i}"]`).forEach(x => x.classList.toggle("peek"));
+    const t = e.target;
+    if (!t.isConnected || t.closest(".ztok")) return;                 // the dictionary's words: dict.js handles them
+    const inSheet = !!t.closest("#sheet");
+    if (!inSheet && sheetOpen()) closeSheet();                          // a tap outside the sheet closes it (and still counts)
+    const b = t.closest("button,a,.tok,.wt,.w,.cw,sup.nn,[data-cv],.py");
+    if (!b) return;
+    const ds = b.dataset;
+    if (b.classList.contains("x")) return closeSheet();
+    if (ds.to && b.tagName === "BUTTON"){ closeSheet(); location.hash = ds.to; return; }
+    if (b.classList.contains("tok")){
+      if (S.pinyin === "tap" && !b.classList.contains("show")) return b.classList.add("show");   // first tap: the pinyin
+      return openCard("k", ds.k, b);
+    }
+    if (ds.k != null) return openCard("k", ds.k, b);
+    if (ds.g != null) return openCard("g", ds.g, b);
+    if (ds.c != null) return openCard("c", ds.c, b);
+    if (ds.note != null) return openNote(+ds.note);
+    if (b.classList.contains("py") && S.pinyin === "tap") return b.classList.toggle("show");
+    if (ds.jump){ closeSheet(); return jump(ds.jump); }
+    if (ds.line){ closeSheet(); const el = $("#line-" + ds.line); el?.classList.add("noted"); return flash(el); }
+    const act = ds.act;
+    if (act && toggle(act, ds.v)) return;
+    if (act === "done" || act === "undo"){ const y = scrollY; markDone(ds.key, act === "done"); route(); return scrollTo(0, y); }
+    if (act === "sheetback") return sheetBackFn && sheetBackFn();
+    if (act === "show"){ $("#zh-" + ds.i).hidden = false; return b.remove(); }
+    if (act === "showall"){ $$(".txt[hidden]").forEach(x => x.hidden = false); return $$(".showzh").forEach(x => x.remove()); }
+    if (act === "opt") return rumenOpt(b);
+    if (act === "save") return saveFile();
+    if (act === "load") return $("#file").click();
+    // Cover: tap a line (or a 成語) to see its translation
+    const cv = t.closest("[data-cv]");
+    if (cv && S.cover && !t.closest("button,a,details")) $$(`[data-cv="${cv.dataset.cv}"]`).forEach(x => x.classList.toggle("peek"));
   });
-  document.addEventListener("change", async e => {
-    if (e.target.id !== "file" || !e.target.files[0]) return;
-    try{ const d = JSON.parse(await e.target.files[0].text()); if (d.app !== "wenyan") throw 0;
-      // merge: keep the earliest finish date of each lesson (a "deck" in an older file is ignored)
-      for (const k in d.done) if (!done[k] || d.done[k] < done[k]) done[k] = d.done[k];
-      saveDone(); go();
-    }catch(x){ alert("That file is not a Wenyan progress file."); }
-  });
+  document.addEventListener("change", e => { if (e.target.id === "file" && e.target.files[0]) loadFile(e.target.files[0]); });
   addEventListener("keydown", e => {
+    if (e.key === "Escape") return closeSheet();
     if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "Escape"){ hidePop(); closeSheet(); }
     if (L && e.key === "ArrowLeft") $("#prev")?.click();
     if (L && e.key === "ArrowRight") $("#next")?.click();
   });
-  // A word pop-up closes once the page has really moved (a few pixels of font-loading shift don't count).
-  addEventListener("scroll", () => { if (!pop.classList.contains("note-pop") && Math.abs(scrollY - popY) > 30) hidePop(); }, {passive: true});
-  addEventListener("resize", () => { if (L) syncHeights(); });
-  addEventListener("hashchange", go);
+  addEventListener("resize", () => { if ($(".pages")) syncHeights(); });
+  addEventListener("hashchange", route);
 
   (async () => {
     const inline = $("#course-data").textContent.trim();
     course = inline ? JSON.parse(inline) : await (await fetch("course.json")).json();
-    if (!store.get("migrated", false)){ store.set("migrated", true); const old = store.get("lesson", null); if (old !== null && !location.hash && course.tracks[0].lessons[old]) location.hash = "wenyan/" + course.tracks[0].lessons[old].id; }
-    go();
-    if (document.fonts) document.fonts.ready.then(() => { if (L) syncHeights(); });
+    // links from the very first version (wy.lesson = an index into the 文言 lessons)
+    if (!store.get("migrated", false)){ store.set("migrated", true); const old = store.get("lesson", null); if (old !== null && !location.hash && course.tracks[1].lessons[old]) location.hash = "wenyan/" + course.tracks[1].lessons[old].id; }
+    route();
+    if (document.fonts) document.fonts.ready.then(() => { if ($(".pages")) syncHeights(); });
   })();

@@ -289,16 +289,28 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
 `app/index.template.html` and the parts in `app/src/` (one concern per part, order in `PARTS`) into the single file
 `app/dist/index.html` (served by GitHub Pages; also written as `dist/wenyan.html`). None of these is committed.
 
-- **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews).
-- **Lesson:** a bar that stays on top (back, previous / next, also ← → keys; 繁/简, Pinyin, Cover),
-  then the page as before. Cross-references in notes are buttons, across tracks too.
+- **One shell.** The four tracks share one track home, one lesson page, one toolbar, one bottom sheet and one set of
+  settings; what differs is a per-track config (`CFG` in `app/src/track.js`): source script, pinyin (above each word /
+  a line under each line / none), languages, the sections of a lesson, notes open or folded, glossary or new words,
+  exercise kinds, Cover.
+- **Track home:** "next lesson" card, count done, a tile per lesson (✓ when done, dashed for reviews; 入門: NHSK 1–4
+  bars and the 100 planned lessons, the unwritten ones greyed).
+- **Lesson:** a bar that stays on top: back, previous / next (also ← → keys), 繁/简, 拼音 (shown / on tap / off, where
+  the track has pinyin), FR/EN (入門), Cover (blurs the translation; tap a line, or a 成語, to check). Cross-references
+  in notes are buttons, across tracks too.
+- **Bottom sheet**, in every track: tap a word (or a 成語's headword) for its card, a note number for the note, with
+  previous / next and its line highlighted. The full note list stays at the bottom of 文言 / 白話 lessons (folded in 入門).
+- **Settings:** one script choice for every track (as written / traditional / simplified), one pinyin choice, Cover,
+  入門 language, night. They live in `wy.settings`; the older keys (`wy.simp`, `wy.rtrad`, `wy.py`, `wy.rmode`…)
+  are read once when it does not exist yet.
 - **Mark as done** dates the lesson (✓ on its tile); Undo removes the date. There is no review deck:
   review happens by reading, with the 7th-lesson reviews and the "Roots" exercises.
 - **Always light**; night mode is a switch in Settings. Progress (the done dates) lives in the browser; Settings
   saves and loads it as a file (loading merges: earliest finish date).
-- Routes: `#rumen`, `#rumen/52/wave`, `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#settings`. A first visit opens 入門. Every route maps to a tab
-  in `TABS`, so the tab bar keeps its highlight.
-- `make smoke` builds, then clicks through every tab and lesson at phone and desktop width.
+- Routes: `#rumen`, `#rumen/52/wave`, `#wenyan`, `#baihua/1`, `#baihua/1/n5`, `#chengyu/3`, `#settings`. A first visit
+  opens 入門. Every route maps to a tab (`currentTab()`), so the tab bar keeps its highlight.
+- `make smoke` builds, then clicks through every tab and lesson at phone and desktop width: word cards, notes,
+  every switch, Cover, cross-track references, the settings migration.
 
 
 ## 13. 入門 track: Mandarin from zero to NHSK 4

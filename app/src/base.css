@@ -1,4 +1,4 @@
-/* base.css: colours and fonts (light / night), page frame, top bar and tabs, shared pieces, track home */
+/* base.css: colours and fonts (light / night), page frame, top bar and tabs, shared pieces, track home (tiles) */
 /* Always light, whatever the phone says; night is a manual switch in Settings. */
 :root{
   color-scheme:only light;
@@ -75,4 +75,6 @@ code{font:13px ui-monospace,Menlo,monospace;background:var(--paper-2);padding:1p
 .tile.done{background:var(--paper-2)}
 .tile.done::after{content:"✓";position:absolute;top:9px;right:11px;color:var(--ok);font-weight:600}
 .tile.rev{border-style:dashed}
+.tile.planned{opacity:.55;cursor:default;border-style:dotted}
+.tile.planned .z{font-weight:400}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

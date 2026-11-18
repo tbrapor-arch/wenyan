@@ -1,25 +1,32 @@
-  /* route.js: TABS, route, drawTabs, go */
-  /* ---------- routing ---------- */
-  // Every route maps to a tab here, so a redrawn tab bar keeps its highlight.
+  /* route.js: TABS, parseHash, currentTab, drawTabs, route (draws the page for the hash), rerender */
+  // #rumen · #rumen/12 · #rumen/52/wave · #wenyan/3 · #baihua/1/n5 (a note) · #chengyu/3 · #settings
   const TABS = [["rumen", "入門", "Start"], ["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
                 ["settings", "設定", "Settings"]];
-  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "rumen"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
+  const allTabs = () => TABS.concat(typeof moduleTabs === "function" ? moduleTabs() : []);
+  const parseHash = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {key: p[0], id: p[1] ? +p[1] : null, sub: p[2] || null}; };
+  // every route maps to a tab, so a redrawn tab bar keeps its highlight
+  function currentTab(){ const k = parseHash().key; return allTabs().some(t => t[0] === k) ? k : store.get("tab", "rumen"); }
   function drawTabs(tab){
-    $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}</a>`).join("");
+    $("#tabs").innerHTML = allTabs().map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${esc(zh)}</b>${esc(en)}</a>`).join("");
   }
-  function go(){
-    hidePop(); closeSheet();
-    const r = route();
-    H.classList.toggle("simp", simp); H.classList.toggle("nopy", !py); H.classList.toggle("cover", cover);
-    H.dataset.theme = store.get("night", false) ? "dark" : "light";
-    H.classList.toggle("rm-han", r.tab === "rumen" && rmode === "han"); H.classList.toggle("rm-tap", r.tab === "rumen" && rmode === "tap");
-    drawTabs(r.tab); L = null;
-    if (r.tab === "settings") return settings();
-    store.set("tab", r.tab);
-    T = track(r.tab); L = r.id ? T.lessons.find(l => l.id === r.id) : null;
-    if (!L) return T.key === "rumen" ? rHome() : home();
-    if (T.key === "rumen"){ rLesson(r.note === "wave"); if (r.note && r.note !== "wave") rJump(r.note); else scrollTo(0, 0); return; }
-    lesson();
-    if (r.note){ const n = $("#" + r.note); if (n){ n.scrollIntoView({block: "center"}); n.classList.add("flash"); } }
-    else scrollTo(0, 0);
+  function route(){
+    closeSheet();
+    const r = parseHash();
+    H.dataset.theme = S.night ? "dark" : "light"; H.dataset.py = S.pinyin; H.classList.toggle("cover", S.cover);
+    T = L = null; SIMP = false;
+    if (r.key && !TABS.some(t => t[0] === r.key)){
+      drawTabs(currentTab());
+      if (typeof moduleRoute === "function" && moduleRoute(location.hash.replace(/^#/, ""))) return;
+    }
+    const tab = TABS.some(t => t[0] === r.key) ? r.key : store.get("tab", "rumen");
+    drawTabs(tab);
+    if (tab === "settings"){ H.classList.remove("simp"); return showSettings(); }
+    store.set("tab", tab);
+    T = track(tab) || course.tracks[0]; SIMP = showsSimp(T); H.classList.toggle("simp", SIMP);
+    L = r.id ? T.lessons.find(l => l.id === r.id) || null : null;
+    if (!L){ showHome(); return scrollTo(0, 0); }
+    showLesson(r.sub === "wave" && CFG[T.key].wave ? true : false);
+    if (r.sub && r.sub !== "wave") jump(r.sub); else scrollTo(0, 0);
   }
+  // redraw the page after a switch, staying where we were
+  function rerender(){ const y = scrollY; if (/\/n\d+$/.test(location.hash)) history.replaceState(null, "", location.hash.replace(/\/n\d+$/, "")); route(); scrollTo(0, y); }
