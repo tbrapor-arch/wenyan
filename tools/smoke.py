@@ -8,8 +8,13 @@ Opens the built page, app/dist/index.html (what GitHub Pages serves), and reads 
 the build and not committed.
 
 Fails on any JavaScript error, on a lesson that renders no text, and on horizontal page scroll.
+
+Dictionary pass (app/src/dict.js): on every lesson page, taps tappable Chinese words (.ztok) spread over the page
+(at least 300 per width), and checks that the sheet opens on that word with at least one layer (the course's gloss or
+the automatic one), that a character of a word opens its own card and "‹ Back" returns, and that neither the page nor
+the sheet scrolls sideways.
 """
-import json, sys
+import json, re, sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -67,8 +72,67 @@ def run(page, name):
                     page.locator("sup.nn").first.click(); page.wait_for_selector("#pop.note-pop"); shot(f"{t['key']}-1-note")
                     page.keyboard.press("Escape")
                 page.locator("#markdone").click(); page.wait_for_selector("#undo")
+    dict_pass(page, name, check)
     page.goto(PAGE + "#settings")
     page.locator("#sSimp").click(); page.locator("#sNight").click(); check("settings"); shot("settings-night")
+
+
+TAP_JS = """(n) => {
+  const all = [...document.querySelectorAll('#app .ztok')], out = {tapped: 0, bad: [], wide: []};
+  const pick = all.length <= n ? all : Array.from({length: n}, (_, i) => all[Math.floor(i * all.length / n)]);
+  for (const el of pick) {
+    document.body.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape', bubbles: true}));
+    el.click(); out.tapped++;
+    const sh = document.querySelector('#sheet'), zd = sh.querySelector('.zd');
+    if (!sh.classList.contains('open') || !zd || zd.dataset.hw !== el.dataset.z || !sh.querySelector('.wh')
+        || !(sh.querySelector('.zauto') || sh.querySelector('.zours'))) out.bad.push(el.dataset.z);
+    if (sh.scrollWidth > sh.clientWidth + 1) out.wide.push(el.dataset.z);
+  }
+  document.body.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape', bubbles: true}));
+  return out;
+}"""
+
+
+def dict_pass(page, name, check):
+    """tap .ztok words on every lesson page; characters -> back once per track"""
+    total = 0
+    for t in course["tracks"]:
+        backed = False
+        for l in t["lessons"]:
+            page.goto(PAGE + f"#{t['key']}/{l['id']}")
+            page.wait_for_selector(".lbar")
+            page.keyboard.press("Escape")
+            r = page.evaluate(TAP_JS, 25)
+            total += r["tapped"]
+            for w in r["bad"][:3]:
+                errors.append(f"{name} {t['key']}/{l['id']}: the dictionary sheet did not open on {w}")
+            for w in r["wide"][:3]:
+                errors.append(f"{name} {t['key']}/{l['id']}: the sheet of {w} scrolls sideways")
+            # one real tap (pointer, not script) per page, sheet open: the page must not scroll sideways
+            tok = page.locator("#app .ztok").first
+            if tok.count():
+                page.keyboard.press("Escape"); page.wait_for_timeout(250)
+                tok.scroll_into_view_if_needed(); tok.click()
+                page.wait_for_selector("#sheet.open .zd")
+                check(f"{t['key']}/{l['id']} dictionary sheet")
+            multi = page.locator("#app .ztok").filter(has_text=re.compile(r"^..+$"))
+            if not backed and multi.count():
+                page.keyboard.press("Escape"); page.wait_for_timeout(250)
+                w = multi.first.get_attribute("data-z")
+                multi.first.scroll_into_view_if_needed(); multi.first.click()
+                page.wait_for_selector("#sheet.open .zchar")
+                page.locator("#sheet button.zchar").first.click()
+                page.wait_for_selector("#sheet .zback")
+                page.locator("#sheet .zback").click()
+                if page.locator("#sheet .zd").get_attribute("data-hw") != w:
+                    errors.append(f"{name} {t['key']}/{l['id']}: Characters -> Back did not return to {w}")
+                backed = True
+            page.keyboard.press("Escape")
+        if not backed:
+            errors.append(f"{name} {t['key']}: no word of two characters or more to test Characters -> Back")
+    if total < 300:
+        errors.append(f"{name}: only {total} dictionary words tapped (want at least 300)")
+    print(f"smoke: {name}: {total} dictionary words tapped")
 
 
 with sync_playwright() as p:
