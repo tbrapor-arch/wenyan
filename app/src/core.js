@@ -92,17 +92,28 @@
 
   /* ---------- progress: the done dates ---------- */
   // keys: "wenyan:3", "rumen:12", "rumen:52:wave" (the second wave of 入門 52) → "YYYY-MM-DD"
-  const done = store.get("done", {});
+  // done is this page's copy of wy.done. Another tab of the same browser may have written wy.done since: every write
+  // and every read for sync starts from what is stored (doneReload), so no tab writes back an old copy; the storage
+  // event (events.js) reloads it and redraws.
+  const done = {};
+  function doneReload(){
+    const d = store.get("done", {});
+    for (const k of Object.keys(done)) delete done[k];
+    if (d && typeof d === "object" && !Array.isArray(d)) for (const k in d) if (typeof d[k] === "string") done[k] = d[k];
+    return done;
+  }
+  doneReload();
   const isDone = (t, l) => !!done[t.key + ":" + l.id];
   // every write to done goes through here. on: true (today), a date "YYYY-MM-DD", or false (undo); quiet: no syncTouch
   // (a merge from a file or from sync)
-  function markDone(key, on, quiet){ if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); if (!quiet) touch(); }
-  const getProgress = () => ({done: {...done}, settings: {...S}});
+  function markDone(key, on, quiet){ doneReload(); if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); if (!quiet) touch(); }
+  const getProgress = () => ({done: {...doneReload()}, settings: {...S}});
   // merge (a progress file): the earliest finish date of each lesson wins. {replace: true} (sync, which has already
   // merged with its done / undone marks): done becomes exactly obj.done, removals included. Settings, when given,
   // replace ours; without them ours are kept.
   function setProgress(obj, opt = {}){
     const d = obj && obj.done && typeof obj.done === "object" ? obj.done : {};
+    doneReload();
     if (opt.replace){
       for (const k of Object.keys(done)) if (typeof d[k] !== "string") markDone(k, false, true);
       for (const k in d) if (typeof d[k] === "string" && done[k] !== d[k]) markDone(k, d[k], true);

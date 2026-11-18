@@ -51,6 +51,12 @@
   });
   addEventListener("resize", () => { if ($(".pages")) syncHeights(); });
   addEventListener("hashchange", route);
+  // another tab of this browser changed the progress: read it again and redraw (after the sheet closes, if one is open)
+  addEventListener("storage", e => {
+    if (e.key !== null && e.key !== "wy.done" && e.key !== "wy.marks") return;
+    doneReload(); if (typeof marksReload === "function") marksReload();
+    if (course) redrawLater();
+  });
 
   (async () => {
     const inline = $("#course-data").textContent.trim();

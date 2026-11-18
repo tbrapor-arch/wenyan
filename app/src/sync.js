@@ -18,8 +18,11 @@
     if (typeof done === "object" && done){ for (const k in done) if (!(k in merged)) delete done[k]; Object.assign(done, merged); }
     store.set("done", merged);
   }
-  let marks = store.get("marks", null);
+  // like done, marks are read again from storage before each change: another tab may have stamped some since
+  let marks = null;
+  const marksReload = () => { const m = store.get("marks", null); return marks = m && typeof m === "object" && !Array.isArray(m) ? m : null; };
   function stampMarks(){
+    marksReload();
     const d = progDone(), now = Date.now();
     let ch = false;
     // first time: lessons finished before marks were kept count as older than any Undo made since
@@ -132,7 +135,7 @@
   // the shell's rerender (route.js) keeps the scroll position
   function syncRedraw(){
     if (typeof course === "undefined" || !course) return;
-    if (sheetOpen()) return syncShow();
+    if (sheetOpen()){ redrawLater(); return syncShow(); }
     rerender();
   }
   document.addEventListener("visibilitychange", () => {

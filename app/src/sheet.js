@@ -8,11 +8,15 @@
     const sh = $("#sheet"); sh.innerHTML = `<div class="grab"></div>` + html; sheetCur = sheetBackFn = null;
     sh.classList.add("open"); sh.setAttribute("aria-hidden", "false"); sh.scrollTop = 0;
   }
+  // a redraw asked for while a sheet is open (progress changed in another tab or on another device) waits until it closes
+  let sheetRedraw = false;
+  const redrawLater = () => { if (sheetOpen()) sheetRedraw = true; else rerender(); };
   function closeSheet(){
     const sh = $("#sheet"); if (!sh) return;
     sh.classList.remove("open"); sh.setAttribute("aria-hidden", "true"); sheetCur = sheetBackFn = null;
     $$(".tok.sel,.ztok.sel,.w.sel,.wchip.sel,.cw.sel").forEach(x => x.classList.remove("sel")); $$(".noted").forEach(x => x.classList.remove("noted"));
     $$("sup.nn.on").forEach(x => x.classList.remove("on"));
+    if (sheetRedraw){ sheetRedraw = false; rerender(); }
   }
   // the sheet covers the bottom of the screen: bring the word tapped on the page above it
   function sheetReveal(el){

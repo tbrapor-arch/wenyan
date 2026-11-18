@@ -13,7 +13,10 @@ Serves _site/ on http://localhost (ports 8830, 8831) and checks:
      (earliest date; an Undo on one device is not brought back by the other); token refused; offline, then back;
   4. the private-module loader, against the same fake: no token, no tab and no request; a token that can read the
      repo gets the tab and its route; with GitHub unreachable the cached module still opens; a token that cannot
-     read the repo gets nothing.
+     read the repo gets nothing;
+  5. two tabs of one browser: both tabs' done dates kept, an Undo in one not brought back by the other (nor by a sync
+     round), the other tab redraws (after its sheet closes).
+  --only NAME,…: run only those tests (offline_and_csp, single_file, sync, module, two_tabs, …).
 Screenshots of Settings (390 px) with sync not connected / connected / refused / offline go to DIR.
 """
 import http.server
@@ -300,6 +303,47 @@ def sync(b):
           "token refused (new and revoked); offline then back")
 
 
+# ---------------------------------------------------------------- 5. two tabs of one browser
+def two_tabs(b):
+    """finding 2: two tabs of the same browser keep each other's done dates, an Undo in one is not brought back by
+    the other (also through a sync round), and the other tab redraws (after its sheet closes)"""
+    srv = serve(8833)
+    url = "http://localhost:8833/"
+    gh = FakeGitHub()
+    ctx = b.new_context(service_workers="block", **PHONE)
+    no_fonts(ctx); ctx.add_init_script(WATCH); ctx.route("https://api.github.com/**", gh)
+    pb = ctx.new_page(); watch(pb, "tabB")          # B is opened first, A later
+    pb.goto(url + "#wenyan/2"); pb.wait_for_selector(".lbar")
+    pa = ctx.new_page(); watch(pa, "tabA")
+    pa.goto(url + "#wenyan/1"); pa.wait_for_selector(".lbar")
+    pa.locator("#markdone").click(); pa.wait_for_selector("#undo")
+    pb.locator("#markdone").click(); pb.wait_for_selector("#undo")
+    check(set(done_of(pa)) == {"wenyan:1", "wenyan:2"}, f"tabs: B's mark lost A's (or the reverse): {done_of(pa)}")
+    # B goes to lesson 1 (no reload): it shows A's mark; A undoes it: B redraws without it
+    pb.evaluate("location.hash = 'wenyan/1'"); pb.wait_for_selector("#undo")
+    pa.locator("#undo").click(); pa.wait_for_selector("#markdone")
+    pb.wait_for_selector("#markdone", timeout=3000)
+    pb.evaluate("location.hash = 'wenyan/3'"); pb.wait_for_selector("#markdone"); pb.locator("#markdone").click(); pb.wait_for_selector("#undo")
+    check(set(done_of(pa)) == {"wenyan:2", "wenyan:3"}, f"tabs: B brought back A's Undo: {done_of(pa)}")
+    # with a sheet open in B, its redraw waits for the sheet to close
+    pb.evaluate("location.hash = 'wenyan/4'"); pb.wait_for_selector("#markdone")
+    pb.locator(".page.left .w").first.click(); pb.wait_for_selector("#sheet.open")
+    pa.goto(url + "#wenyan/4"); pa.wait_for_selector(".lbar"); pa.locator("#markdone").click(); pa.wait_for_selector("#undo")
+    pb.wait_for_timeout(300)
+    check(pb.locator("#sheet.open").count() == 1, "tabs: B redrew under its open sheet")
+    pb.keyboard.press("Escape"); pb.wait_for_selector("#undo", timeout=3000)
+    pa.locator("#undo").click(); pa.wait_for_selector("#markdone")
+    # a sync round from B (connected now) and then from A: A's Undos stay undone
+    settings(pb, url); check(connect(pb, "tok-good") == "on", "tabs: B did not connect")
+    check(set(gh.progress()["done"]) == {"wenyan:2", "wenyan:3"}, f"tabs: the gist after B's sync {gh.progress()['done']}")
+    sync_now(pa, url)
+    check(set(done_of(pa)) == {"wenyan:2", "wenyan:3"}, f"tabs: after a sync round {done_of(pa)}")
+    ctx.close()
+    srv.shutdown(); srv.server_close()
+    print("5. two tabs: both marks kept; an Undo in one tab not brought back by the other, nor by a sync round;",
+          "the other tab redraws, after its sheet closes")
+
+
 # ---------------------------------------------------------------- 4. private module
 def module(b):
     srv = serve(8832)
@@ -351,7 +395,11 @@ if not SITE.joinpath("index.html").exists():
 SHOTS.mkdir(parents=True, exist_ok=True)
 with sync_playwright() as p:
     b = p.chromium.launch()
-    for test in (offline_and_csp, single_file, sync, module):
+    tests = (offline_and_csp, single_file, sync, module, two_tabs)
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None   # --only sync,two_tabs
+    for test in tests:
+        if only and test.__name__ not in only:
+            continue
         try:
             test(b)
         except Exception as e:   # one test failing must not hide the others

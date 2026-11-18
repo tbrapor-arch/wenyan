@@ -324,7 +324,8 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
 - **Mark as done** dates the lesson (✓ on its tile); Undo removes the date. Every write to the done dates goes
   through `markDone`. There is no review deck: review happens by reading, with the 7th-lesson reviews and the
   "Roots" exercises.
-- **Progress** lives in the browser (`wy.done`). Settings saves and loads it as a file (loading merges: earliest
+- **Progress** lives in the browser (`wy.done`; several tabs of one browser share it: every write starts from what is
+  stored, and a tab redraws when another one changes it, once its sheet is closed). Settings saves and loads it as a file (loading merges: earliest
   finish date), and can sync it between devices through a secret GitHub gist with the user's own token (done and
   undone are merged by the latest change, the earliest date kept; `docs/sync-and-private-module.md`).
 - **Offline.** The published site is installable; a service worker keeps the page (which holds all the course data

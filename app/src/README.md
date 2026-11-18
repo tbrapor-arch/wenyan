@@ -24,20 +24,20 @@ starts with a one-line comment saying what it owns.
 
 | # | JS part | Owns |
 |---|---|---|
-| 1 | `core.js` | `$`, `$$`, `store`, `esc`, `today`, `han`, `md`, `flash`, `jump`, state (`course`, `T`, `L`, `SIMP`, settings `S`), the settings migration, `Z`, `t_` / `UI`, `tx`, progress (`done`, `isDone`, `markDone`, `getProgress`, `setProgress`) |
+| 1 | `core.js` | `$`, `$$`, `store`, `esc`, `today`, `han`, `md`, `flash`, `jump`, state (`course`, `T`, `L`, `SIMP`, settings `S`), the settings migration, `Z`, `t_` / `UI`, `tx`, progress (`done`, `doneReload`, `isDone`, `markDone`, `getProgress`, `setProgress`) |
 | 2 | `track.js` | `CFG`: what each track's lessons are made of (script, pinyin, languages, sections, notes, words, exercises, Cover) |
 | 3 | `route.js` | `TABS`, `parseHash`, `currentTab`, `drawTabs`, `route`, `rerender` |
 | 4 | `home.js` | the track home of every track (`showHome`, tiles), `sealHTML` |
 | 5 | `toolbar.js` | the lesson bar (`toolbar`) and the switches (`toggle`), shared with Settings |
 | 6 | `lesson.js` | the lesson page (`showLesson`, `hero`, `finish`), the sections `SEC` (`pages`, `notes`, `words`, `practice`, `recap`, `culture`), `markLine`, word chips, `syncHeights` |
 | 7 | `chengyu.js` | 成語 sections: `frames`, `cards` |
-| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetOpen`, `sheetReveal`, the one way back (`sheetCur`, `sheetBack`); the word card (`openCard`, `cardHTML`, its `.dx` = `dictExtra`), the note (`openNote`), `courseGloss(word, classical)` (our gloss, for the dictionary sheet; classical: the lesson's own only) |
+| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetOpen`, `sheetReveal`, the one way back (`sheetCur`, `sheetBack`), `redrawLater` (a redraw waits for the sheet to close); the word card (`openCard`, `cardHTML`, its `.dx` = `dictExtra`), the note (`openNote`), `courseGloss(word, classical)` (our gloss, for the dictionary sheet; classical: the lesson's own only) |
 | 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
 | 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang` (read `SIMP` / `S` / `lang()`), `zhCut`, `zhLine`, `zhLineClassical`, `zhPieces`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 11 | `settings.js` | Settings page, progress file (Save / Load) |
 | 12 | `sync.js` | installed app (service worker registration, published site only); sync between devices through a secret gist: `Sync`, `wy.marks`, `syncTouch`, `syncSettings` (docs/sync-and-private-module.md) |
 | 13 | `module.js` | private-module loader: `Mod`, `moduleTabs`, `moduleRoute`, `moduleSettings` (docs/sync-and-private-module.md) |
-| 14 | `events.js` | the delegated click / change / key / resize / hashchange listeners (`revealFirst`: Cover's first tap), then boot |
+| 14 | `events.js` | the delegated click / change / key / resize / hashchange / storage listeners (`revealFirst`: Cover's first tap), then boot |
 
 **A new track** is a `CFG` entry (and its sections in `SEC` if it needs new ones), not a new page function.
 Every plain Chinese text goes through `han(text, classical)` (or `md`, whose Chinese runs go through it; a line drawn

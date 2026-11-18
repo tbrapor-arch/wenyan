@@ -11,7 +11,7 @@
     $("#tabs").innerHTML = allTabs().map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${esc(zh)}</b>${esc(en)}</a>`).join("");
   }
   function route(){
-    closeSheet();
+    sheetRedraw = false; closeSheet();    // this draws the page anyway
     const r = parseHash();
     H.dataset.theme = S.night ? "dark" : "light"; H.dataset.py = S.pinyin; H.classList.toggle("cover", S.cover);
     T = L = null; SIMP = false;

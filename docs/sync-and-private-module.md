@@ -36,7 +36,9 @@ In the app: Settings › Sync between devices (published app only).
 - `wy.marks` (new): lesson key → `+ms` when last marked done, `−ms` when last undone (`Date.now()`). Kept by
   comparing `wy.done` with it (`stampMarks` in `app/src/sync.js`). Every write to `wy.done` goes through the shell's
   `markDone(key, on, quiet)` (`app/src/core.js`), which calls `syncTouch()` (quiet: a merge, from a file or from sync,
-  stamps nothing new by itself). Sync reads `getProgress()` and writes its merged copy with
+  stamps nothing new by itself). `done` and `marks` are read again from storage before every change (`doneReload`,
+  `marksReload`), and a `storage` event from another tab of the same browser reloads them and redraws the page (after
+  the sheet closes, `redrawLater`), so two tabs never write back each other's old copy. Sync reads `getProgress()` and writes its merged copy with
   `setProgress({done}, {replace: true})` (done becomes exactly that copy, removals included); Load uses
   `setProgress(file)`, which merges (earliest date). The first time, lessons already done get `+1`: older than any Undo.
 - The gist file: `{"app": "wenyan", "v": 2, "at": ISO time, "done": {…}, "marks": {…}}`. A copy without `marks`
