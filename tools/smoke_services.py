@@ -6,7 +6,8 @@
 
 Serves _site/ on http://localhost (ports 8830, 8831) and checks:
   1. the service worker registers; with the server stopped and the network cut, a reload still opens a lesson;
-     no route of the app triggers a Content Security Policy violation;
+     no route of the app triggers a Content Security Policy violation, with the dictionary sheet open on every
+     lesson (a word tapped) and a word card, a 入門 card and a note open;
   2. the single file dist/wenyan.html opened as file:// still works (no service worker, no sync, no request out);
   3. sync, against a fake api.github.com (never a real token): first connect creates the gist; two devices merge
      (earliest date; an Undo on one device is not brought back by the other); token refused; offline, then back;
@@ -83,16 +84,26 @@ def offline_and_csp(b):
     page.reload(); page.wait_for_function("() => !!navigator.serviceWorker.controller", timeout=10000)
     # every route under the CSP
     routes = ["settings"] + [t["key"] for t in course["tracks"]] + [f"{t['key']}/{l['id']}" for t in course["tracks"] for l in t["lessons"]]
+    sheets = 0
     for r in routes:
         page.goto(url + "#" + r)
         page.wait_for_selector(".set,.thead,.lbar,main#app > *")
+        tok = page.locator("#app .ztok:visible")
+        if "/" in r and tok.count():   # the dictionary sheet open on every lesson
+            tok.first.scroll_into_view_if_needed(); tok.first.click(); page.wait_for_selector("#sheet.open .zd .zauto, #sheet.open .zd .src")
+            sheets += 1; page.keyboard.press("Escape")
+    check(sheets > 0, "csp: the dictionary sheet never opened")
     # a few things that build HTML on the fly
     page.goto(url + "#rumen/1"); page.wait_for_selector(".lbar")
     if page.locator(".tok").count():
         page.locator(".tok").first.click(); page.wait_for_selector("#sheet.open"); page.keyboard.press("Escape")
     page.goto(url + "#wenyan/1"); page.wait_for_selector(".lbar")
     if page.locator(".w").count():
-        page.locator(".w").first.scroll_into_view_if_needed(); page.locator(".w").first.click(); page.wait_for_selector("#pop", state="visible")
+        page.locator(".w").first.scroll_into_view_if_needed(); page.locator(".w").first.click(); page.wait_for_selector("#sheet.open .dx")
+        page.keyboard.press("Escape")
+    if page.locator("sup.nn").count():
+        page.locator("sup.nn").first.scroll_into_view_if_needed(); page.locator("sup.nn").first.click(); page.wait_for_selector("#sheet.open .ntext")
+        page.keyboard.press("Escape")
     # the watch itself works: a script injected into the page is refused and reported
     n = len(errors)
     page.evaluate("() => { const s = document.createElement('script'); s.textContent = 'window.injected = 1'; document.head.append(s); }")
@@ -108,7 +119,8 @@ def offline_and_csp(b):
     page.goto("about:blank"); page.goto(url + "#baihua/1"); page.wait_for_selector(".lbar", timeout=10000)
     page.screenshot(path=str(SHOTS / "offline-lesson.png"))
     ctx.close()
-    print("1. service worker: registered; offline reload opens a lesson; CSP: no violation on", len(routes), "routes")
+    print("1. service worker: registered; offline reload opens a lesson; CSP: no violation on", len(routes), "routes,",
+          f"the dictionary sheet open on {sheets} lessons")
 
 
 # ---------------------------------------------------------------- 2. single file
@@ -225,6 +237,8 @@ def sync(b):
     p1.screenshot(path=str(SHOTS / "settings-sync-not-connected.png"), full_page=True)
     check(not gh.log, f"sync: requests before any token {gh.log}")
     mark(p1, url, "wenyan:1", True)
+    # the shell's markDone (the button) stamps sync's mark at once, before any connection
+    check((p1.evaluate("JSON.parse(localStorage.getItem('wy.marks') || '{}')['wenyan:1'] || 0") or 0) > 1e12, "sync: markDone did not stamp wy.marks")
     settings(p1, url)
     check(connect(p1, "tok-good") == "on", "sync: first connect did not end connected")
     check(any(m == "POST" and p == "/gists" for m, p, _ in gh.log), "sync: first connect did not create the gist")
@@ -245,6 +259,7 @@ def sync(b):
 
     # undo on device 1: sent a few seconds later; device 2 (which still has it) must not bring it back
     mark(p1, url, "wenyan:2", False)
+    check((p1.evaluate("JSON.parse(localStorage.getItem('wy.marks') || '{}')['wenyan:2'] || 0") or 0) < -1e12, "sync: Undo (markDone false) did not stamp a negative mark")
     p1.wait_for_timeout(5000)
     check("wenyan:2" not in gh.progress()["done"], "sync: the Undo was not sent after a few seconds")
     sync_now(p2, url)
@@ -304,6 +319,9 @@ def module(b):
     p1.reload(); p1.wait_for_selector('nav a[href="#books"]', timeout=10000)
     p1.locator('nav a[href="#books"]').click(); p1.wait_for_selector("#modh")
     check(p1.inner_text("#modp") == "books", "module: route not passed to the module")
+    hrefs = p1.evaluate("[...document.querySelectorAll('#tabs a')].map(a => a.getAttribute('href'))")
+    check(hrefs[-2:] == ["#books", "#settings"], f"module: its tab is not just before Settings {hrefs}")
+    check(p1.evaluate("JSON.parse(localStorage.getItem('wy.tab'))") != "books", "module: its tab was stored as the last tab")
     p1.goto(url + "#books/7"); p1.wait_for_function("() => document.querySelector('#modp') && document.querySelector('#modp').textContent === 'books/7'")
     settings(p1, url)
     check(p1.get_attribute("#set-module", "data-state") == "on", "module: Settings does not show it on")
