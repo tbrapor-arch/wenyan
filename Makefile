@@ -1,5 +1,5 @@
 # make data      download open sources into data/raw (CC-CEDICT, jieba, HSK lists)
-# make app       validate the lessons, write app/course.json, app/dist/index.html and dist/wenyan.html
+# make app       make data, then validate the lessons, write app/course.json, app/dist/index.html and dist/wenyan.html
 # make test      validate the lessons only (non-zero exit on an error)
 # make smoke     build, then click through the app at phone and desktop width (needs playwright)
 PY = python3 -I
@@ -8,7 +8,7 @@ PY = python3 -I
 data:
 	sh data/fetch.sh
 
-app:
+app: data
 	$(PY) tools/build.py
 
 test:

@@ -34,6 +34,15 @@ jobs:
       - name: Python packages
         run: pip install -r requirements.txt
 
+      # the dictionary sources (CC-CEDICT, jieba, complete-hsk-vocabulary: pinned versions, see data/fetch.sh)
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: data/raw
+          key: data-raw-${{ hashFiles('data/fetch.sh') }}
+
+      - name: Dictionary sources
+        run: make data
+
       # validates every lesson (fails the run on an error), then writes app/dist/index.html
       - name: App
         run: make app
