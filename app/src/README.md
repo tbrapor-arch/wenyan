@@ -17,7 +17,7 @@ starts with a one-line comment saying what it owns.
 | 1 | `base.css` | colours and fonts (light / night), page frame, top bar and tabs, shared pieces (buttons, seal, badges), track home and its tiles, reduced motion |
 | 2 | `lesson.css` | lesson bar, the lesson page of every track (hero, two pages, notes, word chips, exercises, recap, finish), pinyin modes, Cover |
 | 3 | `chengyu.css` | 成語: patterns, the two-row 成語 card |
-| 4 | `settings.css` | Settings page |
+| 4 | `settings.css` | Settings page, its sync and private-module rows |
 | 5 | `rumen.css` | 入門 only: section chips, second wave, dialogue with speakers, words with pinyin above, note numbers, multiple choice, NHSK bars |
 | 6 | `sheet.css` | bottom sheet (word card, note, "‹ Back to …") |
 | 7 | `dict.css` | dictionary: tappable words (`.ztok`), the dictionary sheet (`.zd`), its layer inside curated cards (`.dx`) |
@@ -31,13 +31,17 @@ starts with a one-line comment saying what it owns.
 | 5 | `toolbar.js` | the lesson bar (`toolbar`) and the switches (`toggle`), shared with Settings |
 | 6 | `lesson.js` | the lesson page (`showLesson`, `hero`, `finish`), the sections `SEC` (`pages`, `notes`, `words`, `practice`, `recap`, `culture`), `markLine`, word chips, `syncHeights` |
 | 7 | `chengyu.js` | 成語 sections: `frames`, `cards` |
-| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetBack`, `sheetCur`; the word card (`openCard`, `cardHTML`), the note (`openNote`), `courseGloss` |
+| 8 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet`, `sheetOpen`, `sheetReveal`, the one way back (`sheetCur`, `sheetBack`); the word card (`openCard`, `cardHTML`, its `.dx` = `dictExtra`), the note (`openNote`), `courseGloss` (our gloss, for the dictionary sheet) |
 | 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
-| 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang`, `zhCut`, `zhLine`, `zhLineClassical`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
+| 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang` (read `SIMP` / `S` / `lang()`), `zhCut`, `zhLine`, `zhLineClassical`, `zhPieces`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 11 | `settings.js` | Settings page, progress file (Save / Load) |
 | 12 | `sync.js` | installed app (service worker registration, published site only); sync between devices through a secret gist: `Sync`, `wy.marks`, `syncTouch`, `syncSettings` (docs/sync-and-private-module.md) |
 | 13 | `module.js` | private-module loader: `Mod`, `moduleTabs`, `moduleRoute`, `moduleSettings` (docs/sync-and-private-module.md) |
-| 14 | `events.js` | the delegated click / change / key / resize / hashchange listeners, then boot |
+| 14 | `events.js` | the delegated click / change / key / resize / hashchange listeners (`revealFirst`: Cover's first tap), then boot |
 
 **A new track** is a `CFG` entry (and its sections in `SEC` if it needs new ones), not a new page function.
-Every plain Chinese text goes through `han(text, classical)`; every write to `done` through `markDone`.
+Every plain Chinese text goes through `han(text, classical)` (or `md`, whose Chinese runs go through it; a line drawn
+in pieces through `zhPieces`, cut once); every write to `done` through `markDone`, which calls sync's `syncTouch`.
+Sync reads `getProgress()` and writes back with `setProgress(obj, {replace: true})`; it redraws with `rerender()`
+unless a sheet is open. A private module's tabs come from `moduleTabs()` (before Settings) and its routes from
+`moduleRoute()`, asked before the track lookup.

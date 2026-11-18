@@ -19,7 +19,7 @@ throughout.
 
 HSK = the 2012 test, NHSK = HSK 3.0 (2025 syllabus); never "old" or "new".
 
-Plus **設定** (script, pinyin, cover, night mode, progress file).
+Plus **設定** (script, pinyin, cover, 入門 language, night mode, progress file, sync between devices).
 
 ## Layout
 
@@ -29,49 +29,56 @@ rumen/NNN-slug.yaml     入門 lessons (§13)
 lessons/NNN-slug.yaml   文言 lessons (schema in STANDARDS.md §2; kind: review for review lessons)
 baihua/NNN-slug.yaml    白話 lessons (§11)
 chengyu/NN-slug.yaml    成語 lessons (§10)
-tools/build.py          validates everything, adds simplified forms → app/course.json + the app
+
+tools/build.py          validates everything, adds simplified forms, builds the dictionary table → app/course.json
 tools/build_app.py      joins app/index.template.html + app/src/ (order: PARTS) → app/dist/index.html + dist/wenyan.html
-tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
-tools/rumen_quote.py    入門: quotes one-line YAML values (French « : » breaks plain YAML)
 tools/zh_words.py       the dictionary: cuts every Chinese text of the app into words, reads them, builds the table
                         the page carries (Tsheh-tû's port of the Shūjià reader's model; python3 -I tools/zh_words.py 句子)
-data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
-tools/smoke.py          clicks through the built app at phone and desktop width
-tools/smoke_services.py tests the published site: offline, CSP, sync and module loader (fake GitHub API)
-tools/site.py           the published site in _site/: CSP, manifest, icons, service worker (make site)
-app/pwa/                manifest, offline service worker, icons (tools/make_icons.py)
-docs/sync-and-private-module.md  offline app, sync between devices, the private-module contract
+tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
+tools/rumen_quote.py    入門: quotes one-line YAML values (French « : » breaks plain YAML)
 tools/overrides.yaml    fixes for OpenCC in classical contexts
 tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pinyin-words.yaml)
-data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
+tools/site.py           the published site in _site/: CSP, manifest, icons, service worker
+tools/make_icons.py     draws the icons in app/pwa/
+tools/smoke.py          clicks through the built app at phone and desktop width, taps dictionary words
+tools/smoke_services.py tests the published site: offline, CSP, single file, sync and module loader (fake GitHub API)
+
 app/index.template.html the page skeleton
 app/src/                the app's CSS and JS, one concern per part (app/src/README.md)
-data/fetch.sh           downloads CC-CEDICT, jieba and HSK lists into data/raw (make data; make app runs it first)
-app/dist/index.html     built, not committed: single file, data inlined; what GitHub Pages serves
-dist/wenyan.html        built, not committed: the same file (opens offline)
+app/pwa/                manifest, offline service worker, icons
+docs/sync-and-private-module.md  offline app, sync between devices, the private-module contract
+
+data/nhsk.tsv           NHSK word list (HSK 3.0, 2025 syllabus)
+data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
+data/fetch.sh           downloads CC-CEDICT, jieba and HSK lists into data/raw (make data)
+
+built, never committed: app/course.json, app/dist/index.html (single file, data and dictionary inlined),
+dist/wenyan.html (the same file, opens offline), _site/ (what GitHub Pages serves), data/raw/, data/build/
 ```
 
 ```sh
 pip install -r requirements.txt
-make app                            # validate, build app/dist/index.html (python3 -I tools/build.py)
-python3 -m http.server -d app/dist  # or just open dist/wenyan.html
-make test                           # validate only
-make smoke                          # build, then click through the app (needs playwright)
-make data                           # download the dictionary sources into data/raw (needs npm, curl, git)
+make data      # download the dictionary sources into data/raw (needs npm, curl, git); make app runs it first
+make app       # validate, build the dictionary and app/dist/index.html (python3 -I tools/build.py)
+make test      # validate only
+make site      # the published site in _site/ (CSP, manifest, icons, service worker)
+make smoke     # make site, then tools/smoke.py and tools/smoke_services.py (needs playwright)
+python3 -m http.server -d _site    # or app/dist, or just open dist/wenyan.html
 ```
 
-A push to `main` builds the app and publishes it on GitHub Pages as an installable, offline app with sync between
-devices (`make site` → `_site/`; `.github/workflows/pages.yml`; docs/sync-and-private-module.md).
-Generated files (`app/course.json`, `app/dist/`, `dist/`, `data/raw/`, `data/build/`) are never committed.
+A push to `main` builds the app and publishes `_site/` on GitHub Pages (`.github/workflows/pages.yml`): an
+installable app that works offline, with optional sync of progress between devices through a secret GitHub gist
+(docs/sync-and-private-module.md).
 
-**Every Chinese word is tappable.** Besides the course's own glosses, a tap opens the dictionary: the reading in that
-sentence and the CC-CEDICT senses (automatic, not checked by a person; in 文言 lines one character at a time, with the
-modern sense flagged as such), its characters, other cuts, other lines of the course that use it, its NHSK / HSK level.
-The table is built with the app (`tools/zh_words.py`, `make data` first): no dictionary is fetched at run time.
+## Using it
 
-Tap a word for its gloss, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to
-jump to that note. **Cover** blurs the translation the Assimil way: read the Chinese, then tap a
-line to check. **Mark as done** ticks the lesson on its tile.
+Tap a word for its card, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to jump to that note.
+**Every Chinese word is tappable**: our own gloss comes first, then the dictionary: the reading in that sentence and
+the CC-CEDICT senses (automatic, not checked by a person; classical text one character at a time, with the modern
+sense flagged as such), its characters, other cuts, other lines of the course that use it, its NHSK / HSK level. The
+table is built with the app: no dictionary is fetched at run time. **Cover** blurs the translation the Assimil way:
+read the Chinese, then tap a line to check (the first tap on a word of a hidden line reveals it). **Mark as done**
+ticks the lesson on its tile.
 
 ## Status
 
