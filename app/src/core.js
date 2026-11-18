@@ -93,12 +93,12 @@
   // keys: "wenyan:3", "rumen:12", "rumen:52:wave" (the second wave of 入門 52) → "YYYY-MM-DD"
   const done = store.get("done", {});
   const isDone = (t, l) => !!done[t.key + ":" + l.id];
-  // every write to done goes through here
-  function markDone(key, on){ if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); touch(); }
+  // every write to done goes through here. on: true (today), a date "YYYY-MM-DD", or false (undo); quiet: no syncTouch
+  // (a merge from a file or from sync)
+  function markDone(key, on, quiet){ if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); if (!quiet) touch(); }
   const getProgress = () => ({done: {...done}, settings: {...S}});
   // merge: the earliest finish date of each lesson wins; settings, when given, replace ours
   function setProgress(obj){
-    for (const k in obj && obj.done || {}) if (typeof obj.done[k] === "string" && (!done[k] || obj.done[k] < done[k])) done[k] = obj.done[k];
-    store.set("done", done);
+    for (const k in obj && obj.done || {}) if (typeof obj.done[k] === "string" && (!done[k] || obj.done[k] < done[k])) markDone(k, obj.done[k], true);
     if (obj && obj.settings && typeof obj.settings === "object"){ S = clean({...S, ...obj.settings}); store.set("settings", S); }
   }
