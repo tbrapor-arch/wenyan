@@ -1,4 +1,5 @@
-/* lesson.css: lesson bar, 文言 / 白話 reading lesson (two pages, notes, glossary, exercise, finish), word / note pop-up */
+/* lesson.css: lesson bar (toolbar), the lesson page of every track: hero, two pages, notes, word chips, exercises, recap,
+   finish; pinyin modes and Cover */
 /* lesson bar */
 .lbar{position:sticky;top:54px;z-index:5;background:color-mix(in srgb,var(--paper) 96%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);margin:0 -16px;padding:7px 16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .lbar .ttl{flex:1;min-width:0;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -6,7 +7,7 @@
 .ic{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:transparent;cursor:pointer;font-size:16px;line-height:1;display:grid;place-items:center;text-decoration:none;color:var(--ink);flex:none}
 .ic[aria-disabled="true"]{opacity:.3;pointer-events:none}
 .toggles{display:flex;gap:6px}
-@media (max-width:720px){.lbar{top:46px}.lbar .toggles{order:5;width:100%}}
+@media (max-width:720px){.lbar{top:46px}.lbar .toggles{order:5;width:100%;flex-wrap:wrap}}
 
 /* lesson */
 .hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;padding:36px 0 24px;border-bottom:1px solid var(--rule)}
@@ -23,11 +24,9 @@
 .py{font-size:14px;color:var(--ink-2);font-style:italic;margin-top:2px}
 .en{font-size:16px}
 .lit{font-size:13px;color:var(--ink-2);margin-top:2px}
-html.nopy .py{display:none}
-html.cover .page.right .ln > *,html.cover .en-inline{filter:blur(6px);opacity:.5;transition:.2s}
-html.cover .page.right .ln.peek > *,html.cover .ln.peek .en-inline{filter:none;opacity:1}
 .w{cursor:pointer;border-radius:3px;transition:background .15s;text-decoration:underline dotted var(--rule);text-underline-offset:6px}
-.w:hover,.w.on{background:var(--hl)}
+.w:hover,.w.sel{background:var(--hl)}
+.ln.noted{background:linear-gradient(90deg,var(--seal-soft),transparent 80%)}
 sup.nn{font:600 11px var(--en);color:var(--seal);margin-left:1px;cursor:pointer;vertical-align:super;padding:0 2px;border-radius:3px}
 sup.nn.on{background:var(--seal);color:var(--paper)}
 .notes{columns:2 340px;column-gap:34px}
@@ -38,22 +37,34 @@ sup.nn.on{background:var(--seal);color:var(--paper)}
 .note.flash{animation:fl 1.6s}
 @keyframes fl{0%{background:var(--hl)}100%{background:transparent}}
 .note p{margin:0}
-.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
-.g{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline;background:var(--card)}
-.g .c{font:600 24px/1.2 var(--zh);grid-row:span 2}
-.g .p{font-size:13px;color:var(--ink-2);font-style:italic}
-.g .d{font-size:14px;line-height:1.35}
-.gl.known .g{background:transparent}
-.gl.known .g .c{font-size:20px;font-weight:400}
-.g .sw{grid-column:1/-1;font:13px var(--zh);color:var(--ink-2);border-top:1px dotted var(--rule);padding-top:4px;margin-top:4px}
-.g .sw b{font:600 11px var(--en);letter-spacing:.06em;color:var(--seal);margin-right:6px}
-.ex{display:grid;gap:10px}
-.e{border-left:3px solid var(--seal);padding:8px 0 8px 16px}
-.e .zh{font-size:22px}
-.e .src{font-size:12px;color:var(--ink-2);letter-spacing:.04em}
-.e details summary{cursor:pointer;color:var(--seal);font-size:14px;margin-top:4px}
-.e details p{margin:4px 0 0}
-.e .tests{font-size:13px;color:var(--ink-2)}
+.note .tag,.ntag{display:block;font:600 10.5px var(--en);letter-spacing:.1em;text-transform:uppercase;color:var(--seal)}
+.ntext .wt{cursor:pointer;font-family:var(--zh);border-bottom:1px dotted var(--ink-2)}
+.ntext .wt:hover{background:var(--hl)}
+.ntext b{font-weight:600}
+details.allnotes summary{cursor:pointer;font:600 13px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:40px 0 14px}
+/* word chips: new words (入門), glossary (文言, 白話) */
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.wchip{text-align:left;border:1px solid var(--rule);border-radius:8px;background:var(--card);padding:8px 12px;cursor:pointer;display:grid;gap:1px;align-content:start}
+.wchip:hover,.wchip.sel{border-color:var(--ink-2)}
+.wchip b{font:600 22px/1.25 var(--zh)}
+.wchip .r{font-size:13px;font-style:italic;color:var(--ink-2)}
+.wchip .g{font-size:14px;line-height:1.3}
+.wchip .sw{font:13px var(--zh);color:var(--ink-2);border-top:1px dotted var(--rule);padding-top:4px;margin-top:4px}
+.wchip .sw b{font:600 11px var(--en);letter-spacing:.06em;color:var(--seal);margin-right:6px}
+.wchip.known{background:transparent}
+.wchip.known b{font-size:20px;font-weight:400}
+.lv{font:600 10px var(--en);font-style:normal;letter-spacing:.06em;color:var(--seal);border:1px solid currentColor;border-radius:3px;padding:0 4px;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.lv.off{color:var(--ink-2)}
+/* exercises: translate (answer on tap), multiple choice */
+.prac{display:grid;gap:12px;max-width:760px}
+.q{border-left:3px solid var(--seal);padding:6px 0 6px 16px}
+.txt{font:400 25px/1.5 var(--zh);letter-spacing:.03em}
+.q .txt{font-size:22px}
+.q .src{font-size:12px;color:var(--ink-2);letter-spacing:.04em}
+.q .ans{margin-top:4px}
+.q .ans summary{cursor:pointer;color:var(--seal);font-size:14px}
+.q .ans p{margin:4px 0 0}
+.q .tests{font-size:13px;color:var(--ink-2)}
 .culture{max-width:760px;font-size:16px;background:var(--paper-2);border-radius:10px;padding:18px 22px}
 .recap{display:grid;gap:14px}
 .rc{display:grid;grid-template-columns:34px 1fr;gap:14px;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;background:var(--card)}
@@ -64,11 +75,18 @@ sup.nn.on{background:var(--seal);color:var(--paper)}
 .rx span{font:20px/1.4 var(--zh);letter-spacing:.04em}
 .refs{display:flex;flex-wrap:wrap;gap:6px}
 .ref{font:12px var(--en);color:var(--seal);background:var(--seal-soft);border:0;border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
-p .ref,.nb .ref{padding:1px 8px}
+p .ref,.ntext .ref{padding:1px 8px}
 .finish{margin-top:44px;border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:18px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .finish .msg{flex:1;min-width:200px;font-size:15px}
 .finish .msg small{display:block;color:var(--ink-2)}
 .en-inline{display:none;font-size:15px;margin-top:4px}
+/* pinyin: shown, on tap (blurred until tapped), off; the words' pinyin above (入門) or the line under (文言, 成語) */
+html[data-py="off"] .py{display:none}
+html[data-py="off"] .tok rt,html[data-py="tap"] .tok:not(.show) rt{visibility:hidden}
+html[data-py="tap"] .py:not(.show){filter:blur(5px);opacity:.45;cursor:pointer;user-select:none}
+/* Cover: the translation blurred; tap the line (or the 成語) to check */
+html.cover [data-cv]{cursor:pointer}
+html.cover [data-cv]:not(.peek) .cvt{filter:blur(6px);opacity:.5;transition:.2s}
 footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
 @media (max-width:720px){
   .pages{grid-template-columns:1fr}
@@ -80,16 +98,7 @@ footer{margin-top:48px;font-size:12px;color:var(--ink-2);border-top:1px solid va
   .seal{width:60px;height:60px;font-size:20px}
   .zh{font-size:23px}
   .prose .zh{font-size:20px}
+  .txt{font-size:23px}
   .thead{padding-top:22px;gap:14px}
   .thead .seal{margin-top:6px}
 }
-/* pop-up */
-#pop{position:fixed;z-index:20;max-width:300px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 8px 28px #0004;display:none}
-#pop .c{font:600 26px var(--zh)}
-#pop .p{font-style:italic;opacity:.75;margin-left:8px}
-#pop .sw{font-family:var(--zh);opacity:.8;margin-top:6px;font-size:13px}
-#pop.note-pop{max-width:min(420px,calc(100vw - 16px));max-height:60vh;overflow:auto;padding:14px 16px;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--seal)}
-#pop .nh{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-#pop .nh .c{font-size:22px}
-#pop .nb{font-size:15px;line-height:1.5}
-#pop .goto{margin-top:10px;font:13px var(--en);color:var(--seal);background:none;border:0;padding:0;cursor:pointer}

@@ -19,8 +19,8 @@ OUTS = [ROOT / "app" / "dist" / "index.html", ROOT / "dist" / "wenyan.html"]
 # The join order, here and nowhere else. CSS: later rules win ties. JS: events.js boots the app, so it stays last.
 PARTS = {
     "css": ["base.css", "lesson.css", "chengyu.css", "settings.css", "rumen.css", "sheet.css", "dict.css"],
-    "js": ["core.js", "route.js", "home.js", "lesson.js", "chengyu.js", "sheet.js", "rumen.js", "dict.js",
-           "settings.js", "sync.js", "module.js", "events.js"],
+    "js": ["core.js", "track.js", "route.js", "home.js", "toolbar.js", "lesson.js", "chengyu.js", "sheet.js", "rumen.js",
+           "dict.js", "settings.js", "sync.js", "module.js", "events.js"],
 }
 SLOTS = {"css": "/*__CSS__*/", "js": "/*__JS__*/", "data": "/*__DATA__*/"}
 

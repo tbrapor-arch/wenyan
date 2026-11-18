@@ -15,6 +15,8 @@
 .cr{padding:16px 22px;background:var(--paper-2);border-left:1px solid var(--rule)}
 .cy .hw{font:600 30px/1.25 var(--zh);letter-spacing:.04em}
 .cy .hw .cn{font:12px var(--en);color:var(--seal);vertical-align:super;margin-right:5px;letter-spacing:0}
+.cy .cw{cursor:pointer;border-radius:4px}
+.cy .cw:hover,.cy .cw.sel{background:var(--hl)}
 .cy .hw .alt{font-weight:400;font-size:16px;color:var(--ink-2);margin-left:8px}
 .cy .py small{font-style:normal;font-size:12px;margin-left:6px}
 .cy .mean{font-size:17.5px;font-weight:600}
