@@ -47,9 +47,13 @@ jobs:
       - name: App
         run: make app
 
+      # the published site: CSP (script hash of this build), manifest, icons, offline service worker
+      - name: Site
+        run: python3 -I tools/site.py _site
+
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
-          path: app/dist
+          path: _site
 
   deploy:
     needs: build

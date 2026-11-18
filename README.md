@@ -37,6 +37,10 @@ tools/zh_words.py       the dictionary: cuts every Chinese text of the app into 
                         the page carries (Tsheh-tû's port of the Shūjià reader's model; python3 -I tools/zh_words.py 句子)
 data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
 tools/smoke.py          clicks through the built app at phone and desktop width
+tools/smoke_services.py tests the published site: offline, CSP, sync and module loader (fake GitHub API)
+tools/site.py           the published site in _site/: CSP, manifest, icons, service worker (make site)
+app/pwa/                manifest, offline service worker, icons (tools/make_icons.py)
+docs/sync-and-private-module.md  offline app, sync between devices, the private-module contract
 tools/overrides.yaml    fixes for OpenCC in classical contexts
 tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pinyin-words.yaml)
 data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
@@ -56,7 +60,8 @@ make smoke                          # build, then click through the app (needs p
 make data                           # download the dictionary sources into data/raw (needs npm, curl, git)
 ```
 
-A push to `main` builds the app and publishes `app/dist` on GitHub Pages (`.github/workflows/pages.yml`).
+A push to `main` builds the app and publishes it on GitHub Pages as an installable, offline app with sync between
+devices (`make site` → `_site/`; `.github/workflows/pages.yml`; docs/sync-and-private-module.md).
 Generated files (`app/course.json`, `app/dist/`, `dist/`, `data/raw/`, `data/build/`) are never committed.
 
 **Every Chinese word is tappable.** Besides the course's own glosses, a tap opens the dictionary: the reading in that

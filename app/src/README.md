@@ -35,8 +35,8 @@ starts with a one-line comment saying what it owns.
 | 9 | `rumen.js` | 入門 only: its strings, tokens (`sentHTML`), its word cards (`rumenCard`, `rumenKey`) and the words in its notes (`rumenRun`), dialogue and second wave, new words, multiple choice, NHSK bars and the 100-lesson plan (`rumenHome`) |
 | 10 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang`, `zhCut`, `zhLine`, `zhLineClassical`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 11 | `settings.js` | Settings page, progress file (Save / Load) |
-| 12 | `sync.js` | progress sync through a secret gist |
-| 13 | `module.js` | private-module loader |
+| 12 | `sync.js` | installed app (service worker registration, published site only); sync between devices through a secret gist: `Sync`, `wy.marks`, `syncTouch`, `syncSettings` (docs/sync-and-private-module.md) |
+| 13 | `module.js` | private-module loader: `Mod`, `moduleTabs`, `moduleRoute`, `moduleSettings` (docs/sync-and-private-module.md) |
 | 14 | `events.js` | the delegated click / change / key / resize / hashchange listeners, then boot |
 
 **A new track** is a `CFG` entry (and its sections in `SEC` if it needs new ones), not a new page function.
