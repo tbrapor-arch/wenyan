@@ -4,3 +4,15 @@
 .row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule)}
 .row .l{flex:1}
 .row .l small{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.4}
+/* Settings › Sync between devices (#set-sync, sync.js) and the private module's status (#set-module, module.js) */
+.sync-box{display:flex;flex-direction:column;gap:10px;padding:13px 0;border-bottom:1px solid var(--rule)}
+.sync-box .l small{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.4}
+#set-sync[data-state="on"] .l::before,#set-sync[data-state="offline"] .l::before,#set-sync[data-state="refused"] .l::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:middle;background:var(--ok)}
+#set-sync[data-state="offline"] .l::before{background:var(--ink-2)}
+#set-sync[data-state="refused"] .l::before{background:var(--seal)}
+.sync-how{margin:0;padding-left:1.2em;color:var(--ink-2);font-size:13.5px;line-height:1.45}
+.sync-form{display:flex;gap:8px;flex-wrap:wrap}
+.sync-form input{flex:1 1 14rem;min-width:0;font:15px ui-monospace,Menlo,monospace;padding:8px 12px;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink)}
+.sync-btns{display:flex;gap:8px;flex-wrap:wrap}
+.sync-note{color:var(--ink-2);font-size:12.5px}
+.sync-err{display:block;color:var(--seal);margin-top:4px}
