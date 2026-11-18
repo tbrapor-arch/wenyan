@@ -33,6 +33,8 @@ tools/build.py          validates everything, adds simplified forms → app/cour
 tools/build_app.py      joins app/index.template.html + app/src/ (order: PARTS) → app/dist/index.html + dist/wenyan.html
 tools/rumen.py          入門: word cut, pinyin check, NHSK counts, word cards
 tools/rumen_quote.py    入門: quotes one-line YAML values (French « : » breaks plain YAML)
+tools/zh_words.py       the dictionary: cuts every Chinese text of the app into words, reads them, builds the table
+                        the page carries (Tsheh-tû's port of the Shūjià reader's model; python3 -I tools/zh_words.py 句子)
 data/nhsk.tsv           NHSK (HSK 3.0, 2025 syllabus) words, from bezlant/hsk-3-vocabulary, CC BY-SA 4.0
 tools/smoke.py          clicks through the built app at phone and desktop width
 tools/overrides.yaml    fixes for OpenCC in classical contexts
@@ -40,7 +42,7 @@ tools/fill_pinyin.py    pinyin for 成語 example sentences (+ tools/chengyu-pin
 data/chengyu-freq.tsv   22,029 成語 ranked by modern frequency (wordfreq) + classic-novel counts
 app/index.template.html the page skeleton
 app/src/                the app's CSS and JS, one concern per part (app/src/README.md)
-data/fetch.sh           downloads CC-CEDICT, jieba and HSK lists into data/raw (make data)
+data/fetch.sh           downloads CC-CEDICT, jieba and HSK lists into data/raw (make data; make app runs it first)
 app/dist/index.html     built, not committed: single file, data inlined; what GitHub Pages serves
 dist/wenyan.html        built, not committed: the same file (opens offline)
 ```
@@ -56,6 +58,11 @@ make data                           # download the dictionary sources into data/
 
 A push to `main` builds the app and publishes `app/dist` on GitHub Pages (`.github/workflows/pages.yml`).
 Generated files (`app/course.json`, `app/dist/`, `dist/`, `data/raw/`, `data/build/`) are never committed.
+
+**Every Chinese word is tappable.** Besides the course's own glosses, a tap opens the dictionary: the reading in that
+sentence and the CC-CEDICT senses (automatic, not checked by a person; in 文言 lines one character at a time, with the
+modern sense flagged as such), its characters, other cuts, other lines of the course that use it, its NHSK / HSK level.
+The table is built with the app (`tools/zh_words.py`, `make data` first): no dictionary is fetched at run time.
 
 Tap a word for its gloss, a superscript number for its note, a reference (L3 n.5, 文言 L1 n.4) to
 jump to that note. **Cover** blurs the translation the Assimil way: read the Chinese, then tap a
@@ -80,3 +87,9 @@ line to check. **Mark as done** ticks the lesson on its tile.
 Lessons, notes and translations: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 Code: MIT. The classical texts themselves are public domain. See STANDARDS.md §6 for the sources
 we use and the ones we never copy from.
+
+The dictionary built into the page (`make data`, never committed) uses
+[CC-CEDICT](https://cc-cedict.org/wiki/) (MDBG, CC BY-SA 4.0: pinyin and English senses),
+[jieba](https://github.com/fxsjy/jieba)'s dictionary and idf weights (MIT: word frequencies for the cut),
+[complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) (MIT: HSK levels and readings) and
+[hsk-3-vocabulary](https://github.com/bezlant/hsk-3-vocabulary) (CC BY-SA 4.0: NHSK levels, data/nhsk.tsv).

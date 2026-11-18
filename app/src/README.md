@@ -20,7 +20,7 @@ starts with a one-line comment saying what it owns.
 | 4 | `settings.css` | Settings page |
 | 5 | `rumen.css` | 入門 lesson (dialogue, words with pinyin, notes, new words, practice, NHSK bars) |
 | 6 | `sheet.css` | bottom sheet (word card, note) |
-| 7 | `dict.css` | dictionary (empty for now) |
+| 7 | `dict.css` | dictionary: tappable words (`.ztok`), the dictionary sheet (`.zd`), its layer inside curated cards (`.dx`) |
 
 | # | JS part | Owns |
 |---|---|---|
@@ -31,7 +31,7 @@ starts with a one-line comment saying what it owns.
 | 5 | `chengyu.js` | 成語 lesson |
 | 6 | `sheet.js` | bottom sheet: `openSheet`, `closeSheet` |
 | 7 | `rumen.js` | 入門: strings (`RL`), words and notes, `rHome`, `rBar`, `rLesson`, `rFinish`, `rJump`, `openCard`, `openNote`, `rClick` |
-| 8 | `dict.js` | dictionary: `zhCut`, `zhLine`, `openZh` (empty for now) |
+| 8 | `dict.js` | dictionary (table built by `tools/zh_words.py`): `dictScript`, `dictLang`, `zhCut`, `zhLine`, `zhLineClassical`, `zhHTML`, `openZh`, `openZhWord`, `dictExtra`, `zhAdd`, `ZH_V`, `DICT_CREDIT`; the delegated `.ztok` click / key handler |
 | 9 | `settings.js` | Settings page |
 | 10 | `sync.js` | progress sync through a secret gist (empty for now) |
 | 11 | `module.js` | private-module loader (empty for now) |
