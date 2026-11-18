@@ -42,13 +42,14 @@
       .replace(/(?<!文言 |白話 )\bL(\d+) n\.(\d+)/g, (m, l, n) => `<button class="ref" data-to="rumen/${l}/n${n}">${rlang === "fr" ? "L" + l + " n." + n : m}</button>`);
     return h.replace(/[㐀-鿿豈-﫿]+/g, run => {
       let out = "", i = 0;
+      let buf = "";   // TEMP wiring: the Chinese no word card covers goes to the dictionary
       while (i < run.length){
         let j = Math.min(run.length, i + 8);
         for (; j > i + 1; j--) if (RIDX.m[run.slice(i, j)]) break;
         const w = run.slice(i, j), k = RIDX.m[w];
-        out += k ? `<span class="wt" data-k="${esc(k)}">${esc(w)}</span>` : esc(w); i = j;
+        if (k){ out += zhLine(buf) + `<span class="wt" data-k="${esc(k)}">${esc(w)}</span>`; buf = ""; } else buf += w; i = j;
       }
-      return out;
+      return out + zhLine(buf);
     });
   }
   const lvHTML = d => d.name ? `<span class="lv off">${t_("name")}</span>` : d.lvl ? `<span class="lv">NHSK ${esc(d.lvl)}</span>` : `<span class="lv off">${t_("outside")}</span>`;
@@ -100,7 +101,7 @@
     const w = L.id - 49, waveL = L.id >= 50 && tr.lessons.find(l => l.id === w);
     const ex = L.exercise || {};
     app.innerHTML = rBar() + `<section class="hero">${sealHTML(R(L, "title"))}<div><div class="kicker">${wave ? t_("wave") + " · " : ""}${t_("lesson")} ${L.id}${L.kind === "review" ? " · " + t_("review") : ""}</div>
-        <h1>${esc(R(L, "title"))}</h1><div class="sub">${esc(L.title_py)} — ${esc(L["title_" + rlang])}</div></div></section>
+        <h1>${zhLine(R(L, "title"))}</h1><div class="sub">${esc(L.title_py)} — ${esc(L["title_" + rlang])}</div></div></section>
       <div class="meta"><span class="badge" title="draft → good → solid">${esc(L.status)}</span></div>
       ${wave ? `<p class="setting">${esc(t_("waveIntro"))}</p>` : (L.setting ? `<p class="setting">${esc(RT(L.setting))}</p>` : "")}
       ${!wave && waveL ? `<a class="wavecard" href="#rumen/${w}/wave"><span class="kicker">${t_("wave")}${done["rumen:" + w + ":wave"] ? " · ✓" : ""}</span><br>${esc(t_("waveDo").replace("{n}", w))}</a>` : ""}
@@ -122,7 +123,7 @@
       ${ex.translate || ex.choose ? `<h2 id="sec-ex">${t_("practice")}</h2><div class="prac">
         ${ex.translate ? `<div class="ntag">1 · ${t_("translate")}</div>${ex.translate.map(e => `<div class="q"><div class="txt">${sentHTML(e.toks)}</div>
           <details class="ans"><summary>${t_("answer")}</summary><p>${esc(RT(e))}</p></details></div>`).join("")}` : ""}
-        ${ex.choose ? `<div class="ntag">2 · ${t_("choose")}</div>${ex.choose.map((e, qi) => `<div class="q" data-q="${qi}"><div class="txt">${esc(R(e, "h")).split("＿＿").join('<span class="gap">？</span>')}</div>
+        ${ex.choose ? `<div class="ntag">2 · ${t_("choose")}</div>${ex.choose.map((e, qi) => `<div class="q" data-q="${qi}"><div class="txt">${R(e, "h").split("＿＿").map(zhLine).join('<span class="gap">？</span>')}</div>
           <div class="opts">${(rtrad ? e.opts_t : e.opts).map((o, oi) => `<button class="opt" data-q="${qi}" data-o="${oi}">${esc(o)}</button>`).join("")}</div>
           <div class="after" hidden><div class="txt">${sentHTML(e.toks)}</div><div>${esc(RT(e))}</div></div></div>`).join("")}` : ""}
       </div>` : ""}`}
@@ -152,7 +153,8 @@
       ${gloss ? `<h3>${t_("meaning")}</h3><div class="gloss">${esc(gloss)}</div>` : d.auto ? `<h3>${t_("meaning")}</h3><div class="gloss">${esc(d.auto)}</div><div class="src">${t_("auto")}</div>` : ""}
       ${d.first ? `<h3>${t_("taught")}</h3><div class="chips"><button data-to="rumen/${d.first}">${t_("lesson")} ${d.first}</button></div>` : ""}
       ${seen.length ? `<h3>${t_("usedIn")}</h3><div class="chips">${seen.map(x => `<button data-to="rumen/${x}">${t_("lesson")} ${x}</button>`).join("")}</div>` : ""}
-      ${chars ? `<h3>${t_("chars")}</h3><div class="chips">${chars}</div>` : ""}`);
+      ${chars ? `<h3>${t_("chars")}</h3><div class="chips">${chars}</div>` : ""}
+      <div class="dx">${dictExtra(main)}</div>`);   // TEMP wiring
   }
   function openNote(i){
     const n = L.notes[i], total = L.notes.length;

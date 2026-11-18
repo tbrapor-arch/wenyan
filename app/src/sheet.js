@@ -7,5 +7,5 @@
   function closeSheet(){
     const sh = $("#sheet"); if (!sh) return;
     sh.classList.remove("open"); sh.setAttribute("aria-hidden", "true");
-    $$(".tok.sel").forEach(x => x.classList.remove("sel")); $$(".sent.noted").forEach(x => x.classList.remove("noted"));
+    $$(".tok.sel, .ztok.sel").forEach(x => x.classList.remove("sel"));   // TEMP wiring: .ztok $$(".sent.noted").forEach(x => x.classList.remove("noted"));
   }
