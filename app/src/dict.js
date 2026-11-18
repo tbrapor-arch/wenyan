@@ -103,9 +103,11 @@
   // "個|个[ge4]" -> 個 gè (the script shown), each form a tappable word
   function zhXref(d){
     const sc = dictScript();
-    return esc(d).replace(/([^\s|\[\],;:()]+)(?:\|([^\s|\[\],;:()]+))?\[([A-Za-z:1-5 ]+)\]/g, (m, a, b, p) => {
+    return esc(d).replace(/([^\s|\[\],;:()]*)(?:\|([^\s|\[\],;:()]+))?\[([A-Za-z:1-5 \-]+)\]/g, (m, a, b, p) => {
+      const py = p.replace(/[A-Za-z:]+[1-5]/g, zhMarks);
+      if (!a) return `[${py}]`;   // "also pr. [yi1mo2-yi1yang4]"
       const w = b && sc === "s" ? b : a;
-      return `<span class="zx">${zhTap(w) ? `<button class="zw" data-zact="word" data-zw="${esc(w)}">${esc(w)}</button>` : esc(w)} <i>${esc(zhMarks(p))}</i></span>`;
+      return `<span class="zx">${zhTap(w) ? `<button class="zw" data-zact="word" data-zw="${esc(w)}">${esc(w)}</button>` : esc(w)} <i>${py}</i></span>`;
     });
   }
   const DL = {
@@ -180,7 +182,7 @@
     } else return "";
     const cs = [...w];
     const run = o.ctx ? o.ctx.run : w, at = o.ctx ? o.ctx.start : 0;
-    if (cs.length > 1 && cs.length <= 8) h += `<h3>${dl("chars")}</h3><div class="zchars">${cs.map((c, i) => { const l = zhLines(c)[0];
+    if (cs.length > 1 && cs.length <= 8 && !(ZHP[w] && !L0.length && ZHP[w].split(" ").every(p => [...p].length === 1))) h += `<h3>${dl("chars")}</h3><div class="zchars">${cs.map((c, i) => { const l = zhLines(c)[0];
       return l ? `<button class="zchar" data-zact="word" data-zw="${esc(c)}" data-zrun="${esc(run)}" data-zs="${at + i}"${cls ? ' data-zc="1"' : ""}><span class="han">${esc(c)}</span><span class="d"><b>${esc(l[0])}</b> ${esc(l[1].split("/").filter(s => !s.startsWith("CL:")).slice(0, 3).join("; ").slice(0, 90))}</span></button>`
         : `<span class="zchar"><span class="han">${esc(c)}</span></span>`; }).join("")}</div>`;
     h += zhCutsHTML(w, o.ctx, cls);
@@ -207,18 +209,19 @@
     }
     return ZH_LINES;
   }
+  const zhHan = t => (String(t || "").match(/[\u3400-\u9fff\uf900-\ufaff\u{20000}-\u{3134f}]/gu) || []).join("");
   function zhExamplesHTML(w, skip){
     const sc = dictScript(), hits = [];
     for (const x of zhCourseLines()){
       const vs = x.v.filter(Boolean), v = vs.find(t => t.includes(w)); if (!v) continue;
-      if (skip && skip.length >= 3 && vs.some(t => t.includes(skip))) continue;   // the line the word was tapped in
-      if (!x.c && !zhCut(v).some(t => typeof t !== "string" && t[0] === w)) continue;   // modern: the word, not a piece of another
+      if (skip && vs.some(t => { const h = zhHan(t); return h === skip || (skip.length >= 4 && (h.includes(skip) || skip.includes(h))); })) continue;   // the line the word was tapped in
+      if (!x.c && !ZHP[w] && !zhCut(v).some(t => typeof t !== "string" && t[0] === w)) continue;   // modern: the word, not a piece of another
       const pref = sc === "s" ? vs[vs.length - 1] : vs[0];
       hits.push({...x, t: pref.includes(w) ? pref : v});
     }
     if (!hits.length) return `<h3>${dl("ex")}</h3><div class="src">${dl("noEx")}</div>`;
     const show = hits.slice(0, 5).map(x => {
-      const body = x.c ? x.t.split(w).map(zhLineClassical).join(`<mark>${zhLineClassical(w)}</mark>`)
+      const body = x.c || ZHP[w] ? x.t.split(w).map(zhLineClassical).join(`<mark>${zhLineClassical(w)}</mark>`)
         : zhCut(x.t).map(t => typeof t === "string" ? esc(t) : t[0] === w ? `<mark>${zhTok(t)}</mark>` : zhTok(t)).join("");
       return `<li><span class="zh"${x.c ? ' data-zh="classical"' : ""}>${body}</span> <button class="zgo" data-zact="go" data-to="${esc(x.to)}">${esc(x.at)}</button></li>`;
     }).join("");
@@ -226,11 +229,13 @@
   }
   // 成語 lesson that has this 成語, 文言 lesson titled with it
   function zhLessonChips(w){
-    const out = [];
+    let out = [];
     for (const tr of course.tracks){
       if (tr.key === "chengyu") for (const l of tr.lessons) if ((l.items || []).some(it => it.w === w || it.w_s === w)) out.push([`chengyu/${l.id}`, `${dl("chengyu")} ${l.id}`]);
       if (tr.key === "wenyan") for (const l of tr.lessons) if (l.title === w || l.title_s === w) out.push([`wenyan/${l.id}`, `${dl("wenyan")} ${l.id}`]);
     }
+    const here = location.hash.replace(/^#\/?/, "").split("/").slice(0, 2).join("/");
+    out = out.filter(([to]) => to !== here);
     return out.length ? `<div class="chips zles">${out.map(([to, x]) => `<button data-zact="go" data-to="${to}">${esc(x)} ›</button>`).join("")}</div>` : "";
   }
 
@@ -258,7 +263,7 @@
       ${back && !useA ? `<button class="btn ghost zback" data-zact="back">‹ ${dl("back")} ${esc(back.label)}</button>` : ""}
       ${gl && gl.html ? `<h3>${dl("ours")}</h3><div class="zours">${gl.html}</div>` : ""}
       ${zhAutoHTML(w, {r, classical: cls, ctx: o.ctx}) || `<div class="src">${dl("none")}</div>`}
-      ${zhExamplesHTML(w, o.ctx && o.ctx.run)}
+      ${zhExamplesHTML(w, o.skip || (o.ctx && o.ctx.run.length >= 4 ? o.ctx.run : ""))}
       ${lv.length ? `<h3>${dl("level")}</h3><div class="zlv">${lv.map(x => `<span class="badge">${x}</span>`).join(" ")}</div>` : ""}
       ${zhLessonChips(w)}
       <div class="src zcredit">${esc(DICT_CREDIT)}</div></div>`;
@@ -274,7 +279,10 @@
     if (!zhData()) return;
     const w = el.dataset.z, cls = el.dataset.c === "1" || !!el.closest('[data-zh="classical"]');
     $$(".ztok.sel").forEach(y => y.classList.remove("sel")); el.classList.add("sel");
-    openZhWord(w, {r: +el.dataset.r || 0, classical: cls, ctx: zhCtxEl(el), from: el});
+    const blk = el.closest("p, li, td, div");   // the line it was tapped in: not an example of itself
+    openZhWord(w, {r: +el.dataset.r || 0, classical: cls, ctx: zhCtxEl(el), from: el, skip: blk && !blk.closest("#sheet") ? zhHan(blk.textContent) : ""});
+    const sh = $("#sheet");   // the sheet covers the bottom of the screen: bring the tapped word above it
+    if (sh && !sh.contains(el)){ const r = el.getBoundingClientRect(), lim = innerHeight - sh.offsetHeight - 12; if (r.bottom > lim && r.top > 60) scrollBy({top: Math.min(r.bottom - lim, r.top - 60), behavior: "smooth"}); }
   }
   function zhSpeak(w, btn){
     if (!zhSay() || !w) return;
