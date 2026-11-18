@@ -97,8 +97,14 @@
   // (a merge from a file or from sync)
   function markDone(key, on, quiet){ if (on) done[key] = typeof on === "string" ? on : today(); else delete done[key]; store.set("done", done); if (!quiet) touch(); }
   const getProgress = () => ({done: {...done}, settings: {...S}});
-  // merge: the earliest finish date of each lesson wins; settings, when given, replace ours
-  function setProgress(obj){
-    for (const k in obj && obj.done || {}) if (typeof obj.done[k] === "string" && (!done[k] || obj.done[k] < done[k])) markDone(k, obj.done[k], true);
+  // merge (a progress file): the earliest finish date of each lesson wins. {replace: true} (sync, which has already
+  // merged with its done / undone marks): done becomes exactly obj.done, removals included. Settings, when given,
+  // replace ours; without them ours are kept.
+  function setProgress(obj, opt = {}){
+    const d = obj && obj.done && typeof obj.done === "object" ? obj.done : {};
+    if (opt.replace){
+      for (const k of Object.keys(done)) if (typeof d[k] !== "string") markDone(k, false, true);
+      for (const k in d) if (typeof d[k] === "string" && done[k] !== d[k]) markDone(k, d[k], true);
+    } else for (const k in d) if (typeof d[k] === "string" && (!done[k] || d[k] < done[k])) markDone(k, d[k], true);
     if (obj && obj.settings && typeof obj.settings === "object"){ S = clean({...S, ...obj.settings}); store.set("settings", S); }
   }
