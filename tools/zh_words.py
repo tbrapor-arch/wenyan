@@ -116,7 +116,8 @@ SINGLE = {'著': 'zhe5', '着': 'zhe5', '得': 'de5', '地': 'di4', '了': 'le5'
           '模': 'mo2', '冲': 'chong1', '衝': 'chong1', '佔': 'zhan4', '占': 'zhan4', '咽': 'yan4', '吐': 'tu3',
           '畜': 'chu4', '卡': 'ka3', '鑽': 'zuan1', '釘': 'ding1', '擔': 'dan1', '劃': 'hua4', '扎': 'zha1', '號': 'hao4',
           '漂': 'piao1', '佛': 'fo2', '兒': 'er2', '冠': 'guan1', '那': 'na4', '哪': 'na3', '啊': 'a5', '呀': 'ya5', '喔': 'o5',
-          '哦': 'o4', '嘛': 'ma5', '啦': 'la5', '喲': 'yo5', '亡': 'wang2', '仔': 'zai3'}
+          '哦': 'o4', '嘛': 'ma5', '啦': 'la5', '喲': 'yo5', '亡': 'wang2', '仔': 'zai3',
+          '累': 'lei4', '喝': 'he1'}   # Wenyan: 累 lèi (tired), 喝 hē (drink), as Shūjià's PY_DEFAULT (port back to Tsheh-tû)
 # word readings CC-CEDICT gives in another order, or several, where one is far more usual
 WORD_PY = {'地方': 'di4 fang5', '生意': 'sheng1 yi5', '教授': 'jiao4 shou4', '所長': 'suo3 zhang3', '到了': 'dao4 le5',
            '都會': 'dou1 hui4', '不了': 'bu4 liao3', '起來': 'qi3 lai5', '東西': 'dong1 xi5', '便宜': 'pian2 yi5',
@@ -128,7 +129,8 @@ WORD_PY = {'地方': 'di4 fang5', '生意': 'sheng1 yi5', '教授': 'jiao4 shou4
            '上來': 'shang4 lai5', '過來': 'guo4 lai5', '回來': 'hui2 lai5', '進來': 'jin4 lai5', '出去': 'chu1 qu5',
            '下去': 'xia4 qu5', '上去': 'shang4 qu5', '過去': 'guo4 qu4', '人家': 'ren2 jia1', '大意': 'da4 yi4',
            '地道': 'di4 dao5', '兄弟': 'xiong1 di4', '運氣': 'yun4 qi5', '本事': 'ben3 shi5', '大方': 'da4 fang5',
-           '多數': 'duo1 shu4', '少數': 'shao3 shu4', '重複': 'chong2 fu4', '重量': 'zhong4 liang4', '長大': 'zhang3 da4'}
+           '多數': 'duo1 shu4', '少數': 'shao3 shu4', '重複': 'chong2 fu4', '重量': 'zhong4 liang4', '長大': 'zhang3 da4',
+           '好處': 'hao3 chu5'}   # Wenyan: complete-hsk-vocabulary reads 好处 hǎochǔ (port back to Tsheh-tû)
 PRON = set('我你他她它您咱們们誰谁人家')
 NUM = set('一二三四五六七八九十兩百千萬幾半每這那哪某各此數')
 _M = None
