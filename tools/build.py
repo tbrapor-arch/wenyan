@@ -212,6 +212,13 @@ def zh_texts(course):
             (classical if CLASSICAL.search(path) else modern)[o] = 1
     for t in course["tracks"]:
         walk(t, t["key"])
+    # 入門 multiple choice: the app cuts the question once, whole, with the answer in the gap (chooseFull in
+    # app/src/rumen.js), so that full sentence is the text checked
+    for L in course["tracks"][0]["lessons"]:
+        for e in (L.get("exercise") or {}).get("choose", []):
+            for h, opts in ((e["h"], e["opts"]), (e.get("h_t"), e.get("opts_t"))):
+                if h and opts:
+                    modern[h.replace("＿＿", opts[e["opts"].index(e["a"])])] = 1
     for d in (modern, classical, words):
         for x in list(d):
             for y in (s(x), cc.convert(x), s2t.convert(x)):

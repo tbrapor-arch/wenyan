@@ -303,7 +303,7 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   our card; every other Chinese text (白話 lines, 成語 examples and origins, exercises, Chinese inside notes, recaps,
   intros and context, in French and in English) goes through `han(text, classical)` and opens the dictionary.
 - **Bottom sheet**, in every track, in layers: our gloss first (the card, or "In the course" when a dictionary word
-  is one the course glosses), then the automatic layer (CC-CEDICT senses with the reading chosen for that sentence,
+  is one the course glosses; the header then gives our reading, not CC-CEDICT's), then the automatic layer (CC-CEDICT senses with the reading chosen for that sentence,
   characters, other cuts, other lines of the course with the word, NHSK / HSK level), marked "automatic, not checked
   by a person". A note number opens the note, with previous / next and its line highlighted. A word opened from
   inside the sheet (a character, a word of a note) offers "‹ Back to …" (one way back, `sheetBack`). The full note
@@ -314,7 +314,8 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   only the lesson's own glossary word or 成語 (never the modern 入門 gloss), and "Examples in the course" lists only
   classical lines (文言, 成語 origins, 白話 Roots). Modern text is cut by the
   build's rule (`tools/zh_words.py`), and `make app` fails if the page's own code (`app/src/dict.js`, run in Node)
-  would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole.
+  would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole; so is a 入門 multiple-choice
+  question, with its answer in the gap (the build checks that full sentence), the gap drawn inside that cut.
 - **Taps.** With pinyin on tap, the first tap on a 入門 word shows its pinyin, the next opens the card; with Cover,
   the first tap on any word of a hidden line reveals the line, the next opens the word.
 - **Settings:** one script choice for every track (as written / traditional / simplified; the dictionary follows it),

@@ -528,10 +528,76 @@ def corrupt_storage(b):
     print(f"smoke: corrupt storage: {len(cases)} kinds of bad values, the page opens and works with each")
 
 
+def display(b):
+    """finding 9: 白話 glossary chips keep "reading · HSK n"; the dictionary sheet's header gives our reading when the
+    course glosses the word (一模一樣 yī mó yī yàng); 入門 multiple choice is cut once, whole, with the gap inside"""
+    sys.path.insert(0, str(ROOT / "tools"))
+    import zh_words
+    page = b.new_context(viewport={"width": 1200, "height": 850}).new_page()
+    page.on("pageerror", lambda e: errors.append(f"display: {e}"))
+    page.goto(PAGE); page.evaluate("localStorage.clear()")
+    page.goto(PAGE + "#baihua/1"); page.reload(); page.wait_for_selector(".lbar")
+    rs = page.evaluate("[...document.querySelectorAll('.wchip .r')].map(x => x.textContent)")
+    hsk = [r for r in rs if "HSK" in r]
+    if not hsk or not all(re.search(r"\S · HSK \d", r) for r in hsk):
+        errors.append(f"display: 白話 chips without ' · HSK n': {[r for r in hsk if ' · HSK' not in r][:3] or 'none with HSK'}")
+    # the header's reading: ours wherever the sheet shows our gloss
+    n = 0
+    for t in ("chengyu", "baihua", "rumen"):
+        for l in TR[t]["lessons"]:
+            page.goto(PAGE + f"#{t}/{l['id']}"); page.wait_for_selector(".lbar")
+            bad = page.evaluate("""() => { const out = [], seen = new Set(); let n = 0;
+              for (const el of document.querySelectorAll('#app .ztok')) { if (seen.has(el.dataset.z)) continue; seen.add(el.dataset.z);
+                el.click(); const py = document.querySelector('#sheet .zours .cg-py');
+                if (py) { n++; const wp = document.querySelector('#sheet .zd .wp').textContent.trim();
+                  if (wp !== py.textContent.trim()) out.push(el.dataset.z + ': ' + wp + ' / ' + py.textContent); } }
+              return [n, out]; }""")
+            n += bad[0]
+            errors.extend(f"display: {t}/{l['id']} header reading {x}" for x in bad[1][:3])
+    page.goto(PAGE + "#chengyu/1"); page.wait_for_selector(".lbar")
+    page.evaluate("[...document.querySelectorAll('#app .ztok')].find(x => x.dataset.z === '一模一樣').click()")
+    if page.locator("#sheet .zd .wp").inner_text().strip() != "yī mó yī yàng":
+        errors.append(f"display: 一模一樣's header reads {page.locator('#sheet .zd .wp').inner_text()}")
+    # multiple choice: the words on each side of the gap are those of the full sentence (zhPieces)
+    def pieces(full, cuts):
+        segs, p = [], 0
+        for x in zh_words.analyse(full):
+            w = x if isinstance(x, str) else x[0]
+            segs.append((p, p + len(w), x)); p += len(w)
+        out = []
+        for a, e in cuts:
+            for s0, e0, x in segs:
+                if e0 <= a or s0 >= e or isinstance(x, str):
+                    continue
+                if s0 >= a and e0 <= e:
+                    out.append(x[0])
+                else:
+                    out += [y[0] for y in zh_words.analyse(full[max(a, s0):min(e, e0)]) if not isinstance(y, str)]
+        return out
+    nq = 0
+    for l in TR["rumen"]["lessons"]:
+        ch = (l.get("exercise") or {}).get("choose") or []
+        if not ch:
+            continue
+        page.goto(PAGE + f"#rumen/{l['id']}"); page.wait_for_selector(".lbar")
+        got = page.evaluate("[...document.querySelectorAll('.q[data-q] > .txt')].map(x => [x.dataset.zhs || '', [...x.querySelectorAll('.ztok')].map(z => z.dataset.z)])")
+        for e, (zhs, toks) in zip(ch, got):
+            a = e["a"]; parts = e["h"].split("＿＿"); full = a.join(parts)
+            cuts, at = [], 0
+            for i, q in enumerate(parts):
+                cuts.append((at, at + len(q))); at += len(q) + len(a)
+            want = pieces(full, cuts)
+            nq += 1
+            if toks != want or zhs != full:
+                errors.append(f"display: rumen/{l['id']} choice {e['h']}: words {toks}, want {want} (cut of {full}; data-zhs {zhs!r})")
+    page.context.close()
+    print(f"smoke: display: chips 'reading · HSK n'; our reading in the header of {n} sheets; {nq} multiple-choice questions cut whole")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage}
+         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage, "display": display}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:

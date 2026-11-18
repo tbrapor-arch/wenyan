@@ -70,7 +70,16 @@
       w: SIMP ? x.w : x.t, py: x.py, lv: x.lvl ? `<span class="lv">NHSK ${esc(x.lvl)}</span>` : `<span class="lv off">${t_("outside")}</span>`, g: tx(x)})).join("")}</div>`;
   }
   // multiple choice: a right answer fills the gap and shows the whole sentence with its pinyin and translation
-  const exChoose = (e, qi) => `<div class="q" data-q="${qi}"><div class="txt">${Z(e, "h").split("＿＿").map(p => han(p)).join('<span class="gap">？</span>')}</div>
+  // The question is cut once, whole, with the answer in the gap (as the build checks it: chooseFull), and the gap is
+  // drawn inside that cut, so the words on each side of it are the words of the full sentence.
+  const chooseFull = (h, a) => h.split("＿＿").join(a);
+  function chooseHTML(e){
+    const h = Z(e, "h"), a = Z(e, "opts")[e.opts.indexOf(e.a)] ?? "", full = chooseFull(h, a), P = zhPieces(full), parts = h.split("＿＿");
+    let out = "", at = 0;
+    parts.forEach((p, i) => { out += P(at, at + p.length); at += p.length; if (i < parts.length - 1){ out += '<span class="gap">？</span>'; at += a.length; } });
+    return out;
+  }
+  const exChoose = (e, qi) => `<div class="q" data-q="${qi}"><div class="txt"${zs(chooseFull(Z(e, "h"), Z(e, "opts")[e.opts.indexOf(e.a)] ?? ""))}>${chooseHTML(e)}</div>
     <div class="opts">${Z(e, "opts").map((o, oi) => `<button class="opt" data-act="opt" data-q="${qi}" data-o="${oi}">${esc(o)}</button>`).join("")}</div>
     <div class="after" hidden><div class="txt"${zs(sentText(e.toks))}>${sentHTML(e.toks)}</div><div>${esc(tx(e))}</div></div></div>`;
   function rumenOpt(b){

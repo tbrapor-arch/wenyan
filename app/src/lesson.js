@@ -43,7 +43,7 @@
   const chipHTML = x => `<button class="wchip ${x.known ? "known" : ""}" ${x.attr}><b>${esc(x.w)}</b><span class="r">${esc(x.py)}${x.lv || ""}</span><span class="g">${esc(x.g)}</span>
     ${x.sw ? `<span class="sw"><b>說文</b>${esc(x.sw)}</span>` : ""}</button>`;
   const glossChips = gs => `<div class="wgrid">${gs.map(g => chipHTML({attr: `data-g="${L.glossary.indexOf(g)}"`, w: Z(g, "w"), py: g.py,
-    lv: g.hsk ? `<span class="lv off">HSK ${g.hsk}</span>` : "", g: g.en, sw: g.sw, known: !!g.hsk})).join("")}</div>`;
+    lv: g.hsk ? ` · HSK ${g.hsk}` : "", g: g.en, sw: g.sw, known: !!g.hsk})).join("")}</div>`;
   const noteText = n => md(n.text != null ? n.text : Z(n, lang()), T.key, CFG[T.key].zhRun);
   function exTranslate(e){
     const c = CFG[T.key], cl = !!(c.classical || c.rootsClassical), h = e.toks ? null : Z(e, "h");

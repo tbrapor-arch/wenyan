@@ -272,7 +272,8 @@
     const prev = inside ? sheetCur : null;
     const cls = !!o.classical, m = zhMeta(w), L0 = zhLines(w), r = Math.min(o.r || 0, Math.max(0, L0.length - 1));
     const gl = typeof courseGloss === "function" ? courseGloss(w, cls) : null;
-    const py = L0.length ? zhPy(L0[r][0]) : ZHP[w] ? ZHP[w].split(" ").map(p => (zhLines(p)[0] || [""])[0]).join(" ") : "";
+    // the header's reading: ours when the course glosses the word (CC-CEDICT's may be another: 一模一樣), else CC-CEDICT's
+    const py = gl && gl.py ? gl.py : L0.length ? zhPy(L0[r][0]) : ZHP[w] ? ZHP[w].split(" ").map(p => (zhLines(p)[0] || [""])[0]).join(" ") : "";
     const idiom = !cls && (m.idiom || L0.some(l => /\(idiom\b/.test(l[1])));
     const lv = [m.nhsk ? `NHSK ${m.nhsk.replace("-", "–")}` : "", m.hsk ? `HSK ${m.hsk}` : ""].filter(Boolean);
     const html = `<div class="zd" data-hw="${esc(w)}"><div class="top"><div class="hd"><div class="wh" lang="zh">${esc(w)}${m.other.length ? `<small>${esc(m.other.join(" · "))}</small>` : ""}${idiom ? `<span class="zbadge">${dl("idiom")}</span>` : ""}</div>
