@@ -455,10 +455,32 @@ def progress_file(b):
     print("smoke: progress file: Save writes the done dates only; Load keeps this device's settings")
 
 
+def trad_forms(b):
+    """finding 7: 入門 words have the standard traditional form (OpenCC, not the NHSK list's 嵗 䛐 几), so a word
+    tapped in traditional text finds its 入門 gloss"""
+    D = TR["rumen"]["dict"]
+    for s_, t in (("岁", "歲"), ("几", "幾"), ("词", "詞"), ("这里", "這裡"), ("家", "家"), ("和", "和"), ("床", "床"), ("吃", "吃")):
+        if s_ in D and D[s_]["t"] != t:
+            errors.append(f"trad forms: 入門 {s_} has the traditional form {D[s_]['t']}, not {t}")
+    page = b.new_context(viewport={"width": 1200, "height": 850}).new_page()
+    page.on("pageerror", lambda e: errors.append(f"trad forms: {e}"))
+    page.goto(PAGE); page.evaluate("localStorage.clear()")
+    page.goto(PAGE + "#baihua/1"); page.reload(); page.wait_for_selector(".lbar")
+    for w, k in (("歲", "岁"), ("幾", "几"), ("詞", "词"), ("這裡", "这里")):
+        page.evaluate("w => { document.querySelector('#tx')?.remove(); document.querySelector('#app').insertAdjacentHTML('beforeend', `<p id=\"tx\">他今年十<span class=\"ztok\" data-z=\"${w}\">${w}</span>。</p>`); }", w)
+        page.locator("#tx .ztok").click(); page.wait_for_selector("#sheet.open .zd")
+        py = page.locator("#sheet .zours .cg-py")
+        if not py.count() or py.inner_text() != D[k]["py"]:
+            errors.append(f"trad forms: {w} in traditional text has no 入門 gloss")
+        page.keyboard.press("Escape")
+    page.context.close()
+    print("smoke: trad forms: 歲 幾 詞 這裡 find their 入門 gloss in traditional text")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss, "progress_file": progress_file}
+         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:

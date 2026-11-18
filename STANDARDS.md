@@ -372,7 +372,8 @@ text, notes are numbered, and every 7th lesson is a review.
 ### Lesson file
 
 `rumen/NNN-slug.yaml`, **simplified characters, mainland standard**; traditional is derived
-(OpenCC s2t on the whole line). Explanations in **French and English** (`fr`, `en` everywhere).
+(OpenCC s2tw on the whole line, Taiwan standard like the other tracks: 這裡, 吃, 床, 著). A word card's traditional
+form is OpenCC's too, never the NHSK list's own column (which has 嵗, 䛐, 几, 傢). Explanations in **French and English** (`fr`, `en` everywhere).
 
 | Field | Content |
 |---|---|

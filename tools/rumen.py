@@ -7,7 +7,7 @@ mainland standard), and for each lesson:
     (a line's `cut` field overrides this, words separated by spaces);
   - splits the line's pinyin into syllables, gives one to each character and checks it against
     pypinyin's readings of that character (tone marks too; 一 and 不 may carry their spoken tone);
-  - adds the traditional text (OpenCC s2t on the whole line, then cut at the same places);
+  - adds the traditional text (OpenCC s2tw on the whole line, then cut at the same places);
   - checks that every word in the dialogue and exercises was taught in this lesson or before
     (names aside), that every new word is used, and counts the new words against the quota;
   - builds the word cards (`dict`): characters in both scripts, pinyin, NHSK level, our French and
@@ -24,7 +24,7 @@ from pypinyin import pinyin, Style
 from pypinyin.pinyin_dict import pinyin_dict
 
 ROOT = Path(__file__).resolve().parent.parent
-s2t = OpenCC("s2t")
+s2t = OpenCC("s2tw")      # traditional, Taiwan standard (這裡, 吃, 床), as the other tracks are written
 HAN = re.compile(r"[㐀-鿿豈-﫿\U00020000-\U0003ffff〇]")
 HANRUN = re.compile(r"[㐀-鿿豈-﫿\U00020000-\U0003ffff〇]+")
 GAP = "＿＿"
@@ -119,7 +119,9 @@ class Rumen:
         d = self.dict.get(w)
         if not d:
             n = self.nhsk.get(w, {})
-            d = self.dict[w] = {"s": w, "t": n.get("t") or s2t.convert(w), "lvl": n.get("lvl"),
+            # traditional form: OpenCC of the word, as the lines get theirs (the NHSK list's own column has odd
+            # forms: 岁→嵗, 词→䛐, 几→几, 家→傢); the list's form only if OpenCC gives nothing
+            d = self.dict[w] = {"s": w, "t": s2t.convert(w) or n.get("t") or w, "lvl": n.get("lvl"),
                                 "py": n.get("py") or " ".join(x[0] for x in pinyin(w, style=Style.TONE)),
                                 "auto": n.get("en", ""), "seen": []}
             if w in self.names:
