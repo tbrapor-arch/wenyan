@@ -3,9 +3,11 @@
   // Every route maps to a tab here, so a redrawn tab bar keeps its highlight.
   const TABS = [["rumen", "入門", "Start"], ["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
                 ["settings", "設定", "Settings"]];
-  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: TABS.some(t => t[0] === p[0]) ? p[0] : store.get("tab", "rumen"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
+  // TEMP wiring (sync / module branch), to be replaced by the unified shell: the private module's tabs go before Settings
+  const allTabs = () => [...TABS.slice(0, -1), ...moduleTabs(), TABS[TABS.length - 1]];
+  const route = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {tab: allTabs().some(t => t[0] === p[0]) ? p[0] : store.get("tab", "rumen"), id: p[1] ? +p[1] : null, note: p[2] || null}; };
   function drawTabs(tab){
-    $("#tabs").innerHTML = TABS.map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}</a>`).join("");
+    $("#tabs").innerHTML = allTabs().map(([k, zh, en]) => `<a href="#${k}" ${k === tab ? 'aria-current="page"' : ""}><b>${zh}</b>${en}</a>`).join("");
   }
   function go(){
     hidePop(); closeSheet();
@@ -15,6 +17,7 @@
     H.classList.toggle("rm-han", r.tab === "rumen" && rmode === "han"); H.classList.toggle("rm-tap", r.tab === "rumen" && rmode === "tap");
     drawTabs(r.tab); L = null;
     if (r.tab === "settings") return settings();
+    if (moduleRoute(location.hash)) return;   // TEMP wiring
     store.set("tab", r.tab);
     T = track(r.tab); L = r.id ? T.lessons.find(l => l.id === r.id) : null;
     if (!L) return T.key === "rumen" ? rHome() : home();

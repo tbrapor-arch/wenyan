@@ -12,6 +12,8 @@
       <h2>Progress</h2>
       <div class="row"><div class="l">${Object.keys(done).length} lessons done<small>Kept in this browser only. Save a file to move it to another device.</small></div>
         <button class="btn ghost" id="save">Save</button><button class="btn ghost" id="load">Load</button><input type="file" id="file" accept="application/json,.json" hidden></div>
+      <h2>Sync between devices</h2><div id="set-sync"></div><div id="set-module" hidden></div>
       <footer>Wenyan 文言 · lessons, notes and translations CC BY-SA 4.0 · code MIT.</footer></div>`;
+    syncSettings($("#set-sync")); moduleSettings($("#set-module"));   // TEMP wiring
     scrollTo(0, 0);
   }
