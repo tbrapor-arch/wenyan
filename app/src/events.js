@@ -1,4 +1,12 @@
   /* events.js: the delegated click / change / key / resize / hashchange listeners, then boot (runs last) */
+  // Cover: a tap on a word of a line whose translation is still hidden first reveals the line; the next tap opens the
+  // word (our card, or the dictionary for a .ztok). Same rule as pinyin "on tap": the first tap shows, the next opens.
+  function revealFirst(el){
+    if (!S.cover || !H.classList.contains("cover") || el.closest("#sheet")) return false;
+    const cv = el.closest("[data-cv]"); if (!cv || cv.classList.contains("peek")) return false;
+    $$(`[data-cv="${cv.dataset.cv}"]`).forEach(x => x.classList.add("peek"));
+    return true;
+  }
   document.addEventListener("click", e => {
     const t = e.target;
     if (!t.isConnected || t.closest(".ztok")) return;                 // the dictionary's words: dict.js handles them
@@ -9,6 +17,7 @@
     const ds = b.dataset;
     if (b.classList.contains("x")) return closeSheet();
     if (ds.to && b.tagName === "BUTTON"){ closeSheet(); location.hash = ds.to; return; }
+    if (b.matches(".tok,.w,.cw") && revealFirst(b)) return;
     if (b.classList.contains("tok")){
       if (S.pinyin === "tap" && !b.classList.contains("show")) return b.classList.add("show");   // first tap: the pinyin
       return openCard("k", ds.k, b);

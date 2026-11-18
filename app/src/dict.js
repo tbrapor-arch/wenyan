@@ -316,6 +316,7 @@
     const t = e.target.closest && e.target.closest(".ztok, [data-zact]");
     if (!t || t.disabled) return;
     e.stopPropagation(); e.preventDefault();
+    if (t.classList.contains("ztok") && typeof revealFirst === "function" && revealFirst(t)) return;   // Cover (events.js)
     if (t.classList.contains("ztok")) openZh(t); else zhAct(t);
   }, true);
   document.addEventListener("keydown", e => {
