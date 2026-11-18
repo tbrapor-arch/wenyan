@@ -65,7 +65,7 @@ HEAD = CSP + '''
 TAG = '<meta charset="utf-8">'
 if body.count(TAG) != 1:
     sys.exit(f"site.py: app/dist/index.html needs exactly one {TAG} to put the CSP after")
-if "rel=\"manifest\"" in body:
+if re.search(r"<link[^>]*rel=\"manifest\"", body):
     sys.exit("site.py: app/dist/index.html already links a manifest")
 # the CSP must come before anything it governs: right after the charset, the first thing in <head>
 html = body.replace(TAG, TAG + "\n" + HEAD, 1)
