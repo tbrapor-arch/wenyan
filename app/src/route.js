@@ -2,7 +2,8 @@
   // #rumen · #rumen/12 · #rumen/52/wave · #wenyan/3 · #baihua/1/n5 (a note) · #chengyu/3 · #settings
   const TABS = [["rumen", "入門", "Start"], ["wenyan", "文言", "Classical"], ["baihua", "白話", "Prose"], ["chengyu", "成語", "Idioms"],
                 ["settings", "設定", "Settings"]];
-  const allTabs = () => TABS.concat(typeof moduleTabs === "function" ? moduleTabs() : []);
+  // a private module's tabs (module.js) go before Settings; they are never stored as the last tab
+  const allTabs = () => [...TABS.slice(0, -1), ...(typeof moduleTabs === "function" ? moduleTabs() : []), TABS[TABS.length - 1]];
   const parseHash = () => { const p = location.hash.replace(/^#\/?/, "").split("/"); return {key: p[0], id: p[1] ? +p[1] : null, sub: p[2] || null}; };
   // every route maps to a tab, so a redrawn tab bar keeps its highlight
   function currentTab(){ const k = parseHash().key; return allTabs().some(t => t[0] === k) ? k : store.get("tab", "rumen"); }
