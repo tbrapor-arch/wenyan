@@ -1,0 +1,124 @@
+id: 14
+slug: review-2
+kind: review
+title: 複習二
+title_py: Fùxí èr
+title_en: "Review 2: Lessons 8–13"
+status: draft
+
+intro: >
+  Five stories in six lessons, about 650 characters: two more from Han Fei, one from the
+  *Huainanzi*, and two from the *Liezi*, the last one long enough to need two lessons. The
+  grammar has moved on from "what is a sentence" to questions, pronouns, and words that change
+  their class or their reading. Re-read the texts aloud with Cover on, then work through the points
+  below; each sends you back to the note that first explained it. The exercise has six new
+  sentences, from the 論語, the 孟子 and the 莊子.
+
+recap:
+  - topic: "Characters that stand for other words (通假字, 古今字)"
+    refs: [L8 n.5, L9 n.9, L11 n.18, L13 n.2]
+    text: >
+      Read the word, not the character. A **borrowed character** (通假字) writes an unrelated word
+      that sounded alike: 說 for 悅 yuè "pleased", 舍 for 釋 shì "let go", 惠 for 慧 "wise". An
+      **old–new pair** (古今字) is one word with a later spelling: 反 → 返 "go back", 坐 → 座 "seat".
+    examples: [宣王說之, 反歸取之, 其人舍然大喜, 汝之不惠]
+  - topic: "One character, two readings"
+    refs: [L8 n.8, L9 n.4, L10 n.2, L11 n.2, L11 n.14, L12 n.15]
+    text: >
+      好 hào "to like" · 度 duó "to measure" / dù "measurement" · 塞 sài "frontier" / sè "block" ·
+      亡 wú "there is no" / wáng "lose, flee" · 中 zhòng "to hit" · 曾 zēng "even" · 食 sì "to feed" ·
+      處 chǔ "dwell" / chù "place" · 宿 xiù "constellation".
+    examples: [好一一聽之, 先自度其足而置之其坐, 近塞上之人有善術者, 身亡所寄, 曾不能損魁父之丘]
+  - topic: "之 the verb, and the fusion words 諸 and 焉"
+    refs: [L9 n.6, L12 n.18, L12 n.17, L12 n.25, L13 n.10]
+    text: >
+      之 "to go to" completes the four uses of 之 (至之市). 諸 = 之 + 於 (投諸渤海之尾 "throw them into
+      the Bohai"). 焉 asks "where? how?" before a verb (焉置土石) and means "there, in it" at the end
+      (有子存焉).
+    examples: [至之市, 投諸渤海之尾, 且焉置土石, 有子存焉]
+  - topic: "Pronouns"
+    refs: [L9 n.3, L11 n.4, L11 n.8, L12 n.9, L12 n.14, L13 n.16]
+    text: >
+      自 "oneself", always before the verb (自度, 自信). 彼 "that one, he". "You": 君 (respectful), 子
+      (polite), 若 and 汝/女 (plain). 其 as the subject of a clause: 懼其不已 "feared that he would not
+      stop".
+    examples: [無自信也, 又有憂彼之所憂者, 若屈伸呼吸, 吾與汝畢力平險, 以君之力, 懼其不已也]
+  - topic: "Questions"
+    refs: [L9 n.11, L10 n.7, L11 n.9, L11 n.11, L11 n.15, L12 n.16, L13 n.5]
+    text: >
+      何不 "why not?" · 何遽 "how can one be sure …?" · 奈何 "why? how?" · 奈 X 何 and 如 X 何 "what can
+      be done about X?" · 邪 yé, a question particle · 其 strengthening a rhetorical question. Question
+      words come before the verb.
+    examples: [何不試之以足, 此何遽不為福乎, 奈何憂崩墜乎, 奈地壞何, 如太形、王屋何, 其如土石何]
+  - topic: "Words that change class (詞類活用)"
+    refs: [L10 n.10, L8 n.6, L12 n.6, L12 n.9, L12 n.21, L11 n.5, L13 n.1]
+    text: >
+      The slot decides the class. Adjective with an object → verb (富良馬 "rich in fine horses");
+      adjective → "make so" (平險 "level the steep", 曉之 "make him understand", 止之 "make him stop");
+      noun with an object → verb (面山 "face the mountain"); noun before a verb → how or with what
+      (廩食 "feed from the granary", 箕畚運 "carry in baskets").
+    examples: [家富良馬, 面山而居, 廩食以數百人, 箕畚運於渤海之尾, 因往曉之]
+  - topic: "無以, 有所, 無所, 以 … 之故"
+    refs: [L8 n.11, L11 n.2, L11 n.14, L13 n.14, L10 n.15]
+    text: >
+      無以 V "have no way to V" (also written 亡以) · 無所 V "nothing / nowhere to V" · 有所 V "something
+      to V" · 以 X 之故 "because of X".
+    examples: [吾無以知其善者, 河曲智叟亡以應, 身亡所寄, 亦不能有所中傷, 此獨以跛之故]
+  - topic: "Sentence shapes"
+    refs: [L8 n.2, L12 n.4, L13 n.2, L12 n.19, L10 n.14, L9 n.12]
+    text: >
+      A noun phrase or a number can be the predicate (必三百人, 年且九十). A name + 者 sets up a topic
+      (北山愚公者). An exclamation can put its predicate first (甚矣，汝之不惠). Numbers follow the noun
+      (荷擔者三夫), and 十九 is "nine in ten". A 以 phrase can follow the verb (試之以足).
+    examples: [必三百人, 年且九十, 北山愚公者, 甚矣，汝之不惠, 死者十九, 試之以足]
+  - topic: "Conjunctions and time clauses"
+    refs: [L13 n.9, L11 n.13, L9 n.10, L9 n.13, L10 n.17]
+    text: >
+      雖 "even if, although" · 只使 "even if" · 及 "by the time" · 寧 A 無 B "rather A than B" · 故
+      "therefore" at the head of a sentence.
+    examples: [雖我之死, 只使墜, 及反, 寧信度, 故福之為禍]
+  - topic: "Words that changed meaning (古今詞義)"
+    refs: [L8 n.3, L9 n.7, L10 n.3, L10 n.9, L11 n.3, L12 n.7, L12 n.8, L13 n.11, L13 n.22]
+    text: >
+      處士 a gentleman out of office · 操 to hold · 善 good at · 術 divination · 將 to lead · 廢 to give
+      up · 懲 to suffer from · 室 household · 窮 to run out (not "poor") · 隴斷 a ridge (not
+      "monopoly").
+    examples: [處士逃, 而忘操之, 其馬將胡駿馬而歸, 廢寢食者, 懲山北之塞, 聚室而謀曰, 無窮匱也, 無隴斷焉]
+  - topic: "Simplified-character warnings"
+    refs: [L12 n.11, L13 n.3, L10 n.5]
+    text: >
+      Simplified 于 covers both 于 and 於; 余 covers 余 "I" and 餘 "surplus"; 吊 covers 弔 "to condole".
+      Read traditional texts with both forms in mind.
+    examples: [達于漢陰, 以殘年餘力, 人皆弔之]
+
+exercise:
+  - h: "巧言令色，鮮矣仁！"
+    py: "Qiǎo yán lìng sè, xiǎn yǐ rén!"
+    src: 論語·學而
+    en: "Clever words and an ingratiating face: rare indeed is goodness there!"
+    tests: "predicate first in an exclamation (鮮矣 xiǎn yǐ \"rare indeed\"), 矣"
+  - h: "魚，我所欲也；熊掌，亦我所欲也。二者不可得兼，舍魚而取熊掌者也。"
+    py: "Yú, wǒ suǒ yù yě; xióng zhǎng, yì wǒ suǒ yù yě. Èr zhě bù kě dé jiān, shě yú ér qǔ xióng zhǎng zhě yě."
+    src: 孟子·告子上
+    en: "Fish is something I want; bear's paw is also something I want. If I can't have both, I'll let the fish go and take the bear's paw."
+    tests: "所, 不可 + verb, 舍 shě, 取, the number after the noun (二者)"
+  - h: "君子喻於義，小人喻於利。"
+    py: "Jūnzǐ yù yú yì, xiǎo rén yù yú lì."
+    src: 論語·里仁
+    en: "The gentleman understands what is right; the small man understands what pays."
+    tests: "於; 喻 \"to understand\" (compare 曉)"
+  - h: "子非魚，安知魚之樂？"
+    py: "Zǐ fēi yú, ān zhī yú zhī lè?"
+    src: 莊子·秋水
+    en: "You are not a fish: how do you know what the fish enjoy?"
+    tests: "子 \"you\", 非, 安 \"how\", subject + 之 + predicate"
+  - h: "割雞焉用牛刀？"
+    py: "Gē jī yān yòng niú dāo?"
+    src: 論語·陽貨
+    en: "Why use an ox-cleaver to kill a chicken?"
+    tests: "焉 \"how, why\" before the verb"
+  - h: "人無遠慮，必有近憂。"
+    py: "Rén wú yuǎn lǜ, bì yǒu jìn yōu."
+    src: 論語·衛靈公
+    en: "A man who does not think far ahead will have troubles close at hand."
+    tests: "無, 必, 近, 憂"
