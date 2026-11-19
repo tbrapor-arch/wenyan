@@ -72,6 +72,7 @@ line to check. **Mark as done** ticks the lesson on its tile.
 | 14 | 複習二 | review of 8–13 | draft |
 | 15 | 鷸蚌相爭 | 戰國策·燕策二 | draft: 9 glosses pending (蘇代, 今者, 易水, 拑, 即, 支, 弊, 大眾, 熟); text = 四庫全書 文淵閣, compared with 四部叢刊 (鮑彪) and Wiktionary |
 | 16 | 涸轍之鮒 | 莊子·外物 | draft: 6 glosses pending (莊周, 監河侯, 波臣, 與, 然, 枯魚); text = 四部叢刊, compared with the TLS text and 王先謙《莊子集解》 |
+| 17 | 一傅眾咻 | 孟子·滕文公下 | draft: 6 glosses pending (戴不勝, 齊, 莊嶽, 薛居州, 尊, 宋王); text = 四部叢刊, compared with the TLS text and 殆知閣 |
 | 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
 | 成語 1–10 | the 200 most frequent 成語 | wordfreq ranking | draft: every example and origin passes the private checker; example pinyin generated (AUTO) |
 

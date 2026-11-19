@@ -1,0 +1,274 @@
+id: 17
+slug: yi-fu-zhong-xiu
+title: 一傅眾咻
+title_py: Yī fù zhòng xiū
+title_en: One Tutor, a Crowd of Hecklers
+source:
+  work: 孟子·滕文公下
+  author: 孟子 Mencius (c. 372–289 BC)
+  period: Warring States
+  text_from: >
+    《孟子·滕文公下》, the chapter 孟子謂戴不勝 (the passage known as 楚人學齊語). Words as in the
+    四部叢刊 text with 趙岐's commentary (Kanseki Repository KR1h0002, 卷六), compared character by
+    character, 2026-11-19, with the Thesaurus Linguae Sericae text in the Kanseki Repository
+    (KR1h0001) and with the 殆知閣 transcription (simplified characters, wording only). Punctuation
+    ours, checked against the TLS and 殆知閣 texts. The three agree word for word, except that the
+    四部叢刊 text has 使齊人傳之 in line 9, where the other two have 傅 as in lines 6 and 11 (we
+    follow them, see n. 5); it writes the variant forms 吿, 衆 and 閒 for 告, 眾 and 間.
+status: draft
+
+intro: >
+  Mencius again, now at the court of Song, where King Yan had taken the title of king and was
+  famous for his misrule. A minister, Dai Busheng, hopes to reform him by placing one good man at
+  his side. Mencius answers with a question about learning languages, and the answer is the idiom
+  一傅眾咻 "one tutor, a crowd of hecklers". New here: 與 as a question particle, 諸 standing for 之 +
+  乎, a question word before a preposition (誰與 "with whom"), and state names used as verbs.
+
+lines:
+  - h: "孟子謂戴不勝曰："
+    py: "Mèngzǐ wèi Dài Bùshèng yuē:"
+    en: "Mencius said to Dai Busheng:"
+  - h: "「子欲子之王之善與？"
+    py: "Zǐ yù zǐ zhī wáng zhī shàn yú?"
+    en: "\"Do you want your king to be good?"
+    lit: "you want your king 's being-good ?"
+  - h: "我明告子。"
+    py: "Wǒ míng gào zǐ."
+    en: "I'll tell you plainly."
+  - h: "有楚大夫於此，"
+    py: "Yǒu Chǔ dàfū yú cǐ,"
+    en: "Suppose there is a grandee of Chu here"
+    lit: "there-is Chu grandee at this"
+  - h: "欲其子之齊語也，"
+    py: "yù qí zǐ zhī Qí yǔ yě,"
+    en: "who wants his son to speak the language of Qi:"
+  - h: "則使齊人傅諸？"
+    py: "zé shǐ Qí rén fù zhū?"
+    en: "will he have a man of Qi tutor him,"
+  - h: "使楚人傅諸？」"
+    py: "shǐ Chǔ rén fù zhū?"
+    en: "or a man of Chu?\""
+  - h: "曰："
+    py: "Yuē:"
+    en: "He said:"
+  - h: "「使齊人傅之。」"
+    py: "Shǐ Qí rén fù zhī."
+    en: "\"He will have a man of Qi tutor him.\""
+  - h: "曰："
+    py: "Yuē:"
+    en: "Mencius said:"
+  - h: "「一齊人傅之，"
+    py: "Yī Qí rén fù zhī,"
+    en: "\"One man of Qi tutors him,"
+  - h: "眾楚人咻之，"
+    py: "zhòng Chǔ rén xiū zhī,"
+    en: "and a crowd of Chu people clamour at him:"
+  - h: "雖日撻而求其齊也，"
+    py: "suī rì tà ér qiú qí Qí yě,"
+    en: "even if you flog him every day to make him speak Qi,"
+    lit: "even-if daily flog and demand his Qi-ing"
+  - h: "不可得矣；"
+    py: "bù kě dé yǐ;"
+    en: "you will not get it."
+  - h: "引而置之莊嶽之間數年，"
+    py: "yǐn ér zhì zhī Zhuāng Yuè zhī jiān shù nián,"
+    en: "Take him and set him down among the streets of Zhuang and Yue for a few years,"
+  - h: "雖日撻而求其楚，"
+    py: "suī rì tà ér qiú qí Chǔ,"
+    en: "and even if you flog him every day to make him speak Chu,"
+  - h: "亦不可得矣。"
+    py: "yì bù kě dé yǐ."
+    en: "you will not get that either."
+  - h: "子謂薛居州，"
+    py: "Zǐ wèi Xuē Jūzhōu,"
+    en: "You say of Xue Juzhou"
+  - h: "善士也，"
+    py: "shàn shì yě,"
+    en: "that he is a good man,"
+  - h: "使之居於王所。"
+    py: "shǐ zhī jū yú wáng suǒ."
+    en: "and you have had him placed at the king's side."
+  - h: "在於王所者，"
+    py: "Zài yú wáng suǒ zhě,"
+    en: "If those who are at the king's side,"
+  - h: "長幼卑尊皆薛居州也，"
+    py: "zhǎng yòu bēi zūn jiē Xuē Jūzhōu yě,"
+    en: "old and young, low and high, were all Xue Juzhous,"
+  - h: "王誰與為不善？"
+    py: "wáng shuí yǔ wéi bù shàn?"
+    en: "with whom would the king do wrong?"
+    lit: "king whom with do not-good ?"
+  - h: "在王所者，"
+    py: "Zài wáng suǒ zhě,"
+    en: "If those at the king's side,"
+  - h: "長幼卑尊皆非薛居州也，"
+    py: "zhǎng yòu bēi zūn jiē fēi Xuē Jūzhōu yě,"
+    en: "old and young, low and high, are none of them Xue Juzhous,"
+  - h: "王誰與為善？"
+    py: "wáng shuí yǔ wéi shàn?"
+    en: "with whom will the king do good?"
+  - h: "一薛居州，"
+    py: "Yī Xuē Jūzhōu,"
+    en: "One Xue Juzhou on his own:"
+  - h: "獨如宋王何？」"
+    py: "dú rú Sòng wáng hé?"
+    en: "what can he do with the King of Song?\""
+
+notes:
+  - n: 1
+    line: 0
+    at: 戴不勝
+    text: >
+      **戴不勝** Dài Bùshèng, a minister of Song (趙岐: 宋臣). His king is 宋王偃, King Yan of Song (reigned
+      328–286 BC), who had taken the royal title like the great states. 謂 A 曰 "said to A" (→ L3 n.4).
+  - n: 2
+    line: 1
+    at: 子之王之善與
+    text: >
+      **Two 之 in a row.** 子之王 "your king": the attributive 之 (→ L1 n.10). Then [子之王] 之善 "your king's
+      being good": subject + 之 + predicate (→ L2 n.3), the object of 欲 "to want". **與** at the end of
+      a question is the particle yú, later written **歟**: a question that expects agreement or invites
+      a choice, like 乎 (→ L4 n.8) and 邪 (→ L11 n.11). 歟 is the newer character for this use of 與 (a
+      古今字, → L9 n.9). Read yú, not yǔ.
+  - n: 3
+    line: 3
+    at: 有楚大夫於此
+    text: >
+      **有 X 於此** "suppose there is an X here": Mencius sets up a hypothetical case to argue from, a
+      habit of his. 於此 "at this (place)". Then 則 (line 6) "then" asks what follows from it (→ L3 n.8).
+      **大夫** dàfū "grandee, high officer", the rank below the ministers (卿): read dàfū, not dàifu, the
+      modern word for "doctor" (古今詞義).
+  - n: 4
+    line: 4
+    at: 其子之齊語
+    text: >
+      **A name or a noun used as a verb.** 齊語 "the speech of Qi" works here as a verb, "to speak Qi":
+      欲其子之齊語 "wants his son's speaking Qi", with 之 between subject and predicate (n. 2). In lines
+      13 and 16 the state names alone do it: 求其齊 "demand his (speaking) Qi", 求其楚 "demand his
+      (speaking) Chu", with 其 as the subject of the clause (→ L13 n.16). The noun-to-verb shift of → L10
+      n.10, carried as far as it goes.
+  - n: 5
+    line: 5
+    at: 傅諸
+    text: >
+      **諸 = 之 + 乎.** At the end of a question, 諸 zhū fuses the object 之 "him" with the question
+      particle 乎: 傅諸 = 傅之乎 "tutor him?". In L12 n.18 諸 was 之 + 於 (投諸渤海之尾): one sound, two
+      fusions, and the place in the sentence tells them apart. The two questions side by side, 使齊人傅諸？
+      使楚人傅諸？, make a choice question with no word for "or". **傅** fù "to tutor, teach" (the
+      四部叢刊 text writes 傳 in line 9, a slip for 傅).
+  - n: 6
+    line: 10
+    at: 一齊人傅之
+    text: >
+      **一 … 眾 …** "one … a crowd of …": 一齊人傅之，眾楚人咻之 "one man of Qi tutors him, a crowd of Chu
+      people clamour at him". **咻** xiū "to clamour, make a din at" (趙岐: 咻之者，讙也). The two numbers
+      before the nouns make the whole argument, and the idiom 一傅眾咻.
+  - n: 7
+    line: 12
+    at: 日撻
+    text: >
+      **日** rì "day" before a verb means "every day, daily": a noun used as an adverb (→ L8 n.6, L10
+      n.10). **撻** tà "to flog, beat with a rod". 雖 "even if" (→ L13 n.9); 而 joins the two verbs
+      (→ L1 n.4): 日撻而求其齊 "beat him every day and demand that he speak Qi".
+  - n: 8
+    line: 14
+    at: 莊嶽之間
+    text: >
+      **莊嶽** Zhuāng Yuè: 趙岐 says 莊 and 嶽 were the names of a street and a quarter in the Qi capital,
+      Linzi. 引而置之莊嶽之間 "take him and set him down among Zhuang and Yue": 引 "to lead (by the hand)"
+      (→ L5 n.6 "to pull"), 置之 "put him" with the place after it and no 於 (→ L9 n.5). The subject,
+      the father, is understood. 數年 "several years" (數 → L5 n.4).
+  - n: 9
+    line: 17
+    at: 子謂薛居州
+    text: >
+      **謂 + person + comment** "to say of someone that …": 子謂薛居州，善士也 "you say of Xue Juzhou that
+      (he) is a good man". 謂 took the person spoken to in → L3 n.4; here it takes the person spoken
+      *about*. 善士也 is a judgment sentence (→ L1 n.11) with its subject left out. 薛居州 Xue Juzhou, a
+      man of Song known only from this passage.
+  - n: 10
+    line: 19
+    at: 王所
+    text: >
+      **所** suǒ as a plain noun, "place": 王所 "the king's place", i.e. at court, at his side. This is
+      the root of the nominaliser 所 of → L4 n.5 ("the place / thing that …"). 使之居於王所 "had him
+      stay at the king's side": 使 → L6 n.7; 居 "to stay" (→ L10 n.8).
+  - n: 11
+    line: 21
+    at: 長幼卑尊
+    text: >
+      **長幼卑尊** zhǎng yòu bēi zūn "old and young, low and high": four adjectives used as nouns, two
+      pairs of opposites meaning "everyone". 長 zhǎng "elder" (→ L3 n.2). 皆薛居州也 "are all Xue
+      Juzhou": a name standing for "a man like him". The 者 phrase 在於王所者 (→ L1 n.2) is the subject,
+      and the whole sentence is a supposition: "if those at the king's side were …".
+  - n: 12
+    line: 22
+    at: 王誰與為不善
+    text: >
+      **Question word before its preposition: 誰與 = "with whom".** When the object of a preposition is a
+      question word, it goes in front of the preposition, just as it goes in front of a verb (→ L16
+      n.11): 誰與 shuí yǔ "with whom", and likewise 何以 "by what means, why", 奚自 "from where". **與**
+      yǔ is here the preposition "with" (in → L2 n.1 it joined two nouns, "and"). 王誰與為不善 "with whom
+      would the king do wrong?" = there would be no one.
+  - n: 13
+    line: 27
+    at: 獨如宋王何
+    text: >
+      **獨** dú "alone, all by himself" (→ L10 n.15). 如宋王何 "what can (he) do about the King of Song?"
+      (如 X 何 → L12 n.16). Mencius's point: one good man among a court of flatterers is the one Qi
+      tutor among a crowd of Chu voices.
+
+glossary:
+  - {w: 戴不勝, py: Dài Bùshèng, en: "Dai Busheng, a minister of Song"}
+  - {w: 與, py: yú, en: "question particle (= 歟); (line 23, 26) yǔ, with", checked: [wikt]}
+  - {w: 明, py: míng, en: "clearly, plainly", checked: [wikt]}
+  - {w: 告, py: gào, en: "to tell", checked: [wikt]}
+  - {w: 大夫, py: dàfū, en: "grandee, high officer", checked: [wikt]}
+  - {w: 齊, py: Qí, en: "(the speech of) Qi; to speak Qi"}
+  - {w: 語, py: yǔ, en: "speech, language", checked: [wikt]}
+  - {w: 傅, py: fù, en: "to tutor, teach", checked: [wikt]}
+  - {w: 諸, py: zhū, en: "= 之乎 'him …?'", checked: [wikt]}
+  - {w: 咻, py: xiū, en: "to clamour, make a din at", checked: [wikt]}
+  - {w: 日, py: rì, en: "every day, daily", checked: [wikt]}
+  - {w: 撻, py: tà, en: "to flog", checked: [wikt]}
+  - {w: 引, py: yǐn, en: "to lead, take (by the hand)", checked: [wikt]}
+  - {w: 莊嶽, py: Zhuāng Yuè, en: "Zhuang and Yue, a street and a quarter of the Qi capital"}
+  - {w: 間, py: jiān, en: "space between; among", checked: [wikt]}
+  - {w: 薛居州, py: Xuē Jūzhōu, en: "Xue Juzhou, a good man of Song"}
+  - {w: 士, py: shì, en: "man of standing, gentleman", checked: [wikt]}
+  - {w: 所, py: suǒ, en: "place", checked: [wikt]}
+  - {w: 在, py: zài, en: "to be at", checked: [wikt]}
+  - {w: 幼, py: yòu, en: "young", checked: [wikt]}
+  - {w: 卑, py: bēi, en: "low (in rank)", checked: [wikt]}
+  - {w: 尊, py: zūn, en: "high (in rank), honoured"}
+  - {w: 誰, py: shuí, en: "who, whom", checked: [wikt]}
+  - {w: 宋王, py: Sòng wáng, en: "the King of Song"}
+
+exercise:
+  - h: "有美玉於斯，韞匵而藏諸？求善賈而沽諸？"
+    py: "Yǒu měi yù yú sī, yùn dú ér cáng zhū? Qiú shàn jià ér gū zhū?"
+    src: 論語·子罕
+    en: "Here is a beautiful piece of jade: should one put it in a box and keep it, or look for a good price and sell it?"
+    tests: "有 X 於斯 (斯 = 此) setting up a case; 諸 = 之乎, twice, in a choice question"
+  - h: "子行三軍，則誰與？"
+    py: "Zǐ xíng sān jūn, zé shuí yǔ?"
+    src: 論語·述而
+    en: "If you were leading the three armies, whom would you take with you?"
+    tests: "誰與 \"with whom\" (n. 12); 則; 行 \"to lead, conduct\""
+  - h: "無為而治者，其舜也與？夫何為哉？恭己正南面而已矣。"
+    py: "Wú wéi ér zhì zhě, qí Shùn yě yú? Fú hé wéi zāi? Gōng jǐ zhèng nán miàn ér yǐ yǐ."
+    src: 論語·衛靈公
+    en: "The one who ruled by doing nothing: was it not Shun? What did he do? He made himself reverent and sat facing due south, that is all."
+    tests: "final 與 yú; 何為 \"do what\" (→ L16 n.11); modal 其 (→ L13 n.5); 南面 \"face south\", a noun used as a verb"
+  - h: "子謂韶，盡美矣，又盡善也；謂武，盡美矣，未盡善也。"
+    py: "Zǐ wèi Sháo, jìn měi yǐ, yòu jìn shàn yě; wèi Wǔ, jìn měi yǐ, wèi jìn shàn yě."
+    src: 論語·八佾
+    en: "The Master said of the Shao music that it was perfectly beautiful and perfectly good as well; of the Wu music, that it was perfectly beautiful but not yet perfectly good."
+    tests: "謂 + person or thing + comment (n. 9); 矣 and 也; 未"
+
+culture: >
+  The idiom 一傅眾咻 "one tutor and a crowd of hecklers" describes any effort swamped by its
+  surroundings; it is often quoted about learning a language, which is exactly Mencius's example. A
+  learner of Qi among Chu speakers will not learn it however hard he is beaten; two years in the
+  streets of the Qi capital and he will speak nothing else. Mencius's advice to Dai Busheng is the
+  same: change the whole court, or nothing will change.
