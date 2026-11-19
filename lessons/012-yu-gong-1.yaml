@@ -1,0 +1,399 @@
+id: 12
+slug: yu-gong-1
+title: 愚公移山（上）
+title_py: Yú gōng yí shān (shàng)
+title_en: "The Foolish Old Man Moves the Mountains (1)"
+source:
+  work: 列子·湯問
+  author: attributed to 列禦寇 Lie Yukou (Warring States); the text as we have it was edited by 張湛 (4th c. AD)
+  period: compiled by the 4th century AD from older material
+  text_from: >
+    《列子·湯問》, first half (to 始一反焉). Words as in the 四部叢刊 text (Kanseki Repository
+    KR5c0049), compared line by line, 2026-11-19, with the 四庫全書 文淵閣 text with 張湛's commentary
+    (KR5c0125), the Hong Kong EDB recommended-passage edition (KS3-03) and the English Wiktionary
+    citation (Citations:愚公移山, CC BY-SA). Punctuation follows Wiktionary and the EDB edition.
+    Variants: 太形 (四部叢刊, 文淵閣, EDB; Wiktionary 太行; see n. 1); 丘 (文淵閣 邱, the Qing
+    taboo form); 叩石 (文淵閣 即石); 獻疑曰 (EDB 疑之，曰); 箕畚運於 (EDB 以箕畚運於, Wiktionary
+    運于). The EDB text calls itself a reference version and modernises a few words; we follow the
+    old editions.
+status: draft
+
+intro: >
+  The longest story so far, and the most famous: Mao Zedong retold it in 1945, and every Chinese
+  schoolchild learns it. The *Liezi* tells it among tales of the wonders at the edges of the
+  world. It is long enough for two lessons; this one sets the scene and starts the work. New
+  here: 汝 "you", 曾 zēng "even", 焉 as "where?" and at the end of a sentence, the fusion word 諸,
+  and nouns and adjectives working as verbs (→ L10 n.10) on almost every line.
+
+lines:
+  - h: "太形、王屋二山，"
+    py: "Tàixíng, Wángwū èr shān,"
+    en: "The two mountains, Taihang and Wangwu,"
+  - h: "方七百里，"
+    py: "fāng qī bǎi lǐ,"
+    en: "were seven hundred li square"
+  - h: "高萬仞。"
+    py: "gāo wàn rèn."
+    en: "and ten thousand fathoms high."
+  - h: "本在冀州之南，"
+    py: "Běn zài Jìzhōu zhī nán,"
+    en: "They used to stand south of Jizhou"
+  - h: "河陽之北。"
+    py: "Héyáng zhī běi."
+    en: "and north of Heyang."
+  - h: "北山愚公者，"
+    py: "Běishān Yúgōng zhě,"
+    en: "The Foolish Old Man of North Mountain"
+  - h: "年且九十，"
+    py: "nián qiě jiǔ shí,"
+    en: "was nearly ninety years old,"
+  - h: "面山而居。"
+    py: "miàn shān ér jū."
+    en: "and lived facing the mountains."
+  - h: "懲山北之塞，"
+    py: "Chéng shān běi zhī sè,"
+    en: "Troubled that the mountains blocked the way to the north"
+  - h: "出入之迂也，"
+    py: "chū rù zhī yū yě,"
+    en: "and that going out and coming in took such a roundabout route,"
+  - h: "聚室而謀曰："
+    py: "jù shì ér móu yuē:"
+    en: "he gathered his household to talk it over, saying:"
+  - h: "「吾與汝畢力平險，"
+    py: "Wú yǔ rǔ bì lì píng xiǎn,"
+    en: "\"Let you and me put all our strength into levelling these steep heights,"
+    lit: "I and you exhaust strength level steep"
+  - h: "指通豫南，"
+    py: "zhǐ tōng Yù nán,"
+    en: "open a way straight to the south of Yu,"
+  - h: "達于漢陰，"
+    py: "dá yú Hàn yīn,"
+    en: "reaching to the south bank of the Han:"
+  - h: "可乎？」"
+    py: "kě hū?"
+    en: "shall we?\""
+  - h: "雜然相許。"
+    py: "Zá rán xiāng xǔ."
+    en: "They all agreed with him."
+  - h: "其妻獻疑曰："
+    py: "Qí qī xiàn yí yuē:"
+    en: "His wife raised a doubt:"
+  - h: "「以君之力，"
+    py: "Yǐ jūn zhī lì,"
+    en: "\"With your strength"
+  - h: "曾不能損魁父之丘，"
+    py: "zēng bù néng sǔn Kuífù zhī qiū,"
+    en: "you couldn't even make a dent in the hillock of Kuifu."
+  - h: "如太形、王屋何？"
+    py: "rú Tàixíng, Wángwū hé?"
+    en: "What could you do to Taihang and Wangwu?"
+  - h: "且焉置土石？」"
+    py: "Qiě yān zhì tǔ shí?"
+    en: "And where would you put the earth and stones?\""
+  - h: "雜曰："
+    py: "Zá yuē:"
+    en: "They all said:"
+  - h: "「投諸渤海之尾，"
+    py: "Tóu zhū Bóhǎi zhī wěi,"
+    en: "\"We'll throw them at the far end of the Bohai,"
+  - h: "隱土之北。」"
+    py: "Yǐntǔ zhī běi."
+    en: "north of Yintu.\""
+  - h: "遂率子孫荷擔者三夫，"
+    py: "Suì shuài zǐ sūn hè dàn zhě sān fū,"
+    en: "So he led those of his sons and grandsons who could carry a load, three men,"
+    lit: "then led sons grandsons carry-load ones three men"
+  - h: "叩石墾壤，"
+    py: "kòu shí kěn rǎng,"
+    en: "to break up the rocks and dig the soil,"
+  - h: "箕畚運於渤海之尾。"
+    py: "jī běn yùn yú Bóhǎi zhī wěi."
+    en: "and carried it in baskets to the far end of the Bohai."
+  - h: "鄰人京城氏之孀妻有遺男，"
+    py: "Lín rén Jīngchéng shì zhī shuāng qī yǒu yí nán,"
+    en: "The widow of their neighbour Jingcheng had a fatherless boy"
+  - h: "始齔，"
+    py: "shǐ chèn,"
+    en: "just losing his milk teeth;"
+  - h: "跳往助之。"
+    py: "tiào wǎng zhù zhī."
+    en: "he skipped along to help them."
+  - h: "寒暑易節，"
+    py: "Hán shǔ yì jié,"
+    en: "Winter changed to summer"
+  - h: "始一反焉。"
+    py: "shǐ yī fǎn yān."
+    en: "before they went home even once."
+    lit: "only-then once returned there"
+
+notes:
+  - n: 1
+    line: 0
+    at: 太形
+    text: >
+      **太形** is the 太行 Tàiháng range, which runs north–south between Shanxi and Hebei. The old
+      editions write 形; 張湛's commentary says 形當作行 "形 should be 行", and Wiktionary and many
+      modern editions print 太行. We keep the character of the old texts and give its own reading,
+      xíng, but the mountains are the Taihang. **王屋** Wángwū "King's House" is a mountain in western
+      Henan.
+  - n: 2
+    line: 1
+    at: 方七百里
+    text: >
+      **方** "on each side, square" (→ L6 n.13). **仞** rèn, a man's height (seven or eight 尺), roughly
+      "a fathom": 萬仞 "ten thousand fathoms" is simply "immensely high". Note the order: the subject
+      (二山) and then two measurements with no verb, the noun-phrase predicate of → L8 n.2.
+  - n: 3
+    line: 3
+    at: 本在
+    text: >
+      **本** běn "originally, at first" (古今詞義: the noun 本 is "root"; the adverb "originally" grew
+      from it): the story explains why the mountains are no longer where they were. **冀州** Jìzhōu, one
+      of the nine provinces of legend, in the north; **河陽** "north of the (Yellow) River". In place
+      names, **陽** is the sunny side: north of a river, south of a mountain; **陰** is the shady side:
+      south of a river, north of a mountain (漢陰 in line 14).
+  - n: 4
+    line: 5
+    at: 北山愚公者
+    text: >
+      **Name + 者**: 北山愚公者 "(the one called) the Foolish Old Man of North Mountain". 者 after a noun
+      marks it as the topic, the way a storyteller says "now, this old man …". It is not the 有 … 者
+      frame (→ L1 n.2), but it does the same job of bringing someone on stage. **公** gōng is a
+      respectful word for an old man. 張湛 comments: 俗謂之愚者，未必非智也 "the one the world calls
+      foolish is not necessarily unwise."
+  - n: 5
+    line: 6
+    at: 年且九十
+    text: >
+      **且** qiě "nearly, about to" (→ L5 n.6) before a number: 年且九十 "(his) age (was) nearly ninety",
+      with no verb (→ L8 n.2).
+  - n: 6
+    line: 7
+    at: 面山
+    text: >
+      **面** miàn "face" used as a verb, "to face": 面山而居 "lived facing the mountains". A noun with an
+      object becomes a verb (→ L10 n.10). 而 joins the manner to the main verb (→ L2 n.10).
+  - n: 7
+    line: 8
+    at: 懲
+    text: >
+      **懲** chéng "to be troubled by, suffer from" (張湛 quotes 韓詩外傳: 懲，苦也). Modern 懲 is "to
+      punish" (懲罰): 古今詞義. Its object is two subject + 之 + predicate phrases (→ L2 n.3): 山北之塞
+      "the north of the mountains' being blocked" and 出入之迂 "coming and going's being roundabout".
+      **塞** is sè "to block" here (→ L10 n.2); **迂** yū "winding, roundabout".
+  - n: 8
+    line: 10
+    at: 聚室
+    text: >
+      **室** shì "household, family" (古今詞義: "room" is the root sense; the household is the people
+      under one roof). 聚室而謀 "gathered his family and consulted": **謀** móu "to plan, deliberate".
+  - n: 9
+    line: 11
+    at: 汝
+    text: >
+      **汝** rǔ "you", the plain second-person pronoun, to family and inferiors (→ L11 n.8, 若). It is
+      also written 女 (read rǔ): 女與回也孰愈 (exercise 2). **畢力** "use up (our) strength": 畢 "to
+      finish", so "all, entirely". **平險** "level the steep": the adjective 平 "flat" used as a verb
+      meaning "make flat", the causative shift of → L10 n.10; 險 "steep" is a noun here, "the steep
+      places".
+  - n: 10
+    line: 12
+    at: 指通
+    text: >
+      **指** zhǐ "finger, to point" used as an adverb: "straight (as pointing)". 指通豫南 "open a way
+      straight to the south of Yu" (豫 Yù, the province of present-day Henan).
+  - n: 11
+    line: 13
+    at: 于
+    text: >
+      **于 and 於.** Both are the preposition yú "at, to, in". 于 is the older spelling (the 詩經 and
+      書經 use it); Warring States prose prefers 於, but many texts mix them, like this one: 達**于**漢陰
+      here, 運**於**渤海之尾 in line 27. *Simplified-character warning:* simplified Chinese writes 于
+      for both, so 於 disappears (except as a surname); in traditional texts you'll see both. 漢陰
+      "south of the Han river" (n. 3).
+  - n: 12
+    line: 15
+    at: 雜然相許
+    text: >
+      **雜然** zá rán "all together, with one voice" (張湛: 雜猶僉也 "雜 means 'all'"); -然 → L3 n.3.
+      **許** xǔ "to agree, consent". **相** here is not "each other" but "(to) him": 相許 "agreed with
+      him". → L5 n.3 noted this one-way 相.
+  - n: 13
+    line: 16
+    at: 獻疑
+    text: >
+      **獻** xiàn "to offer up (to a superior)": 獻疑 "raised a doubt", politely (張湛: 獻疑猶致難也 "raised
+      an objection"). The wife is the only one to see the practical problem.
+  - n: 14
+    line: 17
+    at: 君
+    text: >
+      **君** jūn "lord" used for "you": a respectful second person, here a wife to her husband. Classical
+      Chinese has a whole scale of "you": 君 and 子 (→ L2 n.7) polite, 若 (→ L11 n.8) and 汝 (n. 9)
+      plain. 以君之力 "with your strength" (以 "with", → L1 n.10).
+  - n: 15
+    line: 18
+    at: 曾不能
+    text: >
+      **曾** zēng "even, actually" before a negative: 曾不能 "couldn't even". Modern 曾 céng "once,
+      ever" (曾經) is the same character in another word: in this story always read zēng. **損** sǔn "to
+      reduce, damage". **魁父之丘** "the hillock of Kuifu", a tiny hill (張湛: 魁父，小山也).
+  - n: 16
+    line: 19
+    at: 如太形、王屋何
+    text: >
+      **如 X 何** = 奈 X 何 (→ L11 n.15) "what can you do about X?": 如太形、王屋何 "what (could you do)
+      to Taihang and Wangwu?" The wife's argument runs from small to big: not even a hillock, so how
+      two mountains?
+  - n: 17
+    line: 20
+    at: 焉置
+    text: >
+      **焉** yān "where?": 焉置土石 "where (would you) put the earth and stones?" As a question word it
+      stands before the verb (→ L9 n.11). **且** here is "moreover" (→ L5 n.6 mentions this sense).
+      置 "to put" (→ L9 n.2).
+  - n: 18
+    line: 22
+    at: 投諸
+    text: >
+      **諸** zhū = 之 + 於 run together, a fusion word (兼詞): 投諸渤海之尾 = 投之於渤海之尾 "throw them into
+      the tail of the Bohai". The sound zhū is close to zhī + yú said fast. You will meet it constantly
+      in the 論語: 求諸己 "seek it in oneself" (exercise 1). 渤海 the Bohai gulf; 隱土 Yintu, a place
+      in the far north-east.
+  - n: 19
+    line: 24
+    at: 荷擔者三夫
+    text: >
+      **率** shuài "to lead". **荷** hè "to carry on the shoulder" (hé "lotus" is the modern noun);
+      **擔** dàn "a load on a carrying pole". **Numbers come after the noun**: 子孫荷擔者三夫 "sons and
+      grandsons who could carry loads, three men". 夫 fū "a man (able-bodied adult)", not fú "now"
+      (→ L2 n.9).
+  - n: 20
+    line: 25
+    at: 叩石墾壤
+    text: >
+      **叩** kòu "to knock, strike": 叩石 "broke the rocks" (the 四庫全書 copy has 即, a slip of the brush).
+      **墾** kěn "to dig, break ground"; **壤** rǎng "soil".
+  - n: 21
+    line: 26
+    at: 箕畚運
+    text: >
+      **Nouns before the verb as instruments.** 箕 jī "winnowing basket" and 畚 běn "basket for earth"
+      (張湛: 畚，籠也): 箕畚運 "carried (it) in baskets". The same shift as 廩食 (→ L8 n.6, L10 n.10).
+  - n: 22
+    line: 27
+    at: 孀妻有遺男
+    text: >
+      **氏** shì "clan, family": 京城氏 "the Jingcheng family". **孀妻** "widow" (張湛: 孀，寡也); **遺男**
+      "a son left behind" by his dead father: 遺 yí "to leave behind".
+  - n: 23
+    line: 28
+    at: 始齔
+    text: >
+      **始** shǐ "just, only just": 始齔 "just losing his milk teeth", about seven years old (張湛 quotes
+      the 韓詩外傳 on children shedding their teeth at seven). The child and the old man of ninety work
+      side by side.
+  - n: 24
+    line: 30
+    at: 寒暑易節
+    text: >
+      **易** yì "to change, exchange" (the same character read yì means "easy", and 易 is also the *Book
+      of Changes*). 寒暑易節 "cold and heat changed their season": a whole year went by.
+  - n: 25
+    line: 31
+    at: 始一反焉
+    text: >
+      **始** "only then" (n. 23 had "only just"); **反** = 返 "to go home" (→ L9 n.9). **焉** at the end
+      of a sentence is often a fusion word like 諸 (n. 18): 於 + 之/是, "there, in it, from it". Here
+      it has faded to a final particle rounding off the sentence ("only then did they go back, once");
+      in L13, 有子存焉 "there will be sons living (in the world)", the "there" is clear.
+
+glossary:
+  - {w: 太形, py: Tàixíng, en: "the Taihang mountains (= 太行)"}
+  - {w: 王屋, py: Wángwū, en: "Mount Wangwu"}
+  - {w: 仞, py: rèn, en: "a man's height, a fathom", checked: [wikt]}
+  - {w: 本, py: běn, en: "originally", checked: [wikt]}
+  - {w: 冀州, py: Jìzhōu, en: "Jizhou, the northern province of legend", checked: [wikt]}
+  - {w: 陽, py: yáng, en: "north bank (of a river)", checked: [wikt]}
+  - {w: 愚, py: yú, en: "foolish", checked: [wikt]}
+  - {w: 公, py: gōng, en: "old man (respectful)", checked: [wikt]}
+  - {w: 年, py: nián, en: "age", checked: [wikt]}
+  - {w: 面, py: miàn, en: "to face", checked: [wikt]}
+  - {w: 居, py: jū, en: "to live, dwell", checked: [wikt]}
+  - {w: 懲, py: chéng, en: "to be troubled by"}
+  - {w: 塞, py: sè, en: "to block; blockage", checked: [wikt]}
+  - {w: 迂, py: yū, en: "roundabout, winding", checked: [wikt]}
+  - {w: 聚, py: jù, en: "to gather", checked: [wikt]}
+  - {w: 室, py: shì, en: "household, family", checked: [wikt]}
+  - {w: 謀, py: móu, en: "to plan, deliberate", checked: [wikt]}
+  - {w: 汝, py: rǔ, en: "you", checked: [wikt]}
+  - {w: 畢, py: bì, en: "to use up; all, entirely", checked: [wikt]}
+  - {w: 平, py: píng, en: "to level, make flat", checked: [wikt]}
+  - {w: 險, py: xiǎn, en: "steep place", checked: [wikt]}
+  - {w: 指, py: zhǐ, en: "straight towards (lit. pointing)"}
+  - {w: 達, py: dá, en: "to reach", checked: [wikt]}
+  - {w: 于, py: yú, en: "to, at (= 於)", checked: [wikt]}
+  - {w: 陰, py: yīn, en: "south bank (of a river)", checked: [wikt]}
+  - {w: 雜然, py: zá rán, en: "all together"}
+  - {w: 許, py: xǔ, en: "to agree", checked: [wikt]}
+  - {w: 妻, py: qī, en: wife, checked: [wikt]}
+  - {w: 獻, py: xiàn, en: "to offer (to a superior)", checked: [wikt]}
+  - {w: 疑, py: yí, en: "doubt", checked: [wikt]}
+  - {w: 君, py: jūn, en: "you (respectful)", checked: [wikt]}
+  - {w: 曾, py: zēng, en: "even (曾不: not even)"}
+  - {w: 損, py: sǔn, en: "to reduce, damage", checked: [wikt]}
+  - {w: 丘, py: qiū, en: "hill, mound", checked: [wikt]}
+  - {w: 焉, py: yān, en: "where?; (at the end) there, in it", checked: [wikt]}
+  - {w: 投, py: tóu, en: "to throw", checked: [wikt]}
+  - {w: 諸, py: zhū, en: "= 之於 'it/them … to'", checked: [wikt]}
+  - {w: 尾, py: wěi, en: "tail, far end", checked: [wikt]}
+  - {w: 率, py: shuài, en: "to lead", checked: [wikt]}
+  - {w: 子孫, py: zǐ sūn, en: "sons and grandsons, descendants", checked: [wikt]}
+  - {w: 荷, py: hè, en: "to carry on the shoulder", checked: [wikt]}
+  - {w: 擔, py: dàn, en: "load (on a carrying pole)", checked: [wikt]}
+  - {w: 夫, py: fū, en: "a man, an adult male", checked: [wikt]}
+  - {w: 叩, py: kòu, en: "to knock, strike", checked: [wikt]}
+  - {w: 墾, py: kěn, en: "to dig, break ground", checked: [wikt]}
+  - {w: 壤, py: rǎng, en: soil, checked: [wikt]}
+  - {w: 箕, py: jī, en: "winnowing basket", checked: [wikt]}
+  - {w: 畚, py: běn, en: "basket for earth", checked: [wikt]}
+  - {w: 運, py: yùn, en: "to carry, transport", checked: [wikt]}
+  - {w: 鄰, py: lín, en: neighbour, checked: [wikt]}
+  - {w: 氏, py: shì, en: "clan, family", checked: [wikt]}
+  - {w: 孀, py: shuāng, en: "widowed", checked: [wikt]}
+  - {w: 遺, py: yí, en: "to leave behind", checked: [wikt]}
+  - {w: 始, py: shǐ, en: "just; only then", checked: [wikt]}
+  - {w: 齔, py: chèn, en: "to lose one's milk teeth", checked: [wikt]}
+  - {w: 跳, py: tiào, en: "to jump, skip", checked: [wikt]}
+  - {w: 寒暑, py: hán shǔ, en: "cold and heat; winter and summer", checked: [wikt]}
+  - {w: 易, py: yì, en: "to change", checked: [wikt]}
+  - {w: 節, py: jié, en: season, checked: [wikt]}
+
+exercise:
+  - h: "君子求諸己，小人求諸人。"
+    py: "Jūnzǐ qiú zhū jǐ, xiǎo rén qiú zhū rén."
+    src: 論語·衛靈公
+    en: "The gentleman looks for it in himself; the small man looks for it in others."
+    tests: "諸 = 之於, 己 (→ L6 n.12)"
+  - h: "女與回也孰愈？"
+    py: "Rǔ yǔ Huí yě shú yù?"
+    src: 論語·公冶長
+    en: "Which is the better, you or Hui?"
+    tests: "女 = 汝 rǔ \"you\"; 孰 shú \"which (of the two)?\""
+  - h: "有事，弟子服其勞；有酒食，先生饌，曾是以為孝乎？"
+    py: "Yǒu shì, dìzǐ fú qí láo; yǒu jiǔ sì, xiānshēng zhuàn, zēng shì yǐ wéi xiào hū?"
+    src: 論語·為政
+    en: "When there is work, the young do the toil; when there is wine and food, their elders are served: can that really be counted as filial piety?"
+    tests: "曾 zēng; 以為 (→ L3 n.10); 食 sì \"food\""
+  - h: "眾惡之，必察焉；眾好之，必察焉。"
+    py: "Zhòng wù zhī, bì chá yān; zhòng hào zhī, bì chá yān."
+    src: 論語·衛靈公
+    en: "When everyone hates a man, you must look into it; when everyone likes him, you must look into it."
+    tests: "final 焉 = \"into it\"; 眾, 好 hào (惡 wù \"to hate\")"
+
+culture: >
+  The places are real: the Taihang and Wangwu mountains stand between the Yellow River plain and the
+  Shanxi plateau, and the story explains why the way south is open today. (The ending, in L13, tells
+  who moved them.) On 11 June 1945 Mao Zedong closed the Seventh Party Congress with a speech called
+  "The Foolish Old Man Who Removed the Mountains": the two mountains weighing on China, he said, are
+  imperialism and feudalism, and "God" is the Chinese people.
