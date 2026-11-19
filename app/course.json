@@ -27346,6 +27346,718 @@
      ],
      "culture": "The places are real: the Taihang and Wangwu mountains stand between the Yellow River plain and the Shanxi plateau, and the story explains why the way south is open today. (The ending, in L13, tells who moved them.) On 11 June 1945 Mao Zedong closed the Seventh Party Congress with a speech called \"The Foolish Old Man Who Removed the Mountains\": the two mountains weighing on China, he said, are imperialism and feudalism, and \"God\" is the Chinese people.\n",
      "title_s": "愚公移山（上）"
+    },
+    {
+     "id": 13,
+     "slug": "yu-gong-2",
+     "title": "愚公移山（下）",
+     "title_py": "Yú gōng yí shān (xià)",
+     "title_en": "The Foolish Old Man Moves the Mountains (2)",
+     "source": {
+      "work": "列子·湯問",
+      "author": "attributed to 列禦寇 Lie Yukou (Warring States); the text as we have it was edited by 張湛 (4th c. AD)",
+      "period": "compiled by the 4th century AD from older material",
+      "text_from": "《列子·湯問》, second half (from 河曲智叟). Words as in the 四部叢刊 text (Kanseki Repository KR5c0049), compared line by line, 2026-11-19, with the 四庫全書 文淵閣 text with 張湛's commentary (KR5c0125), the Hong Kong EDB recommended-passage edition (KS3-03) and the English Wiktionary citation (Citations:愚公移山, CC BY-SA). Punctuation follows Wiktionary and the EDB edition. Variants: 夸娥 (文淵閣, EDB; 四部叢刊 and Wiktionary 夸蛾, see n. 19); 告之於 (Wiktionary 于); the EDB text reads 長歎, 我雖死 and 自是 for 長息, 雖我之死 and 自此, and Wiktionary has a slip, 汝心不固, for 汝心之固. Both old editions write 笑 in a variant form the transcriptions could not encode.\n",
+      "work_s": "列子·汤问"
+     },
+     "status": "draft",
+     "intro": "The second half is an argument and a miracle. The Wise Old Man of the River Bend laughs at the project; the Foolish Old Man answers with the most famous speech in the *Liezi*, a chain of sons and grandsons that never ends. Watch the conjunction 雖 \"even if\", 其 as the subject of a clause and as a rhetorical \"how ever\", the inverted exclamation 甚矣，汝之不惠, and 已 meaning \"to stop\".\n",
+     "lines": [
+      {
+       "h": "河曲智叟笑而止之曰：",
+       "py": "Héqū Zhìsǒu xiào ér zhǐ zhī yuē:",
+       "en": "The Wise Old Man of the River Bend laughed and tried to stop him, saying:",
+       "h_s": "河曲智叟笑而止之曰："
+      },
+      {
+       "h": "「甚矣，汝之不惠！",
+       "py": "Shèn yǐ, rǔ zhī bù huì!",
+       "en": "\"How great is your folly!",
+       "lit": "extreme — your not-wise!",
+       "h_s": "「甚矣，汝之不惠！"
+      },
+      {
+       "h": "以殘年餘力，",
+       "py": "Yǐ cán nián yú lì,",
+       "en": "With the years and the strength you have left,",
+       "h_s": "以残年余力，"
+      },
+      {
+       "h": "曾不能毀山之一毛，",
+       "py": "zēng bù néng huǐ shān zhī yī máo,",
+       "en": "you can't even destroy a single hair of the mountain:",
+       "h_s": "曾不能毁山之一毛，"
+      },
+      {
+       "h": "其如土石何？」",
+       "py": "qí rú tǔ shí hé?",
+       "en": "what can you ever do with all that earth and rock?\"",
+       "h_s": "其如土石何？」"
+      },
+      {
+       "h": "北山愚公長息曰：",
+       "py": "Běishān Yúgōng cháng xī yuē:",
+       "en": "The Foolish Old Man of North Mountain heaved a long sigh and said:",
+       "h_s": "北山愚公长息曰："
+      },
+      {
+       "h": "「汝心之固，",
+       "py": "Rǔ xīn zhī gù,",
+       "en": "\"The stubbornness of your mind",
+       "h_s": "「汝心之固，"
+      },
+      {
+       "h": "固不可徹，",
+       "py": "gù bù kě chè,",
+       "en": "is past all getting through;",
+       "h_s": "固不可彻，"
+      },
+      {
+       "h": "曾不若孀妻弱子。",
+       "py": "zēng bù ruò shuāng qī ruò zǐ.",
+       "en": "you're not even as wise as the widow and her little boy.",
+       "h_s": "曾不若孀妻弱子。"
+      },
+      {
+       "h": "雖我之死，",
+       "py": "Suī wǒ zhī sǐ,",
+       "en": "Even if I die,",
+       "lit": "even-granting my dying",
+       "h_s": "虽我之死，"
+      },
+      {
+       "h": "有子存焉；",
+       "py": "yǒu zǐ cún yān;",
+       "en": "there will be my son left;",
+       "h_s": "有子存焉；"
+      },
+      {
+       "h": "子又生孫，",
+       "py": "zǐ yòu shēng sūn,",
+       "en": "my son will father grandsons,",
+       "h_s": "子又生孙，"
+      },
+      {
+       "h": "孫又生子；",
+       "py": "sūn yòu shēng zǐ;",
+       "en": "and the grandsons will father sons;",
+       "h_s": "孙又生子；"
+      },
+      {
+       "h": "子又有子，",
+       "py": "zǐ yòu yǒu zǐ,",
+       "en": "the sons will have sons,",
+       "h_s": "子又有子，"
+      },
+      {
+       "h": "子又有孫；",
+       "py": "zǐ yòu yǒu sūn;",
+       "en": "and the sons will have grandsons:",
+       "h_s": "子又有孙；"
+      },
+      {
+       "h": "子子孫孫，",
+       "py": "zǐ zǐ sūn sūn,",
+       "en": "sons and grandsons, generation after generation,",
+       "h_s": "子子孙孙，"
+      },
+      {
+       "h": "無窮匱也，",
+       "py": "wú qióng kuì yě,",
+       "en": "will never run out,",
+       "h_s": "无穷匮也，"
+      },
+      {
+       "h": "而山不加增，",
+       "py": "ér shān bù jiā zēng,",
+       "en": "while the mountains will grow no bigger:",
+       "h_s": "而山不加增，"
+      },
+      {
+       "h": "何苦而不平？」",
+       "py": "hé kǔ ér bù píng?",
+       "en": "why fret that they won't be levelled?\"",
+       "h_s": "何苦而不平？」"
+      },
+      {
+       "h": "河曲智叟亡以應。",
+       "py": "Héqū Zhìsǒu wú yǐ yìng.",
+       "en": "The Wise Old Man of the River Bend had no answer.",
+       "h_s": "河曲智叟亡以应。"
+      },
+      {
+       "h": "操蛇之神聞之，",
+       "py": "Cāo shé zhī shén wén zhī,",
+       "en": "The snake-holding gods heard of it",
+       "h_s": "操蛇之神闻之，"
+      },
+      {
+       "h": "懼其不已也，",
+       "py": "jù qí bù yǐ yě,",
+       "en": "and, afraid that he would never stop,",
+       "h_s": "惧其不已也，"
+      },
+      {
+       "h": "告之於帝。",
+       "py": "gào zhī yú dì.",
+       "en": "reported it to God on High.",
+       "h_s": "告之于帝。"
+      },
+      {
+       "h": "帝感其誠，",
+       "py": "Dì gǎn qí chéng,",
+       "en": "God was moved by his sincerity",
+       "h_s": "帝感其诚，"
+      },
+      {
+       "h": "命夸娥氏二子負二山，",
+       "py": "mìng Kuā'é shì èr zǐ fù èr shān,",
+       "en": "and ordered the two sons of the Kua'e clan to carry off the two mountains on their backs,",
+       "h_s": "命夸娥氏二子负二山，"
+      },
+      {
+       "h": "一厝朔東，",
+       "py": "yī cuò Shuò dōng,",
+       "en": "one to be set down east of Shuo,",
+       "h_s": "一厝朔东，"
+      },
+      {
+       "h": "一厝雍南。",
+       "py": "yī cuò Yōng nán.",
+       "en": "the other south of Yong.",
+       "h_s": "一厝雍南。"
+      },
+      {
+       "h": "自此冀之南，",
+       "py": "Zì cǐ Jì zhī nán,",
+       "en": "From then on, south of Ji",
+       "h_s": "自此冀之南，"
+      },
+      {
+       "h": "漢之陰，",
+       "py": "Hàn zhī yīn,",
+       "en": "and south of the Han,",
+       "h_s": "汉之阴，"
+      },
+      {
+       "h": "無隴斷焉。",
+       "py": "wú lǒng duàn yān.",
+       "en": "there has been no ridge to bar the way.",
+       "h_s": "无陇断焉。"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "河曲智叟",
+       "text": "**河曲** \"the bend of the (Yellow) River\", where he lives; **智叟** \"the Wise Old Man\" (叟 sǒu \"old man\"). The two names are a pair, and the story turns them round: 張湛 comments 俗謂之智者，未必非愚也 \"the one the world calls wise is not necessarily not a fool\" (compare L12 n.4). **止之** \"(tried to) stop him\": 止 \"to stop\" (→ L4, 舟止) used with an object, \"make (someone) stop\", the causative shift of → L10 n.10.\n",
+       "at_s": "河曲智叟"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "at": "甚矣，汝之不惠",
+       "text": "**The predicate comes first** in an exclamation: 甚矣，汝之不惠 = 汝之不惠甚矣 \"your lack of wisdom is extreme\". Putting 甚矣 \"(it is) extreme!\" in front throws the weight on it, like English \"How great is your folly!\". 汝之不惠 is subject + 之 + predicate (→ L2 n.3). **惠** = 慧 huì \"wise\", a borrowed character (→ L8 n.5). You met the same shape in L3's exercise: 甚矣吾衰也.\n",
+       "at_s": "甚矣，汝之不惠"
+      },
+      {
+       "n": 3,
+       "line": 2,
+       "at": "殘年餘力",
+       "text": "**殘** cán \"remaining, what is left over\" (modern 殘 \"cruel, damaged\"); **餘** yú \"surplus, remaining\" (→ L5 n.4). *Simplified-character warning:* simplified Chinese writes 余 for 餘, and 余 is also the classical pronoun \"I\" (→ L3 n.6, 予 and 余). In a simplified classical text, 余 can be either word; the traditional text keeps them apart (mainland editions sometimes print 馀 where the two would clash).\n",
+       "at_s": "残年余力"
+      },
+      {
+       "n": 4,
+       "line": 3,
+       "at": "一毛",
+       "text": "**毀** huǐ \"to destroy, demolish\". **一毛** \"a single hair\": the trees and grass on a mountain are its hair. 曾不能 \"can't even\" (→ L12 n.15). The Wise Old Man repeats the wife's argument from L12, with contempt instead of concern.\n",
+       "at_s": "一毛"
+      },
+      {
+       "n": 5,
+       "line": 4,
+       "at": "其如土石何",
+       "text": "**其 as a modal word**: before the verb of a question or a wish, 其 adds \"how ever, surely\": 其如土石何 \"what *could* you ever do about the earth and rocks?\" (如 X 何 → L12 n.16). So far 其 was \"his, its\" (→ L1 n.6) and \"that\" (→ L2 n.8); this 其 is an adverb. You met it in L3's exercise: 桓魋其如予何 \"what can Huan Tui do to me?\"\n",
+       "at_s": "其如土石何"
+      },
+      {
+       "n": 6,
+       "line": 5,
+       "at": "長息",
+       "text": "**息** xī \"breath\": 長息 cháng xī \"a long breath, a deep sigh\" (長 cháng \"long\", → L3 n.2). Modern 息 is mostly \"rest\" (休息) or \"interest\" (利息), both from \"breathing (space)\".\n",
+       "at_s": "长息"
+      },
+      {
+       "n": 7,
+       "line": 6,
+       "at": "汝心之固",
+       "text": "**Two 固 in a row.** 汝心之固 \"the *solidness* of your mind\", i.e. its obstinacy: the adjective 固 \"solid, fixed\" as a noun, in a subject + 之 + predicate phrase (→ L2 n.3). Then 固不可徹 \"is *certainly* impenetrable\": 固 \"certainly\" (→ L5 n.10). **徹** chè \"to go right through\".\n",
+       "at_s": "汝心之固"
+      },
+      {
+       "n": 8,
+       "line": 8,
+       "at": "曾不若",
+       "text": "**不若** \"not as good as\": 若 \"to be like\" (→ L4 n.7), so \"not equal to\". 曾不若孀妻弱子 \"you are not even a match for the widow and her little boy\" (L12 lines 28–30), who at least came to help.\n",
+       "at_s": "曾不若"
+      },
+      {
+       "n": 9,
+       "line": 9,
+       "at": "雖我之死",
+       "text": "**雖** suī \"even if; although\", the first conjunction in the course that introduces a whole clause. Here the clause is subject + 之 + predicate (→ L2 n.3): 雖我之死 \"even granting my death\". Whether 雖 is \"although\" (a fact) or \"even if\" (a supposition) depends on the context: the old man is still alive, so \"even if\". (L7's exercise had 雖令不從 \"even if he gives orders, they are not followed\".)\n",
+       "at_s": "虽我之死"
+      },
+      {
+       "n": 10,
+       "line": 10,
+       "at": "有子存焉",
+       "text": "**存** cún \"to survive, remain\". **焉** = 於是 \"in it, there\" (→ L12 n.25): 有子存焉 \"there will be sons remaining (in the world)\".\n",
+       "at_s": "有子存焉"
+      },
+      {
+       "n": 11,
+       "line": 16,
+       "at": "無窮匱也",
+       "text": "**窮** qióng \"to come to an end, be exhausted\" (古今詞義: \"poor\" is 貧 in Classical Chinese; 窮 is to have come to the end of one's road). **匱** kuì \"to run short\". 無窮匱 \"there will be no running out\". 子子孫孫 \"sons' sons and grandsons' grandsons\": doubled nouns mean \"one after another, every\".\n",
+       "at_s": "无穷匮也"
+      },
+      {
+       "n": 12,
+       "line": 17,
+       "at": "而山不加增",
+       "text": "**而** \"whereas, but\": the contrast of → L1 n.9 between the endless family and the mountain that cannot grow. **加增** jiā zēng \"to grow larger\" (two words meaning \"add, increase\").\n",
+       "at_s": "而山不加增"
+      },
+      {
+       "n": 13,
+       "line": 18,
+       "at": "何苦而不平",
+       "text": "**何苦而不平** \"what is there to worry about, that it won't be levelled?\" 何苦 \"what hardship, what is there to fret about\" (modern 何苦 \"why bother\" comes from here). **平** \"to be level\" has a passive sense with no passive marker: the mountain \"gets levelled\". Classical Chinese often leaves the passive unmarked when the sense is clear (compare 可 + verb, → L1 n.8).\n",
+       "at_s": "何苦而不平"
+      },
+      {
+       "n": 14,
+       "line": 19,
+       "at": "亡以應",
+       "text": "**亡以應** wú yǐ yìng = 無以應 \"had nothing to answer with\" (無以 → L8 n.11; 亡 read wú → L11 n.2). 應 \"to answer\" (→ L2 n.8). The wise man is beaten by the fool in argument before the gods step in.\n",
+       "at_s": "亡以应"
+      },
+      {
+       "n": 15,
+       "line": 20,
+       "at": "操蛇之神",
+       "text": "**操蛇之神** \"the snake-holding gods\": a verb phrase + 之 + noun (→ L2 n.9), with 操 \"to hold\" (→ L9 n.7). 張湛 explains from the 山海經: the gods of the mountains and seas all hold snakes. The gods of these mountains are afraid of losing their home.\n",
+       "at_s": "操蛇之神"
+      },
+      {
+       "n": 16,
+       "line": 21,
+       "at": "懼其不已",
+       "text": "**其 as the subject of a clause.** 懼其不已 \"feared his not stopping\" = \"feared that he would never stop\". When a clause is the object of a verb (懼, 聞, 知 …), its subject is often 其 \"his\", the pronoun form of the \"X 之\" of → L2 n.3 (其 = 彼之 \"his\"). **已** yǐ \"to stop, come to an end\" (not \"already\", → L4 n.6): 不已 \"not stop\". The final 也 marks a pause (→ L6 n.2).\n",
+       "at_s": "惧其不已"
+      },
+      {
+       "n": 17,
+       "line": 22,
+       "at": "告之於帝",
+       "text": "**告 A 於 B** \"report A to B\": 之 \"it\" (the matter) and 於帝 \"to God\". **帝** dì \"the Lord on High\", the supreme god of the sky (天帝 in L6); only from the First Emperor on did 帝 become the title of earthly rulers.\n",
+       "at_s": "告之于帝"
+      },
+      {
+       "n": 18,
+       "line": 23,
+       "at": "感其誠",
+       "text": "**感** gǎn \"to be moved by\"; **誠** chéng \"sincerity, wholeheartedness\" (a noun here; in L6 誠 was the adverb \"truly\", → L6 n.3). 其 \"his\" (→ L1 n.6).\n",
+       "at_s": "感其诚"
+      },
+      {
+       "n": 19,
+       "line": 24,
+       "at": "命夸娥氏二子",
+       "text": "**命 A V** \"order A to V\": like 使 (→ L6 n.7), 命 takes a person who then does the action. **夸娥氏** Kuā'é shì, a clan of giants or strong gods (張湛: \"not in other records; probably gods of great strength\"); the 四部叢刊 text and Wiktionary write 夸蛾. 二子 \"two sons\". **負** fù \"to carry on the back\".\n",
+       "at_s": "命夸娥氏二子"
+      },
+      {
+       "n": 20,
+       "line": 25,
+       "at": "一厝朔東",
+       "text": "**厝** cuò \"to place, set down\" (= 措 or 置). **一 … 一 …** \"one … the other …\". 朔東 \"east of Shuo\" (朔方, the far north) and 雍南 \"south of Yong\" (雍州, the far west): the mountains are moved to the edges of the world.\n",
+       "at_s": "一厝朔东"
+      },
+      {
+       "n": 21,
+       "line": 27,
+       "at": "自此",
+       "text": "**自此** \"from this (time) on\": 自 \"from\" (→ L4 n.2), 此 \"this\". The story ends where it began, with an explanation of the landscape: 冀之南，漢之陰 (→ L12 n.3).\n",
+       "at_s": "自此"
+      },
+      {
+       "n": 22,
+       "line": 29,
+       "at": "隴斷",
+       "text": "**隴斷** lǒng duàn (also written 壟斷) \"a high ridge, a raised barrier\": 無隴斷焉 \"there was no barrier there\" (焉 → n. 10). Mencius has the same word, written 龍斷, for the high mound from which a greedy trader looked over the whole market to corner it; that is where modern 壟斷 \"monopoly\" comes from (古今詞義).\n",
+       "at_s": "陇断"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "河曲",
+       "py": "Héqū",
+       "en": "the bend of the Yellow River",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "河曲"
+      },
+      {
+       "w": "智",
+       "py": "zhì",
+       "en": "wise",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "智"
+      },
+      {
+       "w": "叟",
+       "py": "sǒu",
+       "en": "old man",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "叟"
+      },
+      {
+       "w": "止",
+       "py": "zhǐ",
+       "en": "to stop (someone)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "止"
+      },
+      {
+       "w": "甚",
+       "py": "shèn",
+       "en": "extreme, very great",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "甚"
+      },
+      {
+       "w": "惠",
+       "py": "huì",
+       "en": "wise (= 慧)",
+       "w_s": "惠"
+      },
+      {
+       "w": "殘",
+       "py": "cán",
+       "en": "remaining, left over",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "残"
+      },
+      {
+       "w": "餘",
+       "py": "yú",
+       "en": "remaining, leftover",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "余"
+      },
+      {
+       "w": "毀",
+       "py": "huǐ",
+       "en": "to destroy",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "毁"
+      },
+      {
+       "w": "毛",
+       "py": "máo",
+       "en": "hair; (of land) vegetation",
+       "w_s": "毛"
+      },
+      {
+       "w": "其",
+       "py": "qí",
+       "en": "(in questions) how ever, surely; (subject of a clause) he",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "其"
+      },
+      {
+       "w": "息",
+       "py": "xī",
+       "en": "breath; sigh",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "息"
+      },
+      {
+       "w": "心",
+       "py": "xīn",
+       "en": "heart, mind",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "心"
+      },
+      {
+       "w": "固",
+       "py": "gù",
+       "en": "solid, stubborn; certainly",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "固"
+      },
+      {
+       "w": "徹",
+       "py": "chè",
+       "en": "to go through, penetrate",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "彻"
+      },
+      {
+       "w": "弱",
+       "py": "ruò",
+       "en": "weak; young",
+       "w_s": "弱"
+      },
+      {
+       "w": "雖",
+       "py": "suī",
+       "en": "even if; although",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "虽"
+      },
+      {
+       "w": "存",
+       "py": "cún",
+       "en": "to survive, remain",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "存"
+      },
+      {
+       "w": "生",
+       "py": "shēng",
+       "en": "to give birth to, father",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "生"
+      },
+      {
+       "w": "孫",
+       "py": "sūn",
+       "en": "grandson",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "孙"
+      },
+      {
+       "w": "窮",
+       "py": "qióng",
+       "en": "to come to an end",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "穷"
+      },
+      {
+       "w": "匱",
+       "py": "kuì",
+       "en": "to run short, be exhausted",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "匮"
+      },
+      {
+       "w": "加增",
+       "py": "jiā zēng",
+       "en": "to increase",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "加增"
+      },
+      {
+       "w": "何苦",
+       "py": "hé kǔ",
+       "en": "what is there to worry about?",
+       "w_s": "何苦"
+      },
+      {
+       "w": "神",
+       "py": "shén",
+       "en": "god, spirit",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "神"
+      },
+      {
+       "w": "懼",
+       "py": "jù",
+       "en": "to fear",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "惧"
+      },
+      {
+       "w": "已",
+       "py": "yǐ",
+       "en": "to stop, come to an end",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "已"
+      },
+      {
+       "w": "告",
+       "py": "gào",
+       "en": "to tell, report",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "告"
+      },
+      {
+       "w": "帝",
+       "py": "dì",
+       "en": "God, the Lord on High",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "帝"
+      },
+      {
+       "w": "感",
+       "py": "gǎn",
+       "en": "to be moved by",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "感"
+      },
+      {
+       "w": "誠",
+       "py": "chéng",
+       "en": "sincerity",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "诚"
+      },
+      {
+       "w": "命",
+       "py": "mìng",
+       "en": "to order",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "命"
+      },
+      {
+       "w": "負",
+       "py": "fù",
+       "en": "to carry on the back",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "负"
+      },
+      {
+       "w": "厝",
+       "py": "cuò",
+       "en": "to place, set down",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "厝"
+      },
+      {
+       "w": "朔",
+       "py": "Shuò",
+       "en": "Shuo, the far north (朔方)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "朔"
+      },
+      {
+       "w": "雍",
+       "py": "Yōng",
+       "en": "Yong, the western province",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "雍"
+      },
+      {
+       "w": "隴斷",
+       "py": "lǒng duàn",
+       "en": "high ridge, barrier (= 壟斷)",
+       "w_s": "陇断"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "賢哉，回也！",
+       "py": "Xián zāi, Huí yě!",
+       "src": "論語·雍也",
+       "en": "How worthy he is, Hui!",
+       "tests": "predicate first in an exclamation (n. 2), 哉",
+       "h_s": "贤哉，回也！"
+      },
+      {
+       "h": "雖曰未學，吾必謂之學矣。",
+       "py": "Suī yuē wèi xué, wú bì wèi zhī xué yǐ.",
+       "src": "論語·學而",
+       "en": "Even if he says he has not studied, I would certainly call him learned.",
+       "tests": "雖 \"even if\", 未, 謂",
+       "h_s": "虽曰未学，吾必谓之学矣。"
+      },
+      {
+       "h": "死而後已，不亦遠乎？",
+       "py": "Sǐ ér hòu yǐ, bù yì yuǎn hū?",
+       "src": "論語·泰伯",
+       "en": "It stops only at death: is that not a long road?",
+       "tests": "已 = to stop; 不亦…乎 (→ L4 n.8)",
+       "h_s": "死而后已，不亦远乎？"
+      },
+      {
+       "h": "泰伯，其可謂至德也已矣。",
+       "py": "Tàibó, qí kě wèi zhì dé yě yǐ yǐ.",
+       "src": "論語·泰伯",
+       "en": "Taibo can surely be called a man of the highest virtue.",
+       "tests": "modal 其 \"surely\"; 也已矣 stacked final particles",
+       "h_s": "泰伯，其可谓至德也已矣。"
+      }
+     ],
+     "culture": "張湛, the 4th-century editor of the *Liezi*, adds a comment at the end of the story: people who want results by evening sigh at the end of the year, but the great man takes heaven and earth for a single morning and countless generations for one long breath, and does not mind whether the work is finished by himself or by others. Mao's reading in 1945 was the same in a political key: the work is collective and goes on beyond any one life. Today 愚公移山 is the standard idiom for tireless perseverance against impossible odds.\n",
+     "title_s": "愚公移山（下）"
     }
    ]
   },
