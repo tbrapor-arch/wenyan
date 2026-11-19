@@ -29029,6 +29029,668 @@
      ],
      "culture": "The idiom is quoted in full as 鷸蚌相爭，漁人得利 \"when the snipe and the mussel fight, the fisherman gets the profit\" (also 漁翁得利); 漁人之利 alone means a windfall won from other people's quarrels. Su Dai's warning came true in the end: within a few decades Qin, which had stayed out of the wars among its neighbours, conquered Zhao in 228 BC and Yan in 222 BC.\n",
      "title_s": "鹬蚌相争"
+    },
+    {
+     "id": 16,
+     "slug": "he-zhe-zhi-fu",
+     "title": "涸轍之鮒",
+     "title_py": "Hé zhé zhī fù",
+     "title_en": "The Carp in the Dry Rut",
+     "source": {
+      "work": "莊子·外物",
+      "author": "莊周 Zhuang Zhou (c. 369–286 BC) and his school; 外物 is one of the \"Miscellaneous Chapters\" (雜篇)",
+      "period": "Warring States",
+      "text_from": "《莊子·雜篇·外物》. Words as in the 四部叢刊 text (南華真經 with 郭象's commentary, Kanseki Repository KR5c0051, 卷九), compared character by character, 2026-11-19, with the Thesaurus Linguae Sericae text in the Kanseki Repository (KR5c0126) and with 王先謙《莊子集解》 in the 殆知閣 collection (simplified characters, so for wording only). Punctuation ours, checked against the two punctuated texts. Variants: the 四部叢刊 text writes 徃 for 往 and reads 周曰諾哉且 where the other two have 諾。我且 (we follow them, see n. 14); the TLS text has 升斗 for the first 斗升 and 无 for 無; a second 殆知閣 transcription (莊子) reads 百金, drops 君 in line 18 and has 我得 for 吾得.\n",
+      "work_s": "庄子·外物"
+     },
+     "status": "draft",
+     "intro": "The first of two lessons from the *Zhuangzi*, the great Daoist book of paradox and laughter. Here Zhuang Zhou tells a story against himself: too poor to eat, he goes to borrow grain from a lord, and is promised a fortune later. It gave Chinese the idiom 涸轍之鮒 for anyone in desperate need. Watch the pronouns: Zhuang Zhou calls himself 周, the fish says 吾 and 我 in the same breath, and a question word stands before its verb in 何為.\n",
+     "lines": [
+      {
+       "h": "莊周家貧，",
+       "py": "Zhuāng Zhōu jiā pín,",
+       "en": "Zhuang Zhou's family was poor,",
+       "h_s": "庄周家贫，"
+      },
+      {
+       "h": "故往貸粟於監河侯。",
+       "py": "gù wǎng dài sù yú Jiānhé hóu.",
+       "en": "so he went to borrow grain from the Marquis of Jianhe.",
+       "h_s": "故往贷粟于监河侯。"
+      },
+      {
+       "h": "監河侯曰：",
+       "py": "Jiānhé hóu yuē:",
+       "en": "The Marquis of Jianhe said:",
+       "h_s": "监河侯曰："
+      },
+      {
+       "h": "「諾。",
+       "py": "Nuò.",
+       "en": "\"Certainly.",
+       "h_s": "「诺。"
+      },
+      {
+       "h": "我將得邑金，",
+       "py": "Wǒ jiāng dé yì jīn,",
+       "en": "I am about to receive the revenue of my fief;",
+       "h_s": "我将得邑金，"
+      },
+      {
+       "h": "將貸子三百金，",
+       "py": "jiāng dài zǐ sān bǎi jīn,",
+       "en": "then I'll lend you three hundred pieces of gold.",
+       "h_s": "将贷子三百金，"
+      },
+      {
+       "h": "可乎？」",
+       "py": "kě hū?",
+       "en": "Will that do?\"",
+       "h_s": "可乎？」"
+      },
+      {
+       "h": "莊周忿然作色曰：",
+       "py": "Zhuāng Zhōu fèn rán zuò sè yuē:",
+       "en": "Zhuang Zhou's face flushed with anger, and he said:",
+       "h_s": "庄周忿然作色曰："
+      },
+      {
+       "h": "「周昨來，",
+       "py": "Zhōu zuó lái,",
+       "en": "\"As I was coming here yesterday,",
+       "lit": "Zhou yesterday came",
+       "h_s": "「周昨来，"
+      },
+      {
+       "h": "有中道而呼者。",
+       "py": "yǒu zhōng dào ér hū zhě.",
+       "en": "someone called out to me halfway along the road.",
+       "h_s": "有中道而呼者。"
+      },
+      {
+       "h": "周顧視車轍中，",
+       "py": "Zhōu gù shì chē zhé zhōng,",
+       "en": "I looked round, into the rut left by a cart,",
+       "h_s": "周顾视车辙中，"
+      },
+      {
+       "h": "有鮒魚焉。",
+       "py": "yǒu fù yú yān.",
+       "en": "and there was a carp in it.",
+       "h_s": "有鲋鱼焉。"
+      },
+      {
+       "h": "周問之曰：",
+       "py": "Zhōu wèn zhī yuē:",
+       "en": "I asked it:",
+       "h_s": "周问之曰："
+      },
+      {
+       "h": "『鮒魚來！",
+       "py": "Fù yú lái!",
+       "en": "'Come, carp!",
+       "h_s": "『鲋鱼来！"
+      },
+      {
+       "h": "子何為者邪？』",
+       "py": "Zǐ hé wéi zhě yé?",
+       "en": "What are you doing here?'",
+       "lit": "you what doing one ?",
+       "h_s": "子何为者邪？』"
+      },
+      {
+       "h": "對曰：",
+       "py": "Duì yuē:",
+       "en": "It answered:",
+       "h_s": "对曰："
+      },
+      {
+       "h": "『我，東海之波臣也。",
+       "py": "Wǒ, Dōng hǎi zhī bō chén yě.",
+       "en": "'I am a minister of the waves of the Eastern Sea.",
+       "h_s": "『我，东海之波臣也。"
+      },
+      {
+       "h": "君豈有斗升之水而活我哉？』",
+       "py": "Jūn qǐ yǒu dǒu shēng zhī shuǐ ér huó wǒ zāi?",
+       "en": "Could you not find a peck or a pint of water, sir, to keep me alive?'",
+       "h_s": "君岂有斗升之水而活我哉？』"
+      },
+      {
+       "h": "周曰：",
+       "py": "Zhōu yuē:",
+       "en": "I said:",
+       "h_s": "周曰："
+      },
+      {
+       "h": "『諾。",
+       "py": "Nuò.",
+       "en": "'Certainly.",
+       "h_s": "『诺。"
+      },
+      {
+       "h": "我且南遊吳越之王，",
+       "py": "Wǒ qiě nán yóu Wú Yuè zhī wáng,",
+       "en": "I am about to travel south to visit the kings of Wu and Yue;",
+       "h_s": "我且南游吴越之王，"
+      },
+      {
+       "h": "激西江之水而迎子，",
+       "py": "jī Xī jiāng zhī shuǐ ér yíng zǐ,",
+       "en": "I'll make the waters of the Western River surge up to meet you.",
+       "h_s": "激西江之水而迎子，"
+      },
+      {
+       "h": "可乎？』",
+       "py": "kě hū?",
+       "en": "Will that do?'",
+       "h_s": "可乎？』"
+      },
+      {
+       "h": "鮒魚忿然作色曰：",
+       "py": "Fù yú fèn rán zuò sè yuē:",
+       "en": "The carp flushed with anger and said:",
+       "h_s": "鲋鱼忿然作色曰："
+      },
+      {
+       "h": "『吾失我常與，",
+       "py": "Wú shī wǒ cháng yǔ,",
+       "en": "'I have lost my constant companion,",
+       "h_s": "『吾失我常与，"
+      },
+      {
+       "h": "我無所處。",
+       "py": "wǒ wú suǒ chǔ.",
+       "en": "and I have nowhere to live.",
+       "h_s": "我无所处。"
+      },
+      {
+       "h": "吾得斗升之水然活耳，",
+       "py": "Wú dé dǒu shēng zhī shuǐ rán huó ěr,",
+       "en": "If I got a peck or a pint of water, then I would live, that's all;",
+       "h_s": "吾得斗升之水然活耳，"
+      },
+      {
+       "h": "君乃言此，",
+       "py": "jūn nǎi yán cǐ,",
+       "en": "and instead you tell me this.",
+       "h_s": "君乃言此，"
+      },
+      {
+       "h": "曾不如早索我於枯魚之肆！』」",
+       "py": "Zēng bù rú zǎo suǒ wǒ yú kū yú zhī sì!",
+       "en": "You might as well look for me straight away at the dried-fish stall!'\"",
+       "h_s": "曾不如早索我于枯鱼之肆！』」"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "莊周",
+       "text": "**莊周** Zhuāng Zhōu is 莊子 \"Master Zhuang\" himself, 周 being his personal name. He lived in Song (→ L1 n.1) and, the 史記 says, turned down the post of chief minister of Chu. **貧** pín \"poor\": the classical word for poverty, *lacking money* (窮 is \"at the end of one's road\", → L13 n.11). 家貧 \"his household was poor\".\n",
+       "at_s": "庄周"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "at": "貸粟於監河侯",
+       "text": "**貸** dài is both \"to borrow\" and \"to lend\": 貸粟於監河侯 \"borrow grain *from* the Marquis\", and in line 6 貸子 \"lend *you*\". The construction tells you which: 貸 X 於 Y \"borrow X from Y\", with 於 marking the person the thing comes from (於 after the verb, → L4 n.2). **粟** sù is millet, the staple grain of the north, and so \"grain, food\" in general. **監河侯** \"the Marquis Overseer of the River\", a lord known only from this story; the 說苑 tells it of Marquis Wen of Wei (魏文侯). 故 \"and so\" (→ L10 n.17).\n",
+       "at_s": "贷粟于监河侯"
+      },
+      {
+       "n": 3,
+       "line": 3,
+       "at": "諾",
+       "text": "**諾** nuò \"yes, very well\": the formal yes of someone agreeing to a request or accepting an order (it lives on in 承諾 \"promise\"). Both men in the story say 諾, and both mean \"not now\".\n",
+       "at_s": "诺"
+      },
+      {
+       "n": 4,
+       "line": 4,
+       "at": "將得",
+       "text": "**將** jiāng before a verb = \"to be going to, about to\", the sense it keeps in modern Chinese (in L10 n.9 the verb 將 was \"to lead\"): 將得邑金 \"I am about to get my fief's revenue\", 將貸子 \"I'll lend you\". **邑** yì \"town, fief\": the land a lord drew his taxes from. **金** jīn \"metal, money\"; 三百金 \"three hundred (units of) gold\" was a fortune.\n",
+       "at_s": "将得"
+      },
+      {
+       "n": 5,
+       "line": 5,
+       "at": "貸子三百金",
+       "text": "**Two objects**: 貸 + person + thing, \"lend you three hundred gold\", like 賜 + person + thing (→ L5 n.2). 子 \"you\", the polite address (→ L2 n.7). 可乎 \"is that all right?\" (乎 → L4 n.8).\n",
+       "at_s": "贷子三百金"
+      },
+      {
+       "n": 6,
+       "line": 7,
+       "at": "忿然作色",
+       "text": "**忿然** fèn rán \"angrily\" (-然 → L3 n.3). **作色** zuò sè \"his colour rose\": 作 \"to rise, stir\" (古今詞義: the root sense of 作, before \"to make\"), and 色 \"the look on one's face, complexion\" (not \"colour\" in general). The carp will use the same words in line 24.\n",
+       "at_s": "忿然作色"
+      },
+      {
+       "n": 7,
+       "line": 8,
+       "at": "周",
+       "text": "**Naming oneself for \"I\".** 周昨來 \"(I,) Zhou, came yesterday\": a speaker may use his own personal name instead of 吾 or 我, a modest form used to a superior or an equal. Confucius calls himself 丘 in the 論語 (exercise 3). It belongs with the humble 臣 of → L15 n.4: both avoid the bare \"I\". **昨** zuó \"yesterday\".\n",
+       "at_s": "周"
+      },
+      {
+       "n": 8,
+       "line": 9,
+       "at": "中道",
+       "text": "**中道** zhōng dào \"halfway along the road\": 中 \"middle\" before the noun, 道 \"road\" (its first sense, before \"the Way\"). 有中道而呼者 \"there was one who called out in the middle of the road\": the 有 … 者 frame (→ L1 n.2), with 而 joining the place to the action (→ L2 n.10).\n",
+       "at_s": "中道"
+      },
+      {
+       "n": 9,
+       "line": 10,
+       "at": "顧視",
+       "text": "**顧** gù \"to turn the head and look (back, round)\" (古今詞義: modern 顧 is mostly \"to attend to, look after\", 照顧). 顧視車轍中 \"looked round into the cart rut\": 視 \"to look at\" (→ L3 n.7), **轍** zhé \"wheel rut\", the track a cart leaves in the mud.\n",
+       "at_s": "顾视"
+      },
+      {
+       "n": 10,
+       "line": 11,
+       "at": "有鮒魚焉",
+       "text": "**有 X 焉** \"there was an X there\": 焉 = 於是 \"in it\", here \"in the rut\" (→ L12 n.25, L13 n.10). **鮒** fù is the crucian carp, a small pond fish.\n",
+       "at_s": "有鲋鱼焉"
+      },
+      {
+       "n": 11,
+       "line": 14,
+       "at": "何為",
+       "text": "**A question word stays before the verb even when it is the object.** 何為 hé wéi \"do what\": 何 \"what\" is the object of 為 \"to do\", yet it stands in front, by the rule of → L9 n.11, as in 牛何之 \"where is the ox going?\" (L9 exercise 1). 子何為者邪 \"you are one who does what?\", i.e. \"what are you (doing here)?\" 邪 yé ends the question (→ L11 n.11). Only question words do this: 為之 \"do it\" keeps 之 after the verb. (何為 can also be read hé wèi \"why?\"; the 者 here shows it is \"do what\".)\n",
+       "at_s": "何为"
+      },
+      {
+       "n": 12,
+       "line": 16,
+       "at": "東海之波臣也",
+       "text": "**我，東海之波臣也** \"I am a minister of the waves of the Eastern Sea\": the judgment sentence A，B也 (→ L1 n.11). The carp is a 臣 (→ L15 n.4) at the court of the sea: a small fish with a grand title, begging for a cupful of water.\n",
+       "at_s": "东海之波臣也"
+      },
+      {
+       "n": 13,
+       "line": 17,
+       "at": "活我",
+       "text": "**活我** huó wǒ \"make me live, save my life\": the verb 活 \"to live\" with an object means \"cause to live\", the causative shift of → L10 n.10. **豈 … 哉** (→ L4 n.11) here makes a request: \"could you possibly …?\" 君 \"you, sir\" (→ L12 n.14). **斗升** dǒu shēng: the 斗 \"peck\" and the 升 (a tenth of a 斗) were small measures for grain and liquids; 斗升之水 \"a peck or a pint of water\".\n",
+       "at_s": "活我"
+      },
+      {
+       "n": 14,
+       "line": 20,
+       "at": "我且南遊",
+       "text": "**且** \"about to\" (→ L5 n.6). **南** \"south\" before the verb means \"southwards\": a noun of direction used as an adverb (→ L10 n.10). **遊** yóu \"to travel (to a court), go and visit\": 遊吳越之王 \"travel to the kings of Wu and Yue\", the way persuaders like Su Dai (L15) went from court to court. 吳 and 越 were the states of the lower Yangzi, far to the south-east. The 四部叢刊 text reads 諾哉且南遊, with 哉 for 我; we follow the other two texts.\n",
+       "at_s": "我且南游"
+      },
+      {
+       "n": 15,
+       "line": 21,
+       "at": "激西江之水",
+       "text": "**激** jī \"to make (water) surge, dam it up so that it rushes on\": 激西江之水而迎子 \"make the waters of the Western River surge up to meet you\" (迎 yíng \"to go to meet, welcome\"; 子 \"you\"). 西江 is the upper Yangzi (成玄英 calls it 蜀江, the river of Shu). Zhuang Zhou mimics the Marquis: a great gift, later.\n",
+       "at_s": "激西江之水"
+      },
+      {
+       "n": 16,
+       "line": 24,
+       "at": "吾失我常與",
+       "text": "**吾 and 我.** Both mean \"I, me, my\", but in pre-Qin prose they share the work: 吾 is a subject or a possessive (\"I\", \"my\") and is not put after a verb as its object; 我 can stand anywhere, as subject, possessive or object, and is the one used for contrast or emphasis. Here they come in one clause: 吾失我常與 \"I have lost my constant companion\". (Compare 吾楯 in L2 and 予 in L3; 王力 discusses this division under 代詞.) **常與** cháng yǔ \"constant companion\": 與 \"to be with\" used as a noun, the carp's word for water.\n",
+       "at_s": "吾失我常与"
+      },
+      {
+       "n": 17,
+       "line": 25,
+       "at": "無所處",
+       "text": "**無所處** \"have nowhere to stay\": 無所 V (→ L11 n.2), with 處 chǔ \"to dwell\" (→ L8 n.3).\n",
+       "at_s": "无所处"
+      },
+      {
+       "n": 18,
+       "line": 26,
+       "at": "然活",
+       "text": "**然** rán \"then (and only then)\" between a condition and its result: 吾得斗升之水然活耳 \"if I got a peck or a pint of water, then I'd live, that's all\". The condition again has no \"if\" (→ L11 n.10, L15 n.9); 然 does the job of 則 (→ L3 n.8) or 乃. 耳 \"that's all\" (→ L11 n.6): it would take so little.\n",
+       "at_s": "然活"
+      },
+      {
+       "n": 19,
+       "line": 27,
+       "at": "乃",
+       "text": "**乃** \"yet, and instead\": 君乃言此 \"and you, instead, say this\". 乃 marks what is contrary to expectation, the \"but then\" of → L5 n.7 turned into a reproach.\n",
+       "at_s": "乃"
+      },
+      {
+       "n": 20,
+       "line": 28,
+       "at": "曾不如",
+       "text": "**曾不如** zēng bù rú \"you might just as well …, it would even be better to …\": 曾 \"even\" (→ L12 n.15) + 不如 \"not as good as\" (→ L13 n.8, 不若). **索** suǒ \"to seek, look for\" (古今詞義: modern 索 is \"rope\" or \"to demand\"). **肆** sì \"shop, market stall\": 枯魚之肆 \"the stall where dried fish are sold\". 早 zǎo \"early, straight away\".\n",
+       "at_s": "曾不如"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "莊周",
+       "py": "Zhuāng Zhōu",
+       "en": "Zhuang Zhou, Master Zhuang",
+       "w_s": "庄周"
+      },
+      {
+       "w": "貧",
+       "py": "pín",
+       "en": "poor",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "贫"
+      },
+      {
+       "w": "貸",
+       "py": "dài",
+       "en": "to borrow (貸 X 於 Y); to lend",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "贷"
+      },
+      {
+       "w": "粟",
+       "py": "sù",
+       "en": "millet, grain",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "粟"
+      },
+      {
+       "w": "監河侯",
+       "py": "Jiānhé hóu",
+       "en": "the Marquis Overseer of the River",
+       "w_s": "监河侯"
+      },
+      {
+       "w": "諾",
+       "py": "nuò",
+       "en": "yes, very well",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "诺"
+      },
+      {
+       "w": "將",
+       "py": "jiāng",
+       "en": "to be going to, about to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "将"
+      },
+      {
+       "w": "邑",
+       "py": "yì",
+       "en": "town (the lord's own domain)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "邑"
+      },
+      {
+       "w": "金",
+       "py": "jīn",
+       "en": "gold, money; a unit of currency",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "金"
+      },
+      {
+       "w": "忿然",
+       "py": "fèn rán",
+       "en": "angrily",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "忿然"
+      },
+      {
+       "w": "作色",
+       "py": "zuò sè",
+       "en": "to flush (with anger)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "作色"
+      },
+      {
+       "w": "昨",
+       "py": "zuó",
+       "en": "yesterday",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "昨"
+      },
+      {
+       "w": "中道",
+       "py": "zhōng dào",
+       "en": "halfway along the road",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "中道"
+      },
+      {
+       "w": "呼",
+       "py": "hū",
+       "en": "to call out",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "呼"
+      },
+      {
+       "w": "顧",
+       "py": "gù",
+       "en": "to turn and look, look round",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "顾"
+      },
+      {
+       "w": "轍",
+       "py": "zhé",
+       "en": "wheel rut",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "辙"
+      },
+      {
+       "w": "鮒",
+       "py": "fù",
+       "en": "crucian carp",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "鲋"
+      },
+      {
+       "w": "波臣",
+       "py": "bō chén",
+       "en": "minister of the waves",
+       "w_s": "波臣"
+      },
+      {
+       "w": "斗",
+       "py": "dǒu",
+       "en": "a peck (measure)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "斗"
+      },
+      {
+       "w": "升",
+       "py": "shēng",
+       "en": "a pint (a tenth of a 斗)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "升"
+      },
+      {
+       "w": "活",
+       "py": "huó",
+       "en": "to make live, save",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "活"
+      },
+      {
+       "w": "遊",
+       "py": "yóu",
+       "en": "to travel to, go and visit",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "游"
+      },
+      {
+       "w": "吳",
+       "py": "Wú",
+       "en": "Wu, a state of the lower Yangzi",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "吴"
+      },
+      {
+       "w": "越",
+       "py": "Yuè",
+       "en": "Yue, a state south of Wu",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "越"
+      },
+      {
+       "w": "激",
+       "py": "jī",
+       "en": "to make (water) surge",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "激"
+      },
+      {
+       "w": "迎",
+       "py": "yíng",
+       "en": "to go to meet, welcome",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "迎"
+      },
+      {
+       "w": "常",
+       "py": "cháng",
+       "en": "constant, regular",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "常"
+      },
+      {
+       "w": "與",
+       "py": "yǔ",
+       "en": "companion (lit. one who is with)",
+       "w_s": "与"
+      },
+      {
+       "w": "然",
+       "py": "rán",
+       "en": "then (and only then)",
+       "w_s": "然"
+      },
+      {
+       "w": "言",
+       "py": "yán",
+       "en": "to say",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "言"
+      },
+      {
+       "w": "早",
+       "py": "zǎo",
+       "en": "early, straight away",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "早"
+      },
+      {
+       "w": "索",
+       "py": "suǒ",
+       "en": "to seek, look for",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "索"
+      },
+      {
+       "w": "枯魚",
+       "py": "kū yú",
+       "en": "dried fish",
+       "w_s": "枯鱼"
+      },
+      {
+       "w": "肆",
+       "py": "sì",
+       "en": "shop, market stall",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "肆"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "諾，吾將仕矣。",
+       "py": "Nuò, wú jiāng shì yǐ.",
+       "src": "論語·陽貨",
+       "en": "Very well, I will take office.",
+       "tests": "諾, 吾 as subject, 將 \"going to\"; Confucius answering Yang Huo, who pressed him to serve",
+       "h_s": "诺，吾将仕矣。"
+      },
+      {
+       "h": "今者吾喪我，汝知之乎？",
+       "py": "Jīn zhě wú sàng wǒ, rǔ zhī zhī hū?",
+       "src": "莊子·齊物論",
+       "en": "Just now I lost my self: did you know it?",
+       "tests": "吾 the subject, 我 the object (n. 16); 今者 (→ L15 n.3); 汝",
+       "h_s": "今者吾丧我，汝知之乎？"
+      },
+      {
+       "h": "十室之邑，必有忠信如丘者焉，不如丘之好學也。",
+       "py": "Shí shì zhī yì, bì yǒu zhōng xìn rú Qiū zhě yān, bù rú Qiū zhī hào xué yě.",
+       "src": "論語·公冶長",
+       "en": "In a town of ten households there are sure to be people as loyal and trustworthy as I am, but none as fond of learning as I am.",
+       "tests": "丘, Confucius naming himself (n. 7); 邑; 有 … 焉; 不如",
+       "h_s": "十室之邑，必有忠信如丘者焉，不如丘之好学也。"
+      },
+      {
+       "h": "回也非助我者也，於吾言無所不說。",
+       "py": "Huí yě fēi zhù wǒ zhě yě, yú wú yán wú suǒ bù yuè.",
+       "src": "論語·先進",
+       "en": "Hui is no help to me: there is nothing in what I say that he does not delight in.",
+       "tests": "我 the object, 吾 the possessive; 無所不 \"nothing that … not\"; 說 = 悅 yuè",
+       "h_s": "回也非助我者也，于吾言无所不说。"
+      }
+     ],
+     "culture": "The idiom 涸轍之鮒 \"the carp in the dried-up rut\" (also 涸轍之魚) is said of anyone in desperate straits, who needs a little help now rather than a great deal later. The story belongs with the many anecdotes of Zhuang Zhou's poverty: in another chapter he goes to see the King of Wei in a patched gown and shoes tied up with string, and tells him that he is \"poor, not down and out\" (貧也，非憊也).\n",
+     "title_s": "涸辙之鲋"
     }
    ]
   },
