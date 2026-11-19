@@ -31254,6 +31254,488 @@
      ],
      "culture": "The idiom 朝三暮四 first meant tricking people with a change that changes nothing, as the keeper does; today it more often means \"to blow hot and cold, keep changing one's mind\". The *Liezi* (chapter 黃帝) tells the same story at more length, about a man of Song who loved his monkeys so much that he fed them from his own family's food, and draws a plainer moral: \"the sage uses his wits to keep the crowd of fools in hand, just as the monkey keeper did with his monkeys\".\n",
      "title_s": "朝三暮四"
+    },
+    {
+     "id": 20,
+     "slug": "liang-xiao-er",
+     "title": "兩小兒辯日",
+     "title_py": "Liǎng xiǎo ér biàn rì",
+     "title_en": "Two Boys Argue about the Sun",
+     "source": {
+      "work": "列子·湯問",
+      "author": "attributed to 列禦寇 Lie Yukou (Warring States); the text as we have it was edited by 張湛 (4th c. AD)",
+      "period": "compiled by the 4th century AD from older material",
+      "text_from": "《列子·湯問》. Words as in the 四部叢刊 text (沖虛至德真經 with 張湛's commentary, Kanseki Repository KR5c0049, 卷五), compared character by character, 2026-11-19, with the 四庫全書 文淵閣 text (KR5c0125) and the Thesaurus Linguae Sericae text (KR5c0124). The two old editions agree word for word; both write 笑 (line 19) in a variant form the transcriptions could not encode, and so does the 四部叢刊 text for 鬭 (line 2), which the 文淵閣 text writes 闘: we write 鬭 and 笑 with the TLS text. The TLS text turns line 7 into speech by adding 曰：「我; the 殆知閣 transcription keeps the words but puts them inside the first boy's quotation (see n. 6). Punctuation ours.\n",
+      "work_s": "列子·汤问"
+     },
+     "status": "draft",
+     "intro": "The last fable of the first stage, and a bridge to the next: its hero is Confucius, whose 論語 begins in lesson 22. The *Liezi*, a Daoist book, enjoys showing the great teacher stumped, here by two small boys arguing about the sun. Look out for 以 meaning \"think\", 去 \"to be distant from\", the pair 及 … 則 … \"when it comes to …, then …\", and the question word 孰 \"who?\".\n",
+     "lines": [
+      {
+       "h": "孔子東游，",
+       "py": "Kǒngzǐ dōng yóu,",
+       "en": "Confucius was travelling in the east",
+       "h_s": "孔子东游，"
+      },
+      {
+       "h": "見兩小兒辯鬭，",
+       "py": "jiàn liǎng xiǎo ér biàn dòu,",
+       "en": "when he saw two little boys quarrelling,",
+       "h_s": "见两小儿辩鬭，"
+      },
+      {
+       "h": "問其故。",
+       "py": "wèn qí gù.",
+       "en": "and asked them why.",
+       "h_s": "问其故。"
+      },
+      {
+       "h": "一兒曰：",
+       "py": "Yī ér yuē:",
+       "en": "One boy said:",
+       "h_s": "一儿曰："
+      },
+      {
+       "h": "「我以日始出時去人近，",
+       "py": "Wǒ yǐ rì shǐ chū shí qù rén jìn,",
+       "en": "\"I think the sun is close to us when it first comes up,",
+       "lit": "I think sun first emerge time distant-from people near",
+       "h_s": "「我以日始出时去人近，"
+      },
+      {
+       "h": "而日中時遠也。」",
+       "py": "ér rì zhōng shí yuǎn yě.",
+       "en": "and far away at noon.\"",
+       "h_s": "而日中时远也。」"
+      },
+      {
+       "h": "一兒以日初出遠，",
+       "py": "Yī ér yǐ rì chū chū yuǎn,",
+       "en": "The other thought the sun was far away when it first comes up,",
+       "h_s": "一儿以日初出远，"
+      },
+      {
+       "h": "而日中時近也。",
+       "py": "ér rì zhōng shí jìn yě.",
+       "en": "and close at noon.",
+       "h_s": "而日中时近也。"
+      },
+      {
+       "h": "一兒曰：",
+       "py": "Yī ér yuē:",
+       "en": "The first boy said:",
+       "h_s": "一儿曰："
+      },
+      {
+       "h": "「日初出大如車蓋，",
+       "py": "Rì chū chū dà rú chē gài,",
+       "en": "\"When the sun first comes up it is as big as a carriage canopy;",
+       "h_s": "「日初出大如车盖，"
+      },
+      {
+       "h": "及日中，",
+       "py": "jí rì zhōng,",
+       "en": "by noon",
+       "h_s": "及日中，"
+      },
+      {
+       "h": "則如盤盂，",
+       "py": "zé rú pán yú,",
+       "en": "it is like a plate or a bowl:",
+       "h_s": "则如盘盂，"
+      },
+      {
+       "h": "此不為遠者小而近者大乎？」",
+       "py": "cǐ bù wéi yuǎn zhě xiǎo ér jìn zhě dà hū?",
+       "en": "isn't this the far thing looking small and the near thing looking big?\"",
+       "h_s": "此不为远者小而近者大乎？」"
+      },
+      {
+       "h": "一兒曰：",
+       "py": "Yī ér yuē:",
+       "en": "The other boy said:",
+       "h_s": "一儿曰："
+      },
+      {
+       "h": "「日初出滄滄涼涼，",
+       "py": "Rì chū chū cāng cāng liáng liáng,",
+       "en": "\"When the sun first comes up it is cool and chilly;",
+       "h_s": "「日初出沧沧凉凉，"
+      },
+      {
+       "h": "及其日中如探湯，",
+       "py": "jí qí rì zhōng rú tàn tāng,",
+       "en": "by noon it is like putting your hand into hot water:",
+       "h_s": "及其日中如探汤，"
+      },
+      {
+       "h": "此不為近者熱而遠者涼乎？」",
+       "py": "cǐ bù wéi jìn zhě rè ér yuǎn zhě liáng hū?",
+       "en": "isn't this the near thing being hot and the far thing cool?\"",
+       "h_s": "此不为近者热而远者凉乎？」"
+      },
+      {
+       "h": "孔子不能決也。",
+       "py": "Kǒngzǐ bù néng jué yě.",
+       "en": "Confucius could not decide between them.",
+       "h_s": "孔子不能决也。"
+      },
+      {
+       "h": "兩小兒笑曰：",
+       "py": "Liǎng xiǎo ér xiào yuē:",
+       "en": "The two little boys laughed and said:",
+       "h_s": "两小儿笑曰："
+      },
+      {
+       "h": "「孰為汝多知乎？」",
+       "py": "Shú wéi rǔ duō zhì hū?",
+       "en": "\"Who says you know so much?\"",
+       "lit": "who says you much-wisdom ?",
+       "h_s": "「孰为汝多知乎？」"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "孔子東游",
+       "text": "**孔子** Kǒngzǐ, Confucius (551–479 BC), whose sayings make up the 論語. **東** \"east\" before the verb is \"eastwards\" (a noun of direction as an adverb, → L16 n.14). **游** yóu \"to travel\": the old editions write 游 here, where L16 had 遊; the two characters were used for the same word.\n",
+       "at_s": "孔子东游"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "at": "辯鬭",
+       "text": "**辯** biàn \"to argue, dispute\"; **鬭** dòu \"to fight, quarrel\": 辯鬭 \"were quarrelling\". *Simplified- character warning:* simplified Chinese writes 斗 both for 鬭 dòu \"to fight\" and for 斗 dǒu \"a peck\" (the measure of → L16 n.13). **小兒** xiǎo ér \"little boys\": 兒 ér is \"child\" (古今詞義: modern 兒 is also the suffix -r).\n",
+       "at_s": "辩鬭"
+      },
+      {
+       "n": 3,
+       "line": 2,
+       "at": "問其故",
+       "text": "**問其故** \"asked the reason for it\": 故 \"cause, reason\" (→ L10 n.4), 其 \"their\" (→ L1 n.6).\n",
+       "at_s": "问其故"
+      },
+      {
+       "n": 4,
+       "line": 4,
+       "at": "我以日始出時去人近",
+       "text": "**以 = \"to think, consider\"** before a clause: 我以 [日始出時去人近] \"I think that [the sun, when it first comes out, is near to people]\". It is 以為 (→ L3 n.10) without its 為, or 以 A 為 B (→ L6 n.9) shortened. **去** qù \"to be away from, at a distance from\" (古今詞義: classical 去 is \"to leave\"; modern 去 \"to go to\" is almost its opposite): 去人近 \"near in its distance from people\". **始** \"first\" (→ L12 n.23); 日始出時 \"the time when the sun first comes out\".\n",
+       "at_s": "我以日始出时去人近"
+      },
+      {
+       "n": 5,
+       "line": 5,
+       "at": "日中時",
+       "text": "**日中** rì zhōng \"midday\", the sun in the middle of the sky. 而 \"whereas\" (→ L1 n.9). The boy states his view as a judgment closed by 也 (→ L1 n.11).\n",
+       "at_s": "日中时"
+      },
+      {
+       "n": 6,
+       "line": 6,
+       "at": "一兒以日初出遠",
+       "text": "**一兒 … 一兒 …** \"one boy … the other boy …\" (→ L13 n.20). The story reports the second boy's view in its own voice, without 曰, with the same 以 \"think\" (n. 4). The TLS text adds 曰：「我 to make it a speech like the first. From line 9 the boys argue in turn: the first one again, then the other. **初** chū \"at first, at the beginning\".\n",
+       "at_s": "一儿以日初出远"
+      },
+      {
+       "n": 7,
+       "line": 9,
+       "at": "大如車蓋",
+       "text": "**Adjective + 如 + noun = \"as … as …\"**: 大如車蓋 \"as big as a carriage canopy\". 如 \"to be like\" (→ L4 n.7, 若). A 車蓋 was the round umbrella over a carriage, about the size of a cart wheel; 盤盂 pán yú in line 12 are \"plates and bowls\" (盂 a wide basin).\n",
+       "at_s": "大如车盖"
+      },
+      {
+       "n": 8,
+       "line": 10,
+       "at": "及日中",
+       "text": "**及 … 則 …** \"when it comes to …, then …\": 及 \"to reach, by the time\" (→ L9 n.10) sets the time and 則 \"then\" (→ L3 n.8) gives what is true at that time. In line 16 及其日中 \"when it reaches its noon\" puts 其 \"its\" inside, and the 則 is left out.\n",
+       "at_s": "及日中"
+      },
+      {
+       "n": 9,
+       "line": 12,
+       "at": "此不為遠者小而近者大乎",
+       "text": "**不為 … 乎** \"isn't this a case of …?\": a rhetorical question expecting \"yes\", like 不亦 … 乎 (→ L4 n.8). 為 wéi \"to be\" (→ L5 n.5); 此 \"this\" (→ L4 n.7). 遠者小而近者大 \"the far one being small and the near one big\": two 者 phrases (→ L1 n.2) with their predicates, joined by 而.\n",
+       "at_s": "此不为远者小而近者大乎"
+      },
+      {
+       "n": 10,
+       "line": 14,
+       "at": "滄滄涼涼",
+       "text": "**滄滄涼涼** cāng cāng liáng liáng \"cool and chilly\": two adjectives, each doubled, for a vivid description (compare 芒芒 → L3 n.3). 滄 cāng \"cold\" (a note in the 文淵閣 text quotes 孔晁: 滄，寒也).\n",
+       "at_s": "沧沧凉凉"
+      },
+      {
+       "n": 11,
+       "line": 15,
+       "at": "探湯",
+       "text": "**湯** tāng \"hot water, boiling water\" (古今詞義: modern 湯 is \"soup\"). **探** tàn \"to reach into, feel for\": 探湯 \"put one's hand into hot water\", the 論語's image for shrinking from evil (exercise 1).\n",
+       "at_s": "探汤"
+      },
+      {
+       "n": 12,
+       "line": 17,
+       "at": "決",
+       "text": "**決** jué \"to decide, settle (a question)\": 孔子不能決也 \"Confucius could not settle it\". 決 is first \"to open a breach in a dyke\" so that the water goes one way; a decision lets the matter flow.\n",
+       "at_s": "决"
+      },
+      {
+       "n": 13,
+       "line": 19,
+       "at": "孰為汝多知乎",
+       "text": "**孰** shú \"who?\": an interrogative pronoun, here the subject. In the 論語 it also asks \"which (of two)?\" (女與回也孰愈, L12 exercise 2). **為** wéi \"to say, consider\", a sense close to 謂 (→ L3 n.4). **知** = 智 zhì \"wisdom, knowledge\": 知 also wrote the noun \"wisdom\", read zhì; 智 is the later character for it (古今字, → L9 n.9). 多知 \"much knowledge\". 汝 \"you\" (→ L12 n.9), the plain \"you\" that children would not use to a master: the *Liezi* is laughing at Confucius.\n",
+       "at_s": "孰为汝多知乎"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "孔子",
+       "py": "Kǒngzǐ",
+       "en": "Confucius",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "孔子"
+      },
+      {
+       "w": "東",
+       "py": "dōng",
+       "en": "eastwards",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "东"
+      },
+      {
+       "w": "游",
+       "py": "yóu",
+       "en": "to travel (= 遊)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "游"
+      },
+      {
+       "w": "小兒",
+       "py": "xiǎo ér",
+       "en": "little boy, child",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "小儿"
+      },
+      {
+       "w": "辯",
+       "py": "biàn",
+       "en": "to argue, dispute",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "辩"
+      },
+      {
+       "w": "鬭",
+       "py": "dòu",
+       "en": "to fight, quarrel",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "鬭"
+      },
+      {
+       "w": "故",
+       "py": "gù",
+       "en": "reason, cause",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "故"
+      },
+      {
+       "w": "以",
+       "py": "yǐ",
+       "en": "to think, consider (that)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "以"
+      },
+      {
+       "w": "始",
+       "py": "shǐ",
+       "en": "first, at first",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "始"
+      },
+      {
+       "w": "去",
+       "py": "qù",
+       "en": "to be distant from",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "去"
+      },
+      {
+       "w": "近",
+       "py": "jìn",
+       "en": "near",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "近"
+      },
+      {
+       "w": "日中",
+       "py": "rì zhōng",
+       "en": "midday, noon",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "日中"
+      },
+      {
+       "w": "遠",
+       "py": "yuǎn",
+       "en": "far",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "远"
+      },
+      {
+       "w": "初",
+       "py": "chū",
+       "en": "at first, at the beginning",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "初"
+      },
+      {
+       "w": "車蓋",
+       "py": "chē gài",
+       "en": "carriage canopy",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "车盖"
+      },
+      {
+       "w": "盤盂",
+       "py": "pán yú",
+       "en": "plates and bowls",
+       "w_s": "盘盂"
+      },
+      {
+       "w": "滄",
+       "py": "cāng",
+       "en": "cold, cool",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "沧"
+      },
+      {
+       "w": "涼",
+       "py": "liáng",
+       "en": "cool, chilly",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "凉"
+      },
+      {
+       "w": "探",
+       "py": "tàn",
+       "en": "to reach into, feel for",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "探"
+      },
+      {
+       "w": "湯",
+       "py": "tāng",
+       "en": "hot water",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "汤"
+      },
+      {
+       "w": "熱",
+       "py": "rè",
+       "en": "hot",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "热"
+      },
+      {
+       "w": "決",
+       "py": "jué",
+       "en": "to decide, settle",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "决"
+      },
+      {
+       "w": "孰",
+       "py": "shú",
+       "en": "who?",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "孰"
+      },
+      {
+       "w": "為",
+       "py": "wéi",
+       "en": "to say, consider",
+       "w_s": "为"
+      },
+      {
+       "w": "知",
+       "py": "zhì",
+       "en": "wisdom, knowledge (= 智)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "知"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "見善如不及，見不善如探湯。",
+       "py": "Jiàn shàn rú bù jí, jiàn bù shàn rú tàn tāng.",
+       "src": "論語·季氏",
+       "en": "When you see good, act as if you could never catch up with it; when you see evil, as if you had put your hand into boiling water.",
+       "tests": "探湯 (n. 11); 如; 及 (→ L9 n.10)",
+       "h_s": "见善如不及，见不善如探汤。"
+      },
+      {
+       "h": "弟子孰為好學？",
+       "py": "Dìzǐ shú wéi hào xué?",
+       "src": "論語·雍也",
+       "en": "Which of your disciples loves learning?",
+       "tests": "孰 (n. 13), here \"which (of them)?\"; 為 wéi \"to be\"; 好 hào",
+       "h_s": "弟子孰为好学？"
+      },
+      {
+       "h": "君子去仁，惡乎成名？",
+       "py": "Jūnzǐ qù rén, wū hū chéng míng?",
+       "src": "論語·里仁",
+       "en": "If a gentleman leaves goodness behind, how is he to make a name?",
+       "tests": "去 \"to leave\" (n. 4); 惡乎 wū hū \"in what way?\": the question word 惡 before its preposition 乎 = 於 (→ L17 n.12, L18 n.1)",
+       "h_s": "君子去仁，恶乎成名？"
+      }
+     ],
+     "culture": "The boys' puzzle is a real one, and Han scholars were already arguing about it (a note in the 文淵閣 text says that 桓譚's 新論 tells the same story): the sun on the horizon does look larger, although it is not nearer, and the noon sun is hotter because its rays fall straight down. The *Liezi* is not interested in the answer. Its point is the boys' last line: even Confucius does not know everything, and a Daoist reader would add that no one does.\n",
+     "title_s": "两小儿辩日"
     }
    ]
   },

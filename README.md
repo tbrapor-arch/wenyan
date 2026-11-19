@@ -75,6 +75,7 @@ line to check. **Mark as done** ticks the lesson on its tile.
 | 17 | 一傅眾咻 | 孟子·滕文公下 | draft: 6 glosses pending (戴不勝, 齊, 莊嶽, 薛居州, 尊, 宋王); text = 四部叢刊, compared with the TLS text and 殆知閣 |
 | 18 | 學弈 | 孟子·告子上 | draft: 1 gloss pending (寒); text = 四部叢刊, compared with the TLS text and 殆知閣; punctuation partly Wiktionary |
 | 19 | 朝三暮四 | 莊子·齊物論 | draft: 7 glosses pending (勞, 神明, 狙公, 芧, 和, 天鈞, 兩行); text = 四部叢刊, compared with the TLS text and 王先謙《莊子集解》 |
+| 20 | 兩小兒辯日 | 列子·湯問 | draft: 2 glosses pending (盤盂, 為); text = 四部叢刊, compared with 四庫全書 and the TLS text |
 | 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
 | 成語 1–10 | the 200 most frequent 成語 | wordfreq ranking | draft: every example and origin passes the private checker; example pinyin generated (AUTO) |
 
