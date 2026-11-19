@@ -1,0 +1,256 @@
+id: 19
+slug: zhao-san-mu-si
+title: 朝三暮四
+title_py: Zhāo sān mù sì
+title_en: Three in the Morning
+source:
+  work: 莊子·齊物論
+  author: 莊周 Zhuang Zhou (c. 369–286 BC); 齊物論 is one of the "Inner Chapters" (內篇)
+  period: Warring States
+  text_from: >
+    《莊子·內篇·齊物論》, from 勞神明為一 to 是之謂兩行. Words as in the 四部叢刊 text (南華真經 with
+    郭象's commentary, Kanseki Repository KR5c0051, 卷一), compared character by character,
+    2026-11-19, with the Thesaurus Linguae Sericae text in the Kanseki Repository (KR5c0126): the
+    same words (四部叢刊 writes 爲, 衆 and 恱). Also read against 王先謙《莊子集解》 in the 殆知閣
+    collection (simplified), which prints 暮 for 莫 and has no 曰 before 狙公, as does the partial
+    citation on English Wiktionary (朝三暮四); we keep the old editions' 曰 and 莫 (n. 6).
+    Punctuation ours, checked against the TLS text and the 集解.
+status: draft
+
+intro: >
+  The second lesson from the *Zhuangzi*, from its most famous chapter, "Making All Things Equal"
+  (齊物論). Zhuangzi has just said that the Way runs through all things and makes them one; people
+  who wear themselves out proving that things are one, when they are one anyway, are like the
+  monkeys in this story. Short but dense: watch 莫 standing for 暮, the conjunctions 然則 and 是以,
+  and 是之謂, an object moved before its verb.
+
+lines:
+  - h: "勞神明為一，"
+    py: "Láo shén míng wéi yī,"
+    en: "To wear out your spirit trying to make things one"
+  - h: "而不知其同也，"
+    py: "ér bù zhī qí tóng yě,"
+    en: "without seeing that they are the same anyway:"
+  - h: "謂之朝三。"
+    py: "wèi zhī zhāo sān."
+    en: "that is called \"three in the morning\"."
+    lit: "call it morning three"
+  - h: "何謂朝三？"
+    py: "Hé wèi zhāo sān?"
+    en: "What is \"three in the morning\"?"
+    lit: "what call morning three ?"
+  - h: "曰："
+    py: "Yuē:"
+    en: "It goes like this."
+  - h: "狙公賦芧，曰："
+    py: "Jū gōng fù xù, yuē:"
+    en: "A monkey keeper was handing out acorns. He said:"
+  - h: "「朝三而莫四。」"
+    py: "Zhāo sān ér mù sì."
+    en: "\"Three in the morning and four in the evening.\""
+  - h: "眾狙皆怒。"
+    py: "Zhòng jū jiē nù."
+    en: "The monkeys were all furious."
+  - h: "曰："
+    py: "Yuē:"
+    en: "He said:"
+  - h: "「然則朝四而莫三。」"
+    py: "Rán zé zhāo sì ér mù sān."
+    en: "\"All right then: four in the morning and three in the evening.\""
+  - h: "眾狙皆悅。"
+    py: "Zhòng jū jiē yuè."
+    en: "The monkeys were all delighted."
+  - h: "名實未虧，"
+    py: "Míng shí wèi kuī,"
+    en: "Nothing was lost, in name or in substance,"
+  - h: "而喜怒為用，"
+    py: "ér xǐ nù wéi yòng,"
+    en: "and yet joy and anger were set to work:"
+  - h: "亦因是也。"
+    py: "yì yīn shì yě."
+    en: "this too is \"going by what is so\"."
+    lit: "also follow this-is-so"
+  - h: "是以聖人和之以是非，"
+    py: "Shì yǐ shèng rén hé zhī yǐ shì fēi,"
+    en: "That is why the sage evens things out with \"right\" and \"wrong\""
+  - h: "而休乎天鈞，"
+    py: "ér xiū hū tiān jūn,"
+    en: "and rests at the centre of Heaven's potter's wheel:"
+  - h: "是之謂兩行。"
+    py: "shì zhī wèi liǎng xíng."
+    en: "this is called \"walking both roads\"."
+    lit: "this 之 call two walk"
+
+notes:
+  - n: 1
+    line: 0
+    at: 勞神明為一
+    text: >
+      **勞** láo "to toil; to wear out" (with an object: 勞神明 "exhaust one's spirit"). **神明** shén míng
+      "the spirit, the mind" (古今詞義: modern 神明 is "the gods"). **為一** wéi yī "to make (things) one",
+      為 "to make" (→ L5 n.5). The sentence is a long topic, "wearing out one's mind making things one,
+      without knowing that they are the same", then 謂之朝三 "(we) call it …".
+  - n: 2
+    line: 1
+    at: 其同
+    text: >
+      **其同** "their being the same": 其 is the subject of a clause after 知 (→ L13 n.16). 而 "and yet"
+      (→ L1 n.9): the effort and the ignorance go together.
+  - n: 3
+    line: 2
+    at: 謂之朝三
+    text: >
+      **謂 A B "to call A B"**: 謂之朝三 "call it 'three in the morning'". With one object 謂 is "to say
+      to" (→ L3 n.4) or "to say of" (→ L17 n.9); with two it is "to call, name". Modern 所謂 "so-called"
+      comes from this. **朝** here is zhāo "morning", not cháo "court, dynasty" (破音字, → L3 n.2).
+  - n: 4
+    line: 3
+    at: 何謂
+    text: >
+      **何謂 X** "what is meant by X?, what is X?": 何 is the object of 謂 and stands before it, like 何為
+      (→ L16 n.11). This is the standard way of asking for a definition, and the 論語 and 孟子 are full of
+      it (exercise 1). 曰 "(I) say", in line 5, introduces the answer: Zhuangzi asks and answers his own
+      question.
+  - n: 5
+    line: 5
+    at: 狙公賦芧
+    text: >
+      **狙** jū "macaque, monkey"; **狙公** "the monkey master" (公 → L12 n.4). **賦** fù "to hand out, give
+      out by shares" (古今詞義: from the same root come 賦 "tax", a share levied, and 賦 the rhymed prose
+      genre). **芧** xù: the nuts of the chestnut oak, food for monkeys (司馬彪, in 陸德明's notes:
+      橡子也 "acorns").
+  - n: 6
+    line: 6
+    at: 莫
+    text: >
+      **莫 = 暮 mù "evening".** 莫 is the old character for dusk: the sun 日 sinking into the grass 茻.
+      When it was borrowed for the pronoun 莫 mò "no one, nothing" (→ L2 n.4), a second 日 was added
+      underneath to write the word "evening", 暮: a pair of old and new characters (古今字, → L9 n.9).
+      The old editions of the 莊子 keep 莫; Wiktionary and many modern editions print 暮, the form of the
+      idiom. 朝三而莫四 "(you get) three in the morning and four in the evening": numbers as predicates,
+      with no verb (→ L8 n.2).
+  - n: 7
+    line: 9
+    at: 然則
+    text: >
+      **然則** rán zé "if so, then; in that case": 然 "so, like that" (→ L6 n.9) + 則 "then" (→ L3 n.8).
+      The keeper takes the monkeys' anger as his premise: "since that won't do, then …". 然則 draws a
+      conclusion from what has just been said, and it is one of the commonest links in argument
+      (exercise 2).
+  - n: 8
+    line: 10
+    at: 悅
+    text: >
+      **悅** yuè "pleased", written with 心 "heart": the word that 說 stood for in L8 (→ L8 n.5). The
+      *Zhuangzi* writes it 悅, the 論語 mostly 說.
+  - n: 9
+    line: 11
+    at: 名實
+    text: >
+      **名** míng "name" and **實** shí "substance, reality": 名實 "the name and the thing", the pair the
+      logicians (名家) argued about. 名實未虧 "neither name nor substance was diminished": seven nuts a day
+      either way. **虧** kuī "to lose, be short".
+  - n: 10
+    line: 12
+    at: 喜怒為用
+    text: >
+      **喜怒為用** "joy and anger were put to use, came into play": 為 wéi "to become, be" (→ L5 n.5) +
+      用 "use". The same seven nuts made the monkeys furious and then happy. 而 "and yet" (→ L1 n.9).
+  - n: 11
+    line: 13
+    at: 因是
+    text: >
+      **因是** yīn shì "going by 'this is so'", a key term of this chapter. **因** "to follow, go along
+      with", the verb behind the adverb 因 "and so" (→ L1 n.5). **是** "this; right, so": the word people
+      use to say "this is right" (是非 "right and wrong", line 15). The monkeys fix on one way of
+      counting and call it right; Zhuangzi's sage also says "this is so", but only as each case comes,
+      without fixing on it. 亦 "also".
+  - n: 12
+    line: 14
+    at: 是以
+    text: >
+      **是以** shì yǐ "for this reason, that is why" = 以是 "because of this": the object 是 of the
+      preposition 以 stands before it, as the question words did in 誰與 (→ L17 n.12). 是以 is a fixed
+      conjunction, the classical "therefore" with 故 (→ L10 n.17); modern 所以 has taken over its job.
+      **聖人** shèng rén "the sage".
+  - n: 13
+    line: 14
+    at: 和之以是非
+    text: >
+      **和之以是非** "harmonises them with right and wrong": V 之以 X (→ L9 n.12). **和** hé "to
+      harmonise, even out"; 之 "them", the opposing views. The sage does not stop people saying "right"
+      and "wrong"; he lets the two sides balance.
+  - n: 14
+    line: 15
+    at: 休乎天鈞
+    text: >
+      **休** xiū "to rest". **乎** = 於 "at" (→ L18 n.1). **天鈞** tiān jūn "Heaven's potter's wheel": 鈞
+      jūn is the turning wheel of a potter (崔譔, in 陸德明's notes: 鈞，陶鈞也). Everything on a wheel
+      turns, except the centre; the sage rests at the axis, where "right" and "wrong" stop spinning.
+  - n: 15
+    line: 16
+    at: 是之謂兩行
+    text: >
+      **是之謂 X** "this is what is called X" = 謂是 X: the object 是 put before the verb 謂 and marked by
+      之, the construction of 惟弈秋之為聽 (→ L18 n.12), here without 惟. 此之謂 … and 是之謂 … end many
+      arguments in the 莊子 and the 孟子 (exercise 4). **兩行** liǎng xíng "walking two roads (at once)":
+      letting both sides of an argument go their way.
+
+glossary:
+  - {w: 勞, py: láo, en: "to wear out, exhaust"}
+  - {w: 神明, py: shén míng, en: "the spirit, the mind"}
+  - {w: 同, py: tóng, en: "the same", checked: [wikt]}
+  - {w: 謂, py: wèi, en: "to call (謂 A B)", checked: [wikt]}
+  - {w: 朝, py: zhāo, en: "morning", checked: [wikt]}
+  - {w: 何謂, py: hé wèi, en: "what is meant by …?", checked: [wikt]}
+  - {w: 狙, py: jū, en: "macaque, monkey", checked: [wikt]}
+  - {w: 狙公, py: jū gōng, en: "monkey keeper"}
+  - {w: 賦, py: fù, en: "to hand out, distribute", checked: [wikt]}
+  - {w: 芧, py: xù, en: "acorns, nuts of the chestnut oak"}
+  - {w: 莫, py: mù, en: "evening (= 暮)", checked: [wikt]}
+  - {w: 怒, py: nù, en: "to be angry", checked: [wikt]}
+  - {w: 然則, py: rán zé, en: "if so, then; in that case", checked: [wikt]}
+  - {w: 悅, py: yuè, en: "pleased, delighted", checked: [wikt]}
+  - {w: 名, py: míng, en: "name", checked: [wikt]}
+  - {w: 實, py: shí, en: "substance, reality", checked: [wikt]}
+  - {w: 虧, py: kuī, en: "to be diminished, lose", checked: [wikt]}
+  - {w: 喜, py: xǐ, en: "joy", checked: [wikt]}
+  - {w: 用, py: yòng, en: "use", checked: [wikt]}
+  - {w: 因, py: yīn, en: "to follow, go along with", checked: [wikt]}
+  - {w: 是, py: shì, en: "this; right, so", checked: [wikt]}
+  - {w: 是以, py: shì yǐ, en: "for this reason, therefore", checked: [wikt]}
+  - {w: 聖人, py: shèng rén, en: "the sage", checked: [wikt]}
+  - {w: 和, py: hé, en: "to harmonise, even out"}
+  - {w: 是非, py: shì fēi, en: "right and wrong", checked: [wikt]}
+  - {w: 休, py: xiū, en: "to rest", checked: [wikt]}
+  - {w: 天鈞, py: tiān jūn, en: "Heaven's potter's wheel"}
+  - {w: 兩行, py: liǎng xíng, en: "walking both roads"}
+
+exercise:
+  - h: "樊遲曰：「何謂也？」子曰：「生，事之以禮；死，葬之以禮，祭之以禮。」"
+    py: "Fán Chí yuē: Hé wèi yě? Zǐ yuē: Shēng, shì zhī yǐ lǐ; sǐ, zàng zhī yǐ lǐ, jì zhī yǐ lǐ."
+    src: 論語·為政
+    en: "Fan Chi said: \"What do you mean?\" The Master said: \"While they live, serve them according to the rites; when they die, bury them according to the rites and sacrifice to them according to the rites.\""
+    tests: "何謂 (n. 4); V 之以 X three times (→ L9 n.12)"
+  - h: "然則夫子既聖矣乎？"
+    py: "Rán zé fūzǐ jì shèng yǐ hū?"
+    src: 孟子·公孫丑上
+    en: "In that case, Master, are you already a sage?"
+    tests: "然則 (n. 7); 既 \"already\"; 矣乎"
+  - h: "敏而好學，不恥下問，是以謂之文也。"
+    py: "Mǐn ér hào xué, bù chǐ xià wèn, shì yǐ wèi zhī Wén yě."
+    src: 論語·公冶長
+    en: "He was quick and loved learning, and was not ashamed to ask those beneath him: that is why he is called Wen, \"the Cultured\"."
+    tests: "是以 (n. 12); 謂 A B (n. 3); 好 hào"
+  - h: "富貴不能淫，貧賤不能移，威武不能屈，此之謂大丈夫。"
+    py: "Fù guì bù néng yín, pín jiàn bù néng yí, wēi wǔ bù néng qū, cǐ zhī wèi dà zhàngfū."
+    src: 孟子·滕文公下
+    en: "Wealth and rank cannot corrupt him, poverty and low station cannot move him, force and might cannot bend him: this is what is called a great man."
+    tests: "此之謂 X, the object before 謂 (n. 15); 貧 (→ L16 n.1)"
+
+culture: >
+  The idiom 朝三暮四 first meant tricking people with a change that changes nothing, as the keeper
+  does; today it more often means "to blow hot and cold, keep changing one's mind". The *Liezi*
+  (chapter 黃帝) tells the same story at more length, about a man of Song who loved his monkeys so
+  much that he fed them from his own family's food, and draws a plainer moral: "the sage uses his
+  wits to keep the crowd of fools in hand, just as the monkey keeper did with his monkeys".
