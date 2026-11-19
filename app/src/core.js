@@ -28,7 +28,11 @@
     }
     return out;
   }
-  function flash(n){ if (!n) return; n.scrollIntoView({behavior: "smooth", block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); }
+  // smooth scrolling only for those who have not asked for reduced motion
+  const smooth = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+  // every tappable word and note number: one rule for mouse, touch and keyboard (events.js)
+  const TAP = ".tok,.w,.cw,sup.nn,.wt,.ztok";
+  function flash(n){ if (!n) return; n.scrollIntoView({behavior: smooth(), block: "center"}); n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); }
   // jump to a section or note of the page (opens the folded list it sits in)
   function jump(id){ const el = document.getElementById(id); if (!el) return; const d = el.closest("details") || (el.tagName === "DETAILS" ? el : null); if (d) d.open = true; flash(el); }
 

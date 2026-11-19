@@ -1,6 +1,6 @@
 /* sheet.css: the bottom sheet of every track (word card, note, back line) */
 #sheet{position:fixed;z-index:30;left:50%;bottom:0;transform:translate(-50%,105%);width:min(620px,100vw);max-height:78vh;overflow:auto;background:var(--paper);border:1px solid var(--rule);border-bottom:0;border-radius:14px 14px 0 0;box-shadow:0 -10px 40px #0003;padding:6px 20px calc(22px + env(safe-area-inset-bottom));transition:transform .22s ease,visibility .22s;visibility:hidden}
-#sheet.open{transform:translate(-50%,0);visibility:visible}
+#sheet.open{transform:translate(-50%,0);visibility:visible;transition:transform .22s ease,visibility 0s}
 #sheet .grab{width:42px;height:4px;border-radius:2px;background:var(--rule);margin:4px auto 8px}
 #sheet .top{display:flex;gap:12px;align-items:flex-start;position:sticky;top:-6px;background:var(--paper);padding:4px 0 8px;border-bottom:1px solid var(--rule)}
 #sheet .top .hd{flex:1;min-width:0}

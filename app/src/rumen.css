@@ -9,7 +9,7 @@
 .sent:last-child{border-bottom:0}
 .sent.noted{background:linear-gradient(90deg,var(--seal-soft),transparent 70%)}
 .who{font-size:13.5px;color:var(--ink-2);display:flex;align-items:center;gap:7px;padding-top:12px;font-family:var(--zh)}
-.who .n{margin-left:auto;font:600 11px var(--en);color:var(--rule)}
+.who .n{margin-left:auto;font:600 11px var(--en);color:var(--ink-2)}
 .av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--seal);color:var(--paper);font:600 13px var(--zh);flex:none}
 .av.b{background:var(--ink-2)}
 .av.c{background:#3d6b4f}

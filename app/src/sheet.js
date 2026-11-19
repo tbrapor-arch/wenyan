@@ -3,17 +3,29 @@
   // what the sheet shows, {label, open}, so that a card opened from inside it can offer "‹ Back to …"; openSheet clears
   // it: read it before calling openSheet, and set it after if your sheet can be come back to
   let sheetCur = null, sheetBackFn = null;
+  // what had the focus when the sheet opened (a word, a note number): it gets it back when the sheet closes
+  let sheetOpener = null;
   const sheetOpen = () => $("#sheet").classList.contains("open");
   function openSheet(html){
-    const sh = $("#sheet"); sh.innerHTML = `<div class="grab"></div>` + html; sheetCur = sheetBackFn = null;
+    const sh = $("#sheet"), a = document.activeElement;
+    if (!(sheetOpen() && sh.contains(a))) sheetOpener = a && a !== document.body && !sh.contains(a) ? a : null;
+    sh.innerHTML = `<div class="grab"></div>` + html; sheetCur = sheetBackFn = null;
     sh.classList.add("open"); sh.setAttribute("aria-hidden", "false"); sh.scrollTop = 0;
+    // a modal dialog named by its headword (a word's, or the note's tag); the focus goes into it
+    const hd = sh.querySelector(".wh, .ntag, h1, h2");
+    sh.setAttribute("aria-modal", "true");
+    sh.setAttribute("aria-label", hd ? ((hd.matches(".wh") && hd.firstChild ? hd.firstChild.textContent : hd.textContent).trim().slice(0, 80) || "Details") : "Details");
+    sh.tabIndex = -1; sh.focus({preventScroll: true});
   }
   // a redraw asked for while a sheet is open (progress changed in another tab or on another device) waits until it closes
   let sheetRedraw = false;
   const redrawLater = () => { if (sheetOpen()) sheetRedraw = true; else rerender(); };
   function closeSheet(){
     const sh = $("#sheet"); if (!sh) return;
-    sh.classList.remove("open"); sh.setAttribute("aria-hidden", "true"); sheetCur = sheetBackFn = null;
+    const was = sheetOpen(), back = sheetOpener, f = document.activeElement;
+    sheetOpener = null;
+    sh.classList.remove("open");
+    if (was && back && back.isConnected && (!f || f === document.body || sh.contains(f))) back.focus({preventScroll: true}); sh.setAttribute("aria-hidden", "true"); sheetCur = sheetBackFn = null;
     $$(".tok.sel,.ztok.sel,.w.sel,.wchip.sel,.cw.sel").forEach(x => x.classList.remove("sel")); $$(".noted").forEach(x => x.classList.remove("noted"));
     $$("sup.nn.on").forEach(x => x.classList.remove("on"));
     if (sheetRedraw){ sheetRedraw = false; rerender(); }
@@ -22,7 +34,7 @@
   function sheetReveal(el){
     const sh = $("#sheet"); if (!sh || !el || sh.contains(el)) return;
     const r = el.getBoundingClientRect(), lim = innerHeight - sh.offsetHeight - 12;
-    if (r.bottom > lim && r.top > 60) scrollBy({top: Math.min(r.bottom - lim, r.top - 60), behavior: "smooth"});
+    if (r.bottom > lim && r.top > 60) scrollBy({top: Math.min(r.bottom - lim, r.top - 60), behavior: smooth()});
   }
   // a "‹ Back to …" line at the top of the sheet now open: fn reopens what was there
   function sheetBack(label, fn){

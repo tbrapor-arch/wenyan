@@ -316,6 +316,11 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   build's rule (`tools/zh_words.py`), and `make app` fails if the page's own code (`app/src/dict.js`, run in Node)
   would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole; so is a 入門 multiple-choice
   question, with its answer in the gap (the build checks that full sentence), the gap drawn inside that cut.
+- **Keyboard and screen readers.** Every tappable word and note number is a button that Enter / Space opens, with
+  the same rules as a tap. A line (a block of words) is one tab stop; the arrow keys (and Home / End) move between its
+  words (roving tabindex: a lesson has hundreds of words, one stop each would make Tab useless). The sheet is a modal
+  dialog named by its headword: the focus goes into it, Tab stays inside, Escape closes it and the focus goes back to
+  the word. Smooth scrolling is turned off under "reduce motion"; text contrast is at least 4.5:1, night mode too.
 - **Taps.** With pinyin on tap, the first tap on a 入門 word shows its pinyin, the next opens the card; with Cover,
   the first tap on any word of a hidden line reveals the line, the next opens the word.
 - **Settings:** one script choice for every track (as written / traditional / simplified; the dictionary follows it),

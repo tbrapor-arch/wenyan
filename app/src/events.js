@@ -42,6 +42,53 @@
     const cv = t.closest("[data-cv]");
     if (cv && S.cover && !t.closest("button,a,details")) $$(`[data-cv="${cv.dataset.cv}"]`).forEach(x => x.classList.toggle("peek"));
   });
+  /* ---------- keyboard ---------- */
+  // Every tappable word and note number (TAP) answers Enter / Space as a tap (so Cover's first-tap and pinyin-on-tap
+  // rules hold for the keyboard too). A line is one tab stop, not one per word (a lesson has hundreds): the first word
+  // of each block is in the tab order, the arrow keys (← → Home End) move between the words of that block, and the
+  // word last reached stays the block's tab stop (roving tabindex).
+  const tapBlock = el => el.parentElement && el.parentElement.closest("p,li,td,th,dd,div,h1,h2,h3,blockquote,summary") || el.parentElement;
+  function rovingInit(root){
+    const groups = new Map();
+    for (const el of root.querySelectorAll(TAP)){
+      if (!el.hasAttribute("role")) el.setAttribute("role", "button");
+      const g = tapBlock(el); if (!groups.has(g)) groups.set(g, []); groups.get(g).push(el);
+    }
+    for (const els of groups.values()){
+      const cur = els.find(x => x.getAttribute("tabindex") === "0" && x.dataset.rv) || els[0];
+      for (const x of els){ x.tabIndex = x === cur ? 0 : -1; x.dataset.rv = "1"; }
+    }
+  }
+  let rvQ = false;
+  const rvSoon = () => { if (rvQ) return; rvQ = true; queueMicrotask(() => { rvQ = false; rovingInit(document.body); }); };
+  new MutationObserver(rvSoon).observe(document.body, {childList: true, subtree: true});
+  const focusables = sh => [sh, ...sh.querySelectorAll('button:not([disabled]),a[href],input,select,textarea,[tabindex="0"]')].filter(x => x === sh || x.getClientRects().length);
+  document.addEventListener("keydown", e => {
+    const sh = $("#sheet");
+    // Tab stays inside the open sheet
+    if (e.key === "Tab"){ tabbing = true; setTimeout(() => { tabbing = false; }); }
+    if (e.key === "Tab" && sh && sheetOpen()){
+      const fs = focusables(sh), i = fs.indexOf(document.activeElement);
+      if (i < 0 || (!e.shiftKey && i === fs.length - 1) || (e.shiftKey && i <= 0)){ e.preventDefault(); (e.shiftKey ? fs[fs.length - 1] : fs[i < 0 ? 0 : fs.length > 1 ? 1 : 0]).focus(); }
+      return;
+    }
+    const t = e.target.closest && e.target.closest(TAP);
+    if (!t || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); e.stopPropagation(); t.click(); return; }
+    const mv = {ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1, Home: "first", End: "last"}[e.key];
+    if (mv === undefined) return;
+    e.preventDefault(); e.stopPropagation();   // not the lesson's ← → (previous / next lesson)
+    const g = tapBlock(t), els = [...g.querySelectorAll(TAP)].filter(x => tapBlock(x) === g), i = els.indexOf(t);
+    const to = mv === "first" ? els[0] : mv === "last" ? els[els.length - 1] : els[Math.max(0, Math.min(els.length - 1, i + mv))];
+    if (to && to !== t){ t.tabIndex = -1; to.tabIndex = 0; to.focus(); }
+  }, true);
+  // and if the focus still gets out of the open sheet (an element the list above missed), it is brought back in
+  let tabbing = false;   // only a Tab is pulled back: a tap outside the sheet closes it (events below)
+  document.addEventListener("focusin", e => {
+    const sh = $("#sheet");
+    if (!tabbing || !sh || !sheetOpen() || sh.contains(e.target)) return;
+    const fs = focusables(sh); (fs[fs.length > 1 ? 1 : 0] || sh).focus({preventScroll: true});
+  });
   document.addEventListener("change", e => { if (e.target.id === "file" && e.target.files[0]) loadFile(e.target.files[0]); });
   addEventListener("keydown", e => {
     if (e.key === "Escape") return closeSheet();

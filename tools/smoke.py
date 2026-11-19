@@ -594,10 +594,105 @@ def display(b):
     print(f"smoke: display: chips 'reading · HSK n'; our reading in the header of {n} sheets; {nq} multiple-choice questions cut whole")
 
 
+KBD_STOPS = """() => { const TAP = '.tok,.w,.cw,sup.nn,.wt,.ztok', all = [...document.querySelectorAll('#app ' + TAP)];
+  const block = el => el.parentElement.closest('p,li,td,th,dd,div,h1,h2,h3,blockquote,summary');
+  const by = new Map(); for (const el of all){ const b = block(el); by.set(b, (by.get(b) || 0) + (el.tabIndex === 0 ? 1 : 0)); }
+  return {words: all.length, stops: all.filter(x => x.tabIndex === 0).length, blocks: by.size, bad: [...by.values()].filter(n => n !== 1).length,
+          norole: all.filter(x => x.getAttribute('role') !== 'button').length}; }"""
+
+
+def keyboard(b):
+    """finding 10: every tappable word and note number works from the keyboard (Enter / Space, Cover's first tap too);
+    one tab stop per line, arrows between its words; the sheet is a labelled modal that takes the focus, keeps Tab
+    inside, closes on Escape and gives the focus back; no smooth scrolling under reduced motion; 入門 line numbers
+    readable in night mode"""
+    ctx = b.new_context(viewport={"width": 1200, "height": 850}, reduced_motion="reduce")
+    ctx.add_init_script("""window.__smooth = 0; const _si = Element.prototype.scrollIntoView;
+      Element.prototype.scrollIntoView = function(o){ if (o && o.behavior === 'smooth') window.__smooth++; return _si.call(this, o); };
+      const _sb = window.scrollBy; window.scrollBy = function(o){ if (o && o.behavior === 'smooth') window.__smooth++; return _sb.apply(this, arguments); };""")
+    page = ctx.new_page()
+    page.on("pageerror", lambda e: errors.append(f"keyboard: {e}"))
+    page.goto(PAGE); page.evaluate("localStorage.clear(); localStorage.setItem('wy.migrated', 'true')")
+    # one tab stop per block of words, every word a button
+    for r in ("wenyan/1", "baihua/1", "rumen/3", "chengyu/1"):
+        page.goto(PAGE + "#" + r); page.reload(); page.wait_for_selector(".lbar"); page.wait_for_timeout(100)
+        st = page.evaluate(KBD_STOPS)
+        if st["bad"] or st["norole"] or st["stops"] != st["blocks"] or (st["words"] > 100 and st["stops"] > st["words"] / 3):
+            errors.append(f"keyboard: {r}: tab stops {st}")
+    # Enter (and Space) on each kind of tappable: the sheet opens, labelled, with the focus; Tab stays in; Escape gives it back
+    for r, sel, key in (("rumen/3", ".dlg .tok", "Enter"), ("wenyan/1", ".page.left .w", "Enter"), ("wenyan/1", "sup.nn", " "),
+                        ("baihua/1", ".page.left .ztok", "Enter"), ("chengyu/1", ".cy .cw", " "), ("rumen/3", "#sec-notes .wt", "Enter")):
+        page.goto(PAGE + "#" + r); page.wait_for_selector(".lbar"); page.wait_for_timeout(100)
+        if sel.startswith("#sec-notes"):
+            page.evaluate("document.querySelector('#sec-notes').open = true")
+        el = page.locator(sel).first
+        el.scroll_into_view_if_needed(); el.focus(); page.keyboard.press(key)
+        try:
+            page.wait_for_selector("#sheet.open", timeout=2000)
+        except Exception:
+            errors.append(f"keyboard: {r} {sel}: {key!r} did not open the sheet"); continue
+        a = page.evaluate("""() => { const sh = document.querySelector('#sheet');
+          return {modal: sh.getAttribute('aria-modal'), label: sh.getAttribute('aria-label') || '', role: sh.getAttribute('role'), focus: sh.contains(document.activeElement)}; }""")
+        if a["modal"] != "true" or not a["label"] or a["role"] != "dialog" or not a["focus"]:
+            errors.append(f"keyboard: {r} {sel}: sheet {a}")
+        for _ in range(25):
+            page.keyboard.press("Tab")
+        if not page.evaluate("document.querySelector('#sheet').contains(document.activeElement)"):
+            errors.append(f"keyboard: {r} {sel}: Tab left the open sheet")
+        page.keyboard.press("Shift+Tab")
+        if not page.evaluate("document.querySelector('#sheet').contains(document.activeElement)"):
+            errors.append(f"keyboard: {r} {sel}: Shift+Tab left the open sheet")
+        page.keyboard.press("Escape"); page.wait_for_selector("#sheet:not(.open)", state="attached")
+        if not page.evaluate(f"document.activeElement === document.querySelector('{sel}')"):
+            errors.append(f"keyboard: {r} {sel}: the focus did not come back after Escape")
+    # arrows move between the words of a line, not to the next lesson
+    page.goto(PAGE + "#baihua/1"); page.wait_for_selector(".lbar"); page.wait_for_timeout(100)
+    first = page.locator('.page.left [tabindex="0"].ztok').first; first.focus()
+    w0 = page.evaluate("document.activeElement.dataset.z")
+    page.keyboard.press("ArrowRight")
+    moved = page.evaluate("[document.activeElement.matches('.ztok,.w,sup.nn'), document.activeElement.tabIndex, location.hash]")
+    if not moved[0] or moved[1] != 0 or moved[2] != "#baihua/1":
+        errors.append(f"keyboard: ArrowRight did not move to the next word of the line {moved}")
+    page.keyboard.press("ArrowLeft")
+    if page.evaluate("document.activeElement.dataset.z") != w0 or page.evaluate("location.hash") != "#baihua/1":
+        errors.append("keyboard: ArrowLeft did not come back to the first word")
+    # Cover: the first Enter on a word of a hidden line reveals it, the next opens the word
+    page.locator("#tCover").click(); page.wait_for_selector("html.cover")
+    tok = page.locator('.page.left .ln[data-i="1"] .ztok').first
+    tok.evaluate("el => { const b = el.parentElement.closest('p,li,td,th,dd,div,h1,h2,h3,blockquote,summary'); b.querySelectorAll('[tabindex]').forEach(x => x.tabIndex = -1); el.tabIndex = 0; el.focus(); }")
+    page.keyboard.press("Enter"); page.wait_for_timeout(150)
+    if not page.locator('.ln[data-i="1"].peek').count() or page.locator("#sheet.open").count():
+        errors.append("keyboard: with Cover, the first Enter did not only reveal the line")
+    page.keyboard.press("Enter")
+    try:
+        page.wait_for_selector("#sheet.open", timeout=2000)
+    except Exception:
+        errors.append("keyboard: with Cover, the second Enter did not open the word")
+    page.keyboard.press("Escape"); page.locator("#tCover").click(); page.wait_for_selector("html:not(.cover)")
+    # reduced motion: no smooth scrolling (a reference that flashes its note, a word near the bottom)
+    page.goto(PAGE + "#wenyan/7"); page.wait_for_selector(".recap")
+    page.locator(".refs .ref").first.click(); page.wait_for_selector(".note.flash")
+    page.goto(PAGE + "#baihua/1"); page.wait_for_selector(".lbar")
+    page.evaluate("[...document.querySelectorAll('#app .ztok')].filter(x => x.getBoundingClientRect().top > innerHeight * .8 && x.getBoundingClientRect().bottom < innerHeight)[0]?.click()")
+    if page.evaluate("window.__smooth"):
+        errors.append(f"keyboard: {page.evaluate('window.__smooth')} smooth scrolls under prefers-reduced-motion")
+    # night mode: 入門 line numbers at 4.5:1 at least
+    page.evaluate("localStorage.setItem('wy.settings', JSON.stringify({script: 'src', pinyin: 'above', cover: false, rlang: 'fr', night: true}))")
+    page.goto(PAGE + "#rumen/3"); page.reload(); page.wait_for_selector(".lbar")
+    cr = page.evaluate(r"""() => { const el = document.querySelector('.who .n'); const rgb = c => c.match(/[\d.]+/g).slice(0, 3).map(Number);
+      const bg = e => { for (; e; e = e.parentElement){ const c = getComputedStyle(e).backgroundColor; if (!/rgba\(0, 0, 0, 0\)|transparent/.test(c)) return rgb(c); } return [255, 255, 255]; };
+      const lum = c => { const f = v => (v /= 255) <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); return .2126 * f(c[0]) + .7152 * f(c[1]) + .0722 * f(c[2]); };
+      const a = lum(rgb(getComputedStyle(el).color)), b = lum(bg(el)); return (Math.max(a, b) + .05) / (Math.min(a, b) + .05); }""")
+    if cr < 4.5:
+        errors.append(f"keyboard: 入門 line numbers in night mode at {cr:.2f}:1 (want 4.5)")
+    ctx.close()
+    print(f"smoke: keyboard: one tab stop per line, Enter / Space on every kind of word, the sheet a modal with the focus; reduced motion; night line numbers {cr:.1f}:1")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage, "display": display}
+         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage, "display": display, "keyboard": keyboard}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:

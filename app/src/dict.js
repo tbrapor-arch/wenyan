@@ -67,7 +67,7 @@
     });
     return out;
   }
-  const zhTok = (t, c) => `<span class="ztok" tabindex="0" role="button" data-z="${esc(t[0])}"${t[1] ? ` data-r="${t[1]}"` : ""}${c ? ' data-c="1"' : ""}>${esc(t[0])}</span>`;
+  const zhTok = (t, c) => `<span class="ztok" tabindex="-1" role="button" data-z="${esc(t[0])}"${t[1] ? ` data-r="${t[1]}"` : ""}${c ? ' data-c="1"' : ""}>${esc(t[0])}</span>`;
   // Chinese text -> HTML: the text unaltered, each word a focusable span (role=button) that opens the dictionary
   function zhLine(text){ return zhCut(text).map(t => typeof t === "string" ? esc(t) : zhTok(t)).join(""); }
   // classical Chinese: never cut into words (the lesson's glossary is the authority), one character at a time
@@ -326,7 +326,4 @@
     if (t.classList.contains("ztok") && typeof revealFirst === "function" && revealFirst(t)) return;   // Cover (events.js)
     if (t.classList.contains("ztok")) openZh(t); else zhAct(t);
   }, true);
-  document.addEventListener("keydown", e => {
-    const t = (e.key === "Enter" || e.key === " ") && e.target.closest && e.target.closest(".ztok");
-    if (t){ e.preventDefault(); e.stopPropagation(); openZh(t); }
-  }, true);
+  // keys (Enter / Space, arrows between words): events.js, one rule for every tappable word
