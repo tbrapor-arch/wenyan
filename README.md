@@ -65,6 +65,7 @@ line to check. **Mark as done** ticks the lesson on its tile.
 | 7 | 複習一 | review of 1–6 | draft |
 | 8 | 濫竽充數 | 韓非子·內儲說上 | draft: all 22 glosses checked on Wiktionary; text compared with the 四庫全書 text |
 | 9 | 鄭人買履 | 韓非子·外儲說左上 | draft: 1 gloss pending (操); text = HK EDB edition, compared with Wiktionary and 四庫全書 |
+| 10 | 塞翁失馬 | 淮南子·人間訓 | draft: 2 glosses pending (何遽, 居); text = Wiktionary, compared with Wikipedia and 四庫全書 |
 | 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
 | 成語 1–10 | the 200 most frequent 成語 | wordfreq ranking | draft: every example and origin passes the private checker; example pinyin generated (AUTO) |
 

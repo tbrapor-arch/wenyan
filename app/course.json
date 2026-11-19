@@ -25102,6 +25102,659 @@
      ],
      "culture": "Han Fei tells the story in a section on scholars who argue from ancient texts instead of from the case in front of them. The idiom 鄭人買履 (also 買履忘度) mocks anyone who sticks to a rule or a document even when the plain facts are at hand: the feet were there all along.\n",
      "title_s": "郑人买履"
+    },
+    {
+     "id": 10,
+     "slug": "sai-weng",
+     "title": "塞翁失馬",
+     "title_py": "Sài wēng shī mǎ",
+     "title_en": "The Old Man at the Frontier Loses His Horse",
+     "source": {
+      "work": "淮南子·人間訓",
+      "author": "compiled at the court of 劉安 Liu An, King of Huainan (179–122 BC)",
+      "period": "Western Han (c. 139 BC)",
+      "text_from": "《淮南子·人間訓》, as quoted on English Wiktionary 塞翁失馬，焉知非福 (CC BY-SA). Compared line by line, 2026-11-19, with the English Wikipedia article \"The old man lost his horse\" and with the unpunctuated 四庫全書 文淵閣 text (淮南鴻烈解, Kanseki Repository KR3j0010, 卷十八). We write 弔 with Wikipedia's variant note and the 文淵閣 text, where Wiktionary has the popular form 吊. The 文淵閣 text also has 引絃 for 引弦 and, in line 18, 何不遽為福 (see n. 7).\n",
+      "work_s": "淮南子·人间训"
+     },
+     "status": "draft",
+     "intro": "The *Huainanzi* is a large Han-dynasty compendium written by the scholars of Liu An, King of Huainan, and presented to the young Emperor Wu in 139 BC. The chapter \"In the World of Men\" (人間訓) collects stories about how luck turns. In this one the same sentence comes back three times, so the story is easy to follow; give your attention to the small words: 何遽 in the questions, 故 in three senses, and an adjective used as a verb (家富良馬), the first example of the \"shift of word class\" (詞類活用) that runs all through Classical Chinese.\n",
+     "lines": [
+      {
+       "h": "夫禍福之轉而相生，",
+       "py": "Fú huò fú zhī zhuǎn ér xiāng shēng,",
+       "en": "Now, the way misfortune and good fortune turn into each other and give rise to each other —",
+       "h_s": "夫祸福之转而相生，"
+      },
+      {
+       "h": "其變難見也。",
+       "py": "qí biàn nán jiàn yě.",
+       "en": "its changes are hard to see.",
+       "h_s": "其变难见也。"
+      },
+      {
+       "h": "近塞上之人有善術者，",
+       "py": "Jìn sài shàng zhī rén yǒu shàn shù zhě,",
+       "en": "Among the people who lived near the frontier there was a man skilled in divination.",
+       "lit": "near frontier-on 's people there-was good-at arts one",
+       "h_s": "近塞上之人有善术者，"
+      },
+      {
+       "h": "馬無故亡而入胡。",
+       "py": "mǎ wú gù wáng ér rù Hú.",
+       "en": "His horse ran off for no reason into the land of the Hu.",
+       "h_s": "马无故亡而入胡。"
+      },
+      {
+       "h": "人皆弔之。",
+       "py": "Rén jiē diào zhī.",
+       "en": "Everyone came to condole with him.",
+       "h_s": "人皆吊之。"
+      },
+      {
+       "h": "其父曰：",
+       "py": "Qí fù yuē:",
+       "en": "The father said:",
+       "h_s": "其父曰："
+      },
+      {
+       "h": "「此何遽不為福乎？」",
+       "py": "Cǐ hé jù bù wéi fú hū?",
+       "en": "\"Who's to say this won't turn into good fortune?\"",
+       "lit": "this how readily not become fortune ?",
+       "h_s": "「此何遽不为福乎？」"
+      },
+      {
+       "h": "居數月，",
+       "py": "Jū shù yuè,",
+       "en": "Some months later,",
+       "h_s": "居数月，"
+      },
+      {
+       "h": "其馬將胡駿馬而歸。",
+       "py": "qí mǎ jiāng Hú jùn mǎ ér guī.",
+       "en": "his horse came back, leading a fine horse of the Hu.",
+       "h_s": "其马将胡骏马而归。"
+      },
+      {
+       "h": "人皆賀之。",
+       "py": "Rén jiē hè zhī.",
+       "en": "Everyone congratulated him.",
+       "h_s": "人皆贺之。"
+      },
+      {
+       "h": "其父曰：",
+       "py": "Qí fù yuē:",
+       "en": "The father said:",
+       "h_s": "其父曰："
+      },
+      {
+       "h": "「此何遽不能為禍乎？」",
+       "py": "Cǐ hé jù bù néng wéi huò hū?",
+       "en": "\"Who's to say this can't turn into misfortune?\"",
+       "h_s": "「此何遽不能为祸乎？」"
+      },
+      {
+       "h": "家富良馬，",
+       "py": "Jiā fù liáng mǎ,",
+       "en": "The household was now rich in fine horses,",
+       "lit": "household rich(-in) fine horses",
+       "h_s": "家富良马，"
+      },
+      {
+       "h": "其子好騎，",
+       "py": "qí zǐ hào qí,",
+       "en": "and his son loved riding.",
+       "h_s": "其子好骑，"
+      },
+      {
+       "h": "墮而折其髀。",
+       "py": "duò ér zhé qí bì.",
+       "en": "He fell and broke his thigh.",
+       "h_s": "堕而折其髀。"
+      },
+      {
+       "h": "人皆弔之。",
+       "py": "Rén jiē diào zhī.",
+       "en": "Everyone came to condole with him.",
+       "h_s": "人皆吊之。"
+      },
+      {
+       "h": "其父曰：",
+       "py": "Qí fù yuē:",
+       "en": "The father said:",
+       "h_s": "其父曰："
+      },
+      {
+       "h": "「此何遽不為福乎？」",
+       "py": "Cǐ hé jù bù wéi fú hū?",
+       "en": "\"Who's to say this won't turn into good fortune?\"",
+       "h_s": "「此何遽不为福乎？」"
+      },
+      {
+       "h": "居一年，",
+       "py": "Jū yī nián,",
+       "en": "A year later",
+       "h_s": "居一年，"
+      },
+      {
+       "h": "胡人大入塞，",
+       "py": "Hú rén dà rù sài,",
+       "en": "the Hu invaded the frontier in force.",
+       "h_s": "胡人大入塞，"
+      },
+      {
+       "h": "丁壯者引弦而戰，",
+       "py": "dīng zhuàng zhě yǐn xián ér zhàn,",
+       "en": "The able-bodied men drew their bows and fought;",
+       "h_s": "丁壮者引弦而战，"
+      },
+      {
+       "h": "近塞之人，",
+       "py": "jìn sài zhī rén,",
+       "en": "of the people near the frontier,",
+       "h_s": "近塞之人，"
+      },
+      {
+       "h": "死者十九，",
+       "py": "sǐ zhě shí jiǔ,",
+       "en": "nine in ten died.",
+       "lit": "dying ones ten-nine",
+       "h_s": "死者十九，"
+      },
+      {
+       "h": "此獨以跛之故，",
+       "py": "cǐ dú yǐ bǒ zhī gù,",
+       "en": "This one alone, because of the lameness,",
+       "h_s": "此独以跛之故，"
+      },
+      {
+       "h": "父子相保。",
+       "py": "fù zǐ xiāng bǎo.",
+       "en": "father and son both came through safe.",
+       "h_s": "父子相保。"
+      },
+      {
+       "h": "故福之為禍，",
+       "py": "Gù fú zhī wéi huò,",
+       "en": "So the way good fortune becomes misfortune",
+       "h_s": "故福之为祸，"
+      },
+      {
+       "h": "禍之為福，",
+       "py": "huò zhī wéi fú,",
+       "en": "and misfortune becomes good fortune:",
+       "h_s": "祸之为福，"
+      },
+      {
+       "h": "化不可極，",
+       "py": "huà bù kě jí,",
+       "en": "its transformations can't be followed to the end,",
+       "h_s": "化不可极，"
+      },
+      {
+       "h": "深不可測也。",
+       "py": "shēn bù kě cè yě.",
+       "en": "its depths can't be fathomed.",
+       "h_s": "深不可测也。"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "禍福之轉而相生",
+       "text": "The opening sentence is the author's thesis, and it also closes the story that comes before it in the chapter. 夫 fú \"now\" announces a general statement (→ L2 n.9). 禍福之轉而相生 is a whole sentence turned into a noun phrase by 之 (→ L2 n.3): \"misfortune and fortune's turning and giving rise to each other\" (相 \"each other\", → L5 n.3). 其變 \"its changes\" picks it up again.\n",
+       "at_s": "祸福之转而相生"
+      },
+      {
+       "n": 2,
+       "line": 2,
+       "at": "近塞上之人",
+       "text": "**塞** has two readings: **sài** \"frontier pass, border fortress\" (here, and in the idiom 塞翁 \"the old man of the frontier\") and **sè** \"to block\" (→ L11, L12). 近塞上之人 \"the people living near the frontier\" is a long modifier + 之 + noun (→ L1 n.10), and 有 … 者 brings the hero on stage (→ L1 n.2).\n",
+       "at_s": "近塞上之人"
+      },
+      {
+       "n": 3,
+       "line": 2,
+       "at": "善術",
+       "text": "**善 = \"to be good at\"** (古今詞義): before a verb or noun, 善 is a skill, not a virtue: 善術 \"good at the arts\" (compare 我善養吾浩然之氣, exercise 3). **術** shù \"art, technique\", here the arts of reading omens and fate (數術). Modern 善 leans to \"kind\" (善良) and 術 to \"technique\" (技術); both older senses live on in compounds like 善於 \"good at\" and 算術 \"arithmetic\".\n",
+       "at_s": "善术"
+      },
+      {
+       "n": 4,
+       "line": 3,
+       "at": "無故亡",
+       "text": "**故** gù \"cause, reason\": 無故 \"without cause, for no reason\". (In L4 故法 was \"old laws\": → L4 n.9. The two uses look unrelated, but 故 is \"what was there before\", hence both \"old\" and \"the cause\".) **亡** wáng \"to run away, go missing\" (→ L5 n.12). **胡** Hú: the horse-riding peoples of the northern steppe.\n",
+       "at_s": "无故亡"
+      },
+      {
+       "n": 5,
+       "line": 4,
+       "at": "弔",
+       "text": "**弔** diào \"to offer condolences, commiserate\" — not \"to hang\". The popular form 吊 (the one Wiktionary's text has, and the simplified form) later took on the sense \"to hang, suspend\". Its opposite comes in line 10: **賀** hè \"to congratulate\". The story swings between the two.\n",
+       "at_s": "吊"
+      },
+      {
+       "n": 6,
+       "line": 5,
+       "at": "其父",
+       "text": "**其父** qí fù \"his father\": the father of that household, i.e. the man skilled in divination himself, who is old and has a grown son (父子 in line 25). Wiktionary and most editions read 父 fù; some teachers read it fǔ \"old man\", a respectful word for an elder, with the same result: he is the 塞翁, the old man of the idiom.\n",
+       "at_s": "其父"
+      },
+      {
+       "n": 7,
+       "line": 6,
+       "at": "何遽",
+       "text": "**何遽 … 乎** \"how can one be so quick to say …?\" 何 \"how\" + 遽 jù \"hastily, at once\" (→ L4 n.3) make a rhetorical question (→ L4 n.8): 此何遽不為福乎 \"how can you be sure this won't become good fortune?\" = it may well do. **為** wéi \"to become\" (→ L5 n.5). In the third round (line 18) the 四庫全書 text reads 此何不遽為福乎, with the same meaning.\n",
+       "at_s": "何遽"
+      },
+      {
+       "n": 8,
+       "line": 7,
+       "at": "居數月",
+       "text": "**居** jū \"to stay, remain\"; with a stretch of time it means \"after … had passed\": 居數月 \"when a few months had gone by\", 居一年 \"a year later\" (line 19). 數 shù \"several\" (→ L5 n.4).\n",
+       "at_s": "居数月"
+      },
+      {
+       "n": 9,
+       "line": 8,
+       "at": "將",
+       "text": "**將** jiāng \"to lead, bring along\" (古今詞義): 其馬將胡駿馬而歸 \"his horse came back leading a fine Hu horse\". Modern 將 is mostly the future marker \"will\"; the verb survives in the noun 將 jiàng \"general, the one who leads\". 駿 jùn \"fine, swift (of a horse)\".\n",
+       "at_s": "将"
+      },
+      {
+       "n": 10,
+       "line": 12,
+       "at": "家富良馬",
+       "text": "**Shift of word class (詞類活用).** 富 is an adjective, \"rich\"; followed by an object, it works as a verb: 富良馬 \"be rich in fine horses\". Classical Chinese marks no word class on the word itself: the slot decides. A noun before a verb can tell *how* (廩食 \"feed from the granary\", → L8 n.6), a noun with an object becomes a verb (面山 \"face the mountain\", L12), and an adjective can mean \"make (it) so\" (平險 \"level the steep\", L12) or \"treat as so\" (老吾老 \"treat my elders as elders\", exercise 2). 王力 groups them all under 詞類活用. Read for the slot, not the dictionary label.\n",
+       "at_s": "家富良马"
+      },
+      {
+       "n": 11,
+       "line": 14,
+       "at": "墮而折其髀",
+       "text": "**好騎** hào qí \"loved riding\" (好 hào → L8 n.8). **墮** duò \"to fall\"; **髀** bì \"thigh, thigh bone\", the son's injury that will save his life. 折 \"to break\" (→ L1).\n",
+       "at_s": "堕而折其髀"
+      },
+      {
+       "n": 12,
+       "line": 19,
+       "at": "大入塞",
+       "text": "**大** as an adverb: \"on a large scale, in force\". 大入塞 \"came through the frontier in force\", i.e. a full invasion, not a raid.\n",
+       "at_s": "大入塞"
+      },
+      {
+       "n": 13,
+       "line": 20,
+       "at": "丁壯者",
+       "text": "**丁壯** dīng zhuàng \"men in their prime\", those liable for service (丁 is still the word for an adult male in old registers). 引弦 \"draw the bowstring\" (引 \"to pull\", → L5 n.6). 而 links the two actions (→ L1 n.4).\n",
+       "at_s": "丁壮者"
+      },
+      {
+       "n": 14,
+       "line": 22,
+       "at": "十九",
+       "text": "**十九 = \"nine in ten\", not \"nineteen\".** A number followed by a smaller one often gives a proportion: 十九 \"nine out of ten\", 十一 \"one in ten\" (the tithe in Mencius). 死者十九 \"of those who died, nine tenths\": the topic is the people of line 22, the 者 phrase (→ L1 n.2) picks out the dead, and the number is the predicate (→ L8 n.2).\n",
+       "at_s": "十九"
+      },
+      {
+       "n": 15,
+       "line": 23,
+       "at": "以跛之故",
+       "text": "**以 X 之故 = \"because of X\".** 以 here is \"because of\" (new: so far it was \"with, by means of\", → L1 n.10), and 故 is \"reason\" (n. 4): 以跛之故 \"for the reason of the lameness\". **獨** dú \"alone, only\": 此獨 \"this one (household) alone\". 跛 bǒ \"lame\".\n",
+       "at_s": "以跛之故"
+      },
+      {
+       "n": 16,
+       "line": 24,
+       "at": "相保",
+       "text": "**相保** \"kept each other safe\": father and son both survived, the father because he had no fighting son to lose, the son because he couldn't be called up. 相 \"each other\" (→ L5 n.3).\n",
+       "at_s": "相保"
+      },
+      {
+       "n": 17,
+       "line": 25,
+       "at": "故",
+       "text": "**故 at the head of a sentence = \"therefore, and so\"**: the third 故 of the passage (無故 \"for no reason\", 之故 \"the reason\", 故 \"therefore\"); you met it in L6 too (故遂與之行). Then two subject + 之 + predicate phrases as subjects (→ L2 n.3): 福之為禍 \"good fortune's becoming misfortune\".\n",
+       "at_s": "故"
+      },
+      {
+       "n": 18,
+       "line": 27,
+       "at": "化不可極",
+       "text": "**不可 + verb** in its passive sense (→ L1 n.8): 化不可極 \"the transformation cannot be followed to its end\", 深不可測 \"the depth cannot be measured\". 極 jí \"extreme point\" is used as a verb, \"to get to the end of\", and 深 \"deep\" as a noun, \"the depth\": n. 10 again. The two clauses echo the first sentence: 其變難見也.\n",
+       "at_s": "化不可极"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "禍",
+       "py": "huò",
+       "en": "misfortune, disaster",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "祸"
+      },
+      {
+       "w": "福",
+       "py": "fú",
+       "en": "good fortune, blessing",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "福"
+      },
+      {
+       "w": "轉",
+       "py": "zhuǎn",
+       "en": "to turn, change",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "转"
+      },
+      {
+       "w": "變",
+       "py": "biàn",
+       "en": "change",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "变"
+      },
+      {
+       "w": "近",
+       "py": "jìn",
+       "en": "to be near",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "近"
+      },
+      {
+       "w": "塞",
+       "py": "sài",
+       "en": "frontier, border pass",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "塞"
+      },
+      {
+       "w": "善",
+       "py": "shàn",
+       "en": "to be good at",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "善"
+      },
+      {
+       "w": "術",
+       "py": "shù",
+       "en": "art, technique (here, divination)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "术"
+      },
+      {
+       "w": "無故",
+       "py": "wú gù",
+       "en": "for no reason",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "无故"
+      },
+      {
+       "w": "胡",
+       "py": "Hú",
+       "en": "the Hu, the nomad peoples of the north",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "胡"
+      },
+      {
+       "w": "弔",
+       "py": "diào",
+       "en": "to offer condolences",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "吊"
+      },
+      {
+       "w": "父",
+       "py": "fù",
+       "en": "father",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "父"
+      },
+      {
+       "w": "何遽",
+       "py": "hé jù",
+       "en": "how can one be so quick to say …?",
+       "w_s": "何遽"
+      },
+      {
+       "w": "居",
+       "py": "jū",
+       "en": "to stay; (of time) to pass",
+       "w_s": "居"
+      },
+      {
+       "w": "月",
+       "py": "yuè",
+       "en": "month",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "月"
+      },
+      {
+       "w": "將",
+       "py": "jiāng",
+       "en": "to lead, bring along",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "将"
+      },
+      {
+       "w": "駿",
+       "py": "jùn",
+       "en": "fine, swift (horse)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "骏"
+      },
+      {
+       "w": "賀",
+       "py": "hè",
+       "en": "to congratulate",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "贺"
+      },
+      {
+       "w": "富",
+       "py": "fù",
+       "en": "rich; to be rich in",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "富"
+      },
+      {
+       "w": "良",
+       "py": "liáng",
+       "en": "good, fine",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "良"
+      },
+      {
+       "w": "騎",
+       "py": "qí",
+       "en": "to ride (a horse)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "骑"
+      },
+      {
+       "w": "墮",
+       "py": "duò",
+       "en": "to fall",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "堕"
+      },
+      {
+       "w": "髀",
+       "py": "bì",
+       "en": "thigh, thigh bone",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "髀"
+      },
+      {
+       "w": "丁壯",
+       "py": "dīng zhuàng",
+       "en": "able-bodied men",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "丁壮"
+      },
+      {
+       "w": "弦",
+       "py": "xián",
+       "en": "bowstring",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "弦"
+      },
+      {
+       "w": "戰",
+       "py": "zhàn",
+       "en": "to fight",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "战"
+      },
+      {
+       "w": "獨",
+       "py": "dú",
+       "en": "alone, only",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "独"
+      },
+      {
+       "w": "跛",
+       "py": "bǒ",
+       "en": "lame",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "跛"
+      },
+      {
+       "w": "保",
+       "py": "bǎo",
+       "en": "to keep safe, protect",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "保"
+      },
+      {
+       "w": "化",
+       "py": "huà",
+       "en": "transformation, change",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "化"
+      },
+      {
+       "w": "極",
+       "py": "jí",
+       "en": "to reach the end of",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "极"
+      },
+      {
+       "w": "深",
+       "py": "shēn",
+       "en": "deep; depth",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "深"
+      },
+      {
+       "w": "測",
+       "py": "cè",
+       "en": "to measure (depth), fathom",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "测"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "禍兮福之所倚，福兮禍之所伏。",
+       "py": "Huò xī fú zhī suǒ yǐ, fú xī huò zhī suǒ fú.",
+       "src": "老子·五十八章",
+       "en": "Misfortune — that is what good fortune leans on; good fortune — that is where misfortune lies hidden.",
+       "tests": "禍, 福, 所 (→ L4 n.5); 兮 xī is a pause particle",
+       "h_s": "祸兮福之所倚，福兮祸之所伏。"
+      },
+      {
+       "h": "老吾老，以及人之老；幼吾幼，以及人之幼。",
+       "py": "Lǎo wú lǎo, yǐ jí rén zhī lǎo; yòu wú yòu, yǐ jí rén zhī yòu.",
+       "src": "孟子·梁惠王上",
+       "en": "Treat your own elders as elders and extend it to other people's elders; treat your own young as the young and extend it to other people's young.",
+       "tests": "word-class shift: 老, 幼 as verbs (n. 10); 及 \"to reach\" (→ L9 n.10)",
+       "h_s": "老吾老，以及人之老；幼吾幼，以及人之幼。"
+      },
+      {
+       "h": "我善養吾浩然之氣。",
+       "py": "Wǒ shàn yǎng wú hào rán zhī qì.",
+       "src": "孟子·公孫丑上",
+       "en": "I am good at nourishing my flood-like qi.",
+       "tests": "善 = be good at, -然 (→ L3 n.3)",
+       "h_s": "我善养吾浩然之气。"
+      },
+      {
+       "h": "吾所以為此者，以先國家之急而後私讎也。",
+       "py": "Wú suǒ yǐ wéi cǐ zhě, yǐ xiān guó jiā zhī jí ér hòu sī chóu yě.",
+       "src": "史記·廉頗藺相如列傳",
+       "en": "The reason I act like this is that I put the urgent needs of the state first and private feuds last.",
+       "tests": "以 = because; 先 and 後 used as verbs; 所以 … 者 \"the reason why\"",
+       "h_s": "吾所以为此者，以先国家之急而后私雠也。"
+      }
+     ],
+     "culture": "The idiom is usually quoted in full, 塞翁失馬，焉知非福 \"the old man at the frontier lost his horse — how could one know it wasn't a blessing?\", a later wording: 焉 \"how\" replaces the story's 何遽. It is the classical form of \"every cloud has a silver lining\", but the Huainanzi's point is bleaker and more Daoist: fortune and misfortune keep turning into each other, and no one can see where the chain ends.\n",
+     "title_s": "塞翁失马"
     }
    ]
   },
