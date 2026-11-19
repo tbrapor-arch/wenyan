@@ -31281,7 +31281,7 @@
        "h": "見兩小兒辯鬭，",
        "py": "jiàn liǎng xiǎo ér biàn dòu,",
        "en": "when he saw two little boys quarrelling,",
-       "h_s": "见两小儿辩鬭，"
+       "h_s": "见两小儿辩斗，"
       },
       {
        "h": "問其故。",
@@ -31407,7 +31407,7 @@
        "line": 1,
        "at": "辯鬭",
        "text": "**辯** biàn \"to argue, dispute\"; **鬭** dòu \"to fight, quarrel\": 辯鬭 \"were quarrelling\". *Simplified- character warning:* simplified Chinese writes 斗 both for 鬭 dòu \"to fight\" and for 斗 dǒu \"a peck\" (the measure of → L16 n.13). **小兒** xiǎo ér \"little boys\": 兒 ér is \"child\" (古今詞義: modern 兒 is also the suffix -r).\n",
-       "at_s": "辩鬭"
+       "at_s": "辩斗"
       },
       {
        "n": 3,
@@ -31540,7 +31540,7 @@
        "checked": [
         "wikt"
        ],
-       "w_s": "鬭"
+       "w_s": "斗"
       },
       {
        "w": "故",
@@ -31977,7 +31977,7 @@
        ],
        "examples_s": [
         "渔者得而并禽之",
-        "见两小儿辩鬭",
+        "见两小儿辩斗",
         "吾得斗升之水然活耳"
        ]
       },

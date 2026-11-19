@@ -1,3 +1,4 @@
 # Fixes for OpenCC t2s in classical contexts: traditional → simplified.
 # Add an entry only when OpenCC picks the wrong simplified form for the classical word.
-{}
+# 鬭 dòu "to fight" (文言 L20): OpenCC leaves it unconverted; the simplified form is 斗.
+鬭: 斗
