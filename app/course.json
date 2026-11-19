@@ -25755,6 +25755,656 @@
      ],
      "culture": "The idiom is usually quoted in full, 塞翁失馬，焉知非福 \"the old man at the frontier lost his horse — how could one know it wasn't a blessing?\", a later wording: 焉 \"how\" replaces the story's 何遽. It is the classical form of \"every cloud has a silver lining\", but the Huainanzi's point is bleaker and more Daoist: fortune and misfortune keep turning into each other, and no one can see where the chain ends.\n",
      "title_s": "塞翁失马"
+    },
+    {
+     "id": 11,
+     "slug": "qi-ren-you-tian",
+     "title": "杞人憂天",
+     "title_py": "Qǐ rén yōu tiān",
+     "title_en": "The Man of Qi Who Feared the Sky Would Fall",
+     "source": {
+      "work": "列子·天瑞",
+      "author": "attributed to 列禦寇 Lie Yukou (Warring States); the text as we have it was edited by 張湛 (4th c. AD)",
+      "period": "compiled by the 4th century AD from older material",
+      "text_from": "《列子·天瑞》, as quoted on English Wiktionary 杞人憂天 (CC BY-SA), whose readings 亡 wú and 舍 shì we follow. Compared line by line, 2026-11-19, with two unpunctuated transcriptions in the Kanseki Repository: the 四部叢刊 text (KR5c0049) and the 四庫全書 文淵閣 text (KR5c0125). Same words throughout; the old editions write the variant forms 徃 (往) and 舎 (舍), and both have a rare variant glyph in 舍然 or 杞 that the transcriptions could not encode.\n",
+      "work_s": "列子·天瑞"
+     },
+     "status": "draft",
+     "intro": "The *Liezi* is a Daoist book in the line of the *Zhuangzi*, full of stories that poke fun at ordinary certainties. This one gave Chinese its word for a groundless worry (杞憂, 杞人憂天). It is almost all dialogue, so it is the place to meet the language of conversation: a second-person pronoun (若 \"you\"), the particles 耳 \"only\" and 邪 (a question), the question 奈何 \"why?\" and its split form 奈 … 何 \"what can be done about …?\". Note also 亡, read wú here.\n",
+     "lines": [
+      {
+       "h": "杞國有人，",
+       "py": "Qǐ guó yǒu rén,",
+       "en": "In the state of Qi there was a man",
+       "h_s": "杞国有人，"
+      },
+      {
+       "h": "憂天地崩墜，",
+       "py": "yōu tiān dì bēng zhuì,",
+       "en": "who worried that heaven and earth would collapse and fall,",
+       "h_s": "忧天地崩坠，"
+      },
+      {
+       "h": "身亡所寄，",
+       "py": "shēn wú suǒ jì,",
+       "en": "leaving him nowhere to put himself,",
+       "lit": "body have-no place-where lodge",
+       "h_s": "身亡所寄，"
+      },
+      {
+       "h": "廢寢食者。",
+       "py": "fèi qǐn shí zhě.",
+       "en": "and who gave up sleeping and eating.",
+       "h_s": "废寝食者。"
+      },
+      {
+       "h": "又有憂彼之所憂者，",
+       "py": "Yòu yǒu yōu bǐ zhī suǒ yōu zhě,",
+       "en": "There was another man, who worried about that man's worrying,",
+       "lit": "also there-was worrying that-one 's what-worried one",
+       "h_s": "又有忧彼之所忧者，"
+      },
+      {
+       "h": "因往曉之，曰：",
+       "py": "yīn wǎng xiǎo zhī, yuē:",
+       "en": "so he went to put him right, saying:",
+       "h_s": "因往晓之，曰："
+      },
+      {
+       "h": "「天，積氣耳，",
+       "py": "Tiān, jī qì ěr,",
+       "en": "\"Heaven is nothing but piled-up air;",
+       "h_s": "「天，积气耳，"
+      },
+      {
+       "h": "亡處亡氣。",
+       "py": "wú chù wú qì.",
+       "en": "there is no place without air.",
+       "lit": "there-is-no place there-is-no air",
+       "h_s": "亡处亡气。"
+      },
+      {
+       "h": "若屈伸呼吸，",
+       "py": "Ruò qū shēn hū xī,",
+       "en": "You bend and stretch, breathe out and in,",
+       "h_s": "若屈伸呼吸，"
+      },
+      {
+       "h": "終日在天中行止，",
+       "py": "zhōng rì zài tiān zhōng xíng zhǐ,",
+       "en": "you go about all day inside heaven:",
+       "h_s": "终日在天中行止，"
+      },
+      {
+       "h": "奈何憂崩墜乎？」",
+       "py": "nài hé yōu bēng zhuì hū?",
+       "en": "why worry about it collapsing?\"",
+       "h_s": "奈何忧崩坠乎？」"
+      },
+      {
+       "h": "其人曰：",
+       "py": "Qí rén yuē:",
+       "en": "The man said:",
+       "h_s": "其人曰："
+      },
+      {
+       "h": "「天果積氣，",
+       "py": "Tiān guǒ jī qì,",
+       "en": "\"If heaven really is piled-up air,",
+       "h_s": "「天果积气，"
+      },
+      {
+       "h": "日月星宿不當墜邪？」",
+       "py": "rì yuè xīng xiù bù dāng zhuì yé?",
+       "en": "won't the sun, moon and stars fall down?\"",
+       "h_s": "日月星宿不当坠邪？」"
+      },
+      {
+       "h": "曉之者曰：",
+       "py": "Xiǎo zhī zhě yuē:",
+       "en": "The one putting him right said:",
+       "h_s": "晓之者曰："
+      },
+      {
+       "h": "「日月星宿，",
+       "py": "Rì yuè xīng xiù,",
+       "en": "\"The sun, moon and stars",
+       "h_s": "「日月星宿，"
+      },
+      {
+       "h": "亦積氣中之有光耀者，",
+       "py": "yì jī qì zhōng zhī yǒu guāng yào zhě,",
+       "en": "are just the parts of that piled-up air that shine;",
+       "h_s": "亦积气中之有光耀者，"
+      },
+      {
+       "h": "只使墜，",
+       "py": "zhǐ shǐ zhuì,",
+       "en": "even if they fell,",
+       "h_s": "只使坠，"
+      },
+      {
+       "h": "亦不能有所中傷。」",
+       "py": "yì bù néng yǒu suǒ zhòng shāng.",
+       "en": "they couldn't hit or hurt anything.\"",
+       "h_s": "亦不能有所中伤。」"
+      },
+      {
+       "h": "其人曰：",
+       "py": "Qí rén yuē:",
+       "en": "The man said:",
+       "h_s": "其人曰："
+      },
+      {
+       "h": "「奈地壞何？」",
+       "py": "Nài dì huài hé?",
+       "en": "\"And what if the earth gives way?\"",
+       "lit": "deal-with earth collapse how",
+       "h_s": "「奈地坏何？」"
+      },
+      {
+       "h": "曉者曰：",
+       "py": "Xiǎo zhě yuē:",
+       "en": "The one putting him right said:",
+       "h_s": "晓者曰："
+      },
+      {
+       "h": "「地積塊耳，",
+       "py": "Dì jī kuài ěr,",
+       "en": "\"The earth is nothing but piled-up clods,",
+       "h_s": "「地积块耳，"
+      },
+      {
+       "h": "充塞四虛，",
+       "py": "chōng sè sì xū,",
+       "en": "filling the empty space on all four sides;",
+       "h_s": "充塞四虚，"
+      },
+      {
+       "h": "亡處亡塊。",
+       "py": "wú chù wú kuài.",
+       "en": "there is no place without clods.",
+       "h_s": "亡处亡块。"
+      },
+      {
+       "h": "若躇步跐蹈，",
+       "py": "Ruò chú bù cǐ dǎo,",
+       "en": "You stride and step and stamp about,",
+       "h_s": "若躇步跐蹈，"
+      },
+      {
+       "h": "終日在地上行止，",
+       "py": "zhōng rì zài dì shàng xíng zhǐ,",
+       "en": "you go about all day on the earth:",
+       "h_s": "终日在地上行止，"
+      },
+      {
+       "h": "奈何憂其壞？」",
+       "py": "nài hé yōu qí huài?",
+       "en": "why worry about it giving way?\"",
+       "h_s": "奈何忧其坏？」"
+      },
+      {
+       "h": "其人舍然大喜，",
+       "py": "Qí rén shì rán dà xǐ,",
+       "en": "The man was relieved and overjoyed,",
+       "h_s": "其人舍然大喜，"
+      },
+      {
+       "h": "曉之者亦舍然大喜。",
+       "py": "xiǎo zhī zhě yì shì rán dà xǐ.",
+       "en": "and the one who had put him right was relieved and overjoyed too.",
+       "h_s": "晓之者亦舍然大喜。"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "杞國有人",
+       "text": "**杞** Qǐ, a tiny state in present-day Henan whose rulers claimed descent from the Xia dynasty. The sentence is the 有 … 者 frame (→ L1 n.2) stretched over four lines: 杞國有人 [憂 … ，… ， 廢寢食] 者 \"in Qi there was a man who worried …, … and gave up sleeping and eating\". With 人 inside the frame, 有人 … 者 is \"there was a person who …\".\n",
+       "at_s": "杞国有人"
+      },
+      {
+       "n": 2,
+       "line": 2,
+       "at": "亡所寄",
+       "text": "**亡 = 無, read wú**: \"not to have, there is no\". This 亡 is the same character as 亡 wáng \"to lose, run away\" (→ L5 n.12, L10 n.4), used for the word 無, which sounded close. When it means \"there is no\", read it wú, as Wiktionary does. 亡所寄 = 無所寄 \"nothing on which (his body could) lodge\": 所 + verb (→ L4 n.5) after 無, \"nothing that …, nowhere that …\". 身 \"his own person\" (→ L1 n.9).\n",
+       "at_s": "亡所寄"
+      },
+      {
+       "n": 3,
+       "line": 3,
+       "at": "廢寢食",
+       "text": "**廢** fèi \"to abandon, give up\", not \"waste, useless\" as in modern 廢物. 寢 qǐn \"to sleep (lying down)\", 食 shí \"to eat\": 廢寢食 \"gave up sleep and food\", the source of the phrase 廢寢忘食.\n",
+       "at_s": "废寝食"
+      },
+      {
+       "n": 4,
+       "line": 4,
+       "at": "彼之所憂",
+       "text": "**彼** bǐ \"that, that one\", the far demonstrative (此 \"this\" is the near one, → L4 n.7). It points at a person as well as a thing, so it often works as \"he, they\": 彼之所憂 \"what *that man* worried about\". The phrase is subject + 之 + 所 + verb, as in 吾劍之所從墜 (→ L4 n.5). The second man worries about the first man's worry, and that is the joke of the whole story.\n",
+       "at_s": "彼之所忧"
+      },
+      {
+       "n": 5,
+       "line": 5,
+       "at": "曉之",
+       "text": "**曉** xiǎo \"to make (someone) understand, enlighten\": 曉之 \"put him right\". The adjective \"clear, bright\" (曉 is also \"dawn\") is used as a verb meaning \"make clear to\": the causative kind of word-class shift (→ L10 n.10). Modern 曉得 \"to know\" uses the plain sense. 因 \"and so\" (→ L1 n.5), 往 \"to go\" (→ L3 n.7).\n",
+       "at_s": "晓之"
+      },
+      {
+       "n": 6,
+       "line": 6,
+       "at": "耳",
+       "text": "**耳** ěr at the end of a sentence = \"only, that's all\" (it is a fusion of 而已 \"and stop\"). 天，積氣耳 \"heaven — piled-up air, that's all\": a judgment sentence, A，B (→ L1 n.11), with 耳 in place of 也. **積** jī \"to pile up, accumulate\"; **氣** qì \"air, vapour\", the stuff of which the Chinese cosmos was thought to be made.\n",
+       "at_s": "耳"
+      },
+      {
+       "n": 7,
+       "line": 7,
+       "at": "亡處亡氣",
+       "text": "**亡處亡氣** wú chù wú qì \"there is no place where there is no air\": two negatives make \"air is everywhere\", like 無不 (→ L2 n.5). **處** chù \"place\" (compare 處 chǔ \"to dwell\", → L8 n.3).\n",
+       "at_s": "亡处亡气"
+      },
+      {
+       "n": 8,
+       "line": 8,
+       "at": "若",
+       "text": "**若 = \"you\".** At the head of a clause, before a verb, 若 is a second-person pronoun: 若屈伸呼吸 \"*you* bend and stretch, breathe out and in\". So far \"you\" has been 子, the polite form (→ L2 n.7); 若 is plainer, used to equals and inferiors. Coming next: **汝** (also written **女**) rǔ, the everyday \"you\" (L12), and 爾 ěr. Don't confuse it with 若 \"to be like\" (→ L4 n.7): the slot tells you which.\n",
+       "at_s": "若"
+      },
+      {
+       "n": 9,
+       "line": 10,
+       "at": "奈何",
+       "text": "**奈何** nài hé \"why? how (can)?\": 奈何憂崩墜乎 \"why worry about it collapsing?\". The question word stands before the verb it questions (→ L9 n.11 何不), and 乎 ends the question (→ L4 n.8).\n",
+       "at_s": "奈何"
+      },
+      {
+       "n": 10,
+       "line": 12,
+       "at": "果",
+       "text": "**果** \"really, in fact\" (→ L6 n.3). At the head of a clause, the sense slides to \"if it really is so\": 天果積氣 \"if heaven really is piled-up air\". Classical Chinese often leaves \"if\" unsaid; the second clause shows that the first was a condition.\n",
+       "at_s": "果"
+      },
+      {
+       "n": 11,
+       "line": 13,
+       "at": "邪",
+       "text": "**邪** yé (= 耶) is a question particle, like 乎 (→ L4 n.8) but more often in questions that invite a \"yes\": 不當墜邪 \"shouldn't they fall?\" Read yé, not xié \"evil\". **當** dāng \"should, ought to\"; **星宿** xīng xiù \"the stars and constellations\": 宿 is xiù when it means a lunar mansion (sù \"to lodge\" otherwise).\n",
+       "at_s": "邪"
+      },
+      {
+       "n": 12,
+       "line": 16,
+       "at": "積氣中之有光耀者",
+       "text": "A long noun phrase: [積氣中] 之 [有光耀] 者 \"the ones within the piled-up air that have light\". The place (積氣中 \"in the piled air\") + 之 modifies the 者 phrase (→ L1 n.2, L1 n.10). 亦 \"just, likewise (air)\".\n",
+       "at_s": "积气中之有光耀者"
+      },
+      {
+       "n": 13,
+       "line": 17,
+       "at": "只使",
+       "text": "**只使** zhǐ shǐ \"even if, supposing\": 只使墜 \"even if they did fall\". 使 here makes a condition (\"suppose\"), not a causative (→ L6 n.7); later texts write 即使 or 縱使, and 即使 is still the modern word.\n",
+       "at_s": "只使"
+      },
+      {
+       "n": 14,
+       "line": 18,
+       "at": "有所中傷",
+       "text": "**有所 V** \"have something that (one) V's\": the opposite of 無所 (n. 2). 不能有所中傷 \"could not hit or harm anything\". **中** zhòng \"to hit (the mark)\", the verb, not zhōng \"middle\". Modern 中傷 means \"to slander\", a figurative \"hit and hurt\".\n",
+       "at_s": "有所中伤"
+      },
+      {
+       "n": 15,
+       "line": 20,
+       "at": "奈地壞何",
+       "text": "**奈 X 何** \"what can be done about X?, what about X?\": the thing in question goes *between* 奈 and 何. 奈地壞何 \"what about the earth giving way?\" Compare 奈何 in n. 9, where nothing stands in between. 如 X 何 works the same way: you'll meet it in L12 (如太形、王屋何).\n",
+       "at_s": "奈地坏何"
+      },
+      {
+       "n": 16,
+       "line": 22,
+       "at": "積塊",
+       "text": "**塊** kuài \"clod of earth\". **充塞** chōng sè \"to fill up, stuff\": 塞 read sè, \"to block\" (→ L10 n.2). 四虛 \"the void in all four directions\". The answer mirrors the first one point by point: 天，積氣耳 / 地積塊耳.\n",
+       "at_s": "积块"
+      },
+      {
+       "n": 17,
+       "line": 25,
+       "at": "躇步跐蹈",
+       "text": "**躇步跐蹈** chú bù cǐ dǎo: four verbs of walking, \"to stride, step, tread, stamp\". The first answer had four for breathing and moving (屈伸呼吸): the man moves through heaven and stamps on earth all day without harm.\n",
+       "at_s": "躇步跐蹈"
+      },
+      {
+       "n": 18,
+       "line": 28,
+       "at": "舍然",
+       "text": "**舍然** shì rán \"relieved, freed of worry\" = 釋然: 舍 stands for 釋 \"to let go\" (a borrowed character, → L8 n.5), hence the reading shì. -然 makes it a description of manner (→ L3 n.3). 大喜 \"greatly delighted\".\n",
+       "at_s": "舍然"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "杞",
+       "py": "Qǐ",
+       "en": "Qi, a small state (in present-day Henan)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "杞"
+      },
+      {
+       "w": "憂",
+       "py": "yōu",
+       "en": "to worry (about)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "忧"
+      },
+      {
+       "w": "崩",
+       "py": "bēng",
+       "en": "to collapse",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "崩"
+      },
+      {
+       "w": "亡",
+       "py": "wú",
+       "en": "not to have, there is no (= 無)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "亡"
+      },
+      {
+       "w": "寄",
+       "py": "jì",
+       "en": "to lodge, rest (on)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "寄"
+      },
+      {
+       "w": "廢",
+       "py": "fèi",
+       "en": "to give up, abandon",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "废"
+      },
+      {
+       "w": "寢",
+       "py": "qǐn",
+       "en": "to sleep",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "寝"
+      },
+      {
+       "w": "彼",
+       "py": "bǐ",
+       "en": "that; that one, he",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "彼"
+      },
+      {
+       "w": "曉",
+       "py": "xiǎo",
+       "en": "to make understand, enlighten",
+       "w_s": "晓"
+      },
+      {
+       "w": "積",
+       "py": "jī",
+       "en": "to pile up, accumulate",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "积"
+      },
+      {
+       "w": "氣",
+       "py": "qì",
+       "en": "air, vapour",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "气"
+      },
+      {
+       "w": "耳",
+       "py": "ěr",
+       "en": "only, that's all (final particle)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "耳"
+      },
+      {
+       "w": "處",
+       "py": "chù",
+       "en": "place",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "处"
+      },
+      {
+       "w": "若",
+       "py": "ruò",
+       "en": "you",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "若"
+      },
+      {
+       "w": "屈伸",
+       "py": "qū shēn",
+       "en": "to bend and stretch",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "屈伸"
+      },
+      {
+       "w": "呼吸",
+       "py": "hū xī",
+       "en": "to breathe out and in",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "呼吸"
+      },
+      {
+       "w": "終日",
+       "py": "zhōng rì",
+       "en": "all day long",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "终日"
+      },
+      {
+       "w": "行止",
+       "py": "xíng zhǐ",
+       "en": "to move about (lit. go and stop)",
+       "w_s": "行止"
+      },
+      {
+       "w": "奈何",
+       "py": "nài hé",
+       "en": "why? how can …?",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "奈何"
+      },
+      {
+       "w": "星宿",
+       "py": "xīng xiù",
+       "en": "stars and constellations",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "星宿"
+      },
+      {
+       "w": "當",
+       "py": "dāng",
+       "en": "should, ought to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "当"
+      },
+      {
+       "w": "邪",
+       "py": "yé",
+       "en": "question particle (= 耶)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "邪"
+      },
+      {
+       "w": "光耀",
+       "py": "guāng yào",
+       "en": "light, brightness",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "光耀"
+      },
+      {
+       "w": "只使",
+       "py": "zhǐ shǐ",
+       "en": "even if",
+       "w_s": "只使"
+      },
+      {
+       "w": "中",
+       "py": "zhòng",
+       "en": "to hit (the mark)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "中"
+      },
+      {
+       "w": "傷",
+       "py": "shāng",
+       "en": "to hurt, injure",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "伤"
+      },
+      {
+       "w": "壞",
+       "py": "huài",
+       "en": "to collapse, give way",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "坏"
+      },
+      {
+       "w": "塊",
+       "py": "kuài",
+       "en": "clod (of earth)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "块"
+      },
+      {
+       "w": "充塞",
+       "py": "chōng sè",
+       "en": "to fill up",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "充塞"
+      },
+      {
+       "w": "虛",
+       "py": "xū",
+       "en": "empty space, void",
+       "w_s": "虚"
+      },
+      {
+       "w": "蹈",
+       "py": "dǎo",
+       "en": "to tread, stamp",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "蹈"
+      },
+      {
+       "w": "舍然",
+       "py": "shì rán",
+       "en": "relieved (= 釋然)",
+       "w_s": "舍然"
+      },
+      {
+       "w": "喜",
+       "py": "xǐ",
+       "en": "to be glad, delighted",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "喜"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "偃之言是也，前言戲之耳。",
+       "py": "Yǎn zhī yán shì yě, qián yán xì zhī ěr.",
+       "src": "論語·陽貨",
+       "en": "What Yan says is right; what I said before was only teasing him.",
+       "tests": "耳 = only; 是 here = right",
+       "h_s": "偃之言是也，前言戏之耳。"
+      },
+      {
+       "h": "既使我與若辯矣，若勝我，我不若勝，若果是也？我果非也邪？",
+       "py": "Jì shǐ wǒ yǔ ruò biàn yǐ, ruò shèng wǒ, wǒ bù ruò shèng, ruò guǒ shì yě? Wǒ guǒ fēi yě yé?",
+       "src": "莊子·齊物論",
+       "en": "Suppose you and I have argued. If you have beaten me and I have not beaten you, are you really right? Am I really wrong?",
+       "tests": "若 = you; 果; 邪; 使 = suppose; in 我不若勝 the pronoun object 若 comes before the verb, as it often does after a negative",
+       "h_s": "既使我与若辩矣，若胜我，我不若胜，若果是也？我果非也邪？"
+      },
+      {
+       "h": "亡而為有，虛而為盈，約而為泰，難乎有恆矣。",
+       "py": "Wú ér wéi yǒu, xū ér wéi yíng, yuē ér wéi tài, nán hū yǒu héng yǐ.",
+       "src": "論語·述而",
+       "en": "Having nothing and acting as if one had, being empty and acting full, being poor and acting grand: it is hard for such a man to be constant.",
+       "tests": "亡 wú = 無, 虛, 而",
+       "h_s": "亡而为有，虚而为盈，约而为泰，难乎有恒矣。"
+      },
+      {
+       "h": "騅不逝兮可柰何！虞兮虞兮柰若何！",
+       "py": "Zhuī bù shì xī kě nài hé! Yú xī Yú xī nài ruò hé!",
+       "src": "史記·項羽本紀",
+       "en": "My horse Zhui will not go on — what can be done? Yu, oh Yu, what will become of you?",
+       "tests": "柰 = 奈: 奈何, 奈 X 何, 若 = you (Xiang Yu's last song, to his lady Yu)",
+       "h_s": "骓不逝兮可柰何！虞兮虞兮柰若何！"
+      }
+     ],
+     "culture": "杞人憂天 (or simply 杞憂, also borrowed into Japanese as *kiyū*) is said of anyone who frets about imaginary dangers. The *Liezi* goes on past our passage: a sage laughs at both men, and then Liezi himself laughs at the sage. Whether heaven and earth will perish, he says, \"is not something I can know\", so why trouble one's heart about it? The ending is pure Daoism: neither worry nor reassurance, but indifference.\n",
+     "title_s": "杞人忧天"
     }
    ]
   },
