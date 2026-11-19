@@ -24230,6 +24230,446 @@
       }
      ],
      "title_s": "复习一"
+    },
+    {
+     "id": 8,
+     "slug": "lan-yu",
+     "title": "濫竽充數",
+     "title_py": "Làn yú chōng shù",
+     "title_en": "Padding Out the Band with a Fake Yu Player",
+     "source": {
+      "work": "韓非子·內儲說上",
+      "author": "韓非 (c. 280–233 BC)",
+      "period": "Warring States",
+      "text_from": "《韓非子·內儲說上七術》. Lines 1–9 as quoted on English Wiktionary 濫竽充數 (CC BY-SA), with the comma after 吹竽 that Wiktionary leaves out; lines 10–15 (the 一曰 version) typed from the unpunctuated 四庫全書 文淵閣 text (Kanseki Repository KR3c0005, 卷九), punctuation ours. Compared line by line, 2026-11-19, with that 文淵閣 text and with the 殆知閣 transcription; the three agree word for word (文淵閣 writes the variant forms 廪 and 聴 for 廩 and 聽).\n",
+      "work_s": "韩非子·内储说上"
+     },
+     "status": "draft",
+     "intro": "Back to Han Fei. The \"Inner Collection of Sayings\" (內儲說) is a teaching anthology: Han Fei states a principle of rule, then piles up anecdotes as evidence. This one illustrates \"hear each man separately\" (一聽): a ruler who only listens to his officials in a crowd can't tell the good from the useless. Watch for 說 read yuè (a character standing for another word), the reading 好 hào, and the very common 無以 \"have no way to\".\n",
+     "lines": [
+      {
+       "h": "齊宣王使人吹竽，",
+       "py": "Qí Xuān wáng shǐ rén chuī yú,",
+       "en": "When King Xuan of Qi had the yu played,",
+       "h_s": "齐宣王使人吹竽，"
+      },
+      {
+       "h": "必三百人。",
+       "py": "bì sān bǎi rén.",
+       "en": "it had to be by three hundred men at once.",
+       "lit": "necessarily three hundred men",
+       "h_s": "必三百人。"
+      },
+      {
+       "h": "南郭處士請為王吹竽，",
+       "py": "Nánguō chǔ shì qǐng wèi wáng chuī yú,",
+       "en": "A gentleman of leisure from the Southern Wall asked to play the yu for the king.",
+       "h_s": "南郭处士请为王吹竽，"
+      },
+      {
+       "h": "宣王說之，",
+       "py": "Xuān wáng yuè zhī,",
+       "en": "King Xuan was pleased with him,",
+       "h_s": "宣王说之，"
+      },
+      {
+       "h": "廩食以數百人。",
+       "py": "lǐn sì yǐ shù bǎi rén.",
+       "en": "and fed him from the state granary along with those several hundred men.",
+       "lit": "granary-fed with several hundred men",
+       "h_s": "廪食以数百人。"
+      },
+      {
+       "h": "宣王死，",
+       "py": "Xuān wáng sǐ,",
+       "en": "King Xuan died",
+       "h_s": "宣王死，"
+      },
+      {
+       "h": "湣王立，",
+       "py": "Mǐn wáng lì,",
+       "en": "and King Min came to the throne.",
+       "h_s": "湣王立，"
+      },
+      {
+       "h": "好一一聽之，",
+       "py": "hào yī yī tīng zhī,",
+       "en": "He liked to hear them one by one,",
+       "h_s": "好一一听之，"
+      },
+      {
+       "h": "處士逃。",
+       "py": "chǔ shì táo.",
+       "en": "and the gentleman ran away.",
+       "h_s": "处士逃。"
+      },
+      {
+       "h": "一曰：",
+       "py": "Yī yuē:",
+       "en": "Another version says:",
+       "h_s": "一曰："
+      },
+      {
+       "h": "韓昭侯曰：",
+       "py": "Hán Zhāo hóu yuē:",
+       "en": "Marquis Zhao of Han said:",
+       "h_s": "韩昭侯曰："
+      },
+      {
+       "h": "「吹竽者眾，",
+       "py": "Chuī yú zhě zhòng,",
+       "en": "\"There are many yu players;",
+       "h_s": "「吹竽者众，"
+      },
+      {
+       "h": "吾無以知其善者。」",
+       "py": "wú wú yǐ zhī qí shàn zhě.",
+       "en": "I have no way of knowing which of them are good.\"",
+       "lit": "I have-nothing-with-which to-know their good ones",
+       "h_s": "吾无以知其善者。」"
+      },
+      {
+       "h": "田嚴對曰：",
+       "py": "Tián Yán duì yuē:",
+       "en": "Tian Yan answered:",
+       "h_s": "田严对曰："
+      },
+      {
+       "h": "「一一而聽之。」",
+       "py": "Yī yī ér tīng zhī.",
+       "en": "\"Listen to them one at a time.\"",
+       "h_s": "「一一而听之。」"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "使人吹竽",
+       "text": "**齊宣王** King Xuan of Qi (reigned 319–301 BC), the king Mencius talks to in the 孟子. 使人吹竽 \"had people play the yu\": the causative 使 A V (→ L6 n.7). **竽** yú is a large mouth organ, a gourd wind-chest with bamboo pipes, the bass of the 笙 family; it was played in big court ensembles.\n",
+       "at_s": "使人吹竽"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "at": "必三百人",
+       "text": "**A noun phrase as the predicate.** 必三百人 has no verb: \"(it) necessarily (was) three hundred men\". Classical Chinese can make a number or a noun phrase the comment on a topic, with an adverb (必 bì \"necessarily, without fail\") in front of it. This is the judgment sentence of → L1 n.11 without its 也, and it is common with numbers: 年且九十 \"his age (was) nearly ninety\" will come in L12.\n",
+       "at_s": "必三百人"
+      },
+      {
+       "n": 3,
+       "line": 2,
+       "at": "處士",
+       "text": "**處士** chǔ shì, not \"a person who handles things\". 處 chǔ is \"to dwell, stay at home\"; a 處士 is a man of education who *stays home*, holding no office. That's the joke: a gentleman of leisure joins the palace band, with a salary. (處 chù \"place\" is the noun.) **南郭** Nánguō \"Southern Outer Wall\" (郭 the outer city wall) is where he lived, used as his name; in the idiom he is 南郭先生, \"Mr Nanguo\".\n",
+       "at_s": "处士"
+      },
+      {
+       "n": 4,
+       "line": 2,
+       "at": "請為王",
+       "text": "**請 + verb = \"ask to (be allowed to)\"**: 請為王吹竽 \"asked to play the yu for the king\". The one who asks is the one who will act. In L5, 請畫地為蛇 was a proposal to the group, \"let's draw\" (→ L5 n.5): same word, said to equals. 為 wèi \"for\" (→ L6 n.10).\n",
+       "at_s": "请为王"
+      },
+      {
+       "n": 5,
+       "line": 3,
+       "at": "說",
+       "text": "**說 = 悅 yuè \"to be pleased (with)\".** Ancient scribes often wrote a word with the character of another word that sounded the same or close: the \"borrowed character\" (通假字). The reading follows the word meant, not the character: 說 here is yuè, not shuō. 悅 is a later character made for this word, and many texts use it; the 論語 keeps 說 (不亦說乎, → L1 exercise 2). 說 has three readings in this course: shuō \"to say, explain\", shuì \"to persuade (a ruler)\", yuè \"pleased\". 宣王說之 \"King Xuan was pleased with him\": 之 is the object (→ L2 n.2).\n",
+       "at_s": "说"
+      },
+      {
+       "n": 6,
+       "line": 4,
+       "at": "廩食以數百人",
+       "text": "**廩** lǐn \"public granary\". Put before the verb, the noun says *how* or *from where* the action is done: 廩食 \"feed from the granary\". **食** is sì \"to feed\" (→ L6 n.5). 以數百人 is the hard part: commentators read it \"on the same footing as the several hundred men\" (the sense of our translation) or \"with rations for several hundred men\". Either way, the impostor was on the state payroll. (Nouns used as adverbs come back in L10.)\n",
+       "at_s": "廪食以数百人"
+      },
+      {
+       "n": 7,
+       "line": 6,
+       "at": "立",
+       "text": "**立** lì \"to stand\" (→ L2 n.10), said of a ruler: \"to be set up, to come to the throne\". 宣王死， 湣王立 is the formula of every chronicle: \"X died and Y succeeded\". King Min (reigned 300–284 BC) was Xuan's son.\n",
+       "at_s": "立"
+      },
+      {
+       "n": 8,
+       "line": 7,
+       "at": "好一一",
+       "text": "**好** has two readings (破音字, → L3 n.2): hǎo \"good\" and **hào \"to like, be fond of\"**, the verb here. **一一** yī yī \"one by one\": a doubled numeral used as an adverb. 聽之 \"listen to them\" (之 → L2 n.2). The new king's taste for solos is the end of the impostor.\n",
+       "at_s": "好一一"
+      },
+      {
+       "n": 9,
+       "line": 9,
+       "at": "一曰",
+       "text": "**一曰** \"one (account) says\": Han Fei tells the story again in another version, the way the 儲說 chapters often do. In this one the ruler is **韓昭侯** Marquis Zhao of Han (reigned 362–333 BC; 侯 hóu \"marquis\", a lower rank than 王), who employed the statesman 申不害.\n",
+       "at_s": "一曰"
+      },
+      {
+       "n": 10,
+       "line": 11,
+       "at": "吹竽者眾",
+       "text": "**眾** zhòng \"many, numerous\", the opposite of 寡 (→ L3 n.9). The subject is a 者 phrase (→ L1 n.2): 吹竽者 \"those who play the yu\".\n",
+       "at_s": "吹竽者众"
+      },
+      {
+       "n": 11,
+       "line": 12,
+       "at": "無以",
+       "text": "**無以 V = \"to have nothing with which to V\", i.e. \"have no way to, be unable to\".** Read it as 無 (→ L2 n.5) + 以 \"by means of (it)\" (→ L1 n.10) with the \"it\" left out. Its opposite is 有以 V \"have the means to V\". 無以 is one of the commonest phrases in prose; expect it again in L13 (written 亡以, with 亡 for 無).\n",
+       "at_s": "无以"
+      },
+      {
+       "n": 12,
+       "line": 12,
+       "at": "其善者",
+       "text": "**其 + adjective + 者** = \"those of them who are …\": 其善者 \"the good ones among them\". 其 \"their\" (→ L1 n.6) marks the group, 者 (→ L1 n.2) picks out the members.\n",
+       "at_s": "其善者"
+      },
+      {
+       "n": 13,
+       "line": 14,
+       "at": "一一而聽之",
+       "text": "Tian Yan's answer puts 而 between the manner and the verb: 一一**而**聽之 \"one by one, listen to them\" (→ L2 n.10). It is the same advice as King Min's taste for solos: test officials one at a time, and the impostors will run.\n",
+       "at_s": "一一而听之"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "齊",
+       "py": "Qí",
+       "en": "Qi, a great state of the east (in present-day Shandong)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "齐"
+      },
+      {
+       "w": "吹",
+       "py": "chuī",
+       "en": "to blow; to play (a wind instrument)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "吹"
+      },
+      {
+       "w": "竽",
+       "py": "yú",
+       "en": "yu, a large mouth organ",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "竽"
+      },
+      {
+       "w": "必",
+       "py": "bì",
+       "en": "necessarily, without fail",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "必"
+      },
+      {
+       "w": "南郭",
+       "py": "Nánguō",
+       "en": "the Southern Outer Wall (used as a name)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "南郭"
+      },
+      {
+       "w": "處士",
+       "py": "chǔ shì",
+       "en": "a gentleman out of office, a scholar living at home",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "处士"
+      },
+      {
+       "w": "請",
+       "py": "qǐng",
+       "en": "to ask (to be allowed to)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "请"
+      },
+      {
+       "w": "說",
+       "py": "yuè",
+       "en": "to be pleased (with) (= 悅)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "说"
+      },
+      {
+       "w": "廩",
+       "py": "lǐn",
+       "en": "public granary",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "廪"
+      },
+      {
+       "w": "食",
+       "py": "sì",
+       "en": "to feed",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "食"
+      },
+      {
+       "w": "死",
+       "py": "sǐ",
+       "en": "to die",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "死"
+      },
+      {
+       "w": "湣王",
+       "py": "Mǐn wáng",
+       "en": "King Min of Qi",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "湣王"
+      },
+      {
+       "w": "立",
+       "py": "lì",
+       "en": "to come to the throne",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "立"
+      },
+      {
+       "w": "好",
+       "py": "hào",
+       "en": "to like, be fond of",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "好"
+      },
+      {
+       "w": "一一",
+       "py": "yī yī",
+       "en": "one by one",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "一一"
+      },
+      {
+       "w": "聽",
+       "py": "tīng",
+       "en": "to listen to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "听"
+      },
+      {
+       "w": "逃",
+       "py": "táo",
+       "en": "to run away, flee",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "逃"
+      },
+      {
+       "w": "韓",
+       "py": "Hán",
+       "en": "Han, a central state (in present-day Henan and Shanxi)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "韩"
+      },
+      {
+       "w": "侯",
+       "py": "hóu",
+       "en": "marquis, ruler of a state below the rank of king",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "侯"
+      },
+      {
+       "w": "眾",
+       "py": "zhòng",
+       "en": "many, numerous",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "众"
+      },
+      {
+       "w": "無以",
+       "py": "wú yǐ",
+       "en": "to have no way to, be unable to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "无以"
+      },
+      {
+       "w": "善",
+       "py": "shàn",
+       "en": "good (at it), skilled",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "善"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "近者說，遠者來。",
+       "py": "Jìn zhě yuè, yuǎn zhě lái.",
+       "src": "論語·子路",
+       "en": "(Govern so that) those near are pleased and those far away come.",
+       "tests": "說 = 悅 yuè, 者",
+       "h_s": "近者说，远者来。"
+      },
+      {
+       "h": "知之者不如好之者，好之者不如樂之者。",
+       "py": "Zhī zhī zhě bù rú hào zhī zhě, hào zhī zhě bù rú lè zhī zhě.",
+       "src": "論語·雍也",
+       "en": "Those who know it are not as good as those who love it; those who love it are not as good as those who delight in it.",
+       "tests": "好 hào, 者",
+       "h_s": "知之者不如好之者，好之者不如乐之者。"
+      },
+      {
+       "h": "不知命，無以為君子也；不知禮，無以立也；不知言，無以知人也。",
+       "py": "Bù zhī mìng, wú yǐ wéi jūnzǐ yě; bù zhī lǐ, wú yǐ lì yě; bù zhī yán, wú yǐ zhī rén yě.",
+       "src": "論語·堯曰",
+       "en": "Without understanding fate, one has no way to be a gentleman; without understanding the rites, no way to take one's stand; without understanding words, no way to understand people.",
+       "tests": "無以 ×3, 立",
+       "h_s": "不知命，无以为君子也；不知礼，无以立也；不知言，无以知人也。"
+      },
+      {
+       "h": "王說曰：「詩云：『他人有心，予忖度之。』夫子之謂也。」",
+       "py": "Wáng yuè yuē: Shī yún: Tā rén yǒu xīn, yú cǔn duó zhī. Fūzǐ zhī wèi yě.",
+       "src": "孟子·梁惠王上",
+       "en": "The king was pleased and said: \"The Songs say: 'Another man has a heart; I guess at it and measure it.' That is what you have done, Master.\"",
+       "tests": "說 = 悅 yuè, 予 (→ L3 n.6); 齊宣王 again, talking to Mencius",
+       "h_s": "王说曰：「诗云：『他人有心，予忖度之。』夫子之谓也。」"
+      }
+     ],
+     "culture": "The idiom 濫竽充數 \"an unqualified yu (player) filling up the numbers\" (濫 \"excessive, unworthy\") is said of anyone who holds a place without the skill for it, and very often of oneself, out of modesty: 我只是濫竽充數 \"I'm only here to make up the numbers\". Han Fei's point was harder: a ruler who never tests his officials one by one will feed hundreds of impostors.\n",
+     "title_s": "滥竽充数"
     }
    ]
   },
