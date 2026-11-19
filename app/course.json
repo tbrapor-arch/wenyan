@@ -24670,6 +24670,438 @@
      ],
      "culture": "The idiom 濫竽充數 \"an unqualified yu (player) filling up the numbers\" (濫 \"excessive, unworthy\") is said of anyone who holds a place without the skill for it, and very often of oneself, out of modesty: 我只是濫竽充數 \"I'm only here to make up the numbers\". Han Fei's point was harder: a ruler who never tests his officials one by one will feed hundreds of impostors.\n",
      "title_s": "滥竽充数"
+    },
+    {
+     "id": 9,
+     "slug": "zheng-ren-mai-lu",
+     "title": "鄭人買履",
+     "title_py": "Zhèng rén mǎi lǚ",
+     "title_en": "The Man of Zheng Buys Shoes",
+     "source": {
+      "work": "韓非子·外儲說左上",
+      "author": "韓非 (c. 280–233 BC)",
+      "period": "Warring States",
+      "text_from": "《韓非子·外儲說左上》, as printed in the Hong Kong EDB recommended classical passages (KS2-03). Compared line by line, 2026-11-19, with the English Wiktionary quotation (鄭人買履, CC BY-SA) and the unpunctuated 四庫全書 文淵閣 text (Kanseki Repository KR3c0005, 卷十一): same words throughout. Wiktionary puts 反歸取之 inside the quotation; the idiom's 買 is not in the text (see n. 2).\n",
+      "work_s": "韩非子·外储说左上"
+     },
+     "status": "draft",
+     "intro": "The \"Outer Collection of Sayings\" (外儲說) works like the inner one (L8): principle first, then stories. This one comes in a section about scholars who trust their books more than the facts in front of them. The fool this time is from Zheng. Watch the small words: 之 used as a *verb*, 自 \"oneself\" placed before its verb, and 度 read two ways.\n",
+     "lines": [
+      {
+       "h": "鄭人有且置履者，",
+       "py": "Zhèng rén yǒu qiě zhì lǚ zhě,",
+       "en": "A man of Zheng was about to buy some shoes.",
+       "lit": "Zheng people there-was about-to acquire shoes one",
+       "h_s": "郑人有且置履者，"
+      },
+      {
+       "h": "先自度其足而置之其坐。",
+       "py": "xiān zì duó qí zú ér zhì zhī qí zuò.",
+       "en": "First he measured his feet himself and put (the measurement) on his seat.",
+       "h_s": "先自度其足而置之其坐。"
+      },
+      {
+       "h": "至之市，",
+       "py": "Zhì zhī shì,",
+       "en": "When it came to going to the market,",
+       "lit": "when-it-came-to going-to market",
+       "h_s": "至之市，"
+      },
+      {
+       "h": "而忘操之，",
+       "py": "ér wàng cāo zhī,",
+       "en": "he forgot to take it with him.",
+       "h_s": "而忘操之，"
+      },
+      {
+       "h": "已得履，",
+       "py": "yǐ dé lǚ,",
+       "en": "He had already found the shoes",
+       "h_s": "已得履，"
+      },
+      {
+       "h": "乃曰：",
+       "py": "nǎi yuē:",
+       "en": "when he said:",
+       "h_s": "乃曰："
+      },
+      {
+       "h": "「吾忘持度。」",
+       "py": "Wú wàng chí dù.",
+       "en": "\"I forgot to bring the measurement.\"",
+       "h_s": "「吾忘持度。」"
+      },
+      {
+       "h": "反歸取之，",
+       "py": "Fǎn guī qǔ zhī,",
+       "en": "He went back home to fetch it.",
+       "h_s": "反归取之，"
+      },
+      {
+       "h": "及反，",
+       "py": "jí fǎn,",
+       "en": "By the time he came back,",
+       "h_s": "及反，"
+      },
+      {
+       "h": "市罷，",
+       "py": "shì bà,",
+       "en": "the market had closed,",
+       "h_s": "市罢，"
+      },
+      {
+       "h": "遂不得履。",
+       "py": "suì bù dé lǚ.",
+       "en": "and so he never got his shoes.",
+       "h_s": "遂不得履。"
+      },
+      {
+       "h": "人曰：",
+       "py": "Rén yuē:",
+       "en": "Someone said:",
+       "h_s": "人曰："
+      },
+      {
+       "h": "「何不試之以足？」",
+       "py": "Hé bù shì zhī yǐ zú?",
+       "en": "\"Why didn't you try them on with your feet?\"",
+       "lit": "why not try them with feet",
+       "h_s": "「何不试之以足？」"
+      },
+      {
+       "h": "曰：",
+       "py": "Yuē:",
+       "en": "He said:",
+       "h_s": "曰："
+      },
+      {
+       "h": "「寧信度，",
+       "py": "Nìng xìn dù,",
+       "en": "\"I'd rather trust the measurement",
+       "h_s": "「宁信度，"
+      },
+      {
+       "h": "無自信也。」",
+       "py": "wú zì xìn yě.",
+       "en": "than trust myself.\"",
+       "lit": "not self trust",
+       "h_s": "无自信也。」"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "鄭人",
+       "text": "**鄭** Zhèng, a small state in present-day central Henan, swallowed by Han in 375 BC. Like Song (→ L1 n.1), it supplies fools to the philosophers. The opening is the 有 … 者 frame of → L1 n.2.\n",
+       "at_s": "郑人"
+      },
+      {
+       "n": 2,
+       "line": 0,
+       "at": "且置履",
+       "text": "**置** zhì \"to acquire, buy\" here; in the next line, 置之其坐, the same word is \"to put, place\", its everyday sense. **且** \"about to\" (→ L5 n.6). **履** lǚ \"shoe\" (in modern Chinese 履 survives in 履行 \"to carry out\", lit. \"to tread\"). Many modern school editions rewrite the line as 鄭人有欲買履者, with the commoner words 欲 and 買, and the idiom became 鄭人買履; the transmitted text has 且置.\n",
+       "at_s": "且置履"
+      },
+      {
+       "n": 3,
+       "line": 1,
+       "at": "自度",
+       "text": "**自 = \"oneself\", and it always comes *before* the verb.** 自度其足 \"measured his feet himself\": here 自 says who does it. In line 16, 自信 \"trust oneself\", 自 is the *object*, and it still stands before the verb (English says \"trust myself\"; Classical Chinese says \"self-trust\"). Modern 自信 \"self-confident\" grew out of this phrase. Don't confuse it with 自 \"from\" (→ L4 n.2), which governs a place: 自舟中.\n",
+       "at_s": "自度"
+      },
+      {
+       "n": 4,
+       "line": 1,
+       "at": "度",
+       "text": "**度** has two readings (破音字, → L3 n.2): **duó** \"to measure\" (the verb, here) and **dù** \"a measure, the measurement\" (the noun, in lines 7 and 15). In this story the measurement is a piece of string or a notched stick, something you can put on a chair and forget at home.\n",
+       "at_s": "度"
+      },
+      {
+       "n": 5,
+       "line": 1,
+       "at": "置之其坐",
+       "text": "置之其坐 \"put it on his seat\": 之 \"it\" (the measurement, → L2 n.2), then the place 其坐 with no preposition: the full form would be 置之**於**其坐 (→ L4 n.2). **坐** zuò is the noun \"seat\" here; the character 座 was made for that sense later (a 古今字, see n. 9).\n",
+       "at_s": "置之其坐"
+      },
+      {
+       "n": 6,
+       "line": 2,
+       "at": "至之市",
+       "text": "**之 as a verb: \"to go to\".** This is the fourth use of 之 promised in Review 1: 之市 \"go to the market\". 至 \"to reach, come to\": 至之市 \"when (the time) came to go to the market\". Some teachers read 至 \"arrived\" and 之 \"at the market\"; the verb reading is the standard one. Every 之 so far: attributive (→ L1 n.10), object \"it\" (→ L2 n.2), between subject and predicate (→ L2 n.3), and now \"to go\".\n",
+       "at_s": "至之市"
+      },
+      {
+       "n": 7,
+       "line": 3,
+       "at": "操",
+       "text": "**操** cāo \"to hold in the hand, carry\" (the hand radical 扌 shows it). Modern 操 means \"to drill, exercise\" (體操) or \"to operate\" (操作), far from its root. 而 here turns the story: \"and yet he forgot\" (→ L1 n.9).\n",
+       "at_s": "操"
+      },
+      {
+       "n": 8,
+       "line": 4,
+       "at": "已得履",
+       "text": "**已 … 乃 …** \"he had already got the shoes when he (only then) said …\": 已 \"already\" (→ L4 n.6), 乃 \"then, thereupon\", with the note of surprise of → L5 n.7. 得 here is \"to find, get hold of\" (the shoes he wanted), not yet \"to buy\".\n",
+       "at_s": "已得履"
+      },
+      {
+       "n": 9,
+       "line": 7,
+       "at": "反",
+       "text": "**反 = 返 fǎn \"to go back\".** The old character 反 \"to turn over\" also wrote \"to return\"; later a movement radical (辶) was added to make 返 for that sense. A pair like 反/返 or 坐/座 is a **古今字** (\"old and new characters\"): the *same word*, with a newer spelling. A 通假字 (→ L8 n.5) is different: a character borrowed for an *unrelated* word that sounded alike. Either way, read the word meant.\n",
+       "at_s": "反"
+      },
+      {
+       "n": 10,
+       "line": 8,
+       "at": "及反",
+       "text": "**及** jí \"to reach\": before a clause it means \"by the time …\": 及反 \"by the time he got back\". **罷** bà \"to stop, break up\": 市罷 \"the market had broken up\". 遂 \"and so, in the end\" (→ L5 n.11).\n",
+       "at_s": "及反"
+      },
+      {
+       "n": 11,
+       "line": 12,
+       "at": "何不",
+       "text": "**何不 V = \"why not V?\"** 何 asks \"what?\", and before a verb it asks \"why?\". Like every question word, it stands before the verb (→ L2 n.7, 何如). A 何不 question is usually advice: \"why didn't you just …?\"\n",
+       "at_s": "何不"
+      },
+      {
+       "n": 12,
+       "line": 12,
+       "at": "試之以足",
+       "text": "**V 之以 X = 以 X V 之** \"V it with X\". The 以 phrase usually comes before the verb (→ L1 n.10), but it may also follow the verb and its object: 試之以足 \"try them with your feet\" = 以足試之. Both orders are common; after the verb is a little more emphatic about the means.\n",
+       "at_s": "试之以足"
+      },
+      {
+       "n": 13,
+       "line": 14,
+       "at": "寧",
+       "text": "**寧 A，無 B** \"rather A than B\": 寧 nìng (not níng \"peaceful\") \"would rather\"; 無 is the prohibitive \"don't\" (→ L6 n.6), here \"rather not\". 寧信度，無自信 \"I'd rather trust the measurement than trust myself\", the whole moral in six characters.\n",
+       "at_s": "宁"
+      },
+      {
+       "n": 14,
+       "line": 15,
+       "at": "自信",
+       "text": "**自信** \"trust oneself\", with 自 as the object before the verb (n. 3). Han Fei's target is the scholar who believes the books of the ancients rather than what he can see: the same quarrel with the \"former kings\" as in L1.\n",
+       "at_s": "自信"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "鄭",
+       "py": "Zhèng",
+       "en": "Zheng, a small central state (in present-day Henan)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "郑"
+      },
+      {
+       "w": "置",
+       "py": "zhì",
+       "en": "to acquire, buy (line 1); to put, place (line 2)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "置"
+      },
+      {
+       "w": "履",
+       "py": "lǚ",
+       "en": "shoe",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "履"
+      },
+      {
+       "w": "自",
+       "py": "zì",
+       "en": "oneself (before the verb)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "自"
+      },
+      {
+       "w": "度",
+       "py": "duó",
+       "en": "to measure; read dù: a measure, the measurement",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "度"
+      },
+      {
+       "w": "坐",
+       "py": "zuò",
+       "en": "seat (= 座)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "坐"
+      },
+      {
+       "w": "至",
+       "py": "zhì",
+       "en": "to reach; when it came to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "至"
+      },
+      {
+       "w": "之",
+       "py": "zhī",
+       "en": "to go to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "之"
+      },
+      {
+       "w": "市",
+       "py": "shì",
+       "en": "market",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "市"
+      },
+      {
+       "w": "忘",
+       "py": "wàng",
+       "en": "to forget",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "忘"
+      },
+      {
+       "w": "操",
+       "py": "cāo",
+       "en": "to hold, carry, take along",
+       "w_s": "操"
+      },
+      {
+       "w": "反",
+       "py": "fǎn",
+       "en": "to go back, return (= 返)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "反"
+      },
+      {
+       "w": "取",
+       "py": "qǔ",
+       "en": "to fetch, take",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "取"
+      },
+      {
+       "w": "及",
+       "py": "jí",
+       "en": "to reach; by the time (that)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "及"
+      },
+      {
+       "w": "罷",
+       "py": "bà",
+       "en": "to stop, break up",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "罢"
+      },
+      {
+       "w": "何不",
+       "py": "hé bù",
+       "en": "why not?",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "何不"
+      },
+      {
+       "w": "試",
+       "py": "shì",
+       "en": "to try",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "试"
+      },
+      {
+       "w": "寧",
+       "py": "nìng",
+       "en": "would rather",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "宁"
+      },
+      {
+       "w": "信",
+       "py": "xìn",
+       "en": "to trust, believe",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "信"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "王見之，曰：「牛何之？」",
+       "py": "Wáng jiàn zhī, yuē: Niú hé zhī?",
+       "src": "孟子·梁惠王上",
+       "en": "The king saw it and said: \"Where is the ox going?\"",
+       "tests": "之 = to go; the question word 何 before the verb",
+       "h_s": "王见之，曰：「牛何之？」"
+      },
+      {
+       "h": "權，然後知輕重；度，然後知長短。",
+       "py": "Quán, rán hòu zhī qīng zhòng; duó, rán hòu zhī cháng duǎn.",
+       "src": "孟子·梁惠王上",
+       "en": "Weigh, and then you know what is light and heavy; measure, and then you know what is long and short.",
+       "tests": "度 duó, the noun 權 \"steelyard\" used as the verb \"to weigh\"",
+       "h_s": "权，然后知轻重；度，然后知长短。"
+      },
+      {
+       "h": "見賢思齊焉，見不賢而內自省也。",
+       "py": "Jiàn xián sī qí yān, jiàn bù xián ér nèi zì xǐng yě.",
+       "src": "論語·里仁",
+       "en": "When you see a worthy man, think of becoming his equal; when you see an unworthy one, look inside and examine yourself.",
+       "tests": "自 + verb (自省 \"examine oneself\"), 而",
+       "h_s": "见贤思齐焉，见不贤而内自省也。"
+      },
+      {
+       "h": "禮，與其奢也，寧儉。",
+       "py": "Lǐ, yǔ qí shē yě, nìng jiǎn.",
+       "src": "論語·八佾",
+       "en": "In ritual, rather than be lavish, be frugal.",
+       "tests": "寧 nìng \"rather\"",
+       "h_s": "礼，与其奢也，宁俭。"
+      },
+      {
+       "h": "殺人以梃與刃，有以異乎？",
+       "py": "Shā rén yǐ tǐng yǔ rèn, yǒu yǐ yì hū?",
+       "src": "孟子·梁惠王上",
+       "en": "Killing a man with a club or with a blade: is there anything that makes them different?",
+       "tests": "以 phrase after the verb, 有以 (→ L8 n.11), 與, 乎",
+       "h_s": "杀人以梃与刃，有以异乎？"
+      }
+     ],
+     "culture": "Han Fei tells the story in a section on scholars who argue from ancient texts instead of from the case in front of them. The idiom 鄭人買履 (also 買履忘度) mocks anyone who sticks to a rule or a document even when the plain facts are at hand: the feet were there all along.\n",
+     "title_s": "郑人买履"
     }
    ]
   },
