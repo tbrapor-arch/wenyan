@@ -26416,7 +26416,7 @@
       "work": "列子·湯問",
       "author": "attributed to 列禦寇 Lie Yukou (Warring States); the text as we have it was edited by 張湛 (4th c. AD)",
       "period": "compiled by the 4th century AD from older material",
-      "text_from": "《列子·湯問》, first half (to 始一反焉). Words as in the 四部叢刊 text (Kanseki Repository KR5c0049), compared line by line, 2026-11-19, with the 四庫全書 文淵閣 text with 張湛's commentary (KR5c0125), the Hong Kong EDB recommended-passage edition (KS3-03) and the English Wiktionary citation (Citations:愚公移山, CC BY-SA). Punctuation follows Wiktionary and the EDB edition. Variants: 太形 (四部叢刊, 文淵閣, EDB; Wiktionary 太行; see n. 1); 丘 (文淵閣 邱, the Qing taboo form); 叩石 (文淵閣 即石); 獻疑曰 (EDB 疑之，曰); 箕畚運於 (EDB 以箕畚運於, Wiktionary 運于). The EDB text calls itself a reference version and modernises a few words; we follow the old editions.\n",
+      "text_from": "《列子·湯問》, first half (to 始一反焉). Words as in the 四部叢刊 text (Kanseki Repository KR5c0049), compared line by line, 2026-11-19, with the 四庫全書 文淵閣 text with 張湛's commentary (KR5c0125), the Hong Kong EDB recommended-passage edition (KS3-03) and the English Wiktionary citation (Citations:愚公移山, CC BY-SA). Punctuation follows Wiktionary and the EDB edition. Variants: 太形 twice (四部叢刊, EDB; the 文淵閣 text has 太行 in line 20, Wiktionary in line 1; see n. 1); 丘 (文淵閣 邱, the Qing taboo form); 叩石 (文淵閣 即石); 獻疑曰 (EDB 疑之，曰); 箕畚運於 (EDB 以箕畚運於, Wiktionary 運于). The EDB text calls itself a reference version and modernises a few words; we follow the old editions.\n",
       "work_s": "列子·汤问"
      },
      "status": "draft",
@@ -26623,7 +26623,7 @@
        "n": 1,
        "line": 0,
        "at": "太形",
-       "text": "**太形** is the 太行 Tàiháng range, which runs north–south between Shanxi and Hebei. The old editions write 形; 張湛's commentary says 形當作行 \"形 should be 行\", and Wiktionary and many modern editions print 太行. We keep the character of the old texts and give its own reading, xíng, but the mountains are the Taihang. **王屋** Wángwū \"King's House\" is a mountain in western Henan.\n",
+       "text": "**太形** is the 太行 Tàiháng range, which runs north–south between Shanxi and Hebei. The old editions write 形; 張湛's commentary says 形當作行 \"形 should be 行\", and many modern editions print 太行 (the 四庫全書 copy and Wiktionary each have it once). We keep the character of the old texts and give its own reading, xíng, but the mountains are the Taihang. **王屋** Wángwū \"King's House\" is a mountain in western Henan.\n",
        "at_s": "太形"
       },
       {
@@ -28058,6 +28058,356 @@
      ],
      "culture": "張湛, the 4th-century editor of the *Liezi*, adds a comment at the end of the story: people who want results by evening sigh at the end of the year, but the great man takes heaven and earth for a single morning and countless generations for one long breath, and does not mind whether the work is finished by himself or by others. Mao's reading in 1945 was the same in a political key: the work is collective and goes on beyond any one life. Today 愚公移山 is the standard idiom for tireless perseverance against impossible odds.\n",
      "title_s": "愚公移山（下）"
+    },
+    {
+     "id": 14,
+     "slug": "review-2",
+     "kind": "review",
+     "title": "複習二",
+     "title_py": "Fùxí èr",
+     "title_en": "Review 2: Lessons 8–13",
+     "status": "draft",
+     "intro": "Five stories in six lessons, about 650 characters: two more from Han Fei, one from the *Huainanzi*, and two from the *Liezi*, the last one long enough to need two lessons. The grammar has moved on from \"what is a sentence\" to questions, pronouns, and words that change their class or their reading. Re-read the texts aloud with Cover on, then work through the points below; each sends you back to the note that first explained it. The exercise has six new sentences, from the 論語, the 孟子 and the 莊子.\n",
+     "recap": [
+      {
+       "topic": "Characters that stand for other words (通假字, 古今字)",
+       "refs": [
+        "L8 n.5",
+        "L9 n.9",
+        "L11 n.18",
+        "L13 n.2"
+       ],
+       "text": "Read the word, not the character. A **borrowed character** (通假字) writes an unrelated word that sounded alike: 說 for 悅 yuè \"pleased\", 舍 for 釋 shì \"let go\", 惠 for 慧 \"wise\". An **old–new pair** (古今字) is one word with a later spelling: 反 → 返 \"go back\", 坐 → 座 \"seat\".\n",
+       "examples": [
+        "宣王說之",
+        "反歸取之",
+        "其人舍然大喜",
+        "汝之不惠"
+       ],
+       "examples_s": [
+        "宣王说之",
+        "反归取之",
+        "其人舍然大喜",
+        "汝之不惠"
+       ]
+      },
+      {
+       "topic": "One character, two readings",
+       "refs": [
+        "L8 n.8",
+        "L9 n.4",
+        "L10 n.2",
+        "L11 n.2",
+        "L11 n.14",
+        "L12 n.15"
+       ],
+       "text": "好 hào \"to like\" · 度 duó \"to measure\" / dù \"measurement\" · 塞 sài \"frontier\" / sè \"block\" · 亡 wú \"there is no\" / wáng \"lose, flee\" · 中 zhòng \"to hit\" · 曾 zēng \"even\" · 食 sì \"to feed\" · 處 chǔ \"dwell\" / chù \"place\" · 宿 xiù \"constellation\".\n",
+       "examples": [
+        "好一一聽之",
+        "先自度其足而置之其坐",
+        "近塞上之人有善術者",
+        "身亡所寄",
+        "曾不能損魁父之丘"
+       ],
+       "examples_s": [
+        "好一一听之",
+        "先自度其足而置之其坐",
+        "近塞上之人有善术者",
+        "身亡所寄",
+        "曾不能损魁父之丘"
+       ]
+      },
+      {
+       "topic": "之 the verb, and the fusion words 諸 and 焉",
+       "refs": [
+        "L9 n.6",
+        "L12 n.18",
+        "L12 n.17",
+        "L12 n.25",
+        "L13 n.10"
+       ],
+       "text": "之 \"to go to\" completes the four uses of 之 (至之市). 諸 = 之 + 於 (投諸渤海之尾 \"throw them into the Bohai\"). 焉 asks \"where? how?\" before a verb (焉置土石) and means \"there, in it\" at the end (有子存焉).\n",
+       "examples": [
+        "至之市",
+        "投諸渤海之尾",
+        "且焉置土石",
+        "有子存焉"
+       ],
+       "examples_s": [
+        "至之市",
+        "投诸渤海之尾",
+        "且焉置土石",
+        "有子存焉"
+       ]
+      },
+      {
+       "topic": "Pronouns",
+       "refs": [
+        "L9 n.3",
+        "L11 n.4",
+        "L11 n.8",
+        "L12 n.9",
+        "L12 n.14",
+        "L13 n.16"
+       ],
+       "text": "自 \"oneself\", always before the verb (自度, 自信). 彼 \"that one, he\". \"You\": 君 (respectful), 子 (polite), 若 and 汝/女 (plain). 其 as the subject of a clause: 懼其不已 \"feared that he would not stop\".\n",
+       "examples": [
+        "無自信也",
+        "又有憂彼之所憂者",
+        "若屈伸呼吸",
+        "吾與汝畢力平險",
+        "以君之力",
+        "懼其不已也"
+       ],
+       "examples_s": [
+        "无自信也",
+        "又有忧彼之所忧者",
+        "若屈伸呼吸",
+        "吾与汝毕力平险",
+        "以君之力",
+        "惧其不已也"
+       ]
+      },
+      {
+       "topic": "Questions",
+       "refs": [
+        "L9 n.11",
+        "L10 n.7",
+        "L11 n.9",
+        "L11 n.11",
+        "L11 n.15",
+        "L12 n.16",
+        "L13 n.5"
+       ],
+       "text": "何不 \"why not?\" · 何遽 \"how can one be sure …?\" · 奈何 \"why? how?\" · 奈 X 何 and 如 X 何 \"what can be done about X?\" · 邪 yé, a question particle · 其 strengthening a rhetorical question. Question words come before the verb.\n",
+       "examples": [
+        "何不試之以足",
+        "此何遽不為福乎",
+        "奈何憂崩墜乎",
+        "奈地壞何",
+        "如太形、王屋何",
+        "其如土石何"
+       ],
+       "examples_s": [
+        "何不试之以足",
+        "此何遽不为福乎",
+        "奈何忧崩坠乎",
+        "奈地坏何",
+        "如太形、王屋何",
+        "其如土石何"
+       ]
+      },
+      {
+       "topic": "Words that change class (詞類活用)",
+       "refs": [
+        "L10 n.10",
+        "L8 n.6",
+        "L12 n.6",
+        "L12 n.9",
+        "L12 n.21",
+        "L11 n.5",
+        "L13 n.1"
+       ],
+       "text": "The slot decides the class. Adjective with an object → verb (富良馬 \"rich in fine horses\"); adjective → \"make so\" (平險 \"level the steep\", 曉之 \"make him understand\", 止之 \"make him stop\"); noun with an object → verb (面山 \"face the mountain\"); noun before a verb → how or with what (廩食 \"feed from the granary\", 箕畚運 \"carry in baskets\").\n",
+       "examples": [
+        "家富良馬",
+        "面山而居",
+        "廩食以數百人",
+        "箕畚運於渤海之尾",
+        "因往曉之"
+       ],
+       "examples_s": [
+        "家富良马",
+        "面山而居",
+        "廪食以数百人",
+        "箕畚运于渤海之尾",
+        "因往晓之"
+       ]
+      },
+      {
+       "topic": "無以, 有所, 無所, 以 … 之故",
+       "refs": [
+        "L8 n.11",
+        "L11 n.2",
+        "L11 n.14",
+        "L13 n.14",
+        "L10 n.15"
+       ],
+       "text": "無以 V \"have no way to V\" (also written 亡以) · 無所 V \"nothing / nowhere to V\" · 有所 V \"something to V\" · 以 X 之故 \"because of X\".\n",
+       "examples": [
+        "吾無以知其善者",
+        "河曲智叟亡以應",
+        "身亡所寄",
+        "亦不能有所中傷",
+        "此獨以跛之故"
+       ],
+       "examples_s": [
+        "吾无以知其善者",
+        "河曲智叟亡以应",
+        "身亡所寄",
+        "亦不能有所中伤",
+        "此独以跛之故"
+       ]
+      },
+      {
+       "topic": "Sentence shapes",
+       "refs": [
+        "L8 n.2",
+        "L12 n.4",
+        "L13 n.2",
+        "L12 n.19",
+        "L10 n.14",
+        "L9 n.12"
+       ],
+       "text": "A noun phrase or a number can be the predicate (必三百人, 年且九十). A name + 者 sets up a topic (北山愚公者). An exclamation can put its predicate first (甚矣，汝之不惠). Numbers follow the noun (荷擔者三夫), and 十九 is \"nine in ten\". A 以 phrase can follow the verb (試之以足).\n",
+       "examples": [
+        "必三百人",
+        "年且九十",
+        "北山愚公者",
+        "甚矣，汝之不惠",
+        "死者十九",
+        "試之以足"
+       ],
+       "examples_s": [
+        "必三百人",
+        "年且九十",
+        "北山愚公者",
+        "甚矣，汝之不惠",
+        "死者十九",
+        "试之以足"
+       ]
+      },
+      {
+       "topic": "Conjunctions and time clauses",
+       "refs": [
+        "L13 n.9",
+        "L11 n.13",
+        "L9 n.10",
+        "L9 n.13",
+        "L10 n.17"
+       ],
+       "text": "雖 \"even if, although\" · 只使 \"even if\" · 及 \"by the time\" · 寧 A 無 B \"rather A than B\" · 故 \"therefore\" at the head of a sentence.\n",
+       "examples": [
+        "雖我之死",
+        "只使墜",
+        "及反",
+        "寧信度",
+        "故福之為禍"
+       ],
+       "examples_s": [
+        "虽我之死",
+        "只使坠",
+        "及反",
+        "宁信度",
+        "故福之为祸"
+       ]
+      },
+      {
+       "topic": "Words that changed meaning (古今詞義)",
+       "refs": [
+        "L8 n.3",
+        "L9 n.7",
+        "L10 n.3",
+        "L10 n.9",
+        "L11 n.3",
+        "L12 n.7",
+        "L12 n.8",
+        "L13 n.11",
+        "L13 n.22"
+       ],
+       "text": "處士 a gentleman out of office · 操 to hold · 善 good at · 術 divination · 將 to lead · 廢 to give up · 懲 to suffer from · 室 household · 窮 to run out (not \"poor\") · 隴斷 a ridge (not \"monopoly\").\n",
+       "examples": [
+        "處士逃",
+        "而忘操之",
+        "其馬將胡駿馬而歸",
+        "廢寢食者",
+        "懲山北之塞",
+        "聚室而謀曰",
+        "無窮匱也",
+        "無隴斷焉"
+       ],
+       "examples_s": [
+        "处士逃",
+        "而忘操之",
+        "其马将胡骏马而归",
+        "废寝食者",
+        "惩山北之塞",
+        "聚室而谋曰",
+        "无穷匮也",
+        "无陇断焉"
+       ]
+      },
+      {
+       "topic": "Simplified-character warnings",
+       "refs": [
+        "L12 n.11",
+        "L13 n.3",
+        "L10 n.5"
+       ],
+       "text": "Simplified 于 covers both 于 and 於; 余 covers 余 \"I\" and 餘 \"surplus\"; 吊 covers 弔 \"to condole\". Read traditional texts with both forms in mind.\n",
+       "examples": [
+        "達于漢陰",
+        "以殘年餘力",
+        "人皆弔之"
+       ],
+       "examples_s": [
+        "达于汉阴",
+        "以残年余力",
+        "人皆吊之"
+       ]
+      }
+     ],
+     "exercise": [
+      {
+       "h": "巧言令色，鮮矣仁！",
+       "py": "Qiǎo yán lìng sè, xiǎn yǐ rén!",
+       "src": "論語·學而",
+       "en": "Clever words and an ingratiating face: rare indeed is goodness there!",
+       "tests": "predicate first in an exclamation (鮮矣 xiǎn yǐ \"rare indeed\"), 矣",
+       "h_s": "巧言令色，鲜矣仁！"
+      },
+      {
+       "h": "魚，我所欲也；熊掌，亦我所欲也。二者不可得兼，舍魚而取熊掌者也。",
+       "py": "Yú, wǒ suǒ yù yě; xióng zhǎng, yì wǒ suǒ yù yě. Èr zhě bù kě dé jiān, shě yú ér qǔ xióng zhǎng zhě yě.",
+       "src": "孟子·告子上",
+       "en": "Fish is something I want; bear's paw is also something I want. If I can't have both, I'll let the fish go and take the bear's paw.",
+       "tests": "所, 不可 + verb, 舍 shě, 取, the number after the noun (二者)",
+       "h_s": "鱼，我所欲也；熊掌，亦我所欲也。二者不可得兼，舍鱼而取熊掌者也。"
+      },
+      {
+       "h": "君子喻於義，小人喻於利。",
+       "py": "Jūnzǐ yù yú yì, xiǎo rén yù yú lì.",
+       "src": "論語·里仁",
+       "en": "The gentleman understands what is right; the small man understands what pays.",
+       "tests": "於; 喻 \"to understand\" (compare 曉)",
+       "h_s": "君子喻于义，小人喻于利。"
+      },
+      {
+       "h": "子非魚，安知魚之樂？",
+       "py": "Zǐ fēi yú, ān zhī yú zhī lè?",
+       "src": "莊子·秋水",
+       "en": "You are not a fish: how do you know what the fish enjoy?",
+       "tests": "子 \"you\", 非, 安 \"how\", subject + 之 + predicate",
+       "h_s": "子非鱼，安知鱼之乐？"
+      },
+      {
+       "h": "割雞焉用牛刀？",
+       "py": "Gē jī yān yòng niú dāo?",
+       "src": "論語·陽貨",
+       "en": "Why use an ox-cleaver to kill a chicken?",
+       "tests": "焉 \"how, why\" before the verb",
+       "h_s": "割鸡焉用牛刀？"
+      },
+      {
+       "h": "人無遠慮，必有近憂。",
+       "py": "Rén wú yuǎn lǜ, bì yǒu jìn yōu.",
+       "src": "論語·衛靈公",
+       "en": "A man who does not think far ahead will have troubles close at hand.",
+       "tests": "無, 必, 近, 憂",
+       "h_s": "人无远虑，必有近忧。"
+      }
+     ],
+     "title_s": "复习二"
     }
    ]
   },
