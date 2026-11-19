@@ -8,11 +8,11 @@ in exercises.
 
 | Stage | Lessons | Texts | Why |
 |---|---|---|---|
-| I. Fables | 1–20 | 韓非子, 列子, 戰國策, 孟子, 呂氏春秋, 莊子 anecdotes (守株待兔, 自相矛盾, 揠苗助長, 刻舟求劍, 狐假虎威…) | short, self-contained, the core function words come back constantly |
-| II. 論語 | 21–40 | selected sayings, grouped by function word / theme | short lines, the backbone of later allusion |
-| III. Argument | 41–60 | 孟子, 莊子, 荀子, 韓非子 longer passages | sustained argument, rhetoric |
-| IV. Narrative | 61–80 | 左傳, 戰國策, 史記 | history and long-form prose |
-| V. Verse & later prose | 81+ | 詩經, 楚辭, 唐宋古文 | rhyme, allusion, imitation of the classics |
+| I. Fables | 1–21 | 韓非子, 列子, 戰國策, 孟子, 呂氏春秋, 莊子 anecdotes (守株待兔, 自相矛盾, 揠苗助長, 刻舟求劍, 狐假虎威…) | short, self-contained, the core function words come back constantly |
+| II. 論語 | 22–42 | selected sayings, grouped by function word / theme | short lines, the backbone of later allusion |
+| III. Argument | 43–63 | 孟子, 莊子, 荀子, 韓非子 longer passages | sustained argument, rhetoric |
+| IV. Narrative | 64–84 | 左傳, 戰國策, 史記 | history and long-form prose |
+| V. Verse & later prose | 85+ | 詩經, 楚辭, 唐宋古文 | rhyme, allusion, imitation of the classics |
 
 Each stage roughly follows the order of 王力《古代漢語》's general-theory chapters (判斷句 → 敘述句 →
 否定句 → 疑問句 → 詞類活用 → 代詞 → 連詞介詞 …), introduced through whichever text shows them first.
