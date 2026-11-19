@@ -226,7 +226,7 @@ def zh_texts(course):
     return list(modern), list(classical), list(words)
 
 
-def zh_table(course):
+def zh_table(course, write=True):
     """the dictionary of the app's Chinese (tools/zh_words.py): DATA.zh, zhx, zhqt, zhm, zhp; fails when the browser's
     cut would differ from the build's"""
     gone = zh_words.missing()
@@ -254,6 +254,8 @@ def zh_table(course):
     if bad:
         sys.exit("zh_words: the browser would cut or read some texts differently (see above)")
     zh_check_js(course, modern, classical)
+    if not write:
+        return
     (ROOT / "data" / "build").mkdir(parents=True, exist_ok=True)
     (ROOT / "data" / "build" / "zh-texts.json").write_text(json.dumps({"modern": modern, "classical": classical},
                                                                      ensure_ascii=False), encoding="utf-8")
@@ -314,9 +316,14 @@ def main():
     rumen = Rumen(fail).track(loaded["rumen"])
     if errors:
         sys.exit("\n".join(errors))
-    if "--check" in sys.argv:
+    check = "--check" in sys.argv
+    if check:
         print("check: ok")
-        return
+        # make test: also the browser's own cut (app/src/dict.js in Node) when Node and the dictionary sources are here
+        import shutil
+        if not shutil.which("node") or zh_words.missing():
+            print("check: no node or no data/raw, the browser cut check is skipped (make app runs it)")
+            return
     for key in ("wenyan", "baihua"):
         for _, L in loaded[key]:
             simp_reading(L)
@@ -326,7 +333,9 @@ def main():
                          for t in TRACKS]}
     course["tracks"][0].update(rumen)
     # The dictionary: every Chinese text of the app made tappable (tools/zh_words.py, app/src/dict.js).
-    zh_table(course)
+    zh_table(course, write=not check)
+    if check:
+        return
     out = ROOT / "app" / "course.json"
     out.write_text(json.dumps(course, ensure_ascii=False, indent=1), encoding="utf-8")
     print(" · ".join(f"{t['zh']} {len(t['lessons'])}" for t in course["tracks"]), f"-> {out.relative_to(ROOT)}")

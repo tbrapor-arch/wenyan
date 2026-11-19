@@ -313,8 +313,8 @@ One page, four tracks, five tabs: **入門 · 文言 · 白話 · 成語 · 設�
   that may not be the classical sense; the lesson's glossary and notes are the authority. There, "In the course" is
   only the lesson's own glossary word or 成語 (never the modern 入門 gloss), and "Examples in the course" lists only
   classical lines (文言, 成語 origins, 白話 Roots). Modern text is cut by the
-  build's rule (`tools/zh_words.py`), and `make app` fails if the page's own code (`app/src/dict.js`, run in Node)
-  would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole; so is a 入門 multiple-choice
+  build's rule (`tools/zh_words.py`), and `make app` (and `make test`, when Node is there) fails if the page's
+  own code (`app/src/dict.js`, run in Node) would cut or read any text differently. A line drawn in pieces (between glossary words) is cut once, whole; so is a 入門 multiple-choice
   question, with its answer in the gap (the build checks that full sentence), the gap drawn inside that cut.
 - **Keyboard and screen readers.** Every tappable word and note number is a button that Enter / Space opens, with
   the same rules as a tap. A line (a block of words) is one tab stop; the arrow keys (and Home / End) move between its

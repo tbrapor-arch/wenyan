@@ -1,6 +1,6 @@
 # make data      download open sources into data/raw (CC-CEDICT, jieba, HSK lists)
 # make app       make data, then validate the lessons, write app/course.json, app/dist/index.html and dist/wenyan.html
-# make test      validate the lessons only (non-zero exit on an error)
+# make test      validate the lessons, then (with Node and data/raw) check the browser's own cut, app/src/dict.js; writes nothing
 # make site      the published site in _site/: the page with its CSP, manifest, icons, offline service worker
 # make smoke     build, click through the app at phone and desktop width, then test the site's services (needs playwright)
 PY = python3 -I

@@ -689,10 +689,25 @@ def keyboard(b):
     print(f"smoke: keyboard: one tab stop per line, Enter / Space on every kind of word, the sheet a modal with the focus; reduced motion; night line numbers {cr:.1f}:1")
 
 
+def make_test(b):
+    """finding 11: make test (build.py --check) runs the browser's own cut check (app/src/dict.js in Node) when Node is
+    there, and writes nothing"""
+    import shutil, subprocess
+    if not shutil.which("node"):
+        print("smoke: make test: no node here, not tested"); return
+    before = {f: f.stat().st_mtime for f in (ROOT / "app" / "course.json", ROOT / "app" / "dist" / "index.html") if f.exists()}
+    r = subprocess.run([sys.executable, "-I", str(ROOT / "tools" / "build.py"), "--check"], capture_output=True, text=True)
+    if r.returncode or "app/src/dict.js (Node) cuts and reads all" not in r.stdout:
+        errors.append(f"make test: the browser cut check did not run ({r.returncode}): {r.stdout[-300:]}{r.stderr[-300:]}")
+    if any(f.stat().st_mtime != t for f, t in before.items()):
+        errors.append("make test: build.py --check wrote the course or the page")
+    print("smoke: make test: runs the browser cut check (Node), writes nothing")
+
+
 TESTS = {"phone": lambda b: run(b.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, has_touch=True).new_page(), "phone"),
          "wide": lambda b: run(b.new_context(viewport={"width": 1200, "height": 850}).new_page(), "wide"),
          "migration": lambda b: migration(b.new_context(viewport={"width": 1200, "height": 850}).new_page()),
-         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage, "display": display, "keyboard": keyboard}
+         "classical": classical_gloss, "progress_file": progress_file, "trad_forms": trad_forms, "corrupt": corrupt_storage, "display": display, "keyboard": keyboard, "make_test": make_test}
 # --only a,b: run only these tests (while working on one)
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else list(TESTS)
 with sync_playwright() as p:

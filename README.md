@@ -60,7 +60,7 @@ dist/wenyan.html (the same file, opens offline), _site/ (what GitHub Pages serve
 pip install -r requirements.txt
 make data      # download the dictionary sources into data/raw (needs npm, curl, git); make app runs it first
 make app       # validate, build the dictionary and app/dist/index.html (python3 -I tools/build.py)
-make test      # validate only
+make test      # validate; with Node, also the browser's own cut (app/src/dict.js); writes nothing
 make site      # the published site in _site/ (CSP, manifest, icons, service worker)
 make smoke     # make site, then tools/smoke.py and tools/smoke_services.py (needs playwright)
 python3 -m http.server -d _site    # or app/dist, or just open dist/wenyan.html
