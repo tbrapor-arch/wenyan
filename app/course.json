@@ -30210,6 +30210,550 @@
      ],
      "culture": "The idiom 一傅眾咻 \"one tutor and a crowd of hecklers\" describes any effort swamped by its surroundings; it is often quoted about learning a language, which is exactly Mencius's example. A learner of Qi among Chu speakers will not learn it however hard he is beaten; two years in the streets of the Qi capital and he will speak nothing else. Mencius's advice to Dai Busheng is the same: change the whole court, or nothing will change.\n",
      "title_s": "一傅众咻"
+    },
+    {
+     "id": 18,
+     "slug": "xue-yi",
+     "title": "學弈",
+     "title_py": "Xué yì",
+     "title_en": "Learning Weiqi",
+     "source": {
+      "work": "孟子·告子上",
+      "author": "孟子 Mencius (c. 372–289 BC)",
+      "period": "Warring States",
+      "text_from": "《孟子·告子上》, the whole chapter 無或乎王之不智也, whose second half is known as 學弈. Words as in the 四部叢刊 text with 趙岐's commentary (Kanseki Repository KR1h0002, 卷十一), compared character by character, 2026-11-19, with the Thesaurus Linguae Sericae text in the Kanseki Repository (KR1h0001) and with the 殆知閣 transcription (simplified characters, wording only): the same words throughout. Punctuation: lines 9–25 as in the English Wiktionary citation at 專心致志 and lines 3–5 as in its citation at 一暴十寒 (CC BY-SA), without Wiktionary's quotation marks around 非然也, which stands inside Mencius's own words; lines 1–2 and 6–8 punctuated by us. Wiktionary reads 為是 wéi shì; we read wèi (n. 17).\n",
+      "work_s": "孟子·告子上"
+     },
+     "status": "draft",
+     "intro": "A whole chapter of the *Mencius*, two short parables in a row. Mencius is explaining why the King of Qi never becomes a good ruler, although Mencius talks to him: one day of sun and ten of frost will kill any plant, and a pupil who dreams of shooting geese learns nothing from the best teacher in the land. Both gave idioms, 一暴十寒 and 專心致志. Watch 乎 used like 於, an object moved before its verb (惟弈秋之為聽), and 為 wèi \"because\".\n",
+     "lines": [
+      {
+       "h": "孟子曰：",
+       "py": "Mèngzǐ yuē:",
+       "en": "Mencius said:",
+       "h_s": "孟子曰："
+      },
+      {
+       "h": "「無或乎王之不智也。",
+       "py": "Wú huò hū wáng zhī bù zhì yě.",
+       "en": "\"Don't be puzzled that the king is not wise.",
+       "lit": "don't be-puzzled at king 's not-wise",
+       "h_s": "「无或乎王之不智也。"
+      },
+      {
+       "h": "雖有天下易生之物也，",
+       "py": "Suī yǒu tiān xià yì shēng zhī wù yě,",
+       "en": "Take the most easily grown thing in the world:",
+       "h_s": "虽有天下易生之物也，"
+      },
+      {
+       "h": "一日暴之、十日寒之，",
+       "py": "yī rì pù zhī, shí rì hán zhī,",
+       "en": "warm it in the sun for one day and chill it for ten,",
+       "h_s": "一日暴之、十日寒之，"
+      },
+      {
+       "h": "未有能生者也。",
+       "py": "wèi yǒu néng shēng zhě yě.",
+       "en": "and none has ever been able to grow.",
+       "h_s": "未有能生者也。"
+      },
+      {
+       "h": "吾見亦罕矣，",
+       "py": "Wú jiàn yì hǎn yǐ,",
+       "en": "I see the king very seldom,",
+       "h_s": "吾见亦罕矣，"
+      },
+      {
+       "h": "吾退而寒之者至矣，",
+       "py": "wú tuì ér hán zhī zhě zhì yǐ,",
+       "en": "and as soon as I withdraw, those who chill him arrive:",
+       "h_s": "吾退而寒之者至矣，"
+      },
+      {
+       "h": "吾如有萌焉何哉？",
+       "py": "wú rú yǒu méng yān hé zāi?",
+       "en": "what can I do with what shoots there are in him?",
+       "h_s": "吾如有萌焉何哉？"
+      },
+      {
+       "h": "今夫弈之為數，",
+       "py": "Jīn fú yì zhī wéi shù,",
+       "en": "Now, weiqi as an art",
+       "h_s": "今夫弈之为数，"
+      },
+      {
+       "h": "小數也；",
+       "py": "xiǎo shù yě;",
+       "en": "is only a small art,",
+       "h_s": "小数也；"
+      },
+      {
+       "h": "不專心致志，",
+       "py": "bù zhuān xīn zhì zhì,",
+       "en": "but if you don't give it your whole mind and bend your will to it,",
+       "h_s": "不专心致志，"
+      },
+      {
+       "h": "則不得也。",
+       "py": "zé bù dé yě.",
+       "en": "you will not master it.",
+       "h_s": "则不得也。"
+      },
+      {
+       "h": "弈秋，",
+       "py": "Yì Qiū,",
+       "en": "Yi Qiu",
+       "h_s": "弈秋，"
+      },
+      {
+       "h": "通國之善弈者也。",
+       "py": "tōng guó zhī shàn yì zhě yě.",
+       "en": "is the best weiqi player in the whole country.",
+       "lit": "whole state 's good-at weiqi one",
+       "h_s": "通国之善弈者也。"
+      },
+      {
+       "h": "使弈秋誨二人弈，",
+       "py": "Shǐ Yì Qiū huì èr rén yì,",
+       "en": "Suppose Yi Qiu teaches two men weiqi.",
+       "h_s": "使弈秋诲二人弈，"
+      },
+      {
+       "h": "其一人專心致志，",
+       "py": "qí yī rén zhuān xīn zhì zhì,",
+       "en": "One of them gives it his whole mind and will,",
+       "h_s": "其一人专心致志，"
+      },
+      {
+       "h": "惟弈秋之為聽。",
+       "py": "wéi Yì Qiū zhī wéi tīng.",
+       "en": "listening to Yi Qiu alone.",
+       "lit": "only Yi Qiu (之為) listen",
+       "h_s": "惟弈秋之为听。"
+      },
+      {
+       "h": "一人雖聽之，",
+       "py": "Yī rén suī tīng zhī,",
+       "en": "The other, although he listens to him,",
+       "h_s": "一人虽听之，"
+      },
+      {
+       "h": "一心以為有鴻鵠將至，",
+       "py": "yī xīn yǐ wéi yǒu hóng hú jiāng zhì,",
+       "en": "is thinking with all his mind that a swan is about to fly over,",
+       "h_s": "一心以为有鸿鹄将至，"
+      },
+      {
+       "h": "思援弓繳而射之，",
+       "py": "sī yuán gōng zhuó ér shè zhī,",
+       "en": "and longs to take his bow and corded arrow and shoot it.",
+       "h_s": "思援弓缴而射之，"
+      },
+      {
+       "h": "雖與之俱學，",
+       "py": "suī yǔ zhī jù xué,",
+       "en": "Although he studies alongside the first,",
+       "h_s": "虽与之俱学，"
+      },
+      {
+       "h": "弗若之矣。",
+       "py": "fú ruò zhī yǐ.",
+       "en": "he will not be his equal.",
+       "h_s": "弗若之矣。"
+      },
+      {
+       "h": "為是其智弗若與？",
+       "py": "Wèi shì qí zhì fú ruò yú?",
+       "en": "Is that because his intelligence is not equal?",
+       "h_s": "为是其智弗若与？"
+      },
+      {
+       "h": "曰：",
+       "py": "Yuē:",
+       "en": "I say:",
+       "h_s": "曰："
+      },
+      {
+       "h": "非然也。」",
+       "py": "Fēi rán yě.",
+       "en": "it is not so.\"",
+       "h_s": "非然也。」"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 1,
+       "at": "無或乎",
+       "text": "Three small words, each standing for another. **無** = 毋 \"don't\" (→ L6 n.6). **或** = **惑** huò \"to be puzzled\" (惑 → L4 n.8), a borrowed character (→ L8 n.5). **乎 = 於**: after a verb, 乎 can be the preposition \"at, about, in\", like 於 (→ L2 n.5): 或乎王之不智 \"be puzzled at the king's not being wise\". 王之不智 is subject + 之 + predicate (→ L2 n.3). The king is the King of Qi (趙岐: 王，齊王也), probably the 齊宣王 of L8. **智** zhì \"wise\".\n",
+       "at_s": "无或乎"
+      },
+      {
+       "n": 2,
+       "line": 2,
+       "at": "易生之物",
+       "text": "**易** yì \"easy\" (the other sense of → L12 n.24): 易生之物 \"a thing that grows easily\", a verb phrase + 之 + noun. **雖有 … 也** \"even if there is …\": 雖 → L13 n.9; the 也 marks a pause before the main clause (→ L6 n.2).\n",
+       "at_s": "易生之物"
+      },
+      {
+       "n": 3,
+       "line": 3,
+       "at": "暴之",
+       "text": "**暴** pù \"to expose to the sun\": the old form of 曝 (→ L15 n.6). Read pù here; bào \"violent\" is the later word that took over the character. **寒之** \"make it cold\": the adjective 寒 with an object is causative (→ L10 n.10), and so, here, is 暴 \"warm it in the sun\". The pair gave the idiom 一暴十寒 (now often written 一曝十寒), working by fits and starts.\n",
+       "at_s": "暴之"
+      },
+      {
+       "n": 4,
+       "line": 4,
+       "at": "未有能生者也",
+       "text": "**未有 … 者也** \"there has never been one that …\": 未 \"not yet, never\" (→ L5 n.9) with the 有 … 者 frame (→ L1 n.2). Mencius states it as a law of nature.\n",
+       "at_s": "未有能生者也"
+      },
+      {
+       "n": 5,
+       "line": 6,
+       "at": "寒之者",
+       "text": "**吾退而寒之者至矣** \"I withdraw, and those who chill him arrive\": 退 tuì \"to withdraw (from court)\"; 寒之者 \"those who make him cold\", the flatterers, a 者 phrase (→ L1 n.2). The king is the plant, Mencius the one day of sun. 吾見亦罕矣 \"my seeing him is rare indeed\": **罕** hǎn \"seldom, rare\".\n",
+       "at_s": "寒之者"
+      },
+      {
+       "n": 6,
+       "line": 7,
+       "at": "吾如有萌焉何哉",
+       "text": "**如 X 何 with a whole clause inside.** 吾如 [有萌焉] 何哉 \"what can I do about [there being shoots in him]?\": the X of 如 X 何 (→ L12 n.16) can be a clause. **萌** méng \"shoot, sprout\"; 焉 \"in it, in him\" (→ L12 n.25).\n",
+       "at_s": "吾如有萌焉何哉"
+      },
+      {
+       "n": 7,
+       "line": 8,
+       "at": "今夫",
+       "text": "**今夫** jīn fú \"now (take) …\": opens a new example. 夫 fú introduces a general statement (→ L2 n.9). **弈之為數** \"weiqi's being an art\": subject + 之 + 為 + predicate. **數** shù \"an art, a skill\" (古今詞義: the \"numbers\" of an art, as in 術數 → L10 n.3). **弈** yì is weiqi, the board game called go in English; in the *Mencius* it is already a pastime for gentlemen.\n",
+       "at_s": "今夫"
+      },
+      {
+       "n": 8,
+       "line": 10,
+       "at": "專心致志",
+       "text": "**專心致志** \"make one's heart single and apply one's will\": 專 \"to make single, concentrate\" (→ L6 n.14 專 \"solely\"), 致 zhì \"to bring to, devote\", 志 \"will, aim\". The phrase became the idiom for total concentration. 不 … 則 … \"if not …, then …\" (則 → L3 n.8): the condition again has no \"if\" (→ L11 n.10).\n",
+       "at_s": "专心致志"
+      },
+      {
+       "n": 9,
+       "line": 13,
+       "at": "通國",
+       "text": "**通國** tōng guó \"the whole state\" (通 \"through, throughout\"). 通國之善弈者也 \"is the one in the whole state who is good at weiqi\": A，B者也 (→ L3 n.11), with 善 \"good at\" (→ L10 n.3). **弈秋** \"Qiu the weiqi player\": a craftsman named by his craft and his personal name.\n",
+       "at_s": "通国"
+      },
+      {
+       "n": 10,
+       "line": 14,
+       "at": "使弈秋誨二人弈",
+       "text": "**使** \"let, suppose\": 使弈秋誨二人弈 \"let Yi Qiu teach two men weiqi\", the causative 使 (→ L6 n.7) used to set up a supposed case (as 只使 \"even if\" did in → L11 n.13). **誨** huì \"to teach\" takes two objects, the pupils and the subject: 誨二人弈 \"teach two men weiqi\" (two objects → L5 n.2).\n",
+       "at_s": "使弈秋诲二人弈"
+      },
+      {
+       "n": 11,
+       "line": 15,
+       "at": "其一人",
+       "text": "**其一人** \"one of them\": 其 \"of them\" before a number picks one out of the group, as 其善者 picked out \"the good ones among them\" (→ L8 n.12). Line 18 has the bare 一人 \"the other\": 一 … 一 … \"one … the other …\" (→ L13 n.20).\n",
+       "at_s": "其一人"
+      },
+      {
+       "n": 12,
+       "line": 16,
+       "at": "惟弈秋之為聽",
+       "text": "**The object moved before the verb, marked by 之.** 惟弈秋之為聽 = 惟聽弈秋 \"listen only to Yi Qiu\". To single out an object, Classical Chinese can put it in front of the verb, with 之 (or 是) after it and, often, 惟/唯 \"only\" before it: 惟 X 之為 V, 惟 X 是 V. 為 here is a filler between object and verb, with no meaning of its own. The pattern lives on in the idiom 唯命是從 \"obey whatever the order\". 惟 wéi \"only\".\n",
+       "at_s": "惟弈秋之为听"
+      },
+      {
+       "n": 13,
+       "line": 17,
+       "at": "雖聽之",
+       "text": "**雖** \"although\": 一人雖聽之 \"the other, although he listens to him\". Here 雖 introduces a fact, not a supposition (→ L13 n.9 explained both); line 21 has the same 雖. 之 is Yi Qiu (→ L2 n.2).\n",
+       "at_s": "虽听之"
+      },
+      {
+       "n": 14,
+       "line": 18,
+       "at": "一心以為",
+       "text": "**一心** \"with one heart, wholly\": the same words that praise the good pupil (專心 \"a single heart\") describe the daydreamer, whose whole heart is on the bird. 以為 \"thinks that\" (→ L3 n.10) + a whole clause: 有鴻鵠將至 \"a swan is about to come\". 鴻鵠 hóng hú \"wild goose, swan\" (L2 exercise 3); 將 \"about to\" (→ L16 n.4).\n",
+       "at_s": "一心以为"
+      },
+      {
+       "n": 15,
+       "line": 19,
+       "at": "援弓繳",
+       "text": "**思** sī \"to think of, long to\". **援** yuán \"to pull, take hold of\". **繳** zhuó (not jiǎo \"to pay\") is the silk cord tied to an arrow for shooting birds, so that bird and arrow can be pulled back: 弓繳 \"bow and corded arrow\". 射 shè \"to shoot\".\n",
+       "at_s": "援弓缴"
+      },
+      {
+       "n": 16,
+       "line": 20,
+       "at": "與之俱學",
+       "text": "**與之俱學** \"study together with him\": 與 the preposition \"with\" (→ L17 n.12), 之 the first pupil, **俱** jù \"together, both\". 弗若之矣 \"is not his equal\": 若 \"to match\" (→ L13 n.8 不若), 弗 \"not\" (→ L2 n.8), here with its object 之 written out: L2's rule is a tendency, not a law.\n",
+       "at_s": "与之俱学"
+      },
+      {
+       "n": 17,
+       "line": 22,
+       "at": "為是",
+       "text": "**為** wèi \"because of\": 為是其智弗若與 \"is it because his intelligence is not equal?\". 為 wèi \"for\" (→ L6 n.10) also gives the reason, what a thing happens \"for\". 是 sums up what follows, \"this: that …\" (→ L4 n.4); some read it with the clause instead, \"is it because of this, that …\". Wiktionary reads 為 wéi, taking 為是 as \"is it that …\". 與 yú asks the question (→ L17 n.2), and Mencius answers it himself: 非然也 \"it is not so\" (非 → L3 n.12, 然 → L6 n.9).\n",
+       "at_s": "为是"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "或",
+       "py": "huò",
+       "en": "to be puzzled (= 惑)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "或"
+      },
+      {
+       "w": "乎",
+       "py": "hū",
+       "en": "at, about (= 於)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "乎"
+      },
+      {
+       "w": "智",
+       "py": "zhì",
+       "en": "wise; intelligence",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "智"
+      },
+      {
+       "w": "易",
+       "py": "yì",
+       "en": "easy, easily",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "易"
+      },
+      {
+       "w": "暴",
+       "py": "pù",
+       "en": "to warm in the sun (= 曝)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "暴"
+      },
+      {
+       "w": "寒",
+       "py": "hán",
+       "en": "to make cold, chill",
+       "w_s": "寒"
+      },
+      {
+       "w": "罕",
+       "py": "hǎn",
+       "en": "seldom, rare",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "罕"
+      },
+      {
+       "w": "退",
+       "py": "tuì",
+       "en": "to withdraw",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "退"
+      },
+      {
+       "w": "萌",
+       "py": "méng",
+       "en": "shoot, sprout",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "萌"
+      },
+      {
+       "w": "弈",
+       "py": "yì",
+       "en": "weiqi, the game of go; to play weiqi",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "弈"
+      },
+      {
+       "w": "數",
+       "py": "shù",
+       "en": "art, skill",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "数"
+      },
+      {
+       "w": "專心",
+       "py": "zhuān xīn",
+       "en": "to give one's whole mind",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "专心"
+      },
+      {
+       "w": "致志",
+       "py": "zhì zhì",
+       "en": "to apply one's will",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "致志"
+      },
+      {
+       "w": "通國",
+       "py": "tōng guó",
+       "en": "the whole state",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "通国"
+      },
+      {
+       "w": "誨",
+       "py": "huì",
+       "en": "to teach",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "诲"
+      },
+      {
+       "w": "惟",
+       "py": "wéi",
+       "en": "only",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "惟"
+      },
+      {
+       "w": "一心",
+       "py": "yī xīn",
+       "en": "with one's whole heart",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "一心"
+      },
+      {
+       "w": "鴻鵠",
+       "py": "hóng hú",
+       "en": "wild goose, swan",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "鸿鹄"
+      },
+      {
+       "w": "思",
+       "py": "sī",
+       "en": "to think of, long to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "思"
+      },
+      {
+       "w": "援",
+       "py": "yuán",
+       "en": "to take hold of, pull",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "援"
+      },
+      {
+       "w": "弓",
+       "py": "gōng",
+       "en": "bow",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "弓"
+      },
+      {
+       "w": "繳",
+       "py": "zhuó",
+       "en": "silk cord tied to an arrow",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "缴"
+      },
+      {
+       "w": "射",
+       "py": "shè",
+       "en": "to shoot",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "射"
+      },
+      {
+       "w": "俱",
+       "py": "jù",
+       "en": "together",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "俱"
+      },
+      {
+       "w": "為",
+       "py": "wèi",
+       "en": "because of",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "为"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "父母唯其疾之憂。",
+       "py": "Fùmǔ wéi qí jí zhī yōu.",
+       "src": "論語·為政",
+       "en": "Your father and mother should have nothing to worry about but your falling ill.",
+       "tests": "唯 X 之 V, the object before its verb (n. 12)",
+       "h_s": "父母唯其疾之忧。"
+      },
+      {
+       "h": "浴乎沂，風乎舞雩，詠而歸。",
+       "py": "Yù hū Yí, fēng hū Wǔyú, yǒng ér guī.",
+       "src": "論語·先進",
+       "en": "To bathe in the Yi, enjoy the breeze at the Rain Altar, and come home singing.",
+       "tests": "乎 = 於 (n. 1); 風 \"wind\" as a verb, \"to take the air\"",
+       "h_s": "浴乎沂，风乎舞雩，咏而归。"
+      },
+      {
+       "h": "默而識之，學而不厭，誨人不倦，何有於我哉？",
+       "py": "Mò ér zhì zhī, xué ér bù yàn, huì rén bù juàn, hé yǒu yú wǒ zāi?",
+       "src": "論語·述而",
+       "en": "To remember things in silence, to study without tiring of it, to teach others without growing weary: which of these can I claim?",
+       "tests": "誨; 而; 識 zhì \"to remember\"; 何有於我 \"what of this is there in me?\"",
+       "h_s": "默而识之，学而不厌，诲人不倦，何有于我哉？"
+      }
+     ],
+     "culture": "Weiqi (圍棋, Japanese *go*) is one of the oldest board games in the world; this chapter and a line in the 論語 (不有博弈者乎 \"are there not board games?\") are among its earliest mentions. Yi Qiu, the \"best player in the state\", is the first player of the game known by name. The two idioms of the chapter are a pair: 專心致志 is what learning needs, 一暴十寒 is how most people go about it.\n",
+     "title_s": "学弈"
     }
    ]
   },
