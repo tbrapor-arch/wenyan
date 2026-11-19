@@ -31736,6 +31736,337 @@
      ],
      "culture": "The boys' puzzle is a real one, and Han scholars were already arguing about it (a note in the 文淵閣 text says that 桓譚's 新論 tells the same story): the sun on the horizon does look larger, although it is not nearer, and the noon sun is hotter because its rays fall straight down. The *Liezi* is not interested in the answer. Its point is the boys' last line: even Confucius does not know everything, and a Daoist reader would add that no one does.\n",
      "title_s": "两小儿辩日"
+    },
+    {
+     "id": 21,
+     "slug": "review-3",
+     "kind": "review",
+     "title": "複習三",
+     "title_py": "Fùxí sān",
+     "title_en": "Review 3: Lessons 15–20",
+     "status": "draft",
+     "intro": "Six fables in six lessons, about 650 characters, and the end of the first stage: one more from the *Intrigues of the Warring States*, two from the *Zhuangzi*, two from the *Mencius* and one from the *Liezi*. The grammar has moved on from what a word is to where it goes: pronouns of rank, question words and objects that stand before their verb, and the small words that link one clause to the next. Re-read the six texts aloud with Cover on, then work through the points below; each sends you back to the note that first explained it. The exercise is a first taste of the 論語, which begins in lesson 22: six sayings that use nothing you have not met.\n",
+     "recap": [
+      {
+       "topic": "Saying \"I\" and \"you\" by rank",
+       "refs": [
+        "L15 n.4",
+        "L16 n.7",
+        "L16 n.16",
+        "L12 n.14"
+       ],
+       "text": "To a ruler, a minister is 臣 \"your servant\" and the ruler is 王 \"Your Majesty\". A modest speaker may use his own name (周; Confucius says 丘). Polite \"you\": 君, 子. 吾 is a subject or a possessive and does not follow its verb as object; 我 can stand anywhere.\n",
+       "examples": [
+        "今者臣來",
+        "故願王之熟計之也",
+        "周昨來",
+        "吾失我常與",
+        "君豈有斗升之水而活我哉"
+       ],
+       "examples_s": [
+        "今者臣来",
+        "故愿王之熟计之也",
+        "周昨来",
+        "吾失我常与",
+        "君岂有斗升之水而活我哉"
+       ]
+      },
+      {
+       "topic": "Question words go first",
+       "refs": [
+        "L16 n.11",
+        "L17 n.12",
+        "L19 n.4",
+        "L20 n.13"
+       ],
+       "text": "A question word stands before its verb even when it is the object (何為 \"do what\", 何謂 \"what is meant by\"), and before its preposition (誰與 \"with whom\"). 孰 \"who? which?\" asks about persons and choices.\n",
+       "examples": [
+        "子何為者邪",
+        "王誰與為不善",
+        "何謂朝三",
+        "孰為汝多知乎"
+       ],
+       "examples_s": [
+        "子何为者邪",
+        "王谁与为不善",
+        "何谓朝三",
+        "孰为汝多知乎"
+       ]
+      },
+      {
+       "topic": "Objects moved before the verb",
+       "refs": [
+        "L18 n.12",
+        "L19 n.15",
+        "L19 n.12"
+       ],
+       "text": "To single out an object, put it in front and mark it with 之 (or 是): 惟 X 之為 V \"V only X\", 是之謂 X \"this is what is called X\". 是以 \"for this reason\" is 以是 with its object in front.\n",
+       "examples": [
+        "惟弈秋之為聽",
+        "是之謂兩行",
+        "是以聖人和之以是非"
+       ],
+       "examples_s": [
+        "惟弈秋之为听",
+        "是之谓两行",
+        "是以圣人和之以是非"
+       ]
+      },
+      {
+       "topic": "與 yú, 諸 = 之乎, and other questions",
+       "refs": [
+        "L17 n.2",
+        "L17 n.5",
+        "L20 n.9",
+        "L18 n.6"
+       ],
+       "text": "與 at the end of a question is yú (= 歟). At the end of a question 諸 is 之 + 乎 (before a place it was 之 + 於). 不為 … 乎 \"isn't this …?\" expects a yes; 如 X 何 can hold a whole clause.\n",
+       "examples": [
+        "子欲子之王之善與",
+        "則使齊人傅諸",
+        "此不為遠者小而近者大乎",
+        "吾如有萌焉何哉"
+       ],
+       "examples_s": [
+        "子欲子之王之善与",
+        "则使齐人傅诸",
+        "此不为远者小而近者大乎",
+        "吾如有萌焉何哉"
+       ]
+      },
+      {
+       "topic": "Prepositions",
+       "refs": [
+        "L16 n.2",
+        "L18 n.1",
+        "L17 n.12",
+        "L18 n.17"
+       ],
+       "text": "貸 X 於 Y \"borrow X from Y\" · 乎 = 於 \"at, about\" · 與 \"with\" · 為 wèi \"because of\". The question word in 誰與 and the 是 in 是以 come before their preposition.\n",
+       "examples": [
+        "故往貸粟於監河侯",
+        "無或乎王之不智也",
+        "而休乎天鈞",
+        "雖與之俱學",
+        "為是其智弗若與"
+       ],
+       "examples_s": [
+        "故往贷粟于监河侯",
+        "无或乎王之不智也",
+        "而休乎天钧",
+        "虽与之俱学",
+        "为是其智弗若与"
+       ]
+      },
+      {
+       "topic": "Linking clauses",
+       "refs": [
+        "L15 n.9",
+        "L16 n.18",
+        "L15 n.13",
+        "L19 n.7",
+        "L20 n.8",
+        "L17 n.3"
+       ],
+       "text": "After a condition with no \"if\": 即 or 然 \"then\". 以 = 而 \"and so\". 然則 \"in that case\". 及 … 則 … \"when it comes to …, then …\". 有 X 於此 \"suppose there is an X here\" sets up a case to argue from.\n",
+       "examples": [
+        "即有死蚌",
+        "吾得斗升之水然活耳",
+        "以弊大眾",
+        "然則朝四而莫三",
+        "及日中",
+        "有楚大夫於此"
+       ],
+       "examples_s": [
+        "即有死蚌",
+        "吾得斗升之水然活耳",
+        "以弊大众",
+        "然则朝四而莫三",
+        "及日中",
+        "有楚大夫于此"
+       ]
+      },
+      {
+       "topic": "Fearing, wishing, thinking, calling",
+       "refs": [
+        "L15 n.14",
+        "L15 n.15",
+        "L20 n.4",
+        "L19 n.3",
+        "L17 n.9"
+       ],
+       "text": "恐 \"fear that\" and 願 \"wish that\" take a subject + 之 + predicate clause. 以 alone can mean \"to think\". 謂 A B \"call A B\"; 謂 + person + comment \"say of someone that …\".\n",
+       "examples": [
+        "臣恐強秦之為漁父也",
+        "故願王之熟計之也",
+        "我以日始出時去人近",
+        "謂之朝三",
+        "子謂薛居州"
+       ],
+       "examples_s": [
+        "臣恐强秦之为渔父也",
+        "故愿王之熟计之也",
+        "我以日始出时去人近",
+        "谓之朝三",
+        "子谓薛居州"
+       ]
+      },
+      {
+       "topic": "Words in another class (詞類活用)",
+       "refs": [
+        "L15 n.8",
+        "L16 n.13",
+        "L16 n.14",
+        "L17 n.4",
+        "L17 n.7",
+        "L18 n.3"
+       ],
+       "text": "雨 yù \"to rain\" · 活我 \"make me live\" · 南遊, 東游 \"travel south, east\" · 齊語, 求其齊 \"speak Qi\" · 日撻 \"flog every day\" · 暴之, 寒之 \"warm it, chill it\". The slot decides (→ L10 n.10).\n",
+       "examples": [
+        "今日不雨",
+        "我且南遊吳越之王",
+        "欲其子之齊語也",
+        "雖日撻而求其齊也",
+        "一日暴之、十日寒之"
+       ],
+       "examples_s": [
+        "今日不雨",
+        "我且南游吴越之王",
+        "欲其子之齐语也",
+        "虽日挞而求其齐也",
+        "一日暴之、十日寒之"
+       ]
+      },
+      {
+       "topic": "Old and new characters, borrowed characters",
+       "refs": [
+        "L15 n.6",
+        "L15 n.11",
+        "L19 n.6",
+        "L20 n.13",
+        "L18 n.1",
+        "L17 n.2"
+       ],
+       "text": "曝 is a later form of 暴 pù \"to sun\"; 禽 \"catch\" became 擒, 莫 \"dusk\" 暮, 知 \"wisdom\" 智, the particle 與 歟. 或 is borrowed for 惑 \"puzzled\". Read the word, not the character.\n",
+       "examples": [
+        "蚌方出曝",
+        "漁者得而并禽之",
+        "朝三而莫四",
+        "孰為汝多知乎",
+        "無或乎王之不智也"
+       ],
+       "examples_s": [
+        "蚌方出曝",
+        "渔者得而并禽之",
+        "朝三而莫四",
+        "孰为汝多知乎",
+        "无或乎王之不智也"
+       ]
+      },
+      {
+       "topic": "Simplified-character warnings",
+       "refs": [
+        "L15 n.11",
+        "L20 n.2"
+       ],
+       "text": "Simplified 并 covers 并 \"together\", 並 \"side by side\" and 併 \"merge\"; simplified 斗 covers 斗 dǒu \"a peck\" and 鬭 dòu \"to fight\".\n",
+       "examples": [
+        "漁者得而并禽之",
+        "見兩小兒辯鬭",
+        "吾得斗升之水然活耳"
+       ],
+       "examples_s": [
+        "渔者得而并禽之",
+        "见两小儿辩鬭",
+        "吾得斗升之水然活耳"
+       ]
+      },
+      {
+       "topic": "Words that changed meaning (古今詞義)",
+       "refs": [
+        "L15 n.12",
+        "L15 n.13",
+        "L16 n.1",
+        "L16 n.9",
+        "L16 n.20",
+        "L17 n.3",
+        "L18 n.7",
+        "L19 n.1",
+        "L20 n.4",
+        "L20 n.11"
+       ],
+       "text": "支 to hold out against · 大眾 the hosts (not \"the public\") · 貧 poor · 顧 to look round · 索 to seek · 大夫 a grandee (not \"doctor\") · 數 an art · 神明 the mind (not \"the gods\") · 去 to be distant from (not \"to go to\") · 湯 hot water (not \"soup\").\n",
+       "examples": [
+        "燕、趙久相支",
+        "莊周家貧",
+        "周顧視車轍中",
+        "曾不如早索我於枯魚之肆",
+        "今夫弈之為數",
+        "勞神明為一",
+        "及其日中如探湯"
+       ],
+       "examples_s": [
+        "燕、赵久相支",
+        "庄周家贫",
+        "周顾视车辙中",
+        "曾不如早索我于枯鱼之肆",
+        "今夫弈之为数",
+        "劳神明为一",
+        "及其日中如探汤"
+       ]
+      }
+     ],
+     "exercise": [
+      {
+       "h": "吾誰欺？欺天乎？",
+       "py": "Wú shuí qī? Qī tiān hū?",
+       "src": "論語·子罕",
+       "en": "Whom would I be deceiving? Heaven?",
+       "tests": "誰, a question-word object before its verb (→ L16 n.11); 吾",
+       "h_s": "吾谁欺？欺天乎？"
+      },
+      {
+       "h": "孰謂鄹人之子知禮乎？",
+       "py": "Shú wèi Zōu rén zhī zǐ zhī lǐ hū?",
+       "src": "論語·八佾",
+       "en": "Who says that the son of the man from Zou knows the rites?",
+       "tests": "孰 (→ L20 n.13); 謂 + clause; someone mocking Confucius, whose father came from Zou",
+       "h_s": "孰谓鄹人之子知礼乎？"
+      },
+      {
+       "h": "君子居之，何陋之有？",
+       "py": "Jūnzǐ jū zhī, hé lòu zhī yǒu?",
+       "src": "論語·子罕",
+       "en": "If a gentleman lived there, what rudeness would there be?",
+       "tests": "the object before its verb, marked by 之 (→ L18 n.12), and a question word in it",
+       "h_s": "君子居之，何陋之有？"
+      },
+      {
+       "h": "天何言哉？四時行焉，百物生焉，天何言哉？",
+       "py": "Tiān hé yán zāi? Sì shí xíng yān, bǎi wù shēng yān, tiān hé yán zāi?",
+       "src": "論語·陽貨",
+       "en": "What does Heaven say? The four seasons go round, the hundred things are born: what does Heaven say?",
+       "tests": "何言 \"say what\" (→ L16 n.11); final 焉 (→ L12 n.25)",
+       "h_s": "天何言哉？四时行焉，百物生焉，天何言哉？"
+      },
+      {
+       "h": "父母之年，不可不知也。一則以喜，一則以懼。",
+       "py": "Fùmǔ zhī nián, bù kě bù zhī yě. Yī zé yǐ xǐ, yī zé yǐ jù.",
+       "src": "論語·里仁",
+       "en": "You must not fail to know your parents' ages: on the one hand they are a cause for joy, on the other for fear.",
+       "tests": "不可 + verb (→ L1 n.8); 一 … 一 … (→ L13 n.20); 則; 以 \"because of (it)\" (→ L10 n.15)",
+       "h_s": "父母之年，不可不知也。一则以喜，一则以惧。"
+      },
+      {
+       "h": "視其所以，觀其所由，察其所安。人焉廋哉？人焉廋哉？",
+       "py": "Shì qí suǒ yǐ, guān qí suǒ yóu, chá qí suǒ ān. Rén yān sōu zāi? Rén yān sōu zāi?",
+       "src": "論語·為政",
+       "en": "Look at what a man does, observe the path he takes, examine what he is at ease with: how can he hide? How can he hide?",
+       "tests": "所 + verb, three times (→ L4 n.5); 焉 \"how, where?\" before the verb (→ L12 n.17; 焉知死 in L5 exercise 1)",
+       "h_s": "视其所以，观其所由，察其所安。人焉廋哉？人焉廋哉？"
+      }
+     ],
+     "title_s": "复习三"
     }
    ]
   },
