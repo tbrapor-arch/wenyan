@@ -28408,6 +28408,627 @@
       }
      ],
      "title_s": "复习二"
+    },
+    {
+     "id": 15,
+     "slug": "yu-bang",
+     "title": "鷸蚌相爭",
+     "title_py": "Yù bàng xiāng zhēng",
+     "title_en": "The Snipe and the Mussel",
+     "source": {
+      "work": "戰國策·燕策二",
+      "author": "anonymous; compiled by 劉向 Liu Xiang (77–6 BC)",
+      "period": "Warring States stories, Han compilation",
+      "text_from": "《戰國策·燕策二·趙且伐燕》. Words as in the 四庫全書 文淵閣 text with 高誘's and 姚宏's notes (Kanseki Repository KR2e0003, WYG branch, 卷三十), compared character by character, 2026-11-19, with the 四部叢刊 text of 鮑彪's edition (戰國策校注, KR2e0003, 卷九) and with the English Wiktionary citation (鷸蚌相爭，漁人得利, CC BY-SA). Punctuation follows Wiktionary. Variants: 鮑彪 has 箝 for 拑, 擒 for 禽, 相攻以敝 for 相支以弊, and 願王熟計之也 without 故 and 之 (see n. 7, 11, 12, 15); Wiktionary reads 為燕王, 鉗, 不肯舍 and 並. The 文淵閣 text writes the variant forms 舎, 乆, 衆 and 强 for 舍, 久, 眾 and 強.\n",
+      "work_s": "战国策·燕策二"
+     },
+     "status": "draft",
+     "intro": "Back to the *Intrigues of the Warring States* (L5, L6). Zhao is about to invade Yan, and Yan sends the persuader Su Dai, younger brother of the famous Su Qin, to talk the King of Zhao out of it. His weapon, as always, is a story. New in this lesson: a minister calling himself 臣 \"your servant\", 即 \"then\" after an unspoken \"if\", and 恐 \"fear that\" and 願 \"wish that\" taking a whole clause, the subject + 之 + predicate of L2.\n",
+     "lines": [
+      {
+       "h": "趙且伐燕，",
+       "py": "Zhào qiě fá Yān,",
+       "en": "Zhao was about to attack Yan.",
+       "h_s": "赵且伐燕，"
+      },
+      {
+       "h": "蘇代為燕謂惠王曰：",
+       "py": "Sū Dài wèi Yān wèi Huì wáng yuē:",
+       "en": "Su Dai, on behalf of Yan, said to King Hui:",
+       "h_s": "苏代为燕谓惠王曰："
+      },
+      {
+       "h": "「今者臣來，",
+       "py": "Jīn zhě chén lái,",
+       "en": "\"On my way here today,",
+       "lit": "now your-servant came",
+       "h_s": "「今者臣来，"
+      },
+      {
+       "h": "過易水，",
+       "py": "guò Yì shuǐ,",
+       "en": "as I was crossing the Yi,",
+       "h_s": "过易水，"
+      },
+      {
+       "h": "蚌方出曝，",
+       "py": "bàng fāng chū pù,",
+       "en": "a mussel had just come out to sun itself,",
+       "h_s": "蚌方出曝，"
+      },
+      {
+       "h": "而鷸啄其肉，",
+       "py": "ér yù zhuó qí ròu,",
+       "en": "and a snipe pecked at its flesh.",
+       "h_s": "而鹬啄其肉，"
+      },
+      {
+       "h": "蚌合而拑其喙。",
+       "py": "bàng hé ér qián qí huì.",
+       "en": "The mussel closed up and clamped the snipe's beak.",
+       "h_s": "蚌合而拑其喙。"
+      },
+      {
+       "h": "鷸曰：",
+       "py": "Yù yuē:",
+       "en": "The snipe said:",
+       "h_s": "鹬曰："
+      },
+      {
+       "h": "『今日不雨，",
+       "py": "Jīn rì bù yù,",
+       "en": "'If it doesn't rain today",
+       "h_s": "『今日不雨，"
+      },
+      {
+       "h": "明日不雨，",
+       "py": "míng rì bù yù,",
+       "en": "and it doesn't rain tomorrow,",
+       "h_s": "明日不雨，"
+      },
+      {
+       "h": "即有死蚌。』",
+       "py": "jí yǒu sǐ bàng.",
+       "en": "there will be a dead mussel.'",
+       "lit": "then there-is dead mussel",
+       "h_s": "即有死蚌。』"
+      },
+      {
+       "h": "蚌亦謂鷸曰：",
+       "py": "Bàng yì wèi yù yuē:",
+       "en": "The mussel said to the snipe in turn:",
+       "h_s": "蚌亦谓鹬曰："
+      },
+      {
+       "h": "『今日不出，",
+       "py": "Jīn rì bù chū,",
+       "en": "'If you don't get out today",
+       "h_s": "『今日不出，"
+      },
+      {
+       "h": "明日不出，",
+       "py": "míng rì bù chū,",
+       "en": "and you don't get out tomorrow,",
+       "h_s": "明日不出，"
+      },
+      {
+       "h": "即有死鷸。』",
+       "py": "jí yǒu sǐ yù.",
+       "en": "there will be a dead snipe.'",
+       "h_s": "即有死鹬。』"
+      },
+      {
+       "h": "兩者不肯相舍，",
+       "py": "Liǎng zhě bù kěn xiāng shě,",
+       "en": "Neither would let go of the other,",
+       "h_s": "两者不肯相舍，"
+      },
+      {
+       "h": "漁者得而并禽之。",
+       "py": "yú zhě dé ér bìng qín zhī.",
+       "en": "and a fisherman came upon them and caught them both.",
+       "h_s": "渔者得而并禽之。"
+      },
+      {
+       "h": "今趙且伐燕，",
+       "py": "Jīn Zhào qiě fá Yān,",
+       "en": "Now Zhao is about to attack Yan.",
+       "h_s": "今赵且伐燕，"
+      },
+      {
+       "h": "燕、趙久相支，",
+       "py": "Yān, Zhào jiǔ xiāng zhī,",
+       "en": "Yan and Zhao will hold each other at bay for a long time",
+       "h_s": "燕、赵久相支，"
+      },
+      {
+       "h": "以弊大眾，",
+       "py": "yǐ bì dà zhòng,",
+       "en": "and wear out their great hosts,",
+       "h_s": "以弊大众，"
+      },
+      {
+       "h": "臣恐強秦之為漁父也。",
+       "py": "chén kǒng qiáng Qín zhī wéi yú fǔ yě.",
+       "en": "and I fear that mighty Qin will be the old fisherman.",
+       "lit": "your-servant fears mighty Qin 's being fisher-elder",
+       "h_s": "臣恐强秦之为渔父也。"
+      },
+      {
+       "h": "故願王之熟計之也。」",
+       "py": "Gù yuàn wáng zhī shú jì zhī yě.",
+       "en": "So I hope Your Majesty will think it over carefully.\"",
+       "h_s": "故愿王之熟计之也。」"
+      },
+      {
+       "h": "惠王曰：",
+       "py": "Huì wáng yuē:",
+       "en": "King Hui said:",
+       "h_s": "惠王曰："
+      },
+      {
+       "h": "「善。」",
+       "py": "Shàn.",
+       "en": "\"Very well.\"",
+       "h_s": "「善。」"
+      },
+      {
+       "h": "乃止。",
+       "py": "Nǎi zhǐ.",
+       "en": "And he called off the attack.",
+       "h_s": "乃止。"
+      }
+     ],
+     "notes": [
+      {
+       "n": 1,
+       "line": 0,
+       "at": "且伐燕",
+       "text": "**伐** fá \"to attack, make war on (a state)\", the word for an open campaign. 且 \"about to\" (→ L5 n.6). **燕** is read **Yān** as the name of the state, in the far north-east around present-day Beijing; yàn is \"swallow\" (燕雀, → L2 exercise 3). **趙** Zhào, its neighbour to the south-west (in present-day Hebei and Shanxi), was one of the three states carved out of Jin.\n",
+       "at_s": "且伐燕"
+      },
+      {
+       "n": 2,
+       "line": 1,
+       "at": "為燕",
+       "text": "**為** wèi \"for, on behalf of\" (→ L6 n.10): 為燕 \"on behalf of Yan\". 謂 A 曰 \"said to A\" (→ L3 n.4). **蘇代** Su Dai was a travelling persuader like his elder brother 蘇秦, who had organised the alliance of six states against Qin. 惠王 is King Huiwen of Zhao (趙惠文王, reigned 298–266 BC), as 鮑彪 notes.\n",
+       "at_s": "为燕"
+      },
+      {
+       "n": 3,
+       "line": 2,
+       "at": "今者",
+       "text": "**今者** jīn zhě \"now; just now, today\". 者 after a word of time sets it up as the frame of what follows, as it set up a name in → L12 n.4: \"as for now, …\". Su Dai pretends that it all happened on his way to the audience.\n",
+       "at_s": "今者"
+      },
+      {
+       "n": 4,
+       "line": 2,
+       "at": "臣",
+       "text": "**臣** chén \"subject, servant\" used for \"I\". Speaking to a ruler, a minister does not say 吾 or 我: he calls himself 臣 \"your servant\", and he calls the ruler 王 \"the king\" (line 22, 王之熟計之 \"Your Majesty's thinking it over\"). Classical Chinese often says \"I\" and \"you\" with words of rank: the speaker lowers himself, the listener is raised (→ L12 n.14, 君). So far the course has met the plain \"I\" (吾 → L2, 予 → L3 n.6) and the plain and polite \"you\" (→ L11 n.8, L12 n.9); this is the humble side of the scale.\n",
+       "at_s": "臣"
+      },
+      {
+       "n": 5,
+       "line": 3,
+       "at": "易水",
+       "text": "**易水** the Yi river, in present-day Hebei, on the southern border of Yan. 過 guò \"to pass, cross\". The river is famous for a later farewell: in 227 BC the assassin 荊軻 left Yan from its bank to kill the King of Qin, singing 風蕭蕭兮易水寒 \"the wind howls, the Yi is cold\".\n",
+       "at_s": "易水"
+      },
+      {
+       "n": 6,
+       "line": 4,
+       "at": "方出曝",
+       "text": "**方** fāng \"just (then), at that moment\": 方出曝 \"had just come out to sun itself\". (In L6 n.13 and L12 n.2 方 was \"square\".) **曝** pù \"to sun, expose to the sun\": the character is 暴 with a second 日 \"sun\" added, made when 暴 had come to mean bào \"violent\". Mencius still writes 暴 for this word (L18). A pair of old and new characters (古今字, → L9 n.9).\n",
+       "at_s": "方出曝"
+      },
+      {
+       "n": 7,
+       "line": 6,
+       "at": "拑其喙",
+       "text": "**拑** qián \"to clamp, pinch\": 蚌合而拑其喙 \"the mussel shut and gripped its beak\" (喙 huì \"beak\"; 其 \"its\", the snipe's). 鮑彪's edition writes 箝 and Wiktionary 鉗 \"tongs, pincers\": three spellings of one word. 而 links the two actions (→ L1 n.4).\n",
+       "at_s": "拑其喙"
+      },
+      {
+       "n": 8,
+       "line": 8,
+       "at": "不雨",
+       "text": "**雨 yù \"to rain\".** The noun 雨 yǔ \"rain\", used as a verb, is read in the fourth tone, yù, the classical reading Wiktionary gives here. A noun that becomes a verb is the word-class shift of → L10 n.10; the change of tone marks it as a new word (破音字, → L3 n.2).\n",
+       "at_s": "不雨"
+      },
+      {
+       "n": 9,
+       "line": 10,
+       "at": "即",
+       "text": "**即** jí \"then, in that case\". 今日不雨，明日不雨，即有死蚌 \"(if) it doesn't rain today, (if) it doesn't rain tomorrow, then there will be a dead mussel\": the condition has no \"if\" (→ L11 n.10), and 即 opens the consequence, as 則 does (→ L3 n.8). 死蚌 \"a dead mussel\": 死 before the noun is \"dead\". The mussel answers with the same three lines, word for word: neither will give way.\n",
+       "at_s": "即"
+      },
+      {
+       "n": 10,
+       "line": 15,
+       "at": "不肯相舍",
+       "text": "**肯** kěn \"to be willing to\": 不肯 \"would not, refused to\". 相舍 xiāng shě \"let go of each other\" (相 → L5 n.3; 舍 shě \"to let go\" = 捨, → L3 n.10). **兩者** \"the two (of them)\": 者 after a number picks out the members of a group (二者, → L14 exercise 2).\n",
+       "at_s": "不肯相舍"
+      },
+      {
+       "n": 11,
+       "line": 16,
+       "at": "并禽之",
+       "text": "**禽** qín \"to catch\" = **擒** (古今字, → L9 n.9): 禽 is first \"what is caught\", the game bird or animal, and the verb was later written with 扌 \"hand\", as in 鮑彪's edition. **并** bìng \"both, together\": 并禽之 \"caught them both\". *Simplified-character warning:* simplified 并 stands for three classical words, 并 \"together\", 並 \"side by side\" (the form Wiktionary has here) and 併 \"to merge\". 漁者 \"a fisherman\" (者 → L1 n.2), 得 \"got hold of (them)\".\n",
+       "at_s": "并禽之"
+      },
+      {
+       "n": 12,
+       "line": 18,
+       "at": "相支",
+       "text": "**支** zhī \"to prop up against, hold out against\" (古今詞義: modern 支 is \"to support, pay out\", or a branch): 相支 \"hold each other at bay\", a long war that neither side can win. 鮑彪's edition has 相攻 \"attack each other\". 燕、趙 with the list comma: two names side by side.\n",
+       "at_s": "相支"
+      },
+      {
+       "n": 13,
+       "line": 19,
+       "at": "以弊大眾",
+       "text": "**以 = 而 \"and so, and thereby\"**: here 以 joins two verb phrases, the second the result of the first: 久相支，以弊大眾 \"hold out against each other for a long time, and so wear out their hosts\". So far 以 was a preposition, \"with, by means of\" (→ L1 n.10) and \"because of\" (→ L10 n.15); as a conjunction it is close to 而 (→ L1 n.4). **弊** bì \"to wear out, exhaust\" (鮑彪 敝, the same word). **大眾** \"the great multitudes\", the armies and people of both states (古今詞義: modern 大眾 is \"the general public\").\n",
+       "at_s": "以弊大众"
+      },
+      {
+       "n": 14,
+       "line": 20,
+       "at": "恐強秦之為漁父也",
+       "text": "**恐 + subject + 之 + predicate**: 恐 kǒng \"to fear (that)\" takes a whole clause, turned into a noun phrase by 之 (→ L2 n.3, L6 n.2): 強秦之為漁父 \"mighty Qin's becoming the old fisherman\". 為 wéi \"to be, become\" (→ L5 n.5). **漁父** yú fǔ \"the old fisherman\": 父 fǔ is a respectful word for an old man (→ L10 n.6). Qin, the strongest state, waits in the west for the others to wear each other out.\n",
+       "at_s": "恐强秦之为渔父也"
+      },
+      {
+       "n": 15,
+       "line": 21,
+       "at": "願王之熟計之也",
+       "text": "**願** yuàn \"to wish, hope (that)\" takes the same kind of clause: 願王之熟計之 \"I hope for Your Majesty's thinking it over carefully\", the standard polite request of a minister to a king. 王 is \"you\" (n. 4). **熟** shú \"thoroughly\" (lit. \"cooked, ripe\": a plan that has been \"cooked\" through); **計** jì \"to reckon, weigh up\". 故 \"therefore\" (→ L10 n.17). 鮑彪's edition reads 願王熟計之也, with neither 故 nor the first 之.\n",
+       "at_s": "愿王之熟计之也"
+      },
+      {
+       "n": 16,
+       "line": 23,
+       "at": "善",
+       "text": "**善** \"good!\" as a reply: \"very well, agreed\", the king's yes (compare 善 \"be good at\", → L10 n.3). Then 乃止 \"and so he stopped\": 乃 \"thereupon\" (→ L5 n.7), 止 \"to stop, call off\" (舟止 in L4; 止之 → L13 n.1). A persuader's speech in the 戰國策 usually ends this way, with the king's one word and what he did.\n",
+       "at_s": "善"
+      }
+     ],
+     "glossary": [
+      {
+       "w": "趙",
+       "py": "Zhào",
+       "en": "Zhao, a northern state (in present-day Hebei and Shanxi)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "赵"
+      },
+      {
+       "w": "伐",
+       "py": "fá",
+       "en": "to attack, make war on",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "伐"
+      },
+      {
+       "w": "燕",
+       "py": "Yān",
+       "en": "Yan, the north-eastern state (around present-day Beijing)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "燕"
+      },
+      {
+       "w": "蘇代",
+       "py": "Sū Dài",
+       "en": "Su Dai, a travelling persuader",
+       "w_s": "苏代"
+      },
+      {
+       "w": "今者",
+       "py": "jīn zhě",
+       "en": "now; just now, today",
+       "w_s": "今者"
+      },
+      {
+       "w": "臣",
+       "py": "chén",
+       "en": "your servant, I (said to a ruler)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "臣"
+      },
+      {
+       "w": "過",
+       "py": "guò",
+       "en": "to pass, cross",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "过"
+      },
+      {
+       "w": "易水",
+       "py": "Yì shuǐ",
+       "en": "the Yi river",
+       "w_s": "易水"
+      },
+      {
+       "w": "蚌",
+       "py": "bàng",
+       "en": "freshwater mussel, clam",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "蚌"
+      },
+      {
+       "w": "方",
+       "py": "fāng",
+       "en": "just (then), at that moment",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "方"
+      },
+      {
+       "w": "曝",
+       "py": "pù",
+       "en": "to sun oneself, expose to the sun",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "曝"
+      },
+      {
+       "w": "鷸",
+       "py": "yù",
+       "en": "snipe, sandpiper",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "鹬"
+      },
+      {
+       "w": "啄",
+       "py": "zhuó",
+       "en": "to peck",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "啄"
+      },
+      {
+       "w": "肉",
+       "py": "ròu",
+       "en": "flesh",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "肉"
+      },
+      {
+       "w": "合",
+       "py": "hé",
+       "en": "to close, shut",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "合"
+      },
+      {
+       "w": "拑",
+       "py": "qián",
+       "en": "to clamp, grip",
+       "w_s": "拑"
+      },
+      {
+       "w": "喙",
+       "py": "huì",
+       "en": "beak",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "喙"
+      },
+      {
+       "w": "雨",
+       "py": "yù",
+       "en": "to rain",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "雨"
+      },
+      {
+       "w": "明日",
+       "py": "míng rì",
+       "en": "tomorrow",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "明日"
+      },
+      {
+       "w": "即",
+       "py": "jí",
+       "en": "then, in that case",
+       "w_s": "即"
+      },
+      {
+       "w": "肯",
+       "py": "kěn",
+       "en": "to be willing to",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "肯"
+      },
+      {
+       "w": "舍",
+       "py": "shě",
+       "en": "to let go of",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "舍"
+      },
+      {
+       "w": "漁",
+       "py": "yú",
+       "en": "to fish",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "渔"
+      },
+      {
+       "w": "并",
+       "py": "bìng",
+       "en": "both at once, together (= 並)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "并"
+      },
+      {
+       "w": "禽",
+       "py": "qín",
+       "en": "to catch (= 擒)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "禽"
+      },
+      {
+       "w": "久",
+       "py": "jiǔ",
+       "en": "for a long time",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "久"
+      },
+      {
+       "w": "支",
+       "py": "zhī",
+       "en": "to hold out against",
+       "w_s": "支"
+      },
+      {
+       "w": "弊",
+       "py": "bì",
+       "en": "to wear out, exhaust",
+       "w_s": "弊"
+      },
+      {
+       "w": "大眾",
+       "py": "dà zhòng",
+       "en": "the great multitudes, the hosts",
+       "w_s": "大众"
+      },
+      {
+       "w": "恐",
+       "py": "kǒng",
+       "en": "to fear (that)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "恐"
+      },
+      {
+       "w": "強",
+       "py": "qiáng",
+       "en": "strong, mighty",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "强"
+      },
+      {
+       "w": "秦",
+       "py": "Qín",
+       "en": "Qin, the great western state",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "秦"
+      },
+      {
+       "w": "漁父",
+       "py": "yú fǔ",
+       "en": "old fisherman",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "渔父"
+      },
+      {
+       "w": "願",
+       "py": "yuàn",
+       "en": "to wish, hope (that)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "愿"
+      },
+      {
+       "w": "熟",
+       "py": "shú",
+       "en": "thoroughly",
+       "w_s": "熟"
+      },
+      {
+       "w": "計",
+       "py": "jì",
+       "en": "to reckon, weigh up",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "计"
+      },
+      {
+       "w": "善",
+       "py": "shàn",
+       "en": "good! very well (as a reply)",
+       "checked": [
+        "wikt"
+       ],
+       "w_s": "善"
+      }
+     ],
+     "exercise": [
+      {
+       "h": "學如不及，猶恐失之。",
+       "py": "Xué rú bù jí, yóu kǒng shī zhī.",
+       "src": "論語·泰伯",
+       "en": "Learn as if you could never catch up, and still be afraid of losing it.",
+       "tests": "恐 \"fear\", 如, 猶 (→ L6 n.16), 及 (→ L9 n.10)",
+       "h_s": "学如不及，犹恐失之。"
+      },
+      {
+       "h": "願車馬，衣輕裘，與朋友共，敝之而無憾。",
+       "py": "Yuàn chē mǎ, yì qīng qiú, yǔ péngyǒu gòng, bì zhī ér wú hàn.",
+       "src": "論語·公冶長",
+       "en": "I would like to share my carriages and horses, and the light furs I wear, with my friends, and have no regrets if they wear them out.",
+       "tests": "願 \"wish\"; 敝 = 弊 \"wear out\"; 衣 yì \"to wear\", a noun used as a verb",
+       "h_s": "愿车马，衣轻裘，与朋友共，敝之而无憾。"
+      },
+      {
+       "h": "臣固知王之不忍也。",
+       "py": "Chén gù zhī wáng zhī bù rěn yě.",
+       "src": "孟子·梁惠王上",
+       "en": "I knew of course that Your Majesty could not bear it.",
+       "tests": "臣 for \"I\" and 王 for \"you\"; 固 (→ L5 n.10); subject + 之 + predicate as an object",
+       "h_s": "臣固知王之不忍也。"
+      }
+     ],
+     "culture": "The idiom is quoted in full as 鷸蚌相爭，漁人得利 \"when the snipe and the mussel fight, the fisherman gets the profit\" (also 漁翁得利); 漁人之利 alone means a windfall won from other people's quarrels. Su Dai's warning came true in the end: within a few decades Qin, which had stayed out of the wars among its neighbours, conquered Zhao in 228 BC and Yan in 222 BC.\n",
+     "title_s": "鹬蚌相争"
     }
    ]
   },

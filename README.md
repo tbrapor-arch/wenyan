@@ -70,6 +70,7 @@ line to check. **Mark as done** ticks the lesson on its tile.
 | 12 | 愚公移山（上） | 列子·湯問 | draft: 6 glosses pending (太形, 王屋, 懲, 指, 雜然, 曾); text = 四部叢刊, compared with 四庫全書, HK EDB and Wiktionary |
 | 13 | 愚公移山（下） | 列子·湯問 | draft: 5 glosses pending (惠, 毛, 弱, 何苦, 隴斷); text as lesson 12 |
 | 14 | 複習二 | review of 8–13 | draft |
+| 15 | 鷸蚌相爭 | 戰國策·燕策二 | draft: 9 glosses pending (蘇代, 今者, 易水, 拑, 即, 支, 弊, 大眾, 熟); text = 四庫全書 文淵閣, compared with 四部叢刊 (鮑彪) and Wiktionary |
 | 白話 1 | 落花生 | 許地山, 1922 | draft: text compared with the edition by an automated reader; 38 glosses unchecked |
 | 成語 1–10 | the 200 most frequent 成語 | wordfreq ranking | draft: every example and origin passes the private checker; example pinyin generated (AUTO) |
 
